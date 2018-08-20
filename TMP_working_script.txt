@@ -1,0 +1,31 @@
+===================================================
+APPS-UPDATES-COLLECTOR
+===================================================
+
+APP_NAME: 7-Zip
+SOURCE: https://www.7-zip.org/download.html
+
+INFO_AQUIRING_APPROACH_ALGORITHM:
+Search the first occurence of <h1> tag.
+Search the first occurence of <p> tag.
+Get the 3rd word to obtain the LATEST_APP_VERSION and the 4th to gain UPDATE_DATE.
+Search and get the next <a> tags with relative links under <table> tag. 
+Continue until you get URL that end at "*.exe" (WIN_X86_PKG_URL) and "*x64.exe" (WIN_X64_PKG_URL).
+
+WEBPAGE_SOURCE_INFO_FINDER (WSIF):
+(1) | (From: Start), (In: HTML), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <h1>), (AfterAction: NextRule)
+(2) | (From: FileCursorPosition), (In: HMTL), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <p>), (AfterAction: GetTagContent)
+(3) | (From: Start), (In: TagContent), (Get: Word), (AtPosition: 3), (UseAs: LatestAppVersion), (AfterAction: NextRule)
+(4) | (From: FileCursorPosition), (In: TagContent), (Get: Word), (AtPosition: 1), (UseAs: UpdateDate), (AfterAction: NextRule)
+(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <table>), (AfterAction: GetTagContent)
+(6) | (From: Start), (In: TagContent), (Get: AllAnchorTags), (AfterAction: NextRule)
+(7) | (From: Start), (In: Collection), (LinkWithBaseURL: "https://www.7-zip.org"), (ApplyTo: NonURI), (AfterAction: NextRule)
+(8) | (From: Start), (In: Collection), (MatchRegex: "*.exe"), (Touch: FirstElement), (UseAs: WindowsX86PackageURL), (AfterAction: NextRule)
+(9) | (From: Start), (In: Collection), (MatchRegex: "*x64.exe"), (Touch: FirstElement), (UseAs: WindowsX64PackageURL), (AfterAction: Stop)
+
+CURRENT_APP_VERSION={ set; get; }
+PKG_HASH={ MD5, SHA-1 }
+APP_PATH=Y:\Aplikacje\7-Zip
+
+https://stackoverflow.com/questions/6918022/get-version-info-for-exe
+https://stackoverflow.com/questions/7776116/java-calculate-md5-hash#7776244

@@ -1,0 +1,5 @@
+sonar-project.properties
+.scannerwork/
+out/
+runtime/
+target/

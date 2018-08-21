@@ -14,11 +14,11 @@ Continue until you get URL that end at "*.exe" (WIN_X86_PKG_URL) and "*x64.exe" 
 
 WEBPAGE_SOURCE_INFO_FINDER (WSIF):
 (1) | (From: Start), (In: HTML), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <h1>), (AfterAction: NextRule)
-(2) | (From: FileCursorPosition), (In: HMTL), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <p>), (AfterAction: GetTagContent)
-(3) | (From: Start), (In: TagContent), (Get: Word), (AtPosition: 3), (UseAs: LatestAppVersion), (AfterAction: NextRule)
-(4) | (From: FileCursorPosition), (In: TagContent), (Get: Word), (AtPosition: 1), (UseAs: UpdateDate), (AfterAction: NextRule)
-(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <table>), (AfterAction: GetTagContent)
-(6) | (From: Start), (In: TagContent), (Get: AllAnchorTags), (AfterAction: NextRule)
+(2) | (From: FileCursorPosition), (In: HMTL), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <p>), (AfterAction: GetContent)
+(3) | (From: Start), (In: Content), (Get: Word), (AtPosition: 3), (UseAs: LatestAppVersion), (AfterAction: NextRule)
+(4) | (From: FileCursorPosition), (In: Content), (Get: Word), (AtPosition: 1), (UseAs: UpdateDate), (AfterAction: NextRule)
+(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOcurrenceOf), (Type: Tag), (ThatIs: <table>), (AfterAction: GetContent)
+(6) | (From: Start), (In: Content), (Get: AllAnchorTags), (AfterAction: NextRule)
 (7) | (From: Start), (In: Collection), (LinkWithBaseURL: "https://www.7-zip.org"), (ApplyTo: NonURI), (AfterAction: NextRule)
 (8) | (From: Start), (In: Collection), (MatchRegex: "*.exe"), (Touch: FirstElement), (UseAs: WindowsX86PackageURL), (AfterAction: NextRule)
 (9) | (From: Start), (In: Collection), (MatchRegex: "*x64.exe"), (Touch: FirstElement), (UseAs: WindowsX64PackageURL), (AfterAction: Stop)

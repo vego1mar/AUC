@@ -25,7 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="AUC" options="--add-modules=javafx.graphics,javafx.fxml" />
+      <module name="AUC" options="" />
     </option>
   </component>
 </project>

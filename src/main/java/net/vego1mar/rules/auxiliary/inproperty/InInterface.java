@@ -1,0 +1,20 @@
+package net.vego1mar.rules.auxiliary.inproperty;
+
+import java.util.List;
+import org.jetbrains.annotations.NotNull;
+
+public interface InInterface {
+
+    String getCode();
+
+    void setCode(String code);
+
+    String getContent();
+
+    void setContent(String content);
+
+    List<String> getCollection();
+
+    void setCollection(@NotNull List<String> collection);
+
+}

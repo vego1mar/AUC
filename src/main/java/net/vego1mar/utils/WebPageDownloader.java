@@ -6,7 +6,7 @@ import org.jsoup.Jsoup;
 
 public final class WebPageDownloader {
 
-    private final static Logger log = Logger.getLogger(WebPageDownloader.class);
+    private static final Logger log = Logger.getLogger(WebPageDownloader.class);
 
     private WebPageDownloader() {
         // This should be a utility class.

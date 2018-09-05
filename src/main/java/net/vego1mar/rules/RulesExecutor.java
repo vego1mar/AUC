@@ -1,111 +1,68 @@
 package net.vego1mar.rules;
 
-import net.vego1mar.rules.properties.AfterAction;
-import net.vego1mar.rules.properties.From;
-import net.vego1mar.rules.properties.In;
-import net.vego1mar.rules.properties.SearchFor;
-import net.vego1mar.rules.properties.SearchType;
-import net.vego1mar.utils.WebPageDownloader;
+import java.util.LinkedList;
+import net.vego1mar.rules.auxiliary.method.Method;
+import net.vego1mar.rules.auxiliary.target.Target;
+import net.vego1mar.rules.auxiliary.useasproperty.UseAsInterface;
+import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
+import net.vego1mar.rules.enumerators.traits.AfterActionTrait;
+import net.vego1mar.rules.enumerators.traits.FromTrait;
+import net.vego1mar.rules.enumerators.traits.InTrait;
+import net.vego1mar.rules.enumerators.traits.MethodTrait;
+import net.vego1mar.rules.enumerators.traits.UseAsTrait;
 import org.jetbrains.annotations.NotNull;
 
-public class RulesExecutor {
+public final class RulesExecutor {
 
-    private Rule rule;
-    private RulesSet rulesSet;
-    private String webPageLink;
-    private String webPageCode;
-    private String content;
-    private String htmlResult;
-    private int activeRule;
-    private int htmlCursor;
+    protected MethodExecutable executor;
+    private LinkedList<RuleBased> rulesSet;
+    private RuleBased currentRule;
+    private UseAsInterface useAsProperty;
+    private StringBuilder executionInternalLog;
 
-    public RulesExecutor(@NotNull Rule rule, @NotNull String webpage) {
-        this.rule = rule;
-        this.webPageLink = webpage;
-        webPageCode = "";
-        content = "";
-        htmlResult = "";
-        activeRule = 0;
-        htmlCursor = 0;
-    }
-
-    public RulesExecutor(@NotNull RulesSet rulesSet, @NotNull String webpage) {
-        // TODO: exception handling
-        this(rulesSet.get(0), webpage);
+    // TODO: replace LinkedList with List enforcing LinkedList type
+    public RulesExecutor(@NotNull LinkedList<RuleBased> rulesSet, @NotNull String htmlCode) {
+        executor = new MethodExecutor();
+        ((MethodExecutor) executor).getInProperty().setCode(htmlCode);
         this.rulesSet = rulesSet;
+
+        currentRule = rulesSet.isEmpty()
+            ? new Rule(new Target(FromTrait.START, InTrait.HTML, UseAsTrait.IGNORE), new Method(MethodTrait.FIRST_OF), AfterActionTrait.STOP)
+            : rulesSet.removeFirst();
+
+        useAsProperty = new UseAsProperty();
+        executionInternalLog = new StringBuilder();
+        String logInfo = "CTOR: rulesSet={" + rulesSet + "}, htmlCode={" + htmlCode + '}' + System.lineSeparator();
+        executionInternalLog.append(logInfo);
     }
 
-    public void prepare() {
-        if (webPageCode.isEmpty()) {
-            webPageCode = WebPageDownloader.getHtml(webPageLink);
-        }
-    }
-
-    public void next() {
-        switch (rule.in()) {
-            case HTML:
-                htmlResult = searchFor(rule.searchFor(), rule.searchType(), rule.searchText());
-                break;
-            case CONTENT:
-            case COLLECTION:
-                break;
-        }
-
-        switch (rule.useAs()) {
-            case UPDATE_DATE:
-            case LATEST_APP_VERSION:
-            case WINDOWS_X64_PACKAGE_URL:
-            case WINDOWS_X86_PACKAGE_URL:
-                break;
-        }
-
-        if (rule.afterAction() == AfterAction.NEXT_RULE) {
-            activeRule++;
-            setActiveRule(activeRule);
-        }
-    }
-
-    private void setActiveRule(int ruleIndex) {
-        activeRule = ruleIndex;
-        rule = rulesSet.get(ruleIndex);
-    }
-
-    @NotNull private String searchFor(@NotNull SearchFor searchForWhat, SearchType type, String text) {
-        switch (searchForWhat) {
+    // TODO: change access to private and use :execute() instead
+    public void executeRule(@NotNull RuleBased rule) {
+        switch (rule.getMethod().getSelectedMethod()) {
             case FIRST_OF:
-                return searchFirstOf(type, text);
+                Method currentMethod = (Method) rule.getMethod();
+                executor.firstOf(rule.getTarget(), currentMethod.getFirstOfType(), currentMethod.getFirstOfText());
+            case EXTRACT_WORD:
+                break;
         }
 
-        return "";
-    }
-
-    @NotNull private String searchFirstOf(SearchType type, String text) {
-        int openingTag = webPageCode.indexOf(text, getFromIndex());
-
-        if (type == SearchType.TAG) {
-            text = "</" + text.substring(1);
-            int closingTag = webPageCode.indexOf(text, getFromIndex());
-            int closingTagPosition = closingTag + text.length();
-
-            if (closingTagPosition >= webPageCode.length()) {
-                content = webPageCode.substring(openingTag, webPageCode.length() - 1);
-            } else {
-                content = webPageCode.substring(openingTag, closingTagPosition);
-            }
+        switch (rule.getTarget().useAs()) {
+            case LATEST_APP_VERSION:
+                useAsProperty.setLatestAppVersion(((MethodExecutor) executor).getInProperty().getContent());
+                break;
+            case UPDATE_DATE:
+                useAsProperty.setUpdateDate(((MethodExecutor) executor).getInProperty().getContent());
+                break;
+            case WINDOWS_X86_PACKAGE_URL:
+                useAsProperty.setWindowsX86packageURL(((MethodExecutor) executor).getInProperty().getContent());
+                break;
+            case WINDOWS_X64_PACKAGE_URL:
+                useAsProperty.setWindowsX64packageURL(((MethodExecutor) executor).getInProperty().getContent());
+                break;
         }
 
-        if (rule.in() != In.COLLECTION) {
-            htmlCursor = openingTag;
-        }
-
-        return webPageCode.substring(openingTag);
-    }
-
-    private int getFromIndex() {
-        if (rule.from() == From.CURSOR) {
-            return htmlCursor;
-        }
-
-        return 0;
+        // TODO: handle log
+        String logInfo = "RULE_EXEC: method={" + rule.getMethod().getSelectedMethod() + '}' + System.lineSeparator();
+        executionInternalLog.append(logInfo.intern());
     }
 }

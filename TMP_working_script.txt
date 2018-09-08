@@ -13,15 +13,25 @@ Search and get the next <a> tags with relative links under <table> tag.
 Continue until you get URL that end at "*.exe" (WIN_X86_PKG_URL) and "*x64.exe" (WIN_X64_PKG_URL).
 
 WEBPAGE_SOURCE_INFO_FINDER (WSIF):
-(1) | (From: Start), (In: HTML), (Search: FirstOf), (Type: Tag), (ThatIs: <h1>), (AfterAction: NextRule)
-(2) | (From: FileCursorPosition), (In: HMTL), (Search: FirstOf), (Type: Tag), (ThatIs: <p>), (AfterAction: NextRule)
-(3) | (From: Start), (In: Content), (Get: Word), (AtPosition: 3), (UseAs: LatestAppVersion), (AfterAction: NextRule)
-(4) | (From: FileCursorPosition), (In: Content), (Get: Word), (AtPosition: 1), (UseAs: UpdateDate), (AfterAction: NextRule)
-(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOf), (Type: Tag), (ThatIs: <table>), (AfterAction: NextRule)
-(6) | (From: Start), (In: Content), (Get: AllAnchorTags), (AfterAction: NextRule)
-(7) | (From: Start), (In: Collection), (LinkWithBaseURL: "https://www.7-zip.org"), (ApplyTo: NonURI), (AfterAction: NextRule)
-(8) | (From: Start), (In: Collection), (MatchRegex: "*.exe"), (Touch: FirstElement), (UseAs: WindowsX86PackageURL), (AfterAction: NextRule)
-(9) | (From: Start), (In: Collection), (MatchRegex: "*x64.exe"), (Touch: FirstElement), (UseAs: WindowsX64PackageURL), (AfterAction: Stop)
+(1) | In: HTML, firstOf(Type: String, "<h1>")  --->  "<h1>Download</h1>"
+(2) | In: Content, firstOf(Type: Tag, "<p>")  --->  "<p><b>Download 7-Zip 18.05 (2018-04-30) for Windows</b>:</p>"
+(3) | In: Content, X_SPLIT_WORDS   --->  collection := { [3]="18.05", [4]="(2018-04-30)" }
+(4) | In: Collection, extractWord(position: 3), UseAs: LatestAppVersion  --->  "18.05"
+(5) | In: Collection, extractWord(position: 4)  --->  "(2018-04-30)"
+(6) | In: Content, removeCharacters("()"), UseAs: UpdateDate  --->  "2018-04-30"
+
+=================================================
+====  DELETE FROM TRAIT
+====  Every Rule execution produces either
+======== Content or Collection
+=================================================
+
+
+(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOf), (Type: Tag), (ThatIs: <table>)
+(6) | (From: Start), (In: Content), (Get: AllAnchorTags)
+(7) | (From: Start), (In: Collection), (LinkWithBaseURL: "https://www.7-zip.org"), (ApplyTo: NonURI)
+(8) | (From: Start), (In: Collection), (MatchRegex: "*.exe"), (Touch: FirstElement), (UseAs: WindowsX86PackageURL)
+(9) | (From: Start), (In: Collection), (MatchRegex: "*x64.exe"), (Touch: FirstElement), (UseAs: WindowsX64PackageURL)
 
 CURRENT_APP_VERSION={ set; get; }
 PKG_HASH={ MD5, SHA-1 }

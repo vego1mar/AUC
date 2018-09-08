@@ -8,4 +8,10 @@ public interface MethodExecutable {
 
     void firstOf(@NotNull Targetable target, @NotNull FirstOfType type, @NotNull String text);
 
+    void extractWord(@NotNull Targetable target, int position);
+
+    void splitWords();
+
+    void removeCharacters(@NotNull Targetable target, @NotNull String characters);
+
 }

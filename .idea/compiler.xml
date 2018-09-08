@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AUC" target="10.0" />
+      <module name="AUC" target="1.10" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

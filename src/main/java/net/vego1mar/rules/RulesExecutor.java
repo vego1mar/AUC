@@ -1,12 +1,12 @@
 package net.vego1mar.rules;
 
-import java.util.LinkedList;
+import java.util.Deque;
+import net.vego1mar.utils.ReflectionHelper;
+import org.apache.log4j.Logger;
 import net.vego1mar.rules.auxiliary.method.Method;
 import net.vego1mar.rules.auxiliary.target.Target;
 import net.vego1mar.rules.auxiliary.useasproperty.UseAsInterface;
 import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
-import net.vego1mar.rules.enumerators.traits.AfterActionTrait;
-import net.vego1mar.rules.enumerators.traits.FromTrait;
 import net.vego1mar.rules.enumerators.traits.InTrait;
 import net.vego1mar.rules.enumerators.traits.MethodTrait;
 import net.vego1mar.rules.enumerators.traits.UseAsTrait;
@@ -14,36 +14,46 @@ import org.jetbrains.annotations.NotNull;
 
 public final class RulesExecutor {
 
-    protected MethodExecutable executor;
-    private LinkedList<RuleBased> rulesSet;
+    private static final Logger log = Logger.getLogger(RulesExecutor.class);
+    private MethodExecutable executor;
+    private Deque<RuleBased> rulesSet;
     private RuleBased currentRule;
     private UseAsInterface useAsProperty;
-    private StringBuilder executionInternalLog;
 
-    // TODO: replace LinkedList with List enforcing LinkedList type
-    public RulesExecutor(@NotNull LinkedList<RuleBased> rulesSet, @NotNull String htmlCode) {
+    public RulesExecutor(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
         executor = new MethodExecutor();
         ((MethodExecutor) executor).getInProperty().setCode(htmlCode);
         this.rulesSet = rulesSet;
-
-        currentRule = rulesSet.isEmpty()
-            ? new Rule(new Target(FromTrait.START, InTrait.HTML, UseAsTrait.IGNORE), new Method(MethodTrait.FIRST_OF), AfterActionTrait.STOP)
-            : rulesSet.removeFirst();
-
+        currentRule = new Rule(new Target(InTrait.HTML, UseAsTrait.IGNORE), new Method(MethodTrait.FIRST_OF));
         useAsProperty = new UseAsProperty();
-        executionInternalLog = new StringBuilder();
-        String logInfo = "CTOR: rulesSet={" + rulesSet + "}, htmlCode={" + htmlCode + '}' + System.lineSeparator();
-        executionInternalLog.append(logInfo);
+        log.info(ReflectionHelper.getCurrentMethodName() + "(rulesSet=" + rulesSet + "; htmlCode.length()=" + htmlCode.length() + ')');
     }
 
-    // TODO: change access to private and use :execute() instead
-    public void executeRule(@NotNull RuleBased rule) {
+    public void execute() {
+        while (!rulesSet.isEmpty()) {
+            currentRule = rulesSet.removeFirst();
+            executeRule(currentRule);
+            log.info("Rule " + currentRule + " executed.");
+        }
+
+        log.info(ReflectionHelper.getCurrentMethodName() + "() completed");
+    }
+
+    private void executeRule(@NotNull RuleBased rule) {
+        Method currentMethod = (Method) rule.getMethod();
+
         switch (rule.getMethod().getSelectedMethod()) {
             case FIRST_OF:
-                Method currentMethod = (Method) rule.getMethod();
                 executor.firstOf(rule.getTarget(), currentMethod.getFirstOfType(), currentMethod.getFirstOfText());
-            case EXTRACT_WORD:
                 break;
+            case EXTRACT_WORD:
+                executor.extractWord(rule.getTarget(), currentMethod.getExtractWordPosition());
+                break;
+            case SPLIT_WORDS:
+                executor.splitWords();
+                break;
+            case REMOVE_CHARACTERS:
+                executor.removeCharacters(rule.getTarget(), currentMethod.getRemoveCharactersSigns());
         }
 
         switch (rule.getTarget().useAs()) {
@@ -61,8 +71,6 @@ public final class RulesExecutor {
                 break;
         }
 
-        // TODO: handle log
-        String logInfo = "RULE_EXEC: method={" + rule.getMethod().getSelectedMethod() + '}' + System.lineSeparator();
-        executionInternalLog.append(logInfo.intern());
+        log.info(ReflectionHelper.getCurrentMethodName() + "(rule=" + rule + ')');
     }
 }

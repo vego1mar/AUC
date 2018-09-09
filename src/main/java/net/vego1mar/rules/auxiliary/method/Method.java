@@ -11,6 +11,8 @@ public class Method implements Methodable {
     private String firstOfText;
     private int extractWordPosition;
     private String removeCharactersSigns;
+    private String retrieveAllTagsTag;
+    private String prependText;
 
     public Method(MethodTrait method) {
         selectedMethod = method;
@@ -18,6 +20,8 @@ public class Method implements Methodable {
         firstOfText = "";
         extractWordPosition = 1;
         removeCharactersSigns = "";
+        retrieveAllTagsTag = "";
+        prependText = "";
     }
 
     @Override public MethodTrait getSelectedMethod() {
@@ -51,5 +55,43 @@ public class Method implements Methodable {
 
     public String getRemoveCharactersSigns() {
         return removeCharactersSigns;
+    }
+
+    @Override public void retrieveAllTags(@NotNull String tag) {
+        retrieveAllTagsTag = tag;
+    }
+
+    public String getRetrieveAllTagsTag() {
+        return retrieveAllTagsTag;
+    }
+
+    @Override public void prepend(@NotNull String text) {
+        prependText = text;
+    }
+
+    public String getPrependText() {
+        return prependText;
+    }
+
+    @Override public String toString() {
+        String prepender = '{' + selectedMethod.name() + "; ";
+
+        switch (selectedMethod) {
+            case FIRST_OF:
+                return prepender + "type=" + firstOfType.name() + "; text=" + firstOfText + '}';
+            case EXTRACT_WORD:
+                return prepender + "extractWordPosition=" + extractWordPosition + '}';
+            case REMOVE_CHARACTERS:
+                return prepender + "removeCharactersSigns=" + removeCharactersSigns + '}';
+            case RETRIEVE_ALL_TAGS:
+                return prepender + "retrieveAllTagsTag=" + retrieveAllTagsTag + '}';
+            case PREPEND:
+                return prepender + "prependText=" + prependText + '}';
+            case SPLIT_WORDS:
+            case FETCH_HREFS:
+                return prepender.substring(0, prepender.length() - 2) + '}';
+        }
+
+        return getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(this));
     }
 }

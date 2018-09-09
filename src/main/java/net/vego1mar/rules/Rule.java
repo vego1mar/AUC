@@ -22,5 +22,8 @@ public final class Rule implements RuleBased {
         return method;
     }
 
-    // TODO: override toString() for logging purposes
+    @Override public String toString() {
+        return "{target=" + target.toString() + "; method=" + method.toString() + '}';
+    }
+
 }

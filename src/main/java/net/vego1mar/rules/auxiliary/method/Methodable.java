@@ -8,10 +8,16 @@ public interface Methodable {
 
     MethodTrait getSelectedMethod();
 
+    String toString();
+
     void firstOf(FirstOfType type, @NotNull String text);
 
     void extractWord(int position);
 
     void removeCharacters(@NotNull String signs);
+
+    void retrieveAllTags(@NotNull String tag);
+
+    void prepend(@NotNull String text);
 
 }

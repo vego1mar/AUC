@@ -2,36 +2,27 @@
 APPS-UPDATES-COLLECTOR
 ===================================================
 
+AppInfoCollector.class
+
 APP_NAME: 7-Zip
 SOURCE: https://www.7-zip.org/download.html
 
-INFO_AQUIRING_APPROACH_ALGORITHM:
-Search the first occurence of <h1> tag.
-Search the first occurence of <p> tag.
-Get the 3rd word to obtain the LATEST_APP_VERSION and the 4th to gain UPDATE_DATE.
-Search and get the next <a> tags with relative links under <table> tag. 
-Continue until you get URL that end at "*.exe" (WIN_X86_PKG_URL) and "*x64.exe" (WIN_X64_PKG_URL).
 
 WEBPAGE_SOURCE_INFO_FINDER (WSIF):
-(1) | In: HTML, firstOf(Type: String, "<h1>")  --->  "<h1>Download</h1>"
-(2) | In: Content, firstOf(Type: Tag, "<p>")  --->  "<p><b>Download 7-Zip 18.05 (2018-04-30) for Windows</b>:</p>"
-(3) | In: Content, X_SPLIT_WORDS   --->  collection := { [3]="18.05", [4]="(2018-04-30)" }
-(4) | In: Collection, extractWord(position: 3), UseAs: LatestAppVersion  --->  "18.05"
-(5) | In: Collection, extractWord(position: 4)  --->  "(2018-04-30)"
-(6) | In: Content, removeCharacters("()"), UseAs: UpdateDate  --->  "2018-04-30"
+(01) | In: HTML, firstOf(Type: String, "h1")  --->  "<h1>Download</h1>" (...)
+(02) | In: Content, firstOf(Type: Tag, "p")  --->  "<p><b>Download 7-Zip 18.05 (2018-04-30) for Windows</b>:</p>"
+(03) | CONTENT_INTO_COLLECTION : splitWords()   --->  collection := { [3]="18.05", [4]="(2018-04-30)" }
+(04) | In: Collection, extractWord(position: 3), UseAs: LatestAppVersion  --->  "18.05"
+(05) | In: Collection, extractWord(position: 4)  --->  "(2018-04-30)"
+(06) | In: Content, removeCharacters("()"), UseAs: UpdateDate  --->  "2018-04-30"
+(07) | REPEAT: (1)
+(08) | In: Content, firstOf(Type: Tag, "table")  --->  "<table (...)</table>"
+(09) | CONTENT_INTO_COLLECTION : retrieveAllTags("a")  --->  collection := { [1]="<a href="a/7z1805.exe">Download</a>" }
+(10) | In: Collection, fetchHrefs()  --->  collection := { [1]="a/7z1805.exe", [2]="a/7z1805-x64.exe" }
+(11) | In: Collection, prepend("https://www.7-zip.org/")  --->  collection := { [1]="https://www.7-zip.org/a/7z1805.exe" }
+(12) | In: Collection, extractWord(position: 1), UseAs: WindowsX86PackageURL
+(13) | In: Collection, extractWord(position: 2), UseAs: WindowsX64PackageURL
 
-=================================================
-====  DELETE FROM TRAIT
-====  Every Rule execution produces either
-======== Content or Collection
-=================================================
-
-
-(5) | (From: FileCursorPosition), (In: HTML), (Search: FirstOf), (Type: Tag), (ThatIs: <table>)
-(6) | (From: Start), (In: Content), (Get: AllAnchorTags)
-(7) | (From: Start), (In: Collection), (LinkWithBaseURL: "https://www.7-zip.org"), (ApplyTo: NonURI)
-(8) | (From: Start), (In: Collection), (MatchRegex: "*.exe"), (Touch: FirstElement), (UseAs: WindowsX86PackageURL)
-(9) | (From: Start), (In: Collection), (MatchRegex: "*x64.exe"), (Touch: FirstElement), (UseAs: WindowsX64PackageURL)
 
 CURRENT_APP_VERSION={ set; get; }
 PKG_HASH={ MD5, SHA-1 }

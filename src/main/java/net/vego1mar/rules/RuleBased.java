@@ -9,4 +9,6 @@ public interface RuleBased {
 
     Methodable getMethod();
 
+    String toString();
+
 }

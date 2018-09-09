@@ -14,4 +14,10 @@ public interface MethodExecutable {
 
     void removeCharacters(@NotNull Targetable target, @NotNull String characters);
 
+    void retrieveAllTags(@NotNull String tag);
+
+    void fetchHrefs(@NotNull Targetable target);
+
+    void prepend(@NotNull Targetable target, @NotNull String text);
+
 }

@@ -1,6 +1,8 @@
 package net.vego1mar.rules;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import net.vego1mar.rules.auxiliary.inproperty.InInterface;
 import net.vego1mar.rules.auxiliary.inproperty.InProperty;
@@ -36,6 +38,7 @@ public final class MethodExecutor implements MethodExecutable {
     }
 
     private void firstOfInString(@NotNull String source, FirstOfType searchType, String text) {
+        text = '<' + text;
         int startIndex = source.indexOf(text);
 
         if (searchType == FirstOfType.STRING) {
@@ -44,7 +47,7 @@ public final class MethodExecutor implements MethodExecutable {
         }
 
         if (searchType == FirstOfType.TAG) {
-            String closingTag = "</" + text.substring(1, text.length() - 1) + '>';
+            String closingTag = "</" + text.substring(1) + '>';
             int endIndex = source.indexOf(closingTag, startIndex);
             inProperty.setContent(source.substring(startIndex, endIndex + closingTag.length()));
         }
@@ -98,4 +101,72 @@ public final class MethodExecutor implements MethodExecutable {
 
         inProperty.setContent(source);
     }
+
+    @Override public void retrieveAllTags(@NotNull String tag) {
+        String content = inProperty.getContent();
+        String openingTag = '<' + tag;
+        String closingTag = "</" + tag + '>';
+        List<String> listOfTags = new LinkedList<>();
+        int startIndex = 0;
+        int endIndex = 0;
+
+        while (!content.isEmpty()) {
+            startIndex = content.indexOf(openingTag);
+            endIndex = content.indexOf(closingTag) + tag.length() + 3;
+
+            if (startIndex < 0 || endIndex < 0) {
+                break;
+            }
+
+            listOfTags.add(content.substring(startIndex, endIndex));
+            content = content.substring(endIndex);
+        }
+
+        inProperty.setCollection(listOfTags);
+    }
+
+    @Override public void fetchHrefs(@NotNull Targetable target) {
+        switch (target.in()) {
+            case HTML:
+            case CONTENT:
+                // TODO: provide implementation variants
+                throw new UnsupportedOperationException();
+            case COLLECTION:
+                fetchHrefs(inProperty.getCollection());
+                break;
+        }
+    }
+
+    private void fetchHrefs(@NotNull List<String> collection) {
+        List<String> hrefs = new ArrayList<>();
+
+        for (String item : collection) {
+            int startIndex = item.indexOf("href=") + 6;
+            int endIndex = item.indexOf('\"', startIndex);
+
+            if (startIndex >= 0 && endIndex >= 0) {
+                hrefs.add(item.substring(startIndex, endIndex));
+            }
+        }
+
+        inProperty.setCollection(hrefs);
+    }
+
+    @Override public void prepend(@NotNull Targetable target, @NotNull String text) {
+        switch (target.in()) {
+            case HTML:
+            case CONTENT:
+                // TODO: provide implementation variants
+                throw new UnsupportedOperationException();
+            case COLLECTION:
+                prepend(inProperty.getCollection(), text);
+        }
+    }
+
+    private void prepend(@NotNull List<String> collection, @NotNull String text) {
+        for (int i = 0; i < collection.size(); i++) {
+            collection.set(i, text + collection.get(i));
+        }
+    }
+
 }

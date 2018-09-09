@@ -1,6 +1,7 @@
 package net.vego1mar.rules;
 
 import java.util.Deque;
+import net.vego1mar.rules.auxiliary.inproperty.InInterface;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import net.vego1mar.rules.auxiliary.method.Method;
@@ -26,17 +27,20 @@ public final class RulesExecutor {
         this.rulesSet = rulesSet;
         currentRule = new Rule(new Target(InTrait.HTML, UseAsTrait.IGNORE), new Method(MethodTrait.FIRST_OF));
         useAsProperty = new UseAsProperty();
-        log.info(ReflectionHelper.getCurrentMethodName() + "(rulesSet=" + rulesSet + "; htmlCode.length()=" + htmlCode.length() + ')');
+        String identity = '@' + Integer.toHexString(System.identityHashCode(this));
+        log.info(getClass().getSimpleName() + identity + "(rulesSet.size()=" + rulesSet.size() + "; htmlCode.length()=" + htmlCode.length() + ')');
     }
 
     public void execute() {
+        String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
+
         while (!rulesSet.isEmpty()) {
             currentRule = rulesSet.removeFirst();
             executeRule(currentRule);
-            log.info("Rule " + currentRule + " executed.");
+            log.info("Rule at " + identity + currentRule + " executed.");
         }
 
-        log.info(ReflectionHelper.getCurrentMethodName() + "() completed");
+        log.info(identity + ':' + ReflectionHelper.getCurrentMethodName() + "() completed");
     }
 
     private void executeRule(@NotNull RuleBased rule) {
@@ -54,23 +58,35 @@ public final class RulesExecutor {
                 break;
             case REMOVE_CHARACTERS:
                 executor.removeCharacters(rule.getTarget(), currentMethod.getRemoveCharactersSigns());
+                break;
+            case RETRIEVE_ALL_TAGS:
+                executor.retrieveAllTags(currentMethod.getRetrieveAllTagsTag());
+                break;
+            case FETCH_HREFS:
+                executor.fetchHrefs(rule.getTarget());
+                break;
+            case PREPEND:
+                executor.prepend(rule.getTarget(), currentMethod.getPrependText());
+                break;
         }
+
+        InInterface inProperty = ((MethodExecutor) executor).getInProperty();
 
         switch (rule.getTarget().useAs()) {
+            case IGNORE:
+                break;
             case LATEST_APP_VERSION:
-                useAsProperty.setLatestAppVersion(((MethodExecutor) executor).getInProperty().getContent());
+                useAsProperty.setLatestAppVersion(inProperty.getContent());
                 break;
             case UPDATE_DATE:
-                useAsProperty.setUpdateDate(((MethodExecutor) executor).getInProperty().getContent());
+                useAsProperty.setUpdateDate(inProperty.getContent());
                 break;
             case WINDOWS_X86_PACKAGE_URL:
-                useAsProperty.setWindowsX86packageURL(((MethodExecutor) executor).getInProperty().getContent());
+                useAsProperty.setWindowsX86packageURL(inProperty.getContent());
                 break;
             case WINDOWS_X64_PACKAGE_URL:
-                useAsProperty.setWindowsX64packageURL(((MethodExecutor) executor).getInProperty().getContent());
+                useAsProperty.setWindowsX64packageURL(inProperty.getContent());
                 break;
         }
-
-        log.info(ReflectionHelper.getCurrentMethodName() + "(rule=" + rule + ')');
     }
 }

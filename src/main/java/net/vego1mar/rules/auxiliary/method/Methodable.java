@@ -8,8 +8,6 @@ public interface Methodable {
 
     MethodTrait getSelectedMethod();
 
-    String toString();
-
     void firstOf(FirstOfType type, @NotNull String text);
 
     void extractWord(int position);

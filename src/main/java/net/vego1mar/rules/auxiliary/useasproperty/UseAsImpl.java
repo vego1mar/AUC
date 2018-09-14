@@ -1,6 +1,6 @@
 package net.vego1mar.rules.auxiliary.useasproperty;
 
-public interface UseAsInterface {
+public interface UseAsImpl {
 
     String getLatestAppVersion();
 

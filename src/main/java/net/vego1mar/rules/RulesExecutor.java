@@ -6,11 +6,12 @@ import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import net.vego1mar.rules.auxiliary.method.Method;
 import net.vego1mar.rules.auxiliary.target.Target;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsInterface;
+import net.vego1mar.rules.auxiliary.useasproperty.UseAsImpl;
 import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
 import net.vego1mar.rules.enumerators.traits.InTrait;
 import net.vego1mar.rules.enumerators.traits.MethodTrait;
 import net.vego1mar.rules.enumerators.traits.UseAsTrait;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 public final class RulesExecutor {
@@ -19,7 +20,7 @@ public final class RulesExecutor {
     private MethodExecutable executor;
     private Deque<RuleBased> rulesSet;
     private RuleBased currentRule;
-    private UseAsInterface useAsProperty;
+    private UseAsImpl useAsProperty;
 
     public RulesExecutor(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
         executor = new MethodExecutor();
@@ -89,4 +90,9 @@ public final class RulesExecutor {
                 break;
         }
     }
+
+    @Contract(pure = true) public UseAsImpl getResults() {
+        return useAsProperty;
+    }
+
 }

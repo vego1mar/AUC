@@ -33,7 +33,7 @@ public final class MethodExecutor implements MethodExecutable {
                 break;
             case COLLECTION:
                 // TODO: provide collection variant
-                break;
+                throw new UnsupportedOperationException();
         }
     }
 

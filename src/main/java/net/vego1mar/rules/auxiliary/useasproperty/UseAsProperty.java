@@ -1,7 +1,10 @@
 package net.vego1mar.rules.auxiliary.useasproperty;
 
-public class UseAsProperty implements UseAsInterface {
+import java.io.Serializable;
 
+public class UseAsProperty implements UseAsImpl, Serializable {
+
+    private static final long serialVersionUID = 2L;
     private String latestAppVersion;
     private String updateDate;
     private String windowsX86packageURL;
@@ -45,4 +48,5 @@ public class UseAsProperty implements UseAsInterface {
     @Override public void setWindowsX64packageURL(String windowsX64packageURL) {
         this.windowsX64packageURL = windowsX64packageURL;
     }
+
 }

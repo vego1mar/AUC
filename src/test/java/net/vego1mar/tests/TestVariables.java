@@ -8,10 +8,12 @@ import org.jetbrains.annotations.NotNull;
 
 public final class TestVariables {
 
-    private static final Logger log = Logger.getLogger(TestVariables.class);
-    public static final String WEBPAGE_OF_7ZIP = "runtime/7zip_wp.txt";
+    public static final String WEBPAGE_OF_7ZIP = "runtime/tests/7zip_wp.txt";
     public static final String SOURCE_URL_OF_7ZIP = "https://www.7-zip.org/download.html";
     public static final String SERIALIZATION_FILE_NAME_OF_7ZIP = "runtime/7-Zip.ser";
+    public static final String XML_RULES_SET_OF_7ZIP_RUNTIME = "runtime/7zip_settings.xml";
+    public static final String XML_RULES_SET_OF_7ZIP_PATTERN_SOURCE = "runtime/tests/7zip_settings__patternSource.xml";
+    private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {
         // This should be a utility class.

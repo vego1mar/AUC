@@ -1,0 +1,309 @@
+
+
+
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>AIMP</title>
+			<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+			<meta name="description" content="AIMP : Free Audio Player : ??????????? ???? ?????????" />
+			<meta name="keywords" content="?????????? ?????????, ??????????, free soft, ????, ?????????? AIMP, freeware, ????????, ??????????? ???????????, ??????? ??????, ??????????, ?????????? AIMP, ????, ?????????? ????, AIMP, AIMP Classic, ???????, ??????? ??¤ AIMP, ????????? AIMP, ????????? AIMP, ???????? AIMP, ??????????, ????, EQ, eq, ?????? ????, plugins, ???????, ??????? ?????" />
+			<meta name="robots" content="all" />
+			<meta name="revisit-after" content="1 days" />
+			<meta name="wot-verification" content="6f5a7f567fbddd8ad094"/>
+			<meta name="theme-color" content="#FF9F19">
+			<meta name="yandex-tableau-widget" content="logo=/data/images/tile50.png, color=#FF9B19" />
+			
+			
+			
+			<link rel="apple-touch-icon" href="/data/images/tile120.png" sizes="120x120">
+			<link rel="apple-touch-icon" href="/data/images/tile152.png" sizes="152x152">
+			<link rel="apple-touch-icon" href="/data/images/tile180.png" sizes="180x180">
+			
+			<script type="text/javascript" src="/data/scripts/lightbox.js"></script>
+			<script type="text/javascript" src="/data/scripts/slider.js"></script>
+			<script type="text/javascript" src="/data/scripts/utils.js"></script>
+			
+			<link rel="stylesheet" href="/data/scripts/lightbox.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="/data/scripts/slider.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="/data/theme.css" type="text/css" />
+			<link rel="stylesheet" href="/data/theme.desktop.css" type="text/css" />
+			
+			<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+			<link rel="alternate" type="application/rss+xml" title="AIMP - RSS" href="/rss.php" />
+			<link rel="alternate" type="application/rss+xml" title="AIMP Catalog - RSS" href="/rss.php?ch=catalog" />
+		</head>
+		<body>
+			
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter34143930 = new Ya.Metrika({
+							id:34143930,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true,
+							trackHash:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/34143930" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+		<!-- /Yandex.Metrika counter -->			
+			
+			<!-- Rating@Mail.ru counter -->
+			<script type="text/javascript">
+			var _tmr = _tmr || [];
+			_tmr.push({id: "988583", type: "pageView", start: (new Date()).getTime()});
+			(function (d, w) {
+			   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+			   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+			   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+			   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+			})(document, window);
+			</script><noscript><div style="position:absolute;left:-9999px;">
+			<img src="//top-fwz1.mail.ru/counter?id=988583;js=na" style="border:0;" height="1" width="1" alt="???????@Mail.ru" />
+			</div></noscript>
+			<!-- //Rating@Mail.ru counter -->
+		
+		<div id="main_menu">			
+			<table align="center">
+			<tr>
+				<td width="200px"></td>
+				<td width="580px">			
+					<a href="/" title="Main page">Main page</a>
+					<a href="/?do=download" title="Download">Download</a>
+					<a href="/?do=catalog" title="Addons">Addons</a>
+					<a href="/forum/index.php" title="Forum">Forum</a>
+					<a href="/blogs/" title="Blog">Blog</a>
+					<a href="/?do=feedback" title="Feedback">Feedback</a>
+				</td>
+				<td width="100px"></td>
+				<td width="100px">
+					<a href="?do=lang&amp;lng=ru" title="??????? ????">RU</a>
+					<a href="?do=lang&amp;lng=en" title="English Language">EN</a>					
+				</td>
+			</tr>
+			</table>
+		</div>
+		<div id="header">
+			<div id="header_content">
+				<div class="slider" id="preview" title="autoplay:true; frames:7; source:/data/images/features/preview.png"></div>
+				<div id="header_logo">
+					<a class="button_download_windows" href="?do=download">
+						<span class="button_download_text">v4.51 Build 2080  (07.07.2018)</span>
+					</a>
+					<a class="button_download_android" href="?do=download&amp;os=android">
+						<span class="button_download_text">v2.71 Build 559  (10.08.2018)</span>
+					</a>
+				</div>
+			</div>
+		</div>
+			
+		<script type="text/javascript">
+			zSlider.initialize(document.getElementById("preview"));
+		</script>
+		
+		<div id="page">
+			<table id="page_container" align="center">
+			<tr><td>
+				<table id="page_background" align="center" cellspacing="0">
+				<tr valign="top">
+					<td id="page_blocks_area_left">
+		<div class="block">
+			<div class="block_header">AIMP</div>
+			<div class="block_content">
+				<ul>
+					<li><a href="/">Main page</a></li>
+					<li><a href="/?do=awards">Our awards</a></li>
+					<li><a href="/?do=banners">Banners</a></li>
+					<li><a href="forum/index.php">Forum</a></li>
+					<li><a href="/?do=feedback">Feedback</a></li>
+				</ul>
+			</div>
+			<div class="block_separator">For Windows</div>
+			<div class="block_content">
+				<ul>
+					<li><a href="/?do=features">Main features</a></li>
+					<li><a href="/?do=changelog">Change Log</a></li>
+					<li><a href="/forum/index.php?topic=259.0">F.A.Q.</a></li>
+					<li><a href="/?do=download">Download</a>
+						<ol>
+							<li><a href="/?do=download&amp;cat=old">Old Versions</a></li>
+							<li><a href="/?do=download&amp;cat=se">Skin Editor</a></li>
+							<li><a href="/?do=download&amp;cat=lng">Localization Editor</a></li>
+							<li><a href="/?do=download&amp;cat=sdk"> SDK </a></li>
+						</ol>
+					</li>
+					<li><a href="/?do=catalog&amp;os=windows">Addons</a>
+						<ol>
+							<li><a href="/?do=catalog&amp;os=windows&amp;id=0">Skins</a></li>
+							<li><a href="/?do=catalog&amp;os=windows&amp;id=1">Icons</a></li>
+							<li><a href="/?do=catalog&amp;os=windows&amp;id=2">Plugins</a></li>
+							<li><a href="/?do=catalog&amp;os=windows&amp;id=3">Wallpapers</a></li>
+							<li><a href="http://www.aimp.ru/forum/index.php?topic=34387.msg221403#msg221403">Encoders</a></li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="block_separator">For Android</div>
+			<div class="block_content">
+				<ul>
+					<li><a href="/?do=features&amp;os=android">Main features</a></li>
+					<li><a href="/?do=changelog&amp;os=android">Change Log</a></li>
+					<li><a href="/?do=download&amp;os=android">Download</a>
+						<ol>
+							<li><a href="/?do=download&amp;cat=old&amp;os=android">Old Versions</a></li>
+							<li><a href="/?do=download&amp;cat=se&amp;os=android">Skin Editor</a></li>
+							<li><a href="/?do=download&amp;cat=lng">Localization Editor</a></li>
+						</ol>				
+					</li>
+						<li><a href="/?do=catalog&amp;os=android">Addons</a>
+						<ol>
+							<li><a href="/?do=catalog&amp;os=android&amp;id=0">Skins</a></li>
+							<li><a href="/?do=catalog&amp;os=android&amp;id=3">Wallpapers</a></li>
+						</ol>
+					</li>
+					<li><a href="/forum/index.php?topic=39542.0">F.A.Q.</a></li>
+				</ul>
+			</div>		
+		</div>
+			<div class="block">
+				<div class="block_header"><nobr>Links</nobr></div>
+				<div class="block_content">
+			<noindex>
+				<ul>
+					<li><a rel="nofollow" href="http://aimp.com.pl">Polish Community</a></li>				
+				</ul>
+			</noindex></div>
+			</div>
+			<div class="block">
+				<div class="block_header"><nobr>Our friends</nobr></div>
+				<div class="block_content">
+			<noindex> 
+				<div class="spacer"></div>
+				<a rel="nofollow" href="http://freesoft.ru/"><img src="http://freesoft.ru/img/logo/logosmall.gif" alt="freeSOFT.ru - ????? ????????" width="100" height="25"/></a><br/>
+				<div class="spacer"></div>
+				<a rel="nofollow" href="http://slo.ru"><img src="http://slo.ru/img/but.gif" alt="SLO.RU" height="31" width="88" vspace="1" /></a><br/>
+				<div class="spacer"></div>
+				<a rel="nofollow" href="http://tcup.pl"><img src="/images/banners/tcup.png" alt="Total Commander Ultima Prime" height="29" width="88" vspace="1" /></a><br/>
+				<div class="spacer"></div>
+				<a rel="nofollow" href="http://pmetro.chpeks.com/"><img src="/images/banners/pmetro.png" alt="pMetro" height="31" width="88" vspace="1" /></a><br/>
+				<div class="spacer"></div>
+			</noindex>
+				<a href="http://hotdownloads.ru/"><img src="http://hotdownloads.ru/i/hotdownloads-88x31.png" alt="Hotdownloads.ru"></a><br/></div>
+			</div>
+					</td>
+					<td id="page_content"><div id="page_title">Download Center » AIMP for Windows</div>
+			<table class="card no_font_boosting">
+				<tr class="card_header no_font_boosting"> 
+					<td colspan="2">
+						<div class="card_title">AIMP v4.51, build 2080</div><div class="card_description">07.07.2018 | 10.1 MByte | MD5: 5a11962272e8dc7777525fd878e95e5d</div>
+					</td>
+				</tr>
+				<tr class="card_content">
+					<td valign="top" width="104">
+						<div class="card_preview_host">
+							<img src="data/images/icons/icon-aimp.png" alt="Preview" />
+						</div>		
+					</td><td valign="top"><b>Requirements:</b><br/>
+	 <ul>
+		<li>Windows Vista / Windows 7 / Windows 8 (8.1) / Windows 10</li>
+		<li>Minimal screen resolution: 1024x768</li>
+	 </ul><br/><b>Download from:</b><br/><ul><li><a href="http://aimp.su/storage/5a11962272e8dc7777525fd878e95e5d/aimp_4.51.2080.exe">AIMP.RU</a></li><li><a href="https://programki.net/files/aimp/5a11962272e8dc7777525fd878e95e5d/aimp_4.51.2080.exe">Programki.net</a></li><li><a href="https://yadi.sk/d/u_9M5jXG3YuFWH">Yandex Disk</a></li><li><a href="http://www.programosy.pl/program,aimp.html">Programosy.pl</a></li></ul></td></tr>
+					<tr>
+						<td colspan="2">
+							
+		<br/>
+	This software uses BPM Detection algorithm based on code from <a target="_blank" href="http://www.surina.net/soundtouch/">SoundTouch Library</a> licensed under the <a href=http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>LGPLv2.1</a> and its source can be downloaded <a target="_blank" href="http://aimp.ru/files/windows/sources/aimpsoundoutbpm.zip">here</a>.
+		<br/><br/>
+	This software uses code of <a target="_blank" href="http://FFmpeg.org">FFmpeg</a> licensed under the LGPLv2.1 and its source can be downloaded <a href="http://aimp.ru/files/windows/sources/FFmpeg-3.2.4-aimp.zip">here</a>.
+	
+						</td>
+					</tr>
+				<tr>
+					<td colspan="2">
+						<br/><center><a target="_blank" href="/files/windows/EULA_lang-en.txt">License agreement</a> | <a href="/?do=features">Main features</a> | <a href="/?do=changelog&amp;ver=451&amp;merge=1">Change Log</a> | <a href="/?do=download&amp;cat=old">Old Versions</a></center>
+					</td>
+				</tr>
+			</table>
+					</td>
+					<td id="page_blocks_area_right">
+			<div class="block">
+				<div class="block_header"><nobr>New Addons</nobr></div>
+				<div class="block_content">
+				<a href="/?do=catalog&amp;os=windows&amp;rec_id=904">
+					<img class="catalog_news_image" src="/files/windows/skins/k/Koyna_SM_sm.png" width="160" height="120" alt="Preview" /><br/>Koyna SM</a><br/>
+				<a href="/?do=catalog&amp;os=windows&amp;id=0">Skins</a></div>
+			</div>
+			<div class="block">
+				<div class="block_header"><nobr>Random addon</nobr></div>
+				<div class="block_content">
+				<a href="/?do=catalog&amp;os=windows&amp;rec_id=141">
+					<img class="catalog_news_image" src="/files/windows/skins/b/Black_Lineage_sm.jpg" width="160" height="120" alt="Preview" /><br/>Black Lineage v1.1</a><br/>
+				<a href="/?do=catalog&amp;os=windows&amp;id=0">Skins</a></div>
+			</div>
+			<div class="block">
+				<div class="block_header"><nobr>Blog</nobr></div>
+				<div class="block_content"><ul><li><a href="http://www.aimp.ru/blogs/?p=791">AIMP for Android v2.80 - Theme Editor</a></li><li><a href="http://www.aimp.ru/blogs/?p=786">AIMP for Android v2.80</a></li><li><a href="http://www.aimp.ru/blogs/?p=771">????? ?? 2018</a></li><li><a href="http://www.aimp.ru/blogs/?p=755">AIMP for Android v2.70</a></li><li><a href="http://www.aimp.ru/blogs/?p=739">AIMP for Android v2.60</a></li></ul></div>
+			</div>
+					</td>
+				</tr>
+				</table>
+			</td></tr>
+			</table>
+		</div>			
+		<div id="footer_menu">
+			<table align="center">
+			<tr>
+				<td>
+					<a href="/" title="Main page">Main page</a>
+					<a href="/?do=download" title="Download">Download</a>
+					<a href="/?do=catalog" title="Addons">Addons</a>
+					<a href="/forum/index.php" title="Forum">Forum</a>
+					<a href="/blogs/" title="Blog">Blog</a>
+					<a href="/?do=feedback" title="Feedback">Feedback</a>
+				</td>
+			</tr>
+			</table>			
+		</div>
+		<div>
+			<div id="footer_copyrights">
+				© Artem Izmaylov 2006-2018 | All rights reserved
+			</div>
+			<div id="footer_counter">
+				<iframe src="/data/counter.html" width="460" marginwidth="0" marginheight="0" height="36" scrolling="no" align="middle" frameborder="0"></iframe>
+			</div>
+		</div>		
+			<!-- GOOGLE -->
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+				try 
+				{
+					var pageTracker = _gat._getTracker("UA-9501126-1");
+						pageTracker._trackPageview();
+				} catch(err) {}
+			</script>
+			<!-- END OF GOOGLE -->
+			</body>
+		</html>

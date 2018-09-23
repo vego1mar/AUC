@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import net.vego1mar.rules.auxiliary.inproperty.InInterface;
+import net.vego1mar.rules.auxiliary.inproperty.InImpl;
 import net.vego1mar.rules.auxiliary.inproperty.InProperty;
 import net.vego1mar.rules.auxiliary.target.Targetable;
 import net.vego1mar.rules.enumerators.methods.firstof.FirstOfType;
@@ -13,35 +13,42 @@ import org.jetbrains.annotations.NotNull;
 
 public final class MethodExecutor implements MethodExecutable {
 
-    private InInterface inProperty;
+    private InImpl inProperty;
 
     public MethodExecutor() {
         inProperty = new InProperty();
     }
 
-    @Contract(pure = true) public InInterface getInProperty() {
+    @Contract(pure = true) public InImpl getInProperty() {
         return inProperty;
     }
 
     @Override public void firstOf(@NotNull Targetable target, @NotNull FirstOfType type, @NotNull String text) {
         switch (target.in()) {
             case HTML:
-                firstOfInString(inProperty.getCode(), type, text);
+                firstOf(inProperty.getCode(), type, text);
                 break;
             case CONTENT:
-                firstOfInString(inProperty.getContent(), type, text);
+                firstOf(inProperty.getContent(), type, text);
                 break;
             case COLLECTION:
-                // TODO: provide collection variant
                 throw new UnsupportedOperationException();
         }
     }
 
-    private void firstOfInString(@NotNull String source, FirstOfType searchType, String text) {
+    private void firstOf(@NotNull String source, FirstOfType searchType, String text) {
+        String oldText = text;
         text = '<' + text;
         int startIndex = source.indexOf(text);
 
         if (searchType == FirstOfType.STRING) {
+            startIndex = source.indexOf(oldText);
+
+            if (startIndex < 0) {
+                inProperty.setContent("");
+                return;
+            }
+
             inProperty.setContent(source.substring(startIndex));
             return;
         }
@@ -89,14 +96,14 @@ public final class MethodExecutor implements MethodExecutable {
                 removeCharacters(inProperty.getContent(), characters);
                 break;
             case COLLECTION:
-                // TODO: provide implementation variant
                 throw new UnsupportedOperationException();
         }
     }
 
     private void removeCharacters(@NotNull String source, @NotNull String characters) {
         for (char sign : characters.toCharArray()) {
-            source = source.replace(sign, Character.MIN_VALUE);
+            String signString = "" + sign;
+            source = source.replace(signString, "");
         }
 
         inProperty.setContent(source);
@@ -128,12 +135,22 @@ public final class MethodExecutor implements MethodExecutable {
     @Override public void fetchHrefs(@NotNull Targetable target) {
         switch (target.in()) {
             case HTML:
-            case CONTENT:
-                // TODO: provide implementation variants
                 throw new UnsupportedOperationException();
+            case CONTENT:
+                fetchHrefs(inProperty.getContent());
+                break;
             case COLLECTION:
                 fetchHrefs(inProperty.getCollection());
                 break;
+        }
+    }
+
+    private void fetchHrefs(@NotNull String source) {
+        int startIndex = source.indexOf("href=") + 6;
+        int endIndex = source.indexOf('\"', startIndex);
+
+        if (startIndex >= 0 && endIndex >= 0) {
+            inProperty.setContent(source.substring(startIndex, endIndex));
         }
     }
 
@@ -155,17 +172,46 @@ public final class MethodExecutor implements MethodExecutable {
     @Override public void prepend(@NotNull Targetable target, @NotNull String text) {
         switch (target.in()) {
             case HTML:
+                prepend(inProperty.getCode(), text);
+                break;
             case CONTENT:
-                // TODO: provide implementation variants
-                throw new UnsupportedOperationException();
+                prepend(inProperty.getContent(), text);
+                break;
             case COLLECTION:
                 prepend(inProperty.getCollection(), text);
         }
     }
 
+    private void prepend(@NotNull String source, @NotNull String text) {
+        inProperty.setContent(text + source);
+    }
+
     private void prepend(@NotNull List<String> collection, @NotNull String text) {
         for (int i = 0; i < collection.size(); i++) {
             collection.set(i, text + collection.get(i));
+        }
+
+        inProperty.setCollection(collection);
+    }
+
+    @Override public void grabUntil(@NotNull Targetable target, Character charStop) {
+        switch (target.in()) {
+            case HTML:
+                grabUntil(inProperty.getCode(), charStop);
+                break;
+            case CONTENT:
+                grabUntil(inProperty.getContent(), charStop);
+                break;
+            case COLLECTION:
+                throw new UnsupportedOperationException();
+        }
+    }
+
+    private void grabUntil(@NotNull String source, Character charStop) {
+        int charStopIndex = source.indexOf(charStop);
+
+        if (charStopIndex >= 0) {
+            inProperty.setContent(source.substring(0, charStopIndex));
         }
     }
 

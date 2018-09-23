@@ -7,5 +7,6 @@ public enum MethodTrait {
     REMOVE_CHARACTERS,
     RETRIEVE_ALL_TAGS,
     FETCH_HREFS,
-    PREPEND
+    PREPEND,
+    GRAB_UNTIL
 }

@@ -9,12 +9,16 @@ public class UseAsProperty implements UseAsImpl, Serializable {
     private String updateDate;
     private String windowsX86packageURL;
     private String windowsX64packageURL;
+    private String windowsX86hash;
+    private String windowsX64hash;
 
     public UseAsProperty() {
         latestAppVersion = "";
         updateDate = "";
         windowsX86packageURL = "";
         windowsX64packageURL = "";
+        windowsX86hash = "";
+        windowsX64hash = "";
     }
 
     @Override public String getLatestAppVersion() {
@@ -47,6 +51,22 @@ public class UseAsProperty implements UseAsImpl, Serializable {
 
     @Override public void setWindowsX64packageURL(String windowsX64packageURL) {
         this.windowsX64packageURL = windowsX64packageURL;
+    }
+
+    @Override public String getWindowsX86hash() {
+        return windowsX86hash;
+    }
+
+    @Override public void setWindowsX86hash(String windowsX86hash) {
+        this.windowsX86hash = windowsX86hash;
+    }
+
+    @Override public String getWindowsX64hash() {
+        return windowsX64hash;
+    }
+
+    @Override public void setWindowsX64hash(String windowsX64hash) {
+        this.windowsX64hash = windowsX64hash;
     }
 
 }

@@ -1,7 +1,7 @@
 package net.vego1mar.rules;
 
 import java.util.Deque;
-import net.vego1mar.rules.auxiliary.inproperty.InInterface;
+import net.vego1mar.rules.auxiliary.inproperty.InImpl;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import net.vego1mar.rules.auxiliary.method.Method;
@@ -69,9 +69,12 @@ public final class RulesExecutor {
             case PREPEND:
                 executor.prepend(rule.getTarget(), currentMethod.getPrependText());
                 break;
+            case GRAB_UNTIL:
+                executor.grabUntil(rule.getTarget(), currentMethod.getGrabUntilCharStop());
+                break;
         }
 
-        InInterface inProperty = ((MethodExecutor) executor).getInProperty();
+        InImpl inProperty = ((MethodExecutor) executor).getInProperty();
 
         switch (rule.getTarget().useAs()) {
             case IGNORE:
@@ -87,6 +90,12 @@ public final class RulesExecutor {
                 break;
             case WINDOWS_X64_PACKAGE_URL:
                 useAsProperty.setWindowsX64packageURL(inProperty.getContent());
+                break;
+            case WINDOWS_X86_HASH:
+                useAsProperty.setWindowsX86hash(inProperty.getContent());
+                break;
+            case WINDOWS_X64_HASH:
+                useAsProperty.setWindowsX64hash(inProperty.getContent());
                 break;
         }
     }

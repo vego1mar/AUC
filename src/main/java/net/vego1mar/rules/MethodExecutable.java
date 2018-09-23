@@ -20,4 +20,6 @@ public interface MethodExecutable {
 
     void prepend(@NotNull Targetable target, @NotNull String text);
 
+    void grabUntil(@NotNull Targetable target, Character charStop);
+
 }

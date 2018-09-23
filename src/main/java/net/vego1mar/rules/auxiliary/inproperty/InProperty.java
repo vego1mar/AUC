@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
-public class InProperty implements InInterface {
+public class InProperty implements InImpl {
 
     private String code;
     private String content;

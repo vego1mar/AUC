@@ -18,4 +18,6 @@ public interface Methodable {
 
     void prepend(@NotNull String text);
 
+    void grabUntil(Character charStop);
+
 }

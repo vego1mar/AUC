@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <inTrait>HTML</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>STRING</firstOfType>
+      <firstOfText>card_title</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>STRING</firstOfType>
+      <firstOfText>v</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>GRAB_UNTIL</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+      <grabUntilCharStop>&lt;</grabUntilCharStop>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>LATEST_APP_VERSION</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>REMOVE_CHARACTERS</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+      <removeCharactersSigns>,</removeCharactersSigns>
+    </method>
+  </rule>
+  <rule no="5">
+    <target>
+      <inTrait>HTML</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>STRING</firstOfType>
+      <firstOfText>card_description</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>STRING</firstOfType>
+      <firstOfText>&gt;</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="7">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>GRAB_UNTIL</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+      <grabUntilCharStop>&lt;</grabUntilCharStop>
+    </method>
+  </rule>
+  <rule no="8">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>SPLIT_WORDS</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="9">
+    <target>
+      <inTrait>COLLECTION</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>EXTRACT_WORD</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="10">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>UPDATE_DATE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>REMOVE_CHARACTERS</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+      <removeCharactersSigns>&gt;</removeCharactersSigns>
+    </method>
+  </rule>
+  <rule no="11">
+    <target>
+      <inTrait>COLLECTION</inTrait>
+      <useAsTrait>WINDOWS_X86_HASH</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>EXTRACT_WORD</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>7</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="12">
+    <target>
+      <inTrait>HTML</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>STRING</firstOfType>
+      <firstOfText>Download from:</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="13">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>IGNORE</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FIRST_OF</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <firstOfText>a</firstOfText>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+  <rule no="14">
+    <target>
+      <inTrait>CONTENT</inTrait>
+      <useAsTrait>WINDOWS_X86_PACKAGE_URL</useAsTrait>
+    </target>
+    <method>
+      <methodTrait>FETCH_HREFS</methodTrait>
+      <firstOfType>TAG</firstOfType>
+      <extractWordPosition>1</extractWordPosition>
+    </method>
+  </rule>
+</rulesSet>

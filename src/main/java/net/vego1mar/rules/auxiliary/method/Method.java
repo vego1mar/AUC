@@ -13,6 +13,7 @@ public class Method implements Methodable {
     private String removeCharactersSigns;
     private String retrieveAllTagsTag;
     private String prependText;
+    private Character grabUntilCharStop;
 
     public Method(MethodTrait method) {
         selectedMethod = method;
@@ -22,6 +23,7 @@ public class Method implements Methodable {
         removeCharactersSigns = "";
         retrieveAllTagsTag = "";
         prependText = "";
+        grabUntilCharStop = '\0';
     }
 
     @Override public MethodTrait getSelectedMethod() {
@@ -73,23 +75,33 @@ public class Method implements Methodable {
         return prependText;
     }
 
+    @Override public void grabUntil(Character charStop) {
+        grabUntilCharStop = charStop;
+    }
+
+    public Character getGrabUntilCharStop() {
+        return grabUntilCharStop;
+    }
+
     @Override public String toString() {
         String prepender = '{' + selectedMethod.name() + "; ";
 
         switch (selectedMethod) {
             case FIRST_OF:
-                return prepender + "type=" + firstOfType.name() + "; text=" + firstOfText + '}';
+                return prepender + "type=" + firstOfType.name() + "; text='" + firstOfText + "'}";
             case EXTRACT_WORD:
                 return prepender + "extractWordPosition=" + extractWordPosition + '}';
             case REMOVE_CHARACTERS:
-                return prepender + "removeCharactersSigns=" + removeCharactersSigns + '}';
+                return prepender + "removeCharactersSigns='" + removeCharactersSigns + "'}";
             case RETRIEVE_ALL_TAGS:
-                return prepender + "retrieveAllTagsTag=" + retrieveAllTagsTag + '}';
+                return prepender + "retrieveAllTagsTag='" + retrieveAllTagsTag + "'}";
             case PREPEND:
-                return prepender + "prependText=" + prependText + '}';
+                return prepender + "prependText='" + prependText + "'}";
             case SPLIT_WORDS:
             case FETCH_HREFS:
                 return prepender.substring(0, prepender.length() - 2) + '}';
+            case GRAB_UNTIL:
+                return prepender + "charStop='" + grabUntilCharStop + "'}";
         }
 
         return getClass().getName() + '@' + Integer.toHexString(System.identityHashCode(this));

@@ -46,6 +46,7 @@ public final class XmlRulesSetManager {
     private static final String TAGNAME_RETRIEVE_ALL_TAGS_TAG = "retrieveAllTagsTag";
     private static final String TAGNAME_REMOVE_CHARACTER_SIGNS = "removeCharactersSigns";
     private static final String TAGNAME_PREPEND_TEXT = "prependText";
+    private static final String TAGNAME_GRAB_UNTIL_CHAR_STOP = "grabUntilCharStop";
 
     private XmlRulesSetManager() {
         // This should be a utility class.
@@ -84,13 +85,14 @@ public final class XmlRulesSetManager {
         valuesSet.put(TAGNAME_REMOVE_CHARACTER_SIGNS, trait.getRemoveCharactersSigns());
         valuesSet.put(TAGNAME_RETRIEVE_ALL_TAGS_TAG, trait.getRetrieveAllTagsTag());
         valuesSet.put(TAGNAME_PREPEND_TEXT, trait.getPrependText());
+        valuesSet.put(TAGNAME_GRAB_UNTIL_CHAR_STOP, trait.getGrabUntilCharStop().toString());
         Iterator it = valuesSet.entrySet().iterator();
 
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry) it.next();
             String value = (String) pair.getValue();
 
-            if (value.isEmpty()) {
+            if (value.isEmpty() || value.equals("\0")) {
                 it.remove();
             }
         }
@@ -138,6 +140,7 @@ public final class XmlRulesSetManager {
             rule.getMethod().retrieveAllTags(methodValues.get(3));
             rule.getMethod().removeCharacters(methodValues.get(4));
             rule.getMethod().prepend(methodValues.get(5));
+            rule.getMethod().grabUntil(methodValues.get(6).charAt(0));
             rulesSet.add(rule);
         }
 
@@ -152,6 +155,7 @@ public final class XmlRulesSetManager {
         values.add(method.element(TAGNAME_RETRIEVE_ALL_TAGS_TAG) == null ? "a" : method.element(TAGNAME_RETRIEVE_ALL_TAGS_TAG).getText());
         values.add(method.element(TAGNAME_REMOVE_CHARACTER_SIGNS) == null ? "" : method.element(TAGNAME_REMOVE_CHARACTER_SIGNS).getText());
         values.add(method.element(TAGNAME_PREPEND_TEXT) == null ? "" : method.element(TAGNAME_PREPEND_TEXT).getText());
+        values.add(method.element(TAGNAME_GRAB_UNTIL_CHAR_STOP) == null ? String.valueOf('\0') : method.element(TAGNAME_GRAB_UNTIL_CHAR_STOP).getText());
         return values;
     }
 

@@ -3,7 +3,7 @@ package net.vego1mar.rules.auxiliary.inproperty;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
-public interface InInterface {
+public interface InImpl {
 
     String getCode();
 

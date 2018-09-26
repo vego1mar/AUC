@@ -1,9 +1,9 @@
-package net.vego1mar.rules;
+package net.vego1mar.utils;
 
 import java.util.Deque;
+import net.vego1mar.rules.RuleBased;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
-import net.vego1mar.utils.XmlRulesSetManager;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -18,13 +18,13 @@ public class XmlRulesSetManagerTest {
 
         // then
         String runtime = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_7ZIP_RUNTIME);
-        String patternSource = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_7ZIP_PATTERN_SOURCE);
+        String patternSource = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_7ZIP_PATTERN);
         Assert.assertEquals(patternSource, runtime);
     }
 
     @Test public void loadSettings1() {
         // when
-        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_RULES_SET_OF_7ZIP_PATTERN_SOURCE);
+        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_RULES_SET_OF_7ZIP_PATTERN);
 
         // then
         Assert.assertEquals(TestCollections.getRulesSetFor7Zip().toString(), rulesSet.toString());
@@ -39,13 +39,13 @@ public class XmlRulesSetManagerTest {
 
         // then
         String runtime = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_AIMP_RUNTIME);
-        String patternSource = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_AIMP_PATTERN_SOURCE);
+        String patternSource = TestVariables.readFile(TestVariables.XML_RULES_SET_OF_AIMP_PATTERN);
         Assert.assertEquals(patternSource, runtime);
     }
 
     @Test public void loadSettings2() {
         // when
-        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_RULES_SET_OF_AIMP_PATTERN_SOURCE);
+        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_RULES_SET_OF_AIMP_PATTERN);
 
         // then
         Assert.assertEquals(TestCollections.getRulesSetForAimp().toString(), rulesSet.toString());

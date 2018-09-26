@@ -13,9 +13,9 @@ public final class TestVariables {
     public static final String SOURCE_URL_OF_7ZIP = "https://www.7-zip.org/download.html";
     public static final String SERIALIZATION_FILE_NAME_OF_7ZIP = "runtime/7-Zip.ser";
     public static final String XML_RULES_SET_OF_7ZIP_RUNTIME = "runtime/7zip_settings.xml";
-    public static final String XML_RULES_SET_OF_7ZIP_PATTERN_SOURCE = "runtime/tests/7zip_settings__patternSource.xml";
+    public static final String XML_RULES_SET_OF_7ZIP_PATTERN = "runtime/tests/7zip_settings__pattern.xml";
     public static final String XML_RULES_SET_OF_AIMP_RUNTIME = "runtime/aimp_settings.xml";
-    public static final String XML_RULES_SET_OF_AIMP_PATTERN_SOURCE = "runtime/tests/aimp_settings__patternSource.xml";
+    public static final String XML_RULES_SET_OF_AIMP_PATTERN = "runtime/tests/aimp_settings__pattern.xml";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {

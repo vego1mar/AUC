@@ -1,6 +1,6 @@
-package net.vego1mar.rules.enumerators.traits;
+package net.vego1mar.enumerators.traits;
 
-public enum UseAsTrait {
+public enum UseAs {
     IGNORE,
     LATEST_APP_VERSION,
     UPDATE_DATE,

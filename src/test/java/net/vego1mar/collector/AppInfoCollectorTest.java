@@ -1,7 +1,7 @@
 package net.vego1mar.collector;
 
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsImpl;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
+import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.auxiliary.properties.UseAsProperty;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import net.vego1mar.utils.ReflectionHelper;

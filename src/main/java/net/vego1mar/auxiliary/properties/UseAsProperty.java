@@ -1,4 +1,4 @@
-package net.vego1mar.rules.auxiliary.useasproperty;
+package net.vego1mar.auxiliary.properties;
 
 import java.io.Serializable;
 

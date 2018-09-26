@@ -10,8 +10,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.rules.RuleBased;
 import net.vego1mar.rules.RulesExecutor;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsImpl;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
+import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.auxiliary.properties.UseAsProperty;
 import net.vego1mar.utils.WebPageDownloader;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -59,7 +59,7 @@ public class AppInfoCollector implements Serializable {
         }
 
         if (htmlCode.isEmpty()) {
-            log.warn("Failed while downloading the HTML content.");
+            log.warn("Failed while downloading the CODE content.");
             return;
         }
 

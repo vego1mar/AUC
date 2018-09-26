@@ -1,80 +1,45 @@
 package net.vego1mar.rules;
 
 import java.util.Deque;
-import net.vego1mar.rules.auxiliary.inproperty.InImpl;
+import net.vego1mar.auxiliary.properties.InImpl;
+import net.vego1mar.auxiliary.properties.InProperty;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
-import net.vego1mar.rules.auxiliary.method.Method;
-import net.vego1mar.rules.auxiliary.target.Target;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsImpl;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
-import net.vego1mar.rules.enumerators.traits.InTrait;
-import net.vego1mar.rules.enumerators.traits.MethodTrait;
-import net.vego1mar.rules.enumerators.traits.UseAsTrait;
+import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.auxiliary.properties.UseAsProperty;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-public final class RulesExecutor {
+public final class RulesExecutor implements RulesExecutable {
 
     private static final Logger log = Logger.getLogger(RulesExecutor.class);
-    private MethodExecutable executor;
     private Deque<RuleBased> rulesSet;
-    private RuleBased currentRule;
+    private InImpl inProperty;
     private UseAsImpl useAsProperty;
 
     public RulesExecutor(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
-        executor = new MethodExecutor();
-        ((MethodExecutor) executor).getInProperty().setCode(htmlCode);
         this.rulesSet = rulesSet;
-        currentRule = new Rule(new Target(InTrait.HTML, UseAsTrait.IGNORE), new Method(MethodTrait.FIRST_OF));
+        inProperty = new InProperty();
+        inProperty.setCode(htmlCode);
         useAsProperty = new UseAsProperty();
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(getClass().getSimpleName() + identity + "(rulesSet.size()=" + rulesSet.size() + "; htmlCode.length()=" + htmlCode.length() + ')');
+        log.info(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
-    public void execute() {
+    @Override public void execute() {
         String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
 
         while (!rulesSet.isEmpty()) {
-            currentRule = rulesSet.removeFirst();
+            RuleBased currentRule = rulesSet.removeFirst();
             executeRule(currentRule);
-            log.info("Rule at " + identity + currentRule + " executed.");
+            log.info("Rule executed -> " + identity + currentRule);
         }
 
         log.info(identity + ':' + ReflectionHelper.getCurrentMethodName() + "() completed");
     }
 
     private void executeRule(@NotNull RuleBased rule) {
-        Method currentMethod = (Method) rule.getMethod();
-
-        switch (rule.getMethod().getSelectedMethod()) {
-            case FIRST_OF:
-                executor.firstOf(rule.getTarget(), currentMethod.getFirstOfType(), currentMethod.getFirstOfText());
-                break;
-            case EXTRACT_WORD:
-                executor.extractWord(rule.getTarget(), currentMethod.getExtractWordPosition());
-                break;
-            case SPLIT_WORDS:
-                executor.splitWords();
-                break;
-            case REMOVE_CHARACTERS:
-                executor.removeCharacters(rule.getTarget(), currentMethod.getRemoveCharactersSigns());
-                break;
-            case RETRIEVE_ALL_TAGS:
-                executor.retrieveAllTags(currentMethod.getRetrieveAllTagsTag());
-                break;
-            case FETCH_HREFS:
-                executor.fetchHrefs(rule.getTarget());
-                break;
-            case PREPEND:
-                executor.prepend(rule.getTarget(), currentMethod.getPrependText());
-                break;
-            case GRAB_UNTIL:
-                executor.grabUntil(rule.getTarget(), currentMethod.getGrabUntilCharStop());
-                break;
-        }
-
-        InImpl inProperty = ((MethodExecutor) executor).getInProperty();
+        inProperty = rule.getMethod().invoke(rule.getTarget(), inProperty);
 
         switch (rule.getTarget().useAs()) {
             case IGNORE:
@@ -100,7 +65,7 @@ public final class RulesExecutor {
         }
     }
 
-    @Contract(pure = true) public UseAsImpl getResults() {
+    @Contract(pure = true) @Override public UseAsImpl getResults() {
         return useAsProperty;
     }
 

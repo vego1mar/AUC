@@ -6,8 +6,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CyclicBarrier;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsImpl;
-import net.vego1mar.rules.auxiliary.useasproperty.UseAsProperty;
+import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.auxiliary.properties.UseAsProperty;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import net.vego1mar.utils.ReflectionHelper;
@@ -30,7 +30,7 @@ public class RulesExecutorTest {
     @Test public void executeRuleFor7Zip() throws Exception {
         // given
         Deque<RuleBased> rulesSet = TestCollections.getRulesSetFor7Zip();
-        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
+        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
 
         // when
         rulesExecutor.execute();
@@ -54,7 +54,7 @@ public class RulesExecutorTest {
         CyclicBarrier barrier = new CyclicBarrier(rulesExecutors.size());
         List<Thread> threads = new LinkedList<>();
 
-        for (RulesExecutor executor : rulesExecutors) {
+        for (RulesExecutable executor : rulesExecutors) {
             threads.add(new Thread(() -> {
                 try {
                     executor.execute();
@@ -73,7 +73,7 @@ public class RulesExecutorTest {
         barrier.await();
 
         // then
-        for (RulesExecutor executor : rulesExecutors) {
+        for (RulesExecutable executor : rulesExecutors) {
             Field ruleExecutor = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
             UseAsImpl useAsProperty = (UseAsProperty) ruleExecutor.get(executor);
             Assert.assertEquals("18.05", useAsProperty.getLatestAppVersion());
@@ -86,7 +86,7 @@ public class RulesExecutorTest {
     @Test public void executeRuleForAimp() throws Exception {
         // given
         Deque<RuleBased> rulesSet = TestCollections.getRulesSetForAimp();
-        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfAimpWebPage);
+        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfAimpWebPage);
 
         // when
         rulesExecutor.execute();

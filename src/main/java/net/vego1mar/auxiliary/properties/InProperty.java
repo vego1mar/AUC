@@ -1,4 +1,4 @@
-package net.vego1mar.rules.auxiliary.inproperty;
+package net.vego1mar.auxiliary.properties;
 
 import java.util.ArrayList;
 import java.util.List;

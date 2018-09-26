@@ -1,4 +1,4 @@
-package net.vego1mar.rules.auxiliary.inproperty;
+package net.vego1mar.auxiliary.properties;
 
 import java.util.List;
 import org.jetbrains.annotations.NotNull;

@@ -9,7 +9,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>card_title</text>
+      <text><![CDATA[card_title]]></text>
     </method>
   </rule>
   <rule no="2">
@@ -20,7 +20,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>v</text>
+      <text><![CDATA[v]]></text>
     </method>
   </rule>
   <rule no="3">
@@ -51,7 +51,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>card_description</text>
+      <text><![CDATA[card_description]]></text>
     </method>
   </rule>
   <rule no="6">
@@ -62,7 +62,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>&gt;</text>
+      <text><![CDATA[>]]></text>
     </method>
   </rule>
   <rule no="7">
@@ -122,7 +122,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>Download from:</text>
+      <text><![CDATA[Download from:]]></text>
     </method>
   </rule>
   <rule no="13">
@@ -133,7 +133,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>TAG</type>
-      <text>a</text>
+      <text><![CDATA[a]]></text>
     </method>
   </rule>
   <rule no="14">

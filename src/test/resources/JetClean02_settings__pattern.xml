@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[<strong>Date:]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>SPLIT_WORDS</methodType>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>UPDATE_DATE</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>2</position>
+    </method>
+  </rule>
+</rulesSet>

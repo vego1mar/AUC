@@ -16,10 +16,12 @@ import net.vego1mar.auxiliary.method.PrependMethod;
 import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
 import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.SplitWordsMethod;
+import net.vego1mar.auxiliary.method.TrimMethod;
 import net.vego1mar.auxiliary.target.Target;
 import net.vego1mar.auxiliary.target.Targetable;
 import net.vego1mar.enumerators.methods.FirstOfType;
 import net.vego1mar.enumerators.methods.RetrieveTagsType;
+import net.vego1mar.enumerators.methods.TrimSide;
 import net.vego1mar.enumerators.traits.In;
 import net.vego1mar.enumerators.traits.MethodType;
 import net.vego1mar.enumerators.traits.UseAs;
@@ -53,6 +55,8 @@ public final class XmlRulesSetManager {
     private static final String TAGNAME_METHOD_ATTRIBUTE_TAGNAME = "tagname";
     private static final String TAGNAME_METHOD_ATTRIBUTE_SIGNS = "signs";
     private static final String TAGNAME_METHOD_ATTRIBUTE_CHARSTOP = "charStop";
+    private static final String TAGNAME_METHOD_ATTRIBUTE_SIDE = "side";
+    private static final String TAGNAME_METHOD_ATTRIBUTE_NUMBEROF = "numberOf";
 
     private XmlRulesSetManager() {
         // This should be a utility class.
@@ -91,7 +95,7 @@ public final class XmlRulesSetManager {
             case FIRST_OF:
                 FirstOfMethod firstOfMethod = (FirstOfMethod) objRule.getMethod();
                 method.addElement(TAGNAME_METHOD_ATTRIBUTE_TYPE).addText(firstOfMethod.getType().name());
-                method.addElement(TAGNAME_METHOD_ATTRIBUTE_TEXT).addText(firstOfMethod.getText());
+                method.addElement(TAGNAME_METHOD_ATTRIBUTE_TEXT).addCDATA(firstOfMethod.getText());
                 break;
             case EXTRACT_WORD:
                 ExtractWordMethod extractWordMethod = (ExtractWordMethod) objRule.getMethod();
@@ -108,11 +112,16 @@ public final class XmlRulesSetManager {
                 break;
             case PREPEND:
                 PrependMethod prependMethod = (PrependMethod) objRule.getMethod();
-                method.addElement(TAGNAME_METHOD_ATTRIBUTE_TEXT).addText(prependMethod.getText());
+                method.addElement(TAGNAME_METHOD_ATTRIBUTE_TEXT).addCDATA(prependMethod.getText());
                 break;
             case GRAB_UNTIL:
                 GrabUntilMethod grabUntilMethod = (GrabUntilMethod) objRule.getMethod();
                 method.addElement(TAGNAME_METHOD_ATTRIBUTE_CHARSTOP).addText(grabUntilMethod.getCharStop().toString());
+                break;
+            case TRIM:
+                TrimMethod trimMethod = (TrimMethod) objRule.getMethod();
+                method.addElement(TAGNAME_METHOD_ATTRIBUTE_SIDE).addText(trimMethod.getSide().name());
+                method.addElement(TAGNAME_METHOD_ATTRIBUTE_NUMBEROF).addText(String.valueOf(trimMethod.getNumberOf()));
                 break;
         }
     }
@@ -200,39 +209,46 @@ public final class XmlRulesSetManager {
             case FETCH_HREFS:
                 return new FetchHrefsMethod();
             case FIRST_OF:
-                FirstOfMethod foMethod = new FirstOfMethod();
+                FirstOfMethod firstOf = new FirstOfMethod();
                 Element type = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_TYPE);
                 Element text = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_TEXT);
-                foMethod.setType(type == null ? foMethod.getType() : FirstOfType.valueOf(type.getText()));
-                foMethod.setText(text == null ? foMethod.getText() : text.getText());
-                return foMethod;
+                firstOf.setType(type == null ? firstOf.getType() : FirstOfType.valueOf(type.getText()));
+                firstOf.setText(text == null ? firstOf.getText() : text.getText());
+                return firstOf;
             case EXTRACT_WORD:
-                ExtractWordMethod ewMethod = new ExtractWordMethod();
+                ExtractWordMethod extractWord = new ExtractWordMethod();
                 Element position = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_POSITION);
-                ewMethod.setPosition(position == null ? ewMethod.getPosition() : Integer.valueOf(position.getText()));
-                return ewMethod;
+                extractWord.setPosition(position == null ? extractWord.getPosition() : Integer.valueOf(position.getText()));
+                return extractWord;
             case REMOVE_CHARACTERS:
-                RemoveCharactersMethod rchMethod = new RemoveCharactersMethod();
+                RemoveCharactersMethod removeCharacters = new RemoveCharactersMethod();
                 Element signs = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_SIGNS);
-                rchMethod.setSigns(signs == null ? rchMethod.getSigns() : signs.getText());
-                return rchMethod;
+                removeCharacters.setSigns(signs == null ? removeCharacters.getSigns() : signs.getText());
+                return removeCharacters;
             case RETRIEVE_TAGS:
-                RetrieveTagsMethod rtMethod = new RetrieveTagsMethod();
+                RetrieveTagsMethod retrieveTags = new RetrieveTagsMethod();
                 Element type2 = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_TYPE);
                 Element tagname = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_TAGNAME);
-                rtMethod.setType(type2 == null ? rtMethod.getType() : RetrieveTagsType.valueOf(type2.getText()));
-                rtMethod.setTagname(tagname == null ? rtMethod.getTagname() : tagname.getText());
-                return rtMethod;
+                retrieveTags.setType(type2 == null ? retrieveTags.getType() : RetrieveTagsType.valueOf(type2.getText()));
+                retrieveTags.setTagname(tagname == null ? retrieveTags.getTagname() : tagname.getText());
+                return retrieveTags;
             case PREPEND:
-                PrependMethod prMethod = new PrependMethod();
+                PrependMethod prepend = new PrependMethod();
                 Element text2 = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_TEXT);
-                prMethod.setText(text2 == null ? prMethod.getText() : text2.getText());
-                return prMethod;
+                prepend.setText(text2 == null ? prepend.getText() : text2.getText());
+                return prepend;
             case GRAB_UNTIL:
-                GrabUntilMethod guMethod = new GrabUntilMethod();
+                GrabUntilMethod grabUntil = new GrabUntilMethod();
                 Element charStop = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_CHARSTOP);
-                guMethod.setCharStop(charStop == null ? guMethod.getCharStop() : Character.valueOf(charStop.getText().charAt(0)));
-                return guMethod;
+                grabUntil.setCharStop(charStop == null ? grabUntil.getCharStop() : Character.valueOf(charStop.getText().charAt(0)));
+                return grabUntil;
+            case TRIM:
+                TrimMethod trim = new TrimMethod();
+                Element side = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_SIDE);
+                Element numberOf = xmlMethod.element(TAGNAME_METHOD_ATTRIBUTE_NUMBEROF);
+                trim.setSide(side == null ? trim.getSide() : TrimSide.valueOf(side.getText()));
+                trim.setNumberOf(numberOf == null ? trim.getNumberOf() : Integer.valueOf(numberOf.getText()));
+                return trim;
         }
 
         return new EmptyMethod();

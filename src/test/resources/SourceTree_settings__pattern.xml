@@ -9,7 +9,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>h1</text>
+      <text><![CDATA[link--secondary]]></text>
     </method>
   </rule>
   <rule no="2">
@@ -18,48 +18,51 @@
       <useAs>IGNORE</useAs>
     </target>
     <method>
-      <methodType>FIRST_OF</methodType>
-      <type>TAG</type>
-      <text>p</text>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>FIRST</type>
+      <tagname>a</tagname>
     </method>
   </rule>
   <rule no="3">
     <target>
       <in>CONTENT</in>
-      <useAs>IGNORE</useAs>
+      <useAs>WINDOWS_X86_PACKAGE_URL</useAs>
     </target>
     <method>
-      <methodType>SPLIT_WORDS</methodType>
+      <methodType>FETCH_HREFS</methodType>
     </method>
   </rule>
   <rule no="4">
     <target>
-      <in>COLLECTION</in>
-      <useAs>LATEST_APP_VERSION</useAs>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
     </target>
     <method>
-      <methodType>EXTRACT_WORD</methodType>
-      <position>3</position>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[-]]></text>
     </method>
   </rule>
   <rule no="5">
     <target>
-      <in>COLLECTION</in>
+      <in>CONTENT</in>
       <useAs>IGNORE</useAs>
     </target>
     <method>
-      <methodType>EXTRACT_WORD</methodType>
-      <position>4</position>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>1</numberOf>
     </method>
   </rule>
   <rule no="6">
     <target>
       <in>CONTENT</in>
-      <useAs>UPDATE_DATE</useAs>
+      <useAs>LATEST_APP_VERSION</useAs>
     </target>
     <method>
-      <methodType>REMOVE_CHARACTERS</methodType>
-      <signs>()</signs>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>4</numberOf>
     </method>
   </rule>
   <rule no="7">
@@ -70,7 +73,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text>h1</text>
+      <text><![CDATA[LastRendered:]]></text>
     </method>
   </rule>
   <rule no="8">
@@ -80,8 +83,8 @@
     </target>
     <method>
       <methodType>FIRST_OF</methodType>
-      <type>TAG</type>
-      <text>table</text>
+      <type>STRING</type>
+      <text><![CDATA[ ]]></text>
     </method>
   </rule>
   <rule no="9">
@@ -90,48 +93,30 @@
       <useAs>IGNORE</useAs>
     </target>
     <method>
-      <methodType>RETRIEVE_TAGS</methodType>
-      <type>ALL</type>
-      <tagname>a</tagname>
+      <methodType>GRAB_UNTIL</methodType>
+      <charStop>:</charStop>
     </method>
   </rule>
   <rule no="10">
     <target>
-      <in>COLLECTION</in>
+      <in>CONTENT</in>
       <useAs>IGNORE</useAs>
     </target>
     <method>
-      <methodType>FETCH_HREFS</methodType>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>2</numberOf>
     </method>
   </rule>
   <rule no="11">
     <target>
-      <in>COLLECTION</in>
-      <useAs>IGNORE</useAs>
+      <in>CONTENT</in>
+      <useAs>UPDATE_DATE</useAs>
     </target>
     <method>
-      <methodType>PREPEND</methodType>
-      <text>https://www.7-zip.org/</text>
-    </method>
-  </rule>
-  <rule no="12">
-    <target>
-      <in>COLLECTION</in>
-      <useAs>WINDOWS_X86_PACKAGE_URL</useAs>
-    </target>
-    <method>
-      <methodType>EXTRACT_WORD</methodType>
-      <position>1</position>
-    </method>
-  </rule>
-  <rule no="13">
-    <target>
-      <in>COLLECTION</in>
-      <useAs>WINDOWS_X64_PACKAGE_URL</useAs>
-    </target>
-    <method>
-      <methodType>EXTRACT_WORD</methodType>
-      <position>2</position>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>1</numberOf>
     </method>
   </rule>
 </rulesSet>

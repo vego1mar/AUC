@@ -9,5 +9,6 @@ public enum MethodType {
     RETRIEVE_TAGS,
     FETCH_HREFS,
     PREPEND,
-    GRAB_UNTIL
+    GRAB_UNTIL,
+    TRIM
 }

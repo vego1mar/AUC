@@ -1,0 +1,816 @@
+
+<!--jetclean.html --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <meta name="generator" content="Esselbach Contentteller CMS" />
+  <meta name="google-site-verification" content="A8bkEMylz6j9TjL-rX8_zvboFVPJ8-papcnbQkmWWkM" />
+  <meta property="og:image" content="http://www.majorgeeks.com/images/logos/majorgeeks.gif"/>
+  <meta name="description" content="With a single click, JetClean gives you that fresh, new PC feeling again! Light-weight and easy to use, JetClean removes system junk files and it protects your privacy. ..." />
+  <meta name="keywords" content="JetClean, Light-weight, With, easy, feeling, files, gives, junk, protects, removes, single, system, that, your" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <base href="https://www.majorgeeks.com/" />
+
+  <title>Download JetClean  - MajorGeeks</title>
+  
+
+  <script async type="text/javascript" src="cookiebar/cookiebar-latest.js"></script>
+  <script async type="text/javascript" src="core/javaload/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2" title="Theme #2" />
+  <!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2&amp;ie=6" />
+  <![endif]-->
+  <!--[if IE 7]>
+  <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2&amp;ie=7" />
+  <![endif]-->
+  <link rel="canonical" href="http://www.majorgeeks.com/files/details/jetclean.html" />
+  <link rel="author" href="https://plus.google.com/+majorgeeks/posts"/>
+
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/7346874/MaG-300x250', [300, 250], 'div-gpt-ad-1430505526252-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1902405440044233');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1902405440044233&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6960825562757852",
+          enable_page_level_ads: true
+     });
+</script>
+
+</head>
+
+<body>
+<!-- Template: site_header -->
+<div class="pageborder">
+<div class="pageheader">
+<div class="centerborder">
+<h1><a href="https://www.majorgeeks.com"><img src="images/logos/majorgeeks.gif" alt="Providing Free and Editor Tested Software Downloads" /></a></h1>
+
+<!-- New Button TEST -->
+<script async src="../jscripts/buttons/buttons.js"></script>
+<style>
+.don-share > [class^=don-share-], .don-share [class*=' don-share-'] {
+    float: none !important;
+}
+</style>
+<!-- New Button TEST -->
+
+<!-- Facebook Java -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=138028202874035";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- div to align by jim -->
+<div style="text-align:center">
+
+<div class="geektopnav">
+<form action="//www.majorgeeks.com/content/page/mg_search.html" id="cse-search-box">
+&lt; 
+<a title="Safe, Tested Downloads, Tutorials, and Videos" href="http://www.majorgeeks.com" accesskey="M"><u>H</u>OME </a> | <a title="How-To's, Videos, and Tutorials" href="http://www.majorgeeks.com/content/overview/how_to.html" accesskey="h"><u>H</u>OW-TO'S</a> | <a title="MajorGeeks Software Updater" href="http://www.majorgeeks.com/files/details/majorgeeks_software_updater.html/" accesskey="u"<u>U</u>PDATER</a> | 
+<a title="Downloads for Mac Users" href="http://mac.majorgeeks.com" accesskey="m"><u>M</u>AC </a>| 
+<a title="MajorGeeks Android App" target = "geek" href="/files/details/majorgeeks_com_android_app.html/" accesskey="a"><u>A</u>NDROID APP</a> | 
+<a title="Get the MajorGeeks Newsletter" href="http://www.majorgeeks.com/content/page/majorgeeks_newsletter.html" accesskey="n"><u>N</u>EWSLETTER</a> | 
+<a title="Exclusive Offers for Geeks" href="http://deals.majorgeeks.com/" accesskey="d"><u>D</u>EALS!</a> | 
+<a title="Free Help & Support" href="http://forums.majorgeeks.com" accesskey="f"><u>F</u>ORUMS  </a>
+| 
+<input type="hidden" name="cx" value="partner-pub-6960825562757852:6029691205" />
+<input type="hidden" name="cof" value="FORID:10" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" size="22" />
+<input type="image" src="images/search_light.gif" alt="Search!" NAME="sa" style="vertical-align: middle;" /> 
+&gt;
+</form> 
+<script type="text/javascript" src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> 
+</div>
+
+<div class="geekad">
+
+
+<!-- 728 ad --> 
+
+
+<div id="9053_INSERT_SLOT_ID_HERE" style="width:728px;height:90px;margin:0;padding:0">
+  <noscript><iframe id="9eb5e80d8f" name="9eb5e80d8f" src="//majorgeeks-d.openx.net/w/1.0/afr?auid=9053&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="728" height="90"><a href="//majorgeeks-d.openx.net/w/1.0/rc?cs=9eb5e80d8f&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="//majorgeeks-d.openx.net/w/1.0/ai?auid=9053&cs=9eb5e80d8f&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></noscript>
+</div>
+<script type="text/javascript">
+  var OX_ads = OX_ads || [];
+  OX_ads.push({
+     slot_id: "9053_INSERT_SLOT_ID_HERE",
+     auid: "9053"
+  });
+</script>
+
+<script type="text/javascript" src="//majorgeeks-d.openx.net/w/1.0/jstag"></script>
+
+
+</div>
+
+
+<div class="mobile">
+
+</div>
+
+
+
+<div class="geekphrase">
+MajorGeeks.com - We know you're out there, and we're coming to get you.
+</div>
+
+</div>
+</div>
+
+<div class="colleft" id="menu1">
+<!-- Template: site_block -->
+<h3><img src="images/blocks/mg_files.png" alt="Software Categories" width="149" height="22" /></h3>
+
+<div class="content">
+<div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/all_in_one.html">All In One Tweaks</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/android.html">Android</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/anti_spyware.html">Anti-Malware</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/anti_virus.html">Antivirus</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/appearance.html">Appearance</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/back_up.html">Back Up</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/browsers.html">Browsers</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/cddvdblu_ray.html">CD\DVD\Blu-Ray</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/covert_ops.html">Covert Ops</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/drive_utilities.html">Drive Utilities (HDD, USB, DVD)</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/drivers.html">Drivers</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/games.html">Games</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/graphics.html">Graphics</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/internet_tools.html">Internet Tools</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/multimedia.html">Multimedia</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/networking.html">Networking</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/office_tools.html">Office and Finance</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/sortname/system_tools.html">System Tools</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="http://mac.majorgeeks.com">Macintosh</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="news/archive">News Archive</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="content/overview/how_to.html">- How-To's</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="news/channels/off_base.html">- Off Base</a></div>
+</div>
+
+<br /><!-- Template: site_block_alt2 -->
+<div class="altcontent">
+<script>
+  (function() {
+    var cx = 'partner-pub-6960825562757852:6029691205';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+
+<br /><!-- Template: site_block -->
+<h3><img src="images/blocks/mg_spread_the_word.png" alt="spread the word"></h3>
+
+<div class="content">
+<br />
+
+<!-- Facebook -->
+<div class="fb-like" data-href="https://www.facebook.com/majorgeeksdotcom" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+<br /><br />
+
+<!-- Twitter -->
+<a href="https://twitter.com/majorgeeks" class="twitter-follow-button" data-show-count="false">Follow @majorgeeks</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<br /><br />
+
+<!-- Google+ -->
+<!--
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/112985532252055359096" data-rel="publisher"></div>
+-->
+<div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/102274897255368477758" data-rel="publisher"></div>
+<br /><br />
+
+<!-- YouTube -->
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channel="majorgeeks" data-layout="default" data-count="default"></div>
+<br /><br />
+
+<a data-pin-do="buttonFollow" href="http://www.pinterest.com/majorgeeks/">MajorGeeks</a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<br /><br />
+
+<img src="/images/rssfeed.gif" alt="rss feeds" width="16" height="16"> <a href="http://www.majorgeeks.com/content/page/majorgeeks_rss_feeds.html" >RSS / XML Feed </a>
+<br /><br />
+
+<hr>
+&middot;<a href="http://reader.aol.com/?url=http://www.majorgeeks.com/files/rss" Target="top"> AOL</a> <br>
+&middot;<a href="http://add.my.yahoo.com/content?url=http://www.majorgeeks.com/files/rss" Target="top"> Yahoo</a><br>
+&middot;<a href="https://www.symbaloo.com/mix/majorgeeks" Target="top"> Symbaloo</a>
+
+<br><br>
+<hr>
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#e1e1bb; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+</style>
+<div id="mc_embed_signup">
+<form action="//majorgeeks.us4.list-manage.com/subscribe/post?u=11e02cf9dc4ef3eb0ab4606ef&amp;id=8c93a2875d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_11e02cf9dc4ef3eb0ab4606ef_8c93a2875d" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</div>
+
+<br /><!-- Template: site_block -->
+<h3><img src="images/blocks/mg_siteinfo.png" alt="about" width="144" height="20"/></h3>
+
+<div class="content">
+&middot; <b><a href="../content/overview/how_to.html">HowTo & Guides</a></b>
+<br />
+&middot; <a href="../content/page/boot_camp.html">New? Start Here</a>
+<br>
+&middot; <a href="../content/page/top_freeware_picks.html">Top Freeware Picks</a>
+<br/>
+&middot; <a href="http://forums.majorgeeks.com/showthread.php?t=35407">Malware Removal</a>
+<br/>
+
+<!--
+&middot; <a href="../knowledgebase/index.html">KnowlegeBase</a>
+<br>
+-->
+&middot; <a href="../compatdb/index.html">Compatibility Database</a>
+<br>
+&middot; <a href="../glossary/index.html">Geektionary</a>
+<br>
+&middot; <a href="http://majorgeeks.pricegrabber.com/">Geek Shopping</a>
+<br>
+&middot; <a href="http://majorgeeks.tradepub.com/">Free Magazines</a>
+<br>
+&middot; <a href="../content/page/links_to_resourcesfriends_affilates.html">Useful Links</a>
+<br>
+&middot; <a href="../content/page/top_freeware_picks.html">Top Freeware Picks</a>
+<br>
+&middot; <a href="../content/page/foldinghome.html">Folding@Home</a>
+<br/>
+&middot; <a href="../content/page/aboutcontact_us.html">About Us</a>
+<hr>
+&middot; <a href="../content/page/copyright.html">Copyright</a>
+<br />
+&middot; <a href="../content/page/privacy.html">Privacy</a>
+<br>
+&middot; <a href="../content/page/terms_of_service.html">Terms Of Service</a>
+<br>
+&middot; <a href="../content/page/how_to_uninstall_programs.html">Uninstall</a>
+<br>
+&middot; <a href="../content/overview/">Other Articles</a>
+
+<br>
+</div>
+
+<br /><!-- Template: site_block -->
+<h3><img src="images/blocks/mg_latestfiles.png" alt="Latest files" width="150" height="21" /></h3>
+
+<div class="content">
+&middot; <a href="files/details/goodsync.html">GoodSync 10.9.10</a><br />&middot; <a href="files/details/vuescan.html">VueScan 9.6.18</a><br />&middot; <a href="files/details/quicktextpaste.html">QuickTextPaste 4.44</a><br />&middot; <a href="files/details/telegram.html">Telegram 1.4.0</a><br />&middot; <a href="files/details/futuremark_systeminfo.html">Futuremark SystemInfo  5.13.690.0</a><br />&middot; <a href="files/details/anti_spam_smtp_proxy.html">Anti-Spam SMTP Proxy (ASSP) 2.6.1.18271</a><br />&middot; <a href="files/details/basilisk.html">Basilisk 2018.09.27</a><br />&middot; <a href="files/details/wsus_offline_update.html">WSUS Offline Update 11.5</a><br />&middot; <a href="files/details/playnite.html">Playnite 4.52</a><br />&middot; <a href="files/details/novirusthanks_file_system_protector.html">NoVirusThanks File System Protector 1.4.0.0</a><br />
+</div>
+
+<br />
+</div>
+
+<div class="colright" id="menu2">
+<!-- Template: site_block -->
+<h3><img src="images/blocks/mg_topdownloads.png" alt="top downloads" /></h3>
+
+<div class="content">
+<div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/imgburn.html">1. ImgBurn</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/win7codecs.html">2. ADVANCED Codecs</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/iobit_unlocker.html">3. IObit Unlocker</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/start_menu_8.html">4. Start Menu 8</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/winsysclean_x2.html">5. WinSysClean</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/tweaking_com_windows_repair.html">6. Tweaking.com - Windows Repair</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/iobit_protected_folder.html">7. IOBit Protected Folder</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/k_lite_mega_codec_pack.html">8. K-Lite Mega Codec Pack</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/visual_c_runtime_installer.html">9. Visual C++ Runtime Installer (All-In-One)</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="files/details/patch_my_pc.html">10. Patch My PC</a></div><div class="geekymenuitem" onmouseover = "this.className='geekymenuitemselected'" onmouseout = "this.className='geekymenuitem'"><a href="mg/topdownloads/index.html">More &gt;&gt;</a></div>
+</div>
+
+<br /><!-- Template: site_block_alt2 -->
+<div class="altcontent">
+<center><img src="./images/mg/ad160px.png" width="90" height="10" /></center>
+
+
+
+
+
+<!--/* OpenX Asynchronous JavaScript tag */-->
+
+
+<div id="18502_INSERT_SLOT_ID_HERE" style="width:160px;height:600px;margin:0;padding:0">
+  <noscript><iframe id="cb5c744357" name="cb5c744357" src="//majorgeeks-d.openx.net/w/1.0/afr?auid=18502&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="160" height="600"><a href="//majorgeeks-d.openx.net/w/1.0/rc?cs=cb5c744357&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="//majorgeeks-d.openx.net/w/1.0/ai?auid=18502&cs=cb5c744357&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></noscript>
+</div>
+<script type="text/javascript">
+  var OX_ads = OX_ads || [];
+  OX_ads.push({
+     slot_id: "18502_INSERT_SLOT_ID_HERE",
+     auid: "18502"
+  });
+</script>
+
+<script type="text/javascript" src="//majorgeeks-d.openx.net/w/1.0/jstag"></script>
+
+</div>
+
+<br /><!-- Template: site_block -->
+<h3><img src="images/blocks/mg_top_reads.png" alt="top reads"></h3>
+
+<div class="content">
+<img src="/images/icons/star.gif"> <a href="content/page/how_to_delete_some_or_all_system_restore_points_on_windows_10.html">How to Delete Some or All System Restore Points on Windows 10</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_make_a_program_always_run_as_administrator_and_or_compatibility_mode.html">How to Make a Program Always Run as Administrator And or Compatibility Mode</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_remove_the_embedded_adobe_flash_from_windows_10_and_8_1.html">How to Remove the Embedded Adobe Flash From Windows 10 and 8.1 </a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_restore_the_close_all_tabs_warning_in_microsoft_edge.html">How to Restore the Close All Tabs Warning in Microsoft Edge</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_generate_a_blue_screen_of_death_(bsod)_on_windows.html">How-to Generate a Blue Screen of Death (BSOD) on Windows</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_uninstall_windows_10_updates.html">How to Uninstall Windows 10 Updates</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_fix_screen_flickering_on_windows_10.html">How to Fix Screen Flickering on Windows 10</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/how_to_disable_the_windows_store_on_windows_10.html">How-To Disable the Windows Store on Windows 10 (Video)</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/code_10_this_device_cannot_start_try_upgrading_the_device_drivers_for_this_device.html">Code 10 - This Device Cannot Start. Try Upgrading the Device Drivers for This Device</a><br /><br /><img src="/images/icons/star.gif"> <a href="content/page/code_18_reinstall_the_drivers_for_this_device.html">Code 18 - Reinstall the Drivers for This Device</a><br /><br />
+</div>
+
+<br />
+</div>
+
+<div class="mainpage" id="content">
+
+
+
+
+
+
+
+<div style="text-align: center;"></div>
+
+<div class="colmiddle" id="menu3">
+
+</div><!-- Template: files_layout_details -->
+<!-- Template: files_details_header -->
+<b><div class="navigation">
+<a href="https://www.majorgeeks.com">MajorGeeks.Com</a> &#187; <a href="mg/sortname/all_in_one.html">All In One Tweaks</a> &#187; <a href="mg/sortname/windows_7_8.html">Windows 7, 8 & 10</a> &#187; <a href="files/details/jetclean.html">JetClean 1.5.0.129</a> &#187; <a href="mg/getmirror/jetclean,1.html">Download Now</a>
+
+<!-- old header 7-15 
+<a href="https://www.majorgeeks.com">MajorGeeks.Com</a> &#187; <a href="mg/sortname/all_in_one.html">All In One Tweaks</a> &#187; <a href="mg/sortname/windows_7_8.html">Windows 7, 8 & 10</a> &#187; <a href="files/details/jetclean.html">JetClean 1.5.0.129</a> &#187; <a href="mg/getmirror/jetclean,1.html">Download Now</a> 
+-->
+
+</div></b>
+<br />
+<!-- Template: files_details -->
+<!-- span test -->
+<div class="geekywraplight">
+ 
+<h1>
+<span itemprop="name">JetClean</span>
+ 1.5.0.129 <a href="mg/getmirror/jetclean,1.html"><img src="http://majorgeeks.com/images/icons/om.jpg" alt="Official Mirror for JetClean " /></a> 
+</h1>
+
+<hr />
+
+<!--- table test  jim -->
+<div min-width: 750px; position: relative; top: -200px; >
+
+<span id="nointelliTXT">
+
+<table width="100%">
+ <tr>
+ <td valign="top">
+  <div class="geekycolumn">
+  <strong>Author:</strong> <a rel="nofollow" target="top" href="http://www.bluesprig.com/jetclean.html">
+BlueSprig</a><br />
+  <strong>Date:</strong> 02/26/2016 07:54 AM<br />
+  <strong>Size:</strong> 4.22 MB<br />
+  <strong>License:</strong> <!-- Template: files_info_cost -->
+Freeware<br />
+  
+  <strong>Requires:</strong>  Win 10 / 8 / 7 / Vista / XP<br />
+  <strong>Downloads:</strong> 2762831 times
+      <br>
+      [<img alt="Add a Comment on JetClean" border="0" src="/images/icons/comments.gif" width="16" height="16">
+       <a href="files/details/jetclean.html#comments"><strong>Comments</strong></a>
+       <img alt="Screenshots for JetClean" border="0" src="/images/mg_zoom.gif" width="21" height="16"> 
+        <a href="files/details/jetclean.html#screenshots"><strong>Screenshots</strong></a>
+      ]
+      <br /><br />
+
+<img alt="Reimage download" border="0" src="/images/icons/red_icon_18x17px.png" width="18" height="17">
+<b><font color ="#000000">TIP</font>:
+<a target="reimage" href="https://www.reimageplus.com/includes/router_land.php?tracking=Majorgeeks&banner=newtxt" rel="nofollow">
+Click Here to Repair/Restore Missing Windows  Files</font></u></a>
+</b>
+</div>
+
+</td>
+
+<td valign="top">
+<div class="geekycolumn">
+<!-- Template: files_details_download_header -->
+<a href="mg/getmirror/jetclean,1.html"><img src="images/dll.gif" alt="Download JetClean" /></a><br /><!-- Template: files_details_download -->
+<img  style="padding-left:7px; "src="images/arrowd.gif" alt="Download JetClean from Author Site" /> <a href="mg/get/jetclean,1.html"><strong>Download@Authors Site</strong></a><br /><!-- Template: files_details_download_footer -->
+
+
+<img style="padding-left:7px;" src="images/arrowd.gif" alt="Download JetClean" /> <a href="mg/getmirror/jetclean,1.html"><strong>Download@MajorGeeks</strong></a>
+<br />
+<img style="padding-left:7px;" src="images/arrowd.gif" alt="Download JetClean" /> <a href="mg/getmirror/jetclean,2.html"><strong>Download@MajorGeeks</strong></a>
+<br />
+<br />
+
+<hr>
+<img src="images/mg_bad_link.gif" alt="Bad Link" /> <a title="Bad Link" rel="nofollow" href="content/page/report_a_bad_link.html">Report a Bad Link</a>
+</div>
+</td>
+
+
+<td width="220 px" valign="top"> 
+
+
+<form action="index.php" method="post" id="rateform">
+<strong>Rating:</strong> 5 (2943 votes)<select size="1" name="input_rating" class="geekyvotes">
+<option value="1">1 .Bad</option>
+<option value="2">2 .Not Geeky</option>
+<option value="3">3 .Average</option>
+<option value="4">4 .Good</option>
+<option value="5" selected="selected">5 .Geek-o-licious</option>
+</select>
+<input type="hidden" name="input_security_hash" value="c28bca76791db5230aa403774c0dc896e5b4308f5015e8830076648ea611377b" />
+<input type="hidden" name="faction" value="files_dorate" />
+<input type="hidden" name="input_file_id" value="7226" />
+<input type="submit" value="Vote" class="geekyvotes" />
+</form>
+
+<hr>
+
+<!-- NEW SOCIAL TEST -->
+<div class='addnow' data-id='142'></div>
+<!--NEW SOCIAL TEST -->
+
+</td>
+</tr>
+</table>
+</span>
+
+<!-- MDTest-->
+<!-- scope-->
+<div itemscope itemtype="https://schema.org/SoftwareApplication" >
+ <div>
+ <meta itemprop="name" content="JetClean"/>
+<!--
+<meta itemprop="description" content="JetClean is a lightweight all-in-one utility that can speed up your computer by cleaning your drive, free up memory, uninstall programs, optimize your startup and much more."/>
+ -->
+ <meta itemprop="datePublished" content="02/26/2016 07:54 AM"/>
+ <meta itemprop="applicationCategory" content="All In One Tweaks"/>
+ <meta itemprop="applicationSubCategory" content="Windows 7, 8 & 10"/>
+ <meta itemprop="operatingSystem" content=" Windows "/>
+ <meta itemprop="fileSize" content="4.22 MB">
+ <meta itemprop="softwareVersion" content="1.5.0.129">
+
+ </div>
+</div>
+
+
+<!-- MDTest
+<div itemscope itemtype="https://schema.org/Product">
+     <meta itemprop="name" content="JetClean">
+     <div itemscope itemtype="https://schema.org/Organization">
+     <meta itemprop="name" content="
+BlueSprig"> </div>
+</div>
+-->
+   <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+     <meta itemprop="worstRating" content="1">
+     <meta itemprop="bestRating" content="5">
+     <meta itemprop="ratingValue" content="5">
+     <meta itemprop="ratingCount" content="2943">
+   </div>
+
+<!-- MDTest -->
+<meta content="product" name="twitter:card" />
+<meta content="JetClean" name="twitter:title" />
+<!-- fb -->
+<meta content="JetClean" property="og:title" />
+<!-- MDTest -->
+
+
+<!--- div column replaced with table --> 
+<div class="geekycontainer">
+<div class="geekycolumn"></div>
+<div class="geekycolumn"></div>
+</div>
+<!--div column replaced with table  -->
+
+
+<!-- TEXT AD -->
+<br />
+<div class="navigation-light">
+<span style="font-size: 1.0em;">
+<img border="0" src="/images/icons/star.gif" alt="Featured Software Download" height="15" width="15" align="bottom">
+<div id="34616_INSERT_SLOT_ID_HERE" style="width:800px;height:45px;margin:0;padding:0">
+  <noscript><iframe id="7b08ebe960" name="7b08ebe960" src="//majorgeeks-d.openx.net/w/1.0/afr?auid=34616&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="800" height="45"><a href="//majorgeeks-d.openx.net/w/1.0/rc?cs=7b08ebe960&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="//majorgeeks-d.openx.net/w/1.0/ai?auid=34616&cs=7b08ebe960&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></noscript>
+</div>
+<script type="text/javascript">
+  var OX_ads = OX_ads || [];
+  OX_ads.push({
+     slot_id: "34616_INSERT_SLOT_ID_HERE",
+     auid: "34616"
+  });
+</script>
+
+<script type="text/javascript" src="//majorgeeks-d.openx.net/w/1.0/jstag"></script>
+</span>
+</div>
+
+
+<br />
+<!-- 336 Ad-->
+<div class="content">
+<!-- 336 ad -->
+<table width=340 border="0" valign="bottom" align="right" style="padding-left:4px;" class="author">
+ <tr>
+  <td valign="top"><CENTER><FONT face=Arial size=3>-=<font color="#B8220E"> advertisement </font> =-</FONT></CENTER>
+
+<div id="12689_INSERT_SLOT_ID_HERE" style="width:336px;height:280px;margin:0;padding:0">
+  <noscript><iframe id="961a9223d1" name="961a9223d1" src="//majorgeeks-d.openx.net/w/1.0/afr?auid=12689&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="336" height="280"><a rel="nofollow" href="//majorgeeks-d.openx.net/w/1.0/rc?cs=961a9223d1&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="//majorgeeks-d.openx.net/w/1.0/ai?auid=12689&cs=961a9223d1&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></noscript>
+</div>
+<script type="text/javascript">
+  var OX_ads = OX_ads || [];
+  OX_ads.push({
+     slot_id: "12689_INSERT_SLOT_ID_HERE",
+     auid: "12689"
+  });
+</script>
+
+<script type="text/javascript" src="//majorgeeks-d.openx.net/w/1.0/jstag"></script>
+
+  </td>
+ </tr>
+</table>
+<!-- 336 ad -->
+
+JetClean is a lightweight all-in-one utility that can speed up your computer by cleaning your drive, free up memory, uninstall programs, optimize your startup and much more.<br /><br />Considering its size, this app provides a lot. It is well laid out with 3 simple tabs; 1-Click, Tools and Settings. <br /><br />"1-Click" provides the basics that tools like CCleaner provide. You can safely clean out excess files from your drive and scan your registry for problems. Optionally you can clean old app traces and shortcuts. It runs very quickly.<br /><br />"Tools" goes deeper into other problem areas. You can uninstall apps, manage your startup items, remove toolbars, large programs, defrag your registry (often overlooked) and even boost your internet and performance. You can also make Jet Clean portable from here and take it with you. It contains a system information section as well eliminating the need for a separate utility like Belarc Advisor.<br /><br />"Options" offer the usual options but also adds in the ability to secure file delete, rescue and more.<br /><br /><iframe width="640" height="480" src="https://www.youtube.com/embed/5Tq9FWUlhtE" frameborder="0" allowfullscreen></iframe><br /><br />Jet Clean is a good choice for beginners or advanced users. Yes, you've heard that one before but beginning users can use "1-Click" for the basics and get help with anything else. Meanwhile, advanced users, including techs, know that all these tools are needed when repairing or cleaning up a machine.<br /><br />We've used JetClean for years here at MajorGeeks and it is easily one of the top 3 best cleaning apps available and the best if you need those extra features JetClean provides; and who doesn't?<br />
+
+
+
+<br />
+
+
+</div>
+
+<!-- span test  end div -->
+</div>
+<!-- span test  end div -->
+
+<!-- Test gallery -->
+<br>
+<a name="screenshots"></a>
+<strong><a href="files/image/12869.html"><img src="images/mg_zoom.gif" alt="Screen Shots " /> Screenshot for JetClean  </a></strong>
+
+
+
+<div class="geekywraplight">
+ <div class="content">
+  <div style="text-align: center;">
+   <!-- Template: files_lightbox_header -->
+<script type="text/javascript" src="//www.majorgeeks.com/core/javaload/lightbox.js"></script>
+<script type="text/javascript">
+    $(function()
+    {
+        $('#gallery a').lightBox();
+    });
+</script>
+
+  
+<div id="gallery"><!-- Template: files_lightbox_image -->
+
+
+
+
+<a href="index.php?ct=files&amp;action=file&amp;id=12869" title="JetClean"><img height="100" width="100" src="index.php?ct=files&amp;action=thumb&amp;id=12869" alt="Official Download Mirror for JetClean" /></a>
+<!-- Template: files_lightbox_image -->
+
+
+
+
+<a href="index.php?ct=files&amp;action=file&amp;id=12870" title="JetClean"><img height="100" width="100" src="index.php?ct=files&amp;action=thumb&amp;id=12870" alt="Official Download Mirror for JetClean" /></a>
+<!-- Template: files_lightbox_image -->
+
+
+
+
+<a href="index.php?ct=files&amp;action=file&amp;id=12871" title="JetClean"><img height="100" width="100" src="index.php?ct=files&amp;action=thumb&amp;id=12871" alt="Official Download Mirror for JetClean" /></a>
+<!-- Template: files_lightbox_footer -->
+</div>
+   </div>
+  </div>
+</div>
+<br />
+
+
+
+<!-- test gallery -->
+<br />
+
+
+
+
+
+<a name="comments"> Comments</a>
+<!-- Template: files_comment_scripts_standard -->
+<script type="text/javascript">
+<!--
+function quoteme(username, postdate, quote)
+{
+    window.document.getElementById("commentform").input_message.value =
+    window.document.getElementById("commentform").input_message.value + "[b]Posted by " + username + " on " + postdate + "[/b]\n[quote]" + quote + "[/quote]\n";    
+    window.document.getElementById("commentform").input_message.focus();
+}
+-->
+</script>
+
+
+
+
+<!-- Template: files_details_nav -->
+<div class="navigation">
+<div style="text-align: center;">
+<!-- Template: files_details_nav_previous -->
+&laquo; <a href="files/details/microsoft_office_suite_2007_(sp3)_service_pack_3.html">Microsoft Office Suite 2007 (SP3) Service Pack 3 </a> &middot; <strong>JetClean 1.5.0.129</strong> <!-- Template: files_details_nav_next -->
+&middot; <a href="files/details/jetboost.html">JetBoost 2.0.0.67</a> &raquo;
+</div>
+</div>
+<br />
+
+
+
+
+
+
+<!-- Template: files_details_footer -->
+<div class="navigation">
+<h2>
+<a href="https://www.majorgeeks.com">MajorGeeks.Com</a> &#187; <a href="mg/sortname/all_in_one.html">All In One Tweaks</a> &#187; <a href="mg/sortname/windows_7_8.html">Windows 7, 8 & 10</a> &#187; <a href="files/details/jetclean.html">JetClean 1.5.0.129</a> &#187; <a href="mg/getmirror/jetclean,1.html">Download Now</a>
+</h2>
+</div>
+<br> 
+<!-- test google 728 -->
+<center>
+<!-- change heigt from 90 to 0 to test ad -->
+<div id="I1" style="width:728px;height:0px;margin:0;padding:0">
+</div>
+</center>
+<br>
+<!- test google 728 -->
+
+
+
+
+<!--carambola-->
+<div style="height:340px;margin:0;padding:0;overflow:auto;">
+<!--Carambola Script --> 
+<img height='0' width='0' alt='' src='//pixel.watch/ntnb' style='display:block;' />        
+<img height='0' width='0' alt='' src='//pixel.carambo.la/Pixel/mjrg59/112814/0/1/0' style='display:block;width:0;height:0;' /> 
+<script data-cfasync="false" class="carambola_InContent" type="text/javascript" cbola_wid="0">  
+(function (i,d,s,o,m,r,c,l,w,q,y,h,g) {  
+var e=d.getElementById(r);if(e===null){  
+var t = d.createElement(o); t.src = g; t.id = r; t.setAttribute(m, s);t.async = 1;var n=d.getElementsByTagName(o)[0];n.parentNode.insertBefore(t, n); 
+var dt=new Date().getTime();  
+try{i[l][w+y](h,i[l][q+y](h)+'&'+dt);}catch(er){i[h]=dt;}  
+} else if(typeof i[c]!=='undefined'){i[c]++}  
+else{i[c]=1;}  
+})(window, document, 'InContent', 'script', 'mediaType', 'carambola_proxy','Cbola_IC','localStorage','set','get','Item','cbolaDt','//route.carambo.la/inimage/getlayer?pid=mjrg59&did=112814&wid=0&rdn=[RANDOM_NUMBER]')  
+</script>
+</div>
+<!--carambola-->
+
+
+
+<div class="geekywraplight">
+
+
+
+<!-- comments -->
+
+
+<b>Like it? Love it? Leave a comment below. Please note that comments requesting support or pointing out listing errors will be deleted. Visit our <a href="http://forums.majorgeeks.com">Support Forums</a> for help or drop an email to <u>mgnews @ majorgeeks.com</u> to report mistakes. Thank you!</b>
+
+
+<hr>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://majorgeekscom.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+<!-- comments -->
+
+
+
+
+</span>
+
+
+
+<br>
+<center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AutoSized Matched Content ad Test 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6960825562757852"
+     data-ad-slot="8734542405"
+     data-ad-format="autorelaxed"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<center><!-- Template: site_footer -->
+<div style="text-align: center;"></div>
+
+
+</div>
+</div>
+
+<div class="pagefooter">
+<div align="right">
+&copy; 2000-2018 MajorGeeks.com<br />
+<div align="right">
+<!-- Do not remove -->Powered by <a href="http://www.contentteller.com">Contentteller&reg; Business Edition</a><img src="index.php?ct=core&amp;action=tasks" alt="" /><!-- Do not remove -->
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript"> var _addnow = _addnow || []; _addnow.push(["set", "hash_id", "136:CzsdHHhsptbrFmFmOjHbPZR1jZw"]); (function() {var addnow = document.createElement("script"); addnow.type = "text/javascript"; addnow.async = true; addnow.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.addnow.com/widget/addnow.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(addnow, s);})(); </script>
+
+<!-- Geek Stats -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-956038-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Geek Stats -->
+
+
+<!--test blockers -->
+<script type="text/javascript">!function(t,o,e){e=t.createElement(o),t=t.getElementsByTagName(o)[0],e.async=1,e.src="https://screechingfurniture.com/v2/0/bnxSHvLDKZy6xuesXX6lglJY7gUMrHjiNebheSU6Vq5YUNRhGQ8r8Y-77ig4E4jGKPt",t.parentNode.insertBefore(e,t)}(document,"script"),function(t,o){t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)}}(document,window,"script","admiral");!function(t,e,n,a){function o(t){try{return t=localStorage.getItem("v4ac1eiZr0"),t&&t.split(",")[4]>0}catch(e){}return!1}function r(){var a=o();if(a){var r=t[e].pubads();typeof r.setTargeting===n&&r.setTargeting("admiral-engaged","true")}}a=t[e]=t[e]||{},a.cmd=a.cmd||[],typeof a.pubads===n?r():typeof a.cmd.unshift===n?a.cmd.unshift(r):a.cmd.push(r)}(window,"googletag","function");;;;;</script>
+<!-- test blockers -->
+
+
+
+</body>
+</html>

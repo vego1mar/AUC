@@ -26,6 +26,13 @@ public final class RulesExecutor implements RulesExecutable {
         log.info(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
+    @Override public void renew(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
+        this.rulesSet = rulesSet;
+        inProperty.setCode(htmlCode);
+        String identity = '@' + Integer.toHexString(System.identityHashCode(this));
+        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
+    }
+
     @Override public void execute() {
         String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
 

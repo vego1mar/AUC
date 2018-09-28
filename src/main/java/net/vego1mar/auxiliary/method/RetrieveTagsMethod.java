@@ -42,23 +42,25 @@ public class RetrieveTagsMethod extends Method {
     @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
         switch (target.in()) {
             case CODE:
+                retrieve(inProperty, inProperty.getCode());
+                break;
+            case CONTENT:
+                retrieve(inProperty, inProperty.getContent());
+                break;
             case COLLECTION:
                 throw new UnsupportedOperationException(METHOD_TARGET_NOT_SUPPORTED);
-            case CONTENT:
-                retrieve(inProperty);
-                break;
         }
 
         return inProperty;
     }
 
-    private void retrieve(@NotNull InImpl inProperty) {
+    private void retrieve(@NotNull InImpl inProperty, @NotNull String source) {
         switch (type) {
             case ALL:
-                inProperty.setCollection(retrieveAllTags(inProperty.getContent()));
+                inProperty.setCollection(retrieveAllTags(source));
                 break;
             case FIRST:
-                inProperty.setContent(retrieveFirstTag(inProperty.getContent()));
+                inProperty.setContent(retrieveFirstTag(source));
                 break;
         }
     }

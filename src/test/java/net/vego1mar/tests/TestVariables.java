@@ -8,14 +8,23 @@ import org.jetbrains.annotations.NotNull;
 
 public final class TestVariables {
 
-    public static final String WEBPAGE_OF_7ZIP = "runtime/tests/7zip_wp.txt";
-    public static final String WEBPAGE_OF_AIMP = "runtime/tests/aimp_wp.txt";
-    public static final String SOURCE_URL_OF_7ZIP = "https://www.7-zip.org/download.html";
-    public static final String SERIALIZATION_FILE_NAME_OF_7ZIP = "runtime/7-Zip.ser";
-    public static final String XML_RULES_SET_OF_7ZIP_RUNTIME = "runtime/7zip_settings.xml";
-    public static final String XML_RULES_SET_OF_7ZIP_PATTERN = "runtime/tests/7zip_settings__pattern.xml";
-    public static final String XML_RULES_SET_OF_AIMP_RUNTIME = "runtime/aimp_settings.xml";
-    public static final String XML_RULES_SET_OF_AIMP_PATTERN = "runtime/tests/aimp_settings__pattern.xml";
+    public static final String CODE_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_wp.txt";
+    public static final String CODE_AIMP = getWorkingDirectory() + "/src/test/resources/aimp_wp.txt";
+    public static final String CODE_SOURCETREE = getWorkingDirectory() + "/src/test/resources/sourcetree_wp.txt";
+    public static final String CODE_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/jetclean_wp.txt";
+    public static final String CODE_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/jetclean_wp2.txt";
+    public static final String SOURCE_URL_7ZIP = "https://www.7-zip.org/download.html";
+    public static final String SERIALIZATION_FILENAME_7ZIP = getWorkingDirectory() + "/runtime/7-Zip.ser";
+    public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
+    public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
+    public static final String XML_RUNTIME_AIMP = getWorkingDirectory() + "/runtime/aimp_settings.xml";
+    public static final String XML_PATTERN_AIMP = getWorkingDirectory() + "/src/test/resources/aimp_settings__pattern.xml";
+    public static final String XML_RUNTIME_SOURCETREE = getWorkingDirectory() + "/runtime/SourceTree_settings.xml";
+    public static final String XML_PATTERN_SOURCETREE = getWorkingDirectory() + "/src/test/resources/SourceTree_settings__pattern.xml";
+    public static final String XML_RUNTIME_JETCLEAN_1 = getWorkingDirectory() + "/runtime/JetClean01_settings.xml";
+    public static final String XML_RUNTIME_JETCLEAN_2 = getWorkingDirectory() + "/runtime/JetClean02_settings.xml";
+    public static final String XML_PATTERN_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/JetClean01_settings__pattern.xml";
+    public static final String XML_PATTERN_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/JetClean02_settings__pattern.xml";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {
@@ -23,7 +32,7 @@ public final class TestVariables {
     }
 
     public static String readFile(@NotNull String fileName) {
-        log.debug("Working directory: " + System.getProperty("user.dir"));
+        log.debug("Working directory: " + getWorkingDirectory());
         String result = "";
 
         try {
@@ -44,6 +53,10 @@ public final class TestVariables {
         }
 
         return result;
+    }
+
+    private static String getWorkingDirectory() {
+        return System.getProperty("user.dir");
     }
 
 }

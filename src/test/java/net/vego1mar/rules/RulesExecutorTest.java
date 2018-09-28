@@ -13,23 +13,21 @@ import net.vego1mar.tests.TestVariables;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class RulesExecutorTest {
 
     private static final Logger log = Logger.getLogger(RulesExecutorTest.class);
-    private String htmlCodeOf7ZipWebPage;
-    private String htmlCodeOfAimpWebPage;
+    private static final String htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.CODE_7ZIP);
+    private static final String htmlCodeOfAimpWebPage = TestVariables.readFile(TestVariables.CODE_AIMP);
+    private static final String htmlCodeOfSourceTreeWebPage = TestVariables.readFile(TestVariables.CODE_SOURCETREE);
+    private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
+    private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
 
-    @Before public void init() {
-        htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.WEBPAGE_OF_7ZIP);
-        htmlCodeOfAimpWebPage = TestVariables.readFile(TestVariables.WEBPAGE_OF_AIMP);
-    }
-
-    @Test public void executeRuleFor7Zip() throws Exception {
+    @Test public void executeRule_7Zip() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesSetFor7Zip();
+        Deque<RuleBased> rulesSet = TestCollections.getRulesFor7Zip_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
 
         // when
@@ -44,11 +42,11 @@ public class RulesExecutorTest {
         Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.exe", useAsProperty.getWindowsX64packageURL());
     }
 
-    @Test public void executeRuleFor7Zip_multithreading() throws Exception {
+    @Ignore @Test public void executeRule_7Zip_multithreading() throws Exception {
         // given
         List<RulesExecutor> rulesExecutors = Arrays.asList(
-            new RulesExecutor(TestCollections.getRulesSetFor7Zip(), htmlCodeOf7ZipWebPage),
-            new RulesExecutor(TestCollections.getRulesSetFor7Zip(), htmlCodeOf7ZipWebPage)
+            new RulesExecutor(TestCollections.getRulesFor7Zip_1(), htmlCodeOf7ZipWebPage),
+            new RulesExecutor(TestCollections.getRulesFor7Zip_1(), htmlCodeOf7ZipWebPage)
         );
 
         CyclicBarrier barrier = new CyclicBarrier(rulesExecutors.size());
@@ -83,9 +81,9 @@ public class RulesExecutorTest {
         }
     }
 
-    @Test public void executeRuleForAimp() throws Exception {
+    @Test public void executeRule_AIMP() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesSetForAimp();
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForAimp_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfAimpWebPage);
 
         // when
@@ -100,6 +98,52 @@ public class RulesExecutorTest {
         Assert.assertEquals("http://aimp.su/storage/5a11962272e8dc7777525fd878e95e5d/aimp_4.51.2080.exe", useAsProperty.getWindowsX86packageURL());
         Assert.assertEquals("", useAsProperty.getWindowsX64hash());
         Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+    }
+
+    @Test public void executeRule_SourceTree() throws Exception {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForSourceTree_1();
+        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
+
+        // when
+        rulesExecutor.execute();
+
+        // then
+        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
+        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
+        Assert.assertEquals("2.6.10", useAsProperty.getLatestAppVersion());
+        Assert.assertEquals("Sep 23, 2018", useAsProperty.getUpdateDate());
+
+        Assert.assertEquals(
+            "https://downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-2.6.10.exe",
+            useAsProperty.getWindowsX86packageURL()
+        );
+
+        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
+        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+    }
+
+    @Test public void executeRule_JetClean() throws Exception {
+        // given
+        Deque<RuleBased> rulesSet1 = TestCollections.getRulesForJetClean_1();
+        Deque<RuleBased> rulesSet2 = TestCollections.getRulesForJetClean_2();
+        RulesExecutable executor = new RulesExecutor(rulesSet1, htmlCodeOfJetCleanWebPage1);
+
+        // when
+        executor.execute();
+        executor.renew(rulesSet2, htmlCodeOfJetCleanWebPage2);
+        executor.execute();
+
+        // then
+        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
+        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
+        Assert.assertEquals("1.5.0.129", useAsProperty.getLatestAppVersion());
+        Assert.assertEquals("02/26/2016", useAsProperty.getUpdateDate());
+        Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe", useAsProperty.getWindowsX86packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
+        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
     }
 
 }

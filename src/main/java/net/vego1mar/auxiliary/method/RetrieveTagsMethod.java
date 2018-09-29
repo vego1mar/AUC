@@ -55,14 +55,12 @@ public class RetrieveTagsMethod extends Method {
     }
 
     private void retrieve(@NotNull InImpl inProperty, @NotNull String source) {
-        switch (type) {
-            case ALL:
-                inProperty.setCollection(retrieveAllTags(source));
-                break;
-            case FIRST:
-                inProperty.setContent(retrieveFirstTag(source));
-                break;
+        if (type == RetrieveTagsType.ALL) {
+            inProperty.setCollection(retrieveAllTags(source));
+            return;
         }
+
+        inProperty.setContent(retrieveFirstTag(source));
     }
 
     private List<String> retrieveAllTags(@NotNull String source) {

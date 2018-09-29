@@ -10,6 +10,7 @@ import net.vego1mar.auxiliary.method.PrependMethod;
 import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
 import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.SplitWordsMethod;
+import net.vego1mar.auxiliary.method.TrimMethod;
 import net.vego1mar.enumerators.traits.MethodType;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -40,6 +41,8 @@ public final class MethodCreator {
                 return new SplitWordsMethod();
             case FETCH_HREFS:
                 return new FetchHrefsMethod();
+            case TRIM:
+                return new TrimMethod();
         }
 
         return new EmptyMethod();

@@ -104,4 +104,46 @@ public class XmlRulesSetManagerTest {
         Assert.assertEquals(sourceSet2.toString(), rulesSet2.toString());
     }
 
+    @Test public void saveSettings_BorderlessGaming() {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+
+        // when
+        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_BORDERLESSGAMING);
+
+        // then
+        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_BORDERLESSGAMING);
+        String source = TestVariables.readFile(TestVariables.XML_PATTERN_BORDERLESSGAMING);
+        Assert.assertEquals(source, runtime);
+    }
+
+    @Test public void loadSettings_BorderlessGaming() {
+        // when
+        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_BORDERLESSGAMING);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForBorderlessGaming_1().toString(), rulesSet.toString());
+    }
+
+    @Test public void saveSettings_TeraCopy() {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForTeraCopy_1();
+
+        // when
+        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_TERACOPY);
+
+        // then
+        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_TERACOPY);
+        String source = TestVariables.readFile(TestVariables.XML_PATTERN_TERACOPY);
+        Assert.assertEquals(source, runtime);
+    }
+
+    @Test public void loadSettings_TeraCopy() {
+        // when
+        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_TERACOPY);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForTeraCopy_1().toString(), rulesSet.toString());
+    }
+
 }

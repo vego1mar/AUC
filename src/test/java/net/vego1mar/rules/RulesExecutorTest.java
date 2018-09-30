@@ -24,8 +24,10 @@ public class RulesExecutorTest {
     private static final String htmlCodeOfSourceTreeWebPage = TestVariables.readFile(TestVariables.CODE_SOURCETREE);
     private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
+    private static final String htmlCodeOfBorderlessGamingWebPage = TestVariables.readFile(TestVariables.CODE_BORDERLESSGAMING);
+    private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
 
-    @Test public void executeRule_7Zip() throws Exception {
+    @Test public void execute_7Zip() throws Exception {
         // given
         Deque<RuleBased> rulesSet = TestCollections.getRulesFor7Zip_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
@@ -42,7 +44,7 @@ public class RulesExecutorTest {
         Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.exe", useAsProperty.getWindowsX64packageURL());
     }
 
-    @Ignore @Test public void executeRule_7Zip_multithreading() throws Exception {
+    @Ignore @Test public void executeMultithreading_7Zip() throws Exception {
         // given
         List<RulesExecutor> rulesExecutors = Arrays.asList(
             new RulesExecutor(TestCollections.getRulesFor7Zip_1(), htmlCodeOf7ZipWebPage),
@@ -81,7 +83,7 @@ public class RulesExecutorTest {
         }
     }
 
-    @Test public void executeRule_AIMP() throws Exception {
+    @Test public void execute_AIMP() throws Exception {
         // given
         Deque<RuleBased> rulesSet = TestCollections.getRulesForAimp_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfAimpWebPage);
@@ -100,7 +102,7 @@ public class RulesExecutorTest {
         Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
     }
 
-    @Test public void executeRule_SourceTree() throws Exception {
+    @Test public void execute_SourceTree() throws Exception {
         // given
         Deque<RuleBased> rulesSet = TestCollections.getRulesForSourceTree_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
@@ -124,7 +126,7 @@ public class RulesExecutorTest {
         Assert.assertEquals("", useAsProperty.getWindowsX64hash());
     }
 
-    @Test public void executeRule_JetClean() throws Exception {
+    @Test public void execute_JetClean() throws Exception {
         // given
         Deque<RuleBased> rulesSet1 = TestCollections.getRulesForJetClean_1();
         Deque<RuleBased> rulesSet2 = TestCollections.getRulesForJetClean_2();
@@ -141,6 +143,49 @@ public class RulesExecutorTest {
         Assert.assertEquals("1.5.0.129", useAsProperty.getLatestAppVersion());
         Assert.assertEquals("02/26/2016", useAsProperty.getUpdateDate());
         Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe", useAsProperty.getWindowsX86packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
+        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+    }
+
+    @Test public void execute_BorderlessGaming() throws Exception {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
+
+        // when
+        executor.execute();
+
+        // then
+        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
+        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
+        Assert.assertEquals("9.5.4", useAsProperty.getLatestAppVersion());
+        Assert.assertEquals("Mar 31, 2018", useAsProperty.getUpdateDate());
+
+        Assert.assertEquals(
+            "https://github.com/Codeusa/Borderless-Gaming/releases/download/9.5.4/BorderlessGaming9.5.4_admin_setup.exe",
+            useAsProperty.getWindowsX86packageURL()
+        );
+
+        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
+        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+    }
+
+    @Test public void execute_TeraCopy() throws Exception {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForTeraCopy_1();
+        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
+
+        // when
+        executor.execute();
+
+        // then
+        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
+        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
+        Assert.assertEquals("3.26", useAsProperty.getLatestAppVersion());
+        Assert.assertEquals("", useAsProperty.getUpdateDate());
+        Assert.assertEquals("http://www.codesector.com/files/teracopy.exe", useAsProperty.getWindowsX86packageURL());
         Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
         Assert.assertEquals("", useAsProperty.getWindowsX86hash());
         Assert.assertEquals("", useAsProperty.getWindowsX64hash());

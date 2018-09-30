@@ -12,7 +12,7 @@ public class AppInfoCollectorTest {
 
     @Test public void isUpdateAvailableFor7Zip_online() {
         // given
-        AppInfoCollector collector = new AppInfoCollector("7-Zip", "https://www.7-zip.org/download.html");
+        AppInfoCollector collector = new AppInfoCollector("7-Zip", TestVariables.SOURCE_URL_7ZIP);
 
         // when
         collector.setRulesSet(TestCollections.getRulesFor7Zip_1());

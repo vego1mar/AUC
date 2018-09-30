@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RulesExecutable;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.auxiliary.properties.UseAsImpl;
 import net.vego1mar.auxiliary.properties.UseAsProperty;
@@ -21,7 +22,7 @@ public class AppInfoCollector implements Serializable {
     private static final transient Logger log = Logger.getLogger(AppInfoCollector.class);
     private static final long serialVersionUID = 1L;
     private transient String htmlCode;
-    private transient Deque<RuleBased> rulesSet;
+    private transient Deque<RuleBased> rulesSet; // TODO: replace with executor cause of .renew()
     private String appName;
     private String sourceURL;
     private UseAsImpl useAsProperty;
@@ -63,7 +64,7 @@ public class AppInfoCollector implements Serializable {
             return;
         }
 
-        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCode);
+        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCode);
 
         try {
             executor.execute();

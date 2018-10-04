@@ -146,4 +146,25 @@ public class XmlRulesSetManagerTest {
         Assert.assertEquals(TestCollections.getRulesForTeraCopy_1().toString(), rulesSet.toString());
     }
 
+    @Test public void saveSettings_PotPlayer() {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForPotPlayer_1();
+
+        // when
+        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_POTPLAYER);
+
+        // then
+        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_POTPLAYER);
+        String source = TestVariables.readFile(TestVariables.XML_PATTERN_POTPLAYER);
+        Assert.assertEquals(source, runtime);
+    }
+
+    @Test public void loadSettings_PotPlayer() {
+        // when
+        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_POTPLAYER);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForPotPlayer_1().toString(), rulesSet.toString());
+    }
+
 }

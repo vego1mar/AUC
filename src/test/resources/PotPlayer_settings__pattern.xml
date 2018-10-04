@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[<strong>]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>GRAB_UNTIL</methodType>
+      <charStop>)</charStop>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>SPLIT_WORDS</methodType>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LATEST_APP_VERSION</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>3</position>
+    </method>
+  </rule>
+  <rule no="5">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>10</position>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <in>CONTENT</in>
+      <useAs>WINDOWS_X86_PACKAGE_URL</useAs>
+    </target>
+    <method>
+      <methodType>FETCH_HREFS</methodType>
+    </method>
+  </rule>
+  <rule no="7">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>REMOVE_CHARACTERS</methodType>
+      <signs>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.:-</signs>
+    </method>
+  </rule>
+  <rule no="8">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>5</numberOf>
+    </method>
+  </rule>
+  <rule no="9">
+    <target>
+      <in>CONTENT</in>
+      <useAs>UPDATE_DATE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>1</numberOf>
+    </method>
+  </rule>
+  <rule no="10">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[for 64-bit Windows]]></text>
+    </method>
+  </rule>
+  <rule no="11">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>FIRST</type>
+      <tagname>a</tagname>
+    </method>
+  </rule>
+  <rule no="12">
+    <target>
+      <in>CONTENT</in>
+      <useAs>WINDOWS_X64_PACKAGE_URL</useAs>
+    </target>
+    <method>
+      <methodType>FETCH_HREFS</methodType>
+    </method>
+  </rule>
+</rulesSet>

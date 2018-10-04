@@ -26,6 +26,7 @@ public class RulesExecutorTest {
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
     private static final String htmlCodeOfBorderlessGamingWebPage = TestVariables.readFile(TestVariables.CODE_BORDERLESSGAMING);
     private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
+    private static final String htmlCodeOfPotPlayerWebPage = TestVariables.readFile(TestVariables.CODE_POTPLAYER);
 
     @Test public void execute_7Zip() throws Exception {
         // given
@@ -187,6 +188,34 @@ public class RulesExecutorTest {
         Assert.assertEquals("", useAsProperty.getUpdateDate());
         Assert.assertEquals("http://www.codesector.com/files/teracopy.exe", useAsProperty.getWindowsX86packageURL());
         Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
+        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
+        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+    }
+
+    @Test public void execute_PotPlayer() throws Exception {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesForPotPlayer_1();
+        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
+
+        // when
+        executor.execute();
+
+        // then
+        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
+        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
+        Assert.assertEquals("1.7.13963", useAsProperty.getLatestAppVersion());
+        Assert.assertEquals("2018/08", useAsProperty.getUpdateDate());
+
+        Assert.assertEquals(
+            "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe",
+            useAsProperty.getWindowsX86packageURL()
+        );
+
+        Assert.assertEquals(
+            "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe",
+            useAsProperty.getWindowsX64packageURL()
+        );
+
         Assert.assertEquals("", useAsProperty.getWindowsX86hash());
         Assert.assertEquals("", useAsProperty.getWindowsX64hash());
     }

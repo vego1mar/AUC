@@ -433,4 +433,70 @@ public final class TestCollections {
         return rulesSet;
     }
 
+    public static Deque<RuleBased> getRulesForPotPlayer_1() {
+        Deque<RuleBased> rulesSet = new LinkedList<>();
+
+        RuleBased rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
+        method1.setType(FirstOfType.STRING);
+        method1.setText("<strong>");
+
+        RuleBased rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method2 = (GrabUntilMethod) rule2.getMethod();
+        method2.setCharStop(')');
+
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
+
+        RuleBased rule4 = new Rule(new Target(In.COLLECTION, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
+        method4.setPosition(3);
+
+        RuleBased rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
+        method5.setPosition(10);
+
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+
+        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        RemoveCharactersMethod method7 = (RemoveCharactersMethod) rule7.getMethod();
+        method7.setSigns("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.:-");
+
+        RuleBased rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method8 = (TrimMethod) rule8.getMethod();
+        method8.setSide(TrimSide.LEFT);
+        method8.setNumberOf(5);
+
+        RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method9 = (TrimMethod) rule9.getMethod();
+        method9.setSide(TrimSide.RIGHT);
+        method9.setNumberOf(1);
+
+        RuleBased rule10 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method10 = (FirstOfMethod) rule10.getMethod();
+        method10.setType(FirstOfType.STRING);
+        method10.setText("for 64-bit Windows");
+
+        RuleBased rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method11 = (RetrieveTagsMethod) rule11.getMethod();
+        method11.setType(RetrieveTagsType.FIRST);
+        method11.setTagname("a");
+
+        RuleBased rule12 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X64_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+
+        rulesSet.add(rule1);
+        rulesSet.add(rule2);
+        rulesSet.add(rule3);
+        rulesSet.add(rule4);
+        rulesSet.add(rule5);
+        rulesSet.add(rule6);
+        rulesSet.add(rule7);
+        rulesSet.add(rule8);
+        rulesSet.add(rule9);
+        rulesSet.add(rule10);
+        rulesSet.add(rule11);
+        rulesSet.add(rule12);
+
+        return rulesSet;
+    }
+
 }

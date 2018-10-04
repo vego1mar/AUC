@@ -6,39 +6,39 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.util.Deque;
 import java.util.LinkedList;
+import net.vego1mar.auxiliary.properties.InProperty;
 import net.vego1mar.rules.RuleBased;
 import net.vego1mar.rules.RulesExecutable;
 import net.vego1mar.rules.RulesExecutor;
-import net.vego1mar.auxiliary.properties.UseAsImpl;
-import net.vego1mar.auxiliary.properties.UseAsProperty;
-import net.vego1mar.utils.WebPageDownloader;
+import net.vego1mar.utils.DownloadHelper;
+import net.vego1mar.utils.ReflectionHelper;
+import net.vego1mar.utils.XmlRulesSetManager;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
-public class AppInfoCollector implements Serializable {
+public class AppInfoCollector implements Serializable, AppInfoCollectible {
 
     private static final transient Logger log = Logger.getLogger(AppInfoCollector.class);
     private static final long serialVersionUID = 1L;
-    private transient String htmlCode;
-    private transient Deque<RuleBased> rulesSet; // TODO: replace with executor cause of .renew()
+    private String htmlCode;
+    private RulesExecutable executor;
     private String appName;
     private String sourceURL;
-    private UseAsImpl useAsProperty;
     private String currentAppVersion;
 
     public AppInfoCollector(@NotNull String appName, @NotNull String sourceURL) {
         htmlCode = "";
-        rulesSet = new LinkedList<>();
+        executor = new RulesExecutor(new LinkedList<>(), htmlCode);
         this.appName = appName;
         this.sourceURL = sourceURL;
-        useAsProperty = new UseAsProperty();
         currentAppVersion = "";
     }
 
-    public static AppInfoCollector readObject(@NotNull String fileName) {
-        AppInfoCollector collectorObject = null;
+    private static AppInfoCollectible readObject(@NotNull String fileName) {
+        AppInfoCollectible collectorObject = null;
 
         try {
             try (FileInputStream fileStream = new FileInputStream(fileName)) {
@@ -50,33 +50,51 @@ public class AppInfoCollector implements Serializable {
             log.error(exp);
         }
 
-        log.info("Object '" + collectorObject + "' deserialized from '" + fileName + "'.");
         return collectorObject;
     }
 
-    public void gatherInformation() {
+    public static AppInfoCollectible load(@NotNull String objTarget, @NotNull String xmlTarget) {
+        AppInfoCollectible object = readObject(objTarget);
+
+        try {
+            AppInfoCollector collector = (AppInfoCollector) object;
+            Field htmlCodeField = ReflectionHelper.getField(AppInfoCollector.class, "htmlCode");
+            String htmlCode = (String) htmlCodeField.get(collector);
+            Field inProperty = ReflectionHelper.getField(RulesExecutor.class, "inProperty");
+            inProperty.set(collector.getExecutor(), new InProperty());
+            Field rulesSet = ReflectionHelper.getField(RulesExecutor.class, "rulesSet");
+            rulesSet.set(collector.getExecutor(), new LinkedList<>());
+            Deque<RuleBased> loadedRulesSet = XmlRulesSetManager.loadSettings(xmlTarget);
+            collector.getExecutor().renew(loadedRulesSet, htmlCode);
+        } catch (IllegalAccessException exp) {
+            log.error(exp);
+        }
+
+        log.info("Object state loaded from [objFile='" + objTarget + "', xmlFile='" + xmlTarget + "']");
+        return object;
+    }
+
+    @Override public void gatherInformation(@NotNull Deque<RuleBased> rulesSet) {
         if (htmlCode.isEmpty()) {
-            htmlCode = WebPageDownloader.getHtml(sourceURL);
+            htmlCode = DownloadHelper.getHtml(sourceURL);
         }
 
         if (htmlCode.isEmpty()) {
-            log.warn("Failed while downloading the CODE content.");
+            log.warn("Downloading the webpage resulted with an empty CODE.");
             return;
         }
 
-        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCode);
-
         try {
+            executor.renew(new LinkedList<>(rulesSet), htmlCode);
             executor.execute();
-            useAsProperty = executor.getResults();
         } catch (UnsupportedOperationException | NullPointerException exp) {
             log.error(exp);
         }
     }
 
-    public boolean isUpdateAvailable() {
+    @Override public boolean isUpdateAvailable() {
         String currentVersion = currentAppVersion.trim();
-        String latestVersion = useAsProperty.getLatestAppVersion().trim();
+        String latestVersion = executor.getResults().getLatestAppVersion().trim();
         int shorterLength = (currentVersion.length() < latestVersion.length()) ? currentVersion.length() : latestVersion.length();
 
         if (currentVersion.equals(latestVersion)) {
@@ -96,11 +114,7 @@ public class AppInfoCollector implements Serializable {
         this.currentAppVersion = currentAppVersion;
     }
 
-    public void setRulesSet(@NotNull Deque<RuleBased> rulesSet) {
-        this.rulesSet = rulesSet;
-    }
-
-    public void writeObject(@NotNull String fileName) {
+    private void writeObject(@NotNull String fileName) {
         try {
             try (FileOutputStream fileStream = new FileOutputStream(fileName)) {
                 ObjectOutputStream objectStream = new ObjectOutputStream(fileStream);
@@ -111,8 +125,20 @@ public class AppInfoCollector implements Serializable {
         } catch (IOException exp) {
             log.error(exp);
         }
+    }
 
-        log.info("Object '" + this + "' serialized and saved under '" + fileName + "'.");
+    @Override public void save(@NotNull String objDestination, @NotNull String xmlDestination) {
+        writeObject(objDestination);
+        XmlRulesSetManager.saveSettings(((RulesExecutor) executor).getRulesSet(), xmlDestination);
+        log.info("Object state saved at [objFile='" + objDestination + "', xmlFile='" + xmlDestination + "']");
+    }
+
+    public RulesExecutable getExecutor() {
+        return executor;
+    }
+
+    public String getAppName() {
+        return appName;
     }
 
 }

@@ -3,6 +3,10 @@ package net.vego1mar.tests;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Field;
+import net.vego1mar.collector.AppInfoCollectible;
+import net.vego1mar.collector.AppInfoCollector;
+import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
@@ -16,8 +20,6 @@ public final class TestVariables {
     public static final String CODE_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_wp.txt";
     public static final String CODE_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_wp.txt";
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
-    public static final String SOURCE_URL_7ZIP = "https://www.7-zip.org/download.html";
-    public static final String SERIALIZATION_FILENAME_7ZIP = getWorkingDirectory() + "/runtime/7-Zip.ser";
     public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
     public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
     public static final String XML_RUNTIME_AIMP = getWorkingDirectory() + "/runtime/aimp_settings.xml";
@@ -34,6 +36,7 @@ public final class TestVariables {
     public static final String XML_PATTERN_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_settings__pattern.xml";
     public static final String XML_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayer_settings.xml";
     public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_settings__pattern.xml";
+    public static final String OBJECT_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayerOBJ.ser";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {
@@ -66,6 +69,20 @@ public final class TestVariables {
 
     private static String getWorkingDirectory() {
         return System.getProperty("user.dir");
+    }
+
+    public static AppInfoCollectible getCollector(@NotNull String codeFileName) {
+        AppInfoCollectible collector = new AppInfoCollector("collector#" + codeFileName, "");
+        String htmlCode = readFile(codeFileName);
+        Field field = ReflectionHelper.getField(AppInfoCollector.class, "htmlCode");
+
+        try {
+            field.set(collector, htmlCode);
+        } catch (IllegalAccessException exp) {
+            log.debug(exp.getMessage());
+        }
+
+        return collector;
     }
 
 }

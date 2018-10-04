@@ -1,52 +1,88 @@
 package net.vego1mar.collector;
 
-import net.vego1mar.auxiliary.properties.UseAsImpl;
-import net.vego1mar.auxiliary.properties.UseAsProperty;
+import java.util.Deque;
+import net.vego1mar.auxiliary.properties.InImpl;
+import net.vego1mar.auxiliary.properties.InProperty;
+import net.vego1mar.enumerators.utils.HashType;
+import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
+import net.vego1mar.utils.HashGenerator;
 import net.vego1mar.utils.ReflectionHelper;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AppInfoCollectorTest {
 
-    @Test public void isUpdateAvailableFor7Zip_online() {
+    @Ignore @Test public void save_PotPlayer() {
         // given
-        AppInfoCollector collector = new AppInfoCollector("7-Zip", TestVariables.SOURCE_URL_7ZIP);
+        AppInfoCollectible collector = TestVariables.getCollector(TestVariables.CODE_POTPLAYER);
+        collector.gatherInformation(TestCollections.getRulesForPotPlayer_1());
 
         // when
-        collector.setRulesSet(TestCollections.getRulesFor7Zip_1());
-        collector.setCurrentAppVersion("18.05");
-        collector.gatherInformation();
-        boolean isUpdateAvailable = collector.isUpdateAvailable();
+        collector.save(TestVariables.OBJECT_RUNTIME_POTPLAYER, TestVariables.XML_RUNTIME_POTPLAYER);
 
         // then
-        Assert.assertFalse(isUpdateAvailable);
+        final String objectRuntimeHash = HashGenerator.calculate(TestVariables.OBJECT_RUNTIME_POTPLAYER, HashType.SHA_1);
+        final String xmlRuntimeHash = HashGenerator.calculate(TestVariables.XML_RUNTIME_POTPLAYER, HashType.SHA_1);
+        Assert.assertEquals("1FE1835372258BD4477D14BB529AD5B172FA3A80", objectRuntimeHash.toUpperCase());
+        Assert.assertEquals("D5E2C9EA30FE2571E7E962852116B418AC2A0B41", xmlRuntimeHash.toUpperCase());
     }
 
-    @Test public void serializationFor7Zip() throws Exception {
-        // given
-        AppInfoCollector collector = new AppInfoCollector("7-Zip", TestVariables.SOURCE_URL_7ZIP);
-
+    @Ignore @Test public void load_PotPlayer() throws IllegalAccessException {
         // when
-        collector.setRulesSet(TestCollections.getRulesFor7Zip_1());
-        collector.setCurrentAppVersion("18.05");
-        ReflectionHelper.getField(AppInfoCollector.class, "htmlCode").set(collector, TestVariables.readFile(TestVariables.CODE_7ZIP));
-        collector.gatherInformation();
-        collector.writeObject(TestVariables.SERIALIZATION_FILENAME_7ZIP);
-        AppInfoCollector serializedObject = AppInfoCollector.readObject(TestVariables.SERIALIZATION_FILENAME_7ZIP);
+        AppInfoCollectible collectible = AppInfoCollector.load(TestVariables.OBJECT_RUNTIME_POTPLAYER, TestVariables.XML_RUNTIME_POTPLAYER);
+
+        // given
+        final AppInfoCollector collector = (AppInfoCollector) collectible;
+        final String htmlCodeString = (String) ReflectionHelper.getField(AppInfoCollector.class, "htmlCode").get(collector);
+        final String htmlCodeFile = TestVariables.readFile(TestVariables.CODE_POTPLAYER);
+        final String appName = collector.getAppName();
+        final String sourceURL = (String) ReflectionHelper.getField(AppInfoCollector.class, "sourceURL").get(collector);
+        final String currentAppVersion = (String) ReflectionHelper.getField(AppInfoCollector.class, "currentAppVersion").get(collector);
+        final InImpl inProperty = (InProperty) ReflectionHelper.getField(RulesExecutor.class, "inProperty").get(collector.getExecutor());
+        final String inPropertyCode = (String) ReflectionHelper.getField(InProperty.class, "code").get(inProperty);
+        final Deque<RuleBased> rulesSet = (Deque<RuleBased>) ReflectionHelper.getField(RulesExecutor.class, "rulesSet").get(collector.getExecutor());
+        final Deque<RuleBased> rulesSetPattern = TestCollections.getRulesForPotPlayer_1();
+        final String x86URL = "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe";
+        final String x64URL = "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe";
 
         // then
-        Assert.assertFalse(serializedObject.isUpdateAvailable());
-        Assert.assertEquals("7-Zip", ReflectionHelper.getField(AppInfoCollector.class, "appName").get(serializedObject));
-        UseAsImpl collectorUseAs = ((UseAsProperty) (ReflectionHelper.getField(AppInfoCollector.class, "useAsProperty").get(collector)));
-        UseAsImpl serializedUseAs = ((UseAsProperty) (ReflectionHelper.getField(AppInfoCollector.class, "useAsProperty").get(serializedObject)));
+        Assert.assertEquals(htmlCodeFile, htmlCodeString);
+        Assert.assertTrue(appName.contains(TestVariables.CODE_POTPLAYER));
+        Assert.assertEquals("", sourceURL);
+        Assert.assertEquals("", currentAppVersion);
+        Assert.assertNotNull(inProperty);
+        Assert.assertEquals(htmlCodeString, inPropertyCode);
+        Assert.assertEquals(rulesSetPattern.toString(), rulesSet.toString());
+        Assert.assertEquals("1.7.13963", collector.getExecutor().getResults().getLatestAppVersion());
+        Assert.assertEquals("2018/08", collector.getExecutor().getResults().getUpdateDate());
+        Assert.assertEquals(x86URL, collector.getExecutor().getResults().getWindowsX86packageURL());
+        Assert.assertEquals(x64URL, collector.getExecutor().getResults().getWindowsX64packageURL());
+        Assert.assertEquals("", collector.getExecutor().getResults().getWindowsX86hash());
+        Assert.assertEquals("", collector.getExecutor().getResults().getWindowsX64hash());
+    }
 
-        Assert.assertTrue(serializedUseAs.getLatestAppVersion().equals(collectorUseAs.getLatestAppVersion()) &&
-            collectorUseAs.getUpdateDate().equals(serializedUseAs.getUpdateDate()) &&
-            collectorUseAs.getWindowsX86packageURL().equals(serializedUseAs.getWindowsX86packageURL()) &&
-            collectorUseAs.getWindowsX64packageURL().equals(serializedUseAs.getWindowsX64packageURL())
-        );
+    @Test public void isUpdateAvailable_PotPlayer() {
+        // given
+        AppInfoCollectible collectible = TestVariables.getCollector(TestVariables.CODE_POTPLAYER);
+        AppInfoCollector collector = (AppInfoCollector) collectible;
+        collectible.gatherInformation(TestCollections.getRulesForPotPlayer_1());
+
+        // when
+        collector.setCurrentAppVersion("1.7.13964");
+        final boolean update1 = collectible.isUpdateAvailable();
+        collector.setCurrentAppVersion("1.7.13963");
+        final boolean update2 = collectible.isUpdateAvailable();
+        collector.setCurrentAppVersion("1.7.13962");
+        final boolean update3 = collectible.isUpdateAvailable();
+
+        // then
+        Assert.assertFalse(update1);
+        Assert.assertFalse(update2);
+        Assert.assertTrue(update3);
     }
 
 }

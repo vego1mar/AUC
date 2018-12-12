@@ -59,10 +59,6 @@ public class AppInfoCollectorTest {
         Assert.assertEquals(rulesSetPattern.toString(), rulesSet.toString());
         Assert.assertEquals("1.7.13963", collector.getExecutor().getResults().getLatestAppVersion());
         Assert.assertEquals("2018/08", collector.getExecutor().getResults().getUpdateDate());
-        Assert.assertEquals(x86URL, collector.getExecutor().getResults().getWindowsX86packageURL());
-        Assert.assertEquals(x64URL, collector.getExecutor().getResults().getWindowsX64packageURL());
-        Assert.assertEquals("", collector.getExecutor().getResults().getWindowsX86hash());
-        Assert.assertEquals("", collector.getExecutor().getResults().getWindowsX64hash());
     }
 
     @Test public void isUpdateAvailable_PotPlayer() {

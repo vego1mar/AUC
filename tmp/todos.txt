@@ -5,3 +5,6 @@ categories and grouping of apps entries
 Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
 file mask for downloaded files
 DownloadHelper.downloadFile(String url);
+
+::UseAsProperty
+fileType - extension (.exe, .msi, .zip)

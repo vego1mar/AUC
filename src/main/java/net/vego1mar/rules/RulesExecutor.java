@@ -5,6 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.auxiliary.properties.InImpl;
 import net.vego1mar.auxiliary.properties.InProperty;
+import net.vego1mar.auxiliary.target.Target;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import net.vego1mar.auxiliary.properties.UseAsImpl;
@@ -25,18 +26,22 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         inProperty.setCode(htmlCode);
         useAsProperty = new UseAsProperty();
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
+        log.info(
+            getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS="
+                + htmlCode.length() + ')');
     }
 
     @Override public void renew(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty.setCode(htmlCode);
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
+        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size()
+            + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
     @Override public void execute() {
-        String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
+        String identity =
+            getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
         Deque<RuleBased> rules = new LinkedList<>(this.rulesSet);
 
         while (!rules.isEmpty()) {
@@ -50,8 +55,9 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
 
     private void executeRule(@NotNull RuleBased rule) {
         inProperty = rule.getMethod().invoke(rule.getTarget(), inProperty);
+        Target target = (Target) rule.getTarget();
 
-        switch (rule.getTarget().useAs()) {
+        switch (target.useAs()) {
             case IGNORE:
                 break;
             case LATEST_APP_VERSION:
@@ -60,17 +66,11 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
             case UPDATE_DATE:
                 useAsProperty.setUpdateDate(inProperty.getContent());
                 break;
-            case WINDOWS_X86_PACKAGE_URL:
-                useAsProperty.setWindowsX86packageURL(inProperty.getContent());
+            case LINKS:
+                useAsProperty.getLinks().setItem(target.getLinkID(), inProperty.getContent());
                 break;
-            case WINDOWS_X64_PACKAGE_URL:
-                useAsProperty.setWindowsX64packageURL(inProperty.getContent());
-                break;
-            case WINDOWS_X86_HASH:
-                useAsProperty.setWindowsX86hash(inProperty.getContent());
-                break;
-            case WINDOWS_X64_HASH:
-                useAsProperty.setWindowsX64hash(inProperty.getContent());
+            case HASHES:
+                useAsProperty.getLinks().setItem(target.getHashID(), inProperty.getContent());
                 break;
         }
     }

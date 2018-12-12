@@ -11,6 +11,7 @@ import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.TrimMethod;
 import net.vego1mar.enumerators.methods.RetrieveTagsType;
 import net.vego1mar.enumerators.methods.TrimSide;
+import net.vego1mar.enumerators.properties.LinksID;
 import net.vego1mar.enumerators.traits.MethodType;
 import net.vego1mar.rules.Rule;
 import net.vego1mar.rules.RuleBased;
@@ -69,13 +70,47 @@ public final class TestCollections {
         PrependMethod method11 = (PrependMethod) rule11.getMethod();
         method11.setText("https://www.7-zip.org/");
 
-        RuleBased rule12 = new Rule(new Target(In.COLLECTION, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule12 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target12 = (Target) rule12.getTarget();
+        target12.setLinkID(LinksID.WINDOWS_X86_EXE);
         ExtractWordMethod method12 = (ExtractWordMethod) rule12.getMethod();
         method12.setPosition(1);
 
-        RuleBased rule13 = new Rule(new Target(In.COLLECTION, UseAs.WINDOWS_X64_PACKAGE_URL), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule13 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target13 = (Target) rule13.getTarget();
+        target13.setLinkID(LinksID.WINDOWS_X64_EXE);
         ExtractWordMethod method13 = (ExtractWordMethod) rule13.getMethod();
         method13.setPosition(2);
+
+        RuleBased rule14 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target14 = (Target) rule14.getTarget();
+        target14.setLinkID(LinksID.WINDOWS_ANY_7Z);
+        ExtractWordMethod method14 = (ExtractWordMethod) rule14.getMethod();
+        method14.setPosition(3);
+
+        RuleBased rule15 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target15 = (Target) rule15.getTarget();
+        target15.setLinkID(LinksID.SOURCECODE_ANY_7Z);
+        ExtractWordMethod method15 = (ExtractWordMethod) rule15.getMethod();
+        method15.setPosition(4);
+
+        RuleBased rule16 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target16 = (Target) rule16.getTarget();
+        target16.setLinkID(LinksID.SDK_ANY_7Z);
+        ExtractWordMethod method16 = (ExtractWordMethod) rule16.getMethod();
+        method16.setPosition(5);
+
+        RuleBased rule17 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target17 = (Target) rule17.getTarget();
+        target17.setLinkID(LinksID.WINDOWS_X86_MSI);
+        ExtractWordMethod method17 = (ExtractWordMethod) rule17.getMethod();
+        method17.setPosition(6);
+
+        RuleBased rule18 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target18 = (Target) rule18.getTarget();
+        target18.setLinkID(LinksID.WINDOWS_X64_MSI);
+        ExtractWordMethod method18 = (ExtractWordMethod) rule18.getMethod();
+        method18.setPosition(7);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -90,6 +125,11 @@ public final class TestCollections {
         rulesSet.add(rule11);
         rulesSet.add(rule12);
         rulesSet.add(rule13);
+        rulesSet.add(rule14);
+        rulesSet.add(rule15);
+        rulesSet.add(rule16);
+        rulesSet.add(rule17);
+        rulesSet.add(rule18);
 
         return rulesSet;
     }
@@ -139,7 +179,9 @@ public final class TestCollections {
         RemoveCharactersMethod method10 = (RemoveCharactersMethod) rule10.getMethod();
         method10.setSigns(">");
 
-        RuleBased rule11 = new Rule(new Target(In.COLLECTION, UseAs.WINDOWS_X86_HASH), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule11 = new Rule(new Target(In.COLLECTION, UseAs.HASHES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target11 = (Target) rule11.getTarget();
+        target11.setHashID(LinksID.WINDOWS_X86_EXE);
         ExtractWordMethod method11 = (ExtractWordMethod) rule11.getMethod();
         method11.setPosition(7);
 
@@ -153,7 +195,9 @@ public final class TestCollections {
         method13.setType(FirstOfType.TAG);
         method13.setText("a");
 
-        RuleBased rule14 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        RuleBased rule14 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target14 = (Target) rule14.getTarget();
+        target14.setHashID(LinksID.WINDOWS_X86_EXE);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -186,7 +230,9 @@ public final class TestCollections {
         method2.setType(RetrieveTagsType.FIRST);
         method2.setTagname("a");
 
-        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target3 = (Target) rule3.getTarget();
+        target3.setHashID(LinksID.WINDOWS_X86_EXE);
 
         RuleBased rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
@@ -273,7 +319,9 @@ public final class TestCollections {
         GrabUntilMethod method6 = (GrabUntilMethod) rule6.getMethod();
         method6.setCharStop('>');
 
-        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.TRIM));
+        Target target7 = (Target) rule7.getTarget();
+        target7.setHashID(LinksID.WINDOWS_X86_EXE);
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.RIGHT);
         method7.setNumberOf(3);
@@ -341,7 +389,9 @@ public final class TestCollections {
         GrabUntilMethod method6 = (GrabUntilMethod) rule6.getMethod();
         method6.setCharStop('"');
 
-        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.PREPEND));
+        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Target target7 = (Target) rule7.getTarget();
+        target7.setHashID(LinksID.WINDOWS_X86_EXE);
         PrependMethod method7 = (PrependMethod) rule7.getMethod();
         method7.setText("https://github.com");
 
@@ -415,7 +465,9 @@ public final class TestCollections {
 
         RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
 
-        RuleBased rule10 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.PREPEND));
+        RuleBased rule10 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Target target10 = (Target) rule10.getTarget();
+        target10.setHashID(LinksID.WINDOWS_X86_EXE);
         PrependMethod method10 = (PrependMethod) rule10.getMethod();
         method10.setText("http://www.codesector.com");
 
@@ -453,9 +505,11 @@ public final class TestCollections {
 
         RuleBased rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
-        method5.setPosition(10);
+        method5.setPosition(9);
 
-        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X86_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target6 = (Target) rule6.getTarget();
+        target6.setHashID(LinksID.WINDOWS_X86_EXE);
 
         RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
         RemoveCharactersMethod method7 = (RemoveCharactersMethod) rule7.getMethod();
@@ -481,7 +535,9 @@ public final class TestCollections {
         method11.setType(RetrieveTagsType.FIRST);
         method11.setTagname("a");
 
-        RuleBased rule12 = new Rule(new Target(In.CONTENT, UseAs.WINDOWS_X64_PACKAGE_URL), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        RuleBased rule12 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target12 = (Target) rule12.getTarget();
+        target12.setHashID(LinksID.WINDOWS_X64_EXE);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);

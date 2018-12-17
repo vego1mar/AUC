@@ -35,13 +35,11 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty.setCode(htmlCode);
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size()
-            + "; CODE_CHARS=" + htmlCode.length() + ')');
+        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
     @Override public void execute() {
-        String identity =
-            getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
+        String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
         Deque<RuleBased> rules = new LinkedList<>(this.rulesSet);
 
         while (!rules.isEmpty()) {
@@ -60,17 +58,17 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         switch (target.useAs()) {
             case IGNORE:
                 break;
-            case LATEST_APP_VERSION:
-                useAsProperty.setLatestAppVersion(inProperty.getContent());
+            case VERSIONS:
+                useAsProperty.getVersions().setItem(target.getVersion(), inProperty.getContent());
                 break;
-            case UPDATE_DATE:
-                useAsProperty.setUpdateDate(inProperty.getContent());
+            case DATES:
+                useAsProperty.getDates().setItem(target.getDate(), inProperty.getContent());
                 break;
             case LINKS:
                 useAsProperty.getLinks().setItem(target.getLinkID(), inProperty.getContent());
                 break;
             case HASHES:
-                useAsProperty.getLinks().setItem(target.getHashID(), inProperty.getContent());
+                useAsProperty.getHashes().setItem(target.getHashID(), inProperty.getContent());
                 break;
         }
     }

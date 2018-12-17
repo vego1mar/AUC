@@ -4,33 +4,24 @@ import java.io.Serializable;
 
 public class UseAsProperty implements UseAsImpl, Serializable {
 
-    private static final long serialVersionUID = 2L;
-    private String latestAppVersion;
-    private String updateDate;
+    private PlatformsImpl versions;
+    private PlatformsImpl dates;
     private LinksImpl links;
     private LinksImpl hashes;
 
     public UseAsProperty() {
-        latestAppVersion = "";
-        updateDate = "";
+        versions = new PlatformsProperty();
+        dates = new PlatformsProperty();
         links = new LinksProperty();
         hashes = new LinksProperty();
     }
 
-    @Override public String getLatestAppVersion() {
-        return latestAppVersion;
+    @Override public PlatformsImpl getVersions() {
+        return versions;
     }
 
-    @Override public void setLatestAppVersion(String latestAppVersion) {
-        this.latestAppVersion = latestAppVersion;
-    }
-
-    @Override public String getUpdateDate() {
-        return updateDate;
-    }
-
-    @Override public void setUpdateDate(String updateDate) {
-        this.updateDate = updateDate;
+    @Override public PlatformsImpl getDates() {
+        return dates;
     }
 
     @Override public LinksImpl getLinks() {

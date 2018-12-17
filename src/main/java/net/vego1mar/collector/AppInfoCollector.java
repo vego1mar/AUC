@@ -10,6 +10,7 @@ import java.lang.reflect.Field;
 import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.auxiliary.properties.InProperty;
+import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.rules.RuleBased;
 import net.vego1mar.rules.RulesExecutable;
 import net.vego1mar.rules.RulesExecutor;
@@ -70,7 +71,8 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
             log.error(exp);
         }
 
-        log.info("Object state loaded from [objFile='" + objTarget + "', xmlFile='" + xmlTarget + "']");
+        log.info(
+            "Object state loaded from [objFile='" + objTarget + "', xmlFile='" + xmlTarget + "']");
         return object;
     }
 
@@ -94,8 +96,9 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
 
     @Override public boolean isUpdateAvailable() {
         String currentVersion = currentAppVersion.trim();
-        String latestVersion = executor.getResults().getLatestAppVersion().trim();
-        int shorterLength = (currentVersion.length() < latestVersion.length()) ? currentVersion.length() : latestVersion.length();
+        String latestVersion = executor.getResults().getVersions().getItem(Platforms.WINDOWS).trim();
+        int shorterLength = (currentVersion.length()
+            < latestVersion.length()) ? currentVersion.length() : latestVersion.length();
 
         if (currentVersion.equals(latestVersion)) {
             return false;
@@ -130,7 +133,9 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
     @Override public void save(@NotNull String objDestination, @NotNull String xmlDestination) {
         writeObject(objDestination);
         XmlRulesSetManager.saveSettings(((RulesExecutor) executor).getRulesSet(), xmlDestination);
-        log.info("Object state saved at [objFile='" + objDestination + "', xmlFile='" + xmlDestination + "']");
+        log.info(
+            "Object state saved at [objFile='" + objDestination + "', xmlFile='" + xmlDestination
+                + "']");
     }
 
     public RulesExecutable getExecutor() {

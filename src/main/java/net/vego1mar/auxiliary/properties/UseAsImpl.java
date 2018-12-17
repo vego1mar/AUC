@@ -2,13 +2,9 @@ package net.vego1mar.auxiliary.properties;
 
 public interface UseAsImpl {
 
-    String getLatestAppVersion();
+    PlatformsImpl getVersions();
 
-    void setLatestAppVersion(String latestAppVersion);
-
-    String getUpdateDate();
-
-    void setUpdateDate(String updateDate);
+    PlatformsImpl getDates();
 
     LinksImpl getLinks();
 

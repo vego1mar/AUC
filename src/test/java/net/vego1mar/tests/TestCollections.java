@@ -9,9 +9,11 @@ import net.vego1mar.auxiliary.method.PrependMethod;
 import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
 import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.TrimMethod;
+import net.vego1mar.auxiliary.target.Targetable;
 import net.vego1mar.enumerators.methods.RetrieveTagsType;
 import net.vego1mar.enumerators.methods.TrimSide;
 import net.vego1mar.enumerators.properties.LinksID;
+import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.enumerators.traits.MethodType;
 import net.vego1mar.rules.Rule;
 import net.vego1mar.rules.RuleBased;
@@ -42,7 +44,9 @@ public final class TestCollections {
 
         RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
 
-        RuleBased rule4 = new Rule(new Target(In.COLLECTION, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule4 = new Rule(new Target(In.COLLECTION, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target4 = (Target) rule4.getTarget();
+        target4.setVersion(Platforms.WINDOWS);
         ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
         method4.setPosition(3);
 
@@ -50,7 +54,9 @@ public final class TestCollections {
         ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
         method5.setPosition(4);
 
-        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        Target target6 = (Target) rule6.getTarget();
+        target6.setDate(Platforms.WINDOWS);
         RemoveCharactersMethod method6 = (RemoveCharactersMethod) rule6.getMethod();
         method6.setSigns("()");
 
@@ -139,65 +145,181 @@ public final class TestCollections {
 
         RuleBased rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
+        method1.setText("AIMP v");
         method1.setType(FirstOfType.STRING);
-        method1.setText("card_title");
 
-        RuleBased rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method2 = (FirstOfMethod) rule2.getMethod();
-        method2.setType(FirstOfType.STRING);
-        method2.setText("v");
+        RuleBased rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method2 = (GrabUntilMethod) rule2.getMethod();
+        method2.setCharStop('<');
 
-        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
-        GrabUntilMethod method3 = (GrabUntilMethod) rule3.getMethod();
-        method3.setCharStop('<');
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method3 = (TrimMethod) rule3.getMethod();
+        method3.setSide(TrimSide.LEFT);
+        method3.setNumberOf(5);
+        Target target3 = (Target) rule3.getTarget();
+        target3.setVersion(Platforms.WINDOWS);
 
-        RuleBased rule4 = new Rule(new Target(In.CONTENT, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
-        RemoveCharactersMethod method4 = (RemoveCharactersMethod) rule4.getMethod();
-        method4.setSigns(",");
+        RuleBased rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method4 = (RetrieveTagsMethod) rule4.getMethod();
+        method4.setType(RetrieveTagsType.FIRST);
+        method4.setTagname("nobr");
 
-        RuleBased rule5 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method5 = (FirstOfMethod) rule5.getMethod();
-        method5.setType(FirstOfType.STRING);
-        method5.setText("card_description");
+        RuleBased rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method5 = (TrimMethod) rule5.getMethod();
+        method5.setSide(TrimSide.LEFT);
+        method5.setNumberOf(10);
 
-        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method6 = (FirstOfMethod) rule6.getMethod();
-        method6.setType(FirstOfType.STRING);
-        method6.setText(">");
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.HASHES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method6 = (TrimMethod) rule6.getMethod();
+        method6.setSide(TrimSide.RIGHT);
+        method6.setNumberOf(7);
+        Target target6 = (Target) rule6.getTarget();
+        target6.setHashID(LinksID.WINDOWS_X86_EXE);
 
-        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
-        GrabUntilMethod method7 = (GrabUntilMethod) rule7.getMethod();
-        method7.setCharStop('<');
+        RuleBased rule7 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method7 = (FirstOfMethod) rule7.getMethod();
+        method7.setText("</h1><h2>");
+        method7.setType(FirstOfType.STRING);
 
-        RuleBased rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
+        RuleBased rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method8 = (GrabUntilMethod) rule8.getMethod();
+        method8.setCharStop(' ');
 
-        RuleBased rule9 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        ExtractWordMethod method9 = (ExtractWordMethod) rule9.getMethod();
-        method9.setPosition(1);
+        RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method9 = (TrimMethod) rule9.getMethod();
+        method9.setSide(TrimSide.LEFT);
+        method9.setNumberOf(9);
+        Target target9 = (Target) rule9.getTarget();
+        target9.setDate(Platforms.WINDOWS);
 
-        RuleBased rule10 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
-        RemoveCharactersMethod method10 = (RemoveCharactersMethod) rule10.getMethod();
-        method10.setSigns(">");
+        RuleBased rule10 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method10 = (FirstOfMethod) rule10.getMethod();
+        method10.setType(FirstOfType.STRING);
+        method10.setText("Скачать с:");
 
-        RuleBased rule11 = new Rule(new Target(In.COLLECTION, UseAs.HASHES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        Target target11 = (Target) rule11.getTarget();
-        target11.setHashID(LinksID.WINDOWS_X86_EXE);
-        ExtractWordMethod method11 = (ExtractWordMethod) rule11.getMethod();
-        method11.setPosition(7);
+        RuleBased rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method11 = (RetrieveTagsMethod) rule11.getMethod();
+        method11.setTagname("a");
+        method11.setType(RetrieveTagsType.FIRST);
 
-        RuleBased rule12 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method12 = (FirstOfMethod) rule12.getMethod();
-        method12.setType(FirstOfType.STRING);
-        method12.setText("Download from:");
+        RuleBased rule12 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target12 = (Target) rule12.getTarget();
+        target12.setLinkID(LinksID.WINDOWS_X86_EXE);
 
-        RuleBased rule13 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method13 = (FirstOfMethod) rule13.getMethod();
-        method13.setType(FirstOfType.TAG);
-        method13.setText("a");
+        rulesSet.add(rule1);
+        rulesSet.add(rule2);
+        rulesSet.add(rule3);
+        rulesSet.add(rule4);
+        rulesSet.add(rule5);
+        rulesSet.add(rule6);
+        rulesSet.add(rule7);
+        rulesSet.add(rule8);
+        rulesSet.add(rule9);
+        rulesSet.add(rule10);
+        rulesSet.add(rule11);
+        rulesSet.add(rule12);
 
-        RuleBased rule14 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
-        Target target14 = (Target) rule14.getTarget();
-        target14.setHashID(LinksID.WINDOWS_X86_EXE);
+        return rulesSet;
+    }
+
+    public static Deque<RuleBased> getRulesForAimp_2() {
+        Deque<RuleBased> rulesSet = new LinkedList<>();
+
+        RuleBased rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method1 = (RetrieveTagsMethod) rule1.getMethod();
+        method1.setType(RetrieveTagsType.FIRST);
+        method1.setTagname("h1");
+
+        RuleBased rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method2 = (TrimMethod) rule2.getMethod();
+        method2.setSide(TrimSide.LEFT);
+        method2.setNumberOf(21);
+
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method3 = (TrimMethod) rule3.getMethod();
+        method3.setSide(TrimSide.RIGHT);
+        method3.setNumberOf(5);
+        Target target3 = (Target) rule3.getTarget();
+        target3.setVersion(Platforms.ANDROID);
+
+        RuleBased rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
+        method4.setType(FirstOfType.STRING);
+        method4.setText("h2");
+
+        RuleBased rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method5 = (GrabUntilMethod) rule5.getMethod();
+        method5.setCharStop(' ');
+
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method6 = (TrimMethod) rule6.getMethod();
+        method6.setSide(TrimSide.LEFT);
+        method6.setNumberOf(3);
+        Target target6 = (Target) rule6.getTarget();
+        target6.setDate(Platforms.ANDROID);
+
+        RuleBased rule7 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method7 = (RetrieveTagsMethod) rule7.getMethod();
+        method7.setType(RetrieveTagsType.FIRST);
+        method7.setTagname("nobr");
+
+        RuleBased rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method8 = (TrimMethod) rule8.getMethod();
+        method8.setSide(TrimSide.LEFT);
+        method8.setNumberOf(10);
+
+        RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.HASHES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method9 = (TrimMethod) rule9.getMethod();
+        method9.setSide(TrimSide.RIGHT);
+        method9.setNumberOf(7);
+        Target target9 = (Target) rule9.getTarget();
+        target9.setHashID(LinksID.ANDROID_X86ARM_APK);
+
+        RuleBased rule10 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method10 = (FirstOfMethod) rule10.getMethod();
+        method10.setType(FirstOfType.STRING);
+        method10.setText("Скачать с:");
+
+        RuleBased rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method11 = (GrabUntilMethod) rule11.getMethod();
+        method11.setCharStop('|');
+
+        RuleBased rule12 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method12 = (RetrieveTagsMethod) rule12.getMethod();
+        method12.setType(RetrieveTagsType.ALL);
+        method12.setTagname("a");
+
+        RuleBased rule13 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method13 = (ExtractWordMethod) rule13.getMethod();
+        method13.setPosition(1);
+
+        RuleBased rule14 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method14 = (TrimMethod) rule14.getMethod();
+        method14.setSide(TrimSide.LEFT);
+        method14.setNumberOf(9);
+
+        RuleBased rule15 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method15 = (TrimMethod) rule15.getMethod();
+        method15.setSide(TrimSide.RIGHT);
+        method15.setNumberOf(17);
+        Target target15 = (Target) rule15.getTarget();
+        target15.setLinkID(LinksID.ANDROID_X86ARM_GOOGLEPLAY);
+
+        RuleBased rule16 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method16 = (ExtractWordMethod) rule16.getMethod();
+        method16.setPosition(2);
+
+        RuleBased rule17 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method17 = (TrimMethod) rule17.getMethod();
+        method17.setSide(TrimSide.LEFT);
+        method17.setNumberOf(9);
+
+        RuleBased rule18 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method18 = (TrimMethod) rule18.getMethod();
+        method18.setSide(TrimSide.RIGHT);
+        method18.setNumberOf(13);
+        Target target18 = (Target) rule18.getTarget();
+        target18.setLinkID(LinksID.ANDROID_X86ARM_APK);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -213,6 +335,10 @@ public final class TestCollections {
         rulesSet.add(rule12);
         rulesSet.add(rule13);
         rulesSet.add(rule14);
+        rulesSet.add(rule15);
+        rulesSet.add(rule16);
+        rulesSet.add(rule17);
+        rulesSet.add(rule18);
 
         return rulesSet;
     }
@@ -244,7 +370,7 @@ public final class TestCollections {
         method5.setSide(TrimSide.LEFT);
         method5.setNumberOf(1);
 
-        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule6 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method6 = (TrimMethod) rule6.getMethod();
         method6.setSide(TrimSide.RIGHT);
         method6.setNumberOf(4);
@@ -268,7 +394,7 @@ public final class TestCollections {
         method10.setSide(TrimSide.RIGHT);
         method10.setNumberOf(2);
 
-        RuleBased rule11 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule11 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method11 = (TrimMethod) rule11.getMethod();
         method11.setSide(TrimSide.LEFT);
         method11.setNumberOf(1);
@@ -300,7 +426,7 @@ public final class TestCollections {
         ExtractWordMethod method2 = (ExtractWordMethod) rule2.getMethod();
         method2.setPosition(3);
 
-        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method3 = (TrimMethod) rule3.getMethod();
         method3.setSide(TrimSide.RIGHT);
         method3.setNumberOf(8);
@@ -347,7 +473,7 @@ public final class TestCollections {
 
         RuleBased rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
 
-        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
         method3.setPosition(2);
 
@@ -376,7 +502,7 @@ public final class TestCollections {
         method3.setSide(TrimSide.LEFT);
         method3.setNumberOf(1);
 
-        RuleBased rule4 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        RuleBased rule4 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
         GrabUntilMethod method4 = (GrabUntilMethod) rule4.getMethod();
         method4.setCharStop('<');
 
@@ -405,7 +531,7 @@ public final class TestCollections {
         method9.setSide(TrimSide.LEFT);
         method9.setNumberOf(9);
 
-        RuleBased rule10 = new Rule(new Target(In.CONTENT, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        RuleBased rule10 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
         GrabUntilMethod method10 = (GrabUntilMethod) rule10.getMethod();
         method10.setCharStop('/');
 
@@ -454,7 +580,7 @@ public final class TestCollections {
         GrabUntilMethod method6 = (GrabUntilMethod) rule6.getMethod();
         method6.setCharStop('<');
 
-        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule7 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.LEFT);
         method7.setNumberOf(1);
@@ -499,7 +625,7 @@ public final class TestCollections {
 
         RuleBased rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
 
-        RuleBased rule4 = new Rule(new Target(In.COLLECTION, UseAs.LATEST_APP_VERSION), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        RuleBased rule4 = new Rule(new Target(In.COLLECTION, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
         method4.setPosition(3);
 
@@ -520,7 +646,7 @@ public final class TestCollections {
         method8.setSide(TrimSide.LEFT);
         method8.setNumberOf(5);
 
-        RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.UPDATE_DATE), MethodCreator.getMethod(MethodType.TRIM));
+        RuleBased rule9 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method9 = (TrimMethod) rule9.getMethod();
         method9.setSide(TrimSide.RIGHT);
         method9.setNumberOf(1);

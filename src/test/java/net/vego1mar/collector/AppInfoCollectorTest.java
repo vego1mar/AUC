@@ -3,6 +3,7 @@ package net.vego1mar.collector;
 import java.util.Deque;
 import net.vego1mar.auxiliary.properties.InImpl;
 import net.vego1mar.auxiliary.properties.InProperty;
+import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.enumerators.utils.HashType;
 import net.vego1mar.rules.RuleBased;
 import net.vego1mar.rules.RulesExecutor;
@@ -57,8 +58,8 @@ public class AppInfoCollectorTest {
         Assert.assertNotNull(inProperty);
         Assert.assertEquals(htmlCodeString, inPropertyCode);
         Assert.assertEquals(rulesSetPattern.toString(), rulesSet.toString());
-        Assert.assertEquals("1.7.13963", collector.getExecutor().getResults().getLatestAppVersion());
-        Assert.assertEquals("2018/08", collector.getExecutor().getResults().getUpdateDate());
+        Assert.assertEquals("1.7.13963", collector.getExecutor().getResults().getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("2018/08", collector.getExecutor().getResults().getDates().getItem(Platforms.WINDOWS));
     }
 
     @Test public void isUpdateAvailable_PotPlayer() {

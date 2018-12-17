@@ -13,6 +13,8 @@ public class LinksProperty implements LinksImpl, Serializable {
     private String windowsAny7Z;
     private String sourceCodeAny7Z;
     private String sdkAny7Z;
+    private String androidX86ARMAPK;
+    private String androidX86ARMGooglePlay;
 
     public LinksProperty() {
         windowsX86EXE = "";
@@ -22,6 +24,8 @@ public class LinksProperty implements LinksImpl, Serializable {
         windowsAny7Z = "";
         sourceCodeAny7Z = "";
         sdkAny7Z = "";
+        androidX86ARMAPK = "";
+        androidX86ARMGooglePlay = "";
     }
 
     @Override public void setItem(LinksID id, String item) {
@@ -49,6 +53,11 @@ public class LinksProperty implements LinksImpl, Serializable {
             case SDK_ANY_7Z:
                 this.sdkAny7Z = item;
                 break;
+            case ANDROID_X86ARM_APK:
+                this.androidX86ARMAPK = item;
+                break;
+            case ANDROID_X86ARM_GOOGLEPLAY:
+                this.androidX86ARMGooglePlay = item;
         }
     }
 
@@ -70,6 +79,10 @@ public class LinksProperty implements LinksImpl, Serializable {
                 return this.sourceCodeAny7Z;
             case SDK_ANY_7Z:
                 return this.sdkAny7Z;
+            case ANDROID_X86ARM_APK:
+                return this.androidX86ARMAPK;
+            case ANDROID_X86ARM_GOOGLEPLAY:
+                return this.androidX86ARMGooglePlay;
         }
 
         return "";

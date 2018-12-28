@@ -1,4 +1,3 @@
-checking of hashes
 loading the app icon from the provided path
 categories and grouping of apps entries
 
@@ -6,5 +5,11 @@ Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
 file mask for downloaded files
 DownloadHelper.downloadFile(String url);
 
-::UseAsProperty
-fileType - extension (.exe, .msi, .zip)
+
+
+XmlConsoleRunner - Reader & Writer
+RulesExecutorTest - to finish tests
+Change toString() methods for auxiliary classes
+XmlRulesSetManager - delete after splitting into Reader & Writer
+XmlRulesSetReader - finish altering
+XmlRulesSetImpl - move constants to a class or enum (SONARQUBE)

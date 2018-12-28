@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PlatformsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PlatformsProperty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/Platforms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/UseAs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/UseAs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AUC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AUC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-sonar-scanner.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-sonar-scanner.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/apps_download_urls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/apps_download_urls.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/todos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/todos.txt" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,15 +70,15 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,14 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/SimpleMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/methods/RetrieveTagsType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/MethodCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Methodable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Method.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/FirstOfMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/ExtractWordMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/SplitWordsMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RemoveCharactersMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/FetchHrefsMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/PrependMethod.java" />
@@ -122,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/methods/TrimSide.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/MethodType.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/TrimMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutable.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RetrieveTagsMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java" />
@@ -136,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/tmp/todos.txt" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PropertyImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksImpl.java" />
         <option value="$PROJECT_DIR$/tmp/apps_download_urls.txt" />
@@ -150,11 +134,21 @@
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/UseAs.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" />
+        <option value="$PROJECT_DIR$/run-sonar-scanner.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlSettings.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/XmlRulesSetWriter__ptrn.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetWriter.java" />
+        <option value="$PROJECT_DIR$/tmp/todos.txt" />
       </list>
     </option>
   </component>
@@ -186,7 +180,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1599" />
+    <option name="width" value="1587" />
     <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -198,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,35 +233,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="auxiliary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="auxiliary" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="auxiliary" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
               <item name="enumerators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,8 +242,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="enumerators" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
@@ -286,7 +251,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
@@ -343,7 +308,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -356,10 +320,10 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545085818359" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546010071567" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -389,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RulesExecutorTest.execute_AIMP">
+  <component name="RunManager" selected="JUnit.XmlRulesSetWriterTest.saveSettings_1">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -450,26 +414,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesExecutorTest.execute_7Zip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.vego1mar.rules.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.RulesExecutorTest" />
-      <option name="METHOD_NAME" value="execute_7Zip" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RulesExecutorTest.execute_AIMP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
@@ -490,7 +434,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesExecutorTest.execute_PotPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RulesExecutorTest.execute_SourceTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -500,7 +444,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
       <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.RulesExecutorTest" />
-      <option name="METHOD_NAME" value="execute_PotPlayer" />
+      <option name="METHOD_NAME" value="execute_SourceTree" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -510,16 +454,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlRulesSetManagerTest.saveSettings_7Zip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XmlRulesSetWriterTest.saveSettings_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.vego1mar.utils.*" />
+          <option name="PATTERN" value="net.vego1mar.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.utils" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.utils.XmlRulesSetManagerTest" />
+      <option name="PACKAGE_NAME" value="net.vego1mar.xml" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.xml.XmlRulesSetWriterTest" />
+      <option name="METHOD_NAME" value="saveSettings_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XmlRulesSetWriterTest.saveSettings_7Zip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.vego1mar.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.vego1mar.xml" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.xml.XmlRulesSetWriterTest" />
       <option name="METHOD_NAME" value="saveSettings_7Zip" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -561,19 +525,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.RulesExecutorTest.execute_PotPlayer" />
       <item itemvalue="JUnit.RulesExecutorTest.executeMultithreading_7Zip" />
-      <item itemvalue="JUnit.RulesExecutorTest.execute_7Zip" />
-      <item itemvalue="JUnit.XmlRulesSetManagerTest.saveSettings_7Zip" />
       <item itemvalue="JUnit.RulesExecutorTest.execute_AIMP" />
+      <item itemvalue="JUnit.RulesExecutorTest.execute_SourceTree" />
+      <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_7Zip" />
+      <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_1" />
+        <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_7Zip" />
+        <item itemvalue="JUnit.RulesExecutorTest.execute_SourceTree" />
         <item itemvalue="JUnit.RulesExecutorTest.execute_AIMP" />
         <item itemvalue="JUnit.RulesExecutorTest.executeMultithreading_7Zip" />
-        <item itemvalue="JUnit.RulesExecutorTest.execute_7Zip" />
-        <item itemvalue="JUnit.XmlRulesSetManagerTest.saveSettings_7Zip" />
-        <item itemvalue="JUnit.RulesExecutorTest.execute_PotPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -595,24 +559,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 22h 52m 16s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 22h 58m 44s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 05m 51s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 12m 57s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 18m 32s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 19m 46s.xml">
-      <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 20m 57s.xml">
       <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
     </history-entry>
@@ -624,6 +570,24 @@
     </history-entry>
     <history-entry file="RulesExecutorTest_execute_AIMP - 2018.12.17 at 23h 30m 20s.xml">
       <configuration name="RulesExecutorTest.execute_AIMP" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RulesExecutorTest_execute_SourceTree - 2018.12.19 at 18h 26m 02s.xml">
+      <configuration name="RulesExecutorTest.execute_SourceTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RulesExecutorTest_execute_SourceTree - 2018.12.19 at 18h 27m 20s.xml">
+      <configuration name="RulesExecutorTest.execute_SourceTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlRulesSetWriterTest_saveSettings_7Zip - 2018.12.28 at 15h 35m 29s.xml">
+      <configuration name="XmlRulesSetWriterTest.saveSettings_7Zip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlRulesSetWriterTest_saveSettings_7Zip - 2018.12.28 at 15h 39m 15s.xml">
+      <configuration name="XmlRulesSetWriterTest.saveSettings_7Zip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlRulesSetWriterTest_saveSettings_1 - 2018.12.28 at 15h 42m 48s.xml">
+      <configuration name="XmlRulesSetWriterTest.saveSettings_1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlRulesSetWriterTest_saveSettings_1 - 2018.12.28 at 15h 46m 36s.xml">
+      <configuration name="XmlRulesSetWriterTest.saveSettings_1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -639,9 +603,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1599" height="1044" extended-state="0" />
+    <frame x="0" y="0" width="1587" height="1044" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19124275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19623132" />
       <window_info id="Structure" order="1" weight="0.23245332" />
       <window_info id="Favorites" order="2" weight="0.32949972" />
       <window_info id="Designer" order="3" />
@@ -649,8 +613,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3270925" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32790446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32681867" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37334803" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -828,146 +792,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/utils/HashType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/HashGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/PotPlayerOBJ.ser" />
-    <entry file="file://$PROJECT_DIR$/runtime/PotPlayer_settings.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/log4j-AUC-test.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1658" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="256" column="35" selection-start-line="256" selection-start-column="35" selection-end-line="256" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/InImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/ExtractWordMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PropertyImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Methodable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/XmlRulesSetManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#loadSettings_7Zip#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_AIMP#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_AIMP#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_SourceTree#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_SourceTree#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_JetClean#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_JetClean#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_BorderlessGaming#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_BorderlessGaming#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_TeraCopy#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_TeraCopy#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#saveSettings_PotPlayer#0;class#XmlRulesSetManagerTest#0" />
-            <element signature="method#loadSettings_PotPlayer#0;class#XmlRulesSetManagerTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.attach_pid19701" />
     <entry file="file://$PROJECT_DIR$/.attach_pid20286" />
-    <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/apps_download_urls.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1003,44 +828,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PlatformsProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
-            <element signature="method#readObject#0;class#AppInfoCollector#0" />
-            <element signature="method#load#0;class#AppInfoCollector#0" />
-            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
-            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
-            <element signature="method#setCurrentAppVersion#0;class#AppInfoCollector#0" />
-            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
-            <element signature="method#save#0;class#AppInfoCollector#0" />
           </folding>
         </state>
       </provider>
@@ -1052,29 +845,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#save_PotPlayer#0;class#AppInfoCollectorTest#0" />
-            <element signature="method#load_PotPlayer#0;class#AppInfoCollectorTest#0" />
-            <element signature="method#isUpdateAvailable_PotPlayer#0;class#AppInfoCollectorTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/aimp_wp_windows.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/UseAs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/aimp_wp_windows.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RuleBased.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1106,18 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/target/Target.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/TrimMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1135,33 +894,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/Rule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/aimp_wp_android.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#RulesExecutor#0;class#RulesExecutor#0" />
-            <element signature="method#renew#0;class#RulesExecutor#0" />
-            <element signature="method#executeRule#0;class#RulesExecutor#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1180,42 +914,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
+    <entry file="jrt:///usr/lib/jvm/java-1.10.0-openjdk-amd64!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="111" lean-forward="true" selection-start-line="16" selection-start-column="111" selection-end-line="16" selection-end-column="111" />
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="method#TestVariables#0;class#TestVariables#0" />
-            <element signature="method#readFile#0;class#TestVariables#0" />
-            <element signature="method#getCollector#0;class#TestVariables#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="224" column="55" selection-start-line="224" selection-start-column="55" selection-end-line="224" selection-end-column="55" />
+        <state relative-caret-position="693">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#TestCollections#0;class#TestCollections#0" />
-            <element signature="method#getRulesFor7Zip_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForAimp_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForAimp_1#1;class#TestCollections#0" />
-            <element signature="method#getRulesForSourceTree_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForJetClean_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForJetClean_2#0;class#TestCollections#0" />
-            <element signature="method#getRulesForBorderlessGaming_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
+            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
+            <element signature="method#readObject#0;class#AppInfoCollector#0" />
+            <element signature="method#load#0;class#AppInfoCollector#0" />
+            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
+            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
+            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
+            <element signature="method#save#0;class#AppInfoCollector#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#save_PotPlayer#0;class#AppInfoCollectorTest#0" />
+            <element signature="method#load_PotPlayer#0;class#AppInfoCollectorTest#0" />
+            <element signature="method#isUpdateAvailable_PotPlayer#0;class#AppInfoCollectorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/UseAs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/7zip_settings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#RulesExecutor#0;class#RulesExecutor#0" />
+            <element signature="method#renew#0;class#RulesExecutor#0" />
+            <element signature="method#execute#0;class#RulesExecutor#0" />
+            <element signature="method#executeRule#0;class#RulesExecutor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/HashGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/ReflectionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+        <state relative-caret-position="505">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#execute_7Zip#0;class#RulesExecutorTest#0" />
@@ -1227,6 +1057,199 @@
             <element signature="method#execute_TeraCopy#0;class#RulesExecutorTest#0" />
             <element signature="method#execute_PotPlayer#0;class#RulesExecutorTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/XmlRulesSetManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveSettings_7Zip#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_7Zip#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_AIMP#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_AIMP#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_SourceTree#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_SourceTree#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_JetClean#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_JetClean#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_BorderlessGaming#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_BorderlessGaming#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_TeraCopy#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_TeraCopy#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#saveSettings_PotPlayer#0;class#XmlRulesSetManagerTest#0" />
+            <element signature="method#loadSettings_PotPlayer#0;class#XmlRulesSetManagerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="40" column="134" lean-forward="true" selection-start-line="40" selection-start-column="134" selection-end-line="40" selection-end-column="134" />
+          <folding>
+            <element signature="method#TestVariables#0;class#TestVariables#0" />
+            <element signature="method#readFile#0;class#TestVariables#0" />
+            <element signature="method#getCollector#0;class#TestVariables#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/target/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/7zip_settings__pattern.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="746" lean-forward="true" selection-start-line="746" selection-end-line="746" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestCollections#0;class#TestCollections#0" />
+            <element signature="method#getRulesFor7Zip_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForAimp_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForAimp_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForSourceTree_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForJetClean_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForJetClean_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBorderlessGaming_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForXmlRulesSetWriter#0;class#TestCollections#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/XmlRulesSetWriter__ptrn.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/XmlRulesSetWriter_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="method#parse#0;class#XmlRulesSetReader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createDocument#0;class#XmlRulesSetManager#0" />
+            <element signature="e#3151#3367#1" />
+            <element signature="method#createTargetNode#0;class#XmlRulesSetManager#0" />
+            <element signature="method#createMethodNode#0;class#XmlRulesSetManager#0" />
+            <element signature="e#4077#6299#0" />
+            <element signature="method#write#0;class#XmlRulesSetManager#0" />
+            <element signature="e#6473#6691#0" />
+            <element signature="method#saveSettings#0;class#XmlRulesSetManager#0" />
+            <element signature="method#parse#0;class#XmlRulesSetManager#0" />
+            <element signature="method#read#0;class#XmlRulesSetManager#0" />
+            <element signature="e#7383#7480#1" />
+            <element signature="method#readTargetNode#0;class#XmlRulesSetManager#0" />
+            <element signature="e#7842#7974#1" />
+            <element signature="e#8010#8080#1" />
+            <element signature="e#8113#8174#1" />
+            <element signature="method#readMethodNode#0;class#XmlRulesSetManager#0" />
+            <element signature="e#8528#8813#1" />
+            <element signature="e#8643#8736#1" />
+            <element signature="method#readMethodAttributes#0;class#XmlRulesSetManager#0" />
+            <element signature="method#loadSettings#0;class#XmlRulesSetManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createDocument#0;class#XmlRulesSetWriter#0" />
+            <element signature="method#createTargetNode#0;class#XmlRulesSetWriter#0" />
+            <element signature="method#createMethodNode#0;class#XmlRulesSetWriter#0" />
+            <element signature="method#write#0;class#XmlRulesSetWriter#0" />
+            <element signature="method#saveSettings#0;class#XmlRulesSetWriter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1294,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>openjdk10</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

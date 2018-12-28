@@ -200,7 +200,8 @@ public final class XmlRulesSetManager {
         return objMethod;
     }
 
-    @Contract("_, _ -> new") @NotNull private static Methodable readMethodAttributes(@NotNull MethodType methodType, @NotNull Element xmlMethod) {
+    @Contract("_, _ -> new") @NotNull
+    private static Methodable readMethodAttributes(@NotNull MethodType methodType, @NotNull Element xmlMethod) {
         switch (methodType) {
             case EMPTY:
                 break;

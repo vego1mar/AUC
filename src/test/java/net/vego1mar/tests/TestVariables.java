@@ -32,11 +32,13 @@ public final class TestVariables {
     public static final String XML_PATTERN_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/JetClean01_settings__pattern.xml";
     public static final String XML_PATTERN_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/JetClean02_settings__pattern.xml";
     public static final String XML_RUNTIME_BORDERLESSGAMING = getWorkingDirectory() + "/runtime/BorderlessGaming_settings.xml";
-    public static final String XML_PATTERN_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_settings__ptrn.xml";
+    public static final String XML_PATTERN_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming__ptrn.xml";
     public static final String XML_RUNTIME_TERACOPY = getWorkingDirectory() + "/runtime/TeraCopy_settings.xml";
     public static final String XML_PATTERN_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_settings__pattern.xml";
     public static final String XML_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayer_settings.xml";
     public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_settings__pattern.xml";
+    public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
+    public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
     public static final String OBJECT_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayerOBJ.ser";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 

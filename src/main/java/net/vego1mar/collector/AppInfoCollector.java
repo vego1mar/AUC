@@ -16,7 +16,8 @@ import net.vego1mar.rules.RulesExecutable;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.utils.DownloadHelper;
 import net.vego1mar.utils.ReflectionHelper;
-import net.vego1mar.utils.XmlRulesSetManager;
+import net.vego1mar.xml.XmlRulesSetReader;
+import net.vego1mar.xml.XmlRulesSetWriter;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
@@ -65,7 +66,7 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
             inProperty.set(collector.getExecutor(), new InProperty());
             Field rulesSet = ReflectionHelper.getField(RulesExecutor.class, "rulesSet");
             rulesSet.set(collector.getExecutor(), new LinkedList<>());
-            Deque<RuleBased> loadedRulesSet = XmlRulesSetManager.loadSettings(xmlTarget);
+            Deque<RuleBased> loadedRulesSet = new XmlRulesSetReader().loadSettings(xmlTarget);
             collector.getExecutor().renew(loadedRulesSet, htmlCode);
         } catch (IllegalAccessException exp) {
             log.error(exp);
@@ -132,7 +133,7 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
 
     @Override public void save(@NotNull String objDestination, @NotNull String xmlDestination) {
         writeObject(objDestination);
-        XmlRulesSetManager.saveSettings(((RulesExecutor) executor).getRulesSet(), xmlDestination);
+        new XmlRulesSetWriter().saveSettings(((RulesExecutor) executor).getRulesSet(), xmlDestination);
         log.info(
             "Object state saved at [objFile='" + objDestination + "', xmlFile='" + xmlDestination
                 + "']");

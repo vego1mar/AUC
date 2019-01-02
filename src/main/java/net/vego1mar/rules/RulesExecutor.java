@@ -59,16 +59,16 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
             case IGNORE:
                 break;
             case VERSIONS:
-                useAsProperty.getVersions().setItem(target.getVersion(), inProperty.getContent());
+                useAsProperty.getVersions().setItem(target.version(), inProperty.getContent());
                 break;
             case DATES:
-                useAsProperty.getDates().setItem(target.getDate(), inProperty.getContent());
+                useAsProperty.getDates().setItem(target.date(), inProperty.getContent());
                 break;
             case LINKS:
-                useAsProperty.getLinks().setItem(target.getLinkID(), inProperty.getContent());
+                useAsProperty.getLinks().setItem(target.linkID(), inProperty.getContent());
                 break;
             case HASHES:
-                useAsProperty.getHashes().setItem(target.getHashID(), inProperty.getContent());
+                useAsProperty.getHashes().setItem(target.hashID(), inProperty.getContent());
                 break;
         }
     }

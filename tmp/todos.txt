@@ -8,8 +8,5 @@ DownloadHelper.downloadFile(String url);
 
 
 XmlConsoleRunner - Reader & Writer
+XmlRulesSetReader & XmlRulesSetWriter - build unit tests
 RulesExecutorTest - to finish tests
-Change toString() methods for auxiliary classes
-XmlRulesSetManager - delete after splitting into Reader & Writer
-XmlRulesSetReader - finish altering
-XmlRulesSetImpl - move constants to a class or enum (SONARQUBE)

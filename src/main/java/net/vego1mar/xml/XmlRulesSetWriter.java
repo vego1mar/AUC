@@ -20,7 +20,7 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 import org.jetbrains.annotations.NotNull;
 
-public class XmlRulesSetWriter implements XmlRulesSetImpl {
+public class XmlRulesSetWriter extends XmlRulesSetTags {
 
     private static final Logger log = Logger.getLogger(XmlRulesSetWriter.class);
 
@@ -49,16 +49,16 @@ public class XmlRulesSetWriter implements XmlRulesSetImpl {
             case IGNORE:
                 break;
             case VERSIONS:
-                node.addElement(TAG_VERSION).addText(target.getVersion().toString());
+                node.addElement(TAG_VERSION).addText(target.version().toString());
                 break;
             case DATES:
-                node.addElement(TAG_DATE).addText(target.getDate().toString());
+                node.addElement(TAG_DATE).addText(target.date().toString());
                 break;
             case LINKS:
-                node.addElement(TAG_LINKID).addText(target.getLinkID().toString());
+                node.addElement(TAG_LINKID).addText(target.linkID().toString());
                 break;
             case HASHES:
-                node.addElement(TAG_HASHID).addText(target.getHashID().toString());
+                node.addElement(TAG_HASHID).addText(target.hashID().toString());
         }
     }
 

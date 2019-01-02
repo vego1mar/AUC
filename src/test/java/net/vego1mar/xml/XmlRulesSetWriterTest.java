@@ -22,4 +22,18 @@ public class XmlRulesSetWriterTest {
         String patternSource = TestVariables.readFile(TestVariables.XML_PATTERN_RULESSETWRITER);
         Assert.assertEquals(patternSource, runtime);
     }
+
+    @Test public void saveSettings_7Zip() {
+        // given
+        Deque<RuleBased> rulesSet = TestCollections.getRulesFor7Zip_1();
+        XmlRulesSetWriter writer = new XmlRulesSetWriter();
+
+        // when
+        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_7ZIP);
+
+        // then
+        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_7ZIP);
+        String patternSource = TestVariables.readFile(TestVariables.XML_PATTERN_7ZIP);
+        Assert.assertEquals(patternSource, runtime);
+    }
 }

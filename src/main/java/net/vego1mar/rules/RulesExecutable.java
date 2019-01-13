@@ -10,6 +10,6 @@ public interface RulesExecutable {
 
     UseAsImpl getResults();
 
-    void renew(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode);
+    void renew(@NotNull Deque<RuleImpl> rulesSet, @NotNull String htmlCode);
 
 }

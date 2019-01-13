@@ -33,7 +33,7 @@ public class RulesExecutorTest {
 
     @Test public void execute_7Zip() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesFor7Zip_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesFor7Zip_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
 
         // when
@@ -99,8 +99,8 @@ public class RulesExecutorTest {
 
     @Test public void execute_AIMP() throws Exception {
         // given
-        Deque<RuleBased> rulesSet1 = TestCollections.getRulesForAimp_1();
-        Deque<RuleBased> rulesSet2 = TestCollections.getRulesForAimp_2();
+        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForAimp_1();
+        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForAimp_2();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet1, htmlCodeOfAimpWebPage1);
 
         // when
@@ -114,17 +114,20 @@ public class RulesExecutorTest {
         Assert.assertEquals("v4.51, build 2084", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("01.12.2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("acc1353719050e5fa6f28e8d296078a4", useAsProperty.getHashes().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("http://aimp.su/storage/acc1353719050e5fa6f28e8d296078a4/aimp_4.51.2084.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
+        Assert.assertEquals("http://aimp.su/storage/acc1353719050e5fa6f28e8d296078a4/aimp_4.51.2084.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
         Assert.assertEquals("v2.80, build 631", useAsProperty.getVersions().getItem(Platforms.ANDROID));
         Assert.assertEquals("22.10.2018", useAsProperty.getDates().getItem(Platforms.ANDROID));
         Assert.assertEquals("1fa56dc3b88e3979875f6f4065261ab5", useAsProperty.getHashes().getItem(LinksID.ANDROID_X86ARM_APK));
-        Assert.assertEquals("https://play.google.com/store/apps/details?id=com.aimp.player", useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY));
-        Assert.assertEquals("http://www.aimp.ru/files/android/aimp_2.80.631.apk", useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_APK));
+        Assert.assertEquals("https://play.google.com/store/apps/details?id=com.aimp.player",
+            useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY));
+        Assert.assertEquals("http://www.aimp.ru/files/android/aimp_2.80.631.apk",
+            useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_APK));
     }
 
     @Test public void execute_SourceTree() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesForSourceTree_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesForSourceTree_1();
         RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
 
         // when
@@ -133,23 +136,20 @@ public class RulesExecutorTest {
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
         UseAsImpl useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
-//        Assert.assertEquals("2.6.10", useAsProperty.getLatestAppVersion());
-//        Assert.assertEquals("Sep 23, 2018", useAsProperty.getUpdateDate());
-
-//        Assert.assertEquals(
-//            "https://downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-2.6.10.exe",
-//            useAsProperty.getWindowsX86packageURL()
-//        );
-//
-//        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+        Assert.assertEquals("3.0.12", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("Jan 7, 2019", useAsProperty.getDates().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.0.12.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
+        Assert.assertEquals("3.0.1_205", useAsProperty.getVersions().getItem(Platforms.MAC_OS_X));
+        Assert.assertEquals("Jan 7, 2019", useAsProperty.getDates().getItem(Platforms.MAC_OS_X));
+        Assert.assertEquals("https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_3.0.1_205.zip",
+            useAsProperty.getLinks().getItem(LinksID.MAC_OS_X_ZIP));
     }
 
     @Test public void execute_JetClean() throws Exception {
         // given
-        Deque<RuleBased> rulesSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<RuleBased> rulesSet2 = TestCollections.getRulesForJetClean_2();
+        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForJetClean_1();
+        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForJetClean_2();
         RulesExecutable executor = new RulesExecutor(rulesSet1, htmlCodeOfJetCleanWebPage1);
 
         // when
@@ -170,7 +170,7 @@ public class RulesExecutorTest {
 
     @Test public void execute_BorderlessGaming() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
 
         // when
@@ -194,7 +194,7 @@ public class RulesExecutorTest {
 
     @Test public void execute_TeraCopy() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesForTeraCopy_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesForTeraCopy_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
 
         // when
@@ -213,7 +213,7 @@ public class RulesExecutorTest {
 
     @Test public void execute_PotPlayer() throws Exception {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesForPotPlayer_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesForPotPlayer_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
 
         // when

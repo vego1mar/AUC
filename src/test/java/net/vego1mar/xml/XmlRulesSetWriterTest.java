@@ -1,7 +1,7 @@
 package net.vego1mar.xml;
 
 import java.util.Deque;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -11,7 +11,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_1() {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesForXmlRulesSetWriter();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesForXmlRulesSetWriter();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -25,7 +25,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_7Zip() {
         // given
-        Deque<RuleBased> rulesSet = TestCollections.getRulesFor7Zip_1();
+        Deque<RuleImpl> rulesSet = TestCollections.getRulesFor7Zip_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when

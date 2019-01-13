@@ -11,7 +11,7 @@ import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
 import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.TrimMethod;
 import net.vego1mar.auxiliary.target.Target;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -24,12 +24,12 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
 
     private static final Logger log = Logger.getLogger(XmlRulesSetWriter.class);
 
-    private Document createDocument(@NotNull Deque<RuleBased> rulesSet) {
+    private Document createDocument(@NotNull Deque<RuleImpl> rulesSet) {
         Document document = DocumentHelper.createDocument();
         Element root = document.addElement(TAG_RULESSET);
         int i = 1;
 
-        for (RuleBased item : rulesSet) {
+        for (RuleImpl item : rulesSet) {
             Element rule = root.addElement(TAG_RULE).addAttribute("no", String.valueOf(i));
             createTargetNode(rule, item);
             createMethodNode(rule, item);
@@ -39,7 +39,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         return document;
     }
 
-    private void createTargetNode(@NotNull Element xmlRule, @NotNull RuleBased objRule) {
+    private void createTargetNode(@NotNull Element xmlRule, @NotNull RuleImpl objRule) {
         Element node = xmlRule.addElement(TAG_TARGET);
         Target target = (Target) objRule.getTarget();
         node.addElement(TAG_IN).addText(target.in().toString());
@@ -62,7 +62,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         }
     }
 
-    private void createMethodNode(@NotNull Element xmlRule, @NotNull RuleBased objRule) {
+    private void createMethodNode(@NotNull Element xmlRule, @NotNull RuleImpl objRule) {
         Element node = xmlRule.addElement(TAG_METHOD);
         node.addElement(TAG_METHODTYPE).addText(objRule.getMethod().getMethodType().toString());
 
@@ -114,7 +114,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         }
     }
 
-    public void saveSettings(@NotNull Deque<RuleBased> rulesSet, @NotNull String xmlFile) {
+    public void saveSettings(@NotNull Deque<RuleImpl> rulesSet, @NotNull String xmlFile) {
         try {
             write(createDocument(rulesSet), xmlFile);
         } catch (IOException exp) {

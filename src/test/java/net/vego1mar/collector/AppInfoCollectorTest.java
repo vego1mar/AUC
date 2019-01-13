@@ -5,7 +5,7 @@ import net.vego1mar.auxiliary.properties.InImpl;
 import net.vego1mar.auxiliary.properties.InProperty;
 import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.enumerators.utils.HashType;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
@@ -45,8 +45,8 @@ public class AppInfoCollectorTest {
         final String currentAppVersion = (String) ReflectionHelper.getField(AppInfoCollector.class, "currentAppVersion").get(collector);
         final InImpl inProperty = (InProperty) ReflectionHelper.getField(RulesExecutor.class, "inProperty").get(collector.getExecutor());
         final String inPropertyCode = (String) ReflectionHelper.getField(InProperty.class, "code").get(inProperty);
-        final Deque<RuleBased> rulesSet = (Deque<RuleBased>) ReflectionHelper.getField(RulesExecutor.class, "rulesSet").get(collector.getExecutor());
-        final Deque<RuleBased> rulesSetPattern = TestCollections.getRulesForPotPlayer_1();
+        final Deque<RuleImpl> rulesSet = (Deque<RuleImpl>) ReflectionHelper.getField(RulesExecutor.class, "rulesSet").get(collector.getExecutor());
+        final Deque<RuleImpl> rulesSetPattern = TestCollections.getRulesForPotPlayer_1();
         final String x86URL = "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe";
         final String x64URL = "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe";
 

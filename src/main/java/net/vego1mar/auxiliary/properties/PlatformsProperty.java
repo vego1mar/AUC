@@ -1,40 +1,36 @@
 package net.vego1mar.auxiliary.properties;
 
 import java.io.Serializable;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import net.vego1mar.enumerators.properties.Platforms;
 
 public class PlatformsProperty implements PlatformsImpl, Serializable {
 
-    private String windows;
-    private String android;
+    private Map<Platforms, String> platforms;
 
     public PlatformsProperty() {
-        windows = "";
-        android = "";
+        platforms = Collections.synchronizedMap(new HashMap<>());
+
+        for (Platforms platform : Platforms.values()) {
+            platforms.put(platform, "");
+        }
     }
 
     @Override public String getItem(Platforms platform) {
-        switch (platform) {
-            case UNSPECIFIED:
-                break;
-            case WINDOWS:
-                return this.windows;
-            case ANDROID:
-                return this.android;
+        if (platforms.containsKey(platform)) {
+            return platforms.get(platform);
         }
 
         return "";
     }
 
     @Override public void setItem(Platforms platform, String item) {
-        switch (platform) {
-            case UNSPECIFIED:
-                break;
-            case WINDOWS:
-                this.windows = item;
-                break;
-            case ANDROID:
-                this.android = item;
+        if (platform == Platforms.UNSPECIFIED || !platforms.containsKey(platform)) {
+            return;
         }
+
+        platforms.put(platform, item);
     }
 }

@@ -16,11 +16,11 @@ import org.jetbrains.annotations.NotNull;
 public final class RulesExecutor implements RulesExecutable, Serializable {
 
     private static final transient Logger log = Logger.getLogger(RulesExecutor.class);
-    private transient Deque<RuleBased> rulesSet;
+    private transient Deque<RuleImpl> rulesSet;
     private transient InImpl inProperty;
     private UseAsImpl useAsProperty;
 
-    public RulesExecutor(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
+    public RulesExecutor(@NotNull Deque<RuleImpl> rulesSet, @NotNull String htmlCode) {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty = new InProperty();
         inProperty.setCode(htmlCode);
@@ -31,7 +31,7 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
                 + htmlCode.length() + ')');
     }
 
-    @Override public void renew(@NotNull Deque<RuleBased> rulesSet, @NotNull String htmlCode) {
+    @Override public void renew(@NotNull Deque<RuleImpl> rulesSet, @NotNull String htmlCode) {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty.setCode(htmlCode);
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
@@ -40,10 +40,10 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
 
     @Override public void execute() {
         String identity = getClass().getSimpleName() + '@' + Integer.toHexString(System.identityHashCode(this));
-        Deque<RuleBased> rules = new LinkedList<>(this.rulesSet);
+        Deque<RuleImpl> rules = new LinkedList<>(this.rulesSet);
 
         while (!rules.isEmpty()) {
-            RuleBased currentRule = rules.removeFirst();
+            RuleImpl currentRule = rules.removeFirst();
             executeRule(currentRule);
             log.info("Rule executed -> " + identity + currentRule);
         }
@@ -51,7 +51,7 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         log.info(identity + ':' + ReflectionHelper.getCurrentMethodName() + "() completed");
     }
 
-    private void executeRule(@NotNull RuleBased rule) {
+    private void executeRule(@NotNull RuleImpl rule) {
         inProperty = rule.getMethod().invoke(rule.getTarget(), inProperty);
         Target target = (Target) rule.getTarget();
 
@@ -77,7 +77,7 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         return useAsProperty;
     }
 
-    @Contract(pure = true) public Deque<RuleBased> getRulesSet() {
+    @Contract(pure = true) public Deque<RuleImpl> getRulesSet() {
         return rulesSet;
     }
 

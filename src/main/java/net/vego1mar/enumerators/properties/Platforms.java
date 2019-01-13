@@ -4,6 +4,7 @@ public enum Platforms {
 
     UNSPECIFIED,
     WINDOWS,
-    ANDROID
+    ANDROID,
+    MAC_OS_X
 
 }

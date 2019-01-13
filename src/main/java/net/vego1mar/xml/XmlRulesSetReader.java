@@ -8,7 +8,7 @@ import java.util.List;
 import net.vego1mar.auxiliary.method.Methodable;
 import net.vego1mar.auxiliary.target.Targetable;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -24,9 +24,9 @@ public class XmlRulesSetReader extends XmlRulesSetTags {
         return new SAXReader().read(Paths.get(path).toUri().toURL());
     }
 
-    private Deque<RuleBased> read(@NotNull Document document) {
+    private Deque<RuleImpl> read(@NotNull Document document) {
         List<Element> elements = document.getRootElement().elements();
-        Deque<RuleBased> rulesSet = new LinkedList<>();
+        Deque<RuleImpl> rulesSet = new LinkedList<>();
 
         for (Element element : elements) {
             rulesSet.add(new Rule(readTargetNode(element), readMethodNode(element)));
@@ -49,7 +49,7 @@ public class XmlRulesSetReader extends XmlRulesSetTags {
         return node.getObjMethod();
     }
 
-    public Deque<RuleBased> loadSettings(@NotNull String xmlFile) {
+    public Deque<RuleImpl> loadSettings(@NotNull String xmlFile) {
         try {
             return read(parse(xmlFile));
         } catch (DocumentException | MalformedURLException exp) {

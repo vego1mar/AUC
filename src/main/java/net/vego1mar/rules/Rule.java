@@ -4,7 +4,7 @@ import net.vego1mar.auxiliary.method.Methodable;
 import net.vego1mar.auxiliary.target.Targetable;
 import org.jetbrains.annotations.NotNull;
 
-public final class Rule implements RuleBased {
+public final class Rule implements RuleImpl {
 
     private Targetable target;
     private Methodable method;

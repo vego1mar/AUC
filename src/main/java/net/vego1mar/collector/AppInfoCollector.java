@@ -11,7 +11,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.auxiliary.properties.InProperty;
 import net.vego1mar.enumerators.properties.Platforms;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.rules.RulesExecutable;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.utils.DownloadHelper;
@@ -66,7 +66,7 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
             inProperty.set(collector.getExecutor(), new InProperty());
             Field rulesSet = ReflectionHelper.getField(RulesExecutor.class, "rulesSet");
             rulesSet.set(collector.getExecutor(), new LinkedList<>());
-            Deque<RuleBased> loadedRulesSet = new XmlRulesSetReader().loadSettings(xmlTarget);
+            Deque<RuleImpl> loadedRulesSet = new XmlRulesSetReader().loadSettings(xmlTarget);
             collector.getExecutor().renew(loadedRulesSet, htmlCode);
         } catch (IllegalAccessException exp) {
             log.error(exp);
@@ -77,7 +77,7 @@ public class AppInfoCollector implements Serializable, AppInfoCollectible {
         return object;
     }
 
-    @Override public void gatherInformation(@NotNull Deque<RuleBased> rulesSet) {
+    @Override public void gatherInformation(@NotNull Deque<RuleImpl> rulesSet) {
         if (htmlCode.isEmpty()) {
             htmlCode = DownloadHelper.getHtml(sourceURL);
         }

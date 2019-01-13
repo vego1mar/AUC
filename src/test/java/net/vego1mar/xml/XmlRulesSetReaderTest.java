@@ -1,7 +1,7 @@
 package net.vego1mar.xml;
 
 import java.util.Deque;
-import net.vego1mar.rules.RuleBased;
+import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -14,7 +14,7 @@ public class XmlRulesSetReaderTest {
         XmlRulesSetReader reader = new XmlRulesSetReader();
 
         // when
-        Deque<RuleBased> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_7ZIP);
+        Deque<RuleImpl> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_7ZIP);
 
         // then
         Assert.assertEquals(TestCollections.getRulesFor7Zip_1().toString(), rulesSet.toString());
@@ -22,7 +22,7 @@ public class XmlRulesSetReaderTest {
 
 //    @Test public void saveSettings_AIMP() {
 //        // given
-//        Deque<RuleBased> rulesSet = TestCollections.getRulesForAimp_1();
+//        Deque<RuleImpl> rulesSet = TestCollections.getRulesForAimp_1();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_AIMP);
@@ -35,7 +35,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_AIMP() {
 //        // when
-//        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_AIMP);
+//        Deque<RuleImpl> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_AIMP);
 //
 //        // then
 //        Assert.assertEquals(TestCollections.getRulesForAimp_1().toString(), rulesSet.toString());
@@ -43,7 +43,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void saveSettings_SourceTree() {
 //        // given
-//        Deque<RuleBased> rulesSet = TestCollections.getRulesForSourceTree_1();
+//        Deque<RuleImpl> rulesSet = TestCollections.getRulesForSourceTree_1();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_SOURCETREE);
@@ -56,7 +56,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_SourceTree() {
 //        // when
-//        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_SOURCETREE);
+//        Deque<RuleImpl> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_SOURCETREE);
 //
 //        // then
 //        Assert.assertEquals(TestCollections.getRulesForSourceTree_1().toString(), rulesSet.toString());
@@ -64,8 +64,8 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void saveSettings_JetClean() {
 //        // given
-//        Deque<RuleBased> rulesSet1 = TestCollections.getRulesForJetClean_1();
-//        Deque<RuleBased> rulesSet2 = TestCollections.getRulesForJetClean_2();
+//        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForJetClean_1();
+//        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForJetClean_2();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_JETCLEAN_1);
@@ -82,12 +82,12 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_JetClean() {
 //        // given
-//        Deque<RuleBased> sourceSet1 = TestCollections.getRulesForJetClean_1();
-//        Deque<RuleBased> sourceSet2 = TestCollections.getRulesForJetClean_2();
+//        Deque<RuleImpl> sourceSet1 = TestCollections.getRulesForJetClean_1();
+//        Deque<RuleImpl> sourceSet2 = TestCollections.getRulesForJetClean_2();
 //
 //        // when
-//        Deque<RuleBased> rulesSet1 = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_1);
-//        Deque<RuleBased> rulesSet2 = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_2);
+//        Deque<RuleImpl> rulesSet1 = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_1);
+//        Deque<RuleImpl> rulesSet2 = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_2);
 //
 //        // then
 //        Assert.assertEquals(sourceSet1.toString(), rulesSet1.toString());
@@ -96,7 +96,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void saveSettings_BorderlessGaming() {
 //        // given
-//        Deque<RuleBased> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+//        Deque<RuleImpl> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_BORDERLESSGAMING);
@@ -109,7 +109,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_BorderlessGaming() {
 //        // when
-//        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_BORDERLESSGAMING);
+//        Deque<RuleImpl> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_BORDERLESSGAMING);
 //
 //        // then
 //        Assert.assertEquals(TestCollections.getRulesForBorderlessGaming_1().toString(), rulesSet.toString());
@@ -117,7 +117,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void saveSettings_TeraCopy() {
 //        // given
-//        Deque<RuleBased> rulesSet = TestCollections.getRulesForTeraCopy_1();
+//        Deque<RuleImpl> rulesSet = TestCollections.getRulesForTeraCopy_1();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_TERACOPY);
@@ -130,7 +130,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_TeraCopy() {
 //        // when
-//        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_TERACOPY);
+//        Deque<RuleImpl> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_TERACOPY);
 //
 //        // then
 //        Assert.assertEquals(TestCollections.getRulesForTeraCopy_1().toString(), rulesSet.toString());
@@ -138,7 +138,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void saveSettings_PotPlayer() {
 //        // given
-//        Deque<RuleBased> rulesSet = TestCollections.getRulesForPotPlayer_1();
+//        Deque<RuleImpl> rulesSet = TestCollections.getRulesForPotPlayer_1();
 //
 //        // when
 //        XmlRulesSetManager.saveSettings(rulesSet, TestVariables.XML_RUNTIME_POTPLAYER);
@@ -151,7 +151,7 @@ public class XmlRulesSetReaderTest {
 //
 //    @Test public void loadSettings_PotPlayer() {
 //        // when
-//        Deque<RuleBased> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_POTPLAYER);
+//        Deque<RuleImpl> rulesSet = XmlRulesSetManager.loadSettings(TestVariables.XML_PATTERN_POTPLAYER);
 //
 //        // then
 //        Assert.assertEquals(TestCollections.getRulesForPotPlayer_1().toString(), rulesSet.toString());

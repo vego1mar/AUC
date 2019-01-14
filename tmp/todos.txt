@@ -5,8 +5,6 @@ Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
 file mask for downloaded files
 DownloadHelper.downloadFile(String url);
 
-
+----------------
 
 XmlConsoleRunner - Reader & Writer
-XmlRulesSetReader & XmlRulesSetWriter - build unit tests
-RulesExecutorTest - to finish tests

@@ -477,6 +477,8 @@ public final class TestCollections {
         TrimMethod method3 = (TrimMethod) rule3.getMethod();
         method3.setSide(TrimSide.RIGHT);
         method3.setNumberOf(8);
+        Target target3 = (Target) rule3.getTarget();
+        target3.version(Platforms.WINDOWS);
 
         RuleImpl rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
@@ -493,11 +495,11 @@ public final class TestCollections {
         method6.setCharStop('>');
 
         RuleImpl rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.TRIM));
-        Target target7 = (Target) rule7.getTarget();
-        target7.hashID(LinksID.WINDOWS_X86_EXE);
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.RIGHT);
         method7.setNumberOf(3);
+        Target target7 = (Target) rule7.getTarget();
+        target7.linkID(LinksID.WINDOWS_X86_EXE);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -523,6 +525,8 @@ public final class TestCollections {
         RuleImpl rule3 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
         method3.setPosition(2);
+        Target target3 = (Target) rule3.getTarget();
+        target3.date(Platforms.WINDOWS);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -552,6 +556,8 @@ public final class TestCollections {
         RuleImpl rule4 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
         GrabUntilMethod method4 = (GrabUntilMethod) rule4.getMethod();
         method4.setCharStop('<');
+        Target target4 = (Target) rule4.getTarget();
+        target4.date(Platforms.WINDOWS);
 
         RuleImpl rule5 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method5 = (FirstOfMethod) rule5.getMethod();
@@ -563,10 +569,10 @@ public final class TestCollections {
         method6.setCharStop('"');
 
         RuleImpl rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
-        Target target7 = (Target) rule7.getTarget();
-        target7.hashID(LinksID.WINDOWS_X86_EXE);
         PrependMethod method7 = (PrependMethod) rule7.getMethod();
         method7.setText("https://github.com");
+        Target target7 = (Target) rule7.getTarget();
+        target7.linkID(LinksID.WINDOWS_X86_EXE);
 
         RuleImpl rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method8 = (FirstOfMethod) rule8.getMethod();
@@ -581,6 +587,40 @@ public final class TestCollections {
         RuleImpl rule10 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
         GrabUntilMethod method10 = (GrabUntilMethod) rule10.getMethod();
         method10.setCharStop('/');
+        Target target10 = (Target) rule10.getTarget();
+        target10.version(Platforms.WINDOWS);
+
+        RuleImpl rule11 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method11 = (FirstOfMethod) rule11.getMethod();
+        method11.setType(FirstOfType.STRING);
+        method11.setText("d-block py-1 py-md-2");
+
+        RuleImpl rule12 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method12 = (RetrieveTagsMethod) rule12.getMethod();
+        method12.setType(RetrieveTagsType.ALL);
+        method12.setTagname("a");
+
+        RuleImpl rule13 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+
+        RuleImpl rule14 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method14 = (ExtractWordMethod) rule14.getMethod();
+        method14.setPosition(3);
+
+        RuleImpl rule15 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        PrependMethod method15 = (PrependMethod) rule15.getMethod();
+        method15.setText("https://github.com");
+        Target target15 = (Target) rule15.getTarget();
+        target15.linkID(LinksID.SOURCECODE_TAR_GZ);
+
+        RuleImpl rule16 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method16 = (ExtractWordMethod) rule16.getMethod();
+        method16.setPosition(2);
+
+        RuleImpl rule17 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        PrependMethod method17 = (PrependMethod) rule17.getMethod();
+        method17.setText("https://github.com");
+        Target target17 = (Target) rule17.getTarget();
+        target17.linkID(LinksID.WINDOWS_ZIP);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -592,6 +632,13 @@ public final class TestCollections {
         rulesSet.add(rule8);
         rulesSet.add(rule9);
         rulesSet.add(rule10);
+        rulesSet.add(rule11);
+        rulesSet.add(rule12);
+        rulesSet.add(rule13);
+        rulesSet.add(rule14);
+        rulesSet.add(rule15);
+        rulesSet.add(rule16);
+        rulesSet.add(rule17);
 
         return rulesSet;
     }
@@ -631,6 +678,8 @@ public final class TestCollections {
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.LEFT);
         method7.setNumberOf(1);
+        Target target7 = (Target) rule7.getTarget();
+        target7.version(Platforms.WINDOWS);
 
         RuleImpl rule8 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method8 = (ExtractWordMethod) rule8.getMethod();
@@ -639,10 +688,10 @@ public final class TestCollections {
         RuleImpl rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
 
         RuleImpl rule10 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
-        Target target10 = (Target) rule10.getTarget();
-        target10.hashID(LinksID.WINDOWS_X86_EXE);
         PrependMethod method10 = (PrependMethod) rule10.getMethod();
         method10.setText("http://www.codesector.com");
+        Target target10 = (Target) rule10.getTarget();
+        target10.linkID(LinksID.WINDOWS_X86_EXE);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
@@ -675,6 +724,8 @@ public final class TestCollections {
         RuleImpl rule4 = new Rule(new Target(In.COLLECTION, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
         method4.setPosition(3);
+        Target target4 = (Target) rule4.getTarget();
+        target4.version(Platforms.WINDOWS);
 
         RuleImpl rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
@@ -682,7 +733,7 @@ public final class TestCollections {
 
         RuleImpl rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
         Target target6 = (Target) rule6.getTarget();
-        target6.hashID(LinksID.WINDOWS_X86_EXE);
+        target6.linkID(LinksID.WINDOWS_X86_EXE);
 
         RuleImpl rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
         RemoveCharactersMethod method7 = (RemoveCharactersMethod) rule7.getMethod();
@@ -697,6 +748,8 @@ public final class TestCollections {
         TrimMethod method9 = (TrimMethod) rule9.getMethod();
         method9.setSide(TrimSide.RIGHT);
         method9.setNumberOf(1);
+        Target target9 = (Target) rule9.getTarget();
+        target9.date(Platforms.WINDOWS);
 
         RuleImpl rule10 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
         FirstOfMethod method10 = (FirstOfMethod) rule10.getMethod();
@@ -710,7 +763,7 @@ public final class TestCollections {
 
         RuleImpl rule12 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
         Target target12 = (Target) rule12.getTarget();
-        target12.hashID(LinksID.WINDOWS_X64_EXE);
+        target12.linkID(LinksID.WINDOWS_X64_EXE);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);

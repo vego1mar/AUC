@@ -1,13 +1,9 @@
 7-zip.org/download.html
-
 http://www.aimp.ru/?do=download&os=windows
 http://www.aimp.ru/?do=download&os=android
-
 https://www.sourcetreeapp.com/
-
 https://www.majorgeeks.com/mg/get/jetclean,1.html
 https://www.majorgeeks.com/files/details/jetclean.html
-
 https://github.com/Codeusa/Borderless-Gaming/releases/latest
 http://www.codesector.com/downloads
 https://daumpotplayer.com/download/

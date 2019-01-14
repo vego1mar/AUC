@@ -160,15 +160,13 @@ public class RulesExecutorTest {
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
         UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
-//        Assert.assertEquals("1.5.0.129", useAsProperty.getLatestAppVersion());
-//        Assert.assertEquals("02/26/2016", useAsProperty.getUpdateDate());
-//        Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe", useAsProperty.getWindowsX86packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+        Assert.assertEquals("1.5.0.129", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("02/26/2016", useAsProperty.getDates().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
     }
 
-    @Test public void execute_BorderlessGaming() throws Exception {
+    @Test public void execute_BorderlessGaming() {
         // given
         Deque<RuleImpl> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
@@ -177,22 +175,18 @@ public class RulesExecutorTest {
         executor.execute();
 
         // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
-//        Assert.assertEquals("9.5.4", useAsProperty.getLatestAppVersion());
-//        Assert.assertEquals("Mar 31, 2018", useAsProperty.getUpdateDate());
-
-//        Assert.assertEquals(
-//            "https://github.com/Codeusa/Borderless-Gaming/releases/download/9.5.4/BorderlessGaming9.5.4_admin_setup.exe",
-//            useAsProperty.getWindowsX86packageURL()
-//        );
-//
-//        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+        UseAsImpl useAsProperty = executor.getResults();
+        Assert.assertEquals("9.5.5", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("Oct 11, 2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/releases/download/9.5.5/BorderlessGaming9.5.5_admin_setup.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
+        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/archive/9.5.5.tar.gz",
+            useAsProperty.getLinks().getItem(LinksID.SOURCECODE_TAR_GZ));
+        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/archive/9.5.5.zip",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_ZIP));
     }
 
-    @Test public void execute_TeraCopy() throws Exception {
+    @Test public void execute_TeraCopy() {
         // given
         Deque<RuleImpl> rulesSet = TestCollections.getRulesForTeraCopy_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
@@ -201,17 +195,13 @@ public class RulesExecutorTest {
         executor.execute();
 
         // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
-//        Assert.assertEquals("3.26", useAsProperty.getLatestAppVersion());
-//        Assert.assertEquals("", useAsProperty.getUpdateDate());
-//        Assert.assertEquals("http://www.codesector.com/files/teracopy.exe", useAsProperty.getWindowsX86packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64packageURL());
-//        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+        UseAsImpl useAsProperty = executor.getResults();
+        Assert.assertEquals("3.26", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("http://www.codesector.com/files/teracopy.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
     }
 
-    @Test public void execute_PotPlayer() throws Exception {
+    @Test public void execute_PotPlayer() {
         // given
         Deque<RuleImpl> rulesSet = TestCollections.getRulesForPotPlayer_1();
         RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
@@ -220,23 +210,13 @@ public class RulesExecutorTest {
         executor.execute();
 
         // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
-//        Assert.assertEquals("1.7.13963", useAsProperty.getLatestAppVersion());
-//        Assert.assertEquals("2018/08", useAsProperty.getUpdateDate());
-
-//        Assert.assertEquals(
-//            "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe",
-//            useAsProperty.getWindowsX86packageURL()
-//        );
-//
-//        Assert.assertEquals(
-//            "https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe",
-//            useAsProperty.getWindowsX64packageURL()
-//        );
-//
-//        Assert.assertEquals("", useAsProperty.getWindowsX86hash());
-//        Assert.assertEquals("", useAsProperty.getWindowsX64hash());
+        UseAsImpl useAsProperty = executor.getResults();
+        Assert.assertEquals("1.7.16291", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("2018/12", useAsProperty.getDates().getItem(Platforms.WINDOWS));
+        Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
+        Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup64.exe",
+            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_EXE));
     }
 
 }

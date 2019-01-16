@@ -23,8 +23,10 @@ public final class TestVariables {
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
     public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
     public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
-    public static final String XML_RUNTIME_AIMP = getWorkingDirectory() + "/runtime/aimp_settings.xml";
-    public static final String XML_PATTERN_AIMP = getWorkingDirectory() + "/src/test/resources/aimp_settings__ptrn.xml";
+    public static final String XML_RUNTIME_AIMP_1 = getWorkingDirectory() + "/runtime/aimp1_settings.xml";
+    public static final String XML_PATTERN_AIMP_1 = getWorkingDirectory() + "/src/test/resources/aimp1_settings__ptrn.xml";
+    public static final String XML_RUNTIME_AIMP_2 = getWorkingDirectory() + "/runtime/aimp2_settings.xml";
+    public static final String XML_PATTERN_AIMP_2 = getWorkingDirectory() + "/src/test/resources/aimp2_settings__ptrn.xml";
     public static final String XML_RUNTIME_SOURCETREE = getWorkingDirectory() + "/runtime/SourceTree_settings.xml";
     public static final String XML_PATTERN_SOURCETREE = getWorkingDirectory() + "/src/test/resources/SourceTree_stgs__ptrn.xml";
     public static final String XML_RUNTIME_JETCLEAN_1 = getWorkingDirectory() + "/runtime/JetClean01_settings.xml";
@@ -40,6 +42,7 @@ public final class TestVariables {
     public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
     public static final String OBJECT_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayerOBJ.ser";
+    public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {

@@ -25,7 +25,7 @@ public class XmlRulesSetReaderTest {
         XmlRulesSetReader reader = new XmlRulesSetReader();
 
         // when
-        Deque<RuleImpl> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_AIMP);
+        Deque<RuleImpl> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_AIMP_1);
 
         // then
         Assert.assertEquals(TestCollections.getRulesForAimp_1().toString(), rulesSet.toString());

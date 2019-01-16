@@ -7,4 +7,5 @@ DownloadHelper.downloadFile(String url);
 
 ----------------
 
-XmlConsoleRunner - Reader & Writer
+Collector - to refactor
+XmlConsoleRunner - write the results into the file

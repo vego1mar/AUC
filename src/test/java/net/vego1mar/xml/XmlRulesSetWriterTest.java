@@ -39,16 +39,21 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_AIMP() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForAimp_1();
+        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForAimp_1();
+        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForAimp_2();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
-        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_AIMP);
+        writer.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_AIMP_1);
+        writer.saveSettings(rulesSet2, TestVariables.XML_RUNTIME_AIMP_2);
 
         // then
-        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_AIMP);
-        String patternSource = TestVariables.readFile(TestVariables.XML_PATTERN_AIMP);
-        Assert.assertEquals(patternSource, runtime);
+        String runtime1 = TestVariables.readFile(TestVariables.XML_RUNTIME_AIMP_1);
+        String runtime2 = TestVariables.readFile(TestVariables.XML_RUNTIME_AIMP_2);
+        String source1 = TestVariables.readFile(TestVariables.XML_PATTERN_AIMP_1);
+        String source2 = TestVariables.readFile(TestVariables.XML_PATTERN_AIMP_2);
+        Assert.assertEquals(source1, runtime1);
+        Assert.assertEquals(source2, runtime2);
     }
 
     @Test public void saveSettings_SourceTree() {

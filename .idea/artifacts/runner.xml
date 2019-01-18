@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="runner">
+    <output-path>$PROJECT_DIR$/out/artifacts/runner</output-path>
+    <root id="root">
+      <element id="archive" name="AUC.jar">
+        <element id="module-output" name="AUC" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+      <element id="library" level="project" name="Maven: org.jetbrains:annotations:16.0.3" />
+      <element id="library" level="project" name="Maven: org.dom4j:dom4j:2.1.1" />
+      <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.11.3" />
+    </root>
+  </artifact>
+</component>

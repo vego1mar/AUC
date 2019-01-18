@@ -11,6 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import net.vego1mar.auxiliary.properties.LinksProperty;
 import net.vego1mar.auxiliary.properties.PlatformsProperty;
 import net.vego1mar.auxiliary.properties.UseAsImpl;
@@ -154,5 +155,20 @@ public class XmlConsoleRunner {
         }
 
         writer.flush();
+    }
+
+    public static void main(String[] args) {
+        String rulesDirPath = System.getProperty("user.dir");
+        final int EXPECTED_ARGS = 1;
+
+        if (args.length == EXPECTED_ARGS) {
+            rulesDirPath = args[0];
+        }
+
+        final long startTime = System.nanoTime();
+        XmlConsoleRunner runner = new XmlConsoleRunner(rulesDirPath);
+        runner.run();
+        final long seconds = TimeUnit.NANOSECONDS.toSeconds(System.nanoTime() - startTime);
+        log.info("The program finished after " + seconds + " seconds.");
     }
 }

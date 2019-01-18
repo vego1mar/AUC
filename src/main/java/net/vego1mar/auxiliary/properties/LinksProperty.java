@@ -34,4 +34,8 @@ public class LinksProperty implements LinksImpl, Serializable {
 
         return "";
     }
+
+    public Map<LinksID, String> getLinks() {
+        return links;
+    }
 }

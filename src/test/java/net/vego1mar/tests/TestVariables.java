@@ -43,6 +43,7 @@ public final class TestVariables {
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
     public static final String OBJECT_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayerOBJ.ser";
     public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
+    public static final String XML_CONSOLE_RUNNER_OUTFILE = getWorkingDirectory() + "/src/test/resources/runner.txt";
     private static final Logger log = Logger.getLogger(TestVariables.class);
 
     private TestVariables() {

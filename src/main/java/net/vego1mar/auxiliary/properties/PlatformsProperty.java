@@ -33,4 +33,8 @@ public class PlatformsProperty implements PlatformsImpl, Serializable {
 
         platforms.put(platform, item);
     }
+
+    public Map<Platforms, String> getPlatforms() {
+        return platforms;
+    }
 }

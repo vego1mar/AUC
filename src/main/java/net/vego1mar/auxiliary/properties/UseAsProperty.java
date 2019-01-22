@@ -1,8 +1,6 @@
 package net.vego1mar.auxiliary.properties;
 
-import java.io.Serializable;
-
-public class UseAsProperty implements UseAsImpl, Serializable {
+public class UseAsProperty implements UseAsImpl {
 
     private PlatformsImpl versions;
     private PlatformsImpl dates;

@@ -3,9 +3,11 @@ categories and grouping of apps entries
 
 Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
 file mask for downloaded files
-DownloadHelper.downloadFile(String url);
+DownloadHelper.getFile(String url);
 
 ----------------
 
-Collector - to refactor
-XmlConsoleRunner - write the results into the file
+Apache Pivot
+XmlConsoleRunner - description of release for r1.1
+RulesExecutor - more rules
+Collector - to refactor (wsif-base branch)

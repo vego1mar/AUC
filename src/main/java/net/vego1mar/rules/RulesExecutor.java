@@ -26,16 +26,15 @@ public final class RulesExecutor implements RulesExecutable, Serializable {
         inProperty.setCode(htmlCode);
         useAsProperty = new UseAsProperty();
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(
-            getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS="
-                + htmlCode.length() + ')');
+        log.info(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
     @Override public void renew(@NotNull Deque<RuleImpl> rulesSet, @NotNull String htmlCode) {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty.setCode(htmlCode);
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
+        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" +
+            htmlCode.length() + ')');
     }
 
     @Override public void execute() {

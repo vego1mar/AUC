@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import net.vego1mar.enumerators.properties.LinksID;
 
-import java.io.Serializable;
-
-public class LinksProperty implements LinksImpl, Serializable {
+public class LinksProperty implements LinksImpl {
 
     private Map<LinksID, String> links;
 

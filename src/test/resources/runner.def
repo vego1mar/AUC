@@ -1,0 +1,22 @@
+/// ENTRY 7-Zip
+7zip_settings__pattern.xml  http://www.7-zip.org/download.html
+
+/// ENTRY BlueSprig JetClean
+JetClean01_settings__ptrn.xml   https://www.majorgeeks.com/mg/get/jetclean,1.html
+JetClean02_settings__ptrn.xml   https://www.majorgeeks.com/files/details/jetclean.html
+
+/// ENTRY AIMP
+aimp1_settings__ptrn.xml    http://www.aimp.ru/?do=download&os=windows
+aimp2_settings__ptrn.xml    http://www.aimp.ru/?do=download&os=android
+
+/// ENTRY Atlassian SourceTree
+SourceTree_stgs__ptrn.xml   https://www.sourcetreeapp.com/
+
+/// ENTRY Borderless Gaming
+BorderlessGaming__ptrn.xml  https://github.com/Codeusa/Borderless-Gaming/releases/latest
+
+/// ENTRY Code Sector TeraCopy
+TeraCopy_set__ptrn.xml  http://www.codesector.com/downloads
+
+/// ENTRY Kakao DAUM PotPlayer
+PotPlayer_set__ptrn.xml https://daumpotplayer.com/download/

@@ -2,28 +2,11 @@ package net.vego1mar.auxiliary.properties;
 
 public interface UseAsImpl {
 
-    String getLatestAppVersion();
+    PlatformsImpl getVersions();
 
-    void setLatestAppVersion(String latestAppVersion);
+    PlatformsImpl getDates();
 
-    String getUpdateDate();
+    LinksImpl getLinks();
 
-    void setUpdateDate(String updateDate);
-
-    String getWindowsX86packageURL();
-
-    void setWindowsX86packageURL(String windowsX86packageURL);
-
-    String getWindowsX64packageURL();
-
-    void setWindowsX64packageURL(String windowsX64packageURL);
-
-    String getWindowsX86hash();
-
-    void setWindowsX86hash(String windowsX86hash);
-
-    String getWindowsX64hash();
-
-    void setWindowsX64hash(String windowsX64hash);
-
+    LinksImpl getHashes();
 }

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <title>TeraCopy for Windows - Code Sector</title>
-  
+
   <meta name="description" content="Official site of TeraCopy, a free utility designed to copy files faster and more secure. It can verify copied files to ensure they are identical. It skips bad files during copy, not terminating the entire transfer. Seamless integration with Windows Explorer.">
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -21,7 +21,7 @@
   <link rel="alternate" href="http://feeds.feedburner.com/codesector" type="application/rss+xml" title="Code Sector News">
 
   <meta name="google-site-verification" content="P0aR0ay01G2flmxjOQ37ouoyLSgCIbQ4kB6v23EhkYE">
-  
+
 </head>
 
 <body class="downloads">
@@ -44,28 +44,28 @@
       <ul id="nav-mobile" class="side-nav">
         <li><a href="/">
           <i class="small material-icons">home</i>Products</a></li>
-        
+
         <li><a href="/downloads">
           <i class="small material-icons">get_app</i>Downloads</a></li>
-        
+
         <li><a href="/purchase">
           <i class="small material-icons">payment</i>Purchase</a></li>
-        
+
         <li><a href="http://support.codesector.com">
           <i class="small material-icons">live_help</i>Support</a></li>
 
         <li><a href="http://blog.codesector.com">
           <i class="small material-icons">dashboard</i>Blog</a></li>
-        
+
         <li><a href="https://codesector.onfastspring.com">
           <i class="small material-icons">shopping_cart</i>Cart</a></li>
-        
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  
-  <!--nav> 
+
+  <!--nav>
     <div class="nav-wrapper red darken-4" >
       <div class="container">
         <div class="col s12 l12">
@@ -77,6 +77,7 @@
   </nav-->
 
   <article>
+
   <!-- Title -->
   <div class="section blue darken-2 white-text no-pad-bot" id="index-banner">
     <div class="container">
@@ -273,7 +274,6 @@
         <div class="col m5 s12">
           <h5 class="grey-text text-lighten-4">News</h5>
           <ul>
-           
             <li><a href="http://blog.codesector.com/2018/03/11/teracopy-3-3-beta/">
                 TeraCopy 3.3 beta
                 <span class="light grey-text">
@@ -303,7 +303,7 @@
                 <span class="light grey-text">
                 (16.03.17)</span>
               </a></li>
-            
+
           </ul>
 
         </div>
@@ -333,7 +333,7 @@
       <div class="container">
         <div class="row">
           <div class="col m9 s6 valign-wrapper">
-            &copy; 1999 - 2018 Code Sector<span class="social-icons white-text">&nbsp;</span>
+            &copy; 1999 - 2019 Code Sector<span class="social-icons white-text">&nbsp;</span>
           </div>
           <div class="col m3 s6 valign-wrapper">
             <span class="social-icons">
@@ -357,7 +357,7 @@
   <script src="js/init.js"></script>
   <script src="js/google-analytics.js"></script>
 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58eef291da7035a2"></script> 
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58eef291da7035a2"></script>
 
   <script>(function(d,a){function c(){var b=d.createElement("script");b.async=!0;b.type="text/javascript";b.src=a._settings.messengerUrl;b.crossOrigin="anonymous";var c=d.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}window.kayako=a;a.readyQueue=[];a.newEmbedCode=!0;a.ready=function(b){a.readyQueue.push(b)};a._settings={apiUrl:"https://codesector.kayako.com/api/v1",messengerUrl:"https://codesector.kayakocdn.com/messenger",realtimeUrl:"wss://kre.kayako.net/socket"};window.attachEvent?window.attachEvent("onload",c):window.addEventListener("load",c,!1)})(document,window.kayako||{});
   </script>

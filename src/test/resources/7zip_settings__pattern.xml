@@ -35,7 +35,8 @@
   <rule no="4">
     <target>
       <in>COLLECTION</in>
-      <useAs>LATEST_APP_VERSION</useAs>
+      <useAs>VERSIONS</useAs>
+      <version>WINDOWS</version>
     </target>
     <method>
       <methodType>EXTRACT_WORD</methodType>
@@ -55,11 +56,12 @@
   <rule no="6">
     <target>
       <in>CONTENT</in>
-      <useAs>UPDATE_DATE</useAs>
+      <useAs>DATES</useAs>
+      <date>WINDOWS</date>
     </target>
     <method>
       <methodType>REMOVE_CHARACTERS</methodType>
-      <signs>()</signs>
+      <signs><![CDATA[()]]></signs>
     </method>
   </rule>
   <rule no="7">
@@ -117,7 +119,8 @@
   <rule no="12">
     <target>
       <in>COLLECTION</in>
-      <useAs>WINDOWS_X86_PACKAGE_URL</useAs>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_X86_EXE</linkId>
     </target>
     <method>
       <methodType>EXTRACT_WORD</methodType>
@@ -127,11 +130,67 @@
   <rule no="13">
     <target>
       <in>COLLECTION</in>
-      <useAs>WINDOWS_X64_PACKAGE_URL</useAs>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_X64_EXE</linkId>
     </target>
     <method>
       <methodType>EXTRACT_WORD</methodType>
       <position>2</position>
+    </method>
+  </rule>
+  <rule no="14">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_ANY_7Z</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>3</position>
+    </method>
+  </rule>
+  <rule no="15">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>SOURCECODE_ANY_7Z</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>4</position>
+    </method>
+  </rule>
+  <rule no="16">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>SDK_ANY_7Z</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>5</position>
+    </method>
+  </rule>
+  <rule no="17">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_X86_MSI</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>6</position>
+    </method>
+  </rule>
+  <rule no="18">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_X64_MSI</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>7</position>
     </method>
   </rule>
 </rulesSet>

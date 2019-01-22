@@ -9,7 +9,8 @@
 
 <title>Download | PotPlayer</title>
 
-<!-- All in One SEO Pack 2.7.3 by Michael Torbert of Semper Fi Web Design[252,285] -->
+<!-- All in One SEO Pack 2.8 by Michael Torbert of Semper Fi Web Design[252,285] -->
+
 <meta name="keywords"  content="download,potplayer,daum potplayer,potplayer 1.7.13963,potplayer 1.7.10420 beta" />
 
 <link rel="canonical" href="https://daumpotplayer.com/download/" />
@@ -29,7 +30,7 @@
 <link rel="alternate" type="application/rss+xml" title="PotPlayer &raquo; Comments Feed" href="https://daumpotplayer.com/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="PotPlayer &raquo; Download Comments Feed" href="https://daumpotplayer.com/download/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/daumpotplayer.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/daumpotplayer.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
@@ -139,17 +140,17 @@ body.custom-font-enabled {font-family: 'Open Sans', Arial, Verdana;} .top-bar {b
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='viomag-ie-css'  href='https://daumpotplayer.com/wp-content/themes/viomag/css/ie.css?ver=20121010' type='text/css' media='all' />
 <![endif]-->
-<link rel='stylesheet' id='dashicons-css'  href='https://daumpotplayer.com/wp-includes/css/dashicons.min.css?ver=4.9.8' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='https://daumpotplayer.com/wp-content/themes/viomag/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://daumpotplayer.com/wp-includes/css/dashicons.min.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://daumpotplayer.com/wp-content/themes/viomag/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=4.9.9' type='text/css' media='all' />
 <link rel='stylesheet' id='rpt_front_style-css'  href='https://daumpotplayer.com/wp-content/plugins/related-posts-thumbnails/assets/css/front.css?ver=1.6.2' type='text/css' media='all' />
-<link rel='stylesheet' id='addtoany-css'  href='https://daumpotplayer.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.14' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css'  href='https://daumpotplayer.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15' type='text/css' media='all' />
 <script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://daumpotplayer.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://daumpotplayer.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1'></script>
 <link rel='https://api.w.org/' href='https://daumpotplayer.com/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://daumpotplayer.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://daumpotplayer.com/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.8" />
+<meta name="generator" content="WordPress 4.9.9" />
 <link rel='shortlink' href='https://daumpotplayer.com/?p=9' />
 <link rel="alternate" type="application/json+oembed" href="https://daumpotplayer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdaumpotplayer.com%2Fdownload%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://daumpotplayer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdaumpotplayer.com%2Fdownload%2F&#038;format=xml" />
@@ -281,14 +282,15 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 <p>On this page, you have the opportunity to download the last Daum PotPlayer versions for 32-and 64-bit Windows operating systems, and also russifiers to them.</p>
 <p>The last failed to complete versions of record player of Potplayer do not take place here. The only stable tested releases.</p>
-<p><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" /><strong>Daum PotPlayer 1.7.13963 for 32-bit Windows</strong><br />
-<a href="https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe">Download Daum PotPlayer 32-bit</a> (25 MB)</p>
-<p><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" /><strong>Daum PotPlayer 1.7.13963 for 64-bit Windows</strong><br />
-<a href="https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe">Download Daum PotPlayer 64-bit</a> (25 MB)</p>
+<p><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" /><strong>Daum PotPlayer 1.7.16291 for 32-bit Windows</strong><br />
+<a href="https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup.exe">Download Daum PotPlayer 32-bit</a> (25 MB)</p>
+<p><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" /><strong>Daum PotPlayer 1.7.16291 for 64-bit Windows</strong><br />
+<a href="https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup64.exe">Download Daum PotPlayer 64-bit</a> (25 MB)</p>
 <hr />
 <p><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" /><strong>Beta version:</strong><br />
 <a href="https://daumpotplayer.com/wp-content/uploads/2017/12/PotPlayerSetup%20beta.exe">Daum PotPlayer 1.7.10420 Beta</a> for Windows (21.1 MB)</p>
 <p><strong><img class="alignleft size-full wp-image-10" src="https://daumpotplayer.com/wp-content/uploads/2013/03/download_potplayer.gif" alt="download_potplayer" width="31" height="32" />Download PotPlayer codec:</strong></p>
+<p><a href="https://daumpotplayer.com/wp-content/uploads/2017/12/OpenCodecSetup.exe">OpenCodecSetup 32-bit </a>(8.8 Mb) or <a href="https://daumpotplayer.com/wp-content/uploads/2017/12/OpenCodecSetup64.exe">OpenCodecSetup 64-bit</a> (9 Mb)
 <!-- WP QUADS Content Ad Plugin v. 1.8.0 -->
 <div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -301,8 +303,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-
-<p><a href="https://daumpotplayer.com/wp-content/uploads/2017/12/OpenCodecSetup.exe">OpenCodecSetup 32-bit </a>(8.8 Mb) or <a href="https://daumpotplayer.com/wp-content/uploads/2017/12/OpenCodecSetup64.exe">OpenCodecSetup 64-bit</a> (9 Mb)
+</p>
 <!-- WP QUADS Content Ad Plugin v. 1.8.0 -->
 <div class="quads-location quads-ad3" id="quads-ad3" style="float:none;margin:0px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -316,10 +317,12 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-</p>
+
 <h3>Download Old version of player:</h3>
 <ul>
-<li>PotPlayer 1.7.13963: <a href="https://daumpotplayer.com/wp-content/uploads/2018/07/PotPlayerSetup%20(3).exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/07/PotPlayerSetup64%20(2).exe">64-bit</a> (25 MB)</li>
+<li>PotPlayer 1.7.14804: <a href="https://daumpotplayer.com/wp-content/uploads/2018/10/PotPlayerSetup%20%281%29.exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/10/PotPlayerSetup64%20%281%29.exe">64-bit</a> (25 MB)</li>
+<li>PotPlayer 1.7.13963: <a href="https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup.exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/08/PotPlayerSetup64.exe">64-bit</a> (25 MB)</li>
+<li>PotPlayer 1.7.13622: <a href="https://daumpotplayer.com/wp-content/uploads/2018/07/PotPlayerSetup%20(3).exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/07/PotPlayerSetup64%20(2).exe">64-bit</a> (25 MB)</li>
 <li>PotPlayer 1.7.12844: <a href="https://daumpotplayer.com/wp-content/uploads/2018/06/PotPlayerSetup%20(2).exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/06/PotPlayerSetup64%20(1).exe">64-bit</a> (24 MB)</li>
 <li>PotPlayer 1.7.12248: <a href="https://daumpotplayer.com/wp-content/uploads/2018/05/PotPlayerSetup%20(1).exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/05/PotPlayerSetup64.exe">64-bit</a> (24 MB)</li>
 <li>PotPlayer 1.7.10667: <a href="https://daumpotplayer.com/wp-content/uploads/2018/04/PotPlayerSetup.exe">32-bit</a> or <a href="https://daumpotplayer.com/wp-content/uploads/2018/04/PotPlayerSetup64.exe">64-bit</a> (22 MB)</li>
@@ -338,7 +341,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 	
 			<h2 class="comments-title">
-			96 comments on &ldquo;<span style="word-break:break-word;">Download</span>&rdquo;		</h2>
+			121 comments on &ldquo;<span style="word-break:break-word;">Download</span>&rdquo;		</h2>
 
 		<ol class="commentlist">
 					<li class="comment even thread-even depth-1" id="li-comment-76734">
@@ -376,7 +379,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 				
 				<section class="comment-content comment">
-					<p>Me too&#8230; ??</p>
+					<p>Me too&#8230; 🙁</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -410,12 +413,28 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 				<div class="reply">
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=86693#respond' onclick='return addComment.moveForm( "comment-86693", "86693", "respond", "9" )' aria-label='Reply to jini idoko'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
+		<ol class="children">
+		<li class="comment odd alt depth-5" id="li-comment-92885">
+			<article id="comment-92885" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/d64c7650e5c9a6d4849bacc55683c0fb?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d64c7650e5c9a6d4849bacc55683c0fb?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">amir</b> </cite><a href="https://daumpotplayer.com/download/#comment-92885"><time datetime="2018-12-21T06:31:53+00:00">December 21, 2018 at 6:31 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>very good!</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+									</div><!-- .reply -->
+			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 </ol><!-- .children -->
 </li><!-- #comment-## -->
 </ol><!-- .children -->
 </li><!-- #comment-## -->
-		<li class="comment odd alt depth-2" id="li-comment-88691">
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even depth-2" id="li-comment-88691">
 			<article id="comment-88691" class="comment">
 				<header class="comment-meta comment-author vcard">
 					<img alt='' src='https://secure.gravatar.com/avatar/c9c1772920e1bcbc7196f702e8cad2ca?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c9c1772920e1bcbc7196f702e8cad2ca?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">ghonche_yqr</b> </cite><a href="https://daumpotplayer.com/download/#comment-88691"><time datetime="2018-07-22T10:35:53+00:00">July 22, 2018 at 10:35 am</time></a>				</header><!-- .comment-meta -->
@@ -427,6 +446,20 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 				<div class="reply">
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=88691#respond' onclick='return addComment.moveForm( "comment-88691", "88691", "respond", "9" )' aria-label='Reply to ghonche_yqr'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-2" id="li-comment-91167">
+			<article id="comment-91167" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/24049a51b6cc25257c141ef1486d6228?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/24049a51b6cc25257c141ef1486d6228?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://69' rel='external nofollow' class='url'>Alex R</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-91167"><time datetime="2018-10-21T08:02:49+00:00">October 21, 2018 at 8:02 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>889</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91167#respond' onclick='return addComment.moveForm( "comment-91167", "91167", "respond", "9" )' aria-label='Reply to Alex R'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 </ol><!-- .children -->
@@ -523,9 +556,25 @@ you know what , I re-install pot twice already , but the problem still exist .</
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=77452#respond' onclick='return addComment.moveForm( "comment-77452", "77452", "respond", "9" )' aria-label='Reply to sdg'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
+		<li class="comment even depth-2" id="li-comment-90879">
+			<article id="comment-90879" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/9aec500f9f4e580f9a6a95b557a72188?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9aec500f9f4e580f9a6a95b557a72188?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Shuvo</b> </cite><a href="https://daumpotplayer.com/download/#comment-90879"><time datetime="2018-10-06T08:33:21+00:00">October 6, 2018 at 8:33 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Again uninstall and go to your system storage windows\program files<br />
+Now permanently delete the potplayer folder<br />
+Restart need, now install again</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90879#respond' onclick='return addComment.moveForm( "comment-90879", "90879", "respond", "9" )' aria-label='Reply to Shuvo'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
 </ol><!-- .children -->
 </li><!-- #comment-## -->
-		<li class="comment even thread-even depth-1" id="li-comment-77582">
+		<li class="comment odd alt thread-even depth-1" id="li-comment-77582">
 			<article id="comment-77582" class="comment">
 				<header class="comment-meta comment-author vcard">
 					<img alt='' src='https://secure.gravatar.com/avatar/c5bc9c8f56533ee61396093889f0ed7c?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c5bc9c8f56533ee61396093889f0ed7c?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">KERLO</b> </cite><a href="https://daumpotplayer.com/download/#comment-77582"><time datetime="2017-11-03T20:36:30+00:00">November 3, 2017 at 8:36 pm</time></a>				</header><!-- .comment-meta -->
@@ -544,7 +593,7 @@ Thanks Yann</p>
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=77582#respond' onclick='return addComment.moveForm( "comment-77582", "77582", "respond", "9" )' aria-label='Reply to KERLO'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		<ol class="children">
-		<li class="comment odd alt depth-2" id="li-comment-78282">
+		<li class="comment even depth-2" id="li-comment-78282">
 			<article id="comment-78282" class="comment">
 				<header class="comment-meta comment-author vcard">
 					<img alt='' src='https://secure.gravatar.com/avatar/61f34055a33f8d8667181586c5c6ff6c?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/61f34055a33f8d8667181586c5c6ff6c?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Chia Saie</b> </cite><a href="https://daumpotplayer.com/download/#comment-78282"><time datetime="2017-11-18T11:00:07+00:00">November 18, 2017 at 11:00 am</time></a>				</header><!-- .comment-meta -->
@@ -558,18 +607,32 @@ Thanks Yann</p>
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=78282#respond' onclick='return addComment.moveForm( "comment-78282", "78282", "respond", "9" )' aria-label='Reply to Chia Saie'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
-		<li class="comment even depth-2" id="li-comment-80744">
+		<li class="comment odd alt depth-2" id="li-comment-80744">
 			<article id="comment-80744" class="comment">
 				<header class="comment-meta comment-author vcard">
 					<img alt='' src='https://secure.gravatar.com/avatar/e7f8358874e3d7c6b1966b82e26ef0e7?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e7f8358874e3d7c6b1966b82e26ef0e7?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://paspartu.co' rel='external nofollow' class='url'>Agustin</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-80744"><time datetime="2018-01-12T09:22:46+00:00">January 12, 2018 at 9:22 am</time></a>				</header><!-- .comment-meta -->
 
 				
 				<section class="comment-content comment">
-					<p>You should try downloading an earlier version from softonoic, it appears they don�t update it there</p>
+					<p>You should try downloading an earlier version from softonoic, it appears they don´t update it there</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=80744#respond' onclick='return addComment.moveForm( "comment-80744", "80744", "respond", "9" )' aria-label='Reply to Agustin'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even depth-2" id="li-comment-90881">
+			<article id="comment-90881" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/9aec500f9f4e580f9a6a95b557a72188?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9aec500f9f4e580f9a6a95b557a72188?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Shuvo...Bangladesh</b> </cite><a href="https://daumpotplayer.com/download/#comment-90881"><time datetime="2018-10-06T08:38:17+00:00">October 6, 2018 at 8:38 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Pls..after uninstall,delete the folder from system resources&#8230; Windows/system 32(64) now permanently delete pot player folder .now restart ur PC and try to install again</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90881#respond' onclick='return addComment.moveForm( "comment-90881", "90881", "respond", "9" )' aria-label='Reply to Shuvo...Bangladesh'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 </ol><!-- .children -->
@@ -595,7 +658,7 @@ Thanks Yann</p>
 
 				
 				<section class="comment-content comment">
-					<p>Yes!! Linux version would be great! As POT Player itself! ??</p>
+					<p>Yes!! Linux version would be great! As POT Player itself! 🙂</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -611,7 +674,7 @@ Thanks Yann</p>
 
 				
 				<section class="comment-content comment">
-					<p>potplayer64.dll is modified or hacked �.. if you want to solve this error set the date of your system to an earlier one , Like a month ago or even a year ago and that error won�t show up next time (for example 11.11.2016).</p>
+					<p>potplayer64.dll is modified or hacked ….. if you want to solve this error set the date of your system to an earlier one , Like a month ago or even a year ago and that error won´t show up next time (for example 11.11.2016).</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1121,7 +1184,7 @@ PotPlayer is extremely slow to open video files. Every time I open a video file,
 
 				
 				<section class="comment-content comment">
-					<p>???????? ??????????? ????? ???????? ????? ? ?????? SEO PRO1</p>
+					<p>заказать продвижение сайта недорого логин в скайпе SEO PRO1</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1135,7 +1198,7 @@ PotPlayer is extremely slow to open video files. Every time I open a video file,
 
 				
 				<section class="comment-content comment">
-					<p>???????? ??????????? ????? ?? ???????? ?????? ????? ? ?????? SEO PRO1</p>
+					<p>заказать продвижение сайта по ключевым словам логин в скайпе SEO PRO1</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1149,7 +1212,7 @@ PotPlayer is extremely slow to open video files. Every time I open a video file,
 
 				
 				<section class="comment-content comment">
-					<p>I use potplayer for years but now ���..Blue screen of death in windows 10 version 1803 &#8211;  17133.73<br />
+					<p>I use potplayer for years but now ………..Blue screen of death in windows 10 version 1803 &#8211;  17133.73<br />
 Daum PotPlayer 1.7.10667 for 64-bit Windows</p>
 									</section><!-- .comment-content -->
 
@@ -1164,7 +1227,7 @@ Daum PotPlayer 1.7.10667 for 64-bit Windows</p>
 
 				
 				<section class="comment-content comment">
-					<p>???????? ??????????? ????? ?? ?????? ????? ? ?????? SEO PRO1</p>
+					<p>заказать продвижение сайта по кликам логин в скайпе SEO PRO1</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1178,7 +1241,7 @@ Daum PotPlayer 1.7.10667 for 64-bit Windows</p>
 
 				
 				<section class="comment-content comment">
-					<p>Awesome player. Just replaced my old player with Pot. ??</p>
+					<p>Awesome player. Just replaced my old player with Pot. 🙂</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1221,15 +1284,15 @@ I want the screen to show full resolution with color fully display properly (ie.
 		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-84430">
 			<article id="comment-84430" class="comment">
 				<header class="comment-meta comment-author vcard">
-					<img alt='' src='https://secure.gravatar.com/avatar/600326948f204a6a4de2dbf280439a24?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/600326948f204a6a4de2dbf280439a24?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://gamehouse777.com' rel='external nofollow' class='url'>????? ?????</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-84430"><time datetime="2018-04-30T15:31:26+00:00">April 30, 2018 at 3:31 pm</time></a>				</header><!-- .comment-meta -->
+					<img alt='' src='https://secure.gravatar.com/avatar/600326948f204a6a4de2dbf280439a24?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/600326948f204a6a4de2dbf280439a24?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://gamehouse777.com' rel='external nofollow' class='url'>Супер слотс</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-84430"><time datetime="2018-04-30T15:31:26+00:00">April 30, 2018 at 3:31 pm</time></a>				</header><!-- .comment-meta -->
 
 				
 				<section class="comment-content comment">
-					<p>??? ????? ? ??????? ???????? ? ???? ????????? ?????</p>
+					<p>Год назад Я выиграл деньжищи в этом уважаемом клубе</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
-					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=84430#respond' onclick='return addComment.moveForm( "comment-84430", "84430", "respond", "9" )' aria-label='Reply to ????? ?????'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=84430#respond' onclick='return addComment.moveForm( "comment-84430", "84430", "respond", "9" )' aria-label='Reply to Супер слотс'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 		<li class="comment odd alt thread-even depth-1" id="li-comment-84849">
@@ -1400,7 +1463,7 @@ I want the screen to show full resolution with color fully display properly (ie.
 
 				
 				<section class="comment-content comment">
-					<p>Doesn�t work DSC if to use other decoders. With built-in &#8211; ok.</p>
+					<p>Doesn’t work DSC if to use other decoders. With built-in &#8211; ok.</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
@@ -1500,16 +1563,16 @@ Inyong butoh perangkat lunak iki neng linux coy.</p>
 		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-88864">
 			<article id="comment-88864" class="comment">
 				<header class="comment-meta comment-author vcard">
-					<img alt='' src='https://secure.gravatar.com/avatar/9db789efba41dae721226b34e4241072?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9db789efba41dae721226b34e4241072?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://azino777.shop/' rel='external nofollow' class='url'>??? ??????? ?????? ? ????? 777</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-88864"><time datetime="2018-07-24T18:12:06+00:00">July 24, 2018 at 6:12 pm</time></a>				</header><!-- .comment-meta -->
+					<img alt='' src='https://secure.gravatar.com/avatar/9db789efba41dae721226b34e4241072?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9db789efba41dae721226b34e4241072?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='http://azino777.shop/' rel='external nofollow' class='url'>как вывести деньги с азино 777</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-88864"><time datetime="2018-07-24T18:12:06+00:00">July 24, 2018 at 6:12 pm</time></a>				</header><!-- .comment-meta -->
 
 				
 				<section class="comment-content comment">
-					<p>?? ??? ????? ? ???? ??????<br />
-? ???? ??????????? ??????-??????</p>
+					<p>Не так давно Я буду играть<br />
+в этом современном онлайн-казино</p>
 									</section><!-- .comment-content -->
 
 				<div class="reply">
-					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=88864#respond' onclick='return addComment.moveForm( "comment-88864", "88864", "respond", "9" )' aria-label='Reply to ??? ??????? ?????? ? ????? 777'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=88864#respond' onclick='return addComment.moveForm( "comment-88864", "88864", "respond", "9" )' aria-label='Reply to как вывести деньги с азино 777'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 		<li class="pingback odd alt thread-even depth-1" id="comment-88985">
@@ -1704,10 +1767,26 @@ I didn&#8217;t have this problem before Version 1.7.13963, and when I installed 
 				<div class="reply">
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90738#respond' onclick='return addComment.moveForm( "comment-90738", "90738", "respond", "9" )' aria-label='Reply to Hossein'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
+		<ol class="children">
+		<li class="comment odd alt depth-3" id="li-comment-91765">
+			<article id="comment-91765" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/5b0af85ff70f38f1c5c7d3967a0188ba?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5b0af85ff70f38f1c5c7d3967a0188ba?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">JK</b> </cite><a href="https://daumpotplayer.com/download/#comment-91765"><time datetime="2018-11-11T23:05:53+00:00">November 11, 2018 at 11:05 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>i have same problem, but only with Dolby Atmos movies, after 1 minute, sound out of sync.  I tested all version Potplayer and 12844 is last good one.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91765#respond' onclick='return addComment.moveForm( "comment-91765", "91765", "respond", "9" )' aria-label='Reply to JK'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
 </ol><!-- .children -->
 </li><!-- #comment-## -->
-		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-90820">
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-90820">
 			<article id="comment-90820" class="comment">
 				<header class="comment-meta comment-author vcard">
 					<img alt='' src='https://secure.gravatar.com/avatar/91db860245848aebb377b3b6de73772b?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/91db860245848aebb377b3b6de73772b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">thunter</b> </cite><a href="https://daumpotplayer.com/download/#comment-90820"><time datetime="2018-09-30T04:42:38+00:00">September 30, 2018 at 4:42 am</time></a>				</header><!-- .comment-meta -->
@@ -1722,6 +1801,323 @@ tried to install it on linux mint with wine but wine crashes that is wine any wa
 					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90820#respond' onclick='return addComment.moveForm( "comment-90820", "90820", "respond", "9" )' aria-label='Reply to thunter'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
 			</article><!-- #comment-## -->
 		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-90865">
+			<article id="comment-90865" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/d9c92c3cb60127bede2ed2c28376ec69?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d9c92c3cb60127bede2ed2c28376ec69?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Paul S.</b> </cite><a href="https://daumpotplayer.com/download/#comment-90865"><time datetime="2018-10-05T19:56:41+00:00">October 5, 2018 at 7:56 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Just a suggestion to list all the video and audio formats potplayer works with in the features section of this website.</p>
+<p>That would be useful to people looking at the website considering getting this player.</p>
+<p>I was looking to see it it would play bluray.</p>
+<p>I Have only one player that does.  It is a DVD playback software.</p>
+<p>Would be Good if I could get a player like vlc that plays bluray.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90865#respond' onclick='return addComment.moveForm( "comment-90865", "90865", "respond", "9" )' aria-label='Reply to Paul S.'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-90918">
+			<article id="comment-90918" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/6580755e5b0d49a190c307c24495a0a8?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6580755e5b0d49a190c307c24495a0a8?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Sian</b> </cite><a href="https://daumpotplayer.com/download/#comment-90918"><time datetime="2018-10-08T13:03:25+00:00">October 8, 2018 at 1:03 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>great</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90918#respond' onclick='return addComment.moveForm( "comment-90918", "90918", "respond", "9" )' aria-label='Reply to Sian'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-90996">
+			<article id="comment-90996" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/c4ea6219f6f479d915bac69fc53d2d20?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c4ea6219f6f479d915bac69fc53d2d20?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Napster</b> </cite><a href="https://daumpotplayer.com/download/#comment-90996"><time datetime="2018-10-13T06:05:13+00:00">October 13, 2018 at 6:05 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Linux port please!!!!!!</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=90996#respond' onclick='return addComment.moveForm( "comment-90996", "90996", "respond", "9" )' aria-label='Reply to Napster'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-91045">
+			<article id="comment-91045" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/50d652bf7d5462065fdb84ebb31198ed?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/50d652bf7d5462065fdb84ebb31198ed?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Once</b> </cite><a href="https://daumpotplayer.com/download/#comment-91045"><time datetime="2018-10-16T02:34:49+00:00">October 16, 2018 at 2:34 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>我刚玩玩ubuntu<br />
+也希望有朋友能转下码</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91045#respond' onclick='return addComment.moveForm( "comment-91045", "91045", "respond", "9" )' aria-label='Reply to Once'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-91232">
+			<article id="comment-91232" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/5cdcf7e2e15ee727db791fb687f0d11e?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5cdcf7e2e15ee727db791fb687f0d11e?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">suparerk kumvanich</b> </cite><a href="https://daumpotplayer.com/download/#comment-91232"><time datetime="2018-10-24T02:27:55+00:00">October 24, 2018 at 2:27 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>good video, good sound , low memory.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91232#respond' onclick='return addComment.moveForm( "comment-91232", "91232", "respond", "9" )' aria-label='Reply to suparerk kumvanich'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-91276">
+			<article id="comment-91276" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/206cc0a662d4dd105d7dd1d2d9b24f03?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/206cc0a662d4dd105d7dd1d2d9b24f03?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">hassan</b> </cite><a href="https://daumpotplayer.com/download/#comment-91276"><time datetime="2018-10-26T06:54:12+00:00">October 26, 2018 at 6:54 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>When the Pot player is running, a blue screen is immediately visible and the computer restarts.<br />
+win10 64 bit, Daum PotPlayer 1.7.14804 for 64-bit Windows<br />
+What is my solution?<br />
+please email, <a href="mailto:hassansharifi.chemist@gmail.com">hassansharifi.chemist@gmail.com</a><br />
+Thanks</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91276#respond' onclick='return addComment.moveForm( "comment-91276", "91276", "respond", "9" )' aria-label='Reply to hassan'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-91392">
+			<article id="comment-91392" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/643484e15c44eb14fc87233bb799928b?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/643484e15c44eb14fc87233bb799928b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Licex</b> </cite><a href="https://daumpotplayer.com/download/#comment-91392"><time datetime="2018-11-01T02:24:10+00:00">November 1, 2018 at 2:24 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Best Player for DVD Interactive Content with Multi Angle View !!!</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91392#respond' onclick='return addComment.moveForm( "comment-91392", "91392", "respond", "9" )' aria-label='Reply to Licex'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-91468">
+			<article id="comment-91468" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/e9ff8b41a413a8dff6cd9c25db896261?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e9ff8b41a413a8dff6cd9c25db896261?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Edward</b> </cite><a href="https://daumpotplayer.com/download/#comment-91468"><time datetime="2018-11-03T22:16:38+00:00">November 3, 2018 at 10:16 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Best video player ever in windows!!!<br />
+Now, looking for Linux version plz!!!</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91468#respond' onclick='return addComment.moveForm( "comment-91468", "91468", "respond", "9" )' aria-label='Reply to Edward'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-91799">
+			<article id="comment-91799" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/48bf7e070c96a348022b751058e0ed67?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/48bf7e070c96a348022b751058e0ed67?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">ahd mageed</b> </cite><a href="https://daumpotplayer.com/download/#comment-91799"><time datetime="2018-11-12T13:41:22+00:00">November 12, 2018 at 1:41 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Hi i am really in love with pot player but there is a request to the developer to make 32+64 one file and we can chose the format from the installation file and also same way for open codec because i have to download 4 files for every update.<br />
+thanx in advance</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91799#respond' onclick='return addComment.moveForm( "comment-91799", "91799", "respond", "9" )' aria-label='Reply to ahd mageed'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-91827">
+			<article id="comment-91827" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/85d10b8b8bfe3e65f1707a810e94e13f?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/85d10b8b8bfe3e65f1707a810e94e13f?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Al</b> </cite><a href="https://daumpotplayer.com/download/#comment-91827"><time datetime="2018-11-13T11:33:23+00:00">November 13, 2018 at 11:33 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Pretty soon people going to replace VLC with Potplayer because it has really good features.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=91827#respond' onclick='return addComment.moveForm( "comment-91827", "91827", "respond", "9" )' aria-label='Reply to Al'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-92046">
+			<article id="comment-92046" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/e4ba34574a801931a8fc2913a12bf6f0?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e4ba34574a801931a8fc2913a12bf6f0?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Mehrdad</b> </cite><a href="https://daumpotplayer.com/download/#comment-92046"><time datetime="2018-11-20T01:36:08+00:00">November 20, 2018 at 1:36 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Linux Version Please</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92046#respond' onclick='return addComment.moveForm( "comment-92046", "92046", "respond", "9" )' aria-label='Reply to Mehrdad'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-92139">
+			<article id="comment-92139" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/0185c1f4d8a8c2fcfa3d4a0c54b66858?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0185c1f4d8a8c2fcfa3d4a0c54b66858?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Tanir Lunhaj Alek</b> </cite><a href="https://daumpotplayer.com/download/#comment-92139"><time datetime="2018-11-25T22:07:12+00:00">November 25, 2018 at 10:07 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Best Behavior</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92139#respond' onclick='return addComment.moveForm( "comment-92139", "92139", "respond", "9" )' aria-label='Reply to Tanir Lunhaj Alek'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-92277">
+			<article id="comment-92277" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/cbf1315175912ae95cb7e33a3c7b54f8?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/cbf1315175912ae95cb7e33a3c7b54f8?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Jacquetta Mirams</b> </cite><a href="https://daumpotplayer.com/download/#comment-92277"><time datetime="2018-12-01T14:41:56+00:00">December 1, 2018 at 2:41 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Howdy daumpotplayer.com</p>
+<p>SEO Link building is a process that requires a lot of time.<br />
+If you aren&#8217;t using SEO software then you will know the amount of work load involved in creating accounts, confirming emails and submitting your contents to thousands of websites in proper time and completely automated. </p>
+<p>With THIS SOFTWARE the link submission process will be the easiest task and completely automated, you will be able to build unlimited number of links and increase traffic to your websites which will lead to a higher number of customers and much more sales for you.<br />
+With the best user interface ever, you just need to have simple software knowledge and you will easily be able to make your own SEO link building campaigns. </p>
+<p>The best SEO software you will ever own, and we can confidently say that there is no other software on the market that can compete with such intelligent and fully automatic features.<br />
+The friendly user interface, smart tools and the simplicity of the tasks are making THIS SOFTWARE the best tool on the market.</p>
+<p>IF YOU&#8217;RE INTERESTED, CONTACT ME ==&gt;  <a href="mailto:moneyrobotsubmitter@mail.com">moneyrobotsubmitter@mail.com</a> </p>
+<p>Regards, Jacquetta<br />
+United Kingdom, NA, Brockford Street, Ip14 8ut, 88 Iffley Road</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92277#respond' onclick='return addComment.moveForm( "comment-92277", "92277", "respond", "9" )' aria-label='Reply to Jacquetta Mirams'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-92413">
+			<article id="comment-92413" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/e13fb1885cdf281dc31b7fce3b66936b?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e13fb1885cdf281dc31b7fce3b66936b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">ben tab</b> </cite><a href="https://daumpotplayer.com/download/#comment-92413"><time datetime="2018-12-06T06:19:12+00:00">December 6, 2018 at 6:19 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>this app is so bad</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92413#respond' onclick='return addComment.moveForm( "comment-92413", "92413", "respond", "9" )' aria-label='Reply to ben tab'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-92659">
+			<article id="comment-92659" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/c683b22c4a60c7f91090d655d7e585bc?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c683b22c4a60c7f91090d655d7e585bc?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">david</b> </cite><a href="https://daumpotplayer.com/download/#comment-92659"><time datetime="2018-12-14T20:23:14+00:00">December 14, 2018 at 8:23 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>I enjoyed it. Very nice!</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92659#respond' onclick='return addComment.moveForm( "comment-92659", "92659", "respond", "9" )' aria-label='Reply to david'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-92889">
+			<article id="comment-92889" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/57e0278ba6f9d4aac65d133eed2def4a?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/57e0278ba6f9d4aac65d133eed2def4a?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn"><a href='https://lawanmusic.com' rel='external nofollow' class='url'>bahman</a></b> </cite><a href="https://daumpotplayer.com/download/#comment-92889"><time datetime="2018-12-21T08:34:59+00:00">December 21, 2018 at 8:34 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>Great App Guys<br />
+WOW!!!<br />
+ :-O</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=92889#respond' onclick='return addComment.moveForm( "comment-92889", "92889", "respond", "9" )' aria-label='Reply to bahman'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-93132">
+			<article id="comment-93132" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/7a9ff7e2d3226fd1c1064d3c07b6e556?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7a9ff7e2d3226fd1c1064d3c07b6e556?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Lei Zhang</b> </cite><a href="https://daumpotplayer.com/download/#comment-93132"><time datetime="2018-12-28T18:11:33+00:00">December 28, 2018 at 6:11 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>An app default was reset&#8221; messages keep popping up.</p>
+<p>Environment: Desktop<br />
+OS build: 17763, 17134<br />
+OS: Windows 10<br />
+App version: 1.7.16291</p>
+<p>Repro Steps:<br />
+1. Install the application with all default options.<br />
+2. Launch the application.<br />
+3. Work with the application for 2-3 mins.<br />
+4. Open notifications bar present at the right bottom corner.<br />
+5. Observe.</p>
+<p>Actual Results:<br />
+App default setting notifications are popped up and are seen in notifications bar.</p>
+<p>Expected Results:<br />
+No such notifications should pop up while working with the application.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=93132#respond' onclick='return addComment.moveForm( "comment-93132", "93132", "respond", "9" )' aria-label='Reply to Lei Zhang'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-93329">
+			<article id="comment-93329" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/57322c2cf69b51c9c7be2c3743ab1d14?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/57322c2cf69b51c9c7be2c3743ab1d14?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Help</b> </cite><a href="https://daumpotplayer.com/download/#comment-93329"><time datetime="2019-01-04T04:19:51+00:00">January 4, 2019 at 4:19 am</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>When i opening a ISO bluray for potplayer automatically run main video film, but i want go to main menu interactive of bluray, as any similar DVD extra menus.<br />
+but on recent new versions Potplayer not are possible find section nenu, when i do right click on screen playing potplayer.</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=93329#respond' onclick='return addComment.moveForm( "comment-93329", "93329", "respond", "9" )' aria-label='Reply to Help'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-93335">
+			<article id="comment-93335" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/3337339a9a34e953425836d569e448e4?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3337339a9a34e953425836d569e448e4?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Mary Universe</b> </cite><a href="https://daumpotplayer.com/download/#comment-93335"><time datetime="2019-01-04T12:46:44+00:00">January 4, 2019 at 12:46 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>new version opens very slowly</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=93335#respond' onclick='return addComment.moveForm( "comment-93335", "93335", "respond", "9" )' aria-label='Reply to Mary Universe'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-93527">
+			<article id="comment-93527" class="comment">
+				<header class="comment-meta comment-author vcard">
+					<img alt='' src='https://secure.gravatar.com/avatar/30a6683088b93f2b4d6c307a253296b3?s=44&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/30a6683088b93f2b4d6c307a253296b3?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">newt</b> </cite><a href="https://daumpotplayer.com/download/#comment-93527"><time datetime="2019-01-11T16:27:22+00:00">January 11, 2019 at 4:27 pm</time></a>				</header><!-- .comment-meta -->
+
+				
+				<section class="comment-content comment">
+					<p>we neeeeeeeeed a linux version pleaseee</p>
+									</section><!-- .comment-content -->
+
+				<div class="reply">
+					<a rel='nofollow' class='comment-reply-link' href='https://daumpotplayer.com/download/?replytocom=93527#respond' onclick='return addComment.moveForm( "comment-93527", "93527", "respond", "9" )' aria-label='Reply to newt'>Reply</a> <span>&darr;</span>				</div><!-- .reply -->
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
 		</ol><!-- .commentlist -->
 
 		
@@ -1734,7 +2130,7 @@ tried to install it on linux mint with wine but wine crashes that is wine any wa
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
 <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='9' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="06a9f4d879" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="96"/></p>			</form>
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dfe75e0260" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="170"/></p>			</form>
 			</div><!-- #respond -->
 		</div>
 
@@ -1746,7 +2142,7 @@ tried to install it on linux mint with wine but wine crashes that is wine any wa
 
 			<div id="secondary" class="widget-area" role="complementary">
 			<aside id="categories-2" class="widget widget_categories"><h3 class="widget-title"><span class="widget-title-tab">Categories</span></h3>		<ul>
-	<li class="cat-item cat-item-2"><a href="https://daumpotplayer.com/category/news/" >News</a> (236)
+	<li class="cat-item cat-item-2"><a href="https://daumpotplayer.com/category/news/" >News</a> (238)
 </li>
 	<li class="cat-item cat-item-17"><a href="https://daumpotplayer.com/category/skins/" title="Alternative skins for Potplayer">Skins</a> (23)
 </li>
@@ -1763,24 +2159,24 @@ tried to install it on linux mint with wine but wine crashes that is wine any wa
 </div>
 		</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title"><span class="widget-title-tab">Recent Posts</span></h3>		<ul>
 											<li>
-					<a href="https://daumpotplayer.com/potplayer-1-7-13963-x86-x64-stable/">PotPlayer 1.7.13963 � x86/x64 Stable</a>
+					<a href="https://daumpotplayer.com/potplayer-1-7-16291-x86-x64-stable/">PotPlayer 1.7.16291 — x86/x64 Stable</a>
 									</li>
 											<li>
-					<a href="https://daumpotplayer.com/potplayer-1-7-13622-x86-x64-stable/">PotPlayer 1.7.13622 � x86/x64 Stable</a>
+					<a href="https://daumpotplayer.com/potplayer-1-7-14804-x86-x64-stable/">PotPlayer 1.7.14804 — x86/x64 Stable</a>
 									</li>
 											<li>
-					<a href="https://daumpotplayer.com/potplayer-1-7-12844-x86-x64-stable/">PotPlayer 1.7.12844 � x86/x64 Stable</a>
+					<a href="https://daumpotplayer.com/potplayer-1-7-13963-x86-x64-stable/">PotPlayer 1.7.13963 — x86/x64 Stable</a>
 									</li>
 											<li>
-					<a href="https://daumpotplayer.com/potplayer-1-7-12248-x86-x64-stable/">PotPlayer 1.7.12248 � x86/x64 Stable</a>
+					<a href="https://daumpotplayer.com/potplayer-1-7-13622-x86-x64-stable/">PotPlayer 1.7.13622 — x86/x64 Stable</a>
 									</li>
 											<li>
-					<a href="https://daumpotplayer.com/potplayer-1-7-10667-x86-x64-stable/">PotPlayer 1.7.10667 � x86/x64 Stable</a>
+					<a href="https://daumpotplayer.com/potplayer-1-7-12844-x86-x64-stable/">PotPlayer 1.7.12844 — x86/x64 Stable</a>
 									</li>
 					</ul>
 		</aside><aside id="views-2" class="widget widget_views"><h3 class="widget-title"><span class="widget-title-tab">Most Viewed</span></h3><ul>
-<li><a href="https://daumpotplayer.com/download/"  title="Download">Download</a> - 2,435,493 views</li><li><a href="https://daumpotplayer.com/"  title="Welcome to a site PotPlayer!">Welcome to a site PotPlayer!</a> - 760,828 views</li><li><a href="https://daumpotplayer.com/features/"  title="Features Daum PotPlayer">Features Daum PotPlayer</a> - 168,166 views</li><li><a href="https://daumpotplayer.com/help/"  title="Questions and answers">Questions and answers</a> - 80,669 views</li><li><a href="https://daumpotplayer.com/skin-thesimplething-v2-0-by-flydonkey/"  title="[Skin] thesimplething v2.0 by flydonkey">[Skin] thesimplething v2.0 by flydonkey</a> - 74,139 views</li><li><a href="https://daumpotplayer.com/skins-black-box-space/"  title="[Skins] Black-Box/Space">[Skins] Black-Box/Space</a> - 59,201 views</li><li><a href="https://daumpotplayer.com/skin-metro-x/"  title="[Skin] Metro.X">[Skin] Metro.X</a> - 56,439 views</li><li><a href="https://daumpotplayer.com/skin-youtube-skin-for-potplayer-by-oclambo/"  title="[Skin] YouTube Skin For PotPlayer by oclambo">[Skin] YouTube Skin For PotPlayer by oclambo</a> - 52,818 views</li><li><a href="https://daumpotplayer.com/skin-z-gray/"  title="[Skin] Z (gray)">[Skin] Z (gray)</a> - 52,482 views</li><li><a href="https://daumpotplayer.com/skin-dark-skin-english/"  title="[Skin] dark skin english">[Skin] dark skin english</a> - 48,053 views</li></ul>
-</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title"><span class="widget-title-tab">Recent Comments</span></h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">thunter</span> on <a href="https://daumpotplayer.com/download/#comment-90820">Download</a></li><li class="recentcomments"><span class="comment-author-link">thunter</span> on <a href="https://daumpotplayer.com/skin-thesimplething-v2-0-by-flydonkey/#comment-90819">[Skin] thesimplething v2.0 by flydonkey</a></li><li class="recentcomments"><span class="comment-author-link">David</span> on <a href="https://daumpotplayer.com/help/#comment-90817">Questions and answers</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://amzn.to/2pfwban' rel='external nofollow' class='url'>Margart</a></span> on <a href="https://daumpotplayer.com/#comment-90749">Welcome to a site PotPlayer!</a></li><li class="recentcomments"><span class="comment-author-link">Hossein</span> on <a href="https://daumpotplayer.com/download/#comment-90738">Download</a></li></ul></aside>		</div><!-- #secondary -->
+<li><a href="https://daumpotplayer.com/download/"  title="Download">Download</a> - 2,591,551 views</li><li><a href="https://daumpotplayer.com/"  title="Welcome to a site PotPlayer!">Welcome to a site PotPlayer!</a> - 828,459 views</li><li><a href="https://daumpotplayer.com/features/"  title="Features Daum PotPlayer">Features Daum PotPlayer</a> - 173,582 views</li><li><a href="https://daumpotplayer.com/help/"  title="Questions and answers">Questions and answers</a> - 88,014 views</li><li><a href="https://daumpotplayer.com/skin-thesimplething-v2-0-by-flydonkey/"  title="[Skin] thesimplething v2.0 by flydonkey">[Skin] thesimplething v2.0 by flydonkey</a> - 81,090 views</li><li><a href="https://daumpotplayer.com/skins-black-box-space/"  title="[Skins] Black-Box/Space">[Skins] Black-Box/Space</a> - 63,805 views</li><li><a href="https://daumpotplayer.com/skin-youtube-skin-for-potplayer-by-oclambo/"  title="[Skin] YouTube Skin For PotPlayer by oclambo">[Skin] YouTube Skin For PotPlayer by oclambo</a> - 60,463 views</li><li><a href="https://daumpotplayer.com/skin-metro-x/"  title="[Skin] Metro.X">[Skin] Metro.X</a> - 60,018 views</li><li><a href="https://daumpotplayer.com/skin-z-gray/"  title="[Skin] Z (gray)">[Skin] Z (gray)</a> - 56,489 views</li><li><a href="https://daumpotplayer.com/skin-dark-skin-english/"  title="[Skin] dark skin english">[Skin] dark skin english</a> - 52,076 views</li></ul>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title"><span class="widget-title-tab">Recent Comments</span></h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">newt</span> on <a href="https://daumpotplayer.com/download/#comment-93527">Download</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gonetroopy.com/shameless-s09e08-online/' rel='external nofollow' class='url'>shameless s09e08 online</a></span> on <a href="https://daumpotplayer.com/#comment-93489">Welcome to a site PotPlayer!</a></li><li class="recentcomments"><span class="comment-author-link">Paul</span> on <a href="https://daumpotplayer.com/features/#comment-93463">Features Daum PotPlayer</a></li><li class="recentcomments"><span class="comment-author-link">Mary Universe</span> on <a href="https://daumpotplayer.com/download/#comment-93335">Download</a></li><li class="recentcomments"><span class="comment-author-link">Help</span> on <a href="https://daumpotplayer.com/download/#comment-93329">Download</a></li></ul></aside>		</div><!-- #secondary -->
 		</div><!-- #main .wrapper -->
 
 	<footer id="colophon" role="contentinfo">
@@ -1804,10 +2200,10 @@ tried to install it on linux mint with wine but wine crashes that is wine any wa
 	
 	</div><!-- #page -->
 
-	<script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/comment-reply.min.js?ver=4.9.8'></script>
+	<script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/comment-reply.min.js?ver=4.9.9'></script>
 <script type='text/javascript' src='https://daumpotplayer.com/wp-content/themes/viomag/js/navigation.js?ver=20140711'></script>
 <script type='text/javascript' src='https://daumpotplayer.com/wp-content/themes/viomag/js/viomag-scripts-functions.js?ver=1.4.6'></script>
-<script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://daumpotplayer.com/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script>
 <script async="async" type='text/javascript' src='https://daumpotplayer.com/wp-content/plugins/akismet/_inc/form.js?ver=4.0.8'></script>
 
 </body>

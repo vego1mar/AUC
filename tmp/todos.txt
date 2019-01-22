@@ -1,7 +1,13 @@
-checking of hashes
 loading the app icon from the provided path
 categories and grouping of apps entries
 
 Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
 file mask for downloaded files
-DownloadHelper.downloadFile(String url);
+DownloadHelper.getFile(String url);
+
+----------------
+
+Apache Pivot
+XmlConsoleRunner - description of release for r1.1
+RulesExecutor - more rules
+Collector - to refactor (wsif-base branch)

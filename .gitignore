@@ -2,6 +2,5 @@ sonar-project.properties
 .scannerwork/
 out/
 target/
-runtime/*.xml
-runtime/*.log
-runtime/*.ser
+runtime/
+releases/

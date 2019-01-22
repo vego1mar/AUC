@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RuleBased.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/XmlRulesSetManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/XmlRulesSetManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/BorderlessGaming_settings__ptrn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/JetClean01_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/JetClean02_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/PotPlayer_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/SourceTree_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TeraCopy_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/aimp_settings__pattern.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="760">
@@ -105,10 +95,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="432">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="method#TestVariables#0;class#TestVariables#0" />
+                <element signature="method#readFile#0;class#TestVariables#0" />
               </folding>
             </state>
           </provider>
@@ -178,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/WebPageDownloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/WebDownloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/HashType.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/HashGenerator.java" />
@@ -188,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
       </list>
     </option>
   </component>
@@ -328,7 +331,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538669340141" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548190311978" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -613,8 +616,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1587" height="1044" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22287199" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22287199" />
       <window_info id="Structure" order="1" weight="0.23295455" />
       <window_info id="Favorites" order="2" weight="0.32949972" />
       <window_info id="Designer" order="3" />
@@ -634,7 +638,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32792208" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32792208" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32790446" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.17045455" />
@@ -968,18 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="110" selection-start-line="38" selection-start-column="110" selection-end-line="38" selection-end-column="110" />
-          <folding>
-            <element signature="method#TestVariables#0;class#TestVariables#0" />
-            <element signature="method#readFile#0;class#TestVariables#0" />
-            <element signature="method#getCollector#0;class#TestVariables#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -994,46 +986,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
-            <element signature="method#readObject#0;class#AppInfoCollector#0" />
-            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
-            <element signature="method#load#0;class#AppInfoCollector#0" />
-            <element signature="method#save#0;class#AppInfoCollector#0" />
-            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
-            <element signature="method#fetchExecutionData#0;class#AppInfoCollector#0" />
-            <element signature="method#updateAppVersions#0;class#AppInfoCollector#0" />
-            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,6 +1015,53 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
+            <element signature="method#readObject#0;class#AppInfoCollector#0" />
+            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
+            <element signature="method#load#0;class#AppInfoCollector#0" />
+            <element signature="method#save#0;class#AppInfoCollector#0" />
+            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
+            <element signature="method#fetchExecutionData#0;class#AppInfoCollector#0" />
+            <element signature="method#updateAppVersions#0;class#AppInfoCollector#0" />
+            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="method#TestVariables#0;class#TestVariables#0" />
+            <element signature="method#readFile#0;class#TestVariables#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

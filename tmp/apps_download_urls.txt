@@ -1,4 +1,4 @@
-7-zip.org/download.html
+http://www.7-zip.org/download.html
 http://www.aimp.ru/?do=download&os=windows
 http://www.aimp.ru/?do=download&os=android
 https://www.sourcetreeapp.com/

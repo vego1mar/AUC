@@ -3,10 +3,6 @@ package net.vego1mar.tests;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import net.vego1mar.collector.AppInfoCollectible;
-import net.vego1mar.collector.AppInfoCollector;
-import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
@@ -41,7 +37,6 @@ public final class TestVariables {
     public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_set__ptrn.xml";
     public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
-    public static final String OBJECT_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayerOBJ.ser";
     public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
     public static final String XML_CONSOLE_RUNNER_OUTFILE = getWorkingDirectory() + "/src/test/resources/runner.txt";
     private static final Logger log = Logger.getLogger(TestVariables.class);
@@ -76,20 +71,6 @@ public final class TestVariables {
 
     private static String getWorkingDirectory() {
         return System.getProperty("user.dir");
-    }
-
-    public static AppInfoCollectible getCollector(@NotNull String codeFileName) {
-        AppInfoCollectible collector = new AppInfoCollector("collector#" + codeFileName, "");
-        String htmlCode = readFile(codeFileName);
-        Field field = ReflectionHelper.getField(AppInfoCollector.class, "htmlCode");
-
-        try {
-            field.set(collector, htmlCode);
-        } catch (IllegalAccessException exp) {
-            log.debug(exp.getMessage());
-        }
-
-        return collector;
     }
 
 }

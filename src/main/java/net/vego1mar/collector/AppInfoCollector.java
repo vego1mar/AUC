@@ -7,13 +7,16 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Deque;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import net.vego1mar.auxiliary.properties.PlatformsImpl;
 import net.vego1mar.auxiliary.properties.PlatformsProperty;
+import net.vego1mar.auxiliary.properties.UseAsImpl;
 import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.rules.RulesExecutable;
@@ -34,12 +37,14 @@ public class AppInfoCollector implements Serializable {
     private Map<String, String> executionOrder;
     private String appName;
     private PlatformsImpl appVersions;
+    private String serialFileName;
 
     public AppInfoCollector(@NotNull String name, @NotNull Map<String, String> execOrder) {
-        executor = new RulesExecutor(new LinkedList<>(), "");
+        initializeTransientFields();
         executionOrder = Collections.synchronizedMap(new LinkedHashMap<>(execOrder));
         appName = name;
         appVersions = new PlatformsProperty();
+        serialFileName = "";
     }
 
     private static AppInfoCollector readObject(@NotNull String fileName) {
@@ -71,35 +76,57 @@ public class AppInfoCollector implements Serializable {
         }
     }
 
-    public static AppInfoCollector load(@NotNull String objTarget, @NotNull String xmlTarget) {
+    public static AppInfoCollector load(@NotNull String objTarget) {
         AppInfoCollector collector = readObject(objTarget);
-        log.info(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget + " ; XML_FILE=" + xmlTarget);
+        collector.initializeTransientFields();
+        log.info(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget);
         return collector;
     }
 
     public void save(@NotNull String objDestinationPath, @NotNull String xmlDestinationPath) {
-        String objFileName = OBJ_FILENAME + '@' + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + OBJ_FILEEXT;
-        String objFullName = Paths.get(objDestinationPath, objFileName).toString();
-        writeObject(objFullName);
-        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE=" + objFullName);
-
         String xmlFileName = Paths.get(xmlDestinationPath, appName.replace(' ', '_') + '@').toString();
         String xmlBaseName = xmlFileName + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + '_';
         XmlRulesSetReader xmlReader = new XmlRulesSetReader();
         XmlRulesSetWriter xmlWriter = new XmlRulesSetWriter();
         int i = 0;
+        List<String> xmlFileNames = new ArrayList<>(executionOrder.keySet());
+        List<String> urlNames = new ArrayList<>(executionOrder.values());
+        executionOrder.clear();
 
-        for (String xmlFile : executionOrder.keySet()) {
+        for (int j = 0; j < xmlFileNames.size(); j++) {
             i++;
-            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(xmlFile);
-            String xmlFullName = xmlBaseName.concat(String.valueOf(i));
+            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(xmlFileNames.get(j));
+            String xmlFullName = xmlBaseName.concat(String.valueOf(i)).concat(".xml");
             xmlWriter.saveSettings(rulesSet, xmlFullName);
+            executionOrder.put(xmlFullName, urlNames.get(j));
             log.debug(ReflectionHelper.getCurrentMethodName() + " : XML_FILE" + xmlFullName);
         }
+
+        String objFileName = OBJ_FILENAME + '@' + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + OBJ_FILEEXT;
+        String objFullName = Paths.get(objDestinationPath, objFileName).toString();
+        serialFileName = objFullName;
+        writeObject(objFullName);
+        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE=" + objFullName);
+    }
+
+    private void initializeTransientFields() {
+        executor = new RulesExecutor(new LinkedList<>(), "");
     }
 
     public String getAppName() {
         return appName;
+    }
+
+    public String getSerialFileName() {
+        return serialFileName;
+    }
+
+    public List<String> getXMLFileNames() {
+        return Collections.synchronizedList(new ArrayList<>(executionOrder.keySet()));
+    }
+
+    public List<String> getURLNames() {
+        return Collections.synchronizedList(new ArrayList<>(executionOrder.values()));
     }
 
     public void gatherInformation() {
@@ -158,6 +185,10 @@ public class AppInfoCollector implements Serializable {
         }
 
         return true;
+    }
+
+    public UseAsImpl getCollectedData() {
+        return executor.getResults();
     }
 
 }

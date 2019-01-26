@@ -6,6 +6,7 @@ import java.util.Map;
 import net.vego1mar.enumerators.properties.LinksID;
 import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.tests.TestVariables;
+import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -92,6 +93,168 @@ public class AppInfoCollectorTest {
         Assert.assertTrue(collector2.getCollectedData().getLinks().getItem(LinksID.WINDOWS_ANY_7Z).isEmpty());
         Assert.assertTrue(collector2.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X64_MSI).isEmpty());
         Assert.assertTrue(collector2.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_MSI).isEmpty());
+    }
+
+    @Test public void class_AIMP_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_AIMP_1, "http://www.aimp.ru/?do=download&os=windows");
+                put(TestVariables.XML_PATTERN_AIMP_2, "http://www.aimp.ru/?do=download&os=android");
+            }
+        };
+        final String appName = "AIMP";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.ANDROID));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.ANDROID).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.ANDROID).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ANDROID_X86ARM_APK).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY).isEmpty());
+    }
+
+    private void assertCommonCollectorFields(@NotNull AppInfoCollector collector1, @NotNull AppInfoCollector collector2) {
+        Assert.assertEquals(collector1.getAppName(), collector2.getAppName());
+        Assert.assertEquals(collector1.getSerialFileName(), collector2.getSerialFileName());
+        Assert.assertEquals(collector1.getXMLFileNames().size(), collector2.getXMLFileNames().size());
+        Assert.assertEquals(collector1.getURLNames().size(), collector2.getURLNames().size());
+
+        for (int i = 0; i < collector1.getXMLFileNames().size(); i++) {
+            Assert.assertEquals(collector1.getXMLFileNames().get(i), collector2.getXMLFileNames().get(i));
+        }
+
+        for (int j = 0; j < collector1.getURLNames().size(); j++) {
+            Assert.assertEquals(collector1.getURLNames().get(j), collector2.getURLNames().get(j));
+        }
+    }
+
+    @Test public void class_SourceTree_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_SOURCETREE, "https://www.sourcetreeapp.com/");
+            }
+        };
+        final String appName = "Atlassian SourceTree";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.MAC_OS_X));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.MAC_OS_X).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.MAC_OS_X).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.MAC_OS_X_ZIP).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+    }
+
+    @Test public void class_JetClean_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_JETCLEAN_1, "https://www.majorgeeks.com/mg/get/jetclean,1.html");
+                put(TestVariables.XML_PATTERN_JETCLEAN_2, "https://www.majorgeeks.com/files/details/jetclean.html");
+            }
+        };
+        final String appName = "Bluesprig JetClean";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+    }
+
+    @Test public void class_BorderlessGaming_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_BORDERLESSGAMING, "https://github.com/Codeusa/Borderless-Gaming/releases/latest");
+            }
+        };
+        final String appName = "Borderless Gaming";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.SOURCECODE_TAR_GZ).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_ZIP).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+    }
+
+    @Test public void class_TeraCopy_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_TERACOPY, "http://www.codesector.com/downloads");
+            }
+        };
+        final String appName = "Code Sector TeraCopy";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+    }
+
+    @Test public void class_PotPlayer_online() {
+        // given
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_POTPLAYER, "https://daumpotplayer.com/download/");
+            }
+        };
+        final String appName = "DAUM Kakao PotPlayer";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X64_EXE).isEmpty());
     }
 
 }

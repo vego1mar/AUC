@@ -254,6 +254,7 @@ public class AppInfoCollectorTest {
         assertCommonCollectorFields(collector1, collector2);
         Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
         Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X64_EXE).isEmpty());
     }
 

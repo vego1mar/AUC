@@ -49,7 +49,7 @@
     </target>
     <method>
       <methodType>EXTRACT_WORD</methodType>
-      <position>9</position>
+      <position>8</position>
     </method>
   </rule>
   <rule no="6">

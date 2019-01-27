@@ -14,9 +14,9 @@ public class HashGeneratorTest {
         String hash3 = HashGenerator.calculate(TestVariables.CODE_POTPLAYER, HashType.SHA_256);
 
         // then
-        Assert.assertEquals("27575A921C4EAB3A89BED241C5097D88", hash1.toUpperCase());
-        Assert.assertEquals("F2AA3884A4E5DD5C2457BDEBDF5F49E9D712171B", hash2.toUpperCase());
-        Assert.assertEquals("11EEEC7C7F3575F0F8B348EDE8A38565C3DC13B2A5DEF0607AF8C8F7FB9A6029", hash3.toUpperCase());
+        Assert.assertEquals("A703485C7184E7807C5D1C3ECEDBFB67", hash1.toUpperCase());
+        Assert.assertEquals("2FDC8C70C356CA2BB6BEC33A9E6BBCB9B79239A3", hash2.toUpperCase());
+        Assert.assertEquals("DDEEB125C198A1D4DC5F1191FF71264B4DB5D739F36F8E2DFE4BCD01BD828AD4", hash3.toUpperCase());
     }
 
 }

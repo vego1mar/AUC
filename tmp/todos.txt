@@ -10,4 +10,3 @@ GUI project and implementation
 Apache Pivot - introduction to the technology
 XmlConsoleRunner - description of release for r1.1
 RulesExecutor & AppInfoCollector - more rules with tests
-PotPlayer - modify the existing rule to obtain info about x86 version

@@ -729,7 +729,7 @@ public final class TestCollections {
 
         RuleImpl rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
         ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
-        method5.setPosition(9);
+        method5.setPosition(8);
 
         RuleImpl rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
         Target target6 = (Target) rule6.getTarget();

@@ -130,4 +130,24 @@ public class XmlRulesSetWriterTest {
         String source = TestVariables.readFile(TestVariables.XML_PATTERN_POTPLAYER);
         Assert.assertEquals(source, runtime);
     }
+
+    @Test public void saveSettings_BlizzardBattleNet() {
+        // given
+        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
+        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
+        XmlRulesSetWriter writer = new XmlRulesSetWriter();
+
+        // when
+        writer.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_BLIZZARDBATTLENET_1);
+        writer.saveSettings(rulesSet2, TestVariables.XML_RUNTIME_BLIZZARDBATTLENET_2);
+
+        // then
+        String runtime1 = TestVariables.readFile(TestVariables.XML_RUNTIME_BLIZZARDBATTLENET_1);
+        String runtime2 = TestVariables.readFile(TestVariables.XML_RUNTIME_BLIZZARDBATTLENET_2);
+        String source1 = TestVariables.readFile(TestVariables.XML_PATTERN_BLIZZARDBATTLENET_1);
+        String source2 = TestVariables.readFile(TestVariables.XML_PATTERN_BLIZZARDBATTLENET_2);
+        Assert.assertEquals(source1, runtime1);
+        Assert.assertEquals(source2, runtime2);
+    }
+
 }

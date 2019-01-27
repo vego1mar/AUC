@@ -17,6 +17,8 @@ public final class TestVariables {
     public static final String CODE_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_wp.txt";
     public static final String CODE_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_wp.txt";
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
+    public static final String CODE_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet1_wp.txt";
+    public static final String CODE_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet2_wp.txt";
     public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
     public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
     public static final String XML_RUNTIME_AIMP_1 = getWorkingDirectory() + "/runtime/aimp1_settings.xml";
@@ -37,6 +39,10 @@ public final class TestVariables {
     public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_set__ptrn.xml";
     public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
+    public static final String XML_RUNTIME_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/runtime/BlizzardBattleNet1.xml";
+    public static final String XML_RUNTIME_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/runtime/BlizzardBattleNet2.xml";
+    public static final String XML_PATTERN_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BBNet1_ptrn.xml";
+    public static final String XML_PATTERN_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BBNet2_ptrn.xml";
     public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
     public static final String XML_CONSOLE_RUNNER_OUTFILE = getWorkingDirectory() + "/src/test/resources/runner.txt";
     private static final Logger log = Logger.getLogger(TestVariables.class);

@@ -9,6 +9,7 @@ import net.vego1mar.auxiliary.method.PrependMethod;
 import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
 import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
 import net.vego1mar.auxiliary.method.TrimMethod;
+import net.vego1mar.auxiliary.target.Targetable;
 import net.vego1mar.enumerators.methods.RetrieveTagsType;
 import net.vego1mar.enumerators.methods.TrimSide;
 import net.vego1mar.enumerators.properties.LinksID;
@@ -836,6 +837,97 @@ public final class TestCollections {
         rulesSet.add(rule8);
         rulesSet.add(rule9);
         rulesSet.add(rule10);
+
+        return rulesSet;
+    }
+
+    public static Deque<RuleImpl> getRulesForBlizzardBattleNet_1() {
+        Deque<RuleImpl> rulesSet = new LinkedList<>();
+
+        RuleImpl rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
+        method1.setText("gameProgram[bnetapp]");
+        method1.setType(FirstOfType.STRING);
+
+        RuleImpl rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method2 = (RetrieveTagsMethod) rule2.getMethod();
+        method2.setTagname("a");
+        method2.setType(RetrieveTagsType.ALL);
+
+        RuleImpl rule3 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
+        method3.setPosition(11);
+
+        RuleImpl rule4 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target4 = (Target) rule4.getTarget();
+        target4.linkID(LinksID.WINDOWS_X86_EXE);
+
+        RuleImpl rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
+        method5.setPosition(25);
+
+        RuleImpl rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Target target6 = (Target) rule6.getTarget();
+        target6.linkID(LinksID.MAC_OS_X_ZIP);
+
+        rulesSet.add(rule1);
+        rulesSet.add(rule2);
+        rulesSet.add(rule3);
+        rulesSet.add(rule4);
+        rulesSet.add(rule5);
+        rulesSet.add(rule6);
+
+        return rulesSet;
+    }
+
+    public static Deque<RuleImpl> getRulesForBlizzardBattleNet_2() {
+        Deque<RuleImpl> rulesSet = new LinkedList<>();
+
+        RuleImpl rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
+        method1.setType(FirstOfType.STRING);
+        method1.setText("version");
+
+        RuleImpl rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method2 = (GrabUntilMethod) rule2.getMethod();
+        method2.setCharStop('<');
+
+        RuleImpl rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method3 = (TrimMethod) rule3.getMethod();
+        method3.setSide(TrimSide.LEFT);
+        method3.setNumberOf(9);
+        Target target3 = (Target) rule3.getTarget();
+        target3.version(Platforms.WINDOWS);
+
+        RuleImpl rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
+        method4.setType(FirstOfType.STRING);
+        method4.setText("Aktualizacja:");
+
+        RuleImpl rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method5 = (RetrieveTagsMethod) rule5.getMethod();
+        method5.setType(RetrieveTagsType.FIRST);
+        method5.setTagname("span");
+
+        RuleImpl rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method6 = (TrimMethod) rule6.getMethod();
+        method6.setSide(TrimSide.LEFT);
+        method6.setNumberOf(6);
+
+        RuleImpl rule7 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method7 = (TrimMethod) rule7.getMethod();
+        method7.setSide(TrimSide.RIGHT);
+        method7.setNumberOf(7);
+        Target target7 = (Target) rule7.getTarget();
+        target7.date(Platforms.WINDOWS);
+
+        rulesSet.add(rule1);
+        rulesSet.add(rule2);
+        rulesSet.add(rule3);
+        rulesSet.add(rule4);
+        rulesSet.add(rule5);
+        rulesSet.add(rule6);
+        rulesSet.add(rule7);
 
         return rulesSet;
     }

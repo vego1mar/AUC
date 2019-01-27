@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[version]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>GRAB_UNTIL</methodType>
+      <charStop><![CDATA[<]]></charStop>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>VERSIONS</useAs>
+      <version>WINDOWS</version>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>9</numberOf>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[Aktualizacja:]]></text>
+    </method>
+  </rule>
+  <rule no="5">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>FIRST</type>
+      <tagname>span</tagname>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>6</numberOf>
+    </method>
+  </rule>
+  <rule no="7">
+    <target>
+      <in>CONTENT</in>
+      <useAs>DATES</useAs>
+      <date>WINDOWS</date>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>7</numberOf>
+    </method>
+  </rule>
+</rulesSet>

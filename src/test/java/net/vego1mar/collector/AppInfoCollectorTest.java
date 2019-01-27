@@ -258,4 +258,30 @@ public class AppInfoCollectorTest {
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X64_EXE).isEmpty());
     }
 
+    @Test public void class_BlizzardBattleNet_online() {
+        // given
+        final String url1 = "https://eu.battle.net/account/download/#bnetapp";
+        final String url2 = "https://www.instalki.pl/programy/download/Windows/akcesoria/Blizzard.html";
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_BLIZZARDBATTLENET_1, url1);
+                put(TestVariables.XML_PATTERN_BLIZZARDBATTLENET_2, url2);
+            }
+        };
+        final String appName = "Activision Blizzard Battle.net";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.MAC_OS_X_ZIP).isEmpty());
+    }
+
 }

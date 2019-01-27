@@ -13,5 +13,5 @@ public enum LinksID {
     SDK_ANY_7Z,
     ANDROID_X86ARM_APK,
     ANDROID_X86ARM_GOOGLEPLAY,
-    MAC_OS_X_ZIP
+    MAC_OS_X_ZIP,
 }

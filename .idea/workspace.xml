@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/PotPlayer_set__ptrn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/PotPlayer_set__ptrn.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/PotPlayer_wp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/PotPlayer_wp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/apps_download_urls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/apps_download_urls.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/todos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/todos.txt" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -70,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="270">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -99,8 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/auxiliary/useasproperty/UseAsProperty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/enumerators/traits/UseAsTrait.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/XmlRulesSetManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/MethodTrait.java" />
@@ -131,25 +132,27 @@
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutable.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RetrieveTagsMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/XmlRulesSetManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/WebPageDownloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/WebDownloader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/HashType.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/HashGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollectible.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
-        <option value="$PROJECT_DIR$/tmp/apps_download_urls.txt" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/PotPlayer_set__ptrn.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" />
+        <option value="$PROJECT_DIR$/tmp/apps_download_urls.txt" />
         <option value="$PROJECT_DIR$/tmp/todos.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" />
       </list>
     </option>
   </component>
@@ -175,7 +178,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1657" />
     <option name="height" value="1044" />
   </component>
@@ -280,6 +283,15 @@
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -298,7 +310,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548586723492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548599132744" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -331,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HashGeneratorTest.calculate_PotPlayer">
+  <component name="RunManager" selected="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (1)">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -372,7 +384,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppInfoCollectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -382,7 +394,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
       <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="class_BlizzardBattleNet_online" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -391,7 +404,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppInfoCollectorTest.class_PotPlayer_online" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -401,7 +414,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
       <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
-      <option name="METHOD_NAME" value="class_PotPlayer_online" />
+      <option name="METHOD_NAME" value="class_BlizzardBattleNet_online" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -411,17 +424,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashGeneratorTest.calculate_PotPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.vego1mar.utils.*" />
+          <option name="PATTERN" value="net.vego1mar.collector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.utils" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.utils.HashGeneratorTest" />
-      <option name="METHOD_NAME" value="calculate_PotPlayer" />
+      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
+      <option name="METHOD_NAME" value="class_BlizzardBattleNet_online" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -431,17 +444,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesExecutorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.vego1mar.rules.*" />
+          <option name="PATTERN" value="net.vego1mar.collector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.RulesExecutorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
+      <option name="METHOD_NAME" value="class_BlizzardBattleNet_online" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -450,17 +464,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RulesExecutorTest.execute_PotPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.vego1mar.rules.*" />
+          <option name="PATTERN" value="net.vego1mar.collector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.RulesExecutorTest" />
-      <option name="METHOD_NAME" value="execute_PotPlayer" />
+      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
+      <option name="METHOD_NAME" value="class_BlizzardBattleNet_online" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -502,19 +516,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.AppInfoCollectorTest.class_PotPlayer_online" />
-      <item itemvalue="JUnit.RulesExecutorTest.execute_PotPlayer" />
-      <item itemvalue="JUnit.RulesExecutorTest" />
-      <item itemvalue="JUnit.AppInfoCollectorTest" />
-      <item itemvalue="JUnit.HashGeneratorTest.calculate_PotPlayer" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (1)" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (2)" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (3)" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (4)" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (5)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HashGeneratorTest.calculate_PotPlayer" />
-        <item itemvalue="JUnit.AppInfoCollectorTest" />
-        <item itemvalue="JUnit.RulesExecutorTest" />
-        <item itemvalue="JUnit.RulesExecutorTest.execute_PotPlayer" />
-        <item itemvalue="JUnit.AppInfoCollectorTest.class_PotPlayer_online" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (1)" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (5)" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (4)" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (3)" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_BlizzardBattleNet_online (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -536,35 +550,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RulesExecutorTest_execute_PotPlayer - 2019.01.27 at 10h 43m 37s.xml">
-      <configuration name="RulesExecutorTest.execute_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(5) - 2019.01.27 at 15h 06m 01s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppInfoCollectorTest_class_PotPlayer_online - 2019.01.27 at 10h 44m 57s.xml">
-      <configuration name="AppInfoCollectorTest.class_PotPlayer_online" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online - 2019.01.27 at 15h 06m 21s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppInfoCollectorTest_class_PotPlayer_online - 2019.01.27 at 10h 45m 41s.xml">
-      <configuration name="AppInfoCollectorTest.class_PotPlayer_online" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online - 2019.01.27 at 15h 08m 10s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RulesExecutorTest_execute_PotPlayer - 2019.01.27 at 10h 46m 57s.xml">
-      <configuration name="RulesExecutorTest.execute_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online - 2019.01.27 at 15h 09m 04s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RulesExecutorTest_execute_PotPlayer - 2019.01.27 at 10h 47m 05s.xml">
-      <configuration name="RulesExecutorTest.execute_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(1) - 2019.01.27 at 15h 09m 43s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RulesExecutorTest - 2019.01.27 at 10h 47m 38s.xml">
-      <configuration name="RulesExecutorTest" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(2) - 2019.01.27 at 15h 10m 24s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppInfoCollectorTest - 2019.01.27 at 11h 54m 41s.xml">
-      <configuration name="AppInfoCollectorTest" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(3) - 2019.01.27 at 15h 10m 53s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (3)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashGeneratorTest_calculate_PotPlayer - 2019.01.27 at 11h 57m 02s.xml">
-      <configuration name="HashGeneratorTest.calculate_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(4) - 2019.01.27 at 15h 13m 26s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (4)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashGeneratorTest_calculate_PotPlayer - 2019.01.27 at 11h 57m 12s.xml">
-      <configuration name="HashGeneratorTest.calculate_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(5) - 2019.01.27 at 15h 18m 28s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashGeneratorTest_calculate_PotPlayer - 2019.01.27 at 11h 57m 23s.xml">
-      <configuration name="HashGeneratorTest.calculate_PotPlayer" configurationId="JUnit" />
+    <history-entry file="AppInfoCollectorTest_class_BlizzardBattleNet_online_(1) - 2019.01.27 at 15h 23m 37s.xml">
+      <configuration name="AppInfoCollectorTest.class_BlizzardBattleNet_online (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -581,9 +595,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1657" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25730267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25730267" />
       <window_info id="Structure" order="1" weight="0.23244251" />
       <window_info id="Favorites" order="2" weight="0.32939714" />
       <window_info id="Designer" order="3" />
@@ -603,7 +616,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32792208" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32792208" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32790446" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.17045455" />
@@ -656,19 +669,24 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="hash3.toUpperCase()" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>DownloadHelper.getHtml(url2)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>net.vego1mar.utils.DownloadHelper</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>DownloadHelper.getHtml(url1)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>net.vego1mar.utils.DownloadHelper</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>hash3.toUpperCase()</expression-string>
         <language-id>JAVA</language-id>
@@ -702,21 +720,6 @@
       </expression>
       <expression>
         <expression-string>xmlFile.length()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>objRuntimeHash.toUpperCase()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>objSerializationFile.length()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>rulesSet2 = new LinkedList&lt;&gt;(rulesSet)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -791,8 +794,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/net.vego1mar.rules.RulesExecutorTest.txt" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-09-27T21-10-18_374-jvmRun1.dumpstream" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-net.vego1mar.utils.WebPageDownloaderTest.xml" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/net.vego1mar.utils.XmlRulesSetManagerTest.txt" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/net.vego1mar.collector.AppInfoCollectorTest.txt" />
@@ -853,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runtime/log4j-AUC.log" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/BorderlessGaming_settings__ptrn.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/traits/MethodType.java">
@@ -871,13 +865,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/TeraCopy_settings__pattern.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/XmlRulesSetManagerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/PotPlayer_settings__pattern.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/utils/HashType.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -949,51 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/openjdk/jdk-10/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/apps_download_urls.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TestVariables#0;class#TestVariables#0" />
-            <element signature="method#readFile#0;class#TestVariables#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
-            <element signature="method#readObject#0;class#AppInfoCollector#0" />
-            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
-            <element signature="method#load#0;class#AppInfoCollector#0" />
-            <element signature="method#save#0;class#AppInfoCollector#0" />
-            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
-            <element signature="method#fetchExecutionData#0;class#AppInfoCollector#0" />
-            <element signature="method#updateAppVersions#0;class#AppInfoCollector#0" />
-            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1015,10 +957,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/openjdk/jdk-10/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#execute_7Zip#0;class#RulesExecutorTest#0" />
+            <element signature="method#executeMultithreading_7Zip#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_AIMP#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_SourceTree#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_JetClean#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_BorderlessGaming#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_TeraCopy#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_PotPlayer#0;class#RulesExecutorTest#0" />
+            <element signature="method#execute_PotPlayer#1;class#RulesExecutorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveSettings_1#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_7Zip#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_AIMP#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_SourceTree#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_JetClean#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_BorderlessGaming#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_TeraCopy#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_PotPlayer#0;class#XmlRulesSetWriterTest#0" />
+            <element signature="method#saveSettings_JetClean#1;class#XmlRulesSetWriterTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="43" column="121" selection-start-line="43" selection-start-column="121" selection-end-line="43" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestVariables#0;class#TestVariables#0" />
+            <element signature="method#readFile#0;class#TestVariables#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="709" column="59" selection-start-line="709" selection-start-column="59" selection-end-line="709" selection-end-column="59" />
+        <state relative-caret-position="760">
+          <caret line="935" lean-forward="true" selection-start-line="935" selection-end-line="935" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TestCollections#0;class#TestCollections#0" />
@@ -1032,42 +1048,45 @@
             <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
             <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
             <element signature="method#getRulesForXmlRulesSetWriter#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBlizzardBattleNet#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBlizzardBattleNet_1#1;class#TestCollections#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="760">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#execute_7Zip#0;class#RulesExecutorTest#0" />
-            <element signature="method#executeMultithreading_7Zip#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_AIMP#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_SourceTree#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_JetClean#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_BorderlessGaming#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_TeraCopy#0;class#RulesExecutorTest#0" />
-            <element signature="method#execute_PotPlayer#0;class#RulesExecutorTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="598">
+          <caret line="146" column="62" selection-start-line="146" selection-start-column="62" selection-end-line="146" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
+            <element signature="method#readObject#0;class#AppInfoCollector#0" />
+            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
+            <element signature="method#load#0;class#AppInfoCollector#0" />
+            <element signature="method#save#0;class#AppInfoCollector#0" />
+            <element signature="method#gatherInformation#0;class#AppInfoCollector#0" />
+            <element signature="method#fetchExecutionData#0;class#AppInfoCollector#0" />
+            <element signature="method#updateAppVersions#0;class#AppInfoCollector#0" />
+            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
+        <state relative-caret-position="666">
+          <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#saveAndLoad_7Zip#0;class#AppInfoCollectorTest#0" />
@@ -1079,14 +1098,29 @@
             <element signature="method#class_BorderlessGaming_online#0;class#AppInfoCollectorTest#0" />
             <element signature="method#class_TeraCopy_online#0;class#AppInfoCollectorTest#0" />
             <element signature="method#class_PotPlayer_online#0;class#AppInfoCollectorTest#0" />
+            <element signature="method#class_JetClean_online#1;class#AppInfoCollectorTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/apps_download_urls.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

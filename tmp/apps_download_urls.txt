@@ -9,6 +9,10 @@ http://www.codesector.com/downloads
 https://daumpotplayer.com/download/
 https://eu.battle.net/account/download/#bnetapp
 https://www.instalki.pl/programy/download/Windows/akcesoria/Blizzard.html
+https://www.virtualbox.org/wiki/Downloads
+https://www.majorgeeks.com/files/details/virtualbox.html
+https://www.virtualbox.org/wiki/Linux_Downloads
+http://www.virtualbox.org/download/hashes/6.0.4/SHA256SUMS
 
 -----------
 https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC

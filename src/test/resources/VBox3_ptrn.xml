@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[h3]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>2</numberOf>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[h3]]></text>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>ALL</type>
+      <tagname>a</tagname>
+    </method>
+  </rule>
+  <rule no="5">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FETCH_HREFS</methodType>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>UBUNTU_BIONIC_DEB</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>2</position>
+    </method>
+  </rule>
+  <rule no="7">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>UBUNTU_XENIAL_DEB</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>3</position>
+    </method>
+  </rule>
+  <rule no="8">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>UBUNTU_TRUSTY_DEB</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>4</position>
+    </method>
+  </rule>
+  <rule no="9">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>DEBIAN_STRETCH_DEB</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>5</position>
+    </method>
+  </rule>
+  <rule no="10">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>DEBIAN_JESSIE_DEB</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>6</position>
+    </method>
+  </rule>
+  <rule no="11">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>OPENSUSE_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>7</position>
+    </method>
+  </rule>
+  <rule no="12">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>LEAP_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>8</position>
+    </method>
+  </rule>
+  <rule no="13">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>FEDORA_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>9</position>
+    </method>
+  </rule>
+  <rule no="14">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>FEDORA_OLD_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>10</position>
+    </method>
+  </rule>
+  <rule no="15">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>ORACLE_LINUX_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>11</position>
+    </method>
+  </rule>
+  <rule no="16">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>RED_HAT_ENTERPRISE_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>11</position>
+    </method>
+  </rule>
+  <rule no="17">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>CENTOS_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>11</position>
+    </method>
+  </rule>
+  <rule no="18">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>ORACLE_LINUX_OLD_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>12</position>
+    </method>
+  </rule>
+  <rule no="19">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>RED_HAT_ENTERPRISE_OLD_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>12</position>
+    </method>
+  </rule>
+  <rule no="20">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>CENTOS_OLD_RPM</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>12</position>
+    </method>
+  </rule>
+  <rule no="21">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>LINUX_RUN</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>13</position>
+    </method>
+  </rule>
+</rulesSet>

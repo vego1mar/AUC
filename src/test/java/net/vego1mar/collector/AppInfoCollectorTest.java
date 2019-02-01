@@ -284,4 +284,74 @@ public class AppInfoCollectorTest {
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.MAC_OS_X_ZIP).isEmpty());
     }
 
+    @Test public void class_OracleVirtualBox_online() {
+        // given
+        final String url1 = "https://www.virtualbox.org/wiki/Downloads";
+        final String url2 = "https://www.majorgeeks.com/files/details/virtualbox.html";
+        final String url3 = "https://www.virtualbox.org/wiki/Linux_Downloads";
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_VIRTUALBOX_1, url1);
+                put(TestVariables.XML_PATTERN_VIRTUALBOX_2, url2);
+                put(TestVariables.XML_PATTERN_VIRTUALBOX_3, url3);
+            }
+        };
+        final String appName = "Oracle VirtualBox";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.addMutableEntry(url1, TestVariables.XML_PATTERN_VIRTUALBOX_A, LinksID.GENERIC, TestVariables.XML_PATTERN_VIRTUALBOX_B);
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.ALL_SUPPORTED));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.ALL_SUPPORTED).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.ALL_SUPPORTED).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ORACLE_LINUX_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.MAC_OS_X_DMG).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.UBUNTU_TRUSTY_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.SOLARIS_TAR_GZ).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.SOURCECODE_TAR_BZ2).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.CENTOS_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.UBUNTU_XENIAL_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.DEBIAN_STRETCH_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.CENTOS_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ORACLE_LINUX_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.DEBIAN_JESSIE_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.OPENSUSE_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.SDK_ZIP).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.RED_HAT_ENTERPRISE_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.FEDORA_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.LEAP_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.UBUNTU_BIONIC_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.RED_HAT_ENTERPRISE_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.FEDORA_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.LINUX_RUN).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.ORACLE_LINUX_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.MAC_OS_X_DMG).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.UBUNTU_TRUSTY_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.SOLARIS_TAR_GZ).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.SOURCECODE_TAR_BZ2).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.CENTOS_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.UBUNTU_XENIAL_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.DEBIAN_STRETCH_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.CENTOS_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.ORACLE_LINUX_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.DEBIAN_JESSIE_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.OPENSUSE_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.SDK_ZIP).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.RED_HAT_ENTERPRISE_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.FEDORA_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.LEAP_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.UBUNTU_BIONIC_DEB).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.RED_HAT_ENTERPRISE_OLD_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.FEDORA_RPM).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.LINUX_RUN).isEmpty());
+    }
+
 }

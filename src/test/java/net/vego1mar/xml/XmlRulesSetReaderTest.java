@@ -89,4 +89,33 @@ public class XmlRulesSetReaderTest {
         // then
         Assert.assertEquals(TestCollections.getRulesForPotPlayer_1().toString(), rulesSet.toString());
     }
+
+    @Test public void loadSettings_OracleVirtualBox() {
+        // given
+        XmlRulesSetReader reader = new XmlRulesSetReader();
+
+        // when
+        Deque<RuleImpl> rulesSet1 = reader.loadSettings(TestVariables.XML_PATTERN_VIRTUALBOX_1);
+        Deque<RuleImpl> rulesSet2 = reader.loadSettings(TestVariables.XML_PATTERN_VIRTUALBOX_2);
+        Deque<RuleImpl> rulesSet3 = reader.loadSettings(TestVariables.XML_PATTERN_VIRTUALBOX_3);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_1().toString(), rulesSet1.toString());
+        Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_2().toString(), rulesSet2.toString());
+        Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_3().toString(), rulesSet3.toString());
+    }
+
+    @Test public void loadSettings_OracleVirtualBox_AB() {
+        // given
+        XmlRulesSetReader reader = new XmlRulesSetReader();
+
+        // when
+        Deque<RuleImpl> rulesSet1 = reader.loadSettings(TestVariables.XML_PATTERN_VIRTUALBOX_A);
+        Deque<RuleImpl> rulesSet2 = reader.loadSettings(TestVariables.XML_PATTERN_VIRTUALBOX_B);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_A().toString(), rulesSet1.toString());
+        Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_B().toString(), rulesSet2.toString());
+    }
+
 }

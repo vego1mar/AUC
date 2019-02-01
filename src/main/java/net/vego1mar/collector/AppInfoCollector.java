@@ -17,6 +17,7 @@ import java.util.Map;
 import net.vego1mar.auxiliary.properties.PlatformsImpl;
 import net.vego1mar.auxiliary.properties.PlatformsProperty;
 import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.enumerators.properties.LinksID;
 import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.rules.RuleImpl;
 import net.vego1mar.rules.RulesExecutable;
@@ -130,9 +131,9 @@ public class AppInfoCollector implements Serializable {
     }
 
     public void gatherInformation() {
-        Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData();
-
         try {
+            Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData(executionOrder);
+
             for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
                 executor.renew(entry.getKey(), entry.getValue());
                 executor.execute();
@@ -144,11 +145,11 @@ public class AppInfoCollector implements Serializable {
         updateAppVersions();
     }
 
-    private Map<Deque<RuleImpl>, String> fetchExecutionData() {
+    private Map<Deque<RuleImpl>, String> fetchExecutionData(@NotNull Map<String, String> execOrder) {
         Map<Deque<RuleImpl>, String> preparedExecutionData = Collections.synchronizedMap(new LinkedHashMap<>());
         XmlRulesSetReader xmlReader = new XmlRulesSetReader();
 
-        for (Map.Entry<String, String> entry : executionOrder.entrySet()) {
+        for (Map.Entry<String, String> entry : execOrder.entrySet()) {
             Deque<RuleImpl> rulesSet = xmlReader.loadSettings(entry.getKey());
             String htmlCode = DownloadHelper.getHtml(entry.getValue());
             preparedExecutionData.put(rulesSet, htmlCode);
@@ -189,6 +190,25 @@ public class AppInfoCollector implements Serializable {
 
     public UseAsImpl getCollectedData() {
         return executor.getResults();
+    }
+
+    public void addMutableEntry(String urlToExec, String xmlToExec, LinksID whereToFindEntryURL, String whereToFindEntryXML) {
+        Map<String, String> execOrder = new LinkedHashMap<>();
+        execOrder.put(xmlToExec, urlToExec);
+
+        try {
+            Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData(execOrder);
+            RulesExecutable executor = new RulesExecutor(new LinkedList<>(), "");
+
+            for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
+                executor = new RulesExecutor(entry.getKey(), entry.getValue());
+                executor.execute();
+            }
+
+            executionOrder.put(whereToFindEntryXML, executor.getResults().getLinks().getItem(whereToFindEntryURL));
+        } catch (UnsupportedOperationException | NullPointerException exp) {
+            log.error(exp);
+        }
     }
 
 }

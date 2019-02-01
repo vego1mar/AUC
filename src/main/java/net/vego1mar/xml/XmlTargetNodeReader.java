@@ -21,7 +21,8 @@ public class XmlTargetNodeReader extends XmlRulesSetTags {
     }
 
     public void readXmlTarget() {
-        Element[] elements = new Element[TARGETNODE_HASHID];
+        // Index 0 will be ignored by the switchFetching() method.
+        Element[] elements = new Element[TARGETNODE_HASHID + 1];
         boolean[] isCorrect = new boolean[elements.length];
 
         for (int i = 0; i < elements.length; i++) {

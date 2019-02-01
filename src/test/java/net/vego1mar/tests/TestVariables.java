@@ -19,6 +19,10 @@ public final class TestVariables {
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
     public static final String CODE_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet1_wp.txt";
     public static final String CODE_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet2_wp.txt";
+    public static final String CODE_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp1.txt";
+    public static final String CODE_VIRTUALBOX_2 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp2.txt";
+    public static final String CODE_VIRTUALBOX_3 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp3.txt";
+    public static final String CODE_VIRTUALBOX_AB = getWorkingDirectory() + "/src/test/resources/OracleVBox_wpAB.txt";
     public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
     public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
     public static final String XML_RUNTIME_AIMP_1 = getWorkingDirectory() + "/runtime/aimp1_settings.xml";
@@ -43,6 +47,16 @@ public final class TestVariables {
     public static final String XML_RUNTIME_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/runtime/BlizzardBattleNet2.xml";
     public static final String XML_PATTERN_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BBNet1_ptrn.xml";
     public static final String XML_PATTERN_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BBNet2_ptrn.xml";
+    public static final String XML_RUNTIME_VIRTUALBOX_1 = getWorkingDirectory() + "/runtime/VBox1.xml";
+    public static final String XML_PATTERN_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/VBox1_ptrn.xml";
+    public static final String XML_RUNTIME_VIRTUALBOX_2 = getWorkingDirectory() + "/runtime/VBox2.xml";
+    public static final String XML_PATTERN_VIRTUALBOX_2 = getWorkingDirectory() + "/src/test/resources/VBox2_ptrn.xml";
+    public static final String XML_RUNTIME_VIRTUALBOX_3 = getWorkingDirectory() + "/runtime/VBox3.xml";
+    public static final String XML_PATTERN_VIRTUALBOX_3 = getWorkingDirectory() + "/src/test/resources/VBox3_ptrn.xml";
+    public static final String XML_RUNTIME_VIRTUALBOX_A = getWorkingDirectory() + "/runtime/VBox_A.xml";
+    public static final String XML_PATTERN_VIRTUALBOX_A = getWorkingDirectory() + "/src/test/resources/VBox_A_ptrn.xml";
+    public static final String XML_RUNTIME_VIRTUALBOX_B = getWorkingDirectory() + "/runtime/VBox_B.xml";
+    public static final String XML_PATTERN_VIRTUALBOX_B = getWorkingDirectory() + "/src/test/resources/VBox_B_ptrn.xml";
     public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
     public static final String XML_CONSOLE_RUNNER_OUTFILE = getWorkingDirectory() + "/src/test/resources/runner.txt";
     private static final Logger log = Logger.getLogger(TestVariables.class);

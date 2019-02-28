@@ -198,14 +198,14 @@ public class AppInfoCollector implements Serializable {
 
         try {
             Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData(execOrder);
-            RulesExecutable executor = new RulesExecutor(new LinkedList<>(), "");
+            RulesExecutable executable = new RulesExecutor(new LinkedList<>(), "");
 
             for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
-                executor = new RulesExecutor(entry.getKey(), entry.getValue());
-                executor.execute();
+                executable = new RulesExecutor(entry.getKey(), entry.getValue());
+                executable.execute();
             }
 
-            executionOrder.put(whereToFindEntryXML, executor.getResults().getLinks().getItem(whereToFindEntryURL));
+            executionOrder.put(whereToFindEntryXML, executable.getResults().getLinks().getItem(whereToFindEntryURL));
         } catch (UnsupportedOperationException | NullPointerException exp) {
             log.error(exp);
         }

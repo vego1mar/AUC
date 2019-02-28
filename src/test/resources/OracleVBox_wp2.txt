@@ -407,7 +407,8 @@ MajorGeeks.com - Viva La Geek.
   <div class="geekycolumn">
   <strong>Author:</strong> <a rel="nofollow" target="top" href="http://www.virtualbox.org/wiki/VirtualBox">
 Oracle</a><br />
-  <strong>Date:</strong> 01/28/2019 12:57 PM<br />
+  <strong>Date:</strong> 01/28/2019 12:57 PM
+<br />
   <strong>Size:</strong> 22.2 -209 MB<br />
   <strong>License:</strong> <!-- Template: files_info_cost -->
 Freeware<br />

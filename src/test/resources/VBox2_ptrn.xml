@@ -37,24 +37,13 @@
   <rule no="4">
     <target>
       <in>CONTENT</in>
-      <useAs>IGNORE</useAs>
-    </target>
-    <method>
-      <methodType>TRIM</methodType>
-      <side>LEFT</side>
-      <numberOf>10</numberOf>
-    </method>
-  </rule>
-  <rule no="5">
-    <target>
-      <in>CONTENT</in>
       <useAs>DATES</useAs>
       <date>ALL_SUPPORTED</date>
     </target>
     <method>
       <methodType>TRIM</methodType>
-      <side>RIGHT</side>
-      <numberOf>6</numberOf>
+      <side>LEFT</side>
+      <numberOf>10</numberOf>
     </method>
   </rule>
 </rulesSet>

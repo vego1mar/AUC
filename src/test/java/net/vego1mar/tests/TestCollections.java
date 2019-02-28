@@ -1075,23 +1075,17 @@ public final class TestCollections {
         GrabUntilMethod method3 = (GrabUntilMethod) rule3.getMethod();
         method3.setCharStop('\n');
 
-        RuleImpl rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        RuleImpl rule4 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
         TrimMethod method4 = (TrimMethod) rule4.getMethod();
         method4.setSide(TrimSide.LEFT);
         method4.setNumberOf(10);
-
-        RuleImpl rule5 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
-        TrimMethod method5 = (TrimMethod) rule5.getMethod();
-        method5.setSide(TrimSide.RIGHT);
-        method5.setNumberOf(6);
-        Target target5 = (Target) rule5.getTarget();
-        target5.date(Platforms.ALL_SUPPORTED);
+        Target target4 = (Target) rule4.getTarget();
+        target4.date(Platforms.ALL_SUPPORTED);
 
         rulesSet.add(rule1);
         rulesSet.add(rule2);
         rulesSet.add(rule3);
         rulesSet.add(rule4);
-        rulesSet.add(rule5);
 
         return rulesSet;
     }

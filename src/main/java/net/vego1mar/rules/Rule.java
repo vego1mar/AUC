@@ -1,7 +1,7 @@
 package net.vego1mar.rules;
 
-import net.vego1mar.auxiliary.method.Methodable;
-import net.vego1mar.auxiliary.target.Targetable;
+import net.vego1mar.method.Methodable;
+import net.vego1mar.target.Targetable;
 import org.jetbrains.annotations.NotNull;
 
 public final class Rule implements RuleImpl {

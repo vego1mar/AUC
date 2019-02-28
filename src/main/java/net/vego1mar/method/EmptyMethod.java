@@ -1,7 +1,7 @@
-package net.vego1mar.auxiliary.method;
+package net.vego1mar.method;
 
-import net.vego1mar.auxiliary.properties.InImpl;
-import net.vego1mar.auxiliary.target.Targetable;
+import net.vego1mar.properties.InImpl;
+import net.vego1mar.target.Targetable;
 import net.vego1mar.enumerators.traits.MethodType;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

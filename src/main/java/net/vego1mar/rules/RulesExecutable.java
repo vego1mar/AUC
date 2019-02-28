@@ -1,7 +1,7 @@
 package net.vego1mar.rules;
 
 import java.util.Deque;
-import net.vego1mar.auxiliary.properties.UseAsImpl;
+import net.vego1mar.properties.UseAsImpl;
 import org.jetbrains.annotations.NotNull;
 
 public interface RulesExecutable {

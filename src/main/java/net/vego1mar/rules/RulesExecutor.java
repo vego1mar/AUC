@@ -3,13 +3,13 @@ package net.vego1mar.rules;
 import java.io.Serializable;
 import java.util.Deque;
 import java.util.LinkedList;
-import net.vego1mar.auxiliary.properties.InImpl;
-import net.vego1mar.auxiliary.properties.InProperty;
-import net.vego1mar.auxiliary.target.Target;
+import net.vego1mar.properties.InImpl;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
-import net.vego1mar.auxiliary.properties.UseAsImpl;
-import net.vego1mar.auxiliary.properties.UseAsProperty;
+import net.vego1mar.properties.UseAsImpl;
+import net.vego1mar.properties.UseAsProperty;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 

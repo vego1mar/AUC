@@ -1,4 +1,4 @@
-package net.vego1mar.auxiliary.properties;
+package net.vego1mar.properties;
 
 import java.io.Serializable;
 import java.util.Collections;

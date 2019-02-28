@@ -31,7 +31,6 @@ JDownloader
 KeePass Password Safe
 KMSAuto Net 2015 Portable
 Mozilla Thunderbird x64
-Oracle VirtualBox
 Piriform Speccy
 Rainlendar Lite x64
 Steam Client Bootstrapper

@@ -1,4 +1,4 @@
-package net.vego1mar.auxiliary.properties;
+package net.vego1mar.properties;
 
 public interface UseAsImpl {
 

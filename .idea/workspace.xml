@@ -3,10 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/EmptyMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/EmptyMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/ExtractWordMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/ExtractWordMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/FetchHrefsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/FetchHrefsMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/FirstOfMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/FirstOfMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/GrabUntilMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/GrabUntilMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/Methodable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/Methodable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/PrependMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/PrependMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RemoveCharactersMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/RemoveCharactersMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RetrieveTagsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/RetrieveTagsMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/SplitWordsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/SplitWordsMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/TrimMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/method/TrimMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/InImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/InImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/InProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/InProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/LinksImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/LinksProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PlatformsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/PlatformsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/PlatformsProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/PlatformsProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/UseAsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/UseAsProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/console/XmlConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/console/XmlConsoleRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RuleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RuleImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlMethodNodeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlMethodNodeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlTargetNodeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlTargetNodeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/RulesExecutorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/OracleVBox_wp2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/OracleVBox_wp2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/VBox2_ptrn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/VBox2_ptrn.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/todos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/todos.txt" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,53 +97,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
+        <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="1083" lean-forward="true" selection-start-line="1083" selection-end-line="1083" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#TestCollections#0;class#TestCollections#0" />
-                <element signature="method#getRulesFor7Zip_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForAimp_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForAimp_2#0;class#TestCollections#0" />
-                <element signature="method#getRulesForSourceTree_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForJetClean_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForJetClean_2#0;class#TestCollections#0" />
-                <element signature="method#getRulesForBorderlessGaming_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForXmlRulesSetWriter#0;class#TestCollections#0" />
-                <element signature="method#getRulesForBlizzardBattleNet_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForBlizzardBattleNet_2#0;class#TestCollections#0" />
-                <element signature="method#getRulesForOracleVirtualBox_1#0;class#TestCollections#0" />
-                <element signature="method#getRulesForOracleVirtualBox_3#0;class#TestCollections#0" />
-                <element signature="method#getRulesForOracleVirtualBox_A#0;class#TestCollections#0" />
-                <element signature="method#getRulesForOracleVirtualBox_B#0;class#TestCollections#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="357" lean-forward="true" selection-start-line="357" selection-end-line="357" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#saveAndLoad_7Zip#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_7Zip_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_AIMP_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#assertCommonCollectorFields#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_SourceTree_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_JetClean_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_BorderlessGaming_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_TeraCopy_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_PotPlayer_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_BlizzardBattleNet_online#0;class#AppInfoCollectorTest#0" />
-                <element signature="method#class_OracleVirtualBox_online#0;class#AppInfoCollectorTest#0" />
-              </folding>
+            <state relative-caret-position="540">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -184,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java" />
         <option value="$PROJECT_DIR$/src/test/resources/PotPlayer_set__ptrn.xml" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/tmp/todos.txt" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/Platforms.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/enumerators/properties/LinksID.java" />
@@ -195,9 +182,10 @@
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetReaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlRulesSetReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlTargetNodeReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java" />
+        <option value="$PROJECT_DIR$/tmp/todos.txt" />
       </list>
     </option>
   </component>
@@ -275,15 +263,6 @@
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="collector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -328,15 +307,6 @@
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vego1mar" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -355,7 +325,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551367804909" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551370065462" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -368,8 +338,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="net.vego1mar.utils" />
       <recent name="net.vego1mar" />
+      <recent name="net.vego1mar.utils" />
       <recent name="net.vego1mar.rules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -388,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (1)">
+  <component name="RunManager" selected="JUnit.AppInfoCollectorTest.class_7Zip_online">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -429,6 +399,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppInfoCollectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.vego1mar.collector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppInfoCollectorTest.class_7Zip_online" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.vego1mar.collector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
+      <option name="METHOD_NAME" value="class_7Zip_online" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppInfoCollectorTest.class_OracleVirtualBox_online (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
@@ -449,7 +458,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppInfoCollectorTest.class_OracleVirtualBox_online (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppInfoCollectorTest.saveAndLoad_7Zip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -459,47 +468,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
       <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
-      <option name="METHOD_NAME" value="class_OracleVirtualBox_online" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppInfoCollectorTest.class_OracleVirtualBox_online (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.vego1mar.collector.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.AppInfoCollectorTest" />
-      <option name="METHOD_NAME" value="class_OracleVirtualBox_online" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RulesExecutorTest.execute_OracleVirtualBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.vego1mar.rules.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.RulesExecutorTest" />
-      <option name="METHOD_NAME" value="execute_OracleVirtualBox" />
+      <option name="METHOD_NAME" value="saveAndLoad_7Zip" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -562,19 +531,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.RulesExecutorTest.execute_OracleVirtualBox" />
       <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (1)" />
-      <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (3)" />
-      <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (2)" />
       <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_OracleVirtualBox" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.saveAndLoad_7Zip" />
+      <item itemvalue="JUnit.AppInfoCollectorTest" />
+      <item itemvalue="JUnit.AppInfoCollectorTest.class_7Zip_online" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppInfoCollectorTest.class_7Zip_online" />
+        <item itemvalue="JUnit.AppInfoCollectorTest" />
+        <item itemvalue="JUnit.AppInfoCollectorTest.saveAndLoad_7Zip" />
         <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (1)" />
         <item itemvalue="JUnit.XmlRulesSetWriterTest.saveSettings_OracleVirtualBox" />
-        <item itemvalue="JUnit.RulesExecutorTest.execute_OracleVirtualBox" />
-        <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (2)" />
-        <item itemvalue="JUnit.AppInfoCollectorTest.class_OracleVirtualBox_online (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -596,18 +565,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppInfoCollectorTest_class_OracleVirtualBox_online_(1) - 2019.02.28 at 16h 17m 24s.xml">
-      <configuration name="AppInfoCollectorTest.class_OracleVirtualBox_online (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmlRulesSetWriterTest_saveSettings_OracleVirtualBox - 2019.02.28 at 16h 22m 17s.xml">
-      <configuration name="XmlRulesSetWriterTest.saveSettings_OracleVirtualBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RulesExecutorTest_execute_OracleVirtualBox - 2019.02.28 at 16h 23m 09s.xml">
-      <configuration name="RulesExecutorTest.execute_OracleVirtualBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="XmlRulesSetWriterTest_saveSettings_OracleVirtualBox - 2019.02.28 at 16h 25m 10s.xml">
-      <configuration name="XmlRulesSetWriterTest.saveSettings_OracleVirtualBox" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="XmlRulesSetWriterTest_saveSettings_OracleVirtualBox - 2019.02.28 at 16h 26m 01s.xml">
       <configuration name="XmlRulesSetWriterTest.saveSettings_OracleVirtualBox" configurationId="JUnit" />
     </history-entry>
@@ -625,6 +582,18 @@
     </history-entry>
     <history-entry file="AppInfoCollectorTest_class_OracleVirtualBox_online_(1) - 2019.02.28 at 16h 28m 25s.xml">
       <configuration name="AppInfoCollectorTest.class_OracleVirtualBox_online (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppInfoCollectorTest_saveAndLoad_7Zip - 2019.02.28 at 16h 40m 22s.xml">
+      <configuration name="AppInfoCollectorTest.saveAndLoad_7Zip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppInfoCollectorTest_saveAndLoad_7Zip - 2019.02.28 at 16h 42m 19s.xml">
+      <configuration name="AppInfoCollectorTest.saveAndLoad_7Zip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppInfoCollectorTest - 2019.02.28 at 16h 43m 15s.xml">
+      <configuration name="AppInfoCollectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppInfoCollectorTest_class_7Zip_online - 2019.02.28 at 16h 44m 01s.xml">
+      <configuration name="AppInfoCollectorTest.class_7Zip_online" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -725,8 +694,26 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="serialFile.length()" language="JAVA" />
+        <watch expression="xmlFile.length()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -734,6 +721,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>xmlFile.length()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>serialFile.length()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>((DefaultElement) elements[i]).content</expression-string>
         <language-id>JAVA</language-id>
@@ -776,16 +773,6 @@
         <expression-string>((RulesExecutor) collector1.executor).useAsProperty</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>net.vego1mar.rules.RulesExecutor</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>collector2.isUpdateAvailable(Platforms.WINDOWS)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>collector1.isUpdateAvailable(Platforms.WINDOWS)</expression-string>
-        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -888,7 +875,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/InImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/InImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
@@ -922,7 +909,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/UseAsProperty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/UseAsProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -971,7 +958,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/RetrieveTagsMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/method/RetrieveTagsMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
@@ -1046,7 +1033,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/LinksProperty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/LinksProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
@@ -1086,14 +1073,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/TrimMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/method/TrimMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
@@ -1118,7 +1098,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/properties/InProperty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/InProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
@@ -1128,7 +1108,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/auxiliary/method/GrabUntilMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/method/GrabUntilMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
@@ -1208,10 +1188,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="1438" lean-forward="true" selection-start-line="1438" selection-end-line="1438" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TestCollections#0;class#TestCollections#0" />
+            <element signature="method#getRulesFor7Zip_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForAimp_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForAimp_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForSourceTree_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForJetClean_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForJetClean_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBorderlessGaming_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForXmlRulesSetWriter#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBlizzardBattleNet_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForBlizzardBattleNet_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForOracleVirtualBox_1#0;class#TestCollections#0" />
+            <element signature="method#getRulesForOracleVirtualBox_2#0;class#TestCollections#0" />
+            <element signature="method#getRulesForOracleVirtualBox_3#0;class#TestCollections#0" />
+            <element signature="method#getRulesForOracleVirtualBox_A#0;class#TestCollections#0" />
+            <element signature="method#getRulesForOracleVirtualBox_B#0;class#TestCollections#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/AppInfoCollectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="357" lean-forward="true" selection-start-line="357" selection-end-line="357" />
+        <state relative-caret-position="324">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#saveAndLoad_7Zip#0;class#AppInfoCollectorTest#0" />
@@ -1229,30 +1237,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestCollections.java">
+    <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="1083" lean-forward="true" selection-start-line="1083" selection-end-line="1083" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TestCollections#0;class#TestCollections#0" />
-            <element signature="method#getRulesFor7Zip_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForAimp_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForAimp_2#0;class#TestCollections#0" />
-            <element signature="method#getRulesForSourceTree_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForJetClean_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForJetClean_2#0;class#TestCollections#0" />
-            <element signature="method#getRulesForBorderlessGaming_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForTeraCopy_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForPotPlayer_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForXmlRulesSetWriter#0;class#TestCollections#0" />
-            <element signature="method#getRulesForBlizzardBattleNet_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForBlizzardBattleNet_2#0;class#TestCollections#0" />
-            <element signature="method#getRulesForOracleVirtualBox_1#0;class#TestCollections#0" />
-            <element signature="method#getRulesForOracleVirtualBox_3#0;class#TestCollections#0" />
-            <element signature="method#getRulesForOracleVirtualBox_A#0;class#TestCollections#0" />
-            <element signature="method#getRulesForOracleVirtualBox_B#0;class#TestCollections#0" />
-          </folding>
+        <state relative-caret-position="540">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package net.vego1mar.auxiliary.method;
+package net.vego1mar.method;
 
 import net.vego1mar.enumerators.traits.MethodType;
 

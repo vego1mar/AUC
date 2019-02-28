@@ -1,16 +1,16 @@
 package net.vego1mar.utils;
 
-import net.vego1mar.auxiliary.method.EmptyMethod;
-import net.vego1mar.auxiliary.method.ExtractWordMethod;
-import net.vego1mar.auxiliary.method.FetchHrefsMethod;
-import net.vego1mar.auxiliary.method.FirstOfMethod;
-import net.vego1mar.auxiliary.method.GrabUntilMethod;
-import net.vego1mar.auxiliary.method.Methodable;
-import net.vego1mar.auxiliary.method.PrependMethod;
-import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
-import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
-import net.vego1mar.auxiliary.method.SplitWordsMethod;
-import net.vego1mar.auxiliary.method.TrimMethod;
+import net.vego1mar.method.EmptyMethod;
+import net.vego1mar.method.ExtractWordMethod;
+import net.vego1mar.method.FetchHrefsMethod;
+import net.vego1mar.method.FirstOfMethod;
+import net.vego1mar.method.GrabUntilMethod;
+import net.vego1mar.method.Methodable;
+import net.vego1mar.method.PrependMethod;
+import net.vego1mar.method.RemoveCharactersMethod;
+import net.vego1mar.method.RetrieveTagsMethod;
+import net.vego1mar.method.SplitWordsMethod;
+import net.vego1mar.method.TrimMethod;
 import net.vego1mar.enumerators.traits.MethodType;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;

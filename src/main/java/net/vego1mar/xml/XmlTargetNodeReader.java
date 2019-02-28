@@ -1,6 +1,6 @@
 package net.vego1mar.xml;
 
-import net.vego1mar.auxiliary.target.Target;
+import net.vego1mar.target.Target;
 import net.vego1mar.enumerators.properties.LinksID;
 import net.vego1mar.enumerators.properties.Platforms;
 import net.vego1mar.enumerators.traits.In;

@@ -23,7 +23,7 @@ public class AppInfoCollectorTest {
         };
         final String appName = "7-Zip";
         AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-        final int EXPECTED_SERIAL_FILE_SIZE = 903;
+        final int EXPECTED_SERIAL_FILE_SIZE = 910;
         final int EXPECTED_XML_FILE_SIZE = 4192;
 
         // when
@@ -53,7 +53,7 @@ public class AppInfoCollectorTest {
         };
         final String appName = "7-Zip";
         AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-        final int EXPECTED_SERIAL_FILE_SIZE = 917;
+        final int EXPECTED_SERIAL_FILE_SIZE = 924;
         final int EXPECTED_XML_FILE_SIZE = 4192;
 
         // when

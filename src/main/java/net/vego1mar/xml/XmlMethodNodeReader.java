@@ -1,13 +1,13 @@
 package net.vego1mar.xml;
 
-import net.vego1mar.auxiliary.method.ExtractWordMethod;
-import net.vego1mar.auxiliary.method.FirstOfMethod;
-import net.vego1mar.auxiliary.method.GrabUntilMethod;
-import net.vego1mar.auxiliary.method.Methodable;
-import net.vego1mar.auxiliary.method.PrependMethod;
-import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
-import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
-import net.vego1mar.auxiliary.method.TrimMethod;
+import net.vego1mar.method.ExtractWordMethod;
+import net.vego1mar.method.FirstOfMethod;
+import net.vego1mar.method.GrabUntilMethod;
+import net.vego1mar.method.Methodable;
+import net.vego1mar.method.PrependMethod;
+import net.vego1mar.method.RemoveCharactersMethod;
+import net.vego1mar.method.RetrieveTagsMethod;
+import net.vego1mar.method.TrimMethod;
 import net.vego1mar.enumerators.methods.FirstOfType;
 import net.vego1mar.enumerators.methods.RetrieveTagsType;
 import net.vego1mar.enumerators.methods.TrimSide;

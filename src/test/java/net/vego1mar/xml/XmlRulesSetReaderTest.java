@@ -118,4 +118,15 @@ public class XmlRulesSetReaderTest {
         Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_B().toString(), rulesSet2.toString());
     }
 
+    @Test public void loadSettings_EAOrigin() {
+        // given
+        XmlRulesSetReader reader = new XmlRulesSetReader();
+
+        // when
+        Deque<RuleImpl> rulesSet1 = reader.loadSettings(TestVariables.XML_PATTERN_ORIGIN_1);
+
+        // then
+        Assert.assertEquals(TestCollections.getRulesForEAOrigin_1().toString(), rulesSet1.toString());
+    }
+
 }

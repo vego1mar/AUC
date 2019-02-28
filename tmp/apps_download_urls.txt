@@ -13,6 +13,7 @@ https://www.virtualbox.org/wiki/Downloads
 https://www.majorgeeks.com/files/details/virtualbox.html
 https://www.virtualbox.org/wiki/Linux_Downloads
 http://www.virtualbox.org/download/hashes/6.0.4/SHA256SUMS
+https://www.majorgeeks.com/files/details/origin_for_pc.html
 
 -----------
 https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC

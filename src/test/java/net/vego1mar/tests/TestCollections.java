@@ -21,6 +21,7 @@ import net.vego1mar.enumerators.methods.FirstOfType;
 import net.vego1mar.enumerators.traits.In;
 import net.vego1mar.enumerators.traits.UseAs;
 import net.vego1mar.utils.MethodCreator;
+import org.junit.Test;
 
 public final class TestCollections {
 
@@ -1431,6 +1432,102 @@ public final class TestCollections {
         rulesSet.add(rule22);
         rulesSet.add(rule23);
         rulesSet.add(rule24);
+
+        return rulesSet;
+    }
+
+    public static Deque<RuleImpl> getRulesForEAOrigin_1() {
+        Deque<RuleImpl> rulesSet = new LinkedList<>();
+
+        RuleImpl rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        RetrieveTagsMethod method1 = (RetrieveTagsMethod) rule1.getMethod();
+        method1.setType(RetrieveTagsType.ALL);
+        method1.setTagname("h1");
+
+        RuleImpl rule2 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method2 = (ExtractWordMethod) rule2.getMethod();
+        method2.setPosition(2);
+
+        RuleImpl rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        RemoveCharactersMethod method3 = (RemoveCharactersMethod) rule3.getMethod();
+        method3.setSigns("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/<=\"\n");
+
+        RuleImpl rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
+
+        RuleImpl rule5 = new Rule(new Target(In.COLLECTION, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
+        method5.setPosition(6);
+        Target target5 = (Target) rule5.getTarget();
+        target5.version(Platforms.ALL_SUPPORTED);
+
+        RuleImpl rule6 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target6 = (Target) rule6.getTarget();
+        target6.version(Platforms.WINDOWS);
+
+        RuleImpl rule7 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target7 = (Target) rule7.getTarget();
+        target7.version(Platforms.MAC_OS_X);
+
+        RuleImpl rule8 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        FirstOfMethod method8 = (FirstOfMethod) rule8.getMethod();
+        method8.setType(FirstOfType.STRING);
+        method8.setText("<strong>Date:");
+
+        RuleImpl rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        GrabUntilMethod method9 = (GrabUntilMethod) rule9.getMethod();
+        method9.setCharStop('\n');
+
+        RuleImpl rule10 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        TrimMethod method10 = (TrimMethod) rule10.getMethod();
+        method10.setSide(TrimSide.LEFT);
+        method10.setNumberOf(23);
+        Target target10 = (Target) rule10.getTarget();
+        target10.date(Platforms.ALL_SUPPORTED);
+
+        RuleImpl rule11 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target11 = (Target) rule11.getTarget();
+        target11.date(Platforms.WINDOWS);
+
+        RuleImpl rule12 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Target target12 = (Target) rule12.getTarget();
+        target12.date(Platforms.MAC_OS_X);
+
+        RuleImpl rule13 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        RemoveCharactersMethod method13 = (RemoveCharactersMethod) rule13.getMethod();
+        method13.setSigns("0123456789/");
+
+        RuleImpl rule14 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        PrependMethod method14 = (PrependMethod) rule14.getMethod();
+        method14.setText("https://www.dm.origin.com/download/legacy");
+        Target target14 = (Target) rule14.getTarget();
+        target14.linkID(LinksID.WINDOWS_X86_EXE);
+
+        RuleImpl rule15 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        ExtractWordMethod method15 = (ExtractWordMethod) rule15.getMethod();
+        method15.setPosition(2);
+
+        RuleImpl rule16 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        PrependMethod method16 = (PrependMethod) rule16.getMethod();
+        method16.setText("https://www.dm.origin.com/mac/download/legacy");
+        Target target16 = (Target) rule16.getTarget();
+        target16.linkID(LinksID.MAC_OS_X_DMG);
+
+        rulesSet.add(rule1);
+        rulesSet.add(rule2);
+        rulesSet.add(rule3);
+        rulesSet.add(rule4);
+        rulesSet.add(rule5);
+        rulesSet.add(rule6);
+        rulesSet.add(rule7);
+        rulesSet.add(rule8);
+        rulesSet.add(rule9);
+        rulesSet.add(rule10);
+        rulesSet.add(rule11);
+        rulesSet.add(rule12);
+        rulesSet.add(rule13);
+        rulesSet.add(rule14);
+        rulesSet.add(rule15);
+        rulesSet.add(rule16);
 
         return rulesSet;
     }

@@ -1,6 +1,7 @@
 package net.vego1mar.collector;
 
 import java.io.File;
+import java.nio.file.Paths;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import net.vego1mar.enumerators.properties.LinksID;
@@ -12,7 +13,7 @@ import org.junit.Test;
 
 public class AppInfoCollectorTest {
 
-    private static final String OUT_DESTINATION_PATH = System.getProperty("user.dir") + "/runtime";
+    private static final String OUT_DESTINATION_PATH = Paths.get(System.getProperty("user.dir"), "/runtime").toString();
 
     @Test public void saveAndLoad_7Zip() {
         // given
@@ -352,6 +353,35 @@ public class AppInfoCollectorTest {
         Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
         Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.FEDORA_RPM).isEmpty());
         Assert.assertFalse(collector1.getCollectedData().getHashes().getItem(LinksID.LINUX_RUN).isEmpty());
+    }
+
+    @Test public void class_EAOrigin_online() {
+        // given
+        final String url1 = "https://www.majorgeeks.com/files/details/origin_for_pc.html";
+        final Map<String, String> execOrder = new LinkedHashMap<>() {
+            {
+                put(TestVariables.XML_PATTERN_ORIGIN_1, url1);
+            }
+        };
+        final String appName = "EA Origin";
+        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
+
+        // when
+        collector1.gatherInformation();
+        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
+        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
+
+        // then
+        assertCommonCollectorFields(collector1, collector2);
+        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.ALL_SUPPORTED));
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.ALL_SUPPORTED).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.MAC_OS_X).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.ALL_SUPPORTED).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.MAC_OS_X).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
+        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.MAC_OS_X_DMG).isEmpty());
     }
 
 }

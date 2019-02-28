@@ -193,4 +193,18 @@ public class XmlRulesSetWriterTest {
         Assert.assertEquals(source2, runtime2);
     }
 
+    @Test public void saveSettings_EAOrigin() {
+        // given
+        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
+        XmlRulesSetWriter writer = new XmlRulesSetWriter();
+
+        // when
+        writer.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_ORIGIN_1);
+
+        // then
+        String runtime1 = TestVariables.readFile(TestVariables.XML_RUNTIME_ORIGIN_1);
+        String source1 = TestVariables.readFile(TestVariables.XML_PATTERN_ORIGIN_1);
+        Assert.assertEquals(source1, runtime1);
+    }
+
 }

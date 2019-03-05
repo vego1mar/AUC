@@ -50,6 +50,8 @@ public class AppInfoCollector implements Serializable {
         AppInfoCollector collector = null;
 
         try {
+            // TODO: safe file handling for FileInputStream (permissions, input validation, pathname limitation)
+            // TODO: ValidatingObjectInputStream from Apache for object check before deserialization
             try (FileInputStream fileStream = new FileInputStream(fileName)) {
                 ObjectInputStream objectStream = new ObjectInputStream(fileStream);
                 collector = (AppInfoCollector) objectStream.readObject();

@@ -151,12 +151,13 @@ public class XmlConsoleRunner {
         writer.flush();
     }
 
-    public static void main(String[] args) {
+    public static void main(@NotNull String[] args) {
         String rulesDirPath = System.getProperty("user.dir");
         final int EXPECTED_ARGS = 1;
 
         if (args.length == EXPECTED_ARGS) {
             rulesDirPath = args[0];
+            // TODO: check whether args[0] is a Path
         }
 
         final long startTime = System.nanoTime();

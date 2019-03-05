@@ -2,6 +2,7 @@ package net.vego1mar.rules;
 
 import net.vego1mar.method.Methodable;
 import net.vego1mar.target.Target;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 public final class Rule {
@@ -14,15 +15,15 @@ public final class Rule {
         this.method = method;
     }
 
-    public Target getTarget() {
+    @Contract(pure = true) public Target getTarget() {
         return target;
     }
 
-    public Methodable getMethod() {
+    @Contract(pure = true) public Methodable getMethod() {
         return method;
     }
 
-    @Override public String toString() {
+    @NotNull @Override public String toString() {
         return "{target=" + target.toString() + "; method=" + method.toString() + '}';
     }
 

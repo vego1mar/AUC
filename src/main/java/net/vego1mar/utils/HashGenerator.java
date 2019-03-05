@@ -19,6 +19,7 @@ public class HashGenerator {
     }
 
     @NotNull public static String calculate(@NotNull String filename, HashType type) {
+        // This method is not intended to use within a security context.
         final int BUFFER_SIZE = 1024;
         File file = new File(filename);
 

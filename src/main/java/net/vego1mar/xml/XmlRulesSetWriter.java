@@ -102,6 +102,8 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
                 node.addElement(TAG_SIDE).addText(trimMethod.getSide().name());
                 node.addElement(TAG_NUMBEROF).addText(String.valueOf(trimMethod.getNumberOf()));
                 break;
+            default:
+                // If no valid method type has been chosen then do nothing.
         }
     }
 

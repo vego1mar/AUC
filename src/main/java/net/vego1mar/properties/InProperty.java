@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
-public class InProperty implements InImpl {
+public class InProperty {
 
     private String code;
     private String content;
@@ -16,27 +16,27 @@ public class InProperty implements InImpl {
         collection = new ArrayList<>();
     }
 
-    @Override public String getCode() {
+    public String getCode() {
         return code;
     }
 
-    @Override public void setCode(String code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
-    @Override public String getContent() {
+    public String getContent() {
         return content;
     }
 
-    @Override public void setContent(String content) {
+    public void setContent(String content) {
         this.content = content;
     }
 
-    @Override public List<String> getCollection() {
+    public List<String> getCollection() {
         return collection;
     }
 
-    @Override public void setCollection(@NotNull List<String> collection) {
+    public void setCollection(@NotNull List<String> collection) {
         this.collection = collection;
     }
 }

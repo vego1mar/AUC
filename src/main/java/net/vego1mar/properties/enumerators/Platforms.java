@@ -1,4 +1,4 @@
-package net.vego1mar.enumerators.properties;
+package net.vego1mar.properties.enumerators;
 
 public enum Platforms {
 

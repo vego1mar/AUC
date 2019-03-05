@@ -14,13 +14,11 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import net.vego1mar.properties.PlatformsImpl;
 import net.vego1mar.properties.PlatformsProperty;
-import net.vego1mar.properties.UseAsImpl;
-import net.vego1mar.enumerators.properties.LinksID;
-import net.vego1mar.enumerators.properties.Platforms;
-import net.vego1mar.rules.RuleImpl;
-import net.vego1mar.rules.RulesExecutable;
+import net.vego1mar.properties.UseAsProperty;
+import net.vego1mar.properties.enumerators.LinksID;
+import net.vego1mar.properties.enumerators.Platforms;
+import net.vego1mar.rules.Rule;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.utils.DownloadHelper;
 import net.vego1mar.utils.ReflectionHelper;
@@ -34,10 +32,10 @@ public class AppInfoCollector implements Serializable {
     private static final transient Logger log = Logger.getLogger(AppInfoCollector.class);
     private static final transient String OBJ_FILENAME = "collector";
     private static final transient String OBJ_FILEEXT = ".ser";
-    private transient RulesExecutable executor;
+    private transient RulesExecutor executor;
     private Map<String, String> executionOrder;
     private String appName;
-    private PlatformsImpl appVersions;
+    private PlatformsProperty appVersions;
     private String serialFileName;
 
     public AppInfoCollector(@NotNull String name, @NotNull Map<String, String> execOrder) {
@@ -96,7 +94,7 @@ public class AppInfoCollector implements Serializable {
 
         for (int j = 0; j < xmlFileNames.size(); j++) {
             i++;
-            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(xmlFileNames.get(j));
+            Deque<Rule> rulesSet = xmlReader.loadSettings(xmlFileNames.get(j));
             String xmlFullName = xmlBaseName.concat(String.valueOf(i)).concat(".xml");
             xmlWriter.saveSettings(rulesSet, xmlFullName);
             executionOrder.put(xmlFullName, urlNames.get(j));
@@ -132,9 +130,9 @@ public class AppInfoCollector implements Serializable {
 
     public void gatherInformation() {
         try {
-            Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData(executionOrder);
+            Map<Deque<Rule>, String> preparedExecutionData = fetchExecutionData(executionOrder);
 
-            for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
+            for (Map.Entry<Deque<Rule>, String> entry : preparedExecutionData.entrySet()) {
                 executor.renew(entry.getKey(), entry.getValue());
                 executor.execute();
             }
@@ -145,12 +143,12 @@ public class AppInfoCollector implements Serializable {
         updateAppVersions();
     }
 
-    private Map<Deque<RuleImpl>, String> fetchExecutionData(@NotNull Map<String, String> execOrder) {
-        Map<Deque<RuleImpl>, String> preparedExecutionData = Collections.synchronizedMap(new LinkedHashMap<>());
+    private Map<Deque<Rule>, String> fetchExecutionData(@NotNull Map<String, String> execOrder) {
+        Map<Deque<Rule>, String> preparedExecutionData = Collections.synchronizedMap(new LinkedHashMap<>());
         XmlRulesSetReader xmlReader = new XmlRulesSetReader();
 
         for (Map.Entry<String, String> entry : execOrder.entrySet()) {
-            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(entry.getKey());
+            Deque<Rule> rulesSet = xmlReader.loadSettings(entry.getKey());
             String htmlCode = DownloadHelper.getHtml(entry.getValue());
             preparedExecutionData.put(rulesSet, htmlCode);
             log.debug("XML_RULES_SET=" + entry.getKey() + "; RULES_NO=" + rulesSet.size());
@@ -188,7 +186,7 @@ public class AppInfoCollector implements Serializable {
         return true;
     }
 
-    public UseAsImpl getCollectedData() {
+    public UseAsProperty getCollectedData() {
         return executor.getResults();
     }
 
@@ -197,10 +195,10 @@ public class AppInfoCollector implements Serializable {
         execOrder.put(xmlToExec, urlToExec);
 
         try {
-            Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData(execOrder);
-            RulesExecutable executable = new RulesExecutor(new LinkedList<>(), "");
+            Map<Deque<Rule>, String> preparedExecutionData = fetchExecutionData(execOrder);
+            RulesExecutor executable = new RulesExecutor(new LinkedList<>(), "");
 
-            for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
+            for (Map.Entry<Deque<Rule>, String> entry : preparedExecutionData.entrySet()) {
                 executable = new RulesExecutor(entry.getKey(), entry.getValue());
                 executable.execute();
             }

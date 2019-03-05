@@ -1,4 +1,4 @@
-package net.vego1mar.enumerators.methods;
+package net.vego1mar.method.enumerators;
 
 public enum RetrieveTagsType {
     ALL,

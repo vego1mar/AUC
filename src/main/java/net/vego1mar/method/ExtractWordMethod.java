@@ -1,9 +1,9 @@
 package net.vego1mar.method;
 
 import java.util.List;
-import net.vego1mar.properties.InImpl;
-import net.vego1mar.target.Targetable;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,7 +30,7 @@ public class ExtractWordMethod extends Method {
         }
     }
 
-    @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
+    @Override public InProperty invoke(@NotNull Target target, @NotNull InProperty inProperty) {
         switch (target.in()) {
             case CODE:
                 inProperty.setContent(extractWord(inProperty.getCode()));

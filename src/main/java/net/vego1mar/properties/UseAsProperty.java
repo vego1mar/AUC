@@ -1,11 +1,11 @@
 package net.vego1mar.properties;
 
-public class UseAsProperty implements UseAsImpl {
+public class UseAsProperty {
 
-    private PlatformsImpl versions;
-    private PlatformsImpl dates;
-    private LinksImpl links;
-    private LinksImpl hashes;
+    private PlatformsProperty versions;
+    private PlatformsProperty dates;
+    private LinksProperty links;
+    private LinksProperty hashes;
 
     public UseAsProperty() {
         versions = new PlatformsProperty();
@@ -14,19 +14,19 @@ public class UseAsProperty implements UseAsImpl {
         hashes = new LinksProperty();
     }
 
-    @Override public PlatformsImpl getVersions() {
+    public PlatformsProperty getVersions() {
         return versions;
     }
 
-    @Override public PlatformsImpl getDates() {
+    public PlatformsProperty getDates() {
         return dates;
     }
 
-    @Override public LinksImpl getLinks() {
+    public LinksProperty getLinks() {
         return links;
     }
 
-    @Override public LinksImpl getHashes() {
+    public LinksProperty getHashes() {
         return hashes;
     }
 }

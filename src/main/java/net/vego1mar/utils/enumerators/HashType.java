@@ -1,4 +1,4 @@
-package net.vego1mar.enumerators.utils;
+package net.vego1mar.utils.enumerators;
 
 public enum HashType {
 

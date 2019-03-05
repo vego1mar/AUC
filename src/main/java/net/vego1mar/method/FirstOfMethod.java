@@ -1,9 +1,9 @@
 package net.vego1mar.method;
 
-import net.vego1mar.properties.InImpl;
-import net.vego1mar.target.Targetable;
-import net.vego1mar.enumerators.methods.FirstOfType;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
+import net.vego1mar.method.enumerators.FirstOfType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -38,7 +38,7 @@ public class FirstOfMethod extends Method {
         this.text = text;
     }
 
-    @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
+    @Override public InProperty invoke(@NotNull Target target, @NotNull InProperty inProperty) {
         switch (target.in()) {
             case CODE:
                 inProperty.setContent(firstOf(inProperty.getCode()));

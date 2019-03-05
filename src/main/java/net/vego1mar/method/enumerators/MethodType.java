@@ -1,4 +1,4 @@
-package net.vego1mar.enumerators.traits;
+package net.vego1mar.method.enumerators;
 
 public enum MethodType {
     EMPTY,

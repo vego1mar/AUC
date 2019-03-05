@@ -1,6 +1,6 @@
 package net.vego1mar.method;
 
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
 
 public abstract class Method implements Methodable {
 

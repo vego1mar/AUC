@@ -4,9 +4,9 @@ import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import net.vego1mar.enumerators.properties.Platforms;
+import net.vego1mar.properties.enumerators.Platforms;
 
-public class PlatformsProperty implements PlatformsImpl, Serializable {
+public class PlatformsProperty implements Serializable {
 
     private Map<Platforms, String> platforms;
 
@@ -18,7 +18,7 @@ public class PlatformsProperty implements PlatformsImpl, Serializable {
         }
     }
 
-    @Override public String getItem(Platforms platform) {
+    public String getItem(Platforms platform) {
         if (platforms.containsKey(platform)) {
             return platforms.get(platform);
         }
@@ -26,7 +26,7 @@ public class PlatformsProperty implements PlatformsImpl, Serializable {
         return "";
     }
 
-    @Override public void setItem(Platforms platform, String item) {
+    public void setItem(Platforms platform, String item) {
         if (platform == Platforms.UNSPECIFIED || !platforms.containsKey(platform)) {
             return;
         }

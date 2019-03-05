@@ -2,10 +2,10 @@ package net.vego1mar.method;
 
 import java.util.LinkedList;
 import java.util.List;
-import net.vego1mar.properties.InImpl;
-import net.vego1mar.target.Targetable;
-import net.vego1mar.enumerators.methods.RetrieveTagsType;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
+import net.vego1mar.method.enumerators.RetrieveTagsType;
 import org.jetbrains.annotations.NotNull;
 
 public class RetrieveTagsMethod extends Method {
@@ -39,7 +39,7 @@ public class RetrieveTagsMethod extends Method {
         this.tagname = tagname;
     }
 
-    @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
+    @Override public InProperty invoke(@NotNull Target target, @NotNull InProperty inProperty) {
         switch (target.in()) {
             case CODE:
                 retrieve(inProperty, inProperty.getCode());
@@ -54,7 +54,7 @@ public class RetrieveTagsMethod extends Method {
         return inProperty;
     }
 
-    private void retrieve(@NotNull InImpl inProperty, @NotNull String source) {
+    private void retrieve(@NotNull InProperty inProperty, @NotNull String source) {
         if (type == RetrieveTagsType.ALL) {
             inProperty.setCollection(retrieveAllTags(source));
             return;

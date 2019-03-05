@@ -1,7 +1,7 @@
 package net.vego1mar.utils;
 
-import net.vego1mar.enumerators.utils.HashType;
 import net.vego1mar.tests.TestVariables;
+import net.vego1mar.utils.enumerators.HashType;
 import org.junit.Assert;
 import org.junit.Test;
 

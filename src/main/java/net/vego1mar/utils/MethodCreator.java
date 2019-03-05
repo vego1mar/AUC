@@ -11,7 +11,7 @@ import net.vego1mar.method.RemoveCharactersMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.SplitWordsMethod;
 import net.vego1mar.method.TrimMethod;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 

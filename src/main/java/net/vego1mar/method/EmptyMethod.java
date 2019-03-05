@@ -1,8 +1,8 @@
 package net.vego1mar.method;
 
-import net.vego1mar.properties.InImpl;
-import net.vego1mar.target.Targetable;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
@@ -16,7 +16,7 @@ public final class EmptyMethod extends Method {
         return "{ " + MethodType.EMPTY.name() + " }";
     }
 
-    @Contract(value = "_, _ -> param2", pure = true) @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
+    @Contract(value = "_, _ -> param2", pure = true) @Override public InProperty invoke(@NotNull Target target, @NotNull InProperty inProperty) {
         return inProperty;
     }
 

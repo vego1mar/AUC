@@ -3,9 +3,9 @@ package net.vego1mar.properties;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import net.vego1mar.enumerators.properties.LinksID;
+import net.vego1mar.properties.enumerators.LinksID;
 
-public class LinksProperty implements LinksImpl {
+public class LinksProperty {
 
     private Map<LinksID, String> links;
 
@@ -17,7 +17,7 @@ public class LinksProperty implements LinksImpl {
         }
     }
 
-    @Override public void setItem(LinksID id, String item) {
+    public void setItem(LinksID id, String item) {
         if (id == LinksID.NO_LINK || !links.containsKey(id)) {
             return;
         }
@@ -25,7 +25,7 @@ public class LinksProperty implements LinksImpl {
         links.put(id, item);
     }
 
-    @Override public String getItem(LinksID id) {
+    public String getItem(LinksID id) {
         if (links.containsKey(id)) {
             return links.get(id);
         }

@@ -7,10 +7,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CyclicBarrier;
-import net.vego1mar.properties.UseAsImpl;
 import net.vego1mar.properties.UseAsProperty;
-import net.vego1mar.enumerators.properties.LinksID;
-import net.vego1mar.enumerators.properties.Platforms;
+import net.vego1mar.properties.enumerators.LinksID;
+import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import net.vego1mar.utils.ReflectionHelper;
@@ -36,15 +35,15 @@ public class RulesExecutorTest {
 
     @Test public void execute_7Zip() throws Exception {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesFor7Zip_1();
-        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
+        Deque<Rule> rulesSet = TestCollections.getRulesFor7Zip_1();
+        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
 
         // when
         rulesExecutor.execute();
 
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
+        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
         Assert.assertEquals("18.05", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("2018-04-30", useAsProperty.getDates().getItem(Platforms.WINDOWS).trim());
         Assert.assertEquals("https://www.7-zip.org/a/7z1805.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
@@ -66,7 +65,7 @@ public class RulesExecutorTest {
         CyclicBarrier barrier = new CyclicBarrier(rulesExecutors.size());
         List<Thread> threads = new LinkedList<>();
 
-        for (RulesExecutable executor : rulesExecutors) {
+        for (RulesExecutor executor : rulesExecutors) {
             threads.add(new Thread(() -> {
                 try {
                     executor.execute();
@@ -85,9 +84,9 @@ public class RulesExecutorTest {
         barrier.await();
 
         // then
-        for (RulesExecutable executor : rulesExecutors) {
+        for (RulesExecutor executor : rulesExecutors) {
             Field ruleExecutor = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-            UseAsImpl useAsProperty = (UseAsProperty) ruleExecutor.get(executor);
+            UseAsProperty useAsProperty = (UseAsProperty) ruleExecutor.get(executor);
             Assert.assertEquals("18.05", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
             Assert.assertEquals("2018-04-30", useAsProperty.getDates().getItem(Platforms.WINDOWS).trim());
             Assert.assertEquals("https://www.7-zip.org/a/7z1805.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
@@ -102,9 +101,9 @@ public class RulesExecutorTest {
 
     @Test public void execute_AIMP() throws Exception {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForAimp_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForAimp_2();
-        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet1, htmlCodeOfAimpWebPage1);
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForAimp_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForAimp_2();
+        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet1, htmlCodeOfAimpWebPage1);
 
         // when
         rulesExecutor.execute();
@@ -113,7 +112,7 @@ public class RulesExecutorTest {
 
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
+        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
         Assert.assertEquals("v4.51, build 2084", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("01.12.2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("acc1353719050e5fa6f28e8d296078a4", useAsProperty.getHashes().getItem(LinksID.WINDOWS_X86_EXE));
@@ -130,15 +129,15 @@ public class RulesExecutorTest {
 
     @Test public void execute_SourceTree() throws Exception {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForSourceTree_1();
-        RulesExecutable rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
+        Deque<Rule> rulesSet = TestCollections.getRulesForSourceTree_1();
+        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
 
         // when
         rulesExecutor.execute();
 
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
+        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
         Assert.assertEquals("3.0.12", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("Jan 7, 2019", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.0.12.exe",
@@ -151,9 +150,9 @@ public class RulesExecutorTest {
 
     @Test public void execute_JetClean() throws Exception {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForJetClean_2();
-        RulesExecutable executor = new RulesExecutor(rulesSet1, htmlCodeOfJetCleanWebPage1);
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForJetClean_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForJetClean_2();
+        RulesExecutor executor = new RulesExecutor(rulesSet1, htmlCodeOfJetCleanWebPage1);
 
         // when
         executor.execute();
@@ -162,7 +161,7 @@ public class RulesExecutorTest {
 
         // then
         Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsImpl useAsProperty = (UseAsProperty) executor2.get(executor);
+        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(executor);
         Assert.assertEquals("1.5.0.129", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("02/26/2016", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe",
@@ -171,14 +170,14 @@ public class RulesExecutorTest {
 
     @Test public void execute_BorderlessGaming() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
-        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
+        Deque<Rule> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
 
         // when
         executor.execute();
 
         // then
-        UseAsImpl useAsProperty = executor.getResults();
+        UseAsProperty useAsProperty = executor.getResults();
         Assert.assertEquals("9.5.5", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("Oct 11, 2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/releases/download/9.5.5/BorderlessGaming9.5.5_admin_setup.exe",
@@ -191,14 +190,14 @@ public class RulesExecutorTest {
 
     @Test public void execute_TeraCopy() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForTeraCopy_1();
-        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
+        Deque<Rule> rulesSet = TestCollections.getRulesForTeraCopy_1();
+        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
 
         // when
         executor.execute();
 
         // then
-        UseAsImpl useAsProperty = executor.getResults();
+        UseAsProperty useAsProperty = executor.getResults();
         Assert.assertEquals("3.26", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("http://www.codesector.com/files/teracopy.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
@@ -206,14 +205,14 @@ public class RulesExecutorTest {
 
     @Test public void execute_PotPlayer() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForPotPlayer_1();
-        RulesExecutable executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
+        Deque<Rule> rulesSet = TestCollections.getRulesForPotPlayer_1();
+        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
 
         // when
         executor.execute();
 
         // then
-        UseAsImpl useAsProperty = executor.getResults();
+        UseAsProperty useAsProperty = executor.getResults();
         Assert.assertEquals("1.7.16291", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("2018/12", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup.exe",
@@ -224,9 +223,9 @@ public class RulesExecutorTest {
 
     @Test public void execute_BlizzardBattleNet() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
-        RulesExecutable executor = new RulesExecutor(rulesSet1, htmlCodeOfBlizzardBattleNetWebPage1);
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
+        RulesExecutor executor = new RulesExecutor(rulesSet1, htmlCodeOfBlizzardBattleNetWebPage1);
 
         // when
         executor.execute();
@@ -234,7 +233,7 @@ public class RulesExecutorTest {
         executor.execute();
 
         // then
-        UseAsImpl useAsProperty = executor.getResults();
+        UseAsProperty useAsProperty = executor.getResults();
         Assert.assertEquals("1.12.7.10904", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("17.01.2019", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("https://www.battle.net/download/getInstallerForGame?os=mac&amp;locale=plPL&amp;version=LIVE&amp;"
@@ -248,10 +247,10 @@ public class RulesExecutorTest {
         final String htmlCode1 = TestVariables.readFile(TestVariables.CODE_VIRTUALBOX_1);
         final String htmlCode2 = TestVariables.readFile(TestVariables.CODE_VIRTUALBOX_2);
         final String htmlCode3 = TestVariables.readFile(TestVariables.CODE_VIRTUALBOX_3);
-        final Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();
-        final Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_2();
-        final Deque<RuleImpl> rulesSet3 = TestCollections.getRulesForOracleVirtualBox_3();
-        final RulesExecutable executor = new RulesExecutor(rulesSet1, htmlCode1);
+        final Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();
+        final Deque<Rule> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_2();
+        final Deque<Rule> rulesSet3 = TestCollections.getRulesForOracleVirtualBox_3();
+        final RulesExecutor executor = new RulesExecutor(rulesSet1, htmlCode1);
 
         // when
         executor.execute();
@@ -261,7 +260,7 @@ public class RulesExecutorTest {
         executor.execute();
 
         // then
-        UseAsImpl useAsProperty = executor.getResults();
+        UseAsProperty useAsProperty = executor.getResults();
         Assert.assertEquals("6.0.4-128413", useAsProperty.getVersions().getItem(Platforms.ALL_SUPPORTED));
         Assert.assertEquals("https://download.virtualbox.org/virtualbox/6.0.4/VirtualBox-6.0.4-128413-Win.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
@@ -314,18 +313,18 @@ public class RulesExecutorTest {
         // given
         final String htmlCode1 = TestVariables.readFile(TestVariables.CODE_VIRTUALBOX_1);
         final String htmlCode2 = TestVariables.readFile(TestVariables.CODE_VIRTUALBOX_AB);
-        final Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_A();
-        final Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_B();
-        final RulesExecutable executor1 = new RulesExecutor(rulesSet1, htmlCode1);
-        final RulesExecutable executor2 = new RulesExecutor(rulesSet2, htmlCode2);
+        final Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_A();
+        final Deque<Rule> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_B();
+        final RulesExecutor executor1 = new RulesExecutor(rulesSet1, htmlCode1);
+        final RulesExecutor executor2 = new RulesExecutor(rulesSet2, htmlCode2);
 
         // when
         executor1.execute();
         executor2.execute();
 
         // then
-        UseAsImpl useAsProperty1 = executor1.getResults();
-        UseAsImpl useAsProperty2 = executor2.getResults();
+        UseAsProperty useAsProperty1 = executor1.getResults();
+        UseAsProperty useAsProperty2 = executor2.getResults();
         Assert.assertEquals("http://www.virtualbox.org/download/hashes/6.0.4/SHA256SUMS",
             useAsProperty1.getLinks().getItem(LinksID.GENERIC));
         Assert.assertEquals("8887d5dd9dd26bd376926b38857715e28f2d678b6d3a034144ddc3fde4a387d9",
@@ -380,14 +379,14 @@ public class RulesExecutorTest {
         // given
         final String CODE_EA_ORIGIN = Paths.get(System.getProperty("user.dir"), "/src/test/resources/Origin_wp1.txt").toString();
         final String htmlCode1 = TestVariables.readFile(CODE_EA_ORIGIN);
-        final Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
-        final RulesExecutable executor1 = new RulesExecutor(rulesSet1, htmlCode1);
+        final Deque<Rule> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
+        final RulesExecutor executor1 = new RulesExecutor(rulesSet1, htmlCode1);
 
         // when
         executor1.execute();
 
         // then
-        UseAsImpl useAsProperty1 = executor1.getResults();
+        UseAsProperty useAsProperty1 = executor1.getResults();
         String version = "10.5.35";
         Assert.assertEquals(version, useAsProperty1.getVersions().getItem(Platforms.ALL_SUPPORTED));
         Assert.assertEquals(version, useAsProperty1.getVersions().getItem(Platforms.WINDOWS));

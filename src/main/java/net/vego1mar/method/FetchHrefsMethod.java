@@ -2,9 +2,9 @@ package net.vego1mar.method;
 
 import java.util.ArrayList;
 import java.util.List;
-import net.vego1mar.properties.InImpl;
-import net.vego1mar.target.Targetable;
-import net.vego1mar.enumerators.traits.MethodType;
+import net.vego1mar.method.enumerators.MethodType;
+import net.vego1mar.properties.InProperty;
+import net.vego1mar.target.Target;
 import org.jetbrains.annotations.NotNull;
 
 public class FetchHrefsMethod extends Method {
@@ -17,7 +17,7 @@ public class FetchHrefsMethod extends Method {
         return "{ " + MethodType.FETCH_HREFS.name() + " }";
     }
 
-    @Override public InImpl invoke(@NotNull Targetable target, @NotNull InImpl inProperty) {
+    @Override public InProperty invoke(@NotNull Target target, @NotNull InProperty inProperty) {
         switch (target.in()) {
             case CODE:
                 throw new UnsupportedOperationException(METHOD_TARGET_NOT_SUPPORTED);

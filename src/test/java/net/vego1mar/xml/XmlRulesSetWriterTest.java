@@ -1,7 +1,7 @@
 package net.vego1mar.xml;
 
 import java.util.Deque;
-import net.vego1mar.rules.RuleImpl;
+import net.vego1mar.rules.Rule;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -11,7 +11,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_1() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForXmlRulesSetWriter();
+        Deque<Rule> rulesSet = TestCollections.getRulesForXmlRulesSetWriter();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -25,7 +25,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_7Zip() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesFor7Zip_1();
+        Deque<Rule> rulesSet = TestCollections.getRulesFor7Zip_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -39,8 +39,8 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_AIMP() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForAimp_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForAimp_2();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForAimp_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForAimp_2();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -58,7 +58,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_SourceTree() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForSourceTree_1();
+        Deque<Rule> rulesSet = TestCollections.getRulesForSourceTree_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -72,8 +72,8 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_JetClean() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForJetClean_2();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForJetClean_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForJetClean_2();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -91,7 +91,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_BorderlessGaming() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
+        Deque<Rule> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -105,7 +105,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_TeraCopy() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForTeraCopy_1();
+        Deque<Rule> rulesSet = TestCollections.getRulesForTeraCopy_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -119,7 +119,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_PotPlayer() {
         // given
-        Deque<RuleImpl> rulesSet = TestCollections.getRulesForPotPlayer_1();
+        Deque<Rule> rulesSet = TestCollections.getRulesForPotPlayer_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -133,8 +133,8 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_BlizzardBattleNet() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -152,9 +152,9 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_OracleVirtualBox() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_2();
-        Deque<RuleImpl> rulesSet3 = TestCollections.getRulesForOracleVirtualBox_3();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_2();
+        Deque<Rule> rulesSet3 = TestCollections.getRulesForOracleVirtualBox_3();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -176,8 +176,8 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_OracleVirtualBox_AB() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_A();
-        Deque<RuleImpl> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_B();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_A();
+        Deque<Rule> rulesSet2 = TestCollections.getRulesForOracleVirtualBox_B();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
@@ -195,7 +195,7 @@ public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_EAOrigin() {
         // given
-        Deque<RuleImpl> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
+        Deque<Rule> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when

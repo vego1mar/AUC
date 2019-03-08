@@ -1,11 +1,12 @@
 package net.vego1mar.properties;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import net.vego1mar.properties.enumerators.LinksID;
 
-public class LinksProperty {
+public class LinksProperty implements Serializable {
 
     private Map<LinksID, String> links;
 

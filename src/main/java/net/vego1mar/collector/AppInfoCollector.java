@@ -80,7 +80,7 @@ public class AppInfoCollector implements Serializable {
     public static AppInfoCollector load(@NotNull String objTarget) {
         AppInfoCollector collector = readObject(objTarget);
         collector.initializeTransientFields();
-        log.info(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget);
+        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget);
         return collector;
     }
 
@@ -161,9 +161,7 @@ public class AppInfoCollector implements Serializable {
     }
 
     private void updateAppVersions() {
-        PlatformsProperty versions = (PlatformsProperty) executor.getResults().getVersions();
-
-        for (Map.Entry<Platforms, String> entry : versions.getPlatforms().entrySet()) {
+        for (Map.Entry<Platforms, String> entry : executor.getResults().getVersions().getPlatforms().entrySet()) {
             if (isUpdateAvailable(entry.getKey())) {
                 appVersions.setItem(entry.getKey(), entry.getValue());
             }

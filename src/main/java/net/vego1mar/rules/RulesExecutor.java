@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Deque;
 import java.util.LinkedList;
 import net.vego1mar.properties.InProperty;
-import net.vego1mar.target.Target;
 import net.vego1mar.utils.ReflectionHelper;
 import org.apache.log4j.Logger;
 import net.vego1mar.properties.UseAsProperty;

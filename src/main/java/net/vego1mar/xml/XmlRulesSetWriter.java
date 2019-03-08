@@ -41,7 +41,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
 
     private void createTargetNode(@NotNull Element xmlRule, @NotNull Rule objRule) {
         Element node = xmlRule.addElement(TAG_TARGET);
-        Target target = (Target) objRule.getTarget();
+        Target target = objRule.getTarget();
         node.addElement(TAG_IN).addText(target.in().toString());
         node.addElement(TAG_USEAS).addText(target.useAs().toString());
 

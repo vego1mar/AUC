@@ -2,6 +2,7 @@ package net.vego1mar.xml;
 
 import java.util.Deque;
 import net.vego1mar.rules.Rule;
+import net.vego1mar.rules.SourceTreeExecutorTest;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -29,17 +30,6 @@ public class XmlRulesSetReaderTest {
 
         // then
         Assert.assertEquals(TestCollections.getRulesForAimp_1().toString(), rulesSet.toString());
-    }
-
-    @Test public void loadSettings_SourceTree() {
-        // given
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_SOURCETREE);
-
-        // then
-        Assert.assertEquals(TestCollections.getRulesForSourceTree_1().toString(), rulesSet.toString());
     }
 
     @Test public void loadSettings_JetClean() {

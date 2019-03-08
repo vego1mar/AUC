@@ -24,7 +24,6 @@ public class RulesExecutorTest {
     private static final String htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.CODE_7ZIP);
     private static final String htmlCodeOfAimpWebPage1 = TestVariables.readFile(TestVariables.CODE_AIMP_1);
     private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
-    private static final String htmlCodeOfSourceTreeWebPage = TestVariables.readFile(TestVariables.CODE_SOURCETREE);
     private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
     private static final String htmlCodeOfBorderlessGamingWebPage = TestVariables.readFile(TestVariables.CODE_BORDERLESSGAMING);
@@ -125,27 +124,6 @@ public class RulesExecutorTest {
             useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY));
         Assert.assertEquals("http://www.aimp.ru/files/android/aimp_2.80.631.apk",
             useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_APK));
-    }
-
-    @Test public void execute_SourceTree() throws Exception {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForSourceTree_1();
-        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOfSourceTreeWebPage);
-
-        // when
-        rulesExecutor.execute();
-
-        // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
-        Assert.assertEquals("3.0.12", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("Jan 7, 2019", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.0.12.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("3.0.1_205", useAsProperty.getVersions().getItem(Platforms.MAC_OS_X));
-        Assert.assertEquals("Jan 7, 2019", useAsProperty.getDates().getItem(Platforms.MAC_OS_X));
-        Assert.assertEquals("https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_3.0.1_205.zip",
-            useAsProperty.getLinks().getItem(LinksID.MAC_OS_X_ZIP));
     }
 
     @Test public void execute_JetClean() throws Exception {

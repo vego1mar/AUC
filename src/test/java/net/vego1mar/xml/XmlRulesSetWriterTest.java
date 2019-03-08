@@ -2,6 +2,7 @@ package net.vego1mar.xml;
 
 import java.util.Deque;
 import net.vego1mar.rules.Rule;
+import net.vego1mar.rules.SourceTreeExecutorTest;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -54,20 +55,6 @@ public class XmlRulesSetWriterTest {
         String source2 = TestVariables.readFile(TestVariables.XML_PATTERN_AIMP_2);
         Assert.assertEquals(source1, runtime1);
         Assert.assertEquals(source2, runtime2);
-    }
-
-    @Test public void saveSettings_SourceTree() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForSourceTree_1();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_SOURCETREE);
-
-        // then
-        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_SOURCETREE);
-        String source = TestVariables.readFile(TestVariables.XML_PATTERN_SOURCETREE);
-        Assert.assertEquals(source, runtime);
     }
 
     @Test public void saveSettings_JetClean() {

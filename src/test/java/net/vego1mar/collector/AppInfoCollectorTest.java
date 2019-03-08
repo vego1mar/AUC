@@ -7,6 +7,7 @@ import java.util.Map;
 import net.vego1mar.properties.enumerators.LinksID;
 import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.tests.TestVariables;
+import net.vego1mar.xml.SourceTreeXmlTest;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
@@ -143,7 +144,7 @@ public class AppInfoCollectorTest {
         // given
         final Map<String, String> execOrder = new LinkedHashMap<>() {
             {
-                put(TestVariables.XML_PATTERN_SOURCETREE, "https://www.sourcetreeapp.com/");
+                put(SourceTreeXmlTest.XML_PATTERN, "https://www.sourcetreeapp.com/");
             }
         };
         final String appName = "Atlassian SourceTree";

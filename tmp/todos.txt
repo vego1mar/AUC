@@ -10,8 +10,8 @@ GUI project and implementation
 Apache Pivot - introduction to the technology
 XmlConsoleRunner - path for /runtime + description of release for r1.1
 
-!!! BUG - SourceTree online test (no "link--secondary" string anymore!)
 !!! SECURITY - readObject() & writeObject() for deserialization
+!!! Restructor tests
 
 > RulesExecutor & AppInfoCollector - more rules with tests
 Audacity

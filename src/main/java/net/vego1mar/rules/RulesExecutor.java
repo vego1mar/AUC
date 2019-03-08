@@ -24,14 +24,14 @@ public final class RulesExecutor implements Serializable {
         inProperty.setCode(htmlCode);
         useAsProperty = new UseAsProperty();
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
+        log.debug(getClass().getSimpleName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" + htmlCode.length() + ')');
     }
 
     public void renew(@NotNull Deque<Rule> rulesSet, @NotNull String htmlCode) {
         this.rulesSet = new LinkedList<>(rulesSet);
         inProperty.setCode(htmlCode);
         String identity = '@' + Integer.toHexString(System.identityHashCode(this));
-        log.info(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" +
+        log.debug(ReflectionHelper.getCurrentMethodName() + identity + "(RULES=" + rulesSet.size() + "; CODE_CHARS=" +
             htmlCode.length() + ')');
     }
 
@@ -48,22 +48,21 @@ public final class RulesExecutor implements Serializable {
 
     private void executeRule(@NotNull Rule rule) {
         inProperty = rule.getMethod().invoke(rule.getTarget(), inProperty);
-        Target target = (Target) rule.getTarget();
 
-        switch (target.useAs()) {
+        switch (rule.getTarget().useAs()) {
             case IGNORE:
                 break;
             case VERSIONS:
-                useAsProperty.getVersions().setItem(target.version(), inProperty.getContent());
+                useAsProperty.getVersions().setItem(rule.getTarget().version(), inProperty.getContent());
                 break;
             case DATES:
-                useAsProperty.getDates().setItem(target.date(), inProperty.getContent());
+                useAsProperty.getDates().setItem(rule.getTarget().date(), inProperty.getContent());
                 break;
             case LINKS:
-                useAsProperty.getLinks().setItem(target.linkID(), inProperty.getContent());
+                useAsProperty.getLinks().setItem(rule.getTarget().linkID(), inProperty.getContent());
                 break;
             case HASHES:
-                useAsProperty.getHashes().setItem(target.hashID(), inProperty.getContent());
+                useAsProperty.getHashes().setItem(rule.getTarget().hashID(), inProperty.getContent());
                 break;
         }
     }

@@ -11,7 +11,6 @@ public final class TestVariables {
     public static final String CODE_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_wp.txt";
     public static final String CODE_AIMP_1 = getWorkingDirectory() + "/src/test/resources/aimp_wp_windows.txt";
     public static final String CODE_AIMP_2 = getWorkingDirectory() + "/src/test/resources/aimp_wp_android.txt";
-    public static final String CODE_SOURCETREE = getWorkingDirectory() + "/src/test/resources/sourcetree_wp.txt";
     public static final String CODE_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/jetclean_wp.txt";
     public static final String CODE_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/jetclean_wp2.txt";
     public static final String CODE_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_wp.txt";
@@ -29,8 +28,6 @@ public final class TestVariables {
     public static final String XML_PATTERN_AIMP_1 = getWorkingDirectory() + "/src/test/resources/aimp1_settings__ptrn.xml";
     public static final String XML_RUNTIME_AIMP_2 = getWorkingDirectory() + "/runtime/aimp2_settings.xml";
     public static final String XML_PATTERN_AIMP_2 = getWorkingDirectory() + "/src/test/resources/aimp2_settings__ptrn.xml";
-    public static final String XML_RUNTIME_SOURCETREE = getWorkingDirectory() + "/runtime/SourceTree_settings.xml";
-    public static final String XML_PATTERN_SOURCETREE = getWorkingDirectory() + "/src/test/resources/SourceTree_stgs__ptrn.xml";
     public static final String XML_RUNTIME_JETCLEAN_1 = getWorkingDirectory() + "/runtime/JetClean01_settings.xml";
     public static final String XML_RUNTIME_JETCLEAN_2 = getWorkingDirectory() + "/runtime/JetClean02_settings.xml";
     public static final String XML_PATTERN_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/JetClean01_settings__ptrn.xml";
@@ -91,7 +88,7 @@ public final class TestVariables {
         return result;
     }
 
-    private static String getWorkingDirectory() {
+    public static String getWorkingDirectory() {
         return System.getProperty("user.dir");
     }
 

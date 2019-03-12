@@ -26,7 +26,6 @@ import org.junit.Test;
     private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
     private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
-    private static final String htmlCodeOfBorderlessGamingWebPage = TestVariables.readFile(TestVariables.CODE_BORDERLESSGAMING);
     private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
     private static final String htmlCodeOfPotPlayerWebPage = TestVariables.readFile(TestVariables.CODE_POTPLAYER);
 
@@ -142,26 +141,6 @@ import org.junit.Test;
         Assert.assertEquals("02/26/2016", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-    }
-
-    @Test public void execute_BorderlessGaming() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
-        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfBorderlessGamingWebPage);
-
-        // when
-        executor.execute();
-
-        // then
-        UseAsProperty useAsProperty = executor.getResults();
-        Assert.assertEquals("9.5.5", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("Oct 11, 2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/releases/download/9.5.5/BorderlessGaming9.5.5_admin_setup.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/archive/9.5.5.tar.gz",
-            useAsProperty.getLinks().getItem(LinksID.SOURCECODE_TAR_GZ));
-        Assert.assertEquals("https://github.com/Codeusa/Borderless-Gaming/archive/9.5.5.zip",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_ZIP));
     }
 
     @Test public void execute_TeraCopy() {

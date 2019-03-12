@@ -13,7 +13,6 @@ public final class TestVariables {
     public static final String CODE_AIMP_2 = getWorkingDirectory() + "/src/test/resources/aimp_wp_android.txt";
     public static final String CODE_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/jetclean_wp.txt";
     public static final String CODE_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/jetclean_wp2.txt";
-    public static final String CODE_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_wp.txt";
     public static final String CODE_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_wp.txt";
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
     public static final String CODE_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp1.txt";
@@ -30,8 +29,6 @@ public final class TestVariables {
     public static final String XML_RUNTIME_JETCLEAN_2 = getWorkingDirectory() + "/runtime/JetClean02_settings.xml";
     public static final String XML_PATTERN_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/JetClean01_settings__ptrn.xml";
     public static final String XML_PATTERN_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/JetClean02_settings__ptrn.xml";
-    public static final String XML_RUNTIME_BORDERLESSGAMING = getWorkingDirectory() + "/runtime/BorderlessGaming_settings.xml";
-    public static final String XML_PATTERN_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming__ptrn.xml";
     public static final String XML_RUNTIME_TERACOPY = getWorkingDirectory() + "/runtime/TeraCopy_settings.xml";
     public static final String XML_PATTERN_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_set__ptrn.xml";
     public static final String XML_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayer_settings.xml";

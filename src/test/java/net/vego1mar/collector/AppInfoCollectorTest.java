@@ -194,31 +194,6 @@ import org.junit.Test;
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
     }
 
-    @Test public void class_BorderlessGaming_online() {
-        // given
-        final Map<String, String> execOrder = new LinkedHashMap<>() {
-            {
-                put(TestVariables.XML_PATTERN_BORDERLESSGAMING, "https://github.com/Codeusa/Borderless-Gaming/releases/latest");
-            }
-        };
-        final String appName = "Borderless Gaming";
-        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-
-        // when
-        collector1.gatherInformation();
-        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
-        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
-
-        // then
-        //assertCommonCollectorFields(collector1, collector2);
-        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
-        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.SOURCECODE_TAR_GZ).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_ZIP).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
-    }
-
     @Test public void class_TeraCopy_online() {
         // given
         final Map<String, String> execOrder = new LinkedHashMap<>() {

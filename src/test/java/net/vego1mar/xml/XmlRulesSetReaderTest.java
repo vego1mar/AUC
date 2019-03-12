@@ -47,17 +47,6 @@ import org.junit.Test;
         Assert.assertEquals(sourceSet2.toString(), rulesSet2.toString());
     }
 
-    @Test public void loadSettings_BorderlessGaming() {
-        // given
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_BORDERLESSGAMING);
-
-        // then
-        Assert.assertEquals(TestCollections.getRulesForBorderlessGaming_1().toString(), rulesSet.toString());
-    }
-
     @Test public void loadSettings_TeraCopy() {
         // given
         XmlRulesSetReader reader = new XmlRulesSetReader();

@@ -20,7 +20,7 @@ public class BattleNetXmlTest extends XmlTest {
         setXmlPattern2(Paths.get(getWorkingDirectory(), "/src/test/resources/BBNet2_ptrn.xml").toString());
     }
 
-    @Override public void testXmlConstruction() {
+    @Override @Test public void testXmlConstruction() {
         testLoadSettings();
         testSaveSettings();
     }

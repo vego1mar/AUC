@@ -76,20 +76,6 @@ import org.junit.Test;
         Assert.assertEquals(source2, runtime2);
     }
 
-    @Test public void saveSettings_BorderlessGaming() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForBorderlessGaming_1();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_BORDERLESSGAMING);
-
-        // then
-        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_BORDERLESSGAMING);
-        String source = TestVariables.readFile(TestVariables.XML_PATTERN_BORDERLESSGAMING);
-        Assert.assertEquals(source, runtime);
-    }
-
     @Test public void saveSettings_TeraCopy() {
         // given
         Deque<Rule> rulesSet = TestCollections.getRulesForTeraCopy_1();

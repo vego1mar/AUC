@@ -10,8 +10,8 @@ public class SourceTreeXmlTest extends XmlTest {
 
     public SourceTreeXmlTest() {
         super(new SourceTreeExecutorTest());
-        setXmlRuntime(Paths.get(getWorkingDirectory(), "/runtime/SourceTree_settings.xml").toString());
-        setXmlPattern(Paths.get(getWorkingDirectory(), "/src/test/resources/SourceTree_stgs__ptrn.xml").toString());
+        setXmlRuntime1(Paths.get(getWorkingDirectory(), "/runtime/SourceTree_settings.xml").toString());
+        setXmlPattern1(Paths.get(getWorkingDirectory(), "/src/test/resources/SourceTree_stgs__ptrn.xml").toString());
     }
 
     @Test @Override public void testXmlConstruction() {

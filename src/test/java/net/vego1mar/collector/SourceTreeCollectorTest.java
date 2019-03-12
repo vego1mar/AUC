@@ -17,7 +17,7 @@ public class SourceTreeCollectorTest extends CollectorTest {
     @Override @NotNull @Contract(" -> new") public LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new SourceTreeXmlTest().getXmlPattern(), "https://www.sourcetreeapp.com/");
+                put(new SourceTreeXmlTest().getXmlPattern1(), "https://www.sourcetreeapp.com/");
             }
         };
     }

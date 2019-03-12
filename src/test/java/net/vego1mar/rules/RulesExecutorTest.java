@@ -29,8 +29,6 @@ import org.junit.Test;
     private static final String htmlCodeOfBorderlessGamingWebPage = TestVariables.readFile(TestVariables.CODE_BORDERLESSGAMING);
     private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
     private static final String htmlCodeOfPotPlayerWebPage = TestVariables.readFile(TestVariables.CODE_POTPLAYER);
-    private static final String htmlCodeOfBlizzardBattleNetWebPage1 = TestVariables.readFile(TestVariables.CODE_BLIZZARDBATTLENET_1);
-    private static final String htmlCodeOfBlizzardBattleNetWebPage2 = TestVariables.readFile(TestVariables.CODE_BLIZZARDBATTLENET_2);
 
     @Test public void execute_7Zip() throws Exception {
         // given
@@ -197,27 +195,6 @@ import org.junit.Test;
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
         Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup64.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_EXE));
-    }
-
-    @Test public void execute_BlizzardBattleNet() {
-        // given
-        Deque<Rule> rulesSet1 = TestCollections.getRulesForBlizzardBattleNet_1();
-        Deque<Rule> rulesSet2 = TestCollections.getRulesForBlizzardBattleNet_2();
-        RulesExecutor executor = new RulesExecutor(rulesSet1, htmlCodeOfBlizzardBattleNetWebPage1);
-
-        // when
-        executor.execute();
-        executor.renew(rulesSet2, htmlCodeOfBlizzardBattleNetWebPage2);
-        executor.execute();
-
-        // then
-        UseAsProperty useAsProperty = executor.getResults();
-        Assert.assertEquals("1.12.7.10904", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("17.01.2019", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("https://www.battle.net/download/getInstallerForGame?os=mac&amp;locale=plPL&amp;version=LIVE&amp;"
-            + "gameProgram=BATTLENET_APP", useAsProperty.getLinks().getItem(LinksID.MAC_OS_X_ZIP));
-        Assert.assertEquals("https://www.battle.net/download/getInstallerForGame?os=win&amp;locale=plPL&amp;version=LIVE&amp;"
-            + "gameProgram=BATTLENET_APP", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
     }
 
     @Test public void execute_OracleVirtualBox() {

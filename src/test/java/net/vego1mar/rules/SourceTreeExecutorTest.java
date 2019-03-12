@@ -32,7 +32,7 @@ public class SourceTreeExecutorTest extends ExecutorTest {
     public SourceTreeExecutorTest() {
         final String relationalPath = "/src/test/resources/sourcetree_wp.txt";
         final String codePath = Paths.get(getWorkingDirectory(), relationalPath).toString();
-        setWebPage(readFile(codePath));
+        setWebPage1(readFile(codePath));
     }
 
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
@@ -125,7 +125,7 @@ public class SourceTreeExecutorTest extends ExecutorTest {
     @Test public void testLinksGrabbingFromSet1() {
         // given
         // rules 1-4
-        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(4), getWebPage());
+        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(4), getWebPage1());
 
         // when
         executor.execute();
@@ -139,7 +139,7 @@ public class SourceTreeExecutorTest extends ExecutorTest {
     @Test public void testVersionsGrabbingFromSet1() {
         // given
         // rules 5-12
-        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(12), getWebPage());
+        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(12), getWebPage1());
 
         // when
         executor.execute();

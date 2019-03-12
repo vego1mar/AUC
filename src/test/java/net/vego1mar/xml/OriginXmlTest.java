@@ -10,8 +10,8 @@ public class OriginXmlTest extends XmlTest {
 
     public OriginXmlTest() {
         super(new OriginExecutorTest());
-        setXmlRuntime(Paths.get(getWorkingDirectory(), "/runtime/Origin1.xml").toString());
-        setXmlPattern(Paths.get(getWorkingDirectory(), "/src/test/resources/Origin1_ptrn.xml").toString());
+        setXmlRuntime1(Paths.get(getWorkingDirectory(), "/runtime/Origin1.xml").toString());
+        setXmlPattern1(Paths.get(getWorkingDirectory(), "/src/test/resources/Origin1_ptrn.xml").toString());
     }
 
     @Test @Override public void testXmlConstruction() {

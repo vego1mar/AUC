@@ -16,8 +16,6 @@ public final class TestVariables {
     public static final String CODE_BORDERLESSGAMING = getWorkingDirectory() + "/src/test/resources/BorderlessGaming_wp.txt";
     public static final String CODE_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_wp.txt";
     public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
-    public static final String CODE_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet1_wp.txt";
-    public static final String CODE_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BlizzardBattleNet2_wp.txt";
     public static final String CODE_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp1.txt";
     public static final String CODE_VIRTUALBOX_2 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp2.txt";
     public static final String CODE_VIRTUALBOX_3 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp3.txt";
@@ -40,10 +38,6 @@ public final class TestVariables {
     public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_set__ptrn.xml";
     public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
-    public static final String XML_RUNTIME_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/runtime/BlizzardBattleNet1.xml";
-    public static final String XML_RUNTIME_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/runtime/BlizzardBattleNet2.xml";
-    public static final String XML_PATTERN_BLIZZARDBATTLENET_1 = getWorkingDirectory() + "/src/test/resources/BBNet1_ptrn.xml";
-    public static final String XML_PATTERN_BLIZZARDBATTLENET_2 = getWorkingDirectory() + "/src/test/resources/BBNet2_ptrn.xml";
     public static final String XML_RUNTIME_VIRTUALBOX_1 = getWorkingDirectory() + "/runtime/VBox1.xml";
     public static final String XML_PATTERN_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/VBox1_ptrn.xml";
     public static final String XML_RUNTIME_VIRTUALBOX_2 = getWorkingDirectory() + "/runtime/VBox2.xml";

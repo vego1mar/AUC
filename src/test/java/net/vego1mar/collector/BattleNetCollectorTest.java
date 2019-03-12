@@ -1,31 +1,35 @@
 package net.vego1mar.collector;
 
 import java.util.LinkedHashMap;
-import net.vego1mar.rules.OriginExecutorTest;
-import net.vego1mar.xml.OriginXmlTest;
+import net.vego1mar.rules.BattleNetExecutorTest;
+import net.vego1mar.xml.BattleNetXmlTest;
+import net.vego1mar.xml.XmlTest;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class OriginCollectorTest extends CollectorTest {
+public class BattleNetCollectorTest extends CollectorTest {
 
-    public OriginCollectorTest() {
-        super(new OriginExecutorTest());
+    public BattleNetCollectorTest() {
+        super(new BattleNetExecutorTest());
     }
 
     @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
+        XmlTest xmlTest = new BattleNetXmlTest();
+
         return new LinkedHashMap<>() {
             {
-                put(new OriginXmlTest().getXmlPattern1(), "https://www.majorgeeks.com/files/details/origin_for_pc.html");
+                put(xmlTest.getXmlPattern1(), "https://eu.battle.net/account/download/#bnetapp");
+                put(xmlTest.getXmlPattern2(), "https://www.instalki.pl/programy/download/Windows/akcesoria/Blizzard.html");
             }
         };
     }
 
     @Override protected @NotNull String getAppName() {
-        return "EA Origin";
+        return "Activision Blizzard Battle.Net";
     }
 
-    @Test @Ignore public void testCollectingFromSet1Online() {
+    @Test @Ignore public void testCollectingOnline() {
         // given
         // when
         getCollector().gatherInformation();

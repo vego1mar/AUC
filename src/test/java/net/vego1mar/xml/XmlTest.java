@@ -10,30 +10,50 @@ import org.junit.Test;
 
 public abstract class XmlTest {
 
-    private String xmlPattern;
-    private String xmlRuntime;
+    private String xmlPattern1;
+    private String xmlPattern2;
+    private String xmlRuntime1;
+    private String xmlRuntime2;
     private ExecutorTest asserter;
 
     protected XmlTest(ExecutorTest asserter) {
         this.asserter = asserter;
-        setXmlRuntime("");
-        setXmlPattern("");
+        setXmlRuntime1("");
+        setXmlRuntime2("");
+        setXmlPattern1("");
+        setXmlPattern2("");
     }
 
-    public String getXmlRuntime() {
-        return xmlRuntime;
+    public String getXmlRuntime1() {
+        return xmlRuntime1;
     }
 
-    protected void setXmlRuntime(@NotNull String xmlRuntime) {
-        this.xmlRuntime = xmlRuntime;
+    protected void setXmlRuntime1(@NotNull String xmlRuntime1) {
+        this.xmlRuntime1 = xmlRuntime1;
     }
 
-    public String getXmlPattern() {
-        return xmlPattern;
+    public String getXmlPattern1() {
+        return xmlPattern1;
     }
 
-    protected void setXmlPattern(@NotNull String xmlPattern) {
-        this.xmlPattern = xmlPattern;
+    protected void setXmlPattern1(@NotNull String xmlPattern1) {
+        this.xmlPattern1 = xmlPattern1;
+    }
+
+    public String getXmlPattern2() {
+        return xmlPattern2;
+    }
+
+    protected void setXmlPattern2(@NotNull String xmlPattern2) {
+        this.xmlPattern2 = xmlPattern2;
+    }
+
+    public String getXmlRuntime2() {
+        return xmlRuntime2;
+    }
+
+    protected void setXmlRuntime2(@NotNull String xmlRuntime2) {
+        this.xmlRuntime2 = xmlRuntime2;
     }
 
     protected ExecutorTest getAsserter() {
@@ -46,11 +66,11 @@ public abstract class XmlTest {
         XmlRulesSetWriter writer = new XmlRulesSetWriter();
 
         // when
-        writer.saveSettings(rulesSet, getXmlRuntime());
+        writer.saveSettings(rulesSet, getXmlRuntime1());
 
         // then
-        String runtime = TestVariables.readFile(getXmlRuntime());
-        String source = TestVariables.readFile(getXmlPattern());
+        String runtime = TestVariables.readFile(getXmlRuntime1());
+        String source = TestVariables.readFile(getXmlPattern1());
         Assert.assertEquals(source, runtime);
     }
 
@@ -59,7 +79,7 @@ public abstract class XmlTest {
         XmlRulesSetReader reader = new XmlRulesSetReader();
 
         // when
-        Deque<Rule> rulesSet = reader.loadSettings(getXmlPattern());
+        Deque<Rule> rulesSet = reader.loadSettings(getXmlPattern1());
 
         // then
         Assert.assertEquals(getAsserter().getRules(1).toString(), rulesSet.toString());

@@ -36,7 +36,7 @@ public class OriginExecutorTest extends ExecutorTest {
     public OriginExecutorTest() {
         final String relationalPath = "/src/test/resources/Origin_wp1.txt";
         final String codePath = Paths.get(getWorkingDirectory(), relationalPath).toString();
-        setWebPage(readFile(codePath));
+        setWebPage1(readFile(codePath));
     }
 
     @Override public Deque<Rule> getRules(int setNo) {
@@ -148,7 +148,7 @@ public class OriginExecutorTest extends ExecutorTest {
     @Test public void testVersionsGrabbingFromSet1() {
         // given
         // rules 1-7
-        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(7), getWebPage());
+        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(7), getWebPage1());
 
         // when
         executor.execute();
@@ -163,7 +163,7 @@ public class OriginExecutorTest extends ExecutorTest {
     @Test public void testDatesGrabbingFromSet1() {
         // given
         // rules 8-12
-        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(12), getWebPage());
+        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(12), getWebPage1());
 
         // when
         executor.execute();
@@ -178,7 +178,7 @@ public class OriginExecutorTest extends ExecutorTest {
     @Test public void testLinksGrabbingFromSet1() {
         // given
         // rules 13-16
-        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(16), getWebPage());
+        RulesExecutor executor = new RulesExecutor(getRulesFromSet1(16), getWebPage1());
 
         // when
         executor.execute();

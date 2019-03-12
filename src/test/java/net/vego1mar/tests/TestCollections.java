@@ -21,7 +21,7 @@ import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
 import net.vego1mar.utils.MethodCreator;
 
-public final class TestCollections {
+@Deprecated public final class TestCollections {
 
     private TestCollections() {
         // This should be a utility class.
@@ -1311,102 +1311,6 @@ public final class TestCollections {
         rulesSet.add(rule22);
         rulesSet.add(rule23);
         rulesSet.add(rule24);
-
-        return rulesSet;
-    }
-
-    public static Deque<Rule> getRulesForEAOrigin_1() {
-        Deque<Rule> rulesSet = new LinkedList<>();
-
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
-        RetrieveTagsMethod method1 = (RetrieveTagsMethod) rule1.getMethod();
-        method1.setType(RetrieveTagsType.ALL);
-        method1.setTagname("h1");
-
-        Rule rule2 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        ExtractWordMethod method2 = (ExtractWordMethod) rule2.getMethod();
-        method2.setPosition(2);
-
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
-        RemoveCharactersMethod method3 = (RemoveCharactersMethod) rule3.getMethod();
-        method3.setSigns("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/<=\"\n");
-
-        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
-
-        Rule rule5 = new Rule(new Target(In.COLLECTION, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
-        method5.setPosition(6);
-        Target target5 = (Target) rule5.getTarget();
-        target5.version(Platforms.ALL_SUPPORTED);
-
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        Target target6 = (Target) rule6.getTarget();
-        target6.version(Platforms.WINDOWS);
-
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        Target target7 = (Target) rule7.getTarget();
-        target7.version(Platforms.MAC_OS_X);
-
-        Rule rule8 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
-        FirstOfMethod method8 = (FirstOfMethod) rule8.getMethod();
-        method8.setType(FirstOfType.STRING);
-        method8.setText("<strong>Date:");
-
-        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
-        GrabUntilMethod method9 = (GrabUntilMethod) rule9.getMethod();
-        method9.setCharStop('\n');
-
-        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
-        TrimMethod method10 = (TrimMethod) rule10.getMethod();
-        method10.setSide(TrimSide.LEFT);
-        method10.setNumberOf(23);
-        Target target10 = (Target) rule10.getTarget();
-        target10.date(Platforms.ALL_SUPPORTED);
-
-        Rule rule11 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        Target target11 = (Target) rule11.getTarget();
-        target11.date(Platforms.WINDOWS);
-
-        Rule rule12 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        Target target12 = (Target) rule12.getTarget();
-        target12.date(Platforms.MAC_OS_X);
-
-        Rule rule13 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
-        RemoveCharactersMethod method13 = (RemoveCharactersMethod) rule13.getMethod();
-        method13.setSigns("0123456789/");
-
-        Rule rule14 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
-        PrependMethod method14 = (PrependMethod) rule14.getMethod();
-        method14.setText("https://www.dm.origin.com/download/legacy");
-        Target target14 = (Target) rule14.getTarget();
-        target14.linkID(LinksID.WINDOWS_X86_EXE);
-
-        Rule rule15 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
-        ExtractWordMethod method15 = (ExtractWordMethod) rule15.getMethod();
-        method15.setPosition(2);
-
-        Rule rule16 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
-        PrependMethod method16 = (PrependMethod) rule16.getMethod();
-        method16.setText("https://www.dm.origin.com/mac/download/legacy");
-        Target target16 = (Target) rule16.getTarget();
-        target16.linkID(LinksID.MAC_OS_X_DMG);
-
-        rulesSet.add(rule1);
-        rulesSet.add(rule2);
-        rulesSet.add(rule3);
-        rulesSet.add(rule4);
-        rulesSet.add(rule5);
-        rulesSet.add(rule6);
-        rulesSet.add(rule7);
-        rulesSet.add(rule8);
-        rulesSet.add(rule9);
-        rulesSet.add(rule10);
-        rulesSet.add(rule11);
-        rulesSet.add(rule12);
-        rulesSet.add(rule13);
-        rulesSet.add(rule14);
-        rulesSet.add(rule15);
-        rulesSet.add(rule16);
 
         return rulesSet;
     }

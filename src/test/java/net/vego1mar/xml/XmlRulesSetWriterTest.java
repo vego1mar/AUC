@@ -8,7 +8,7 @@ import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class XmlRulesSetWriterTest {
+@Deprecated public class XmlRulesSetWriterTest {
 
     @Test public void saveSettings_1() {
         // given
@@ -178,20 +178,6 @@ public class XmlRulesSetWriterTest {
         String source2 = TestVariables.readFile(TestVariables.XML_PATTERN_VIRTUALBOX_B);
         Assert.assertEquals(source1, runtime1);
         Assert.assertEquals(source2, runtime2);
-    }
-
-    @Test public void saveSettings_EAOrigin() {
-        // given
-        Deque<Rule> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_ORIGIN_1);
-
-        // then
-        String runtime1 = TestVariables.readFile(TestVariables.XML_RUNTIME_ORIGIN_1);
-        String source1 = TestVariables.readFile(TestVariables.XML_PATTERN_ORIGIN_1);
-        Assert.assertEquals(source1, runtime1);
     }
 
 }

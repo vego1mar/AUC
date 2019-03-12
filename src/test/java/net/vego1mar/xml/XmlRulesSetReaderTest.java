@@ -8,7 +8,7 @@ import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class XmlRulesSetReaderTest {
+@Deprecated public class XmlRulesSetReaderTest {
 
     @Test public void loadSettings_7Zip() {
         // given
@@ -106,17 +106,6 @@ public class XmlRulesSetReaderTest {
         // then
         Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_A().toString(), rulesSet1.toString());
         Assert.assertEquals(TestCollections.getRulesForOracleVirtualBox_B().toString(), rulesSet2.toString());
-    }
-
-    @Test public void loadSettings_EAOrigin() {
-        // given
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet1 = reader.loadSettings(TestVariables.XML_PATTERN_ORIGIN_1);
-
-        // then
-        Assert.assertEquals(TestCollections.getRulesForEAOrigin_1().toString(), rulesSet1.toString());
     }
 
 }

@@ -5,10 +5,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import net.vego1mar.properties.enumerators.Platforms;
+import org.jetbrains.annotations.Contract;
 
-public class PlatformsProperty implements Serializable {
+public final class PlatformsProperty implements Serializable {
 
-    private Map<Platforms, String> platforms;
+    private final Map<Platforms, String> platforms;
 
     public PlatformsProperty() {
         platforms = Collections.synchronizedMap(new HashMap<>());
@@ -34,7 +35,7 @@ public class PlatformsProperty implements Serializable {
         platforms.put(platform, item);
     }
 
-    public Map<Platforms, String> getPlatforms() {
+    @Contract(pure = true) public Map<Platforms, String> getPlatforms() {
         return platforms;
     }
 }

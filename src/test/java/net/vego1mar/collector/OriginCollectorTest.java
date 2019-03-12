@@ -1,29 +1,28 @@
 package net.vego1mar.collector;
 
 import java.util.LinkedHashMap;
-import net.vego1mar.rules.SourceTreeExecutorTest;
-import net.vego1mar.xml.SourceTreeXmlTest;
-import org.jetbrains.annotations.Contract;
+import net.vego1mar.rules.OriginExecutorTest;
+import net.vego1mar.xml.OriginXmlTest;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class SourceTreeCollectorTest extends CollectorTest {
+public class OriginCollectorTest extends CollectorTest {
 
-    public SourceTreeCollectorTest() {
-        super(new SourceTreeExecutorTest());
+    public OriginCollectorTest() {
+        super(new OriginExecutorTest());
     }
 
-    @Override @NotNull @Contract(" -> new") public LinkedHashMap<String, String> getExecutionOrder() {
+    @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new SourceTreeXmlTest().getXmlPattern(), "https://www.sourcetreeapp.com/");
+                put(new OriginXmlTest().getXmlPattern(), "https://www.majorgeeks.com/files/details/origin_for_pc.html");
             }
         };
     }
 
-    @Override @NotNull @Contract(pure = true) public String getAppName() {
-        return "Atlassian SourceTree";
+    @Override protected @NotNull String getAppName() {
+        return "EA Origin";
     }
 
     @Test @Ignore public void testCollectingFromSet1Online() {
@@ -35,4 +34,5 @@ public class SourceTreeCollectorTest extends CollectorTest {
         getExecutorAsserter().assertCollectedDataForExpectedOutput(getCollector().getCollectedData());
         getCollectorAsserter().assertCollectorSaveAndLoad(getCollector());
     }
+
 }

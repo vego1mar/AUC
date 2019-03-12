@@ -54,8 +54,6 @@ public final class TestVariables {
     public static final String XML_PATTERN_VIRTUALBOX_A = getWorkingDirectory() + "/src/test/resources/VBox_A_ptrn.xml";
     public static final String XML_RUNTIME_VIRTUALBOX_B = getWorkingDirectory() + "/runtime/VBox_B.xml";
     public static final String XML_PATTERN_VIRTUALBOX_B = getWorkingDirectory() + "/src/test/resources/VBox_B_ptrn.xml";
-    public static final String XML_PATTERN_ORIGIN_1 = getWorkingDirectory() + "/src/test/resources/Origin1_ptrn.xml";
-    public static final String XML_RUNTIME_ORIGIN_1 = getWorkingDirectory() + "/runtime/Origin1.xml";
     public static final String XML_CONSOLE_RUNNER_DIR = getWorkingDirectory() + "/src/test/resources/";
     public static final String XML_CONSOLE_RUNNER_OUTFILE = getWorkingDirectory() + "/src/test/resources/runner.txt";
     private static final Logger log = Logger.getLogger(TestVariables.class);

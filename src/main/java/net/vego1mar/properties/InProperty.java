@@ -2,9 +2,10 @@ package net.vego1mar.properties;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-public class InProperty {
+public final class InProperty {
 
     private String code;
     private String content;
@@ -16,7 +17,7 @@ public class InProperty {
         collection = new ArrayList<>();
     }
 
-    public String getCode() {
+    @Contract(pure = true) public String getCode() {
         return code;
     }
 
@@ -24,7 +25,7 @@ public class InProperty {
         this.code = code;
     }
 
-    public String getContent() {
+    @Contract(pure = true) public String getContent() {
         return content;
     }
 
@@ -32,7 +33,7 @@ public class InProperty {
         this.content = content;
     }
 
-    public List<String> getCollection() {
+    @Contract(pure = true) public List<String> getCollection() {
         return collection;
     }
 

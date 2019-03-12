@@ -18,7 +18,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class RulesExecutorTest {
+@Deprecated public class RulesExecutorTest {
 
     private static final Logger log = Logger.getLogger(RulesExecutorTest.class);
     private static final String htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.CODE_7ZIP);
@@ -351,32 +351,6 @@ public class RulesExecutorTest {
             useAsProperty2.getHashes().getItem(LinksID.ORACLE_LINUX_OLD_RPM));
         Assert.assertEquals("10dd3c55c685d7bc635a720bd7d62b9ee8aa8b1eee1d7ad617b3d452ab4efe74",
             useAsProperty2.getHashes().getItem(LinksID.FEDORA_RPM));
-    }
-
-    @Test public void execute_EAOrigin() {
-        // given
-        final String CODE_EA_ORIGIN = Paths.get(System.getProperty("user.dir"), "/src/test/resources/Origin_wp1.txt").toString();
-        final String htmlCode1 = TestVariables.readFile(CODE_EA_ORIGIN);
-        final Deque<Rule> rulesSet1 = TestCollections.getRulesForEAOrigin_1();
-        final RulesExecutor executor1 = new RulesExecutor(rulesSet1, htmlCode1);
-
-        // when
-        executor1.execute();
-
-        // then
-        UseAsProperty useAsProperty1 = executor1.getResults();
-        String version = "10.5.35";
-        Assert.assertEquals(version, useAsProperty1.getVersions().getItem(Platforms.ALL_SUPPORTED));
-        Assert.assertEquals(version, useAsProperty1.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals(version, useAsProperty1.getVersions().getItem(Platforms.MAC_OS_X));
-        String date = "02/26/2019";
-        Assert.assertEquals(date.concat(" 08:04 AM"), useAsProperty1.getDates().getItem(Platforms.ALL_SUPPORTED));
-        Assert.assertEquals(date, useAsProperty1.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals(date, useAsProperty1.getDates().getItem(Platforms.MAC_OS_X));
-        Assert.assertEquals("https://www.dm.origin.com/download/legacy",
-            useAsProperty1.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("https://www.dm.origin.com/mac/download/legacy",
-            useAsProperty1.getLinks().getItem(LinksID.MAC_OS_X_DMG));
     }
 
 }

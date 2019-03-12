@@ -5,10 +5,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import net.vego1mar.properties.enumerators.LinksID;
+import org.jetbrains.annotations.Contract;
 
-public class LinksProperty implements Serializable {
+public final class LinksProperty implements Serializable {
 
-    private Map<LinksID, String> links;
+    private final Map<LinksID, String> links;
 
     public LinksProperty() {
         links = Collections.synchronizedMap(new HashMap<>());
@@ -34,7 +35,7 @@ public class LinksProperty implements Serializable {
         return "";
     }
 
-    public Map<LinksID, String> getLinks() {
+    @Contract(pure = true) public Map<LinksID, String> getLinks() {
         return links;
     }
 }

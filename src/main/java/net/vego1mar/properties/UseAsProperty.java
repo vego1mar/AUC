@@ -1,13 +1,14 @@
 package net.vego1mar.properties;
 
 import java.io.Serializable;
+import org.jetbrains.annotations.Contract;
 
-public class UseAsProperty implements Serializable {
+public final class UseAsProperty implements Serializable {
 
-    private PlatformsProperty versions;
-    private PlatformsProperty dates;
-    private LinksProperty links;
-    private LinksProperty hashes;
+    private final PlatformsProperty versions;
+    private final PlatformsProperty dates;
+    private final LinksProperty links;
+    private final LinksProperty hashes;
 
     public UseAsProperty() {
         versions = new PlatformsProperty();
@@ -16,19 +17,19 @@ public class UseAsProperty implements Serializable {
         hashes = new LinksProperty();
     }
 
-    public PlatformsProperty getVersions() {
+    @Contract(pure = true) public PlatformsProperty getVersions() {
         return versions;
     }
 
-    public PlatformsProperty getDates() {
+    @Contract(pure = true) public PlatformsProperty getDates() {
         return dates;
     }
 
-    public LinksProperty getLinks() {
+    @Contract(pure = true) public LinksProperty getLinks() {
         return links;
     }
 
-    public LinksProperty getHashes() {
+    @Contract(pure = true) public LinksProperty getHashes() {
         return hashes;
     }
 }

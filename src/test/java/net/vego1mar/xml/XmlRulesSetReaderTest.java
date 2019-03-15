@@ -31,21 +31,6 @@ import org.junit.Test;
         Assert.assertEquals(TestCollections.getRulesForAimp_1().toString(), rulesSet.toString());
     }
 
-    @Test public void loadSettings_JetClean() {
-        // given
-        Deque<Rule> sourceSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<Rule> sourceSet2 = TestCollections.getRulesForJetClean_2();
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet1 = reader.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_1);
-        Deque<Rule> rulesSet2 = reader.loadSettings(TestVariables.XML_PATTERN_JETCLEAN_2);
-
-        // then
-        Assert.assertEquals(sourceSet1.toString(), rulesSet1.toString());
-        Assert.assertEquals(sourceSet2.toString(), rulesSet2.toString());
-    }
-
     @Test public void loadSettings_OracleVirtualBox() {
         // given
         XmlRulesSetReader reader = new XmlRulesSetReader();

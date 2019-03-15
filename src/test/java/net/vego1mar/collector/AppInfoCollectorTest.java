@@ -171,29 +171,6 @@ import org.junit.Test;
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY).isEmpty());
     }
 
-    @Test public void class_JetClean_online() {
-        // given
-        final Map<String, String> execOrder = new LinkedHashMap<>() {
-            {
-                put(TestVariables.XML_PATTERN_JETCLEAN_1, "https://www.majorgeeks.com/mg/get/jetclean,1.html");
-                put(TestVariables.XML_PATTERN_JETCLEAN_2, "https://www.majorgeeks.com/files/details/jetclean.html");
-            }
-        };
-        final String appName = "Bluesprig JetClean";
-        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-
-        // when
-        collector1.gatherInformation();
-        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
-        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
-
-//        assertCommonCollectorFields(collector1, collector2);
-        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
-        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
-    }
-
     @Test public void class_OracleVirtualBox_online() {
         // given
         final String url1 = "https://www.virtualbox.org/wiki/Downloads";

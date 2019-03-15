@@ -23,8 +23,6 @@ import org.junit.Test;
     private static final String htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.CODE_7ZIP);
     private static final String htmlCodeOfAimpWebPage1 = TestVariables.readFile(TestVariables.CODE_AIMP_1);
     private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
-    private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
-    private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
 
     @Test public void execute_7Zip() throws Exception {
         // given
@@ -118,26 +116,6 @@ import org.junit.Test;
             useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY));
         Assert.assertEquals("http://www.aimp.ru/files/android/aimp_2.80.631.apk",
             useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_APK));
-    }
-
-    @Test public void execute_JetClean() throws Exception {
-        // given
-        Deque<Rule> rulesSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<Rule> rulesSet2 = TestCollections.getRulesForJetClean_2();
-        RulesExecutor executor = new RulesExecutor(rulesSet1, htmlCodeOfJetCleanWebPage1);
-
-        // when
-        executor.execute();
-        executor.renew(rulesSet2, htmlCodeOfJetCleanWebPage2);
-        executor.execute();
-
-        // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(executor);
-        Assert.assertEquals("1.5.0.129", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("02/26/2016", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
     }
 
     @Test public void execute_OracleVirtualBox() {

@@ -56,25 +56,6 @@ import org.junit.Test;
         Assert.assertEquals(source2, runtime2);
     }
 
-    @Test public void saveSettings_JetClean() {
-        // given
-        Deque<Rule> rulesSet1 = TestCollections.getRulesForJetClean_1();
-        Deque<Rule> rulesSet2 = TestCollections.getRulesForJetClean_2();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet1, TestVariables.XML_RUNTIME_JETCLEAN_1);
-        writer.saveSettings(rulesSet2, TestVariables.XML_RUNTIME_JETCLEAN_2);
-
-        // then
-        String runtime1 = TestVariables.readFile(TestVariables.XML_RUNTIME_JETCLEAN_1);
-        String runtime2 = TestVariables.readFile(TestVariables.XML_RUNTIME_JETCLEAN_2);
-        String source1 = TestVariables.readFile(TestVariables.XML_PATTERN_JETCLEAN_1);
-        String source2 = TestVariables.readFile(TestVariables.XML_PATTERN_JETCLEAN_2);
-        Assert.assertEquals(source1, runtime1);
-        Assert.assertEquals(source2, runtime2);
-    }
-
     @Test public void saveSettings_OracleVirtualBox() {
         // given
         Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();

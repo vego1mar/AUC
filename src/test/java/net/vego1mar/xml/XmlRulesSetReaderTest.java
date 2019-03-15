@@ -2,7 +2,6 @@ package net.vego1mar.xml;
 
 import java.util.Deque;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.rules.SourceTreeExecutorTest;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -56,17 +55,6 @@ import org.junit.Test;
 
         // then
         Assert.assertEquals(TestCollections.getRulesForTeraCopy_1().toString(), rulesSet.toString());
-    }
-
-    @Test public void loadSettings_PotPlayer() {
-        // given
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_POTPLAYER);
-
-        // then
-        Assert.assertEquals(TestCollections.getRulesForPotPlayer_1().toString(), rulesSet.toString());
     }
 
     @Test public void loadSettings_OracleVirtualBox() {

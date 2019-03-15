@@ -8,6 +8,8 @@ public abstract class ExecutorTest {
 
     private String webPage1;
     private String webPage2;
+    private String filePath1;
+    private String filePath2;
 
     protected ExecutorTest() {
         setWebPage1("");
@@ -28,6 +30,22 @@ public abstract class ExecutorTest {
 
     protected void setWebPage2(@NotNull String webPage2) {
         this.webPage2 = webPage2;
+    }
+
+    public String getFilePath1() {
+        return filePath1;
+    }
+
+    protected void setFilePath1(@NotNull String filePath1) {
+        this.filePath1 = filePath1;
+    }
+
+    public String getFilePath2() {
+        return filePath2;
+    }
+
+    protected void setFilePath2(@NotNull String filePath2) {
+        this.filePath2 = filePath2;
     }
 
     public abstract Deque<Rule> getRules(int setNo);

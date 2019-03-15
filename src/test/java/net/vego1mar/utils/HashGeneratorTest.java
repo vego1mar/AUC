@@ -1,6 +1,6 @@
 package net.vego1mar.utils;
 
-import net.vego1mar.tests.TestVariables;
+import net.vego1mar.rules.PotPlayerExecutorTest;
 import net.vego1mar.utils.enumerators.HashType;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,14 +9,15 @@ public class HashGeneratorTest {
 
     @Test public void calculate_PotPlayer() {
         // when
-        String hash1 = HashGenerator.calculate(TestVariables.CODE_POTPLAYER, HashType.MD5);
-        String hash2 = HashGenerator.calculate(TestVariables.CODE_POTPLAYER, HashType.SHA_1);
-        String hash3 = HashGenerator.calculate(TestVariables.CODE_POTPLAYER, HashType.SHA_256);
+        final String fileName = new PotPlayerExecutorTest().getFilePath1();
+        final String hash1 = HashGenerator.calculate(fileName, HashType.MD5);
+        final String hash2 = HashGenerator.calculate(fileName, HashType.SHA_1);
+        final String hash3 = HashGenerator.calculate(fileName, HashType.SHA_256);
 
         // then
-        Assert.assertEquals("A703485C7184E7807C5D1C3ECEDBFB67", hash1.toUpperCase());
-        Assert.assertEquals("2FDC8C70C356CA2BB6BEC33A9E6BBCB9B79239A3", hash2.toUpperCase());
-        Assert.assertEquals("DDEEB125C198A1D4DC5F1191FF71264B4DB5D739F36F8E2DFE4BCD01BD828AD4", hash3.toUpperCase());
+        Assert.assertEquals("DFAB947E6D16721A98E5EF6B22C228AF", hash1.toUpperCase());
+        Assert.assertEquals("B56EC9E24A5B251CAD51C2330EFCC00857D89519", hash2.toUpperCase());
+        Assert.assertEquals("F8875E75BE97EEE133651F59950649F2FD0506CD920D6F2A474A3F03677A49B1", hash3.toUpperCase());
     }
 
 }

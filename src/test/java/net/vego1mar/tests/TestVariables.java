@@ -14,7 +14,6 @@ public final class TestVariables {
     public static final String CODE_JETCLEAN_1 = getWorkingDirectory() + "/src/test/resources/jetclean_wp.txt";
     public static final String CODE_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/jetclean_wp2.txt";
     public static final String CODE_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_wp.txt";
-    public static final String CODE_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_wp.txt";
     public static final String CODE_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp1.txt";
     public static final String CODE_VIRTUALBOX_2 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp2.txt";
     public static final String CODE_VIRTUALBOX_3 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp3.txt";
@@ -31,8 +30,6 @@ public final class TestVariables {
     public static final String XML_PATTERN_JETCLEAN_2 = getWorkingDirectory() + "/src/test/resources/JetClean02_settings__ptrn.xml";
     public static final String XML_RUNTIME_TERACOPY = getWorkingDirectory() + "/runtime/TeraCopy_settings.xml";
     public static final String XML_PATTERN_TERACOPY = getWorkingDirectory() + "/src/test/resources/TeraCopy_set__ptrn.xml";
-    public static final String XML_RUNTIME_POTPLAYER = getWorkingDirectory() + "/runtime/PotPlayer_settings.xml";
-    public static final String XML_PATTERN_POTPLAYER = getWorkingDirectory() + "/src/test/resources/PotPlayer_set__ptrn.xml";
     public static final String XML_RUNTIME_RULESSETWRITER = getWorkingDirectory() + "/runtime/XmlRulesSetWriter_settings.xml";
     public static final String XML_PATTERN_RULESSETWRITER = getWorkingDirectory() + "/src/test/resources/XmlRulesSetWriter__ptrn.xml";
     public static final String XML_RUNTIME_VIRTUALBOX_1 = getWorkingDirectory() + "/runtime/VBox1.xml";

@@ -34,10 +34,12 @@ public class BattleNetExecutorTest extends ExecutorTest {
     public BattleNetExecutorTest() {
         final String relationalPath1 = "/src/test/resources/BlizzardBattleNet1_wp.txt";
         final String codePath1 = Paths.get(getWorkingDirectory(), relationalPath1).toString();
-        setWebPage1(readFile(codePath1));
+        setFilePath1(codePath1);
+        setWebPage1(readFile(getFilePath1()));
         final String relationalPath2 = "/src/test/resources/BlizzardBattleNet2_wp.txt";
         final String codePath2 = Paths.get(getWorkingDirectory(), relationalPath2).toString();
-        setWebPage2(readFile(codePath2));
+        setFilePath2(codePath2);
+        setWebPage2(readFile(getFilePath2()));
     }
 
     @Override public Deque<Rule> getRules(int setNo) {

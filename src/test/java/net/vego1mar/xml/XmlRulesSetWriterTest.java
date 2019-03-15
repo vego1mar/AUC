@@ -2,7 +2,6 @@ package net.vego1mar.xml;
 
 import java.util.Deque;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.rules.SourceTreeExecutorTest;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import org.junit.Assert;
@@ -87,20 +86,6 @@ import org.junit.Test;
         // then
         String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_TERACOPY);
         String source = TestVariables.readFile(TestVariables.XML_PATTERN_TERACOPY);
-        Assert.assertEquals(source, runtime);
-    }
-
-    @Test public void saveSettings_PotPlayer() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForPotPlayer_1();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_POTPLAYER);
-
-        // then
-        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_POTPLAYER);
-        String source = TestVariables.readFile(TestVariables.XML_PATTERN_POTPLAYER);
         Assert.assertEquals(source, runtime);
     }
 

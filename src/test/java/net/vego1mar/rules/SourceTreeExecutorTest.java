@@ -32,7 +32,8 @@ public class SourceTreeExecutorTest extends ExecutorTest {
     public SourceTreeExecutorTest() {
         final String relationalPath = "/src/test/resources/sourcetree_wp.txt";
         final String codePath = Paths.get(getWorkingDirectory(), relationalPath).toString();
-        setWebPage1(readFile(codePath));
+        setFilePath1(codePath);
+        setWebPage1(readFile(getFilePath1()));
     }
 
     private Deque<Rule> getRulesFromSet1(int itemsNo) {

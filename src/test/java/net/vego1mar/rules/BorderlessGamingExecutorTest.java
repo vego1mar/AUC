@@ -35,7 +35,8 @@ public class BorderlessGamingExecutorTest extends ExecutorTest {
     public BorderlessGamingExecutorTest() {
         final String relationalPath = "/src/test/resources/BorderlessGaming_wp.txt";
         final String codePath = Paths.get(getWorkingDirectory(), relationalPath).toString();
-        setWebPage1(readFile(codePath));
+        setFilePath1(codePath);
+        setWebPage1(readFile(getFilePath1()));
     }
 
     @Override public Deque<Rule> getRules(int setNo) {

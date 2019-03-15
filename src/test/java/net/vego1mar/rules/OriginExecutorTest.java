@@ -36,7 +36,8 @@ public class OriginExecutorTest extends ExecutorTest {
     public OriginExecutorTest() {
         final String relationalPath = "/src/test/resources/Origin_wp1.txt";
         final String codePath = Paths.get(getWorkingDirectory(), relationalPath).toString();
-        setWebPage1(readFile(codePath));
+        setFilePath1(codePath);
+        setWebPage1(readFile(getFilePath1()));
     }
 
     @Override public Deque<Rule> getRules(int setNo) {

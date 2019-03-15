@@ -1,7 +1,6 @@
 package net.vego1mar.rules;
 
 import java.lang.reflect.Field;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -27,7 +26,6 @@ import org.junit.Test;
     private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
     private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
-    private static final String htmlCodeOfPotPlayerWebPage = TestVariables.readFile(TestVariables.CODE_POTPLAYER);
 
     @Test public void execute_7Zip() throws Exception {
         // given
@@ -156,24 +154,6 @@ import org.junit.Test;
         Assert.assertEquals("3.26", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("http://www.codesector.com/files/teracopy.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-    }
-
-    @Test public void execute_PotPlayer() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForPotPlayer_1();
-        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfPotPlayerWebPage);
-
-        // when
-        executor.execute();
-
-        // then
-        UseAsProperty useAsProperty = executor.getResults();
-        Assert.assertEquals("1.7.16291", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("2018/12", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("https://daumpotplayer.com/wp-content/uploads/2018/12/PotPlayerSetup64.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_EXE));
     }
 
     @Test public void execute_OracleVirtualBox() {

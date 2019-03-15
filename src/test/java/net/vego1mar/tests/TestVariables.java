@@ -8,15 +8,12 @@ import org.jetbrains.annotations.NotNull;
 
 public final class TestVariables {
 
-    public static final String CODE_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_wp.txt";
     public static final String CODE_AIMP_1 = getWorkingDirectory() + "/src/test/resources/aimp_wp_windows.txt";
     public static final String CODE_AIMP_2 = getWorkingDirectory() + "/src/test/resources/aimp_wp_android.txt";
     public static final String CODE_VIRTUALBOX_1 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp1.txt";
     public static final String CODE_VIRTUALBOX_2 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp2.txt";
     public static final String CODE_VIRTUALBOX_3 = getWorkingDirectory() + "/src/test/resources/OracleVBox_wp3.txt";
     public static final String CODE_VIRTUALBOX_AB = getWorkingDirectory() + "/src/test/resources/OracleVBox_wpAB.txt";
-    public static final String XML_RUNTIME_7ZIP = getWorkingDirectory() + "/runtime/7zip_settings.xml";
-    public static final String XML_PATTERN_7ZIP = getWorkingDirectory() + "/src/test/resources/7zip_settings__pattern.xml";
     public static final String XML_RUNTIME_AIMP_1 = getWorkingDirectory() + "/runtime/aimp1_settings.xml";
     public static final String XML_PATTERN_AIMP_1 = getWorkingDirectory() + "/src/test/resources/aimp1_settings__ptrn.xml";
     public static final String XML_RUNTIME_AIMP_2 = getWorkingDirectory() + "/runtime/aimp2_settings.xml";

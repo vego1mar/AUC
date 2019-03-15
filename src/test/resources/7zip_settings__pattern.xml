@@ -36,7 +36,7 @@
     <target>
       <in>COLLECTION</in>
       <useAs>VERSIONS</useAs>
-      <version>WINDOWS</version>
+      <version>ALL_SUPPORTED</version>
     </target>
     <method>
       <methodType>EXTRACT_WORD</methodType>
@@ -57,7 +57,7 @@
     <target>
       <in>CONTENT</in>
       <useAs>DATES</useAs>
-      <date>WINDOWS</date>
+      <date>ALL_SUPPORTED</date>
     </target>
     <method>
       <methodType>REMOVE_CHARACTERS</methodType>

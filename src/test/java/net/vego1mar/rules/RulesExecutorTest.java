@@ -1,94 +1,20 @@
 package net.vego1mar.rules;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
 import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.concurrent.CyclicBarrier;
 import net.vego1mar.properties.UseAsProperty;
 import net.vego1mar.properties.enumerators.LinksID;
 import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
 import net.vego1mar.utils.ReflectionHelper;
-import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 @Deprecated public class RulesExecutorTest {
 
-    private static final Logger log = Logger.getLogger(RulesExecutorTest.class);
-    private static final String htmlCodeOf7ZipWebPage = TestVariables.readFile(TestVariables.CODE_7ZIP);
     private static final String htmlCodeOfAimpWebPage1 = TestVariables.readFile(TestVariables.CODE_AIMP_1);
     private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
-
-    @Test public void execute_7Zip() throws Exception {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesFor7Zip_1();
-        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet, htmlCodeOf7ZipWebPage);
-
-        // when
-        rulesExecutor.execute();
-
-        // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
-        Assert.assertEquals("18.05", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("2018-04-30", useAsProperty.getDates().getItem(Platforms.WINDOWS).trim());
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_EXE));
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805-extra.7z", useAsProperty.getLinks().getItem(LinksID.WINDOWS_ANY_7Z));
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805-src.7z", useAsProperty.getLinks().getItem(LinksID.SOURCECODE_ANY_7Z));
-        Assert.assertEquals("https://www.7-zip.org/a/lzma1805.7z", useAsProperty.getLinks().getItem(LinksID.SDK_ANY_7Z));
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805.msi", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_MSI));
-        Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.msi", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_MSI));
-    }
-
-    @Ignore @Test public void executeMultithreading_7Zip() throws Exception {
-        // given
-        List<RulesExecutor> rulesExecutors = Arrays.asList(
-            new RulesExecutor(TestCollections.getRulesFor7Zip_1(), htmlCodeOf7ZipWebPage),
-            new RulesExecutor(TestCollections.getRulesFor7Zip_1(), htmlCodeOf7ZipWebPage)
-        );
-
-        CyclicBarrier barrier = new CyclicBarrier(rulesExecutors.size());
-        List<Thread> threads = new LinkedList<>();
-
-        for (RulesExecutor executor : rulesExecutors) {
-            threads.add(new Thread(() -> {
-                try {
-                    executor.execute();
-                    barrier.await();
-                } catch (Exception exp) {
-                    log.error(exp);
-                }
-            }));
-        }
-
-        // when
-        for (Thread thread : threads) {
-            thread.start();
-        }
-
-        barrier.await();
-
-        // then
-        for (RulesExecutor executor : rulesExecutors) {
-            Field ruleExecutor = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-            UseAsProperty useAsProperty = (UseAsProperty) ruleExecutor.get(executor);
-            Assert.assertEquals("18.05", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-            Assert.assertEquals("2018-04-30", useAsProperty.getDates().getItem(Platforms.WINDOWS).trim());
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.exe", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_EXE));
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805-extra.7z", useAsProperty.getLinks().getItem(LinksID.WINDOWS_ANY_7Z));
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805-src.7z", useAsProperty.getLinks().getItem(LinksID.SOURCECODE_ANY_7Z));
-            Assert.assertEquals("https://www.7-zip.org/a/lzma1805.7z", useAsProperty.getLinks().getItem(LinksID.SDK_ANY_7Z));
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805.msi", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_MSI));
-            Assert.assertEquals("https://www.7-zip.org/a/7z1805-x64.msi", useAsProperty.getLinks().getItem(LinksID.WINDOWS_X64_MSI));
-        }
-    }
 
     @Test public void execute_AIMP() throws Exception {
         // given

@@ -1,48 +1,15 @@
 package net.vego1mar.rules;
 
-import java.lang.reflect.Field;
 import java.util.Deque;
 import net.vego1mar.properties.UseAsProperty;
 import net.vego1mar.properties.enumerators.LinksID;
 import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.tests.TestCollections;
 import net.vego1mar.tests.TestVariables;
-import net.vego1mar.utils.ReflectionHelper;
 import org.junit.Assert;
 import org.junit.Test;
 
 @Deprecated public class RulesExecutorTest {
-
-    private static final String htmlCodeOfAimpWebPage1 = TestVariables.readFile(TestVariables.CODE_AIMP_1);
-    private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
-
-    @Test public void execute_AIMP() throws Exception {
-        // given
-        Deque<Rule> rulesSet1 = TestCollections.getRulesForAimp_1();
-        Deque<Rule> rulesSet2 = TestCollections.getRulesForAimp_2();
-        RulesExecutor rulesExecutor = new RulesExecutor(rulesSet1, htmlCodeOfAimpWebPage1);
-
-        // when
-        rulesExecutor.execute();
-        rulesExecutor.renew(rulesSet2, htmlCodeOfAimpWebPage2);
-        rulesExecutor.execute();
-
-        // then
-        Field executor2 = ReflectionHelper.getField(RulesExecutor.class, "useAsProperty");
-        UseAsProperty useAsProperty = (UseAsProperty) executor2.get(rulesExecutor);
-        Assert.assertEquals("v4.51, build 2084", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("01.12.2018", useAsProperty.getDates().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("acc1353719050e5fa6f28e8d296078a4", useAsProperty.getHashes().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("http://aimp.su/storage/acc1353719050e5fa6f28e8d296078a4/aimp_4.51.2084.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-        Assert.assertEquals("v2.80, build 631", useAsProperty.getVersions().getItem(Platforms.ANDROID));
-        Assert.assertEquals("22.10.2018", useAsProperty.getDates().getItem(Platforms.ANDROID));
-        Assert.assertEquals("1fa56dc3b88e3979875f6f4065261ab5", useAsProperty.getHashes().getItem(LinksID.ANDROID_X86ARM_APK));
-        Assert.assertEquals("https://play.google.com/store/apps/details?id=com.aimp.player",
-            useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY));
-        Assert.assertEquals("http://www.aimp.ru/files/android/aimp_2.80.631.apk",
-            useAsProperty.getLinks().getItem(LinksID.ANDROID_X86ARM_APK));
-    }
 
     @Test public void execute_OracleVirtualBox() {
         // given

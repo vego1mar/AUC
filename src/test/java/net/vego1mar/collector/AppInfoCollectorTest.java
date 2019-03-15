@@ -2,7 +2,6 @@ package net.vego1mar.collector;
 
 import static net.vego1mar.tests.TestVariables.getWorkingDirectory;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.nio.file.Paths;
 import java.util.LinkedHashMap;
@@ -60,34 +59,6 @@ import org.junit.Test;
 
         // then
         assertCommonCollectorFields(collector1, collector2);
-    }
-
-    @Test public void class_AIMP_online() {
-        // given
-        final Map<String, String> execOrder = new LinkedHashMap<>() {
-            {
-                put(TestVariables.XML_PATTERN_AIMP_1, "http://www.aimp.ru/?do=download&os=windows");
-                put(TestVariables.XML_PATTERN_AIMP_2, "http://www.aimp.ru/?do=download&os=android");
-            }
-        };
-        final String appName = "AIMP";
-        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-
-        // when
-        collector1.gatherInformation();
-        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
-        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
-
-        // then
-//        assertCommonCollectorFields(collector1, collector2);
-        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
-        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.ANDROID));
-        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.ANDROID).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getDates().getItem(Platforms.ANDROID).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ANDROID_X86ARM_APK).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.ANDROID_X86ARM_GOOGLEPLAY).isEmpty());
     }
 
     @Test public void class_OracleVirtualBox_online() {

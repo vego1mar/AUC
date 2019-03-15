@@ -87,7 +87,7 @@
     <method>
       <methodType>TRIM</methodType>
       <side>LEFT</side>
-      <numberOf>10</numberOf>
+      <numberOf>22</numberOf>
     </method>
   </rule>
   <rule no="9">
@@ -99,7 +99,7 @@
     <method>
       <methodType>TRIM</methodType>
       <side>RIGHT</side>
-      <numberOf>7</numberOf>
+      <numberOf>18</numberOf>
     </method>
   </rule>
   <rule no="10">

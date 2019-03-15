@@ -1,38 +1,31 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>AIMP</title>
-		<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="AIMP : Free Audio Player : Официальный сайт программы" />
-		<meta name="keywords" content="бесплатная программа, аудиоплеер, free soft, ыщае, аудиоплеер AIMP, freeware, акууцфку, программное обеспечение, слушать музыку, медиаплеер, медиаплеер AIMP, софт, бесплатный софт, AIMP, AIMP Classic, плагины, плагины дл¤ AIMP, настройки AIMP, поддержка AIMP, описание AIMP, эквалайзер, звук, EQ, eq, чистый звук, plugins, здгпшты, хороший плеер" />
-		<meta name="robots" content="all" />
-		<meta name="revisit-after" content="1 days" />
-		<meta name="wot-verification" content="6f5a7f567fbddd8ad094"/>
-		<meta name="theme-color" content="#FF9F19">
-		<meta name="yandex-tableau-widget" content="logo=/v2/theme/images/tile50.png, color=#FF9B19" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		
-		<link rel="apple-touch-icon" href="/v2/theme/images/tile120.png" sizes="120x120">
-		<link rel="apple-touch-icon" href="/v2/theme/images/tile152.png" sizes="152x152">
-		<link rel="apple-touch-icon" href="/v2/theme/images/tile180.png" sizes="180x180">
-		
-		<script type="text/javascript" src="/v2/theme/scripts/lightbox.js"></script>
-		<script type="text/javascript" src="/v2/theme/scripts/slider.js"></script>
-		<script type="text/javascript" src="/v2/theme/scripts/utils.js"></script>
-		
-		<link rel="stylesheet" href="/v2/theme/styles.css" type="text/css" />
-		<link rel="stylesheet" href="/v2/theme/scripts/lightbox.css" type="text/css" media="screen" />
-		
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-		<link rel="alternate" type="application/rss+xml" title="AIMP - RSS" href="/rss.php" />
-		<link rel="alternate" type="application/rss+xml" title="AIMP Catalog - RSS" href="/rss.php?ch=catalog" />
-	</head>
-	<body>
-		
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
+ <head> 
+  <title>AIMP</title> 
+  <meta http-equiv="content-Type" content="text/html; charset=utf-8"> 
+  <meta name="description" content="AIMP : Free Audio Player : Официальный сайт программы"> 
+  <meta name="keywords" content="бесплатная программа, аудиоплеер, free soft, ыщае, аудиоплеер AIMP, freeware, акууцфку, программное обеспечение, слушать музыку, медиаплеер, медиаплеер AIMP, софт, бесплатный софт, AIMP, AIMP Classic, плагины, плагины дл¤ AIMP, настройки AIMP, поддержка AIMP, описание AIMP, эквалайзер, звук, EQ, eq, чистый звук, plugins, здгпшты, хороший плеер"> 
+  <meta name="robots" content="all"> 
+  <meta name="revisit-after" content="1 days"> 
+  <meta name="wot-verification" content="6f5a7f567fbddd8ad094"> 
+  <meta name="theme-color" content="#FF9F19"> 
+  <meta name="yandex-tableau-widget" content="logo=/v2/theme/images/tile50.png, color=#FF9B19"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"> 
+  <link rel="apple-touch-icon" href="/v2/theme/images/tile120.png" sizes="120x120"> 
+  <link rel="apple-touch-icon" href="/v2/theme/images/tile152.png" sizes="152x152"> 
+  <link rel="apple-touch-icon" href="/v2/theme/images/tile180.png" sizes="180x180"> 
+  <script type="text/javascript" src="/v2/theme/scripts/lightbox.js"></script> 
+  <script type="text/javascript" src="/v2/theme/scripts/slider.js"></script> 
+  <script type="text/javascript" src="/v2/theme/scripts/utils.js"></script> 
+  <link rel="stylesheet" href="/v2/theme/styles.css" type="text/css"> 
+  <link rel="stylesheet" href="/v2/theme/scripts/lightbox.css" type="text/css" media="screen"> 
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
+  <link rel="alternate" type="application/rss+xml" title="AIMP - RSS" href="/rss.php"> 
+  <link rel="alternate" type="application/rss+xml" title="AIMP Catalog - RSS" href="/rss.php?ch=catalog"> 
+ </head> 
+ <body> 
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript">
 			(function (d, w, c) {
 				(w[c] = w[c] || []).push(function() {
 					try {
@@ -58,12 +51,15 @@
 					d.addEventListener("DOMContentLoaded", f, false);
 				} else { f(); }
 			})(document, window, "yandex_metrika_callbacks");
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/34143930" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->			
-			
-		<!-- Rating@Mail.ru counter -->
-		<script type="text/javascript">
+		</script> 
+  <noscript>
+   <div>
+    <img src="https://mc.yandex.ru/watch/34143930" style="position:absolute; left:-9999px;" alt="">
+   </div>
+  </noscript> 
+  <!-- /Yandex.Metrika counter --> 
+  <!-- Rating@Mail.ru counter --> 
+  <script type="text/javascript">
 		var _tmr = _tmr || [];
 		_tmr.push({id: "988583", type: "pageView", start: (new Date()).getTime()});
 		(function (d, w) {
@@ -72,291 +68,344 @@
 		   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
 		   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
 		})(document, window);
-		</script><noscript><div style="position:absolute;left:-9999px;">
-		<img src="//top-fwz1.mail.ru/counter?id=988583;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
-		</div></noscript>
-		<!-- //Rating@Mail.ru counter -->
-		
-		<div id="navigator_host" onClick="toggleVisibility('navigator_host')" href="#">
-			<div id="navigator">
-				<div class="scrollbox">
-					<div class="block">
-	<div class="block_header">AIMP</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="/">Главная страница</a></li>
-			<li><a href="?do=awards">Наши награды</a></li>
-			<li><a href="?do=banners">Баннеры</a></li>
-			<li><a href="forum/index.php">Форум</a></li>
-			<li><a href="/blogs/">Блог</a></li>
-			<li><a href="?do=feedback">Обратная связь</a></li>
-		</ul>
-	</div>
-	<div class="block_separator">Для Windows</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="?do=features">Основные функции</a></li>
-			<li><a href="?do=changelog">Список изменений</a></li>
-			<li><a href="/forum/index.php?topic=259.0">Ча.Во.</a></li>
-			<li><a href="?do=download&amp;os=windows">Скачать</a>
-				<ol>
-					<li><a href="?do=download&amp;os=windows&amp;cat=old">Старые версии</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=se">Редактор обложек</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=lng">Редактор локализаций</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=sdk">SDK</a></li>
-				</ol>
-			</li>
-			<li><a href="?do=catalog&amp;os=windows">Дополнения</a>
-				<ol>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=1">Иконки</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=2">Плагины</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=3">Обои</a></li>
-					<li><a href="http://www.aimp.ru/forum/index.php?topic=34387.0">Кодировщики</a></li>
-				</ol>
-			</li>
-		</ul>
-	</div>
-	<div class="block_separator">Для Android</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="?do=features&amp;os=android">Основные функции</a></li>
-			<li><a href="?do=changelog&amp;os=android">Список изменений</a></li>
-			<li><a href="?do=download&amp;os=android">Скачать</a>
-				<ol>
-					<li><a href="?do=download&amp;cat=old&amp;os=android">Старые версии</a></li>
-					<li><a href="?do=download&amp;cat=se&amp;os=android">Редактор обложек</a></li>
-					<li><a href="?do=download&amp;cat=lng">Редактор локализаций</a></li>
-				</ol>				
-			</li>
-				<li><a href="?do=catalog&amp;os=android">Дополнения</a>
-				<ol>
-					<li><a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a></li>
-					<li><a href="?do=catalog&amp;os=android&amp;id=3">Обои</a></li>
-				</ol>
-			</li>
-			<li><a href="/forum/index.php?topic=39542.0">Ча.Во.</a></li>
-		</ul>
-	</div>		
-</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="main_menu">
-	<div class="main_menu_hamburger" onClick="toggleVisibility('navigator_host')" href="#"></div>
-
-	<table align="right">
-	<tr>
-		<td width="80px">
-			<a href="?do=lang&amp;lng=ru" title="Русский язык">RU</a>
-			<a href="?do=lang&amp;lng=en" title="English Language">EN</a>					
-		</td>	
-	</tr>
-	</table>	
-
-	<table align="center" class="main_menu_text_bar">
-	<tr>
-		<td class="main_menu_padding" width="80"></td>
-		<td>
-			<a href="/" title="Главная страница">Главная страница</a>
-			<a href="?do=download" title="Скачать">Скачать</a>
-			<a href="?do=catalog" title="Дополнения">Дополнения</a>
-			<a href="/forum/index.php" title="Форум">Форум</a>
-			<a href="/blogs/" title="Блог">Блог</a>
-			<a href="?do=feedback" title="Обратная связь">Обратная связь</a>
-		</td>
-	</tr>
-	</table>	
-</div>
-		
-		<div id="header">
-			<div id="header_content">
-				<div class="slider" id="preview" title="autoplay:true; frames:7; source:/v2/theme/images/features.png"></div>
-				<div id="header_logo">
-					<a class="button_download_windows" href="?do=download&amp;os=windows">
-						<span class="button_download_text">v4.51 Build 2084  (01.12.2018)</span>
-					</a>
-					<a class="button_download_android" href="?do=download&amp;os=android">
-						<span class="button_download_text">v2.80 Build 631  (22.10.2018)</span>
-					</a>
-				</div>
-			</div>
-		</div>
-			
-		<script type="text/javascript">
+		</script>
+  <noscript>
+   <div style="position:absolute;left:-9999px;"> 
+    <img src="//top-fwz1.mail.ru/counter?id=988583;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru"> 
+   </div>
+  </noscript> 
+  <!-- //Rating@Mail.ru counter --> 
+  <div id="navigator_host" onclick="toggleVisibility('navigator_host')" href="#"> 
+   <div id="navigator"> 
+    <div class="scrollbox"> 
+     <div class="block"> 
+      <div class="block_header">
+       AIMP
+      </div> 
+      <div class="block_content"> 
+       <ul> 
+        <li><a href="/">Главная страница</a></li> 
+        <li><a href="?do=awards">Наши награды</a></li> 
+        <li><a href="?do=banners">Баннеры</a></li> 
+        <li><a href="forum/index.php">Форум</a></li> 
+        <li><a href="/blogs/">Блог</a></li> 
+        <li><a href="?do=feedback">Обратная связь</a></li> 
+       </ul> 
+      </div> 
+      <div class="block_separator">
+       Для Windows
+      </div> 
+      <div class="block_content"> 
+       <ul> 
+        <li><a href="?do=features">Основные функции</a></li> 
+        <li><a href="?do=changelog">Список изменений</a></li> 
+        <li><a href="/forum/index.php?topic=259.0">Ча.Во.</a></li> 
+        <li><a href="?do=download&amp;os=windows">Скачать</a> 
+         <ol> 
+          <li><a href="?do=download&amp;os=windows&amp;cat=old">Старые версии</a></li> 
+          <li><a href="?do=download&amp;os=windows&amp;cat=se">Редактор обложек</a></li> 
+          <li><a href="?do=download&amp;os=windows&amp;cat=lng">Редактор локализаций</a></li> 
+          <li><a href="?do=download&amp;os=windows&amp;cat=sdk">SDK</a></li> 
+         </ol> </li> 
+        <li><a href="?do=catalog&amp;os=windows">Дополнения</a> 
+         <ol> 
+          <li><a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a></li> 
+          <li><a href="?do=catalog&amp;os=windows&amp;id=1">Иконки</a></li> 
+          <li><a href="?do=catalog&amp;os=windows&amp;id=2">Плагины</a></li> 
+          <li><a href="?do=catalog&amp;os=windows&amp;id=3">Обои</a></li> 
+          <li><a href="http://www.aimp.ru/forum/index.php?topic=34387.0">Кодировщики</a></li> 
+         </ol> </li> 
+       </ul> 
+      </div> 
+      <div class="block_separator">
+       Для Android
+      </div> 
+      <div class="block_content"> 
+       <ul> 
+        <li><a href="?do=features&amp;os=android">Основные функции</a></li> 
+        <li><a href="?do=changelog&amp;os=android">Список изменений</a></li> 
+        <li><a href="?do=download&amp;os=android">Скачать</a> 
+         <ol> 
+          <li><a href="?do=download&amp;cat=old&amp;os=android">Старые версии</a></li> 
+          <li><a href="?do=download&amp;cat=se&amp;os=android">Редактор обложек</a></li> 
+          <li><a href="?do=download&amp;cat=lng">Редактор локализаций</a></li> 
+         </ol> </li> 
+        <li><a href="?do=catalog&amp;os=android">Дополнения</a> 
+         <ol> 
+          <li><a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a></li> 
+          <li><a href="?do=catalog&amp;os=android&amp;id=3">Обои</a></li> 
+         </ol> </li> 
+        <li><a href="/forum/index.php?topic=39542.0">Ча.Во.</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="main_menu"> 
+   <div class="main_menu_hamburger" onclick="toggleVisibility('navigator_host')" href="#"></div> 
+   <table align="right"> 
+    <tbody>
+     <tr> 
+      <td width="80px"> <a href="?do=lang&amp;lng=ru" title="Русский язык">RU</a> <a href="?do=lang&amp;lng=en" title="English Language">EN</a> </td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <table align="center" class="main_menu_text_bar"> 
+    <tbody>
+     <tr> 
+      <td class="main_menu_padding" width="80"></td> 
+      <td> <a href="/" title="Главная страница">Главная страница</a> <a href="?do=download" title="Скачать">Скачать</a> <a href="?do=catalog" title="Дополнения">Дополнения</a> <a href="/forum/index.php" title="Форум">Форум</a> <a href="/blogs/" title="Блог">Блог</a> <a href="?do=feedback" title="Обратная связь">Обратная связь</a> </td> 
+     </tr> 
+    </tbody>
+   </table> 
+  </div> 
+  <div id="header"> 
+   <div id="header_content"> 
+    <div class="slider" id="preview" title="autoplay:true; frames:7; source:/v2/theme/images/features.png"></div> 
+    <div id="header_logo"> 
+     <a class="button_download_windows" href="?do=download&amp;os=windows"> <span class="button_download_text">v4.51 Build 2084 (01.12.2018)</span> </a> 
+     <a class="button_download_android" href="?do=download&amp;os=android"> <span class="button_download_text">v2.85 Build 722 (04.03.2019)</span> </a> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
 			zSlider.initialize(document.getElementById("preview"));
-		</script>		
-
-		
-		
-		<div id="page">
-			<table align="center" class="page_content" cellspacing="0">
-			<tr valign="top">
-				<td id="page_left_pane">
-					<div class="block">
-	<div class="block_header">AIMP</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="/">Главная страница</a></li>
-			<li><a href="?do=awards">Наши награды</a></li>
-			<li><a href="?do=banners">Баннеры</a></li>
-			<li><a href="forum/index.php">Форум</a></li>
-			<li><a href="/blogs/">Блог</a></li>
-			<li><a href="?do=feedback">Обратная связь</a></li>
-		</ul>
-	</div>
-	<div class="block_separator">Для Windows</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="?do=features">Основные функции</a></li>
-			<li><a href="?do=changelog">Список изменений</a></li>
-			<li><a href="/forum/index.php?topic=259.0">Ча.Во.</a></li>
-			<li><a href="?do=download&amp;os=windows">Скачать</a>
-				<ol>
-					<li><a href="?do=download&amp;os=windows&amp;cat=old">Старые версии</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=se">Редактор обложек</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=lng">Редактор локализаций</a></li>
-					<li><a href="?do=download&amp;os=windows&amp;cat=sdk">SDK</a></li>
-				</ol>
-			</li>
-			<li><a href="?do=catalog&amp;os=windows">Дополнения</a>
-				<ol>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=1">Иконки</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=2">Плагины</a></li>
-					<li><a href="?do=catalog&amp;os=windows&amp;id=3">Обои</a></li>
-					<li><a href="http://www.aimp.ru/forum/index.php?topic=34387.0">Кодировщики</a></li>
-				</ol>
-			</li>
-		</ul>
-	</div>
-	<div class="block_separator">Для Android</div>
-	<div class="block_content">
-		<ul>
-			<li><a href="?do=features&amp;os=android">Основные функции</a></li>
-			<li><a href="?do=changelog&amp;os=android">Список изменений</a></li>
-			<li><a href="?do=download&amp;os=android">Скачать</a>
-				<ol>
-					<li><a href="?do=download&amp;cat=old&amp;os=android">Старые версии</a></li>
-					<li><a href="?do=download&amp;cat=se&amp;os=android">Редактор обложек</a></li>
-					<li><a href="?do=download&amp;cat=lng">Редактор локализаций</a></li>
-				</ol>				
-			</li>
-				<li><a href="?do=catalog&amp;os=android">Дополнения</a>
-				<ol>
-					<li><a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a></li>
-					<li><a href="?do=catalog&amp;os=android&amp;id=3">Обои</a></li>
-				</ol>
-			</li>
-			<li><a href="/forum/index.php?topic=39542.0">Ча.Во.</a></li>
-		</ul>
-	</div>		
-</div>
-				</td>
-				<td id="page_center_pane">
-					<div class="page_title"><a href="?do=download">Центр загрузок</a> » AIMP for Android</div><div class="card no_font_boosting"><div class="card_content"><h1>AIMP for Android v2.80, build 631</h1><h2>22.10.2018 | 6.53 MByte | <nobr>MD5:1fa56dc3b88e3979875f6f4065261ab5</nobr></h2><table class="card_indent"><tr><th valign="top"><img src="v2/pages/download/icon-aimp.png" alt="Preview"></th><th valign="top"><b>Системные требования:</b><br/>
-	 <ul>
-		<li>OS: Android 4.x / 5.x / 6.x / 7.x / 8.x / 9.0</li>
-		<li>CPU: ARM64 / ARMv7 / x86</li>
-	 </ul><br/>
- 	 
-	 <b>Необходимые разрешения:</b><br/>
-	 <ul>
-		<li>Доступ к вашим файлам необходим для проигрывания музыки с SD-карты</li>
-		<li>Доступ к телефону нужен для того, чтобы ставить проигрывание на паузу / снимать с паузы после звонков при условии, что все действия на изменение аудио фокуса отключены в настройках программы.</li>
-	 </ul><br/>
-	 <b>Скачать с:</b><br/><ul><li><a href='https://play.google.com/store/apps/details?id=com.aimp.player'>Google Play</a></li><li><a href='http://www.aimp.ru/files/android/aimp_2.80.631.apk'>AIMP.RU</a></li></ul></th></tr></table><div class="card_actions"><center><a target="_blank" href="/files/android/EULA_lang-ru.txt">Лицензионное соглашение</a> | <a href="/?do=features&amp;os=android">Основные функции</a> | <a href="/?do=changelog&amp;os=android&amp;ver=280&amp;merge=1">Список изменений</a> | <a href="/?do=download&amp;os=android&amp;cat=old">Старые версии</a></center></div></div></div><br/><div class="page_title">Тестовые версии</div><div class="card no_font_boosting"><div class="card_content"><h1>AIMP for Android v2.85 RC2, build 717</h1><h2>17.12.2018 | 6.32 MByte | <nobr>MD5:31f0093cbee36b3ed60b764fac5ee5f8</nobr></h2><table class="card_indent"><tr><th valign="top"><img src="v2/pages/download/icon-aimp.png" alt="Preview"></th><th valign="top"><b>Системные требования:</b><br/>
-	 <ul>
-		<li>OS: Android 4.x / 5.x / 6.x / 7.x / 8.x / 9.0</li>
-		<li>CPU: ARM64 / ARMv7 / x86</li>
-	 </ul><br/>
- 	 
-	 <b>Необходимые разрешения:</b><br/>
-	 <ul>
-		<li>Доступ к вашим файлам необходим для проигрывания музыки с SD-карты</li>
-		<li>Доступ к телефону нужен для того, чтобы ставить проигрывание на паузу / снимать с паузы после звонков при условии, что все действия на изменение аудио фокуса отключены в настройках программы.</li>
-	 </ul><br/><b>Скачать с:</b><br/><ul><li><a href='https://play.google.com/apps/testing/com.aimp.player'>Google Play</a></li><li><a href='http://www.aimp.ru/files/android/aimp_2.85.717_rc2.apk'>AIMP.RU</a></li></ul></th></tr></table><div class="card_indent"><span style="color: red; font-weight: bold;">Внимание! Это тестовая версия приложения, она может содержать много ошибок!</span><br/><br/></div><div class="card_actions"><center><a target="_blank" href="/files/android/EULA_lang-ru.txt">Лицензионное соглашение</a> | <a href="/?do=features&amp;os=android">Основные функции</a> | <a href="/?do=changelog&amp;os=android&amp;ver=285">Список изменений</a></center></div></div></div>
-				</td>
-				<td id="page_right_pane">
-					<div class="block">
-	<div class="block_header"><nobr>Случайное дополнение</nobr></div>
-	<div class="block_content">
-					<a href="?do=catalog&amp;os=windows&amp;id=0&amp;rec_id=889">
-						<img class="catalog_news" src="/files/windows/skins/m/Morion_sm.jpg" width="160" height="120" alt="Preview" />
-						<br/>
-						Morion
-					</a>
-					<br/>
-					<a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a></div>
-</div><div class="block">
-	<div class="block_header"><nobr>Новые дополнения</nobr></div>
-	<div class="block_content">
-					<a href="?do=catalog&aamp;os=android&amp;id=0&amp;rec_id=1014">
-						<img class="catalog_news" src="/files/android/skins/m/Margo_sm.jpg" width="160" height="120" alt="Preview" />
-						<br/>
-						Margo v2.85
-					</a>
-					<br/>
-					<a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a></div>
-</div><div class="block">
-	<div class="block_header"><nobr>Блог</nobr></div>
-	<div class="block_content"><ul><li><a href="http://www.aimp.ru/blogs/?p=849">AIMP for Android v2.85</a></li><li><a href="http://www.aimp.ru/blogs/?p=791">AIMP for Android v2.80 - Theme Editor</a></li><li><a href="http://www.aimp.ru/blogs/?p=786">AIMP for Android v2.80</a></li><li><a href="http://www.aimp.ru/blogs/?p=771">Планы на 2018</a></li><li><a href="http://www.aimp.ru/blogs/?p=755">AIMP for Android v2.70</a></li></ul></div>
-</div>
-				</td>
-			</tr>
-			</table>
-		</div>
-		
-		<div id="footer_main_menu">
-			<div class="main_menu">
-	<div class="main_menu_hamburger" onClick="toggleVisibility('navigator_host')" href="#"></div>
-
-	<table align="right">
-	<tr>
-		<td width="80px">
-			<a href="?do=lang&amp;lng=ru" title="Русский язык">RU</a>
-			<a href="?do=lang&amp;lng=en" title="English Language">EN</a>					
-		</td>	
-	</tr>
-	</table>	
-
-	<table align="center" class="main_menu_text_bar">
-	<tr>
-		<td class="main_menu_padding" width="80"></td>
-		<td>
-			<a href="/" title="Главная страница">Главная страница</a>
-			<a href="?do=download" title="Скачать">Скачать</a>
-			<a href="?do=catalog" title="Дополнения">Дополнения</a>
-			<a href="/forum/index.php" title="Форум">Форум</a>
-			<a href="/blogs/" title="Блог">Блог</a>
-			<a href="?do=feedback" title="Обратная связь">Обратная связь</a>
-		</td>
-	</tr>
-	</table>	
-</div>
-		</div>
-		
-		<div id="footer_copyrights">
-			© Artem Izmaylov 2006-2019 | All rights reserved
-		</div>
-		
-		<div id="footer_counter">
-			<iframe src="/v2/counters.html" width="460" marginwidth="0" marginheight="0" height="36" scrolling="no" align="middle" frameborder="0"></iframe>
-		</div>
-		
-		<!-- GOOGLE -->
-		<script type="text/javascript">
+		</script> 
+  <div id="page"> 
+   <table align="center" class="page_content" cellspacing="0"> 
+    <tbody>
+     <tr valign="top"> 
+      <td id="page_left_pane"> 
+       <div class="block"> 
+        <div class="block_header">
+         AIMP
+        </div> 
+        <div class="block_content"> 
+         <ul> 
+          <li><a href="/">Главная страница</a></li> 
+          <li><a href="?do=awards">Наши награды</a></li> 
+          <li><a href="?do=banners">Баннеры</a></li> 
+          <li><a href="forum/index.php">Форум</a></li> 
+          <li><a href="/blogs/">Блог</a></li> 
+          <li><a href="?do=feedback">Обратная связь</a></li> 
+         </ul> 
+        </div> 
+        <div class="block_separator">
+         Для Windows
+        </div> 
+        <div class="block_content"> 
+         <ul> 
+          <li><a href="?do=features">Основные функции</a></li> 
+          <li><a href="?do=changelog">Список изменений</a></li> 
+          <li><a href="/forum/index.php?topic=259.0">Ча.Во.</a></li> 
+          <li><a href="?do=download&amp;os=windows">Скачать</a> 
+           <ol> 
+            <li><a href="?do=download&amp;os=windows&amp;cat=old">Старые версии</a></li> 
+            <li><a href="?do=download&amp;os=windows&amp;cat=se">Редактор обложек</a></li> 
+            <li><a href="?do=download&amp;os=windows&amp;cat=lng">Редактор локализаций</a></li> 
+            <li><a href="?do=download&amp;os=windows&amp;cat=sdk">SDK</a></li> 
+           </ol> </li> 
+          <li><a href="?do=catalog&amp;os=windows">Дополнения</a> 
+           <ol> 
+            <li><a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a></li> 
+            <li><a href="?do=catalog&amp;os=windows&amp;id=1">Иконки</a></li> 
+            <li><a href="?do=catalog&amp;os=windows&amp;id=2">Плагины</a></li> 
+            <li><a href="?do=catalog&amp;os=windows&amp;id=3">Обои</a></li> 
+            <li><a href="http://www.aimp.ru/forum/index.php?topic=34387.0">Кодировщики</a></li> 
+           </ol> </li> 
+         </ul> 
+        </div> 
+        <div class="block_separator">
+         Для Android
+        </div> 
+        <div class="block_content"> 
+         <ul> 
+          <li><a href="?do=features&amp;os=android">Основные функции</a></li> 
+          <li><a href="?do=changelog&amp;os=android">Список изменений</a></li> 
+          <li><a href="?do=download&amp;os=android">Скачать</a> 
+           <ol> 
+            <li><a href="?do=download&amp;cat=old&amp;os=android">Старые версии</a></li> 
+            <li><a href="?do=download&amp;cat=se&amp;os=android">Редактор обложек</a></li> 
+            <li><a href="?do=download&amp;cat=lng">Редактор локализаций</a></li> 
+           </ol> </li> 
+          <li><a href="?do=catalog&amp;os=android">Дополнения</a> 
+           <ol> 
+            <li><a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a></li> 
+            <li><a href="?do=catalog&amp;os=android&amp;id=3">Обои</a></li> 
+           </ol> </li> 
+          <li><a href="/forum/index.php?topic=39542.0">Ча.Во.</a></li> 
+         </ul> 
+        </div> 
+       </div> </td> 
+      <td id="page_center_pane"> 
+       <div class="page_title">
+        <a href="?do=download">Центр загрузок</a> » AIMP for Android
+       </div>
+       <div class="card no_font_boosting">
+        <div class="card_content">
+         <h1>AIMP for Android v2.85, build 722</h1>
+         <h2>04.03.2019 | 6.29 MByte | 
+          <nobr>
+           MD5:bbdbee7149b1c83f9a884225a164f70d
+          </nobr></h2>
+         <table class="card_indent">
+          <tbody>
+           <tr>
+            <th valign="top"><img src="v2/pages/download/icon-aimp.png" alt="Preview"></th>
+            <th valign="top"><b>Системные требования:</b><br> 
+             <ul> 
+              <li>OS: Android 4.x / 5.x / 6.x / 7.x / 8.x / 9.0</li> 
+              <li>CPU: ARM64 / ARMv7 / x86</li> 
+             </ul><br> <b>Необходимые разрешения:</b><br> 
+             <ul> 
+              <li>Доступ к вашим файлам необходим для проигрывания музыки с SD-карты</li> 
+              <li>Доступ к телефону нужен для того, чтобы ставить проигрывание на паузу / снимать с паузы после звонков при условии, что все действия на изменение аудио фокуса отключены в настройках программы.</li> 
+             </ul><br> <b>Скачать с:</b><br>
+             <ul>
+              <li><a href="https://play.google.com/store/apps/details?id=com.aimp.player">Google Play</a></li>
+              <li><a href="http://www.aimp.ru/files/android/aimp_2.85.722.apk">AIMP.RU</a></li>
+             </ul></th>
+           </tr>
+          </tbody>
+         </table>
+         <div class="card_actions">
+          <center>
+           <a target="_blank" href="/files/android/EULA_lang-ru.txt">Лицензионное соглашение</a> | 
+           <a href="/?do=features&amp;os=android">Основные функции</a> | 
+           <a href="/?do=changelog&amp;os=android&amp;ver=285&amp;merge=1">Список изменений</a> | 
+           <a href="/?do=download&amp;os=android&amp;cat=old">Старые версии</a>
+          </center>
+         </div>
+        </div>
+       </div><br>
+       <div class="page_title">
+        Тестовые версии
+       </div>
+       <div class="card no_font_boosting">
+        <div class="card_content">
+         <h1>AIMP for Android v2.90 Beta, build 812</h1>
+         <h2>05.03.2019 | 6.11 MByte | 
+          <nobr>
+           MD5:8d1b502dcf36bd7a21753eb5877dd8df
+          </nobr></h2>
+         <table class="card_indent">
+          <tbody>
+           <tr>
+            <th valign="top"><img src="v2/pages/download/icon-aimp.png" alt="Preview"></th>
+            <th valign="top"><b>Системные требования:</b><br> 
+             <ul> 
+              <li>OS: Android 4.x / 5.x / 6.x / 7.x / 8.x / 9.0</li> 
+              <li>CPU: ARM64 / ARMv7 / x86</li> 
+             </ul><br> <b>Необходимые разрешения:</b><br> 
+             <ul> 
+              <li>Доступ к вашим файлам необходим для проигрывания музыки с SD-карты</li> 
+              <li>Доступ к телефону нужен для того, чтобы ставить проигрывание на паузу / снимать с паузы после звонков при условии, что все действия на изменение аудио фокуса отключены в настройках программы.</li> 
+             </ul><br><b>Скачать с:</b><br>
+             <ul>
+              <li><a href="https://play.google.com/apps/testing/com.aimp.player">Google Play</a></li>
+              <li><a href="http://www.aimp.ru/files/android/aimp_2.90.812_beta.apk">AIMP.RU</a></li>
+             </ul></th>
+           </tr>
+          </tbody>
+         </table>
+         <div class="card_indent">
+          <span style="color: red; font-weight: bold;">Внимание! Это тестовая версия приложения, она может содержать много ошибок!</span>
+          <br>
+          <br>
+         </div>
+         <div class="card_actions">
+          <center>
+           <a target="_blank" href="/files/android/EULA_lang-ru.txt">Лицензионное соглашение</a> | 
+           <a href="/?do=features&amp;os=android">Основные функции</a> | 
+           <a href="/?do=changelog&amp;os=android&amp;ver=290">Список изменений</a>
+          </center>
+         </div>
+        </div>
+       </div> </td> 
+      <td id="page_right_pane"> 
+       <div class="block"> 
+        <div class="block_header">
+         <nobr>
+          Случайное дополнение
+         </nobr>
+        </div> 
+        <div class="block_content"> 
+         <a href="?do=catalog&amp;os=windows&amp;id=0&amp;rec_id=167"> <img class="catalog_news" src="/files/windows/skins/a/Aimp_Se7en_AIO_sm.jpg" width="160" height="120" alt="Preview"> <br> AIMP Se7en </a> 
+         <br> 
+         <a href="?do=catalog&amp;os=windows&amp;id=0">Обложки</a>
+        </div> 
+       </div>
+       <div class="block"> 
+        <div class="block_header">
+         <nobr>
+          Новые дополнения
+         </nobr>
+        </div> 
+        <div class="block_content"> 
+         <a href="?do=catalog&amp;os=android&amp;id=0&amp;rec_id=1025"> <img class="catalog_news" src="/files/android/skins/o/Orange_Diamond_sm.png" width="160" height="120" alt="Preview"> <br> Orange Diamond v1.6 </a> 
+         <br> 
+         <a href="?do=catalog&amp;os=android&amp;id=0">Обложки</a>
+        </div> 
+       </div>
+       <div class="block"> 
+        <div class="block_header">
+         <nobr>
+          Блог
+         </nobr>
+        </div> 
+        <div class="block_content">
+         <ul>
+          <li><a href="http://www.aimp.ru/blogs/?p=880">AIMP for Android v2.90</a></li>
+          <li><a href="http://www.aimp.ru/blogs/?p=805">AIMP v4.60</a></li>
+          <li><a href="http://www.aimp.ru/blogs/?p=868">Планы на 2019</a></li>
+          <li><a href="http://www.aimp.ru/blogs/?p=849">AIMP for Android v2.85</a></li>
+          <li><a href="http://www.aimp.ru/blogs/?p=791">AIMP for Android v2.80 - Theme Editor</a></li>
+         </ul>
+        </div> 
+       </div> </td> 
+     </tr> 
+    </tbody>
+   </table> 
+  </div> 
+  <div id="footer_main_menu"> 
+   <div class="main_menu"> 
+    <div class="main_menu_hamburger" onclick="toggleVisibility('navigator_host')" href="#"></div> 
+    <table align="right"> 
+     <tbody>
+      <tr> 
+       <td width="80px"> <a href="?do=lang&amp;lng=ru" title="Русский язык">RU</a> <a href="?do=lang&amp;lng=en" title="English Language">EN</a> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+    <table align="center" class="main_menu_text_bar"> 
+     <tbody>
+      <tr> 
+       <td class="main_menu_padding" width="80"></td> 
+       <td> <a href="/" title="Главная страница">Главная страница</a> <a href="?do=download" title="Скачать">Скачать</a> <a href="?do=catalog" title="Дополнения">Дополнения</a> <a href="/forum/index.php" title="Форум">Форум</a> <a href="/blogs/" title="Блог">Блог</a> <a href="?do=feedback" title="Обратная связь">Обратная связь</a> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div> 
+  <div id="footer_copyrights">
+    © Artem Izmaylov 2006-2019 | All rights reserved 
+  </div> 
+  <div id="footer_counter"> 
+   <iframe src="/v2/counters.html" width="460" marginwidth="0" marginheight="0" height="36" scrolling="no" align="middle" frameborder="0"></iframe> 
+  </div> 
+  <!-- GOOGLE --> 
+  <script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 			document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
+		</script> 
+  <script type="text/javascript">
 			try 
 			{
 				var pageTracker = _gat._getTracker("UA-9501126-1");
 					pageTracker._trackPageview();
 			} catch(err) {}
-		</script>
-		<!-- END OF GOOGLE -->
-	</body>
+		</script> 
+  <!-- END OF GOOGLE -->  
+ </body>
 </html>

@@ -9,17 +9,6 @@ import org.junit.Test;
 
 @Deprecated public class XmlRulesSetReaderTest {
 
-    @Test public void loadSettings_AIMP() {
-        // given
-        XmlRulesSetReader reader = new XmlRulesSetReader();
-
-        // when
-        Deque<Rule> rulesSet = reader.loadSettings(TestVariables.XML_PATTERN_AIMP_1);
-
-        // then
-        Assert.assertEquals(TestCollections.getRulesForAimp_1().toString(), rulesSet.toString());
-    }
-
     @Test public void loadSettings_OracleVirtualBox() {
         // given
         XmlRulesSetReader reader = new XmlRulesSetReader();

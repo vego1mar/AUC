@@ -75,20 +75,6 @@ import org.junit.Test;
         Assert.assertEquals(source2, runtime2);
     }
 
-    @Test public void saveSettings_TeraCopy() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForTeraCopy_1();
-        XmlRulesSetWriter writer = new XmlRulesSetWriter();
-
-        // when
-        writer.saveSettings(rulesSet, TestVariables.XML_RUNTIME_TERACOPY);
-
-        // then
-        String runtime = TestVariables.readFile(TestVariables.XML_RUNTIME_TERACOPY);
-        String source = TestVariables.readFile(TestVariables.XML_PATTERN_TERACOPY);
-        Assert.assertEquals(source, runtime);
-    }
-
     @Test public void saveSettings_OracleVirtualBox() {
         // given
         Deque<Rule> rulesSet1 = TestCollections.getRulesForOracleVirtualBox_1();

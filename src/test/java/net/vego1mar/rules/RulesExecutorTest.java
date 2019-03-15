@@ -25,7 +25,6 @@ import org.junit.Test;
     private static final String htmlCodeOfAimpWebPage2 = TestVariables.readFile(TestVariables.CODE_AIMP_2);
     private static final String htmlCodeOfJetCleanWebPage1 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_1);
     private static final String htmlCodeOfJetCleanWebPage2 = TestVariables.readFile(TestVariables.CODE_JETCLEAN_2);
-    private static final String htmlCodeOfTeraCopyWebPage = TestVariables.readFile(TestVariables.CODE_TERACOPY);
 
     @Test public void execute_7Zip() throws Exception {
         // given
@@ -138,21 +137,6 @@ import org.junit.Test;
         Assert.assertEquals("1.5.0.129", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
         Assert.assertEquals("02/26/2016", useAsProperty.getDates().getItem(Platforms.WINDOWS));
         Assert.assertEquals("http://download.bluesprig.com/dl/jetclean-setup.exe",
-            useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
-    }
-
-    @Test public void execute_TeraCopy() {
-        // given
-        Deque<Rule> rulesSet = TestCollections.getRulesForTeraCopy_1();
-        RulesExecutor executor = new RulesExecutor(rulesSet, htmlCodeOfTeraCopyWebPage);
-
-        // when
-        executor.execute();
-
-        // then
-        UseAsProperty useAsProperty = executor.getResults();
-        Assert.assertEquals("3.26", useAsProperty.getVersions().getItem(Platforms.WINDOWS));
-        Assert.assertEquals("http://www.codesector.com/files/teracopy.exe",
             useAsProperty.getLinks().getItem(LinksID.WINDOWS_X86_EXE));
     }
 

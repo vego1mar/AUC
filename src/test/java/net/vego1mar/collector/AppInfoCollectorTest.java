@@ -194,28 +194,6 @@ import org.junit.Test;
         Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
     }
 
-    @Test public void class_TeraCopy_online() {
-        // given
-        final Map<String, String> execOrder = new LinkedHashMap<>() {
-            {
-                put(TestVariables.XML_PATTERN_TERACOPY, "http://www.codesector.com/downloads");
-            }
-        };
-        final String appName = "Code Sector TeraCopy";
-        AppInfoCollector collector1 = new AppInfoCollector(appName, execOrder);
-
-        // when
-        collector1.gatherInformation();
-        collector1.save(OUT_DESTINATION_PATH, OUT_DESTINATION_PATH);
-        AppInfoCollector collector2 = AppInfoCollector.load(collector1.getSerialFileName());
-
-        // then
-        //assertCommonCollectorFields(collector1, collector2);
-        Assert.assertFalse(collector1.isUpdateAvailable(Platforms.WINDOWS));
-        Assert.assertFalse(collector1.getCollectedData().getVersions().getItem(Platforms.WINDOWS).isEmpty());
-        Assert.assertFalse(collector1.getCollectedData().getLinks().getItem(LinksID.WINDOWS_X86_EXE).isEmpty());
-    }
-
     @Test public void class_OracleVirtualBox_online() {
         // given
         final String url1 = "https://www.virtualbox.org/wiki/Downloads";

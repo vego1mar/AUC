@@ -3,7 +3,7 @@ package net.vego1mar.xml;
 import java.util.Deque;
 import net.vego1mar.rules.ExecutorTest;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.tests.TestVariables;
+import net.vego1mar.tests.TestHelper;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;
@@ -69,8 +69,8 @@ public abstract class XmlTest {
         writer.saveSettings(rulesSet, getXmlRuntime1());
 
         // then
-        String runtime = TestVariables.readFile(getXmlRuntime1());
-        String source = TestVariables.readFile(getXmlPattern1());
+        String runtime = TestHelper.readFile(getXmlRuntime1());
+        String source = TestHelper.readFile(getXmlPattern1());
         Assert.assertEquals(source, runtime);
     }
 

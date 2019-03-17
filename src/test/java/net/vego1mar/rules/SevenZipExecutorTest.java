@@ -1,7 +1,7 @@
 package net.vego1mar.rules;
 
-import static net.vego1mar.tests.TestVariables.getWorkingDirectory;
-import static net.vego1mar.tests.TestVariables.readFile;
+import static net.vego1mar.tests.TestHelper.getWorkingDirectory;
+import static net.vego1mar.tests.TestHelper.readFile;
 
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -11,7 +11,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.TimeUnit;
 import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.FirstOfMethod;
 import net.vego1mar.method.PrependMethod;

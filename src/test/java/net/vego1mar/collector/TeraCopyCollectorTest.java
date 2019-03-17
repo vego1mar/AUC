@@ -3,6 +3,7 @@ package net.vego1mar.collector;
 import java.util.LinkedHashMap;
 import net.vego1mar.rules.TeraCopyExecutorTest;
 import net.vego1mar.xml.TeraCopyXmlTest;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -13,10 +14,14 @@ public class TeraCopyCollectorTest extends CollectorTest {
         super(new TeraCopyExecutorTest());
     }
 
+    @NotNull @Contract(pure = true) private String getUrl1() {
+        return "http://www.codesector.com/downloads";
+    }
+
     @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new TeraCopyXmlTest().getXmlPattern1(), "http://www.codesector.com/downloads");
+                put(new TeraCopyXmlTest().getXmlPattern1(), getUrl1());
             }
         };
     }

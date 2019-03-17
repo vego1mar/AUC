@@ -3,6 +3,7 @@ package net.vego1mar.collector;
 import java.util.LinkedHashMap;
 import net.vego1mar.rules.PotPlayerExecutorTest;
 import net.vego1mar.xml.PotPlayerXmlTest;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -13,10 +14,14 @@ public class PotPlayerCollectorTest extends CollectorTest {
         super(new PotPlayerExecutorTest());
     }
 
+    @NotNull @Contract(pure = true) private String getUrl1() {
+        return "https://daumpotplayer.com/download/";
+    }
+
     @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new PotPlayerXmlTest().getXmlPattern1(), "https://daumpotplayer.com/download/");
+                put(new PotPlayerXmlTest().getXmlPattern1(), getUrl1());
             }
         };
     }

@@ -2,7 +2,6 @@ package net.vego1mar.collector;
 
 import java.util.LinkedHashMap;
 import net.vego1mar.rules.ExecutorTest;
-import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Before;
 
@@ -28,13 +27,14 @@ public abstract class CollectorTest {
         return asserter2;
     }
 
-    @NotNull @Contract(" -> new") protected abstract LinkedHashMap<String, String> getExecutionOrder();
+    @NotNull protected abstract LinkedHashMap<String, String> getExecutionOrder();
 
-    @NotNull @Contract(pure = true) protected abstract String getAppName();
+    @NotNull protected abstract String getAppName();
 
     @Before public void before() {
         // given
         collector = new AppInfoCollector(getAppName(), getExecutionOrder());
         asserter2 = new AppInfoCollectorTest();
     }
+
 }

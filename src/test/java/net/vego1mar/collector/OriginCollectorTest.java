@@ -3,6 +3,7 @@ package net.vego1mar.collector;
 import java.util.LinkedHashMap;
 import net.vego1mar.rules.OriginExecutorTest;
 import net.vego1mar.xml.OriginXmlTest;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -13,10 +14,14 @@ public class OriginCollectorTest extends CollectorTest {
         super(new OriginExecutorTest());
     }
 
+    @NotNull @Contract(pure = true) private String getUrl1() {
+        return "https://www.majorgeeks.com/files/details/origin_for_pc.html";
+    }
+
     @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new OriginXmlTest().getXmlPattern1(), "https://www.majorgeeks.com/files/details/origin_for_pc.html");
+                put(new OriginXmlTest().getXmlPattern1(), getUrl1());
             }
         };
     }

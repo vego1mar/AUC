@@ -1,6 +1,6 @@
 package net.vego1mar.xml;
 
-import static net.vego1mar.tests.TestVariables.getWorkingDirectory;
+import static net.vego1mar.tests.TestHelper.getWorkingDirectory;
 
 import java.nio.file.Paths;
 import net.vego1mar.rules.TeraCopyExecutorTest;

@@ -14,10 +14,14 @@ public class SourceTreeCollectorTest extends CollectorTest {
         super(new SourceTreeExecutorTest());
     }
 
+    @NotNull @Contract(pure = true) private String getUrl1() {
+        return "https://www.sourcetreeapp.com/";
+    }
+
     @Override @NotNull @Contract(" -> new") public LinkedHashMap<String, String> getExecutionOrder() {
         return new LinkedHashMap<>() {
             {
-                put(new SourceTreeXmlTest().getXmlPattern1(), "https://www.sourcetreeapp.com/");
+                put(new SourceTreeXmlTest().getXmlPattern1(), getUrl1());
             }
         };
     }

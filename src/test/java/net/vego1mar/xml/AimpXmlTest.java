@@ -1,12 +1,12 @@
 package net.vego1mar.xml;
 
-import static net.vego1mar.tests.TestVariables.getWorkingDirectory;
+import static net.vego1mar.tests.TestHelper.getWorkingDirectory;
 
 import java.nio.file.Paths;
 import java.util.Deque;
 import net.vego1mar.rules.AimpExecutorTest;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.tests.TestVariables;
+import net.vego1mar.tests.TestHelper;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -36,10 +36,10 @@ public class AimpXmlTest extends XmlTest {
         writer.saveSettings(rulesSet2, getXmlRuntime2());
 
         // then
-        String runtime1 = TestVariables.readFile(getXmlRuntime1());
-        String runtime2 = TestVariables.readFile(getXmlRuntime2());
-        String source1 = TestVariables.readFile(getXmlPattern1());
-        String source2 = TestVariables.readFile(getXmlPattern2());
+        String runtime1 = TestHelper.readFile(getXmlRuntime1());
+        String runtime2 = TestHelper.readFile(getXmlRuntime2());
+        String source1 = TestHelper.readFile(getXmlPattern1());
+        String source2 = TestHelper.readFile(getXmlPattern2());
         Assert.assertEquals(source1, runtime1);
         Assert.assertEquals(source2, runtime2);
     }

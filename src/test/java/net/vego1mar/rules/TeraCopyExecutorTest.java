@@ -15,7 +15,6 @@ import net.vego1mar.method.PrependMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.method.enumerators.RetrieveTagsType;
 import net.vego1mar.method.enumerators.TrimSide;
 import net.vego1mar.properties.UseAsProperty;
@@ -24,7 +23,7 @@ import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -46,47 +45,47 @@ public class TeraCopyExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setType(FirstOfType.TAG);
         method1.setText("tbody");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method2 = (FirstOfMethod) rule2.getMethod();
         method2.setType(FirstOfType.TAG);
         method2.setText("tr");
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method3 = (RetrieveTagsMethod) rule3.getMethod();
         method3.setType(RetrieveTagsType.ALL);
         method3.setTagname("td");
 
-        Rule rule4 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule4 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
         method4.setPosition(1);
 
-        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method5 = (FirstOfMethod) rule5.getMethod();
         method5.setType(FirstOfType.STRING);
         method5.setText(" ");
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createGrabUntil());
         GrabUntilMethod method6 = (GrabUntilMethod) rule6.getMethod();
         method6.setCharStop('<');
 
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createTrim());
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.LEFT);
         method7.setNumberOf(1);
         rule7.getTarget().version(Platforms.WINDOWS);
 
-        Rule rule8 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule8 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method8 = (ExtractWordMethod) rule8.getMethod();
         method8.setPosition(3);
 
-        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFetchHrefs());
 
-        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createPrepend());
         PrependMethod method10 = (PrependMethod) rule10.getMethod();
         method10.setText("http://www.codesector.com");
         rule10.getTarget().linkID(LinksID.WINDOWS_X86_EXE);

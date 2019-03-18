@@ -12,7 +12,6 @@ import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.RemoveCharactersMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.method.enumerators.RetrieveTagsType;
 import net.vego1mar.method.enumerators.TrimSide;
 import net.vego1mar.properties.UseAsProperty;
@@ -21,7 +20,7 @@ import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -39,56 +38,56 @@ public class SourceTreeExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method1 = (RetrieveTagsMethod) rule1.getMethod();
         method1.setType(RetrieveTagsType.ALL);
         method1.setTagname("a");
 
-        Rule rule2 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule2 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createFetchHrefs());
 
-        Rule rule3 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule3 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodFactory.createExtractWord());
         ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
         method3.setPosition(3);
         rule3.getTarget().linkID(LinksID.MAC_OS_X_ZIP);
 
-        Rule rule4 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule4 = new Rule(new Target(In.COLLECTION, UseAs.LINKS), MethodFactory.createExtractWord());
         ExtractWordMethod method4 = (ExtractWordMethod) rule4.getMethod();
         method4.setPosition(4);
         rule4.getTarget().linkID(LinksID.WINDOWS_X86_EXE);
 
-        Rule rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method9 = (ExtractWordMethod) rule5.getMethod();
         method9.setPosition(3);
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRemoveCharacters());
         RemoveCharactersMethod method10 = (RemoveCharactersMethod) rule6.getMethod();
         method10.setSigns("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/-");
 
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method11 = (TrimMethod) rule7.getMethod();
         method11.setSide(TrimSide.LEFT);
         method11.setNumberOf(3);
 
-        Rule rule8 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule8 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createTrim());
         TrimMethod method12 = (TrimMethod) rule8.getMethod();
         method12.setSide(TrimSide.RIGHT);
         method12.setNumberOf(1);
         rule8.getTarget().version(Platforms.MAC_OS_X);
 
-        Rule rule9 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule9 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method13 = (ExtractWordMethod) rule9.getMethod();
         method13.setPosition(4);
 
-        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_CHARACTERS));
+        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRemoveCharacters());
         RemoveCharactersMethod method14 = (RemoveCharactersMethod) rule10.getMethod();
         method14.setSigns("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/-");
 
-        Rule rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method15 = (TrimMethod) rule11.getMethod();
         method15.setSide(TrimSide.LEFT);
         method15.setNumberOf(2);
 
-        Rule rule12 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule12 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createTrim());
         TrimMethod method16 = (TrimMethod) rule12.getMethod();
         method16.setSide(TrimSide.RIGHT);
         method16.setNumberOf(1);

@@ -14,7 +14,6 @@ import net.vego1mar.method.GrabUntilMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.method.enumerators.RetrieveTagsType;
 import net.vego1mar.method.enumerators.TrimSide;
 import net.vego1mar.properties.UseAsProperty;
@@ -23,7 +22,7 @@ import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -53,36 +52,36 @@ public class JetCleanExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method1 = (RetrieveTagsMethod) rule1.getMethod();
         method1.setType(RetrieveTagsType.FIRST);
         method1.setTagname("title");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method2 = (ExtractWordMethod) rule2.getMethod();
         method2.setPosition(3);
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createTrim());
         TrimMethod method3 = (TrimMethod) rule3.getMethod();
         method3.setSide(TrimSide.RIGHT);
         method3.setNumberOf(8);
         rule3.getTarget().version(Platforms.WINDOWS);
 
-        Rule rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
         method4.setType(FirstOfType.STRING);
         method4.setText("Debug:");
 
-        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method5 = (TrimMethod) rule5.getMethod();
         method5.setSide(TrimSide.LEFT);
         method5.setNumberOf(7);
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createGrabUntil());
         GrabUntilMethod method6 = (GrabUntilMethod) rule6.getMethod();
         method6.setCharStop('>');
 
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createTrim());
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.RIGHT);
         method7.setNumberOf(3);
@@ -100,14 +99,14 @@ public class JetCleanExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet2(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setType(FirstOfType.STRING);
         method1.setText("<strong>Date:");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createSplitWords());
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodFactory.createExtractWord());
         ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
         method3.setPosition(2);
         rule3.getTarget().date(Platforms.WINDOWS);

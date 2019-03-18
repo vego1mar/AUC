@@ -15,7 +15,6 @@ import net.vego1mar.method.PrependMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.method.enumerators.RetrieveTagsType;
 import net.vego1mar.method.enumerators.TrimSide;
 import net.vego1mar.properties.UseAsProperty;
@@ -24,7 +23,7 @@ import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -46,91 +45,91 @@ public class BorderlessGamingExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setType(FirstOfType.TAG);
         method1.setText("relative-time");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method2 = (FirstOfMethod) rule2.getMethod();
         method2.setType(FirstOfType.STRING);
         method2.setText(">");
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method3 = (TrimMethod) rule3.getMethod();
         method3.setSide(TrimSide.LEFT);
         method3.setNumberOf(1);
 
-        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createGrabUntil());
         GrabUntilMethod method4 = (GrabUntilMethod) rule4.getMethod();
         method4.setCharStop('<');
 
-        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method5 = (TrimMethod) rule5.getMethod();
         method5.setSide(TrimSide.LEFT);
         method5.setNumberOf(14);
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodFactory.createTrim());
         TrimMethod method6 = (TrimMethod) rule6.getMethod();
         method6.setSide(TrimSide.RIGHT);
         method6.setNumberOf(13);
         rule6.getTarget().date(Platforms.WINDOWS);
 
-        Rule rule7 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule7 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method7 = (FirstOfMethod) rule7.getMethod();
         method7.setType(FirstOfType.STRING);
         method7.setText("/Codeusa/Borderless-Gaming/releases/download");
 
-        Rule rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule8 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createGrabUntil());
         GrabUntilMethod method8 = (GrabUntilMethod) rule8.getMethod();
         method8.setCharStop('"');
 
-        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createPrepend());
         PrependMethod method9 = (PrependMethod) rule9.getMethod();
         method9.setText("https://github.com");
         rule9.getTarget().linkID(LinksID.WINDOWS_X86_EXE);
 
-        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule10 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method10 = (FirstOfMethod) rule10.getMethod();
         method10.setType(FirstOfType.STRING);
         method10.setText("download/");
 
-        Rule rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule11 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method11 = (TrimMethod) rule11.getMethod();
         method11.setSide(TrimSide.LEFT);
         method11.setNumberOf(9);
 
-        Rule rule12 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule12 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createGrabUntil());
         GrabUntilMethod method12 = (GrabUntilMethod) rule12.getMethod();
         method12.setCharStop('/');
         rule12.getTarget().version(Platforms.WINDOWS);
 
-        Rule rule13 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule13 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method13 = (FirstOfMethod) rule13.getMethod();
         method13.setType(FirstOfType.STRING);
         method13.setText("d-block py-1 py-md-2");
 
-        Rule rule14 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule14 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method14 = (RetrieveTagsMethod) rule14.getMethod();
         method14.setType(RetrieveTagsType.ALL);
         method14.setTagname("a");
 
-        Rule rule15 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule15 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createFetchHrefs());
 
-        Rule rule16 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule16 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method16 = (ExtractWordMethod) rule16.getMethod();
         method16.setPosition(2);
 
-        Rule rule17 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Rule rule17 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createPrepend());
         PrependMethod method17 = (PrependMethod) rule17.getMethod();
         method17.setText("https://github.com");
         rule17.getTarget().linkID(LinksID.SOURCECODE_TAR_GZ);
 
-        Rule rule18 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule18 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method18 = (ExtractWordMethod) rule18.getMethod();
         method18.setPosition(1);
 
-        Rule rule19 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.PREPEND));
+        Rule rule19 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createPrepend());
         PrependMethod method19 = (PrependMethod) rule19.getMethod();
         method19.setText("https://github.com");
         rule19.getTarget().linkID(LinksID.WINDOWS_ZIP);

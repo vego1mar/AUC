@@ -13,13 +13,12 @@ import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.FirstOfMethod;
 import net.vego1mar.method.RemoveStringsMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.properties.UseAsProperty;
 import net.vego1mar.properties.enumerators.LinksID;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -41,38 +40,38 @@ public class EpicGamesLauncherExecutorTest extends ExecutorTest {
     private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setType(FirstOfType.STRING);
         method1.setText("id=\"cta\"");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method2 = (FirstOfMethod) rule2.getMethod();
         method2.setType(FirstOfType.TAG);
         method2.setText("a");
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createFetchHrefs());
 
-        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_STRINGS));
+        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRemoveStrings());
         RemoveStringsMethod method4 = (RemoveStringsMethod) rule4.getMethod();
         method4.setString("EpicGamesLauncherInstaller.msi");
 
-        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.REMOVE_STRINGS));
+        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRemoveStrings());
         RemoveStringsMethod method5 = (RemoveStringsMethod) rule5.getMethod();
         method5.setString("EpicGamesLauncher.dmg");
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.SPLIT_WORDS));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createSplitWords());
 
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.APPEND));
+        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createAppend());
         AppendMethod method7 = (AppendMethod) rule7.getMethod();
         method7.setText("EpicGamesLauncherInstaller.msi");
         rule7.getTarget().linkID(LinksID.WINDOWS_X86_MSI);
 
-        Rule rule8 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule8 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method8 = (ExtractWordMethod) rule8.getMethod();
         method8.setPosition(1);
 
-        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.APPEND));
+        Rule rule9 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createAppend());
         AppendMethod method9 = (AppendMethod) rule9.getMethod();
         method9.setText("EpicGamesLauncher.dmg");
         rule9.getTarget().linkID(LinksID.MAC_OS_X_DMG);

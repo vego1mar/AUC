@@ -12,7 +12,6 @@ XmlConsoleRunner - path for /runtime + description of release for r1.1
 
 !!! SECURITY - readObject() & writeObject() for deserialization
 !!! Restructure XML production
-!!! Refactor of MethodCreator
 
 > RulesExecutor & AppInfoCollector - more rules with tests
 Audacity

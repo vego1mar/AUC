@@ -14,7 +14,6 @@ import net.vego1mar.method.GrabUntilMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
-import net.vego1mar.method.enumerators.MethodType;
 import net.vego1mar.method.enumerators.RetrieveTagsType;
 import net.vego1mar.method.enumerators.TrimSide;
 import net.vego1mar.properties.UseAsProperty;
@@ -23,7 +22,7 @@ import net.vego1mar.properties.enumerators.Platforms;
 import net.vego1mar.target.Target;
 import net.vego1mar.target.enumerators.In;
 import net.vego1mar.target.enumerators.UseAs;
-import net.vego1mar.utils.MethodCreator;
+import net.vego1mar.utils.MethodFactory;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -50,31 +49,31 @@ public class BattleNetExecutorTest extends ExecutorTest {
         return getRulesFromSet2(7);
     }
 
-    public Deque<Rule> getRulesFromSet1(int itemsNo) {
+    private Deque<Rule> getRulesFromSet1(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setText("gameProgram[bnetapp]");
         method1.setType(FirstOfType.STRING);
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method2 = (RetrieveTagsMethod) rule2.getMethod();
         method2.setTagname("a");
         method2.setType(RetrieveTagsType.ALL);
 
-        Rule rule3 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule3 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method3 = (ExtractWordMethod) rule3.getMethod();
         method3.setPosition(11);
 
-        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule4 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createFetchHrefs());
         rule4.getTarget().linkID(LinksID.WINDOWS_X86_EXE);
 
-        Rule rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodCreator.getMethod(MethodType.EXTRACT_WORD));
+        Rule rule5 = new Rule(new Target(In.COLLECTION, UseAs.IGNORE), MethodFactory.createExtractWord());
         ExtractWordMethod method5 = (ExtractWordMethod) rule5.getMethod();
         method5.setPosition(25);
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodCreator.getMethod(MethodType.FETCH_HREFS));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.LINKS), MethodFactory.createFetchHrefs());
         rule6.getTarget().linkID(LinksID.MAC_OS_X_ZIP);
 
         List<Rule> rulesList = Arrays.asList(rule1, rule2, rule3, rule4, rule5, rule6);
@@ -86,40 +85,40 @@ public class BattleNetExecutorTest extends ExecutorTest {
         return rulesSet;
     }
 
-    public Deque<Rule> getRulesFromSet2(int itemsNo) {
+    private Deque<Rule> getRulesFromSet2(int itemsNo) {
         Deque<Rule> rulesSet = new LinkedList<>();
 
-        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule1 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method1 = (FirstOfMethod) rule1.getMethod();
         method1.setType(FirstOfType.STRING);
         method1.setText("version");
 
-        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.GRAB_UNTIL));
+        Rule rule2 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createGrabUntil());
         GrabUntilMethod method2 = (GrabUntilMethod) rule2.getMethod();
         method2.setCharStop('<');
 
-        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule3 = new Rule(new Target(In.CONTENT, UseAs.VERSIONS), MethodFactory.createTrim());
         TrimMethod method3 = (TrimMethod) rule3.getMethod();
         method3.setSide(TrimSide.LEFT);
         method3.setNumberOf(9);
         rule3.getTarget().version(Platforms.WINDOWS);
 
-        Rule rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodCreator.getMethod(MethodType.FIRST_OF));
+        Rule rule4 = new Rule(new Target(In.CODE, UseAs.IGNORE), MethodFactory.createFirstOf());
         FirstOfMethod method4 = (FirstOfMethod) rule4.getMethod();
         method4.setType(FirstOfType.STRING);
         method4.setText("Aktualizacja:");
 
-        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.RETRIEVE_TAGS));
+        Rule rule5 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createRetrieveTags());
         RetrieveTagsMethod method5 = (RetrieveTagsMethod) rule5.getMethod();
         method5.setType(RetrieveTagsType.FIRST);
         method5.setTagname("span");
 
-        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule6 = new Rule(new Target(In.CONTENT, UseAs.IGNORE), MethodFactory.createTrim());
         TrimMethod method6 = (TrimMethod) rule6.getMethod();
         method6.setSide(TrimSide.LEFT);
         method6.setNumberOf(6);
 
-        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodCreator.getMethod(MethodType.TRIM));
+        Rule rule7 = new Rule(new Target(In.CONTENT, UseAs.DATES), MethodFactory.createTrim());
         TrimMethod method7 = (TrimMethod) rule7.getMethod();
         method7.setSide(TrimSide.RIGHT);
         method7.setNumberOf(7);

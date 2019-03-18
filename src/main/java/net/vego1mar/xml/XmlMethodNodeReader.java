@@ -1,11 +1,13 @@
 package net.vego1mar.xml;
 
+import net.vego1mar.method.AppendMethod;
 import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.FirstOfMethod;
 import net.vego1mar.method.GrabUntilMethod;
 import net.vego1mar.method.Methodable;
 import net.vego1mar.method.PrependMethod;
 import net.vego1mar.method.RemoveCharactersMethod;
+import net.vego1mar.method.RemoveStringsMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.method.enumerators.FirstOfType;
@@ -56,11 +58,17 @@ public class XmlMethodNodeReader extends XmlRulesSetTags {
             case REMOVE_CHARACTERS:
                 readRemoveCharactersMethodAttributes();
                 break;
+            case REMOVE_STRINGS:
+                readRemoveStringsMethodAttributes();
+                break;
             case RETRIEVE_TAGS:
                 readRetrieveTagsMethodAttributes();
                 break;
             case PREPEND:
                 readPrependMethodAttributes();
+                break;
+            case APPEND:
+                readAppendMethodAttributes();
                 break;
             case GRAB_UNTIL:
                 readGrabUntilMethodAttributes();
@@ -106,6 +114,16 @@ public class XmlMethodNodeReader extends XmlRulesSetTags {
         }
     }
 
+    private void readRemoveStringsMethodAttributes() {
+        objMethod = MethodCreator.getMethod(MethodType.REMOVE_STRINGS);
+        RemoveStringsMethod method = (RemoveStringsMethod) objMethod;
+        Element string = xmlMethod.element(TAG_STRING);
+
+        if (isCorrect(string)) {
+            method.setString(string.getText());
+        }
+    }
+
     private void readRetrieveTagsMethodAttributes() {
         objMethod = MethodCreator.getMethod(MethodType.RETRIEVE_TAGS);
         RetrieveTagsMethod method = (RetrieveTagsMethod) objMethod;
@@ -124,6 +142,16 @@ public class XmlMethodNodeReader extends XmlRulesSetTags {
     private void readPrependMethodAttributes() {
         objMethod = MethodCreator.getMethod(MethodType.PREPEND);
         PrependMethod method = (PrependMethod) objMethod;
+        Element text = xmlMethod.element(TAG_TEXT);
+
+        if (isCorrect(text)) {
+            method.setText(text.getText());
+        }
+    }
+
+    private void readAppendMethodAttributes() {
+        objMethod = MethodCreator.getMethod(MethodType.APPEND);
+        AppendMethod method = (AppendMethod) objMethod;
         Element text = xmlMethod.element(TAG_TEXT);
 
         if (isCorrect(text)) {

@@ -45,7 +45,7 @@ public class BattleNetCollectorTest extends CollectorTest {
 
         // then
         getExecutorAsserter().assertCollectedDataForExpectedOutput(getCollector().getCollectedData());
-        getCollectorAsserter().assertCollectorSaveAndLoad(getCollector());
+        assertCollectorSaveAndLoad(getCollector());
     }
 
 }

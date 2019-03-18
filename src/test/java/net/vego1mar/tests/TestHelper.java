@@ -3,6 +3,7 @@ package net.vego1mar.tests;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.UUID;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
@@ -41,6 +42,10 @@ public final class TestHelper {
 
     public static String getWorkingDirectory() {
         return System.getProperty("user.dir");
+    }
+
+    public static String getRandomUUID() {
+        return UUID.randomUUID().toString();
     }
 
 }

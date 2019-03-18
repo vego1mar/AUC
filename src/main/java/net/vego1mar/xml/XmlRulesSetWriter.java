@@ -3,11 +3,13 @@ package net.vego1mar.xml;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Deque;
+import net.vego1mar.method.AppendMethod;
 import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.FirstOfMethod;
 import net.vego1mar.method.GrabUntilMethod;
 import net.vego1mar.method.PrependMethod;
 import net.vego1mar.method.RemoveCharactersMethod;
+import net.vego1mar.method.RemoveStringsMethod;
 import net.vego1mar.method.RetrieveTagsMethod;
 import net.vego1mar.method.TrimMethod;
 import net.vego1mar.rules.Rule;
@@ -89,9 +91,17 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
                 RemoveCharactersMethod removeCharactersMethod = (RemoveCharactersMethod) objRule.getMethod();
                 node.addElement(TAG_SIGNS).addCDATA(removeCharactersMethod.getSigns());
                 break;
+            case REMOVE_STRINGS:
+                RemoveStringsMethod removeStringsMethod = (RemoveStringsMethod) objRule.getMethod();
+                node.addElement(TAG_STRING).addCDATA(removeStringsMethod.getString());
+                break;
             case PREPEND:
                 PrependMethod prependMethod = (PrependMethod) objRule.getMethod();
                 node.addElement(TAG_TEXT).addCDATA(prependMethod.getText());
+                break;
+            case APPEND:
+                AppendMethod appendMethod = (AppendMethod) objRule.getMethod();
+                node.addElement(TAG_TEXT).addCDATA(appendMethod.getText());
                 break;
             case GRAB_UNTIL:
                 GrabUntilMethod grabUntilMethod = (GrabUntilMethod) objRule.getMethod();

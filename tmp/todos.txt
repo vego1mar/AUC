@@ -11,7 +11,8 @@ Apache Pivot - introduction to the technology
 XmlConsoleRunner - path for /runtime + description of release for r1.1
 
 !!! SECURITY - readObject() & writeObject() for deserialization
-!!! Restructor tests
+!!! Restructure XML production
+!!! Refactor of MethodCreator
 
 > RulesExecutor & AppInfoCollector - more rules with tests
 Audacity
@@ -21,7 +22,6 @@ ChemTable Software Soft Organizer
 Crystal Rich USB Safely Remove
 Disk Internals Linux Reader
 DVDFab Virtual Drive
-Epic Games Launcher
 GOG Galaxy
 Google Chrome
 Implbits Software HashTab

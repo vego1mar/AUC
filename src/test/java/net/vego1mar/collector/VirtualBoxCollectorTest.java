@@ -52,7 +52,7 @@ public class VirtualBoxCollectorTest extends CollectorTest {
 
         // then
         getExecutorAsserter().assertCollectedDataForExpectedOutput(getCollector().getCollectedData());
-        getCollectorAsserter().assertCollectorSaveAndLoad(getCollector());
+        assertCollectorSaveAndLoad(getCollector());
     }
 
 }

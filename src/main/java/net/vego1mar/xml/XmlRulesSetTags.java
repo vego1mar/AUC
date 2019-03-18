@@ -23,6 +23,7 @@ public class XmlRulesSetTags {
     protected static final String TAG_CHARSTOP = "charStop";
     protected static final String TAG_SIDE = "side";
     protected static final String TAG_NUMBEROF = "numberOf";
+    protected static final String TAG_STRING = "string";
 
     protected static final int TARGETNODE_IN = 1;
     protected static final int TARGETNODE_USEAS = 2;

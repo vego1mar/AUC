@@ -1,41 +1,33 @@
 package net.vego1mar.collector;
 
 import java.util.LinkedHashMap;
-import net.vego1mar.rules.JetCleanExecutorTest;
-import net.vego1mar.xml.JetCleanXmlTest;
-import net.vego1mar.xml.XmlTest;
+import net.vego1mar.rules.EpicGamesLauncherExecutorTest;
+import net.vego1mar.xml.EpicGamesLauncherXmlTest;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class JetCleanCollectorTest extends CollectorTest {
+public class EpicGamesLauncherCollectorTest extends CollectorTest {
 
-    public JetCleanCollectorTest() {
-        super(new JetCleanExecutorTest());
+    public EpicGamesLauncherCollectorTest() {
+        super(new EpicGamesLauncherExecutorTest());
     }
 
     @NotNull @Contract(pure = true) private String getUrl1() {
-        return "https://www.majorgeeks.com/mg/get/jetclean,1.html";
-    }
-
-    @NotNull @Contract(pure = true) private String getUrl2() {
-        return "https://www.majorgeeks.com/files/details/jetclean.html";
+        return "https://www.epicgames.com/store/pl/";
     }
 
     @Override protected @NotNull LinkedHashMap<String, String> getExecutionOrder() {
-        XmlTest xmlTest = new JetCleanXmlTest();
-
         return new LinkedHashMap<>() {
             {
-                put(xmlTest.getXmlPattern1(), getUrl1());
-                put(xmlTest.getXmlPattern2(), getUrl2());
+                put(new EpicGamesLauncherXmlTest().getXmlPattern1(), getUrl1());
             }
         };
     }
 
     @Override protected @NotNull String getAppName() {
-        return "Bluesprig JetClean";
+        return "Epic Games Launcher";
     }
 
     @Test @Ignore public void testCollectingOnline() {

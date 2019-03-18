@@ -6,9 +6,11 @@ public enum MethodType {
     EXTRACT_WORD,
     SPLIT_WORDS,
     REMOVE_CHARACTERS,
+    REMOVE_STRINGS,
     RETRIEVE_TAGS,
     FETCH_HREFS,
     PREPEND,
+    APPEND,
     GRAB_UNTIL,
     TRIM
 }

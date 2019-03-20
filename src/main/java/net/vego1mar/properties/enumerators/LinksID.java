@@ -18,6 +18,7 @@ public enum LinksID {
     ANDROID_X86ARM_GOOGLEPLAY,
     MAC_OS_X_ZIP,
     MAC_OS_X_DMG,
+    MAC_OS_X_PKG,
     SOLARIS_TAR_GZ,
     AUX_EXTPACK,
     UBUNTU_BIONIC_DEB,

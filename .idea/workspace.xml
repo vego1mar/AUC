@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/GogGalaxyCollectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/GogGalaxyExecutorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/GogGalaxyXmlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/utils/MethodFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlMethodNodeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/xml/XmlMethodNodeReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/AimpExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/AimpExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BattleNetExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BattleNetExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BorderlessGamingExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BorderlessGamingExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/EpicGamesLauncherExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/EpicGamesLauncherExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/JetCleanExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/JetCleanExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/OriginExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/OriginExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/PotPlayerExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/PotPlayerExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/SevenZipExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/SevenZipExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/SourceTreeExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/SourceTreeExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/TeraCopyExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/TeraCopyExecutorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/VirtualBoxExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/VirtualBoxExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/enumerators/LinksID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/enumerators/LinksID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/todos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/todos.txt" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -79,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="414">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -120,6 +111,7 @@
       <find>Aux</find>
       <find>10dd3c55c685d7bc635a720bd7d62b9ee8aa8b1eee1d7ad617b3d452ab4efe74</find>
       <find>a4190a7f8b290ce846f9afb0f225f1b44b5fe2484f1136469f6f2d690a21f0ae</find>
+      <find>&lt;/section&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>Rule</replace>
@@ -143,10 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/utils/HashGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/TeraCopyXmlTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/JetCleanXmlTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/SevenZipXmlTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/AimpXmlTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetReaderTest.java" />
@@ -193,6 +181,10 @@
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BorderlessGamingExecutorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/BattleNetExecutorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/AimpExecutorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/vego1mar/properties/enumerators/LinksID.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/xml/GogGalaxyXmlTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/collector/GogGalaxyCollectorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/vego1mar/rules/GogGalaxyExecutorTest.java" />
         <option value="$PROJECT_DIR$/tmp/todos.txt" />
       </list>
     </option>
@@ -238,7 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,7 +301,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,7 +313,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552934558874" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553112633523" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/aimp_wp.txt" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -354,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SevenZipExecutorTest.testAllGrabbingOnThreads">
+  <component name="RunManager" selected="JUnit.GogGalaxyCollectorTest.testCollectingOnline">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -395,27 +387,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppendMethodTest.testAppendForCollection1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.vego1mar.method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.method" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.method.AppendMethodTest" />
-      <option name="METHOD_NAME" value="testAppendForCollection1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EpicGamesLauncherCollectorTest.testCollectingOnline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GogGalaxyCollectorTest.testCollectingOnline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -424,7 +396,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.collector" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.EpicGamesLauncherCollectorTest" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.collector.GogGalaxyCollectorTest" />
       <option name="METHOD_NAME" value="testCollectingOnline" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -435,7 +407,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EpicGamesLauncherExecutorTest.testLinkGrabbing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GogGalaxyExecutorTest.testDateGrabbing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -444,8 +416,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.EpicGamesLauncherExecutorTest" />
-      <option name="METHOD_NAME" value="testLinkGrabbing" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.GogGalaxyExecutorTest" />
+      <option name="METHOD_NAME" value="testDateGrabbing" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -455,26 +427,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EpicGamesLauncherXmlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.vego1mar.xml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.vego1mar.xml" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.xml.EpicGamesLauncherXmlTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SevenZipExecutorTest.testAllGrabbingOnThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GogGalaxyExecutorTest.testVersionsGrabbing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <extension name="coverage">
         <pattern>
@@ -483,8 +436,48 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="net.vego1mar.rules" />
-      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.SevenZipExecutorTest" />
-      <option name="METHOD_NAME" value="testAllGrabbingOnThreads" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.rules.GogGalaxyExecutorTest" />
+      <option name="METHOD_NAME" value="testVersionsGrabbing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GogGalaxyXmlTest.testSaveSettings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.vego1mar.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.vego1mar.xml" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.xml.GogGalaxyXmlTest" />
+      <option name="METHOD_NAME" value="testSaveSettings" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GogGalaxyXmlTest.testXmlConstruction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.vego1mar.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.vego1mar.xml" />
+      <option name="MAIN_CLASS_NAME" value="net.vego1mar.xml.GogGalaxyXmlTest" />
+      <option name="METHOD_NAME" value="testXmlConstruction" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -527,19 +520,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.EpicGamesLauncherCollectorTest.testCollectingOnline" />
-      <item itemvalue="JUnit.EpicGamesLauncherExecutorTest.testLinkGrabbing" />
-      <item itemvalue="JUnit.AppendMethodTest.testAppendForCollection1" />
-      <item itemvalue="JUnit.EpicGamesLauncherXmlTest" />
-      <item itemvalue="JUnit.SevenZipExecutorTest.testAllGrabbingOnThreads" />
+      <item itemvalue="JUnit.GogGalaxyExecutorTest.testVersionsGrabbing" />
+      <item itemvalue="JUnit.GogGalaxyExecutorTest.testDateGrabbing" />
+      <item itemvalue="JUnit.GogGalaxyXmlTest.testXmlConstruction" />
+      <item itemvalue="JUnit.GogGalaxyXmlTest.testSaveSettings" />
+      <item itemvalue="JUnit.GogGalaxyCollectorTest.testCollectingOnline" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SevenZipExecutorTest.testAllGrabbingOnThreads" />
-        <item itemvalue="JUnit.EpicGamesLauncherCollectorTest.testCollectingOnline" />
-        <item itemvalue="JUnit.EpicGamesLauncherXmlTest" />
-        <item itemvalue="JUnit.EpicGamesLauncherExecutorTest.testLinkGrabbing" />
-        <item itemvalue="JUnit.AppendMethodTest.testAppendForCollection1" />
+        <item itemvalue="JUnit.GogGalaxyCollectorTest.testCollectingOnline" />
+        <item itemvalue="JUnit.GogGalaxyXmlTest.testXmlConstruction" />
+        <item itemvalue="JUnit.GogGalaxyXmlTest.testSaveSettings" />
+        <item itemvalue="JUnit.GogGalaxyExecutorTest.testDateGrabbing" />
+        <item itemvalue="JUnit.GogGalaxyExecutorTest.testVersionsGrabbing" />
       </list>
     </recent_temporary>
   </component>
@@ -561,35 +554,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppendMethodTest_testAppendForCollection1 - 2019.03.18 at 17h 44m 09s.xml">
-      <configuration name="AppendMethodTest.testAppendForCollection1" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testLinksGrabbing - 2019.03.20 at 20h 59m 12s.xml">
+      <configuration name="GogGalaxyExecutorTest.testLinksGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherExecutorTest_testLinkGrabbing - 2019.03.18 at 18h 00m 39s.xml">
-      <configuration name="EpicGamesLauncherExecutorTest.testLinkGrabbing" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testLinksGrabbing - 2019.03.20 at 20h 59m 50s.xml">
+      <configuration name="GogGalaxyExecutorTest.testLinksGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherXmlTest - 2019.03.18 at 18h 00m 51s.xml">
-      <configuration name="EpicGamesLauncherXmlTest" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testVersionsGrabbing - 2019.03.20 at 21h 01m 14s.xml">
+      <configuration name="GogGalaxyExecutorTest.testVersionsGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherXmlTest - 2019.03.18 at 18h 03m 54s.xml">
-      <configuration name="EpicGamesLauncherXmlTest" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testDateGrabbing - 2019.03.20 at 21h 01m 25s.xml">
+      <configuration name="GogGalaxyExecutorTest.testDateGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherXmlTest - 2019.03.18 at 18h 04m 16s.xml">
-      <configuration name="EpicGamesLauncherXmlTest" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testDateGrabbing - 2019.03.20 at 21h 02m 52s.xml">
+      <configuration name="GogGalaxyExecutorTest.testDateGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherXmlTest - 2019.03.18 at 18h 17m 38s.xml">
-      <configuration name="EpicGamesLauncherXmlTest" configurationId="JUnit" />
+    <history-entry file="GogGalaxyExecutorTest_testDateGrabbing - 2019.03.20 at 21h 03m 52s.xml">
+      <configuration name="GogGalaxyExecutorTest.testDateGrabbing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherXmlTest - 2019.03.18 at 18h 18m 15s.xml">
-      <configuration name="EpicGamesLauncherXmlTest" configurationId="JUnit" />
+    <history-entry file="GogGalaxyXmlTest_testXmlConstruction - 2019.03.20 at 21h 04m 17s.xml">
+      <configuration name="GogGalaxyXmlTest.testXmlConstruction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EpicGamesLauncherCollectorTest_testCollectingOnline - 2019.03.18 at 18h 18m 28s.xml">
-      <configuration name="EpicGamesLauncherCollectorTest.testCollectingOnline" configurationId="JUnit" />
+    <history-entry file="GogGalaxyXmlTest_testSaveSettings - 2019.03.20 at 21h 05m 28s.xml">
+      <configuration name="GogGalaxyXmlTest.testSaveSettings" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SevenZipExecutorTest_testAllGrabbingOnThreads - 2019.03.18 at 19h 39m 02s.xml">
-      <configuration name="SevenZipExecutorTest.testAllGrabbingOnThreads" configurationId="JUnit" />
+    <history-entry file="GogGalaxyXmlTest_testXmlConstruction - 2019.03.20 at 21h 07m 05s.xml">
+      <configuration name="GogGalaxyXmlTest.testXmlConstruction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SevenZipExecutorTest_testAllGrabbingOnThreads - 2019.03.18 at 19h 39m 49s.xml">
-      <configuration name="SevenZipExecutorTest.testAllGrabbingOnThreads" configurationId="JUnit" />
+    <history-entry file="GogGalaxyCollectorTest_testCollectingOnline - 2019.03.20 at 21h 07m 15s.xml">
+      <configuration name="GogGalaxyCollectorTest.testCollectingOnline" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -608,7 +601,7 @@
     <frame x="0" y="0" width="1655" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2495333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2526447" />
       <window_info id="Structure" order="1" weight="0.23210952" />
       <window_info id="Favorites" order="2" weight="0.32939714" />
       <window_info id="Designer" order="3" />
@@ -837,55 +830,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetWriterTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/XmlRulesSetReaderTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="205" column="29" lean-forward="true" selection-start-line="205" selection-start-column="29" selection-end-line="205" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AppInfoCollector#0;class#AppInfoCollector#0" />
-            <element signature="method#readObject#0;class#AppInfoCollector#0" />
-            <element signature="method#writeObject#0;class#AppInfoCollector#0" />
-            <element signature="method#load#0;class#AppInfoCollector#0" />
-            <element signature="method#save#0;class#AppInfoCollector#0" />
-            <element signature="method#fetchExecutionData#0;class#AppInfoCollector#0" />
-            <element signature="method#updateAppVersions#0;class#AppInfoCollector#0" />
-            <element signature="method#isUpdateAvailable#0;class#AppInfoCollector#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/VirtualBoxXmlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testSaveSettings#0;class#VirtualBoxXmlTest#0" />
-            <element signature="method#testLoadSettings#0;class#VirtualBoxXmlTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/LinksProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/enumerators/LinksID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/BorderlessGamingXmlTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -936,18 +880,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#RemoveStringsMethod#0;class#RemoveStringsMethod#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#RulesExecutor#0;class#RulesExecutor#0" />
-            <element signature="method#renew#0;class#RulesExecutor#0" />
           </folding>
         </state>
       </provider>
@@ -1042,16 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/JetCleanCollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/OriginCollectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1104,20 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/CollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#before#0;class#CollectorTest#0" />
-            <element signature="method#assertCommonCollectorFields#0;class#CollectorTest#0" />
-            <element signature="method#assertAppVersionsThroughReflection#0;class#CollectorTest#0" />
-            <element signature="method#assertCollectorSaveAndLoad#0;class#CollectorTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/tests/TestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1125,16 +1033,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readFile#0;class#TestHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/EpicGamesLauncherXmlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1308,37 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/OriginExecutorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding>
-            <element signature="method#OriginExecutorTest#0;class#OriginExecutorTest#0" />
-            <element signature="method#getRulesFromSet1#0;class#OriginExecutorTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/JetCleanExecutorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="method#JetCleanExecutorTest#0;class#JetCleanExecutorTest#0" />
-            <element signature="method#getRules#0;class#JetCleanExecutorTest#0" />
-            <element signature="method#getRulesFromSet1#0;class#JetCleanExecutorTest#0" />
-            <element signature="method#getRulesFromSet2#0;class#JetCleanExecutorTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/ExecutorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/EpicGamesLauncherExecutorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1414,34 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/VirtualBoxCollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/EpicGamesLauncherCollectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/utils/DownloadHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -1466,10 +1305,190 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/JetCleanExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#JetCleanExecutorTest#0;class#JetCleanExecutorTest#0" />
+            <element signature="method#getRules#0;class#JetCleanExecutorTest#0" />
+            <element signature="method#getRulesFromSet1#0;class#JetCleanExecutorTest#0" />
+            <element signature="method#getRulesFromSet2#0;class#JetCleanExecutorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/OriginExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getRulesFromSet1#0;class#OriginExecutorTest#0" />
+            <element signature="method#testLinksGrabbingFromSet1#0;class#OriginExecutorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/properties/enumerators/LinksID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/EpicGamesLauncherXmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/JetCleanXmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="method#testSaveSettings#0;class#JetCleanXmlTest#0" />
+            <element signature="method#testLoadSettings#0;class#JetCleanXmlTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/ExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/JetCleanCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/EpicGamesLauncherCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/VirtualBoxCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/CollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="method#before#0;class#CollectorTest#0" />
+            <element signature="method#assertCommonCollectorFields#0;class#CollectorTest#0" />
+            <element signature="method#assertAppVersionsThroughReflection#0;class#CollectorTest#0" />
+            <element signature="method#assertCollectorSaveAndLoad#0;class#CollectorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/collector/AppInfoCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/vego1mar/rules/RulesExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#RulesExecutor#0;class#RulesExecutor#0" />
+            <element signature="method#renew#0;class#RulesExecutor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/collector/GogGalaxyCollectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/xml/GogGalaxyXmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testSaveSettings#0;class#GogGalaxyXmlTest#0" />
+            <element signature="method#testLoadSettings#0;class#GogGalaxyXmlTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/vego1mar/rules/GogGalaxyExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="210" column="41" selection-start-line="210" selection-start-column="41" selection-end-line="210" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getRulesFromSet1#0;class#GogGalaxyExecutorTest#0" />
+            <element signature="method#getRulesFromSet2#0;class#GogGalaxyExecutorTest#0" />
+            <element signature="e#3582#3583#0" expanded="true" />
+            <element signature="e#3606#3607#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3685#3686#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
+            <element signature="e#7479#7480#0" expanded="true" />
+            <element signature="method#testLinksGrabbingFromSet1#0;class#GogGalaxyExecutorTest#0" />
+            <element signature="method#testLinksGrabbing#1;class#GogGalaxyExecutorTest#0" />
+            <element signature="method#testVersionsGrabbing#1;class#GogGalaxyExecutorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/todos.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

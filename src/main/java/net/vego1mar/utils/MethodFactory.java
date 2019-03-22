@@ -1,6 +1,7 @@
 package net.vego1mar.utils;
 
 import net.vego1mar.method.AppendMethod;
+import net.vego1mar.method.ClearContentMethod;
 import net.vego1mar.method.EmptyMethod;
 import net.vego1mar.method.ExtractWordMethod;
 import net.vego1mar.method.FetchHrefsMethod;
@@ -68,6 +69,10 @@ public final class MethodFactory {
 
     @NotNull @Contract(" -> new") public static Methodable createTrim() {
         return new TrimMethod();
+    }
+
+    @NotNull @Contract(" -> new") public static Methodable createClearContent() {
+        return new ClearContentMethod();
     }
 
 }

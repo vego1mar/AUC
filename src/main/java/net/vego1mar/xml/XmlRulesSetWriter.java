@@ -72,6 +72,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
             case EMPTY:
             case FETCH_HREFS:
             case SPLIT_WORDS:
+            case CLEAR_CONTENT:
                 break;
             case FIRST_OF:
                 FirstOfMethod firstOfMethod = (FirstOfMethod) objRule.getMethod();

@@ -49,6 +49,9 @@ public class XmlMethodNodeReader extends XmlRulesSetTags {
             case FETCH_HREFS:
                 objMethod = MethodFactory.createFetchHrefs();
                 break;
+            case CLEAR_CONTENT:
+                objMethod = MethodFactory.createClearContent();
+                break;
             case FIRST_OF:
                 readFirstOfMethodAtrributes();
                 break;

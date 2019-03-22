@@ -12,5 +12,6 @@ public enum MethodType {
     PREPEND,
     APPEND,
     GRAB_UNTIL,
-    TRIM
+    TRIM,
+    CLEAR_CONTENT
 }

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content="implbits.com website"> 
+  <title>HashTab</title> 
+  <!-- Latest compiled and minified CSS --> 
+  <link rel="stylesheet" href="/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="/css/implbits.css"> 
+  <link rel="canonical" href="http://localhost:4000//products/hashtab/"> 
+ </head> 
+ <body> 
+  <nav class="navbar-inverse navbar-fixed-top" role="navigation"> 
+   <div class="container-fix"> 
+    <div class="navbar-header"> 
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+     <a class="navbar-brand" href="/"> 
+      <div class="navbar-brand-name"> 
+       <img class="navbar-brand-logo pull-left" src="/img/ibits.svg"> Implbits 
+      </div> </a> 
+    </div> 
+    <div class="collapse navbar-collapse" id="navbar-collapse"> 
+     <ul class="nav navbar-nav"> 
+      <li> <a href="/">Home</a></li> 
+      <li> <a href="/products">Products</a></li> 
+      <li> <a href="/support">Support</a></li> 
+      <li> <a href="/blog">Blog</a></li> 
+      <li> <a href="/about">About</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </nav> 
+  <div class="container-fluid"> 
+   <!--
+  <header class="bgimage">
+ </header>
+    
+<div class="container-fluid mkttag">
+  <h4><img class="icon smallicon" src="/img/ico_hashtab.svg" alt="icon">Hashtab is the best way to verify file integrity and authenticity</h4>
+</div>
+--> 
+   <section> 
+    <div class="row"> 
+     <div class="col-sm-6"> 
+      <div class="product-personal"> 
+       <h2> Personal</h2> 
+       <p class="space">Hashtab is free for personal use, for students and for non-profits</p> 
+       <h1> Free</h1> 
+       <div class="text-center"> 
+        <a href="./HashTab_v6.0.0.34_Setup.exe" id="btn_download_now" class="btn btn-default" role="button">Download</a> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-6"> 
+      <div class="product-commercial"> 
+       <h2>Commercial</h2> 
+       <p class="space">A commercial license is required if you use Hashtab at work</p> 
+       <h1>$9.99</h1> 
+       <div class="text-center"> 
+        <a href="https://payments.implbits.com/license/hashtab" id="btn_download_now" class="btn btn-default" role="button">Buy Now</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <section class="hashtab"> 
+    <div class="row"> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="Algorithm" src="/img/icon_algo.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">Algorithms</h2> 
+       <p>Calculate and display hash values from over two dozen popular hashing algorithms like MD5, SHA1, SHA2, RipeMD, HAVAL and Whirlpool.</p> 
+      </div> 
+     </div> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="Easy" src="/img/icon_easy.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">Easy</h2> 
+       <p>The hash comparison tool supports drag and drop, copy and paste and even has a built-in browse option. </p> 
+      </div> 
+     </div> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="Global" src="/img/ico_directoryCompare.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">Global</h2> 
+       <p>Translated into 27 languages and counting, Hashtab has been downloaded millions of times from over 200 different countries.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="Assurance" src="/img/icon_fileinteg.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">Assurance</h2> 
+       <p>The perfect way to validate the integrity of a file download. Or use it to quickly compare local files and compute hashes for use in other programs.</p> 
+      </div> 
+     </div> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="Native" src="/img/icon_native.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">Native</h2> 
+       <p>Purposely designed to feel like a native feature of Windows. Simply select any file, go to properties, and use the new “File Hashes” tab. </p>
+       <p><b>Supports: Windows Vista and higher.</b></p> 
+       <p>32-bit and 64-bit</p> 
+      </div> 
+     </div> 
+     <div class="col-md-4"> 
+      <div class="product-feature"> 
+       <img alt="New" src="/img/volume.svg" height="36" width="36" line-height="190px"> 
+       <h2 class="feature-title">New</h2> 
+       <ul style="width: 70%; margin: auto; text-align: left;"> 
+        <li>Updated UI</li> 
+        <li>Understands .md5sum and other checksum files</li> 
+        <li>Save hashes to checksum files</li> 
+        <li>New hash algorithms including SHA3</li> 
+        <li>Bug fixes</li> 
+        <li>More language support</li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <div style="text-align: center">
+     Still using Windows XP? 
+    <a href="./HashTab_v5.2.0.14_Setup.exe">Get version 5.2</a> 
+   </div> 
+  </div> 
+  <div class="row footer"> 
+   <div class="col-xs-12-footer"> 
+    <footer> 
+     <p>© Implbits Software, LLC | +1 844-467-5248 | sales@implbits.com</p> 
+    </footer> 
+   </div> 
+  </div> 
+  <!-- JQuery --> 
+  <script src="/js/jquery-1.11.1.min.js">
+</script> 
+  <!-- JQuery UI --> 
+  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js">
+</script> 
+  <!-- Latest compiled and minified JavaScript --> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="/js/neotoma.js"></script> 
+  <script type="text/javascript" src="/js/download-box.js"></script>   
+ </body>
+</html>

@@ -1,6 +1,2 @@
 sonar-project.properties
 .scannerwork/
-out/
-target/
-runtime/
-releases/

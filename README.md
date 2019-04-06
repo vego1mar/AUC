@@ -1,2 +1,2 @@
 # AppsUpdatesCollector
-Monitor applications updates on Windows based on the built rules-driven list.
+Gather information about applications from their web sites using some invocation requests.

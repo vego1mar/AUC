@@ -5,10 +5,9 @@ import java.nio.file.Paths;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
-import net.vego1mar.auxiliary.method.Methodable;
-import net.vego1mar.auxiliary.target.Targetable;
+import net.vego1mar.method.Methodable;
+import net.vego1mar.target.Target;
 import net.vego1mar.rules.Rule;
-import net.vego1mar.rules.RuleImpl;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -24,9 +23,9 @@ public class XmlRulesSetReader extends XmlRulesSetTags {
         return new SAXReader().read(Paths.get(path).toUri().toURL());
     }
 
-    private Deque<RuleImpl> read(@NotNull Document document) {
+    private Deque<Rule> read(@NotNull Document document) {
         List<Element> elements = document.getRootElement().elements();
-        Deque<RuleImpl> rulesSet = new LinkedList<>();
+        Deque<Rule> rulesSet = new LinkedList<>();
 
         for (Element element : elements) {
             rulesSet.add(new Rule(readTargetNode(element), readMethodNode(element)));
@@ -35,7 +34,7 @@ public class XmlRulesSetReader extends XmlRulesSetTags {
         return rulesSet;
     }
 
-    private Targetable readTargetNode(@NotNull Element xmlRule) {
+    private Target readTargetNode(@NotNull Element xmlRule) {
         Element target = xmlRule.element(TAG_TARGET);
         XmlTargetNodeReader node = new XmlTargetNodeReader(target);
         node.readXmlTarget();
@@ -49,7 +48,7 @@ public class XmlRulesSetReader extends XmlRulesSetTags {
         return node.getObjMethod();
     }
 
-    public Deque<RuleImpl> loadSettings(@NotNull String xmlFile) {
+    public Deque<Rule> loadSettings(@NotNull String xmlFile) {
         try {
             return read(parse(xmlFile));
         } catch (DocumentException | MalformedURLException exp) {

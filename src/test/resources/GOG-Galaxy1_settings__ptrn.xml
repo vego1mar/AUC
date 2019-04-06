@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[<section class="glx-section]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>27</numberOf>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>TAG</type>
+      <text><![CDATA[section]]></text>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>ALL</type>
+      <tagname>a</tagname>
+    </method>
+  </rule>
+  <rule no="5">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FETCH_HREFS</methodType>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>MAC_OS_X_PKG</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>1</position>
+    </method>
+  </rule>
+  <rule no="7">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>LINKS</useAs>
+      <linkId>WINDOWS_X86_EXE</linkId>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>2</position>
+    </method>
+  </rule>
+  <rule no="8">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>1</position>
+    </method>
+  </rule>
+  <rule no="9">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>REMOVE_CHARACTERS</methodType>
+      <signs><![CDATA[abcdefghijklmnopqrstuvwxyz:/-_?=]]></signs>
+    </method>
+  </rule>
+  <rule no="10">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>2</numberOf>
+    </method>
+  </rule>
+  <rule no="11">
+    <target>
+      <in>CONTENT</in>
+      <useAs>VERSIONS</useAs>
+      <version>MAC_OS_X</version>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>1</numberOf>
+    </method>
+  </rule>
+  <rule no="12">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>2</position>
+    </method>
+  </rule>
+  <rule no="13">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>REMOVE_CHARACTERS</methodType>
+      <signs><![CDATA[abcdefghijklmnopqrstuvwxyz:/-_?=]]></signs>
+    </method>
+  </rule>
+  <rule no="14">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>2</numberOf>
+    </method>
+  </rule>
+  <rule no="15">
+    <target>
+      <in>CONTENT</in>
+      <useAs>VERSIONS</useAs>
+      <version>WINDOWS</version>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>1</numberOf>
+    </method>
+  </rule>
+</rulesSet>

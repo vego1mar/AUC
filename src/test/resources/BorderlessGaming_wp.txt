@@ -19,13 +19,13 @@
 
 
 
-  <link crossorigin="anonymous" media="all" integrity="sha512-pWLt6abkYhNeAHaDrPVG0yXCtIGRuCkwSUqQpsyN6smAIpIt+Iuq2IZKmoH9l3Cy/9ZnjvVrFZnvFFjGiqE3EA==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-a3b8a10d4a9e37a78f033ef4a4f525f5.css" />
-  <link crossorigin="anonymous" media="all" integrity="sha512-CP+9X35+fbpUSVeas9LknNct5b94CtOxn9krZDxsyGJMvrGqWaiJMCG57bPpMktuuF6dcI6TVVYJJMyj2PtnAQ==" rel="stylesheet" href="https://github.githubassets.com/assets/github-3a3976e2811f7801e52f1fc0355c84e2.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-R+Vpkv86him5JZcqAEuQRUGOKqH897w6q7uJ1P65tQR+9Hxar5vU4wpEd4uvcXT8ooRZ7zsNftrjnCemEt2u2Q==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-f4557b27209914aa4705202b188165b5.css" />
   
-  
-  
-  
-  
+    <link crossorigin="anonymous" media="all" integrity="sha512-KEU81s6VSQsWSYL9G7CIF3KfhcC/TA95vNfUJblMHowAYWYVidT8OwKZbk3cwed4lgSrWGI9C6HiSwa9InPqJA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-da3c6f2fea2a2b141160341f730a74e7.css" />
+    
+    
+    
+    
 
   <meta name="viewport" content="width=device-width">
   
@@ -39,10 +39,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/1297077?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Codeusa/Borderless-Gaming" /><meta property="og:url" content="https://github.com/Codeusa/Borderless-Gaming" /><meta property="og:description" content="Play your favorite games in a borderless window; no more time consuming alt-tabs.  - Codeusa/Borderless-Gaming" />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzYxNzMzODg2OjcxNzI3YjBjOThlODFkMzI3YmQ4NjBmZGRmYTgxOTZhNzUzM2RlMjU0YWFlZjMzZGNjYmJiNmVkY2Q2M2M0Mjc=--1169cc8cb7d7678a4316c2b357a748ac66771be8">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzgyNDAwNjQzOmM1MWU3MDk1NzM1Nzg0YzA5MDRlNDI0NWZhODVjMDc1ZDE5OTc0MTA2MDcyNjcyMmVhMjhiODQwYjRkZThjZWQ=--bf3de8d545dd12e703fd37406559864c2cb4f68f">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="6F59:2D042:2A682C:3ACB1B:5C3C6F89" data-pjax-transient>
+  <meta name="request-id" content="655F:1666:D206F:199B86:5C88108C" data-pjax-transient>
 
 
   
@@ -53,13 +53,13 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="6F59:2D042:2A682C:3ACB1B:5C3C6F89" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="23300974" /><meta name="octolytics-actor-login" content="vego1mar" /><meta name="octolytics-actor-hash" content="104eef4fda4038f7b15dc353de01016253201b4b314a3724e0aab8cbc42eb539" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="655F:1666:D206F:199B86:5C88108C" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="23300974" /><meta name="octolytics-actor-login" content="vego1mar" /><meta name="octolytics-actor-hash" content="104eef4fda4038f7b15dc353de01016253201b4b314a3724e0aab8cbc42eb539" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/releases/show" data-pjax-transient="true" />
 
 
 
 
-  <meta class="js-ga-set" name="userId" content="410a3ace1126a520423d5c5267ded541" %>
+  <meta class="js-ga-set" name="userId" content="410a3ace1126a520423d5c5267ded541">
 
 <meta class="js-ga-set" name="dimension1" content="Logged In">
 
@@ -71,13 +71,13 @@
     <meta name="user-login" content="vego1mar">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YTk1Y2FmMDJhNGQyMWM3ODliYmM5M2QyYTVlMmYyMDFjMmI5ODRlYmU0ODU1YWIwMjgwMmYzYTI1M2VmZjE4NHx7InJlbW90ZV9hZGRyZXNzIjoiNS4xNzMuMTkyLjIwNiIsInJlcXVlc3RfaWQiOiI2RjU5OjJEMDQyOjJBNjgyQzozQUNCMUI6NUMzQzZGODkiLCJ0aW1lc3RhbXAiOjE1NDc0NjQ2MDMsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="ZGUxZTUwNzU0YjRjMTgzMDViZTQ0OTgwNDQ4YzMwYjc0ZjJkNjc5OWQ1Y2ZjZDBmNGY4NWUxMWFiMDE1ZWZjY3x7InJlbW90ZV9hZGRyZXNzIjoiNS4xNzMuMTYwLjE0MiIsInJlcXVlc3RfaWQiOiI2NTVGOjE2NjY6RDIwNkY6MTk5Qjg2OjVDODgxMDhDIiwidGltZXN0YW1wIjoxNTUyNDIxMDA4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
-    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_INSIGHTS_V2">
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_SOCIAL_PROOF,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_BROWSING_V2">
 
-  <meta name="html-safe-nonce" content="e81a54edf51203c4b8631534d08b5c48047b5947">
+  <meta name="html-safe-nonce" content="3de32e1e845c78b9c1ee2d42ce55e5fbc6921983">
 
-  <meta http-equiv="x-pjax-version" content="28022040b2b507a42e06d57be4928cdc">
+  <meta http-equiv="x-pjax-version" content="7e7edc50af8fff76d140cd21ae2cdf21">
   
 
       <link href="https://github.com/Codeusa/Borderless-Gaming/commits/9.5.5.atom" rel="alternate" title="Recent Commits to Borderless-Gaming:9.5.5" type="application/atom+xml">
@@ -97,6 +97,7 @@
   <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
 
 <meta name="theme-color" content="#1e2327">
+
 
 
 
@@ -163,7 +164,7 @@
   aria-expanded="false"
 >
   <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="15819024" data-scoped-search-url="/Codeusa/Borderless-Gaming/search" data-unscoped-search-url="/search" action="/Codeusa/Borderless-Gaming/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="15819024" data-scoped-search-url="/Codeusa/Borderless-Gaming/search" data-unscoped-search-url="/search" action="/Codeusa/Borderless-Gaming/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
       <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
         <input type="text"
           class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
@@ -177,7 +178,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=4N7SmC1tv7D4BBpaZQuyke2cf6J5DQz7bBVvzv/4cUNSPsHHK/CfFjnGZD72Z2B/DjwVTVIbi5BtiXvrJ26rMw=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=5bpWodEjF1pHxg88QOjtfT/B7Kd08mZH+jfekvyHglcz24tKdMaofYlUWESpFNsiRk9wG01R+1wC7TuBkQiCKA=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -374,7 +375,7 @@
   <div class="dropdown-header">
     <span title="Codeusa/Borderless-Gaming">This repository</span>
   </div>
-    <a role="menuitem" class="dropdown-item" href="/Codeusa/Borderless-Gaming/issues/new" data-ga-click="Header, create new issue">
+    <a role="menuitem" class="dropdown-item" href="/Codeusa/Borderless-Gaming/issues/new" data-ga-click="Header, create new issue" >
       New issue
     </a>
 
@@ -400,14 +401,14 @@
         <span class="dropdown-caret"></span>
       </summary>
       <details-menu class="dropdown-menu dropdown-menu-sw">
-        <ul>
-          <li class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/vego1mar" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">vego1mar</strong></a></li>
-          <li class="dropdown-divider"></li>
-          <li class="px-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-            
+        <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/vego1mar" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">vego1mar</strong></a></div>
+        <div role="none" class="dropdown-divider"></div>
+
+        <div class="px-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+          
 <div class="js-user-status-container user-status-compact" data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
-    <summary class="btn-link no-underline js-toggle-user-status-edit toggle-user-status-edit width-full" aria-haspopup="dialog">
+    <summary class="btn-link no-underline js-toggle-user-status-edit toggle-user-status-edit width-full" aria-haspopup="dialog" role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:1297077,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:23300974,&quot;client_id&quot;:&quot;839191658.1547321171&quot;,&quot;originating_request_id&quot;:&quot;655F:1666:D206F:199B86:5C88108C&quot;,&quot;originating_url&quot;:&quot;https://github.com/Codeusa/Borderless-Gaming/releases/tag/9.5.5&quot;}}" data-hydro-click-hmac="9b4bf407d46676cd15aeab33b11e3556b71448dd9a9be9ac3a0c09cb9414100d">
       <div class="f6 d-inline-block v-align-middle  user-status-emoji-only-header pl-0 circle lh-condensed user-status-header " style="max-width: 29px">
         <div class="user-status-emoji-container flex-shrink-0 mr-1">
           <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
@@ -416,22 +417,21 @@
       <div class="d-inline-block v-align-middle user-status-message-wrapper f6 lh-condensed ws-normal pt-1">
           <span class="link-gray">Set your status</span>
       </div>
-    </summary>
-    <details-dialog class="anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="/g0UjHKG7bj/vDI1jnYjZ9dswUE6zuzrwoj5hWaO+jFcoei6XFxan387NfSgXi6KJ+aJ5kUNL6Dqn2IsCAjGSA==" />
-        <div class="Box-header">
+</summary>    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="CaF515Kcv70RKzMx2sOnDt2NM5RcPRxA8EyXHD4TMumQhtivkjBuz33LvXDyAN4COewCy4oFl0mWkmtCqz49Zg==" />
+        <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
           </button>
-          <h3 class="Box-title text-gray-dark">Edit status</h3>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
         </div>
         <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
         <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
         <div class="px-3 py-2 text-gray-dark">
           <div class="js-characters-remaining-container js-suggester-container position-relative mt-2">
-            <div class="input-group">
-              <span class="input-group-button">
-                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker bg-white btn-open-emoji-picker">
                   <span class="js-user-status-original-emoji" hidden></span>
                   <span class="js-user-status-custom-emoji"></span>
                   <span class="js-user-status-no-emoji-icon" >
@@ -439,7 +439,8 @@
                   </span>
                 </button>
               </span>
-              <input type="text" autocomplete="off" autofocus data-maxlength="80" class="js-suggester-field form-control js-user-status-message-field js-characters-remaining-field" placeholder="What's happening?" name="message" required value="" aria-label="What is your current status?">
+              <input type="text" autocomplete="off" autofocus data-maxlength="80" class="js-suggester-field d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field" placeholder="What's happening?" name="message" required value="" aria-label="What is your current status?">
+              <div class="error">Could not update your status, please try again.</div>
             </div>
             <div class="suggester-container">
               <div class="suggester js-suggester js-navigation-container" data-url="/autocomplete/user-suggestions" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions" hidden>
@@ -517,41 +518,40 @@
         </div>
 </form>    </details-dialog>
   </details>
-
 </div>
 
-          </li>
-          <li class="dropdown-divider"></li>
-          <li><a role="menuitem" class="dropdown-item" href="/vego1mar" data-ga-click="Header, go to profile, text:your profile">Your profile</a></li>
-          <li><a role="menuitem" class="dropdown-item" href="/vego1mar?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a></li>
+        </div>
+        <div role="none" class="dropdown-divider"></div>
 
+        <a role="menuitem" class="dropdown-item" href="/vego1mar" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+        <a role="menuitem" class="dropdown-item" href="/vego1mar?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
 
-          <li><a role="menuitem" class="dropdown-item" href="/vego1mar?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a></li>
-            <li><a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
-          <li class="dropdown-divider"></li>
-          <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
-          <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
-          <li>
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4gSnglv42BD/gYonXX+gxtbz13QqSx8uaqFRiq8ABDg9UH66JIg7Ld6+IUST1E/B3iZwLTu1akiA6+5MZlOzUQ==" />
-              
-              <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
-                Sign out
-              </button>
-</form>          </li>
-        </ul>
-      </details-menu>
+        <a role="menuitem" class="dropdown-item" href="/vego1mar?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+        <a role="menuitem" class="dropdown-item" href="/vego1mar?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+          <a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+        <div role="none" class="dropdown-divider"></div>
+        <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+        <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="097xxjKsBgAzTfVmSKvQUkYuM3Ck8QbjQIc8lZdvjbNfbSHJ3/4bacLxG2pe0AQ54vE9DvQKJHWK5QeHymHBcg==" />
+          
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+            Sign out
+          </button>
+</form>      </details-menu>
     </details>
   </li>
 </ul>
 
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="d-lg-none" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WiuzlrTrJch/ha83r3m2LELCvNRGmBBew6RL8D+AJkKFf2quy5vG9V66BFRh0lkrShcbjVdmZTgp7vQ29tORKw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="d-lg-none" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Xu9zNTn6emB3UvqT2YiY1nh8ZSF0sTWTfYG41S5eHw7SXKM61KhnCYbuFJ/P80y93KNrXyRKFwW344PHc1BTzw==" />
             <button type="submit" class="btn-link HeaderNavlink d-block width-full text-left py-2 text-bold" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
               <svg class="octicon octicon-sign-out v-align-middle" style="margin-right: 2px;" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
               Sign out
             </button>
 </form>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OyzFGw82IVQyW9nF2eLphZWe2O/2kSxO3MIzOZgS28rkeBwjcEbCaRNkcqYXSQaCnUt/tudvWSg2iIz/UUFsow==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="10WeDKRdGIPBVtSDt9hS558Co8gtb8afDu0EdedI+Q1b9k4DSQ8F6jDqOo+ho4aMO92ttn2U5AnEjz9nuka1zA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -572,11 +572,12 @@
 
 
 
-  <div role="main" class="application-main " data-commit-hovercards-enabled>
+  <div class="application-main " data-commit-hovercards-enabled>
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <div  >
+    <main  >
       
   
+
 
 
 
@@ -586,17 +587,18 @@
     <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
 
       <ul class="pagehead-actions">
+
+
+
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ksS9khpd0WnE3RI4eYYxTHt2A6VS1ofSv7wSKhWeFVaU6NY5lPLL7Ye0jLRXh5wAAqCxbhZsYewElQhsCXZf7Q==" />      <input type="hidden" name="repository_id" id="repository_id" value="15819024" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="llXWdAQkqWFTMPoep3F8UzL33J4eBsQ5+Lvxprj8cKLs71wF2BSqaT268cUsoWNi65I+/EvkYp+4e8Nq70Eajw==" />      <input type="hidden" name="repository_id" id="repository_id" value="15819024" class="form-control" />
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:releases#show">
-          <span data-menu-button>
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;user_id&quot;:23300974,&quot;record_id&quot;:15819024,&quot;client_id&quot;:&quot;839191658.1547321171&quot;,&quot;originating_request_id&quot;:&quot;655F:1666:D206F:199B86:5C88108C&quot;,&quot;originating_url&quot;:&quot;https://github.com/Codeusa/Borderless-Gaming/releases/tag/9.5.5&quot;}}" data-hydro-click-hmac="7e081a4a6c7202e8cd428bcb0dd7cc7c7d7d8499a3a2b9b7deba24315e50d40d" data-ga-click="Repository, click Watch settings, action:releases#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Watch
           </span>
-        </summary>
-        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
+</summary>        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
           <div class="select-menu-header">
             <span class="select-menu-title">Notifications</span>
           </div>
@@ -653,62 +655,43 @@
       </details>
       <a class="social-count js-social-count"
         href="/Codeusa/Borderless-Gaming/watchers"
-        aria-label="138 users are watching this repository">
-        138
+        aria-label="135 users are watching this repository">
+        135
       </a>
 </form>
   </li>
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/Codeusa/Borderless-Gaming/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="bi5wrtQe/2R9VTSekAvHPx5QK9WVCwF/V+HI4yQyqSdtWQl882a0B6oHJYFG+BBMBaxeydp3DBMuJdJMmlj/hw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/Codeusa/Borderless-Gaming/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4KvybSX+fbkyiR3i8PThOFX95dYw7Baww/E9j16DC1Qk9RbFMrRDCwDKjW3XX2TFgEzuvRV3ebfrbMqBM0ZpiA==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button
-        type="submit"
-        class="btn btn-sm btn-with-count js-toggler-target"
-        aria-label="Unstar this repository" title="Unstar Codeusa/Borderless-Gaming"
-        data-ga-click="Repository, click unstar button, action:releases#show; text:Unstar">
-        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar Codeusa/Borderless-Gaming" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;user_id&quot;:23300974,&quot;record_id&quot;:15819024,&quot;client_id&quot;:&quot;839191658.1547321171&quot;,&quot;originating_request_id&quot;:&quot;655F:1666:D206F:199B86:5C88108C&quot;,&quot;originating_url&quot;:&quot;https://github.com/Codeusa/Borderless-Gaming/releases/tag/9.5.5&quot;}}" data-hydro-click-hmac="07684ee9782f1b0acd84ad5e35d0406603aaaf904595c7a9e0f4f1b03086f9e9" data-ga-click="Repository, click unstar button, action:releases#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
-      </button>
-        <a class="social-count js-social-count" href="/Codeusa/Borderless-Gaming/stargazers"
-           aria-label="2013 users starred this repository">
-          2,013
+</button>        <a class="social-count js-social-count" href="/Codeusa/Borderless-Gaming/stargazers"
+           aria-label="2094 users starred this repository">
+          2,094
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/Codeusa/Borderless-Gaming/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rS+8E7N4b/wkCZCW+m7uEylNIo8R1WmPq7aztfOemrRd2d3bGvdsJwFRRtC3luX+90XU0lpWWXWwt2cyJHGM/Q==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/Codeusa/Borderless-Gaming/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ndFPioXf2cBO7mPbFQ63qEJXlqtFmS/xS3UrytCCl3AOlHY5UumOB6WUiVuNqNBKVGW84ywZkWjZP5sTrP8TEg==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button
-        type="submit"
-        class="btn btn-sm btn-with-count js-toggler-target"
-        aria-label="Star this repository" title="Star Codeusa/Borderless-Gaming"
-        data-ga-click="Repository, click star button, action:releases#show; text:Star">
-        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star Codeusa/Borderless-Gaming" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;user_id&quot;:23300974,&quot;record_id&quot;:15819024,&quot;client_id&quot;:&quot;839191658.1547321171&quot;,&quot;originating_request_id&quot;:&quot;655F:1666:D206F:199B86:5C88108C&quot;,&quot;originating_url&quot;:&quot;https://github.com/Codeusa/Borderless-Gaming/releases/tag/9.5.5&quot;}}" data-hydro-click-hmac="02f79f379d2463b25fa7603585982ea097728645ba3e9afbeb46c16d69309e06" data-ga-click="Repository, click star button, action:releases#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
-      </button>
-        <a class="social-count js-social-count" href="/Codeusa/Borderless-Gaming/stargazers"
-           aria-label="2013 users starred this repository">
-          2,013
+</button>        <a class="social-count js-social-count" href="/Codeusa/Borderless-Gaming/stargazers"
+           aria-label="2094 users starred this repository">
+          2,094
         </a>
 </form>  </div>
 
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/Codeusa/Borderless-Gaming/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+uhzbTB/lniXMbdgZAZs9IXaRfsR+jTOJ4haOFn9L5lNqB3bJPoeWLQN16XrDjHLj6Ml159PKTXFMqO7rTNZ3Q==" />
-            <button
-                type="submit"
-                class="btn btn-sm btn-with-count"
-                data-ga-click="Repository, show fork modal, action:releases#show; text:Fork"
-                title="Fork your own copy of Codeusa/Borderless-Gaming to your account"
-                aria-label="Fork your own copy of Codeusa/Borderless-Gaming to your account">
-              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/Codeusa/Borderless-Gaming/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="YAMVHt3Iksin5Vp10rqHS1hwi3M7ipu3b71zKGZSStqgPO1eBe6r3n/J4IPp7G8d4dhwww4aRRZkyeLW+t0eQw==" />
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;user_id&quot;:23300974,&quot;record_id&quot;:15819024,&quot;client_id&quot;:&quot;839191658.1547321171&quot;,&quot;originating_request_id&quot;:&quot;655F:1666:D206F:199B86:5C88108C&quot;,&quot;originating_url&quot;:&quot;https://github.com/Codeusa/Borderless-Gaming/releases/tag/9.5.5&quot;}}" data-hydro-click-hmac="1a02c469aa53202ffab45f473baa50457c9256b6fa7b878eda4b0b91d659f8dd" data-ga-click="Repository, show fork modal, action:releases#show; text:Fork" type="submit" title="Fork your own copy of Codeusa/Borderless-Gaming to your account" aria-label="Fork your own copy of Codeusa/Borderless-Gaming to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
-            </button>
-</form>
+</button></form>
     <a href="/Codeusa/Borderless-Gaming/network/members" class="social-count"
-       aria-label="233 users forked this repository">
-      233
+       aria-label="246 users forked this repository">
+      246
     </a>
   </li>
 </ul>
@@ -740,7 +723,7 @@
       <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /Codeusa/Borderless-Gaming/issues" href="/Codeusa/Borderless-Gaming/issues">
         <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
         <span itemprop="name">Issues</span>
-        <span class="Counter">154</span>
+        <span class="Counter">153</span>
         <meta itemprop="position" content="2">
 </a>    </span>
 
@@ -748,7 +731,7 @@
     <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /Codeusa/Borderless-Gaming/pulls" href="/Codeusa/Borderless-Gaming/pulls">
       <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
       <span itemprop="name">Pull requests</span>
-      <span class="Counter">2</span>
+      <span class="Counter">4</span>
       <meta itemprop="position" content="3">
 </a>  </span>
 
@@ -763,7 +746,7 @@
       <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
       Wiki
 </a>
-    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security /Codeusa/Borderless-Gaming/pulse" href="/Codeusa/Borderless-Gaming/pulse">
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security people /Codeusa/Borderless-Gaming/pulse" href="/Codeusa/Borderless-Gaming/pulse">
       <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
       Insights
 </a>
@@ -784,14 +767,14 @@
       <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
         <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /Codeusa/Borderless-Gaming/issues" href="/Codeusa/Borderless-Gaming/issues">
           <span itemprop="name">Issues</span>
-          <span class="Counter">154</span>
+          <span class="Counter">153</span>
           <meta itemprop="position" content="2">
 </a>      </span>
 
     <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
       <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /Codeusa/Borderless-Gaming/pulls" href="/Codeusa/Borderless-Gaming/pulls">
         <span itemprop="name">Pull requests</span>
-        <span class="Counter">2</span>
+        <span class="Counter">4</span>
         <meta itemprop="position" content="3">
 </a>    </span>
 
@@ -821,7 +804,6 @@
 
 
   </div>
-
 <div class="container-lg new-discussion-timeline experiment-repo-nav  p-responsive">
   <div class="repository-content ">
 
@@ -877,7 +859,7 @@
           <div class="dropdown-menu dropdown-menu-s py-0 text-gray-dark text-left">
             <div class="signed-commit-header TableObject">
               <div class="TableObject-item">
-                <svg height="32" class="octicon octicon-verified mr-2" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M16.65 7.507l-1.147-1.423a1.595 1.595 0 0 1-.33-.817l-.201-1.805a1.603 1.603 0 0 0-1.412-1.413l-1.806-.201a1.617 1.617 0 0 1-.828-.35L9.503.35a1.597 1.597 0 0 0-1.996 0L6.084 1.497c-.233.18-.51.297-.817.33l-1.805.201A1.603 1.603 0 0 0 2.049 3.44l-.201 1.805c-.032.319-.17.595-.35.829L.35 7.497a1.597 1.597 0 0 0 0 1.996l1.147 1.423c.18.233.297.51.33.817l.201 1.805a1.603 1.603 0 0 0 1.412 1.413l1.805.201c.319.032.595.17.829.35l1.423 1.148a1.597 1.597 0 0 0 1.996 0l1.423-1.147c.233-.18.51-.297.817-.33l1.805-.201a1.603 1.603 0 0 0 1.413-1.412l.201-1.806c.032-.318.17-.594.35-.828l1.148-1.423a1.597 1.597 0 0 0 0-1.996zm-9.737 5.246L3.196 9.036 4.79 7.443l2.124 2.124 5.309-5.309 1.593 1.646-6.902 6.849z"/></svg>
+                <svg height="32" class="octicon octicon-verified mr-2" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M15.67 7.066l-1.08-1.34a1.5 1.5 0 0 1-.309-.77l-.19-1.698a1.51 1.51 0 0 0-1.329-1.33l-1.699-.19c-.3-.03-.56-.159-.78-.329L8.945.33a1.504 1.504 0 0 0-1.878 0l-1.34 1.08a1.5 1.5 0 0 1-.77.31l-1.698.19c-.7.08-1.25.63-1.33 1.329l-.19 1.699c-.03.3-.159.56-.329.78L.33 7.055a1.504 1.504 0 0 0 0 1.878l1.08 1.34c.17.22.28.48.31.77l.19 1.698c.08.7.63 1.25 1.329 1.33l1.699.19c.3.03.56.159.78.329l1.339 1.08c.55.439 1.329.439 1.878 0l1.34-1.08c.22-.17.48-.28.77-.31l1.698-.19c.7-.08 1.25-.63 1.33-1.329l.19-1.699c.03-.3.159-.56.329-.78l1.08-1.339a1.504 1.504 0 0 0 0-1.878zM6.5 12.01L3 8.51l1.5-1.5 2 2 5-5L13 5.56l-6.5 6.45z"/></svg>
               </div>
               <div class="TableObject-item--primary">
                     This commit was created on GitHub.com and signed with a <strong class="signed-commit-verified-label">verified signature</strong> using GitHub’s key.
@@ -933,7 +915,7 @@
           <div class="dropdown-menu dropdown-menu-sw py-0 text-gray-dark text-left">
             <div class="signed-commit-header TableObject">
               <div class="TableObject-item">
-                <svg height="32" class="octicon octicon-verified mr-2" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M16.65 7.507l-1.147-1.423a1.595 1.595 0 0 1-.33-.817l-.201-1.805a1.603 1.603 0 0 0-1.412-1.413l-1.806-.201a1.617 1.617 0 0 1-.828-.35L9.503.35a1.597 1.597 0 0 0-1.996 0L6.084 1.497c-.233.18-.51.297-.817.33l-1.805.201A1.603 1.603 0 0 0 2.049 3.44l-.201 1.805c-.032.319-.17.595-.35.829L.35 7.497a1.597 1.597 0 0 0 0 1.996l1.147 1.423c.18.233.297.51.33.817l.201 1.805a1.603 1.603 0 0 0 1.412 1.413l1.805.201c.319.032.595.17.829.35l1.423 1.148a1.597 1.597 0 0 0 1.996 0l1.423-1.147c.233-.18.51-.297.817-.33l1.805-.201a1.603 1.603 0 0 0 1.413-1.412l.201-1.806c.032-.318.17-.594.35-.828l1.148-1.423a1.597 1.597 0 0 0 0-1.996zm-9.737 5.246L3.196 9.036 4.79 7.443l2.124 2.124 5.309-5.309 1.593 1.646-6.902 6.849z"/></svg>
+                <svg height="32" class="octicon octicon-verified mr-2" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M15.67 7.066l-1.08-1.34a1.5 1.5 0 0 1-.309-.77l-.19-1.698a1.51 1.51 0 0 0-1.329-1.33l-1.699-.19c-.3-.03-.56-.159-.78-.329L8.945.33a1.504 1.504 0 0 0-1.878 0l-1.34 1.08a1.5 1.5 0 0 1-.77.31l-1.698.19c-.7.08-1.25.63-1.33 1.329l-.19 1.699c-.03.3-.159.56-.329.78L.33 7.055a1.504 1.504 0 0 0 0 1.878l1.08 1.34c.17.22.28.48.31.77l.19 1.698c.08.7.63 1.25 1.329 1.33l1.699.19c.3.03.56.159.78.329l1.339 1.08c.55.439 1.329.439 1.878 0l1.34-1.08c.22-.17.48-.28.77-.31l1.698-.19c.7-.08 1.25-.63 1.33-1.329l.19-1.699c.03-.3.159-.56.329-.78l1.08-1.339a1.504 1.504 0 0 0 0-1.878zM6.5 12.01L3 8.51l1.5-1.5 2 2 5-5L13 5.56l-6.5 6.45z"/></svg>
               </div>
               <div class="TableObject-item--primary">
                     This commit was created on GitHub.com and signed with a <strong class="signed-commit-verified-label">verified signature</strong> using GitHub’s key.
@@ -955,57 +937,65 @@
         <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=1297077" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Codeusa"><img class="avatar" src="https://avatars2.githubusercontent.com/u/1297077?s=40&amp;v=4" width="20" height="20" alt="@Codeusa" /></a>
         <a class="text-bold text-gray" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=1297077" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Codeusa">Codeusa</a>
         released this
-          <relative-time datetime="2018-10-11T01:52:18Z">Oct 11, 2018</relative-time>
+          <relative-time datetime="2018-10-11T01:52:18Z">
+             Oct 11, 2018
+            </relative-time>
 
           &middot;
 
           <a href="/Codeusa/Borderless-Gaming/compare/9.5.5...master">
-            11 commits</a>
+            15 commits</a>
           to master
           since this release
       </p>
     </div>
 
-      <details class="my-2 my-md-4 details-reset Details-element" open>
-        <summary>
-          <div class="d-flex flex-items-center">
-            <span class="mr-2 Details-content--closed"><svg class="octicon octicon-chevron-right" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg></span>
-            <span class="mr-2 Details-content--open"><svg class="octicon octicon-chevron-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"/></svg></span>
-            <span class="f3 text-bold">Assets</span>
-            <span class="ml-1 Counter">3</span>
-          </div>
-        </summary>
-        <ul class="mt-1 mt-md-2">
-            <li class="d-block py-1 py-md-2">
-              <a href="/Codeusa/Borderless-Gaming/releases/download/9.5.5/BorderlessGaming9.5.5_admin_setup.exe" rel="nofollow" class="d-flex flex-items-center">
-                <svg class="octicon octicon-package flex-shrink-0 text-gray" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
-                <strong class="pl-1 pr-2 flex-auto min-width-0">BorderlessGaming9.5.5_admin_setup.exe</strong>
-                <small class="text-gray flex-shrink-0">3.81 MB</small>
-              </a>
-            </li>
+    
 
-
-            <li class="d-block py-1 py-md-2">
-              <a href="/Codeusa/Borderless-Gaming/archive/9.5.5.zip" rel="nofollow" class="d-flex flex-items-center">
-                <svg class="octicon octicon-file-zip flex-shrink-0 text-gray" width="16" height="16" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z"/></svg>
-                <strong class="px-1">Source code</strong> (zip)
-              </a>
-            </li>
-            <li class="d-block py-1 py-md-2">
-              <a href="/Codeusa/Borderless-Gaming/archive/9.5.5.tar.gz" rel="nofollow" class="d-flex flex-items-center">
-                <svg class="octicon octicon-file-zip flex-shrink-0 text-gray" width="16" height="16" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z"/></svg>
-                <strong class="px-1">Source code</strong> (tar.gz)
-              </a>
-            </li>
-        </ul>
-      </details>
-
-      <div class="markdown-body">
-        <p>This release is identical to 9.5.4. The certificate used to sign the last release has expired and cannot be renewed; I have chosen to sign it using the EV cert from my company which should always be up-to-date.</p>
+  <div class="markdown-body">
+    <p>This release is identical to 9.5.4. The certificate used to sign the last release has expired and cannot be renewed; I have chosen to sign it using the EV cert from my company which should always be up-to-date.</p>
 <p>I also owe the entire community an apology. If you wish to read it you can do so <strong><a href="https://github.com/Codeusa/Borderless-Gaming/issues/417#issue-368400994" data-hovercard-type="issue" data-hovercard-url="/Codeusa/Borderless-Gaming/issues/417/hovercard">here</a></strong>. It covers a lot of details and how I plan to step away from Borderless-Gaming to make up for past actions.</p>
 <h3>Download</h3>
 <p><a href="http://store.steampowered.com/app/388080" rel="nofollow"><img src="https://camo.githubusercontent.com/f307399681ff49ca716f68132ff5bf5f8a1a70ee/687474703a2f2f63646e2e616b616d61692e737465616d7374617469632e636f6d2f737465616d2f617070732f3338383038302f6865616465722e6a70673f743d31343437333737313439" data-canonical-src="http://cdn.akamai.steamstatic.com/steam/apps/388080/header.jpg?t=1447377149" style="max-width:100%;"></a></p>
+  </div>
+
+
+  <details class="details-reset Details-element border-top pt-3 mt-4 mb-2 mb-md-4" open>
+    <summary>
+      <div class="d-flex flex-items-center">
+        <span class="mr-2 Details-content--closed"><svg class="octicon octicon-triangle-right" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg></span>
+        <span class="mr-2 Details-content--open"><svg class="octicon octicon-triangle-down" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg></span>
+        <span class="text-bold">Assets</span>
+        <span class="ml-1 Counter">3</span>
       </div>
+    </summary>
+    <div class="Box Box--condensed mt-3">
+      <div>
+          <div class="d-flex flex-justify-between py-1 py-md-2 Box-body px-2">
+            <a href="/Codeusa/Borderless-Gaming/releases/download/9.5.5/BorderlessGaming9.5.5_admin_setup.exe" rel="nofollow" class="d-flex flex-items-center">
+              <svg class="octicon octicon-package flex-shrink-0 text-gray" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
+              <span class="pl-2 flex-auto min-width-0 text-bold">BorderlessGaming9.5.5_admin_setup.exe</span>
+            </a>
+            <small class="text-gray flex-shrink-0">3.81 MB</small>
+          </div>
+
+
+          <div class="d-block py-1 py-md-2 Box-body px-2">
+            <a href="/Codeusa/Borderless-Gaming/archive/9.5.5.zip" rel="nofollow" class="d-flex flex-items-center">
+              <svg class="octicon octicon-file-zip flex-shrink-0 text-gray" width="16" height="16" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z"/></svg>
+              <span class="px-1 text-bold">Source code</span> (zip)
+            </a>
+          </div>
+          <div class="d-block py-1 py-md-2 Box-body px-2">
+            <a href="/Codeusa/Borderless-Gaming/archive/9.5.5.tar.gz" rel="nofollow" class="d-flex flex-items-center">
+              <svg class="octicon octicon-file-zip flex-shrink-0 text-gray" width="16" height="16" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z"/></svg>
+              <span class="px-1 text-bold">Source code</span> (tar.gz)
+            </a>
+          </div>
+      </div>
+    </div>
+  </details>
+
 
   </div><!-- /.release-body -->
 </div><!-- /.release -->
@@ -1017,24 +1007,25 @@
   <div class="modal-backdrop js-touch-events"></div>
 </div>
 
-    </div>
+    </main>
   </div>
+  
 
   </div>
 
         
-<div class="footer container-lg p-responsive" role="contentinfo">
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-6 flex-justify-center flex-lg-justify-start mb-2 mb-lg-0">
-      <li class="mr-3">&copy; 2019 <span title="0.26201s from unicorn-5f8857748f-nm2jh">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2019 <span title="0.37555s from unicorn-7c67dc466f-w9g2l">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
-        <li class="mr-3"><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
         <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
         <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
     </ul>
 
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mx-lg-4" href="https://github.com">
       <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 </a>
    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-6 flex-justify-center flex-lg-justify-end mb-2 mb-lg-0">
@@ -1042,7 +1033,7 @@
         <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
       <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
       <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
         <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
 
     </ul>
@@ -1063,10 +1054,10 @@
   </div>
 
 
-    <script crossorigin="anonymous" integrity="sha512-Mp0nAOFvmE8PVQP49TPVMbQBLb+lpf3gu9GF1CPqybGGzl/8KEKDTKzuJpxxd5xF8HUi85xKPkssLtVVdLKtlw==" type="application/javascript" src="https://github.githubassets.com/assets/compat-6e5ed2648dae3be3f9358af5732a780f.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-iNWr9wGbDmqnbdomytxMiuceO/V2lX3dbGd/TsCrrjhBk+1YoWsNKioHSCrvfElF4xNtsMgMiyBXW7Wkj+WMZg==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-be15e106b4a7518f3a8ee2f63fa595ba.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-YO4Xdg5PJ8V3WsQjmZQZPkNwtVLd6anicd3HzJicDXWlXgi629sbZLgmltqHKGuxfDjONfyBtkR5BigP6pasJw==" type="application/javascript" src="https://github.githubassets.com/assets/compat-bootstrap-f561736257691187.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-YeSVCHVnUek8STxdIiqOkjmXdGtFepaG9wpHC0U7t61wYhGu+ifD2GOQ0I2xVbQL9ZXhUyxrom+3dxOGF/skGg==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-8465b3752de29c55.js"></script>
     
-    <script crossorigin="anonymous" async="async" integrity="sha512-Ax9sne1lTKdzfh0F6vdKlANYihU/azmqrw50drWL5Af78GsWJEurxarJN714ZtqmUEUdFqza4YZCKuG4YRzQHA==" type="application/javascript" src="https://github.githubassets.com/assets/github-a004f249d4a217e23cc0ccd89aa8f76c.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-C9Dday8ZqULcdvQyXwe2onDUy1R3ugO/iOZ1wHDwBwsq6TI8N5i74XlrkQJSdmg1JPvjdFZMroBwPbv4+tfdkw==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-59d11841a5c00f27.js"></script>
     
     
     
@@ -1075,16 +1066,6 @@
     <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
     <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
   </div>
-  <div class="facebox" id="facebox" style="display:none;">
-  <div class="facebox-popup">
-    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
-    </div>
-    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
-      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-    </button>
-  </div>
-</div>
-
   <template id="site-details-dialog">
   <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
     <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
@@ -1100,10 +1081,6 @@
   <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
   <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
   </div>
-</div>
-
-<div id="hovercard-aria-description" class="sr-only">
-  Press h to open a hovercard with more details.
 </div>
 
   <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>

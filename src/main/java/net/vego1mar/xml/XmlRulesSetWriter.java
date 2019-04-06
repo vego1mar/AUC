@@ -3,15 +3,17 @@ package net.vego1mar.xml;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Deque;
-import net.vego1mar.auxiliary.method.ExtractWordMethod;
-import net.vego1mar.auxiliary.method.FirstOfMethod;
-import net.vego1mar.auxiliary.method.GrabUntilMethod;
-import net.vego1mar.auxiliary.method.PrependMethod;
-import net.vego1mar.auxiliary.method.RemoveCharactersMethod;
-import net.vego1mar.auxiliary.method.RetrieveTagsMethod;
-import net.vego1mar.auxiliary.method.TrimMethod;
-import net.vego1mar.auxiliary.target.Target;
-import net.vego1mar.rules.RuleImpl;
+import net.vego1mar.method.AppendMethod;
+import net.vego1mar.method.ExtractWordMethod;
+import net.vego1mar.method.FirstOfMethod;
+import net.vego1mar.method.GrabUntilMethod;
+import net.vego1mar.method.PrependMethod;
+import net.vego1mar.method.RemoveCharactersMethod;
+import net.vego1mar.method.RemoveStringsMethod;
+import net.vego1mar.method.RetrieveTagsMethod;
+import net.vego1mar.method.TrimMethod;
+import net.vego1mar.rules.Rule;
+import net.vego1mar.target.Target;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -24,12 +26,12 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
 
     private static final Logger log = Logger.getLogger(XmlRulesSetWriter.class);
 
-    private Document createDocument(@NotNull Deque<RuleImpl> rulesSet) {
+    private Document createDocument(@NotNull Deque<Rule> rulesSet) {
         Document document = DocumentHelper.createDocument();
         Element root = document.addElement(TAG_RULESSET);
         int i = 1;
 
-        for (RuleImpl item : rulesSet) {
+        for (Rule item : rulesSet) {
             Element rule = root.addElement(TAG_RULE).addAttribute("no", String.valueOf(i));
             createTargetNode(rule, item);
             createMethodNode(rule, item);
@@ -39,9 +41,9 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         return document;
     }
 
-    private void createTargetNode(@NotNull Element xmlRule, @NotNull RuleImpl objRule) {
+    private void createTargetNode(@NotNull Element xmlRule, @NotNull Rule objRule) {
         Element node = xmlRule.addElement(TAG_TARGET);
-        Target target = (Target) objRule.getTarget();
+        Target target = objRule.getTarget();
         node.addElement(TAG_IN).addText(target.in().toString());
         node.addElement(TAG_USEAS).addText(target.useAs().toString());
 
@@ -62,7 +64,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         }
     }
 
-    private void createMethodNode(@NotNull Element xmlRule, @NotNull RuleImpl objRule) {
+    private void createMethodNode(@NotNull Element xmlRule, @NotNull Rule objRule) {
         Element node = xmlRule.addElement(TAG_METHOD);
         node.addElement(TAG_METHODTYPE).addText(objRule.getMethod().getMethodType().toString());
 
@@ -70,6 +72,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
             case EMPTY:
             case FETCH_HREFS:
             case SPLIT_WORDS:
+            case CLEAR_CONTENT:
                 break;
             case FIRST_OF:
                 FirstOfMethod firstOfMethod = (FirstOfMethod) objRule.getMethod();
@@ -89,9 +92,17 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
                 RemoveCharactersMethod removeCharactersMethod = (RemoveCharactersMethod) objRule.getMethod();
                 node.addElement(TAG_SIGNS).addCDATA(removeCharactersMethod.getSigns());
                 break;
+            case REMOVE_STRINGS:
+                RemoveStringsMethod removeStringsMethod = (RemoveStringsMethod) objRule.getMethod();
+                node.addElement(TAG_STRING).addCDATA(removeStringsMethod.getString());
+                break;
             case PREPEND:
                 PrependMethod prependMethod = (PrependMethod) objRule.getMethod();
                 node.addElement(TAG_TEXT).addCDATA(prependMethod.getText());
+                break;
+            case APPEND:
+                AppendMethod appendMethod = (AppendMethod) objRule.getMethod();
+                node.addElement(TAG_TEXT).addCDATA(appendMethod.getText());
                 break;
             case GRAB_UNTIL:
                 GrabUntilMethod grabUntilMethod = (GrabUntilMethod) objRule.getMethod();
@@ -102,6 +113,8 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
                 node.addElement(TAG_SIDE).addText(trimMethod.getSide().name());
                 node.addElement(TAG_NUMBEROF).addText(String.valueOf(trimMethod.getNumberOf()));
                 break;
+            default:
+                // If no valid method type has been chosen then do nothing.
         }
     }
 
@@ -114,7 +127,7 @@ public class XmlRulesSetWriter extends XmlRulesSetTags {
         }
     }
 
-    public void saveSettings(@NotNull Deque<RuleImpl> rulesSet, @NotNull String xmlFile) {
+    public void saveSettings(@NotNull Deque<Rule> rulesSet, @NotNull String xmlFile) {
         try {
             write(createDocument(rulesSet), xmlFile);
         } catch (IOException exp) {

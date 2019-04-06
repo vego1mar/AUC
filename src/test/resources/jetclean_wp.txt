@@ -1,134 +1,97 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-  <meta name="generator" content="Esselbach Contentteller CMS" />
-  <meta property="og:image" content="http://www.majorgeeks.com/images/logos/majorgeeks.gif"/>
-  <meta name="description" content="With a single click, JetClean gives you that fresh, new PC feeling again! Light-weight and easy to use, JetClean removes system junk files and it protects your privacy. ..." />
-  <meta name="keywords" content="JetClean, Light-weight, With, easy, feeling, files, gives, junk, protects, removes, single, system, that, your" /> 
-  <base href="https://www.majorgeeks.com/" />
-  <title>Download JetClean 1.5.0.129</title>
-
-  
-
-  <script type="text/javascript" src="core/javaload/jquery.js"></script>
-  <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2" title="Theme #2" />
+ <head> 
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type"> 
+  <meta name="generator" content="Esselbach Contentteller CMS"> 
+  <meta property="og:image" content="http://www.majorgeeks.com/images/logos/majorgeeks.gif"> 
+  <meta name="description" content="With a single click, JetClean gives you that fresh, new PC feeling again! Light-weight and easy to use, JetClean removes system junk files and it protects your privacy. ..."> 
+  <meta name="keywords" content="JetClean, Light-weight, With, easy, feeling, files, gives, junk, protects, removes, single, system, that, your"> 
+  <base href="https://www.majorgeeks.com/"> 
+  <title>Download JetClean 1.5.0.129</title> 
+  <script type="text/javascript" src="core/javaload/jquery.js"></script> 
+  <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2" title="Theme #2"> 
   <!--[if IE 6]>
   <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2&amp;ie=6" />
-  <![endif]-->
+  <![endif]--> 
   <!--[if IE 7]>
   <link rel="stylesheet" type="text/css" href="index.php?ct=core&amp;action=css&amp;id=2&amp;ie=7" />
-  <![endif]-->
-  <link rel="canonical" href="http://www.majorgeeks.com/mg/get/jetclean,1.html" />
-</head>
-
-<body>
-
-<!-- Template: site_header_alt -->
-
-<div class="pageborder">
-<div class="pageheader">
-
-
-
-<div class="centerborder">
-<h1><a href="https://www.majorgeeks.com"><img src="images/logos/majorgeeks.gif" alt="Providing Free and Editor Tested Software Downloads" /></a></h1>
-<div class="geekad">
-
-<div align="center">
-
-
-
-<!-- 728 ad -->
-
-<script type="text/javascript">
-if (!window.OX_ads) { OX_ads = []; }
-OX_ads.push({ "auid" : "437934" });
-</script>
-<script type="text/javascript">
-document.write('<scr'+'ipt src="//majorgeeks-d.openx.net/w/1.0/jstag"><\/scr'+'ipt>');
-</script>
-<noscript><iframe id="2d18aa040e" name="2d18aa040e" src="//majorgeeks-d.openx.net/w/1.0/afr?auid=437934&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="728" height="90"><a href="//majorgeeks-d.openx.net/w/1.0/rc?cs=2d18aa040e&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="//majorgeeks-d.openx.net/w/1.0/ai?auid=437934&cs=2d18aa040e&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe></noscript>
-
-<!-- 728 ad --> 
-</div>
-
-
-</div>
-</div>
-
-
-
-</div>
-
-<div class="altmainpage" id="content">
-
-<div style="text-align: center;"></div>
-
-<div class="colmiddle" id="menu3">
-
-</div><!-- Template: files_layout_get -->
-<!-- Template: files_get_header -->
-
-<div align=center>
-<div style="width:80%;">
-<div class="navigation">
-
-
-<a href="https://www.majorgeeks.com">MajorGeeks.Com</a> &#187; <a href="files/categories/all_in_one.html">All In One Tweaks</a> &#187; <a href="files/categories/windows_7_8.html">Windows 7, 8 & 10</a> &#187; <a href="files/details/jetclean.html">JetClean 1.5.0.129 </a> &#187; Download
-</div>
-</div>
-</div>
-<br />
-<!-- Template: files_get  -->
-
-<div align="center";>
-<div class="geekywraplight" style="width:80%";  >
-<h1>Downloading JetClean 1.5.0.129</h1>
-<div class="geekyinsidecontent">JetClean is a lightweight all-in-one utility that can speed up your computer by cleaning your drive, free up memory, uninstall programs, optimize your startup and much more.</div>
-<br>
-<div class="content">Your download will automatically start in 5 seconds.  Please wait while we transfer you to the requested download or...... <br /><br />
-<div align="center"><a href="index.php?ct=files&amp;action=download&amp;">
-<img border="0" src="images/click_here.gif" alt="Click here if it does not."></a>
-</div>
-<hr>
-<img alt="Reimage download" border="0" src="images/icons/red_icon_18x17px.png" width="18" height="17">
-<b><font color ="#00000f">TIP</font>: <a target="top" href="http://www.reimageplus.com/includes/router_land.php?tracking=Majorgeeks&banner=dltxt">Click Here to Repair/Restore Missing Windows OS Files Damaged by Malware </font></u></a>
-
-<script type="text/javascript">
+  <![endif]--> 
+  <link rel="canonical" href="http://www.majorgeeks.com/mg/get/jetclean,1.html"> 
+ </head> 
+ <body> 
+  <!-- Template: site_header_alt --> 
+  <div class="pageborder"> 
+   <div class="pageheader"> 
+    <div class="centerborder"> 
+     <h1><a href="https://www.majorgeeks.com"><img src="images/logos/majorgeeks.gif" alt="Providing Free and Editor Tested Software Downloads"></a></h1> 
+     <div class="geekad"> 
+      <div align="center"> 
+       <!-- 728 ad --> 
+       <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v4.1.3 --> 
+       <ins data-revive-zoneid="1" data-revive-id="e1ae6e2743255c6dac1aff6e1e0dbfb4"></ins> 
+       <script async src="//ra.majorgeeks.com/www/delivery/asyncjs.php"></script> 
+       <!-- 728 ad --> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="altmainpage" id="content"> 
+    <div style="text-align: center;"></div> 
+    <div class="colmiddle" id="menu3"> 
+    </div>
+    <!-- Template: files_layout_get --> 
+    <!-- Template: files_get_header --> 
+    <div align="center"> 
+     <div style="width:80%;"> 
+      <div class="navigation"> 
+       <a href="https://www.majorgeeks.com">MajorGeeks.Com</a> » 
+       <a href="files/categories/all_in_one.html">All In One Tweaks</a> » 
+       <a href="files/categories/windows_7_8.html">Windows 7, 8 &amp; 10</a> » 
+       <a href="files/details/jetclean.html">JetClean 1.5.0.129 </a> » Download 
+      </div> 
+     </div> 
+    </div> 
+    <br> 
+    <!-- Template: files_get  --> 
+    <div align="center" ;> 
+     <div class="geekywraplight" style="width:80%" ;> 
+      <h1>Downloading JetClean 1.5.0.129</h1> 
+      <div class="geekyinsidecontent">
+       JetClean is a lightweight all-in-one utility that can speed up your computer by cleaning your drive, free up memory, uninstall programs, optimize your startup and much more.
+      </div> 
+      <br> 
+      <div class="content">
+       Your download will automatically start in 5 seconds. Please wait while we transfer you to the requested download or...... 
+       <br>
+       <br> 
+       <div align="center">
+        <a href="index.php?ct=files&amp;action=download&amp;PHPSESSID=3n71nbctsseseee2pst86p07b7"> <img border="0" src="images/click_here.gif" alt="Click here if it does not."></a> 
+       </div> 
+       <hr> 
+       <img alt="Reimage download" border="0" src="images/icons/red_icon_18x17px.png" width="18" height="17"> 
+       <b><font color="#00000f">TIP</font>: <a target="top" href="http://www.reimageplus.com/includes/router_land.php?tracking=Majorgeeks&amp;banner=dltxt">Click Here to Repair/Restore Missing Windows OS Files Damaged by Malware </a> <script type="text/javascript">
 <!--
-setTimeout('location.href="index.php?ct=files&action=download&"',5000);
+setTimeout('location.href="index.php?ct=files&action=download&PHPSESSID=3n71nbctsseseee2pst86p07b7"',5000);
 -->
-</script>
-<hr>
-
-  
-<!-- google inline ad -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6960825562757852"
-     data-ad-slot="6756421832"></ins>
-<script>
+</script> 
+        <hr> 
+        <!-- google inline ad --> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6960825562757852" data-ad-slot="6756421832"></ins> <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<!--google inline ad -->
-
-
-
-<hr>
-<!--
+</script> 
+        <!--google inline ad --> 
+        <hr> 
+        <!--
 <CENTER><FONT face=Arial size=3>-=<font color="#B8220E"> advertisement </font> =-</FONT></CENTER>
--->
-<div align="center";>
-<table><tr><td></td><td>
-<!--test-->
-<script type="text/javascript" src="b/advertisement.js"></script>
-<div align="center">
-<script type="text/javascript">
+--> 
+        <div align="center" ;> 
+         <table>
+          <tbody>
+           <tr>
+            <td></td>
+            <td> 
+             <!--test--> <script type="text/javascript" src="b/advertisement.js"></script> 
+             <div align="center"> 
+              <script type="text/javascript">
 if (document.getElementById("tester") != undefined)
 {
 	document.write('<br>');
@@ -138,119 +101,83 @@ else
 	document.write("<iframe width=425 height=425 border=1 frameborder=1 src='/mg/mg.html'>");
 	document.write("</iframe>");
 }
-</script>
-<!-- test scripts -->
-</td></tr></table></div>
-
-
- 
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
+</script> 
+              <!-- test scripts --> 
+             </div></td>
+           </tr>
+          </tbody>
+         </table>
+        </div> 
+        <!-- Begin MailChimp Signup Form --> 
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">
 	#mc_embed_signup{background:#e1e1bb; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://majorgeeks.us4.list-manage.com/subscribe/post?u=11e02cf9dc4ef3eb0ab4606ef&amp;id=8c93a2875d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe to our mailing list and Be the Envy of ALL!</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_11e02cf9dc4ef3eb0ab4606ef_8c93a2875d" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-
-
-<!-- google -->
-
-<hr>
-
-<h1> Also on MajorGeeks </h1>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-6960825562757852"
-     data-ad-slot="9817079229"></ins>
-<script>
+</style> 
+        <div id="mc_embed_signup"> 
+         <form action="https://majorgeeks.us4.list-manage.com/subscribe/post?u=11e02cf9dc4ef3eb0ab4606ef&amp;id=8c93a2875d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+          <div id="mc_embed_signup_scroll"> 
+           <label for="mce-EMAIL">Subscribe to our mailing list and Be the Envy of ALL!</label> 
+           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required> 
+           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> 
+           <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_11e02cf9dc4ef3eb0ab4606ef_8c93a2875d" tabindex="-1" value="">
+           </div> 
+           <div class="clear">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+           </div> 
+          </div> 
+         </form> 
+        </div> 
+        <!--End mc_embed_signup--> 
+        <!-- google --> 
+        <hr> <h1> Also on MajorGeeks </h1> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-6960825562757852" data-ad-slot="9817079229"></ins> <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-</hr>
-
-<!--
+</script>  
+        <!--
 <hr>
-<!-- google -->
-<hr>
-
-
-</div>
-
-<hr color=#666633>
-
-<div class='addnow' data-id='498'></div>
-<script type="text/javascript"> var _addnow = _addnow || []; _addnow.push(["set", "hash_id", "136:CzsdHHhsptbrFmFmOjHbPZR1jZw"]); (function() {var addnow = document.createElement("script"); addnow.type = "text/javascript"; addnow.async = true; addnow.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.addnow.com/widget/addnow.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(addnow, s);})(); </script>
-<!-- google ad -->
-<center>
-
-<br>
-
-
-<!--
+<!-- google --> 
+        <hr> </b>
+      </div>
+      <b> 
+       <hr color="#666633"> 
+       <div class="addnow" data-id="498"></div> <script type="text/javascript"> var _addnow = _addnow || []; _addnow.push(["set", "hash_id", "136:CzsdHHhsptbrFmFmOjHbPZR1jZw"]); (function() {var addnow = document.createElement("script"); addnow.type = "text/javascript"; addnow.async = true; addnow.src = ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.addnow.com/widget/addnow.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(addnow, s);})(); </script> 
+       <!-- google ad --> 
+       <center> 
+        <br> 
+        <!--
 <img border="0" src="/images/ts-1.jpg" alt="">
--->
-
-
-<!-- MDTest-->
-<div itemscope itemtype="https://schema.org/Product">
-<meta itemprop="name" content="JetClean">
-
-
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-<meta itemprop="worstRating" content="1">
-<meta itemprop="bestRating" content="5">
-<meta itemprop="ratingValue" content="5">
-<meta itemprop="ratingCount" content="2965">
-</div>
-
-
-<div itemscope itemtype="https://schema.org/Organization">
-<meta itemprop="name" content="BlueSprig">
-</div>
-
-</div>
-<!-- MDTest -->
-
-
-<center>
-<div  align="right";></div>
-<!--
+--> 
+        <!-- MDTest--> 
+        <div itemscope itemtype="https://schema.org/Product"> 
+         <meta itemprop="name" content="JetClean"> 
+         <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating"> 
+          <meta itemprop="worstRating" content="1"> 
+          <meta itemprop="bestRating" content="5"> 
+          <meta itemprop="ratingValue" content="5"> 
+          <meta itemprop="ratingCount" content="2976"> 
+         </div> 
+         <div itemscope itemtype="https://schema.org/Organization"> 
+          <meta itemprop="name" content="BlueSprig"> 
+         </div> 
+        </div> 
+        <!-- MDTest --> 
+        <center> 
+         <div align="right" ;></div> 
+         <!--
 <br /><br /><br />
 <strong>Webmasters:</strong> Please link to the previous page. Thanks for understanding.</div>
 <br />
--->
-<!-- wrap -->
-</div></div><br />
-
-
-<!-- Debug: http://download.bluesprig.com/dl/jetclean-setup.exe -->
-
-<br>
-
-
-
-
-
-<!-- Facebook Popup Widget START -->
-
-<!-- Facebook Popup Widget START -->
-<script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
-<style>
+--> 
+         <!-- wrap --> 
+        </center>
+       </center></b>
+     </div>
+    </div>
+    <b><br> 
+     <!-- Debug: http://download.bluesprig.com/dl/jetclean-setup.exe --> <br> 
+     <!-- Facebook Popup Widget START --> 
+     <!-- Facebook Popup Widget START --> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> <style>
 #fanback {
 display:none;
 background:rgba(0,0,0,0.8);
@@ -307,10 +234,7 @@ font-size:10px;
 margin: 0 auto 5px auto;
 float:center;
 }
-</style>
-
-
-<script type='text/javascript'>
+</style> <script type="text/javascript">
 //<![CDATA[
 jQuery.cookie = function (key, value, options) {
 
@@ -345,8 +269,7 @@ var result, decode = options.raw ? function (s) { return s; } : decodeURICompone
 return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? decode(result[1]) : null;
 };
 //]]>
-</script>
-<script type='text/javascript'>
+</script> <script type="text/javascript">
 jQuery(document).ready(function($){
 if($.cookie('popup_user_login') != 'yes'){
 $('#fanback').delay(10000).fadeIn('medium');
@@ -356,71 +279,47 @@ $('#fanback').stop().fadeOut('medium');
 }
 $.cookie('popup_user_login', 'yes', { path: '/', expires: 7 });
 });
-</script>
-
-<div id='fanback'>
-<div id='fan-exit'>
-</div>
-<div id='MorganAndMen'>
-   Like us or the bunny gets it!
-<div id='TheBlogWidgets'>
-</div>
-<div class='remove-borda'>
-</div>
-
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmajorgeeksdotcom%2F&tabs=timeline&width=402&height=255&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=117729275063662" width="402" height="255" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
-
-<center>
-</center>
-</div>
-</div>
-
-
-<!-- Facebook Popup Widget END. Brought to you by www.MorganAndMen.com - www.TheBlogWidgets.com -->
-
-
-
-
-
-<!-- Template: files_get_footer -->
-
-
-
-<!--
+</script> 
+     <div id="fanback"> 
+      <div id="fan-exit"> 
+      </div> 
+      <div id="MorganAndMen">
+        Like us or the bunny gets it! 
+       <div id="TheBlogWidgets"> 
+       </div> 
+       <div class="remove-borda"> 
+       </div> 
+       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmajorgeeksdotcom%2F&amp;tabs=timeline&amp;width=402&amp;height=255&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=true&amp;appId=117729275063662" width="402" height="255" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe> 
+       <center> 
+       </center> 
+      </div> 
+     </div> 
+     <!-- Facebook Popup Widget END. Brought to you by www.MorganAndMen.com - www.TheBlogWidgets.com --> --&gt; 
+     <!-- Template: files_get_footer --> 
+     <!--
 <div class="navigation">
 <a href="https://www.majorgeeks.com">MajorGeeks.Com</a> &#187; <a href="files/categories/all_in_one.html">All In One Tweaks</a> &#187; <a href="files/categories/windows_7_8.html">Windows 7, 8 & 10</a> &#187; <a href="files/details/jetclean.html">JetClean 1.5.0.129 </a> &#187; Download
 </div>
--->
-
-
-<!-- Template: site_footer_alt -->
-<div style="text-align: center;"></div>
-
-</div>
-</div>
-
-<div class="pagefooter">
-&copy; 2000-2019 MajorGeeks.com<br />
-
-<!-- Do not remove -->
-Powered by <a href="http://www.contentteller.com">Contentteller&reg; Business Edition</a><img src="index.php?ct=core&amp;action=tasks" alt="" />
-<!-- Do not remove -->
-</div>
-
-</div>
-
-<SCRIPT LANGUAGE="JavaScript">
+--> 
+     <!-- Template: site_footer_alt --> 
+     <div style="text-align: center;"></div> </b>
+   </div>
+   <b> </b>
+  </div>
+  <b> 
+   <div class="pagefooter">
+     © 2000-2019 MajorGeeks.com
+    <br> 
+    <!-- Do not remove --> Powered by 
+    <a href="http://www.contentteller.com">Contentteller® Business Edition</a>
+    <img src="index.php?ct=core&amp;action=tasks" alt=""> 
+    <!-- Do not remove --> 
+   </div>  <script language="JavaScript">
 <!-- Hide from JavaScript-Impaired Browsers
 setTimeout('location.href="http://www.majorgeeks.com"',100000);
 // End Hiding -->
-</SCRIPT>
-
-
-
-
-<!-- Geek Stats -->
-<script>
+</script> 
+   <!-- Geek Stats --> <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -429,21 +328,12 @@ setTimeout('location.href="http://www.majorgeeks.com"',100000);
   ga('create', 'UA-956038-1', 'auto');
   ga('send', 'pageview');
 
-</script>
-<!-- Geek Stats -->
-
-
-<!-- Start Quantcast tag -->
-<!-- End Quantcast tag -->
-
-<!--cp -->
-<!-- cp-->
-
-<!--dt-->
-<script type="text/javascript" src="//ads.pro-market.net/ads/scripts/site-133323.js"></script>
-
-
-
-
-</body>
+</script> 
+   <!-- Geek Stats --> 
+   <!-- Start Quantcast tag --> 
+   <!-- End Quantcast tag --> 
+   <!--cp --> 
+   <!-- cp--> 
+   <!--dt--> <script type="text/javascript" src="//ads.pro-market.net/ads/scripts/site-133323.js"></script>  </b>
+ </body>
 </html>

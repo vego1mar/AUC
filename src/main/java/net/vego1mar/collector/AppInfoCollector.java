@@ -7,16 +7,18 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Deque;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
-import net.vego1mar.auxiliary.properties.PlatformsImpl;
-import net.vego1mar.auxiliary.properties.PlatformsProperty;
-import net.vego1mar.enumerators.properties.Platforms;
-import net.vego1mar.rules.RuleImpl;
-import net.vego1mar.rules.RulesExecutable;
+import net.vego1mar.properties.PlatformsProperty;
+import net.vego1mar.properties.UseAsProperty;
+import net.vego1mar.properties.enumerators.LinksID;
+import net.vego1mar.properties.enumerators.Platforms;
+import net.vego1mar.rules.Rule;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.utils.DownloadHelper;
 import net.vego1mar.utils.ReflectionHelper;
@@ -30,22 +32,26 @@ public class AppInfoCollector implements Serializable {
     private static final transient Logger log = Logger.getLogger(AppInfoCollector.class);
     private static final transient String OBJ_FILENAME = "collector";
     private static final transient String OBJ_FILEEXT = ".ser";
-    private transient RulesExecutable executor;
+    private transient RulesExecutor executor;
     private Map<String, String> executionOrder;
     private String appName;
-    private PlatformsImpl appVersions;
+    private PlatformsProperty appVersions;
+    private String serialFileName;
 
     public AppInfoCollector(@NotNull String name, @NotNull Map<String, String> execOrder) {
-        executor = new RulesExecutor(new LinkedList<>(), "");
+        initializeTransientFields();
         executionOrder = Collections.synchronizedMap(new LinkedHashMap<>(execOrder));
         appName = name;
         appVersions = new PlatformsProperty();
+        serialFileName = "";
     }
 
     private static AppInfoCollector readObject(@NotNull String fileName) {
         AppInfoCollector collector = null;
 
         try {
+            // TODO: safe file handling for FileInputStream (permissions, input validation, pathname limitation)
+            // TODO: ValidatingObjectInputStream from Apache for object check before deserialization
             try (FileInputStream fileStream = new FileInputStream(fileName)) {
                 ObjectInputStream objectStream = new ObjectInputStream(fileStream);
                 collector = (AppInfoCollector) objectStream.readObject();
@@ -71,42 +77,64 @@ public class AppInfoCollector implements Serializable {
         }
     }
 
-    public static AppInfoCollector load(@NotNull String objTarget, @NotNull String xmlTarget) {
+    public static AppInfoCollector load(@NotNull String objTarget) {
         AppInfoCollector collector = readObject(objTarget);
-        log.info(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget + " ; XML_FILE=" + xmlTarget);
+        collector.initializeTransientFields();
+        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE" + objTarget);
         return collector;
     }
 
     public void save(@NotNull String objDestinationPath, @NotNull String xmlDestinationPath) {
-        String objFileName = OBJ_FILENAME + '@' + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + OBJ_FILEEXT;
-        String objFullName = Paths.get(objDestinationPath, objFileName).toString();
-        writeObject(objFullName);
-        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE=" + objFullName);
-
         String xmlFileName = Paths.get(xmlDestinationPath, appName.replace(' ', '_') + '@').toString();
         String xmlBaseName = xmlFileName + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + '_';
         XmlRulesSetReader xmlReader = new XmlRulesSetReader();
         XmlRulesSetWriter xmlWriter = new XmlRulesSetWriter();
         int i = 0;
+        List<String> xmlFileNames = new ArrayList<>(executionOrder.keySet());
+        List<String> urlNames = new ArrayList<>(executionOrder.values());
+        executionOrder.clear();
 
-        for (String xmlFile : executionOrder.keySet()) {
+        for (int j = 0; j < xmlFileNames.size(); j++) {
             i++;
-            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(xmlFile);
-            String xmlFullName = xmlBaseName.concat(String.valueOf(i));
+            Deque<Rule> rulesSet = xmlReader.loadSettings(xmlFileNames.get(j));
+            String xmlFullName = xmlBaseName.concat(String.valueOf(i)).concat(".xml");
             xmlWriter.saveSettings(rulesSet, xmlFullName);
+            executionOrder.put(xmlFullName, urlNames.get(j));
             log.debug(ReflectionHelper.getCurrentMethodName() + " : XML_FILE" + xmlFullName);
         }
+
+        String objFileName = OBJ_FILENAME + '@' + Integer.toHexString(System.identityHashCode(this)).toUpperCase() + OBJ_FILEEXT;
+        String objFullName = Paths.get(objDestinationPath, objFileName).toString();
+        serialFileName = objFullName;
+        writeObject(objFullName);
+        log.debug(ReflectionHelper.getCurrentMethodName() + " : OBJ_FILE=" + objFullName);
+    }
+
+    private void initializeTransientFields() {
+        executor = new RulesExecutor(new LinkedList<>(), "");
     }
 
     public String getAppName() {
         return appName;
     }
 
-    public void gatherInformation() {
-        Map<Deque<RuleImpl>, String> preparedExecutionData = fetchExecutionData();
+    public String getSerialFileName() {
+        return serialFileName;
+    }
 
+    public List<String> getXMLFileNames() {
+        return Collections.synchronizedList(new ArrayList<>(executionOrder.keySet()));
+    }
+
+    public List<String> getURLNames() {
+        return Collections.synchronizedList(new ArrayList<>(executionOrder.values()));
+    }
+
+    public void gatherInformation() {
         try {
-            for (Map.Entry<Deque<RuleImpl>, String> entry : preparedExecutionData.entrySet()) {
+            Map<Deque<Rule>, String> preparedExecutionData = fetchExecutionData(executionOrder);
+
+            for (Map.Entry<Deque<Rule>, String> entry : preparedExecutionData.entrySet()) {
                 executor.renew(entry.getKey(), entry.getValue());
                 executor.execute();
             }
@@ -117,12 +145,12 @@ public class AppInfoCollector implements Serializable {
         updateAppVersions();
     }
 
-    private Map<Deque<RuleImpl>, String> fetchExecutionData() {
-        Map<Deque<RuleImpl>, String> preparedExecutionData = Collections.synchronizedMap(new LinkedHashMap<>());
+    private Map<Deque<Rule>, String> fetchExecutionData(@NotNull Map<String, String> execOrder) {
+        Map<Deque<Rule>, String> preparedExecutionData = Collections.synchronizedMap(new LinkedHashMap<>());
         XmlRulesSetReader xmlReader = new XmlRulesSetReader();
 
-        for (Map.Entry<String, String> entry : executionOrder.entrySet()) {
-            Deque<RuleImpl> rulesSet = xmlReader.loadSettings(entry.getKey());
+        for (Map.Entry<String, String> entry : execOrder.entrySet()) {
+            Deque<Rule> rulesSet = xmlReader.loadSettings(entry.getKey());
             String htmlCode = DownloadHelper.getHtml(entry.getValue());
             preparedExecutionData.put(rulesSet, htmlCode);
             log.debug("XML_RULES_SET=" + entry.getKey() + "; RULES_NO=" + rulesSet.size());
@@ -133,9 +161,7 @@ public class AppInfoCollector implements Serializable {
     }
 
     private void updateAppVersions() {
-        PlatformsProperty versions = (PlatformsProperty) executor.getResults().getVersions();
-
-        for (Map.Entry<Platforms, String> entry : versions.getPlatforms().entrySet()) {
+        for (Map.Entry<Platforms, String> entry : executor.getResults().getVersions().getPlatforms().entrySet()) {
             if (isUpdateAvailable(entry.getKey())) {
                 appVersions.setItem(entry.getKey(), entry.getValue());
             }
@@ -158,6 +184,29 @@ public class AppInfoCollector implements Serializable {
         }
 
         return true;
+    }
+
+    public UseAsProperty getCollectedData() {
+        return executor.getResults();
+    }
+
+    public void addMutableEntry(String urlToExec, String xmlToExec, LinksID whereToFindEntryURL, String whereToFindEntryXML) {
+        Map<String, String> execOrder = new LinkedHashMap<>();
+        execOrder.put(xmlToExec, urlToExec);
+
+        try {
+            Map<Deque<Rule>, String> preparedExecutionData = fetchExecutionData(execOrder);
+            RulesExecutor executable = new RulesExecutor(new LinkedList<>(), "");
+
+            for (Map.Entry<Deque<Rule>, String> entry : preparedExecutionData.entrySet()) {
+                executable = new RulesExecutor(entry.getKey(), entry.getValue());
+                executable.execute();
+            }
+
+            executionOrder.put(whereToFindEntryXML, executable.getResults().getLinks().getItem(whereToFindEntryURL));
+        } catch (UnsupportedOperationException | NullPointerException exp) {
+            log.error(exp);
+        }
     }
 
 }

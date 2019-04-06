@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rulesSet>
+  <rule no="1">
+    <target>
+      <in>CODE</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FIRST_OF</methodType>
+      <type>STRING</type>
+      <text><![CDATA[SHA256]]></text>
+    </method>
+  </rule>
+  <rule no="2">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>RETRIEVE_TAGS</methodType>
+      <type>FIRST</type>
+      <tagname>a</tagname>
+    </method>
+  </rule>
+  <rule no="3">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>FETCH_HREFS</methodType>
+    </method>
+  </rule>
+  <rule no="4">
+    <target>
+      <in>CONTENT</in>
+      <useAs>LINKS</useAs>
+      <linkId>GENERIC</linkId>
+    </target>
+    <method>
+      <methodType>PREPEND</methodType>
+      <text><![CDATA[http://www.virtualbox.org]]></text>
+    </method>
+  </rule>
+</rulesSet>

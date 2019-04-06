@@ -12,13 +12,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-import net.vego1mar.auxiliary.properties.LinksProperty;
-import net.vego1mar.auxiliary.properties.PlatformsProperty;
-import net.vego1mar.auxiliary.properties.UseAsImpl;
-import net.vego1mar.enumerators.properties.LinksID;
-import net.vego1mar.enumerators.properties.Platforms;
-import net.vego1mar.rules.RuleImpl;
-import net.vego1mar.rules.RulesExecutable;
+import net.vego1mar.properties.LinksProperty;
+import net.vego1mar.properties.PlatformsProperty;
+import net.vego1mar.properties.UseAsProperty;
+import net.vego1mar.properties.enumerators.LinksID;
+import net.vego1mar.properties.enumerators.Platforms;
+import net.vego1mar.rules.Rule;
 import net.vego1mar.rules.RulesExecutor;
 import net.vego1mar.utils.DownloadHelper;
 import net.vego1mar.utils.FileReaderHelper;
@@ -33,7 +32,7 @@ public class XmlConsoleRunner {
     private static final String RESULTS_FILENAME = "runner.txt";
     private static final String ENTRY_STR = "/// ENTRY";
     private String rulesDirPath;
-    private Map<String, UseAsImpl> results;
+    private Map<String, UseAsProperty> results;
 
     public XmlConsoleRunner(@NotNull String dirPath) {
         rulesDirPath = dirPath;
@@ -48,8 +47,8 @@ public class XmlConsoleRunner {
 
         final List<DefinitionFileStruct> parsedDef = getParsedDefinitionFile();
         XmlRulesSetReader reader;
-        Deque<RuleImpl> rulesSet;
-        RulesExecutable executor;
+        Deque<Rule> rulesSet;
+        RulesExecutor executor;
         String htmlCode;
 
         for (DefinitionFileStruct def : parsedDef) {
@@ -104,7 +103,7 @@ public class XmlConsoleRunner {
         return defStruct;
     }
 
-    public Map<String, UseAsImpl> getResults() {
+    public Map<String, UseAsProperty> getResults() {
         return results;
     }
 
@@ -112,7 +111,7 @@ public class XmlConsoleRunner {
         final String OUTER_FILENAME = Paths.get(rulesDirPath, RESULTS_FILENAME).toString();
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(OUTER_FILENAME))) {
-            for (Map.Entry<String, UseAsImpl> entry : results.entrySet()) {
+            for (Map.Entry<String, UseAsProperty> entry : results.entrySet()) {
                 writer.write(ENTRY_STR + ' ' + entry.getKey());
                 writer.newLine();
                 savePropertiesData(entry.getValue(), writer);
@@ -123,16 +122,11 @@ public class XmlConsoleRunner {
         }
     }
 
-    private void savePropertiesData(@NotNull UseAsImpl useAsProperty, @NotNull BufferedWriter writer) throws IOException {
-        PlatformsProperty versions = (PlatformsProperty) useAsProperty.getVersions();
-        PlatformsProperty dates = (PlatformsProperty) useAsProperty.getDates();
-        LinksProperty links = (LinksProperty) useAsProperty.getLinks();
-        LinksProperty hashes = (LinksProperty) useAsProperty.getHashes();
-
-        savePlatforms(versions, writer);
-        savePlatforms(dates, writer);
-        saveLinks(links, writer);
-        saveLinks(hashes, writer);
+    private void savePropertiesData(@NotNull UseAsProperty useAsProperty, @NotNull BufferedWriter writer) throws IOException {
+        savePlatforms(useAsProperty.getVersions(), writer);
+        savePlatforms(useAsProperty.getDates(), writer);
+        saveLinks(useAsProperty.getLinks(), writer);
+        saveLinks(useAsProperty.getHashes(), writer);
     }
 
     private void savePlatforms(@NotNull PlatformsProperty platforms, @NotNull BufferedWriter writer) throws IOException {
@@ -157,12 +151,13 @@ public class XmlConsoleRunner {
         writer.flush();
     }
 
-    public static void main(String[] args) {
+    public static void main(@NotNull String[] args) {
         String rulesDirPath = System.getProperty("user.dir");
         final int EXPECTED_ARGS = 1;
 
         if (args.length == EXPECTED_ARGS) {
             rulesDirPath = args[0];
+            // TODO: check whether args[0] is a Path
         }
 
         final long startTime = System.nanoTime();

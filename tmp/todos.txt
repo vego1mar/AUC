@@ -1,13 +1,66 @@
 loading the app icon from the provided path
 categories and grouping of apps entries
-
 Hibernate --> DB of (appName, appAuthor, base64Icon) pairs
-file mask for downloaded files
 DownloadHelper.getFile(String url);
 
 ----------------
 
+Database with use of Hibernate for predefined apps list
+GUI project and implementation
+Apache Pivot - introduction to the technology
+XmlConsoleRunner - path for /runtime + description of release for r1.1
+
+!!! SECURITY - readObject() & writeObject() for deserialization
+!!! Restructure XML production
+
+> RulesExecutor & AppInfoCollector - more rules with tests
+Audacity
+Bitsum Technologies Process Lasso Pro
+BurnAware Premium
+ChemTable Software Soft Organizer
+Crystal Rich USB Safely Remove
+Disk Internals Linux Reader
+DVDFab Virtual Drive
+IObit DriverBooster
+IObit Malware Fighter Free
+IObit Smart Defrag
+IrfanView x64
+JDownloader
+KeePass Password Safe
+KMSAuto Net 2015 Portable
+Mozilla Thunderbird x64
+Piriform Speccy
+Rainlendar Lite x64
+Steam Client Bootstrapper
+SumatraPDF x64
+Uplay
+Vivaldi x64
+AOMEI Partition Assistant Pro Edition
+Dia
+ESET Internet Security
+EZB Systems UltraISO
+Flash-Integro VSDC Pro Video Editor
+Ocster Backup Pro
+Southsoftware Advanced Time Synchronizer
+WhoCrashed Free Home Edition
+WiseCleaner Wise Care 365 Pro
+Apache ActiveMQ
 Apache Pivot
-XmlConsoleRunner - description of release for r1.1
-RulesExecutor - more rules
-Collector - to refactor (wsif-base branch)
+QPDF
+Rufus
+SonarQube: build wrapper, sonar-scanner-cli, sonnar-scanner-msbuild, core
+Anaconda3
+Android Studio
+Code Blocks
+JetBrains IntelliJ IDEA
+Microsoft Visual Studio Code
+Qt Creator
+XAMPP
+NVIDIA GTX 1050 Drivers
+Java openJDK
+Microsoft .NET Framework
+Microsoft DirectX
+Microsoft Silverlight
+Microsoft Visual C++ Redistributable
+NVIDIA PhysX
+Microsoft SQL Server

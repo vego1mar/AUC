@@ -53,7 +53,7 @@
     <method>
       <methodType>TRIM</methodType>
       <side>LEFT</side>
-      <numberOf>10</numberOf>
+      <numberOf>22</numberOf>
     </method>
   </rule>
   <rule no="6">
@@ -65,7 +65,7 @@
     <method>
       <methodType>TRIM</methodType>
       <side>RIGHT</side>
-      <numberOf>7</numberOf>
+      <numberOf>18</numberOf>
     </method>
   </rule>
   <rule no="7">
@@ -76,7 +76,7 @@
     <method>
       <methodType>FIRST_OF</methodType>
       <type>STRING</type>
-      <text><![CDATA[</h1><h2>]]></text>
+      <text><![CDATA[<h2>]]></text>
     </method>
   </rule>
   <rule no="8">
@@ -98,7 +98,7 @@
     <method>
       <methodType>TRIM</methodType>
       <side>LEFT</side>
-      <numberOf>9</numberOf>
+      <numberOf>4</numberOf>
     </method>
   </rule>
   <rule no="10">

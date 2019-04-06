@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import net.vego1mar.enumerators.utils.HashType;
+import net.vego1mar.utils.enumerators.HashType;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -19,6 +19,7 @@ public class HashGenerator {
     }
 
     @NotNull public static String calculate(@NotNull String filename, HashType type) {
+        // This method is not intended to use within a security context.
         final int BUFFER_SIZE = 1024;
         File file = new File(filename);
 

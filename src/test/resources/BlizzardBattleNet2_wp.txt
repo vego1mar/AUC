@@ -1,0 +1,803 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl-pl" lang="pl-pl" >
+<head>
+  <base href="https://www.instalki.pl/programy/download/Windows/akcesoria/Blizzard.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Blizzard Battle.net, 1.16.0, akcesoria, Windows, download, pobierz" />
+  <meta name="description" content="Blizzard (Battle.net) to aplikacja oferująca dostęp do popularnych gier Blizzarda. Oprócz tego, pełni rolę centrum informacyjnego, z którego otrzymamy najnowsze wiadomości i publikacje twórców z Bliz" />
+  <meta name="generator" content="" />
+  <title>Blizzard Battle.net 1.16.0 - Download - Instalki.pl</title>
+  <link rel="stylesheet" href="/plugins/system/2j_tabs/2j_tabs.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.instalki.pl//components/com_djcatalog/views/showitem/tmpl/mp/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.instalki.pl/modules/mod_we_ufeed_display/style.css" type="text/css" />
+  <script type="text/javascript" src="/plugins/system/2j_tabs/jq_last.js"></script>
+  <script type="text/javascript" src="/plugins/system/2j_tabs/2j.ui.base.js"></script>
+  <script type="text/javascript" src="/plugins/system/2j_tabs/2j.ui.tabs.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" async="true" src="https://www.instalki.pl//components/com_djcatalog/views/showitem/tmpl/mp/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.11/mootools-yui-compressed.js"></script>
+  <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+  <script type='text/javascript'>
+/*<![CDATA[*/
+	var jax_live_site = 'https://www.instalki.pl/index.php';
+	var jax_site_type = '1.5';
+/*]]>*/
+</script><script async="true" type="text/javascript" src="https://www.instalki.pl/plugins/system/pc_includes/ajax_1.2.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+<link href="https://www.instalki.pl/templates/819-instalki/css/reset-mrg.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://www.instalki.pl/templates/819-instalki/images/favicon.png" type="image/png"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!--[if IE 6]><link href="https://www.instalki.pl/templates/819-instalki/css/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 7]><link href="https://www.instalki.pl/templates/819-instalki/css/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 6]><link href="https://www.instalki.pl/templates/819-instalki/css/ie6.css" rel="stylesheet" type="text/css" /><style type="text/css">
+img { behavior: url(https://www.instalki.pl/templates/819-instalki/images/iepngfix.htc) }</style><![endif]-->
+<script language="javascript" type="text/javascript" src="https://www.instalki.pl/templates/819-instalki//js/events.js"></script>
+<script id="dsq-count-scr" src="//instalkipl.disqus.com/count.js" async></script>
+<script async="true" language="javascript" type="text/javascript" src="https://www.instalki.pl/templates/819-instalki//js/matching_columns.js"></script>
+<script language="javascript" type="text/javascript">
+var excludeModules='';
+</script>
+<script async="true" language="javascript" type="text/javascript" src="https://www.instalki.pl/templates/819-instalki//js/rightcol.js"></script>
+<link href="https://feeds.feedburner.com/Instalki" rel="alternate" type="application/atom+xml" title="Najnowsze programy - INSTALKI.pl" />
+
+
+<script type="text/javascript">
+function hideId(id) {
+document.getElementById(id).style.display = "none";
+}
+</script>
+<script type="text/javascript">
+function SetCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+</script>
+<script type="text/javascript">
+function GetCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+</script>
+
+</head><body itemscope itemtype="https://schema.org/WebPage">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10909146-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="ciasteczka" style="display: block;">TA STRONA UŻYWA COOKIE. Usługodawca oraz jego zaufani partnerzy korzystają z plików cookies i innych technologii automatycznego przechowywania danych do celów statystycznych, reklamowych oraz realizacji usług, w tym również aby wyświetlać użytkownikom najbardziej dopasowane oferty i reklamy.
+<br />
+Usługodawca i jego zaufani partnerzy wymagają zgody użytkownika na gromadzenie danych w celu obsługi spersonalizowanych treści i ogłoszeń. Jeśli korzystasz ze strony instalki.pl bez zmiany ustawień przeglądarki, to oznacza to, że nie wyrażasz sprzeciwu co do otrzymywania wszystkich plików cookies na swoje urządzenie ze strony instalki.pl.<br />Dowiedz się więcej o <strong><a href="https://www.instalki.pl/cookies.html">celu ich używania</a></strong> i <a href="https://www.instalki.pl/demonstracje/internet/10414-zmiana-ustawien-cookie-w-przegladarce.html">zmianie ustawień cookie w przeglądarce</a>. <br /> Od dnia 25.05.2018 r. na terenie Unii Europejskiej wchodzi w życie Rozporządzenie Parlamentu Europejskiego w sprawie ochrony danych osobowych. Prosimy o zapoznanie się z <strong><a href="https://www.instalki.pl/regulamin.html" target="_blank">regulaminem</a></strong> oraz <strong><a href="https://www.instalki.pl/polityka-prywatnosci.html" target="_blank">polityką prywatności</a></strong> serwisu &nbsp;<span onclick="hideId('ciasteczka')" style="font-weight:bold">[X]</span></div>
+<script type="text/javascript">
+if(!GetCookie('ciacho1')){
+document.getElementById('ciasteczka').style.display='block';
+SetCookie('ciacho1','1','100');
+}
+else {
+document.getElementById('ciasteczka').style.display='none';
+}
+</script>
+<div id="outer_all" align="center"><div id="header"><div id="menus_top_outer" class="clearfix"><div id="menus_top" class="clearfix">
+<div id="menu_left"><ul class="menu" /></div><div id="menu_right">
+<a href="https://www.facebook.com/instalki" title="INSTALKI.pl na Facebooku" target="_blank"><span class="icof"></span></a>
+<a href="https://twitter.com/INSTALKI_pl" title="Śledź nas na Twitterze" target="_blank"><span class="icot"></span></a>
+<a href="https://plus.google.com/+instalki" title="INSTALKI.pl na Google+" rel="publisher" target="_blank"><span class="icog"></span></a>
+<a href="https://www.youtube.com/user/instalki" title="INSTALKI.pl na YouTube" rel="publisher" target="_blank"><span class="icoyt"></span></a>
+<a href="https://feeds.feedburner.com/Instalki" title="Kanał RSS - Najnowsze pliki"><span class="icor"></span></a>
+<a href="/component/user/login.html" title="Logowanie" rel="nofollow">
+Zaloguj się</a><span class="sepa"></span>
+</div></div></div>
+<div id="header_top_outer"><div id="header_top">
+<div id="logo_search" class="clearfix">
+<div id="logo"><a href="https://www.instalki.pl" onfocus="blur()" >
+<img src="https://www.instalki.pl/templates/819-instalki/images/logo.png" alt="home" border="0"/></a></div><div id="search"><div id="search_left"><div id="search_right">
+<form action="https://www.instalki.pl/search.html" id="cse-search-box"><div>
+<input type="hidden" name="cx" value="partner-pub-8345364103968660:hvaj9v-f27m" />
+<input type="hidden" name="ie" value="utf-8" />
+<input type="text" name="q" id="q" autocomplete="on" size="31" />
+<input type="submit" name="sb" class="button" value="" onfocus="blur();" /></div></form>
+<script async="true" type="text/javascript" src="https://www.google.pl/cse/brand?form=cse-search-box&lang=pl"></script></div></div></div></div>
+<div id="header_banner" ></div>
+<div id="topmenu_1"><ul class="menu"><li class="item50"><a href="https://www.instalki.pl/"><span>Home</span></a></li><li class="parent item27"><a href="/aktualnosci.html"><span>Aktualności</span></a></li><li id="current" class="active item41"><a href="/programy.html"><span>Programy</span></a></li><li class="parent item2"><a href="/gry.html"><span>Gry</span></a></li><li class="item37"><a href="/sterowniki.html"><span>Sterowniki</span></a></li><li class="item49"><a href="/systemy-operacyjne.html"><span>Systemy</span></a></li><li class="parent item75"><a href="/demonstracje.html"><span>Demonstracje</span></a></li><li class="item77"><a href="https://forum.instalki.pl/"><span>Forum</span></a></li><li class="parent item116"><a href="/testy.html"><span>Testy</span></a></li><li class="item129"><a href="/zapytaj.html"><span>Zapytaj</span></a></li><li class="item172"><a href="/rankingi.html"><span>Rankingi</span></a></li><li class="parent item115"><a href="/konkursy.html"><span>Konkursy</span></a></li><li class="item151"><a href="/recenzje-gier.html"><span>Recenzje gier</span></a></li><li class="item244"><a href="/android.html"><span>Android</span></a></li><li class="item250"><a href="/instrukcje.html"><span>Instrukcje</span></a></li></ul></div></div></div>
+<div id="topmenu_2_outer"><div id="topmenu_2"><ul class="menu"><li class="item56"><a href="/programy/lista/Windows.html"><span>Windows</span></a></li><li class="item58"><a href="/programy/lista/Linux.html"><span>Linux</span></a></li><li class="item60"><a href="/programy/lista/Mac_OS_X.html"><span>Mac OS X</span></a></li><li class="item62"><a href="http://www.instalki.pl/android.html"><span>Android</span></a></li><li class="item153"><a href="http://www.instalki.pl/instrukcje.html"><span>Instrukcje obsługi</span></a></li></ul>	<div class="djselect_menu">
+		<div class="djselect_menu_in">		
+		<select class="djsm-select" onchange="DJSelectMenu(this.value)" ><option value="">Proszę wybrać menu</option><option value="/">&nbsp;Home</option><option value="/programy/lista/Windows.html">&nbsp;&nbsp;&nbsp;- Windows</option><option value="/programy/lista/Linux.html">&nbsp;&nbsp;&nbsp;- Linux</option><option value="/programy/lista/Mac_OS_X.html">&nbsp;&nbsp;&nbsp;- Mac OS X</option><option value="http://www.instalki.pl/android.html">&nbsp;&nbsp;&nbsp;- Mobile</option><option value="/aktualnosci.html">&nbsp;Aktualności</option><option value="/aktualnosci/software.html">&nbsp;&nbsp;&nbsp;- Software</option><option value="/aktualnosci/internet.html">&nbsp;&nbsp;&nbsp;- Internet</option><option value="/aktualnosci/bezpieczenstwo.html">&nbsp;&nbsp;&nbsp;- Bezpieczeństwo</option><option value="/aktualnosci/hardware.html">&nbsp;&nbsp;&nbsp;- Hardware</option><option value="/aktualnosci/rozrywka.html">&nbsp;&nbsp;&nbsp;- Rozrywka</option><option value="/programy/lista.html">&nbsp;Programy</option><option value="/programy/lista/Windows.html">&nbsp;&nbsp;&nbsp;- Windows</option><option value="/programy/lista/Linux.html">&nbsp;&nbsp;&nbsp;- Linux</option><option value="/programy/lista/Mac_OS_X.html">&nbsp;&nbsp;&nbsp;- Mac OS X</option><option value="http://www.instalki.pl/android.html">&nbsp;&nbsp;&nbsp;- Mobile</option><option value="/gry/showlist.html">&nbsp;Gry</option><option value="http://www.instalki.pl/recenzje-gier.html">&nbsp;&nbsp;&nbsp;- Recenzje gier</option><option value="http://www.instalki.pl/gry/Download/akcji.html">&nbsp;&nbsp;&nbsp;- Gry akcji</option><option value="http://www.instalki.pl/gry/Download/symulatory.html">&nbsp;&nbsp;&nbsp;- Symulatory</option><option value="http://www.instalki.pl/gry/Download/wyscigowe.html">&nbsp;&nbsp;&nbsp;- Wyścigowe</option><option value="http://www.instalki.pl/gry/Download/strzelanki.html">&nbsp;&nbsp;&nbsp;- Strzelanki</option><option value="http://www.instalki.pl/gry/Download/przygodowe.html">&nbsp;&nbsp;&nbsp;- Przygodowe</option><option value="http://www.instalki.pl/gry/Download/strategiczne.html">&nbsp;&nbsp;&nbsp;- Strategiczne</option><option value="http://www.instalki.pl/gry/Download/sportowe.html">&nbsp;&nbsp;&nbsp;- Sportowe</option><option value="http://www.instalki.pl/gry/Download/logiczne.html">&nbsp;&nbsp;&nbsp;- Logiczne</option><option value="http://www.instalki.pl/gry/Download/rpg.html">&nbsp;&nbsp;&nbsp;- RPG</option><option value="http://www.instalki.pl/gry/Download/zrecznosciowe.html">&nbsp;&nbsp;&nbsp;- Zręcznościowe</option><option value="http://www.instalki.pl/gry/Download/bijatyki.html">&nbsp;&nbsp;&nbsp;- Bijatyki</option><option value="http://www.instalki.pl/gry/Download/mmorpg.html">&nbsp;&nbsp;&nbsp;- MMORPG</option><option value="/sterowniki/showster.html">&nbsp;Sterowniki</option><option value="/systemy-operacyjne/showOS.html">&nbsp;Systemy</option><option value="/demonstracje.html">&nbsp;Demonstracje</option><option value="/demonstracje/bezpieczenstwo.html">&nbsp;&nbsp;&nbsp;- Bezpieczeństwo</option><option value="/demonstracje/biuro.html">&nbsp;&nbsp;&nbsp;- Biuro</option><option value="/demonstracje/grafika.html">&nbsp;&nbsp;&nbsp;- Grafika</option><option value="/demonstracje/internet.html">&nbsp;&nbsp;&nbsp;- Internet</option><option value="/demonstracje/multimedia.html">&nbsp;&nbsp;&nbsp;- Multimedia</option><option value="/demonstracje/mobile.html">&nbsp;&nbsp;&nbsp;- Mobile</option><option value="/demonstracje/systemowe.html">&nbsp;&nbsp;&nbsp;- Systemowe</option><option value="https://forum.instalki.pl/">&nbsp;Forum</option><option value="/testy.html">&nbsp;Testy</option><option value="/testy/hardware.html">&nbsp;&nbsp;&nbsp;- Hardware</option><option value="/testy/software.html">&nbsp;&nbsp;&nbsp;- Software</option><option value="/konkursy.html">&nbsp;Konkursy</option><option value="/zapytaj/index.html">&nbsp;Zapytaj</option><option value="http://www.instalki.pl/zapytaj.html">&nbsp;&nbsp;&nbsp;- Najnowsze pytania</option><option value="http://www.instalki.pl/zapytaj/ask.html">&nbsp;&nbsp;&nbsp;- Zadaj pytanie</option><option value="http://www.instalki.pl/zapytaj/categories.html">&nbsp;&nbsp;&nbsp;- Kategorie</option><option value="http://www.instalki.pl/zapytaj/tags.html">&nbsp;&nbsp;&nbsp;- Tagi</option><option value="http://www.instalki.pl/zapytaj/badges.html">&nbsp;&nbsp;&nbsp;- Rangi</option><option value="/rankingi.html">&nbsp;Rankingi</option><option value="/recenzje-gier.html">&nbsp;Recenzje gier</option></select>		</div>
+	</div>	
+	 <script type="text/javascript" >
+	 	function DJSelectMenu(url){
+	 		if(url){
+	 			window.location=url;
+	 		}
+	 	}
+	 </script>
+
+
+</div></div></div>
+
+<div id="outer">	
+<div id="banner">		<div class="djmod module only_desktop" id="Mod30">
+			<div>
+				<div>
+					<div>
+												<div class="djmod-content" style="">
+							<div class="inside_djmod"><div class="bannergroup only_desktop">
+<div class="banneritem only_desktop"><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PPGDCX7');</script>
+<!-- End Google Tag Manager -->
+
+<div id="stroer_topbanner"></div><div class="clr"></div></div>
+</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="djmod module only_mobile" id="Mod330">
+			<div>
+				<div>
+					<div>
+												<div class="djmod-content" style="">
+							<div class="inside_djmod"><!-- /52555387/instalki.pl_300x250_mobile_2 --><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>var googletag = googletag || {};googletag.cmd = googletag.cmd || [];</script><script>googletag.cmd.push(function() {var _YB=_YB||{ab:function(){return (_YB.dool?'b':'a'+Math.floor(Math.random()*10));},dc:function(){return (_YB.dool?'d':'c'+Math.floor(Math.random()*20));},mx:function(){return (!_YB.dool?'x':'m'+Math.floor(Math.random()*180));},tt:function(){return ('tt'+Math.floor(Math.random()*10));},dool:Math.random()>=0.1}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd};  googletag.defineSlot('/52555387/instalki.pl_300x250_mobile_2', [[300, 250]], 'div-gpt-ad-instalki.pl_300x250_mobile_2').setTargeting('yb_ab', _YB.ab()).setTargeting('yb_dc', _YB.dc()).setTargeting('yb_mx', _YB.mx()).setTargeting('yb_tt', _YB.tt()).setTargeting('yb_ff', ''+Math.round(Math.random())).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads());googletag.enableServices();});</script><div id='div-gpt-ad-instalki.pl_300x250_mobile_2'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-instalki.pl_300x250_mobile_2'); });</script></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="djmod module only_desktop" id="Mod341">
+			<div>
+				<div>
+					<div>
+												<div class="djmod-content" style="">
+							<div class="inside_djmod"><div style="text-align: center;"><a href="http://bit.ly/15latinstalki" target="_blank"><img title="Świętuj z nami urodziny portalu i weź udział w konkursie" src="/images/banners/15UR_970PX_1.jpg" alt="To już 15 lat! Świętuj z nami urodziny portalu i weź udział w konkursie" /></a></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="djmod module only_mobile" id="Mod370">
+			<div>
+				<div>
+					<div>
+												<div class="djmod-content" style="">
+							<div class="inside_djmod"><div style="text-align: center;"><a href="http://bit.ly/15latinstalki" target="_blank"><img title="Świętuj z nami urodziny portalu i weź udział w konkursie" src="/images/banners/15lat_banner_300px_1.jpg" alt="To już 15 lat! Świętuj z nami urodziny portalu i weź udział w konkursie" width="100%" /></a></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><div id="wrapper" class="scheme_3 "> <!--wrapper z klasa schematu-->
+<div style="background: #FFFFFF;" id="main" class="clearfix"> <!--start: main div-->
+<div id="content" class="first"><!--content div-->
+<div id="border_left_n"><div id="border_right_n"><div id="border_top_n"><div class="lb_n"><div id="content_in" >
+<div id="content_inside_all" class="gradient_n">
+<div id="user5"><span class="breadcrumbs pathway">
+<a href="https://www.instalki.pl/" class="pathway">Instalki.pl</a> » <a href="/programy.html" class="pathway">Programy</a> » <a href="/programy/lista/Windows.html" class="pathway">Windows</a> » <a href="/programy/lista/Windows/Dom.html" class="pathway">Dom</a> » <a href="/programy/Download/Windows/akcesoria.html" class="pathway">akcesoria</a> » Blizzard Battle.net 1.16.0</span>
+</div> 
+<div id="maincontent">
+						 
+	<div id="dj_catalog" itemscope itemtype="https://schema.org/SoftwareApplication"><div class="djcatalog_item"> 
+		<div class="banner_item_top"  ><div class=" only_desktop"><!-- /52555387/instalki.pl_download_336x280_gora -->
+<div><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; </script> <script> googletag.cmd.push(function() { var _YB=_YB||{ab:function(){return (Math.random()>=0.1?'b':'a'+Math.floor(Math.random()*10));}}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd}; googletag.defineSlot('/52555387/instalki.pl_download_336x280_gora', [336, 280], 'div-gpt-ad-1499082771006-6').setTargeting('yb_ab',_YB.ab()).setTargeting('yb_ff', String(Math.round(Math.random()))).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads()); googletag.enableServices(); }); </script></div>
+ <div id='div-gpt-ad-1499082771006-6' style='height:280px; width:336px; margin:auto;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1499082771006-6'); }); </script> </div></div></div>		<div class="down_name">
+			<div class="item_name_prog"><h1 class="name">Blizzard Battle.net</h1><span class="version">1.16.0</span><span class="flag"></span></div>			<span class="applicationCategory" itemprop="applicationCategory">akcesoria</span> 
+			<div class="item_download_data">
+			<div class="downloaded_one"><div class="downloaded_one_in"><a href="https://www.instalki.pl/downloadc-25-1552414107-23104-41.htm" rel="https://www.instalki.pl/downloadc-25-1552414107-23104-41.htm?dm=1" id="donload_link" class="download">POBIERZ TERAZ</a><div class="mirror_select_outer"><select class="mirror_select" id="mirror_select" onchange="mirrorLink(this)" ><option value="63554&dm=1">Menadżer pobierania</option><option value="63554">Pobieranie bezpośrednie</option></select><select class="mirror_select" id="mirror_select_chrome" style="display:none" onchange="mirrorLink(this)" ><option value="63554&dm=1">Menadżer pobierania</option><option value="63554">Pobieranie bezpośrednie</option></select></div></div></div>				<div class="size_update_box">
+					<div class="row"><div class="text">Rozmiar:</div><span>4.3 MB</span></div>					
+					<div class="row">
+												<div class="text">Aktualizacja:</div><span>08.02.2019</span>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="details">
+			<div class="center">
+								<div class="row">
+										<div class="text">Producent:</div>
+					<div class="value"><div itemscope itemtype="https://schema.org/Organization"><a href="/programy/producent/blizzard_entertainment_inc,9851.html" itemprop="name"  class="blue">Blizzard Entertainment Inc.</a></div></div>	
+				</div>
+				<div class="row"><div class="text">Licencja:</div><span>Freeware (bezpłatna)</span></div>	 
+				<div class="row"><div class="text">System:</div><span itemprop="operatingSystem">Windows</span></div>
+				<div class="row"><div class="text">Kategoria:</div>
+				<a href="/programy/Download/Windows/akcesoria.html" >akcesoria</a>				</div>
+				<div class="row_voting">
+					<div class="text">Ocena:</div>
+					<div class="voting_box1">	
+											<span class="vote_value">3</span>
+						<span class="starfull"></span><span class="starfull"></span><span class="starfull"></span>					</div>
+					<div class="voting_box2">
+						<span>Oceń:</span>
+						<div class="stars_a5" id="voting_stars">
+							<div id="star1" onmouseover=star(1); onclick=starc(1); onmouseout=staro(); ><div id="star_d1" class="star_b"></div></div>
+							<div id="star2" onmouseover=star(2); onclick=starc(2); onmouseout=staro(); ><div id="star_d2" class="star_b"></div></div>
+							<div id="star3" onmouseover=star(3); onclick=starc(3); onmouseout=staro(); ><div id="star_d3" class="star_b"></div></div>
+							<div id="star4" onmouseover=star(4); onclick=starc(4); onmouseout=staro(); ><div id="star_d4" class="star_b"></div></div>
+							<div id="star5" onmouseover=star(5); onclick=starc(5); onmouseout=staro(); ><div id="star_d5" class="star_b"></div></div>
+						</div>
+					</div>
+					<script type="text/javascript">
+					//href="/programy/vote/25/23104.html?v=1"
+					var star_a = 5;	
+					function star(val){
+						for(var i=1; i<6; i++){
+							if(i<val+1){
+								document.getElementById("star_d"+i+"").className='star_a';
+							}else{
+								document.getElementById("star_d"+i+"").className='star_b';
+							}
+						}
+					}
+					function staro(){
+						var v= document.getElementById("vote_r").value;
+						for(var i=1; i<6; i++){
+							document.getElementById("star_d"+i+"").className='star_b'
+						}
+					}
+					function starc(v){					
+						document.getElementById("voting_stars").className='stars_a'+v;
+						document.getElementById("form_vote").value=v;
+						document.getElementById("row_comment").className='row comment_active';								
+					}
+					
+					</script>
+					<input type="hidden" id="vote_r" value="4" />
+				</div>
+				<div class="row comment" id="row_comment" >
+					<form action="https://www.instalki.pl/" method="post" name="voteForm" id="voteForm" >
+						<textarea id="review" name="review" placeholder="Napisz opinię na temat aplikacji (pole nieobowiązkowe)"></textarea>
+						<script type="text/javascript">
+						 	var RecaptchaOptions = {
+						    	theme : 'clean'
+						 	};
+						</script>
+												<div class="g-recaptcha" data-sitekey="6LeHxBgUAAAAAB0LejBIF7CYPl7-IssxawQMHqCh"></div>
+						<input type="submit" class="button" value="Dodaj" />
+						<input type="hidden" name="v" id="form_vote" value="5" />
+						<input type="hidden" name="option" value="com_djcatalog" />
+						<input type="hidden" name="view" value="vote" />
+						<input type="hidden" name="cid" value="25" />
+						<input type="hidden" name="id" value="23104" />
+					</form>
+				</div>
+								<div class="row"><div class="text">Pobrano:</div><span>5853</span>
+					<meta itemprop="interactionCount" content="UserDownloads:5853" />
+					<meta itemprop="inLanguage" content="pl-PL" />
+					<span class="msc_downloads">(255 w tym miesiącu)</span>				</div>		
+				<div style="clear:both"></div>		
+			</div>
+		
+			<div class="banner_mod_top only_desktop"><div style="color: #909090; text-align: left; font: 9px Verdana, Arial, Helvetica, sans-serif;">REKLAMA</div><!-- /52555387/instalki.pl_download_468x60 -->
+<div><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; </script> <script> googletag.cmd.push(function() { var _YB=_YB||{ab:function(){return (_YB.dool?'b':'a'+Math.floor(Math.random()*10));},dc:function(){return (_YB.dool?'d':'c'+Math.floor(Math.random()*20));},mx:function(){return (!_YB.dool?'x':'m'+Math.floor(Math.random()*180));},tt:function(){return ('tt'+Math.floor(Math.random()*10));},dool:Math.random()>=0.1}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd}; googletag.defineSlot('/52555387/instalki.pl_download_468x60', [468, 60], 'div-gpt-ad-1528106946708-1').setTargeting('yb_ab', _YB.ab()).setTargeting('yb_dc', _YB.dc()).setTargeting('yb_mx', _YB.mx()).setTargeting('yb_tt', _YB.tt()).setTargeting('yb_ff', ''+Math.round(Math.random())).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads()); googletag.enableServices(); }); </script></div>
+ <div id='div-gpt-ad-1528106946708-1' style='height:60px; width:468px;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1528106946708-1'); }); </script> </div></div>		
+			<div class="links_tools">				<a class="users_screenshots" href="/programy/screenshots/25/23104.html">Screenshoty</a>
+				<a href="/programy/error/25/23104.html" class="error">Zgłoś Błąd</a>				<div class="clearfix"></div>
+			</div>
+		
+		
+		
+			<div class="description_title"> 
+				
+				<div class="title_box"> Opis Blizzard Battle.net 1.16.0 </div>
+				
+				
+					<div class="images">
+												<div class="images_slider">
+								<div class="islider_left blocked" id="islider_left">&nbsp;</div>
+								<div class="islider_loader" id="islider_loader" ><div class="islider_loader_img" ></div></div>
+								<div class="islider_outer" id="islider_outer">
+									<div class="islider_content" id="islider_content">
+																					<div class="image_box">
+												<div class="image_box_in">
+																											<a title="" class="lightbox-gallery" href="https://www.instalki.pl/components/com_djcatalog/images/c228626a5d3191806179e2c0284954252017-05-26_12h00_55.jpg" target="_blank">
+															<img src="https://www.instalki.pl/components/com_djcatalog/images/c228626a5d3191806179e2c0284954252017-05-26_12h00_55.jpg.th.jpg" style="top: 0;"/>
+														</a>
+														<meta itemprop="image" content="https://www.instalki.pl/components/com_djcatalog/images/c228626a5d3191806179e2c0284954252017-05-26_12h00_55.jpg.ths.jpg" />
+																									</div>
+											</div>		
+										 
+									</div>
+								</div>
+								<div class="islider_right" id="islider_right">&nbsp;</div>
+							</div>
+											</div>
+					
+				<div class="djcat_content" id="djcat_content">
+					
+					<div itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="price" content="0" /></div>						<div itemprop="review" itemscope itemtype="https://schema.org/Review">
+							<meta itemprop="author" content="Redakcja" />
+							<meta itemprop="datePublished" content="2019-02-08 12:38:36" />
+								<div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">							
+								<meta itemprop="ratingValue" content="3" />
+								<meta itemprop="worstRating" content="1"/>
+								<meta itemprop="bestRating" content="5"/>
+								</div>
+							<span itemprop="description"><strong>Blizzard Battle.net</strong> (Battle.net) to aplikacja oferująca dostęp do popularnych gier Blizzarda. Oprócz tego, pełni rolę centrum informacyjnego, z którego otrzymamy najnowsze wiadomości i publikacje twórców z Blizzarda.
+<p>Aplikacja pozwala przetestować każdy produkt przez okres 30-dni od momentu instalacji wybranych przez nas gier. Blizzard wspiera takie hity jak Starcraft Remastered, Starcraft 2, Diablo 3, karciankę Hearthstone czy Overwatch, a także gry Activision np Destiny 2.</p>
+<p> </p></span>
+						</div>
+						<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+					      <meta itemprop="ratingValue" content="3" /> 
+					      <meta itemprop="bestRating" content="5" />
+					      <meta itemprop="ratingCount" content="2" />	
+					    </div>
+															
+				</div>
+				<div id="djcat_content_rm"><span id="djcat_content_rm_in">rozwiń opis</span></div>				
+			</div>
+		
+		
+		
+			<div class="banner_item" ><div class=""><div class="bannergroup">
+<div class="bannerheader"><div style="text-align: center;">
+<span style="color: #c0c0c0; font-size: 8pt;">
+REKLAMA
+</span></div></div>
+<div class="banneritem"><!-- /52555387/instalki.pl_download_336x280_dol -->
+<div>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function() {
+            var _YB = _YB || {
+                ab: function() {
+                    return (_YB.dool ? 'b' : 'a' + Math.floor(Math.random() * 10));
+                },
+                dc: function() {
+                    return (_YB.dool ? 'd' : 'c' + Math.floor(Math.random() * 20));
+                },
+                mx: function() {
+                    return (!_YB.dool ? 'x' : 'm' + Math.floor(Math.random() * 180));
+                },
+                tt: function() {
+                    return ('tt' + Math.floor(Math.random() * 10));
+                },
+                dool: Math.random() >= 0.1
+            };
+            var _yt = new Date(),
+                yb_th = _yt.getUTCHours() - 8,
+                yb_tm = _yt.getUTCMinutes(),
+                yb_wd = _yt.getUTCDay();
+            if (yb_th < 0) {
+                yb_th = 24 + yb_th;
+                yb_wd -= 1;
+            };
+            if (yb_wd < 0) {
+                yb_wd = 7 + yb_wd
+            };
+            googletag.defineSlot('/52555387/instalki.pl_download_336x280_dol', [336, 280], 'div-gpt-ad-1476697839650-0').setTargeting('yb_ab', _YB.ab()).setTargeting('yb_dc', _YB.dc()).setTargeting('yb_mx', _YB.mx()).setTargeting('yb_tt', _YB.tt()).setTargeting('yb_ff', '' + Math.round(Math.random())).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads());
+            googletag.enableServices();
+        });
+    </script>
+</div>
+<div id='div-gpt-ad-1476697839650-0' style='height:280px; width:336px; margin:auto;'>
+    <script>
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1476697839650-0');
+        });
+    </script>
+</div><div class="clr"></div></div>
+</div></div></div>		 
+			
+		
+		
+			<div class="fav_links">
+				<div class="favorites" >
+					<a href="/programy/favorites/25/23104.html" >Dodaj do ulubionych</a>				</div>
+				<div class="users_favorites"><a href="/profil/usersfavorites/1/23104.html" >Zobacz kto polubił</a></div>				<div style="clear:both"></div>
+			</div>
+		
+			<script type="text/javascript">
+				function load_disqus() {
+					var disqus_shortname = 'instalkipl';
+					(function () {
+					var dsq = document.createElement('script');
+					dsq.type = 'text/javascript';
+					dsq.async = true;
+					dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				}
+			</script>
+			<div onclick="this.style.display='none'; load_disqus();" class="buttondisq">POKAŻ (<a href="#disqus_thread"></a>)</div>
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			var disqus_shortname = 'instalkipl';
+			(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+			</script>
+		
+		
+		</div>
+	</div></div>
+<script type="text/javascript">
+	function mirrorLink(v){
+		var param = v.value;
+		//var href = $('donload_link').getProperty('rel');
+		var href = 'https://www.instalki.pl/downloadc-25-1552414107-23104-41.htm';
+		$('donload_link').setProperty('href',href+'?mid='+param);
+	}
+	
+	window.addEvent('domready', function() {
+	   
+	   var item_desc_h = $('djcat_content').getSize().size.y;
+	   if(item_desc_h>400){
+	   		$('djcat_content').addClass('content_rm');
+	   		$('djcat_content_rm').addClass('content_rm');
+	   		$('djcat_content_rm_in').addEvent('click', function(event) {
+	   			 $('djcat_content').addClass('content_rm_show');
+	   			 $('djcat_content_rm').addClass('content_rm_show');
+	   		})
+	   }
+	});
+	
+	window.addEvent('domready', function() {
+	   //var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+	    var is_chrome = false;
+		   var isChromium = window.chrome,
+			vendorName = window.navigator.vendor;
+			if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc.") {
+			   is_chrome = true; 
+			}
+							var disable_chrom = false;
+				   if(is_chrome && disable_chrom){
+	   		$('mirror_select').setStyle('display','none');
+			if($('mirror_select_chrome').length>1){
+				$('mirror_select_chrome').setStyle('display','inline-block');	
+			}
+		}else{   	
+	   		//var param = $('mirror_select_chrome').value;
+	   		if($('donload_link')){
+				var href = $('donload_link').getProperty('rel');
+				//$('donload_link').setProperty('href',href+'?mid='+param);	
+				$('donload_link').setProperty('href',href);
+			}
+	   }
+	})
+	
+
+</script>
+
+
+	<script type="text/javascript">
+	
+		var isllider_c = 0;
+		var isllider_cols = 1;
+		var isllider_all = 2;
+		var isllider_l = 0;
+		var items_list = $('islider_content').getElements('.image_box');
+		var arrow_left = $('islider_left');
+		var arrow_right = $('islider_right');
+		
+		
+		function islider (){
+			var slider_box = $('islider_content');
+			var slider_effect = new Fx.Styles(slider_box, {duration: 200, transition: Fx.Transitions.linear,wait:false});
+			
+			var items_list = slider_box.getElements('.image_box');
+			//var slide_width = items_list[0].getSize().size.x;			
+			var slide_width = $('islider_outer').getSize().size.x-80;
+			
+			
+			slider_box.setStyle('width',slide_width*isllider_all);			
+						
+				items_list.each(function(item,index){
+					item.setStyle('width',slide_width);				
+				})
+				
+				var slide_height = slider_box.getSize().size.y;
+				items_list.each(function(item,index){
+					item.setStyle('height',slide_height);		
+				})	
+				
+			slider_box.setStyle('height','auto');
+			slider_box.setStyle('opacity','1');
+			//slider_box.tween('opacity', 1);
+			$('islider_loader').setStyle('display','none');
+
+			
+			if(isllider_all>isllider_cols){	
+				arrow_left.setStyle('display','block');
+				arrow_right.setStyle('display','block');	
+			
+				arrow_left.removeEvents('click');
+				arrow_left.addEvent('click',function(event){
+					if(isllider_c>0){
+						isllider_c--;
+						//slider_box.tween('margin-', isllider_c*-slide_width);
+						slider_effect.start({
+							'margin-left': isllider_c*-slide_width
+						})			
+
+						if(isllider_c==0){
+							arrow_left.addClass('blocked');
+							arrow_right.removeClass('blocked');		
+						}else{
+							arrow_left.removeClass('blocked');
+							arrow_right.removeClass('blocked');
+						}	
+					}
+				})
+				
+				arrow_right.removeEvents('click');
+				arrow_right.addEvent('click',function(event){
+					if(isllider_c<isllider_l){
+						isllider_c++;
+						//slider_box.tween('margin-', isllider_c*-slide_width);
+						slider_effect.start({
+							'margin-left': isllider_c*-slide_width
+						})												
+									
+						if(isllider_c==isllider_l){
+							arrow_right.addClass('blocked');
+							arrow_left.removeClass('blocked');		
+						}else{
+							arrow_left.removeClass('blocked');
+							arrow_right.removeClass('blocked');
+						}					
+					}
+				})
+			}
+			
+		} 		
+				
+		window.addEvent('load', function(){		
+			islider();
+		});
+		
+		window.addEvent('resize', function(){
+		  isllider_c = 0;			  
+		  $('islider_content').setStyle('width','100%');
+		  $('islider_content').setStyle('margin-left','0px');										
+			items_list.each(function(item,index){
+				item.setStyle('width','100%');
+				item.setStyle('height','auto');				
+			})		  		  		  		  	
+			
+			arrow_left.addClass('blocked');
+			arrow_right.removeClass('blocked');	
+				  
+		  islider();
+		});
+		
+	</script>
+	
+	<script type="text/javascript">
+		jQuery.noConflict();
+		jQuery( document ).ready(function() {
+						
+			jQuery.extend(true, jQuery.magnificPopup.defaults, {
+			  tClose: 'Zamknij', 
+			  tLoading: 'Loading...',
+			  gallery: {
+			    tPrev: 'Poprzedni', 
+			    tNext: 'Następny', 
+			    tCounter: '%curr% z %total%'
+			  },
+			  image: {
+			    tError: '<a href="/%url%">Zdjęcie</a> nie może być wczytane.' 
+			  },
+			  ajax: {
+			    tError: '<a href="/%url%">Treśc</a> nie może byc wczytana.' 
+			  }
+			});			
+			/*
+			var items = [];
+			
+			jQuery('.lightbox-gallery').each(function(){
+			    if(jQuery(this).hasClass('lightbox-video')){
+			        items.push({
+			            src:jQuery(this).attr('href'),
+			            type:'iframe'
+			        });
+			    }else{
+			        items.push({
+			            src:jQuery(this).attr('href'),
+			            type:'image',
+			            tLoading: '', 
+			            removalDelay: 500
+			        });
+			    }			
+			});
+			
+		   jQuery('.islider_content').magnificPopup({
+		   		items: items,
+				gallery:{
+				  enabled:true
+				}
+			}); */
+			
+		
+			
+			jQuery('.islider_content').each(function() {
+				jQuery(this).magnificPopup({
+			        delegate: '.lightbox-gallery', // the selector for gallery item
+			        type: 'image',
+			        mainClass: 'mfp-img-mobile',
+			        gallery: {
+			          enabled: true
+			        },
+					image: {
+						verticalFit: true
+					}
+			    });
+			});
+			
+			
+			
+		});
+	</script>
+
+</div></div></div></div></div></div></div>
+<div id="one_module" class="clearfix"></div>
+</div>
+<div id="left" class="second" ><!--left div-->
+
+<div class="djmodprim module" id="Mod192">
+<div><div><div><h3><span>Menu główne</span></h3><div class="primdjmod-content"><div class="inside_djmod"><ul class="menu">
+<li class="level0"><a href="/programy/lista/Windows.html">Windows</a></li>
+<li class="level0"><a href="/programy/lista/Linux.html">Linux</a></li>
+<li class="level0"><a href="/programy/lista/Mac_OS_X.html">Mac OS X</a></li>
+<li class="level0"><a href="/android.html">Android</a></li>
+<li class="level0"><a href="/programy/lista/Mobile.html">Mobile</a></li>
+<li class="level0"><a href="/gry.html">Gry</a></li>
+<li class="level0"><a href="https://www.vebo.pl/" target="_blank"> <span style="color: red;">Sklep z programami</span> </a></li>
+<li class="level0"><a href="/sterowniki.html">Sterowniki</a></li>
+<li class="level0"><a href="/systemy-operacyjne.html">Systemy operacyjne</a></li>
+<li class="level0"><a href="/demonstracje.html">Demonstracje</a></li>
+<li class="level0"><a href="/instrukcje.html">INSTRUKCJE OBSŁUGI</a></li>
+<li class="level0"><a href="/recenzje-gier.html">Recenzje gier</a></li>
+<li class="level0"><a href="https://forum.instalki.pl/">Forum</a></li>
+<li class="level0"><a href="/testy.html">Testy</a></li>
+<li class="level0"><a href="/rankingi.html">Rankingi</a></li>
+<li class="level0"><span style="color: #055fa2;"><a title="BLOG INSTALKI.PL - NIE TYLKO O TECHNOLOGIACH" href="https://blog.instalki.pl/"><span style="color: #ff6600;">BLOG</span></a></span></li>
+</ul></div></div></div></div></div></div>
+<div class="djmodprim module-adv" id="Mod196">
+<div><div><div><h3><span>Facebook</span></h3><div class="primdjmod-content"><div class="inside_djmod"><p><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Finstalki&amp;width=176&amp;colorscheme=light&amp;show_faces=true&amp;border_color=cbcbcb&amp;stream=false&amp;header=false&amp;height=273" scrolling="no" width="176px" height="230px" allowtransparency="false" style="border: none; overflow: hidden; width: 176px; height: 230px; background: #FFF;"></iframe></p></div></div></div></div></div></div>
+<div class="djmodprim module-adv only_desktop" id="Mod287">
+<div><div><div><div class="primdjmod-content"><div class="inside_djmod"><div class="bannergroup-adv only_desktop">
+</div></div></div></div></div></div></div>
+<div class="djmodprim module-adv" id="Mod297">
+<div><div><div><div class="primdjmod-content"><div class="inside_djmod"><!-- /52555387/instalki.pl_160x600 -->
+<div><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; </script> <script> googletag.cmd.push(function() { var _YB=_YB||{ab:function(){return (Math.random()>=0.1?'b':'a'+Math.floor(Math.random()*10));}}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd}; googletag.defineSlot('/52555387/instalki.pl_160x600', [160, 600], 'div-gpt-ad-1499082771006-10').setTargeting('yb_ab',_YB.ab()).setTargeting('yb_ff', String(Math.round(Math.random()))).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads()); googletag.enableServices(); }); </script></div>
+ <div id='div-gpt-ad-1499082771006-10' style='height:600px; width:160px; margin:auto;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1499082771006-10'); }); </script> </div></div></div></div></div></div></div>
+
+</div> <!--KONIEC left div-->
+<div id="right" class="third" >
+<div class="djmod2 module-adv only_desktop" ><div><div><div><div class="mod-content "><div class="bannergroup-adv only_desktop">
+<div class="banneritem-adv only_desktop"><!-- /52555387/instalki.pl_300x600_gora_prawy -->
+<div><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; </script> <script> googletag.cmd.push(function() { var _YB=_YB||{ab:function(){return (Math.random()>=0.1?'b':'a'+Math.floor(Math.random()*10));}}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd}; googletag.defineSlot('/52555387/instalki.pl_300x600_gora_prawy', [300, 600], 'div-gpt-ad-1499082771006-3').setTargeting('yb_ab',_YB.ab()).setTargeting('yb_ff', String(Math.round(Math.random()))).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads()); googletag.enableServices(); }); </script></div>
+ <div id='div-gpt-ad-1499082771006-3' style='height:600px; width:300px; margin:auto;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1499082771006-3'); }); </script> </div><div class="clr"></div></div>
+</div></div></div></div></div></div>
+<div class="djmod2 module img100 only_mobile" ><div><div><div><h3><span>Najnowsze poradniki</span></h3>
+<div class="mod-content gradient"><div style="direction: ltr; text-align: left ! important"><table border="0" style="width:100%" align="center" class="rsstable">
+<tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_self" href="https://www.instalki.pl/demonstracje/mobile/34950-asystent-google-smart-lock.html">Jak korzystać z Asystenta Google bez odblokowania ekranu?</a></div><a target="_self" href="https://www.instalki.pl/demonstracje/mobile/34950-asystent-google-smart-lock.html"><img src="/libraries/timthumb/timthumb.php?src=https://www.instalki.pl/images/newsy/03-2019/smartfon_lock.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr><tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_self" href="https://www.instalki.pl/demonstracje/multimedia/34641-jak-dodac-muzyke-do-filmu.html">Trzy proste sposoby jak dodać muzykę do filmu</a></div><a target="_self" href="https://www.instalki.pl/demonstracje/multimedia/34641-jak-dodac-muzyke-do-filmu.html"><img src="/libraries/timthumb/timthumb.php?src=https://www.instalki.pl/images/newsy/02-2019/Jak_dodac_muzyke.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr></table></div></div></div></div></div></div>
+<div class="djmod2 module img100 only_mobile" ><div><div><div><h3><span>Ostatnie testy</span></h3>
+<div class="mod-content gradient"><div style="direction: ltr; text-align: left ! important"><table border="0" style="width:100%" align="center" class="rsstable">
+<tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_self" href="https://www.instalki.pl/testy/hardware/34744-recenzja-moto-g7-plus.html">Król średniej półki powrócił? Recenzja Moto G7 Plus</a></div><a target="_self" href="https://www.instalki.pl/testy/hardware/34744-recenzja-moto-g7-plus.html"><img src="/libraries/timthumb/timthumb.php?src=https://www.instalki.pl/images/testy/Moto_G7_Plus/g7p10.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr><tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_self" href="https://www.instalki.pl/testy/hardware/34710-trust-gxt-393-magna-7-1.html">Trust GXT 393 Magna 7.1 - test bezprzewodowych słuchawek dla graczy</a></div><a target="_self" href="https://www.instalki.pl/testy/hardware/34710-trust-gxt-393-magna-7-1.html"><img src="/libraries/timthumb/timthumb.php?src=https://www.instalki.pl/images/testy/Trust_GXT_393_Magna/Trust_GXT_393_Magna_8.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr></table></div></div></div></div></div></div>
+<div class="djmod2 module_tab2" ><div><div><div><div class="mod-content "><script language="JavaScript" type="text/javascript">jq2j(document).ready(function(){jq2j("#twoj_container-4  > ul").tabs({ event: 'click'});});</script>
+					
+					<div id="twoj_container-4"  class="twoj_tabs_class3 twoj_orient_top"  ><ul class="twoj_tablink"  style="list-style: none none !important; background-image: none !important;"  ><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment4-1" ><span ><div class="tab_new">Najnowsze</div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment4-2" ><span ><div class="tab_pop">Popularne</div></span></a></li></ul><div id="twoj_fragment4-1" class="twoj_tab_content" ><script language="JavaScript" type="text/javascript">jq2j(document).ready(function(){jq2j("#twoj_container-2  > ul").tabs({ event: 'click'});});</script>
+					
+					<div id="twoj_container-2"  class="twoj_tabs_class3 twoj_orient_top"  ><ul class="twoj_tablink"  style="list-style: none none !important; background-image: none !important;"  ><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-1" ><span ><div class="win" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-2" ><span ><div class="linux" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-3" ><span ><div class="mac" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-4" ><span ><div class="mobile" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-5" ><span ><div class="os" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-6" ><span ><div class="sterowniki" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment2-7" ><span ><div class="gry" ></div></span></a></li></ul><div id="twoj_fragment2-1" class="twoj_tab_content" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Windows</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/programy/download/Windows/nagrywanie/BurnAware_Home.html">BurnAware Premium 12.1</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/programy/download/Windows/nagrywanie/BurnAware_Free_Edition.html">BurnAware Free 12.1</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/programy/download/Windows/nagrywanie/BurnAware_Professional.html">BurnAware Professional 12.1</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/programy/download/Windows/testowanie_i_diagnostyka/3DMark.html">3DMark 2.8.6536</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/programy/download/Windows/narzedzia_dyskowe/VX_Search.html">VX Search 11.7.24</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/programy/download/Windows/slowniki_translatory/Everylang.html">Everylang 4.0.0</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/programy/download/Windows/narzedzia_inne/d7xTech_Program_Blocker.html">d7xTech Program Blocker 2.0</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/programy/download/Windows/zarzadzanie_sterownikami/Driver_Reviver.html">Driver Reviver 5.27.2.16</a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/programy/download/Windows/ftp/XYplorer.html">XYplorer 19.80</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/programy/download/Windows/akcesoria/Zotero.html">Zotero 5.0.62</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/programy/download/Windows/obrobka_video/HitFilm_Express.html">HitFilm Express 12.2</a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/programy/download/Windows/obrobka_video/HitFilm.html">HitFilm 12.2</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/programy/download/Windows/narzedzia_systemowe/CCleaner.html">CCleaner 5.55</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/programy/download/Windows/konwersja_audio_video/MakeMKV.html">MakeMKV 1.14.3</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/programy/download/Windows/bazy_danych/PL_SQL_Developer.html">PL SQL Developer 13.0</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/programy/download/Windows/pobieranie_plikow/Windows_TubeMate.html">Windows TubeMate 3.5.0</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/programy/download/Windows/zarzadzanie_telefonem/Your_Phone.html">Your Phone 1.0.20594.0</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/programy/download/Windows/testowanie_i_diagnostyka/CrashDumpExtractor.html">CrashDump Extractor 2.5.5.0</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/programy/download/Windows/szyfrowanie_danych/File_Protect_System.html">File Protect System 3.2.5.4</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/programy/download/Windows/przegladarki_grafiki/Phototheca.html">Phototheca 2.9.0.2298</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/programy/download/Windows/akcesoria/Mindomo_Desktop.html">Mindomo Desktop 9.0.6</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/programy/download/Windows/multimedia_inne/DiskAid.html">iMazing 2.8.3</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/programy/download/Windows/odtwarzacze_audio_video/MeTube.html">MeTube 1.6.0</a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/programy/download/Windows/rippowanie_cd_dvd/AnyMP4_Blu-ray_Ripper.html">AnyMP4 Blu-ray Ripper 7.2.30</a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/programy/download/Windows/narzedzia_dyskowe/Intel_SSD_Data_Center_Tool.html">Intel SSD Data Center 3.0.19</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-2" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Linux</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/programy/download/Linux/konwersja_audio_i_video/MakeMKV.html">MakeMKV 1.14.3</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/programy/download/Linux/rozliczenia_podatkowe/e-pity.html">e-pity 2018 10.1.13</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/programy/download/Linux/obrobka_wideo/Avidemux.html">Avidemux 2.7.2</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/programy/download/Linux/synchronizacja_danych/FreeFileSync.html">FreeFileSync 10.10</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/programy/download/Linux/tworzenie_muzyki/Audacity.html">Audacity 2.3.1</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/programy/download/Linux/edytory_tekstow/FocusWriter.html">FocusWriter 1.7.2</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/programy/download/Linux/katalogowanie_zbiorow/Calibre.html">Calibre 3.40.1</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/programy/download/Linux/tworzenie_muzyki/Bitwig_Studio.html">Bitwig Studio 2.5.0</a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/programy/download/Linux/przegladarki.grafiki/XnViewMP.html">XnViewMP 0.93.1</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/programy/download/Linux/matematyka/Dr._Geo.html">Dr. Geo 19.03b</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/programy/download/Linux/przegladarki.www/Opera.html">Opera 58.0.3135.79</a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/programy/download/Linux/klienci_FTP/FileZilla.html">FileZilla 3.41.1</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/programy/download/Linux/pakiety.biurowe/LibreOffice.html">LibreOffice 6.2.1</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/programy/download/Linux/sklad_publikacji_DTP/Scribus.html">Scribus 1.4.8</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/programy/download/Linux/poczta_elektroniczna/Mozilla_Thunderbird.html">Mozilla Thunderbird 60.5.3</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/programy/download/Linux/grafika_inne/XnConvert.html">XnConvert 1.80</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/programy/download/Linux/inne_narzedzia/VueScan.html">VueScan 9.6.34</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/programy/download/Linux/przegladarki.www/Vivaldi.html">Vivaldi 2.3.1440.60</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/programy/download/Linux/przegladarki.www/SRWare_Iron.html">SRWare Iron 72.0.3750.1</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/programy/download/Linux/multimedia_inne/Praat.html">Praat 6.0.49</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/programy/download/Linux/systemowe/Wine.html">Wine 4.3</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/programy/download/Linux/przegladarki.www/Google_Chrome.html">Google Chrome 72.0.3626.121</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/programy/download/Linux/obrobka_wideo/Shotcut.html">Shotcut 19.02.28</a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/programy/download/Linux/sieciowe/Wireshark.html">Wireshark 3.0.0</a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/programy/download/Linux/programowanie/CodeLobster_IDE.html">CodeLobster IDE 1.5.1</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-3" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Mac OS X</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/konwersja_audio_i_video/MakeMKV.html">MakeMKV 1.14.3</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/inne_narzedzia/SteelSeries_Engine.html">SteelSeries Engine 3.13.10</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/rozliczenia_podatkowe/e-pity.html">e-pity 2018 10.1.13</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/REAPER.html">REAPER 5.973</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/wtyczki/Adobe_Flash_Player_dla_Mac_OS_X.html">Adobe Flash Player dla Mac OS X 32.0.0.156</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/video/Avidemux.html">Avidemux 2.7.2</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/pobieranie_plikow/MediaHuman_YouTube_to_MP3.html">MediaHuman YouTube to MP3 3.9.9.13</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/komunikatory/WhatsApp.html">WhatsApp 0.3.2386</a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/video/Wondershare_Filmora.html">Wondershare Filmora 9.0.8</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/Audacity.html">Audacity 2.3.1</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/edycja_grafiki/Darktable.html">Darktable 2.6.1</a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/edytory_tekstow/FocusWriter.html">FocusWriter 1.7.2</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/katalogowanie_zbiorow/Calibre.html">Calibre 3.40.1</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/Bitwig_Studio.html">Bitwig Studio 2.5.0</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/przegladarki_grafiki/XnViewMP.html">XnViewMP 0.93.1</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/narzedzia_sieciowe/PS4_Remote_Play.html">PS4 Remote Play 2.8.0.3041</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/klienci_FTP/FileZilla.html">FileZilla 3.41.1</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/synchronizacja_danych/GoodSync.html">GoodSync 10.9.26</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/iTunes__iPod/DiskAid.html">iMazing 2.8</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/pakiety_biurowe/LibreOffice.html">LibreOffice 6.2.1</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/sklad_publikacji_DTP/Scribus.html">Scribus 1.4.8</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/inne_narzedzia/Dropbox.html">Dropbox 68.4.102</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/poczta_elektroniczna/Mozilla_Thunderbird.html">Mozilla Thunderbird 60.5.3</a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/synchronizacja_danych/TomTom_HOME.html">TomTom HOME 2.11.6</a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/programy/download/Mac_OS_X/grafika_inne/XnConvert.html">XnConvert 1.80</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-4" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>ANDROID</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/android/18492-Pokemon_GO.html">Pokemon GO 0.137.1</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/android/19465-Seeya.html">Seeya 0.5.0</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/android/19464-Dodgeball_Duel.html">Dodgeball Duel 1.12.0</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/android/19463-Downhill_Masters.html">Downhill Masters 1.0</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/android/19462-Learn_Spanish_with_Lirica.html">Learn Spanish with Lirica 1.9</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/android/19461-Calculator_Touch.html">Calculator Touch 1.0.4</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/android/19460-DPTH.html">DPTH 0.1.12</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/android/19459-Wallp.html">Wallp - Stock HD Wallpapers </a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/android/19279-Fortnite_Battle_Royale.html">Fortnite Battle Royale 8.01</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/android/11211-AllInOne_Toolbox%20(Odkurzacz).html">All-In-One Toolbox (Odkurzacz) 8.1.5.5.4</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/android/154-Easy_Sound_Recorder.html">Easy Sound Recorder </a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/android/19458-Funky_Restaurant.html">Funky Restaurant 1.0.13</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/android/19457-Go_Slice.html">Go Slice 1.1.2</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/android/19456-Digital_Dojo_Karate_Training.html">Digital Dojo Karate Training 0.1</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/android/19455-WeVideo.html">Video Editor 6.15.007</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/android/19454-iHour.html">iHour 0.1.8</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/android/19453-Typoman_Mobile.html">Typoman Mobile 1.0</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/android/19452-InPost_Mobile.html">InPost Mobile 1.0.2</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/android/19451-Idle_Supermarket_Tycoon.html">Idle Supermarket Tycoon 1.03</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/android/19450-PIT_APP.html">PIT APP 1.0.4</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/android/19449-Feedly_Classic.html">Feedly Classic 39.0.1</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/android/19448-Mr_Bow.html">Mr Bow 1.0</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/android/19447-Linn_Path_of_Orchards.html">Linn: Path of Orchards </a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/android/11238-Kalendarz_DigiCal.html">DigiCal Kalendarz </a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/android/19446-FiiNote.html">FiiNote 12.1.0.1</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-5" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Systemy operacyjne</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Manjaro_Linux.html">Manjaro Linux 18.0.4</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Kali_Linux.html">Kali Linux 2019.1a</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Android-x86.html">Android-x86 8.1 R1</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/ReactOS.html">ReactOS 0.4.11</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/LibreELEC.html">LibreELEC 9.0.0</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Arch_Linux.html">Arch Linux 2019.02.01</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Antergos.html">Antergos 19.2</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/AUSTRUMI.html">AUSTRUMI 3.9.3</a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Debian.html">Debian 9.8</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/PCLinuxOS.html">PCLinuxOS 2019.02</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/NuTyX_Pakxe.html">NuTyX 10.6</a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/SystemRescueCD.html">SystemRescueCD 6.0.2</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Slax.html">Slax 9.8.0</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Incognito_Live_System.html">Tails 3.12.1</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Parrot_Security_OS.html">Parrot Security OS 4.5</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/SteamOS.html">SteamOS 2.154</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Phoenix_OS.html">Phoenix OS 3.0.8</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Tiny_Core.html">Tiny Core 10.0</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Deepin.html">Deepin 15.9</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Windows_10_Creators_Update_Bloatware.html">Windows 10 No Bloatware Edition 17763.253</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Clonezilla_Live.html">Clonezilla 2.6.0-37</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/KaOS.html">KaOS 2018.12</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/SparkyLinux.html">SparkyLinux 5.6.1</a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/Q4OS.html">Q4OS 2.7</a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/systemy-operacyjne/download/Systemy_operacyjne/ExTiX.html">ExTiX 19.1.2</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-6" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Sterowniki</div></td></tr><tr><td class="lp">1.</td><td class="item_n"><a href="/sterowniki/download/Kontrolery/PlayStation/DS4Windows.html">DS4Windows 1.6.13</a></td></tr><tr><td class="lp">2.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-The-Sims-4.html">SteelSeries The Sims 4 3.13.8</a></td></tr><tr><td class="lp">3.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-v3-Prism.html">SteelSeries Siberia v3 Prism 3.13.8</a></td></tr><tr><td class="lp">4.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-v2-Heat-Orange.html">SteelSeries Siberia v2 Heat Orange 3.13.8</a></td></tr><tr><td class="lp">5.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/Siberia_v2_Frost_Blue.html">SteelSeries Siberia v2 Frost Blue 3.13.8</a></td></tr><tr><td class="lp">6.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-v2-DotA-2-Edition.html">SteelSeries Siberia v2 DotA 2 Edition 3.13.8</a></td></tr><tr><td class="lp">7.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-RAW-Prism.html">SteelSeries Siberia RAW Prism 3.13.8</a></td></tr><tr><td class="lp">8.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-Elite-World-of-Warcraft.html">SteelSeries Siberia Elite World of Warcraft 3.13.8</a></td></tr><tr><td class="lp">9.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Siberia-Elite-Prism.html">SteelSeries Siberia Elite Prism 3.13.8</a></td></tr><tr><td class="lp">10.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Siberia_Elite.html">SteelSeries Siberia Elite 3.13.8</a></td></tr><tr><td class="lp">11.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Siberia_840.html">SteelSeries Siberia 840 3.13.8</a></td></tr><tr><td class="lp">12.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Siberia_650.html">SteelSeries Siberia 650 3.13.8</a></td></tr><tr><td class="lp">13.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Siberia_350.html">SteelSeries Siberia 350 3.13.8</a></td></tr><tr><td class="lp">14.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Siberia_150.html">SteelSeries Siberia 150 3.13.8</a></td></tr><tr><td class="lp">15.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/Diablo_3_Headset.html">SteelSeries Diablo III 3.13.8</a></td></tr><tr><td class="lp">16.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Arctis-Pro-GameDAC.html">SteelSeries Arctis Pro + GameDAC 3.13.8</a></td></tr><tr><td class="lp">17.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Arctis-Pro.html">SteelSeries Arctis Pro 3.13.8</a></td></tr><tr><td class="lp">18.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Arctis_7.html">SteelSeries Arctis 7 3.13.8</a></td></tr><tr><td class="lp">19.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Arctis_5.html">SteelSeries Arctis 5 3.13.8</a></td></tr><tr><td class="lp">20.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries-Arctis-3-Bluetooth.html">SteelSeries Arctis 3 Bluetooth 3.13.8</a></td></tr><tr><td class="lp">21.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_Arctis_3.html">SteelSeries Arctis 3 3.13.8</a></td></tr><tr><td class="lp">22.</td><td class="item_n"><a href="/sterowniki/download/Sluchawki/SteelSeries/SteelSeries_9H.html">SteelSeries 9H 3.13.8</a></td></tr><tr><td class="lp">23.</td><td class="item_n"><a href="/sterowniki/download/Myszy/SteelSeries/Sensei-Wireless.html">Sensei Wireless 3.13.8</a></td></tr><tr><td class="lp">24.</td><td class="item_n"><a href="/sterowniki/download/Myszy/SteelSeries/Sensei310.html">Sensei 310 3.13.8</a></td></tr><tr><td class="lp">25.</td><td class="item_n"><a href="/sterowniki/download/Myszy/SteelSeries/Sensei_RAW.html">Sensei [RAW] 3.13.8</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment2-7" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Gry</div></td></tr><tr><td class="lp">1.</td><td><a href="/gry/download/logiczne/Logyx_Pack.html">Logyx Pack 12.27</a></td></tr><tr><td class="lp">2.</td><td><a href="/gry/download/symulatory/Minetest.html">Minetest 5.0.0</a></td></tr><tr><td class="lp">3.</td><td><a href="/gry/download/logiczne/Candy_Crush_Saga.html">Candy Crush Saga 1.1450.5.0</a></td></tr><tr><td class="lp">4.</td><td><a href="/gry/download/symulatory/Armored_Warfare.html">Armored Warfare 0.27.5244</a></td></tr><tr><td class="lp">5.</td><td><a href="/gry/download/mmorpg/Runes_of_Magic.html">Runes of Magic 7.3.0.2866</a></td></tr><tr><td class="lp">6.</td><td><a href="/gry/download/strategiczne/Fallout_Shelter.html">Fallout Shelter 1.13.17</a></td></tr><tr><td class="lp">7.</td><td><a href="/gry/download/mmorpg/Path_of_Exile.html">Path of Exile 3.5.4b</a></td></tr><tr><td class="lp">8.</td><td><a href="/gry/download/strategiczne/The_Battle_for_Wesnoth.html">The Battle for Wesnoth 1.14.6</a></td></tr><tr><td class="lp">9.</td><td><a href="/gry/download/strategiczne/FreeOrion.html">FreeOrion 2019-03-05 Test</a></td></tr><tr><td class="lp">10.</td><td><a href="/gry/download/strzelanki/Survarium.html">Survarium 0.57a3</a></td></tr><tr><td class="lp">11.</td><td><a href="/gry/download/strategiczne/Heroes_of_Newerth.html">Heroes of Newerth 4.7.2</a></td></tr><tr><td class="lp">12.</td><td><a href="/gry/download/akcji/Heroes__Generals.html">Heroes & Generals 1.13.2</a></td></tr><tr><td class="lp">13.</td><td><a href="/gry/download/akcji/Heroes_of_the_Storm.html">Heroes of the Storm 2.43.2</a></td></tr><tr><td class="lp">14.</td><td><a href="/gry/download/strzelanki/Counter-Strike_2D.html">Counter-Strike 2D 1.0.0.8</a></td></tr><tr><td class="lp">15.</td><td><a href="/gry/download/symulatory/RoboCraft.html">RoboCraft 1.15-2722</a></td></tr><tr><td class="lp">16.</td><td><a href="/gry/download/strzelanki/Warface.html">Warface 28.02.2019</a></td></tr><tr><td class="lp">17.</td><td><a href="/gry/download/akcji/Lost_Saga.html">Lost Saga 27.02.2019</a></td></tr><tr><td class="lp">18.</td><td><a href="/gry/download/strzelanki/Warframe.html">Warframe 24.3.3</a></td></tr><tr><td class="lp">19.</td><td><a href="/gry/download/mmorpg/Conquer_Online.html">Conquer Online v.6850</a></td></tr><tr><td class="lp">20.</td><td><a href="/gry/download/mmorpg/Cabal_Online.html">Cabal Online 16.01.2019</a></td></tr><tr><td class="lp">21.</td><td><a href="/gry/download/mmorpg/Ragnarok_Online.html">Ragnarok Online 02.28.2019</a></td></tr><tr><td class="lp">22.</td><td><a href="/gry/download/mmorpg/Talisman_Online.html">Talisman Online v.4024</a></td></tr><tr><td class="lp">23.</td><td><a href="/gry/download/symulatory/War_Thunder.html">War Thunder 1.85.1.26</a></td></tr><tr><td class="lp">24.</td><td><a href="/gry/download/mmorpg/Star_Trek_Online.html">Star Trek Online 28.02.2018</a></td></tr><tr><td class="lp">25.</td><td><a href="/gry/download/strzelanki/Counter-Strike_Nexon_Zombies.html">Counter-Strike Nexon: Zombies 06.03.2019</a></td></tr></tbody></table><div class="twoj_clr"></div></div></div>
+					
+					<div class="twoj_clr"></div></div><div id="twoj_fragment4-2" class="twoj_tab_content"  style="display: none;" ><script language="JavaScript" type="text/javascript">jq2j(document).ready(function(){jq2j("#twoj_container-3  > ul").tabs({ event: 'click'});});</script>
+					
+					<div id="twoj_container-3"  class="twoj_tabs_class3 twoj_orient_top"  ><ul class="twoj_tablink"  style="list-style: none none !important; background-image: none !important;"  ><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-1" ><span ><div class="win" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-2" ><span ><div class="linux" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-3" ><span ><div class="mac" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-4" ><span ><div class="mobile" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-5" ><span ><div class="os" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-6" ><span ><div class="sterowniki" ></div></span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment3-7" ><span ><div class="gry" ></div></span></a></li></ul><div id="twoj_fragment3-1" class="twoj_tab_content" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Windows</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/programy/download/Windows/narzedzia_systemowe/CCleaner.html">CCleaner 5.55</a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/programy/download/Windows/p2p/uTorrent.html">uTorrent 3.5.5</a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/programy/download/Windows/narzedzia_systemowe/IObit_Uninstaller.html">IObit Uninstaller 8.4.0.7</a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/programy/download/Windows/emulatory_napedow/DAEMON_Tools_Lite.html">DAEMON Tools Lite 10.10.0.0770</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/programy/download/Windows/przegladarki_www/Google_Chrome.html">Google Chrome 72.0.3626.121</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/programy/download/Windows/kompresory_archiwizery/WinRAR.html">WinRAR 5.70</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/programy/download/Windows/przegladarki_www/Firefox.html">Firefox 65.0.2</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/programy/download/Windows/zarzadzanie_sterownikami/SlimDrivers.html">SlimDrivers Free 2.3.2</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/programy/download/Windows/pakiety_biurowe/OpenOffice.html">OpenOffice 4.1.6</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/programy/download/Windows/przegladarki_www/Opera.html">Opera 58.0 3135.90</a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/programy/download/Windows/komunikatory/TeamSpeak.html">TeamSpeak 3.2.3</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/programy/download/Windows/komunikatory/Skype.html">Skype 8.41.0.54</a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/programy/download/Windows/obrobka_video/Windows_Movie_Maker.html">Windows Movie Maker 16.4.3528.0331</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/programy/download/Windows/antyspyware/AdwCleaner.html">AdwCleaner 7.2.7.0</a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/programy/download/Windows/nagrywanie/Nero_Free.html">Nero Free 9.4.12.3d</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/programy/download/Windows/zarzadzanie_sterownikami/Driver_Booster.html">Driver Booster 6.3.0.276</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/programy/download/Windows/odczyt_edycja_pdf/Adobe_Reader.html">Adobe Reader XI 11.0.23</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/programy/download/Windows/narzedzia_dyskowe/Rufus.html">Rufus 3.4</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/programy/download/Windows/kompresory_archiwizery/7-Zip.html">7-Zip 19.00</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/programy/download/Windows/odtwarzacze_audio_video/ALLPlayer.html">ALLPlayer 8.4</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/programy/download/Windows/narzedzia_systemowe/Game_Booster.html">Game Booster 3.4</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/programy/download/Windows/p2p/Hamachi.html">Hamachi 2.2.0.630</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/programy/download/Windows/pakiety_zabezpieczen/Advanced_SystemCare_Ultimate.html">Advanced SystemCare Ultimate 12.1.0.119</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/programy/download/Windows/p2p/Ares.html">Ares 2.5.1</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/programy/download/Windows/akcesoria/Steam.html">Steam 5.03.2019</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-2" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Linux</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/programy/download/Linux/rozliczenia_podatkowe/e-Deklaracje_Desktop.html">e-Deklaracje Desktop 2019 11.0.0</a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/programy/download/Linux/przegladarki.www/Mozilla_Firefox.html">Mozilla Firefox 65.0.2</a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/programy/download/Linux/obrobka_wideo/KDEnLive.html">KDEnLive 18.08.2</a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/programy/download/Linux/testowanie_i_diagnostyka/ISO9660_Analyzer_Tool.html">ISO9660 Analyzer Tool 0.1.7</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/programy/download/Linux/biblioteki/GTK_2_Runtime_Environment.html">GTK+ 2 Runtime Environment 3.20.1</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/programy/download/Linux/systemowe/Wine.html">Wine 4.3</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/programy/download/Linux/wtyczki/Adobe_Flash_Player_dla_Linux.html">Adobe Flash Player dla Linux 32.0</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/programy/download/Linux/edycja_grafiki/GIMP.html">GIMP 2.10.8</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/programy/download/Linux/modelowanie_3D/AC3D.html">AC3D 7.5.02</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/programy/download/Linux/odtwarzacze_audio_i_video/MPlayer.html">MPlayer 1.0rc4</a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/programy/download/Linux/komunikatory_internetowe/Telegram_Desktop.html">Telegram Desktop 1.5.15</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/programy/download/Linux/przegladarki.www/Vivaldi.html">Vivaldi 2.3.1440.60</a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/programy/download/Linux/inne_narzedzia/VueScan.html">VueScan 9.6.34</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/programy/download/Linux/obrobka_wideo/FFmpeg.html">FFmpeg 4.1.1</a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/programy/download/Linux/przegladarki.www/Google_Chrome.html">Google Chrome 72.0.3626.121</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/programy/download/Linux/programowanie/GitKraken.html">GitKraken 4.2.2</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/programy/download/Linux/tworzenie_stron_www/SEO_SpyGlass.html">SEO SpyGlass 6.39.10</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/programy/download/Linux/zabezpieczajace/Tor_Browser_Bundle.html">Tor Browser 8.0.6</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/programy/download/Linux/pobieranie_plikow/JDownloader.html">JDownloader 0.9.581</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/programy/download/Linux/edycja_grafiki/Krita.html">Krita 4.1.7</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/programy/download/Linux/komunikatory_internetowe/Skype.html">Skype 4.3.0.37 for Linux</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/programy/download/Linux/przegladarki.www/Mozilla.html">Mozilla 1.7.13</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/programy/download/Linux/przegladarki.grafiki/XnViewMP.html">XnViewMP 0.93.1</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/programy/download/Linux/inne_narzedzia/Xeoma.html">Xeoma 18.11.21</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/programy/download/Linux/bazy_danych/Navicat_dla_MySQL.html">Navicat for MySQL 12.1.16</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-3" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Mac OS X</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/pakiety_biurowe/LibreOffice.html">LibreOffice 6.2.1</a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/pdf/Adobe_Reader.html">Adobe Reader XI 11.0.10</a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/edycja_grafiki/Adobe_Photoshop_Lightroom.html">Adobe Photoshop Lightroom CC 6</a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/przegladarki_www/Google_Chrome.html">Google Chrome 72.0.3626.121</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/zabezpieczajace/Tor_Browser_Bundle.html">Tor Browser 8.0.6</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/multimedia_inne/QNapi.html">QNapi 0.2.3</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/Traktor_PRO.html">Traktor PRO 3</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/archiwizery/RAR_dla_Mac_OS_X.html">RAR dla Mac OS X 5.21</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/czytniki_RSS/RSS_Menu.html">RSS Menu 2.3.1</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/czytniki_RSS/RSSOwl.html">RSSOwl 2.2.1</a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/nagrywanie_plyt/Burn.html">Burn 2.5.1</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/klienci_FTP/FileZilla.html">FileZilla 3.41.1</a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/Virtual_DJ.html">Virtual DJ 2018 b4756</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/rozliczenia_podatkowe/e-Deklaracje_Desktop.html">e-Deklaracje Desktop 2019 11.0.0</a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/przegladarki_www/Mozilla_Firefox.html">Mozilla Firefox 65.0.2</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/pdf/Flip_PDF_for_Mac.html">Flip PDF for Mac 2.5.22</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/synchronizacja_danych/Windows_Phone_7_Connector.html">Windows Phone 3.1.1</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/klienci_FTP/Classic_FTP.html">Classic FTP 2.34</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/pakiety_biurowe/OpenOffice.org.html">OpenOffice 4.1.6</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/narzedzia_systemowe/OnyX.html">OnyX 3.5.7</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/tworzenie_muzyki/REAPER.html">REAPER 5.973</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/bazy_danych/Navicat_dla_MySQL.html">Navicat for MySQL 12.1.16</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/synchronizacja_danych/DropSync.html">DropSync 3.1.2</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/narzedzia_systemowe/CCleaner.html">CCleaner for Mac 1.15</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/programy/download/Mac_OS_X/przegladarki_www/Opera.html">Opera 58.0.3135.79</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-4" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>ANDROID</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/android/19460-DPTH.html">DPTH 0.1.12</a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/android/19461-Calculator_Touch.html">Calculator Touch 1.0.4</a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/android/19459-Wallp.html">Wallp - Stock HD Wallpapers </a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/android/19462-Learn_Spanish_with_Lirica.html">Learn Spanish with Lirica 1.9</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/android/19463-Downhill_Masters.html">Downhill Masters 1.0</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/android/19455-WeVideo.html">Video Editor 6.15.007</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/android/19457-Go_Slice.html">Go Slice 1.1.2</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/android/19456-Digital_Dojo_Karate_Training.html">Digital Dojo Karate Training 0.1</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/android/19454-iHour.html">iHour 0.1.8</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/android/19464-Dodgeball_Duel.html">Dodgeball Duel 1.12.0</a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/android/18624-Darmowy_VPN_Opera_bez_limitow.html">Darmowy VPN Opera bez limitów 1.0</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/android/12616-Uslugi_Google_Play.html">Usługi Google Play </a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/android/19465-Seeya.html">Seeya 0.5.0</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/android/19450-PIT_APP.html">PIT APP 1.0.4</a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/android/19458-Funky_Restaurant.html">Funky Restaurant 1.0.13</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/android/19449-Feedly_Classic.html">Feedly Classic 39.0.1</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/android/18492-Pokemon_GO.html">Pokemon GO 0.137.1</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/android/19172-Taskade.html">Taskade 1.0.1</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/android/19452-InPost_Mobile.html">InPost Mobile 1.0.2</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/android/19428-WaterMinder.html">WaterMinder 2.2</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/android/19453-Typoman_Mobile.html">Typoman Mobile 1.0</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/android/8351-Darmowe_Dzwonki_na_Telefon.html">Darmowe Dzwonki na Telefon 7.2.0</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/android/19451-Idle_Supermarket_Tycoon.html">Idle Supermarket Tycoon 1.03</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/android/18442-STS.html">STS 1.98</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/android/18794-Przyznaj_sie.html">Przyznaj się 1.0.2</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-5" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Systemy operacyjne</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Windows_7.html">Windows 7 </a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Windows_10.html">Windows 10 </a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Linux_Mint.html">Linux Mint 19.1</a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Ubuntu.html">Ubuntu 18.10</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Android-x86.html">Android-x86 8.1 R1</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Kubuntu.html">Kubuntu 18.10</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Parted_Magic.html">Parted Magic 2013_08_10</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Puppy_Linux.html">Puppy Linux 7.5</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Cdlinux.pl_duzy.html">Cdlinux.pl duży 1.0</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Antergos.html">Antergos 19.2</a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Zorin_OS.html">Zorin OS 12.4</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Clonezilla_Live.html">Clonezilla 2.6.0-37</a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Knoppix.html">KNOPPIX 8.2</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Windows_8.html">Windows 8.1 Enterprise </a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Phoenix_OS.html">Phoenix OS 3.0.8</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/SystemRescueCD.html">SystemRescueCD 6.0.2</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Deepin.html">Deepin 15.9</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Debian.html">Debian 9.8</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/SteamOS.html">SteamOS 2.154</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/OpenELEC.html">OpenELEC 8.0.4</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Kali_Linux.html">Kali Linux 2019.1a</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/Remix_OS.html">Remix OS 3.0.207</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/LXLE.html">LXLE 16.04.4</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/openSUSE.html">openSUSE Leap 15.0</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/systemy-operacyjne/download/Systemy_operacyjne/xPUD.html">xPUD 0.9.2</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-6" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Sterowniki</div></td></tr><tr><td class="lp">1.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Dzwiekowe/Realtek/Realtek_High_Definition_Audio.html">Realtek High Definition Audio R2.82</a></td></tr><tr><td class="lp">2.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Sieciowe/Atheros/Atheros-Wireless-driver-for-Windows-7.html">Sterowniki Atheros Wireless dla Windows 7 (32/64bit) 10.0.0.336</a></td></tr><tr><td class="lp">3.</td><td class="item_n" ><a href="/sterowniki/download/Kontrolery/PlayStation/DS4Windows.html">DS4Windows 1.6.13</a></td></tr><tr><td class="lp">4.</td><td class="item_n" ><a href="/sterowniki/download/Kontrolery/PlayStation/MotioninJoy.html">MotioninJoy 0.7.1001</a></td></tr><tr><td class="lp">5.</td><td class="item_n" ><a href="/sterowniki/download/Plyty_glowne/Intel/Intel_USB_3.0_Driver.html">Intel USB 3.0 Driver 1.0.10.255</a></td></tr><tr><td class="lp">6.</td><td class="item_n" ><a href="/sterowniki/download/Adaptery_Bluetooth/Atheros/Atheros-Bluetooth-Win-7-8.html">Sterowniki Atheros Bluetooth dla Windows 7/8/8.1 (32/64bit) 8.0.1.314</a></td></tr><tr><td class="lp">7.</td><td class="item_n" ><a href="/sterowniki/download/Drukarki/HP/HP_LaserJet_P1102.html">HP LaserJet Pro P1102/P1102w 1601</a></td></tr><tr><td class="lp">8.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_F2180.html">HP Deskjet F2180 14.8.0</a></td></tr><tr><td class="lp">9.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Graficzne/nVidia/NVIDIA_Forceware.html">NVIDIA GeForce Game Ready Driver 419.35 WHQL</a></td></tr><tr><td class="lp">10.</td><td class="item_n" ><a href="/sterowniki/download/Kontrolery/Esperanza/%20EG102_Warrior.html">Esperanza Vibration Gamepad EG102 USB Warrior </a></td></tr><tr><td class="lp">11.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_K209a.html">HP Deskjet K209a 14.8.0</a></td></tr><tr><td class="lp">12.</td><td class="item_n" ><a href="/sterowniki/download/Drukarki/HP/HP_LaserJet_1018.html">HP LaserJet 1018 20120918</a></td></tr><tr><td class="lp">13.</td><td class="item_n" ><a href="/sterowniki/download/Drukarki/HP/HP_LaserJet_P1005.html">HP LaserJet P1005 20130415</a></td></tr><tr><td class="lp">14.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Sieciowe/TPLink/TL-WN722N.html">TL-WN722N V2</a></td></tr><tr><td class="lp">15.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_F2280.html">HP Deskjet F2280 14.8.0</a></td></tr><tr><td class="lp">16.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Dzwiekowe/Realtek/Realtek_AC97_Audio_Driver.html">Realtek AC'97 Audio Driver 6305</a></td></tr><tr><td class="lp">17.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Sieciowe/Atheros/Atheros-Wireless-driver-for-Windows-XP.html">Sterowniki Atheros Wireless dla Windows XP (32/64bit) 10.0.0.274</a></td></tr><tr><td class="lp">18.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_F4180.html">HP Deskjet F4180 14.8.0</a></td></tr><tr><td class="lp">19.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_Ink_Advantage_2060_-_K110a.html">HP Deskjet Ink Advantage 2060 - K110a 22.8.0</a></td></tr><tr><td class="lp">20.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_LaserJet_Pro_M1132.html">HP LaserJet Pro M1132 5.0</a></td></tr><tr><td class="lp">21.</td><td class="item_n" ><a href="/sterowniki/download/Drukarki/HP/HP_LaserJet_1320.html">HP LaserJet 1320/1320n/1320nw/1320t/1320tn 6.1.0.20062</a></td></tr><tr><td class="lp">22.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_1050_-_J410a.html">HP Deskjet 1050 - J410a 28.8</a></td></tr><tr><td class="lp">23.</td><td class="item_n" ><a href="/sterowniki/download/Urzadzenia_Wielofunkcyjne/HP/HP_Deskjet_F735.html">HP Deskjet F735 14.8.0</a></td></tr><tr><td class="lp">24.</td><td class="item_n" ><a href="/sterowniki/download/Drukarki/Samsung/Samsung-ML-2165W.html">Samsung ML-2165W 3.13.12.02:34</a></td></tr><tr><td class="lp">25.</td><td class="item_n" ><a href="/sterowniki/download/Karty_Graficzne/Intel/Intel_Graphics_Driver.html">Intel Graphics Driver 25.20.100.6444</a></td></tr></tbody></table><div class="twoj_clr"></div></div><div id="twoj_fragment3-7" class="twoj_tab_content"  style="display: none;" ><table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td colspan="2" class="cat_name"><div>Gry</div></td></tr><tr><td class="lp">1.</td><td><a href="/gry/download/mody/Minecraft_Shiginima_Launcher.html">Minecraft Shiginima Launcher 3.100</a></td></tr><tr><td class="lp">2.</td><td><a href="/gry/download/symulatory/Minecraft_Beta.html">Minecraft 1.13.2</a></td></tr><tr><td class="lp">3.</td><td><a href="/gry/download/zrecznosciowe/Icy_Tower.html">Icy Tower 1.5.1</a></td></tr><tr><td class="lp">4.</td><td><a href="/gry/download/symulatory/Minecraft_by_Zyczu.html">Minecraft by Zyczu 3.3.3</a></td></tr><tr><td class="lp">5.</td><td><a href="/gry/download/sportowe/Deluxe_Ski_Jump_2.html">Deluxe Ski Jump 2 2.1</a></td></tr><tr><td class="lp">6.</td><td><a href="/gry/download/strzelanki/Fortnite_Battle_Royale.html">Fortnite Battle Royale 8.01</a></td></tr><tr><td class="lp">7.</td><td><a href="/gry/download/spolszczenia/GTA_SA.html">GTA San Andreas - spolszczenie </a></td></tr><tr><td class="lp">8.</td><td><a href="/gry/download/platformowki/Super_Mario.html">Super Mario </a></td></tr><tr><td class="lp">9.</td><td><a href="/gry/download/sportowe/Deluxe_Ski_Jump_4_Demo.html">Deluxe Ski Jump 4 1.6.3</a></td></tr><tr><td class="lp">10.</td><td><a href="/gry/download/sportowe/Deluxe_Ski_Jump_3.html">Deluxe Ski Jump 3 1.7.1</a></td></tr><tr><td class="lp">11.</td><td><a href="/gry/download/mody/GTA_V_FoV.html">GTA V FoV 1.34</a></td></tr><tr><td class="lp">12.</td><td><a href="/gry/download/spolszczenia/Need_For_Speed_Most_Wanted_spolszczenie.html">Need For Speed: Most Wanted - spolszczenie </a></td></tr><tr><td class="lp">13.</td><td><a href="/gry/download/strategiczne/League_of_Legends.html">League of Legends 9.5</a></td></tr><tr><td class="lp">14.</td><td><a href="/gry/download/mody/Garry`s_Mods.html">Garry`s Mod 9.0.4</a></td></tr><tr><td class="lp">15.</td><td><a href="/gry/download/logiczne/Kulki.html">Kulki </a></td></tr><tr><td class="lp">16.</td><td><a href="/gry/download/wyscigowe/TrackMania_Nations_Forever.html">TrackMania Nations Forever 2.11.26 PL</a></td></tr><tr><td class="lp">17.</td><td><a href="/gry/download/akcji/GTA_1_-_Grand_Theft_Auto_1.html">GTA 1 - Grand Theft Auto 1 </a></td></tr><tr><td class="lp">18.</td><td><a href="/gry/download/rpg/Mount_Blade_Warband.html">Mount & Blade: Warband 1.174</a></td></tr><tr><td class="lp">19.</td><td><a href="/gry/download/mody/HoMM_3_HD.html">HoMM 3 HD 5.0 RC43</a></td></tr><tr><td class="lp">20.</td><td><a href="/gry/download/przegladarkowe/Roblox.html">Roblox </a></td></tr><tr><td class="lp">21.</td><td><a href="/gry/download/spolszczenia/GTA_4_-_spolszczenie.html">Grand Theft Auto IV - spolszczenie </a></td></tr><tr><td class="lp">22.</td><td><a href="/gry/download/logiczne/Zuma_Deluxe.html">Zuma Deluxe 1.0</a></td></tr><tr><td class="lp">23.</td><td><a href="/gry/download/logiczne/Pasjans_Pajak.html">Pasjans - Pająk </a></td></tr><tr><td class="lp">24.</td><td><a href="/gry/download/strzelanki/Counter_strike_Global_offensive.html">Counter-Strike: Global Offensive 1.36.7.1</a></td></tr><tr><td class="lp">25.</td><td><a href="/gry/download/strzelanki/Apex_Legends.html">Apex Legends 2.13.2019</a></td></tr></tbody></table><div class="twoj_clr"></div></div></div>
+					
+					<div class="twoj_clr"></div></div></div>
+					
+					</div></div></div></div></div>
+<div class="djmod2 module_tab prog_cat" ><div><div><div><h3><span>Podobne programy</span></h3>
+<div class="mod-content gradient"><script language="JavaScript" type="text/javascript">jq2j(document).ready(function(){jq2j("#twoj_container-5  > ul").tabs({ event: 'click'});});</script>
+					
+					<div id="twoj_container-5"  class="twoj_tabs_class3 twoj_orient_top"  ><ul class="twoj_tablink"  style="list-style: none none !important; background-image: none !important;"  ><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment5-1" ><span >Najnowsze</span></a></li></ul><div id="twoj_fragment5-1" class="twoj_tab_content" >
+<table class="items_numerical" width="100%" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td class="icon"><img src="/components/com_djcatalog/images/068ed3789dfe831bf8e7f33b432ecf5azotero_00001.png" alt="Zotero"></td><td><a href="/programy/download/Windows/akcesoria/Zotero.html">Zotero</a><div class="version_date">v. 5.0.62 / Aktualizacja 12.03.2019</div></td></tr><tr><td class="icon"><img src="/components/com_djcatalog/images/a6b62f13583135bde73aff2a8f5cbc11Untitled-1.png" alt="Mindomo Desktop"></td><td><a href="/programy/download/Windows/akcesoria/Mindomo_Desktop.html">Mindomo Desktop</a><div class="version_date">v. 9.0.6 / Aktualizacja 12.03.2019</div></td></tr><tr><td class="icon"><img src="/components/com_djcatalog/images/20620565d4488bf283d59ecd899847d5wwl.gif" alt="Weather Watcher Live"></td><td><a href="/programy/download/Windows/akcesoria/Weather_Watcher_Live.html">Weather Watcher Live</a><div class="version_date">v. 7.2.163 / Aktualizacja 12.03.2019</div></td></tr><tr><td class="icon"><img src="/components/com_djcatalog/images/62cb85609d70e9d8592cfeeb9541ac85ONENOTE_00001.png" alt="Microsoft OneNote"></td><td><a href="/programy/download/Windows/akcesoria/OneNote_2013.html">Microsoft OneNote</a><div class="version_date">v. 1901 Build 11328.20146 / Aktualizacja 09.03.2019</div></td></tr><tr><td class="icon"><img src="/components/com_djcatalog/images/aaa509d8da56d46503dc992aeb395a31BC.png" alt="Book Collector"></td><td><a href="/programy/download/Windows/akcesoria/Book_Collector.html">Book Collector</a><div class="version_date">v. 19.1.1 / Aktualizacja 07.03.2019</div></td></tr></tbody></table><div class="twoj_clr"></div></div></div>
+					
+					</div></div></div></div></div>
+<div class="djmod2 module only_mobile" ><div><div><div><h3><span>Obserwuj nas</span></h3>
+<div class="mod-content gradient"><div style="text-align: center;"><a href="http://www.facebook.com/instalki" target="_blank"><img style="margin: 5px;" src="/images/banners/icons-social/1445263464_facebook_circle_color.png" alt="1445263464 facebook circle color" /></a><a href="http://twitter.com/INSTALKI_pl" target="_blank"><img style="margin: 5px;" src="/images/banners/icons-social/1445263460_twitter_circle_color.png" alt="1445263460 twitter circle color" /></a><a href="https://www.youtube.com/user/instalki" target="_blank"><img style="margin: 5px;" src="/images/banners/icons-social/1445263467_youtube_circle_color.png" alt="1445263467 youtube circle color" /></a><a href="https://plus.google.com/+instalki" target="_blank"><img style="margin: 5px;" src="/images/banners/icons-social/1445263452_google_circle_color.png" alt="1445263452 google circle color" /></a></div></div></div></div></div></div>
+<div class="djmod2 module img100 only_desktop" ><div><div><div><h3><span>Ostatnio na blogu</span></h3>
+<div class="mod-content gradient"><div style="direction: ltr; text-align: left ! important"><table border="0" style="width:100%" align="center" class="rsstable">
+<tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_blank" href="https://blog.instalki.pl/mateusz/direct-billing-internet-mobilny.html">Podejrzane rachunki za usługi Premium na fakturze za internet mobilny? Uważajcie na direct billing</a></div><a target="_blank" href="https://blog.instalki.pl/mateusz/direct-billing-internet-mobilny.html"><img src="/libraries/timthumb/timthumb.php?src=https://blog.instalki.pl/wp-content/uploads/2018/08/5-pln-300x182.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr><tr valign="top">
+<td style="width: 300px;padding: 3px;" align="center">
+<div class="feed_title_left"><a target="_blank" href="https://blog.instalki.pl/mateusz/fotopojedynek-xiaomi-redmi-note-5-kontra-nokia-x6-6-1-plus.html">Fotopojedynek: Xiaomi Redmi Note 5 kontra Nokia X6 (6.1 Plus)</a></div><a target="_blank" href="https://blog.instalki.pl/mateusz/fotopojedynek-xiaomi-redmi-note-5-kontra-nokia-x6-6-1-plus.html"><img src="/libraries/timthumb/timthumb.php?src=https://blog.instalki.pl/wp-content/uploads/2018/10/Xiaomi-vs-Nokia-1-300x142.jpg&w=300&zc=1"  class="img_pos_center" style="margin:3px; width:250px;" width="250"  /></a></td>
+</tr></table></div></div></div></div></div></div>
+</div> <!--KONIEC left div-->
+<div class="content_footer">		<div class="djmod module only_desktop" id="Mod345">
+			<div>
+				<div>
+					<div>
+												<div class="djmod-content" style="">
+							<div class="inside_djmod"><!-- /52555387/instalki.pl_970x250_dol -->
+<div><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; </script> <script> googletag.cmd.push(function() { var _YB=_YB||{ab:function(){return (_YB.dool?'b':'a'+Math.floor(Math.random()*10));},dc:function(){return (_YB.dool?'d':'c'+Math.floor(Math.random()*20));},mx:function(){return (!_YB.dool?'x':'m'+Math.floor(Math.random()*180));},tt:function(){return ('tt'+Math.floor(Math.random()*10));},dool:Math.random()>=0.1}; var _yt=new Date(),yb_th=_yt.getUTCHours()-8,yb_tm=_yt.getUTCMinutes(),yb_wd=_yt.getUTCDay();if(yb_th<0){yb_th=24+yb_th;yb_wd-=1;};if(yb_wd<0){yb_wd=7+yb_wd}; googletag.defineSlot('/52555387/instalki.pl_970x250_dol', [970, 250], 'div-gpt-ad-1528106946708-0').setTargeting('yb_ab', _YB.ab()).setTargeting('yb_dc', _YB.dc()).setTargeting('yb_mx', _YB.mx()).setTargeting('yb_tt', _YB.tt()).setTargeting('yb_ff', ''+Math.round(Math.random())).setTargeting('yb_th', yb_th.toString()).setTargeting('yb_tm', yb_tm.toString()).setTargeting('yb_wd', yb_wd.toString()).addService(googletag.pubads()); googletag.enableServices(); }); </script></div>
+ <div id='div-gpt-ad-1528106946708-0' style='height:250px; width:970px;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1528106946708-0'); }); </script> </div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> </div><!--end: main end--></div></div><!--outer-->
+ 
+
+<div id="footer_outer"><div id="footer">
+<div id="user8"><div class="djmod2 module_tab" ><div><div><div><div class="mod-content "><script language="JavaScript" type="text/javascript">jq2j(document).ready(function(){jq2j("#twoj_container-1  > ul").tabs({ event: 'click'});});</script>
+					
+					<div id="twoj_container-1"  class="twoj_tabs_class3 twoj_orient_top"  ><ul class="twoj_tablink"  style="list-style: none none !important; background-image: none !important;"  ><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment1-1" ><span >Windows</span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment1-2" ><span >Linux</span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment1-3" ><span >Mac</span></a></li><li  style="list-style: none none !important; background-image: none !important;"  class="twoj_li_top"><a href="#twoj_fragment1-4" ><span >Mobile</span></a></li></ul><div id="twoj_fragment1-1" class="twoj_tab_content" ><div id="category_columns" class="clearfix"><div class="list_column"><h3>Bezpieczeństwo</h3><ul><li><a href="/programy/Download/Windows/antydialer.html">antydialer (2)</a></li><li><a href="/programy/Download/Windows/antyspam.html">antyspam (36)</a></li><li><a href="/programy/Download/Windows/antyspyware.html">antyspyware (200)</a></li><li><a href="/programy/Download/Windows/antywirusy.html">antywirusy (180)</a></li><li><a href="/programy/Download/Windows/firewall.html">firewall (42)</a></li><li><a href="/programy/Download/Windows/kontrola_rodzicielska.html">kontrola rodzicielska (37)</a></li><li><a href="/programy/Download/Windows/pakiety_zabezpieczen.html">pakiety zabezpieczeń (117)</a></li><li><a href="/programy/Download/Windows/zabezpieczajace.html">zabezpieczające (207)</a></li></ul><h3>Biuro</h3><ul><li><a href="/programy/Download/Windows/bazy_danych.html">bazy danych (92)</a></li><li><a href="/programy/Download/Windows/edytory_tekstow.html">edytory tekstów (86)</a></li><li><a href="/programy/Download/Windows/odczyt_edycja_pdf.html">odczyt edycja pdf (235)</a></li><li><a href="/programy/Download/Windows/pakiety_biurowe.html">pakiety biurowe (56)</a></li><li><a href="/programy/Download/Windows/przegladarki_dokumentow.html">przeglądarki dokumentów (27)</a></li></ul><h3>Dodatki</h3><ul><li><a href="/programy/Download/Windows/aktualizacje.html">aktualizacje (61)</a></li><li><a href="/programy/Download/Windows/biblioteki.html">biblioteki (20)</a></li><li><a href="/programy/Download/Windows/spolszczenia.html">spolszczenia (150)</a></li><li><a href="/programy/Download/Windows/wtyczki_do_komunikatorow.html">wtyczki do komunikatorów (47)</a></li><li><a href="/programy/Download/Windows/wtyczki_do_przegladarek.html">wtyczki do przeglądarek (227)</a></li><li><a href="/programy/Download/Windows/wtyczki_multimedialne.html">wtyczki multimedialne (74)</a></li><li><a href="/programy/Download/Windows/wtyczki_pozostale.html">wtyczki pozostałe (42)</a></li></ul><h3>Dom</h3><ul><li><a href="/programy/Download/Windows/akcesoria.html">akcesoria (148)</a></li><li><a href="/programy/Download/Windows/aranzacja_wnetrz_i_ogrodow.html">aranżacja wnętrz i ogrodów (34)</a></li><li><a href="/programy/Download/Windows/dieta.html">dieta (11)</a></li><li><a href="/programy/Download/Windows/finanse.html">finanse (52)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Windows/genealogia.html" >genealogia (11)</a></li><li><a href="/programy/Download/Windows/organizery.html">organizery (93)</a></li><li><a href="/programy/Download/Windows/systemy_gier_liczbowych.html">systemy gier liczbowych (19)</a></li></ul><h3>Firma</h3><ul><li><a href="/programy/Download/Windows/ewidencja_srodkow_trwalych.html">ewidencja środków trwałych (32)</a></li><li><a href="/programy/Download/Windows/fakturowanie.html">fakturowanie (91)</a></li><li><a href="/programy/Download/Windows/firma_inne.html">firma inne (39)</a></li><li><a href="/programy/Download/Windows/generowanie_kodow_kreskowych.html">generowanie kodów kreskowych (13)</a></li><li><a href="/programy/Download/Windows/kadry_i_place.html">kadry i płace (24)</a></li><li><a href="/programy/Download/Windows/ksiegowosc.html">księgowość (68)</a></li><li><a href="/programy/Download/Windows/programy_branzowe.html">programy branżowe (119)</a></li><li><a href="/programy/Download/Windows/prowadzenie_firmy.html">prowadzenie firmy (69)</a></li><li><a href="/programy/Download/Windows/rozliczenia_podatkowe.html">rozliczenia podatkowe (23)</a></li><li><a href="/programy/Download/Windows/sprzedaz.html">sprzedaż (48)</a></li><li><a href="/programy/Download/Windows/systemy_CRM.html">systemy CRM (13)</a></li><li><a href="/programy/Download/Windows/zarzadzanie_pracownikami.html">zarządzanie pracownikami (11)</a></li></ul><h3>Grafika</h3><ul><li><a href="/programy/Download/Windows/edycja_grafiki.html">edycja grafiki (313)</a></li><li><a href="/programy/Download/Windows/flash.html">flash (46)</a></li><li><a href="/programy/Download/Windows/grafika_inne.html">grafika inne (190)</a></li><li><a href="/programy/Download/Windows/grafika_wektorowa.html">grafika wektorowa (17)</a></li><li><a href="/programy/Download/Windows/modelowanie_3D.html">modelowanie 3D (79)</a></li><li><a href="/programy/Download/Windows/obrobka_zdjec.html">obróbka zdjęć (120)</a></li><li><a href="/programy/Download/Windows/pakiety_graficzne.html">pakiety graficzne (7)</a></li><li><a href="/programy/Download/Windows/projektowanie_CAD.html">projektowanie CAD (97)</a></li><li><a href="/programy/Download/Windows/przegladarki_grafiki.html">przeglądarki grafiki (97)</a></li><li><a href="/programy/Download/Windows/sklad_publikacji_DTP.html">skład publikacji DTP (10)</a></li><li><a href="/programy/Download/Windows/tworzenie_czcionek.html">tworzenie czcionek (20)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Windows/tworzenie_ikon_i_kursorow.html" >tworzenie ikon i kursorów (34)</a></li><li><a href="/programy/Download/Windows/tworzenie_obrazow_HDR.html">tworzenie obrazów HDR (19)</a></li><li><a href="/programy/Download/Windows/tworzenie_wizytowek_i_etykiet.html">tworzenie wizytówek i etykiet (31)</a></li><li><a href="/programy/Download/Windows/zrzuty_ekranowe.html">zrzuty ekranowe (94)</a></li></ul><h3>Internet</h3><ul><li><a href="/programy/Download/Windows/czytniki_RSS.html">czytniki RSS (26)</a></li><li><a href="/programy/Download/Windows/ftp.html">klienty FTP (68)</a></li><li><a href="/programy/Download/Windows/irc.html">klienty IRC (16)</a></li><li><a href="/programy/Download/Windows/komunikatory.html">komunikatory (111)</a></li><li><a href="/programy/Download/Windows/p2m.html">P2M (7)</a></li><li><a href="/programy/Download/Windows/p2p.html">P2P (79)</a></li><li><a href="/programy/Download/Windows/pakiety_programow.html">pakiety programów (1)</a></li><li><a href="/programy/Download/Windows/pobieranie_plikow.html">pobieranie plików (229)</a></li><li><a href="/programy/Download/Windows/poczta_elektroniczna.html">poczta elektroniczna (101)</a></li><li><a href="/programy/Download/Windows/pozycjonowanie_SEO.html">pozycjonowanie SEO (18)</a></li><li><a href="/programy/Download/Windows/przegladarki_offline.html">przeglądarki offline (12)</a></li><li><a href="/programy/Download/Windows/przegladarki_www.html">przeglądarki www (100)</a></li><li><a href="/programy/Download/Windows/serwery_ftp.html">serwery FTP (23)</a></li><li><a href="/programy/Download/Windows/wysylanie_wiadomosci_SMS.html">wysyłanie wiadomości SMS (8)</a></li></ul><h3>Mobilne</h3><ul><li><a href="/programy/Download/Windows/firmware.html">firmware (17)</a></li><li><a href="/programy/Download/Windows/modyfikacje_Androida.html">modyfikacje Androida (85)</a></li></ul><h3>Multimedia</h3><ul><li><a href="/programy/Download/Windows/edycja_tagow.html">edycja tagów (28)</a></li><li><a href="/programy/Download/Windows/katalogowanie_multimediow.html">katalogowanie multimediów (79)</a></li><li><a href="/programy/Download/Windows/kodeki.html">kodeki (75)</a></li><li><a href="/programy/Download/Windows/konwersja_audio_video.html">konwersja audio video (433)</a></li><li><a href="/programy/Download/Windows/multimedia_inne.html">multimedia inne (317)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Windows/nagrywanie.html" >nagrywanie (191)</a></li><li><a href="/programy/Download/Windows/obrobka_video.html">obróbka video (169)</a></li><li><a href="/programy/Download/Windows/odtwarzacze_audio_video.html">odtwarzacze audio video (223)</a></li><li><a href="/programy/Download/Windows/odtwarzacze_dvd.html">odtwarzacze dvd (15)</a></li><li><a href="/programy/Download/Windows/odtwarzacze_radio_tv.html">odtwarzacze radio tv (90)</a></li><li><a href="/programy/Download/Windows/rippowanie_cd_dvd.html">rippowanie cd dvd (128)</a></li><li><a href="/programy/Download/Windows/syntezatory_mowy.html">syntezatory mowy (15)</a></li><li><a href="/programy/Download/Windows/tworzenie_demonstracji.html">tworzenie demonstracji (115)</a></li><li><a href="/programy/Download/Windows/tworzenie_muzyki.html">tworzenie muzyki (173)</a></li></ul><h3>Narzędzia</h3><ul><li><a href="/programy/Download/Windows/archiwizacja_danych.html">archiwizacja danych (182)</a></li><li><a href="/programy/Download/Windows/defragmentacja_dyskow.html">defragmentacja dysków (37)</a></li><li><a href="/programy/Download/Windows/deinstalatory.html">deinstalatory (50)</a></li><li><a href="/programy/Download/Windows/emulatory.html">emulatory (52)</a></li><li><a href="/programy/Download/Windows/emulatory_napedow.html">emulatory napędów (27)</a></li><li><a href="/programy/Download/Windows/keyloggery_i_monitoring.html">keyloggery i monitoring (47)</a></li><li><a href="/programy/Download/Windows/kompresory_archiwizery.html">kompresory archiwizery (66)</a></li><li><a href="/programy/Download/Windows/narzedzia_dyskowe.html">narzędzia dyskowe (448)</a></li><li><a href="/programy/Download/Windows/narzedzia_inne.html">narzędzia inne (377)</a></li><li><a href="/programy/Download/Windows/narzedzia_online.html">narzędzia online (16)</a></li><li><a href="/programy/Download/Windows/narzedzia_systemowe.html">narzędzia systemowe (622)</a></li><li><a href="/programy/Download/Windows/nawigacje_i_mapy.html">nawigacje i mapy (7)</a></li><li><a href="/programy/Download/Windows/odzyskiwanie_danych.html">odzyskiwanie danych (270)</a></li><li><a href="/programy/Download/Windows/odzyskiwanie_klucza.html">odzyskiwanie klucza (37)</a></li><li><a href="/programy/Download/Windows/optymalizacja_pamieci_RAM.html">optymalizacja pamięci RAM (26)</a></li><li><a href="/programy/Download/Windows/rozszerzenia_pulpitu.html">rozszerzenia pulpitu (154)</a></li><li><a href="/programy/Download/Windows/sieciowe.html">sieciowe (370)</a></li><li><a href="/programy/Download/Windows/sterowanie_komputerem.html">sterowanie komputerem (115)</a></li></ul></div><div id="last_column" class="list_column"><ul><li><a href="/programy/Download/Windows/synchronizacja_danych.html" >synchronizacja danych (59)</a></li><li><a href="/programy/Download/Windows/szyfrowanie_danych.html">szyfrowanie danych (184)</a></li><li><a href="/programy/Download/Windows/testowanie_i_diagnostyka.html">testowanie i diagnostyka (287)</a></li><li><a href="/programy/Download/Windows/wirtualizacja.html">wirtualizacja (18)</a></li><li><a href="/programy/Download/Windows/zarzadzanie_rejestrem.html">zarządzanie rejestrem (90)</a></li><li><a href="/programy/Download/Windows/zarzadzanie_sterownikami.html">zarządzanie sterownikami (69)</a></li><li><a href="/programy/Download/Windows/zarzadzanie_telefonem.html">zarządzanie telefonem (182)</a></li></ul><h3>Nauka i edukacja</h3><ul><li><a href="/programy/Download/Windows/biologia_i_chemia.html">biologia i chemia (11)</a></li><li><a href="/programy/Download/Windows/fizyka.html">fizyka (30)</a></li><li><a href="/programy/Download/Windows/geografia.html">geografia (22)</a></li><li><a href="/programy/Download/Windows/jezyki_obce.html">języki obce (52)</a></li><li><a href="/programy/Download/Windows/matematyka.html">matematyka (57)</a></li><li><a href="/programy/Download/Windows/nauczanie_poczatkowe.html">nauczanie początkowe (17)</a></li><li><a href="/programy/Download/Windows/nauka_jazdy.html">nauka jazdy (15)</a></li><li><a href="/programy/Download/Windows/programy_dla_szkol.html">programy dla szkół (22)</a></li><li><a href="/programy/Download/Windows/przedmioty_humanistyczne.html">przedmioty humanistyczne (14)</a></li><li><a href="/programy/Download/Windows/slowniki_translatory.html">słowniki translatory (45)</a></li></ul><h3>Programowanie</h3><ul><li><a href="/programy/Download/Windows/narzedzia_pomocnicze.html">narzędzia pomocnicze (106)</a></li><li><a href="/programy/Download/Windows/srodowiska_programistyczne.html">środowiska programistyczne (80)</a></li><li><a href="/programy/Download/Windows/systemy_CMS.html">systemy CMS (9)</a></li><li><a href="/programy/Download/Windows/tworzenia_plikow_pomocy.html">tworzenia plików pomocy (14)</a></li><li><a href="/programy/Download/Windows/tworzenie_gier.html">tworzenie gier (21)</a></li><li><a href="/programy/Download/Windows/tworzenie_instalatorow.html">tworzenie instalatorów (22)</a></li><li><a href="/programy/Download/Windows/tworzenie_stron_www.html">tworzenie stron www (127)</a></li></ul></div></div><div class="twoj_clr"></div></div><div id="twoj_fragment1-2" class="twoj_tab_content"  style="display: none;" ><div id="category_columns" class="clearfix"><div class="list_column"><h3>Bezpieczeństwo</h3><ul><li><a href="/programy/Download/Linux/antyspam.html">antyspam (21)</a></li><li><a href="/programy/Download/Linux/antywirusy.html">antywirusy (14)</a></li><li><a href="/programy/Download/Linux/firewall.html">firewall (3)</a></li><li><a href="/programy/Download/Linux/szyfrowanie_danych.html">szyfrowanie danych (3)</a></li><li><a href="/programy/Download/Linux/zabezpieczajace.html">zabezpieczające (1)</a></li></ul><h3>Biuro</h3><ul><li><a href="/programy/Download/Linux/bazy_danych.html">bazy danych (2)</a></li><li><a href="/programy/Download/Linux/edytory_tekstow.html">edytory tekstów (17)</a></li><li><a href="/programy/Download/Linux/pakiety.biurowe.html">pakiety biurowe (11)</a></li><li><a href="/programy/Download/Linux/pdf.html">pdf (2)</a></li><li><a href="/programy/Download/Linux/przegladanie_i_edycja_dokumentow.html">przeglądanie i edycja dokumentów (12)</a></li></ul><h3>Dodatki</h3><ul><li><a href="/programy/Download/Linux/biblioteki.html">biblioteki (2)</a></li><li><a href="/programy/Download/Linux/wtyczki_graficzne.html">wtyczki graficzne (1)</a></li></ul><h3>Dom</h3><ul><li><a href="/programy/Download/Linux/akcesoria.html">akcesoria (3)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Linux/aranzacja_wnetrz_i_ogrodow.html" >aranżacja wnętrz i ogrodów (1)</a></li><li><a href="/programy/Download/Linux/finanse.html">finanse (7)</a></li><li><a href="/programy/Download/Linux/organizery.html">organizery (9)</a></li></ul><h3>Firma</h3><ul><li><a href="/programy/Download/Linux/fakturowanie.html">fakturowanie (3)</a></li><li><a href="/programy/Download/Linux/ksiegowosc.html">księgowość (4)</a></li><li><a href="/programy/Download/Linux/prowadzenie_firmy.html">prowadzenie firmy (1)</a></li><li><a href="/programy/Download/Linux/rozliczenia_podatkowe.html">rozliczenia podatkowe (3)</a></li></ul><h3>Grafika</h3><ul><li><a href="/programy/Download/Linux/edycja_grafiki.html">edycja grafiki (23)</a></li><li><a href="/programy/Download/Linux/grafika_inne.html">grafika inne (9)</a></li><li><a href="/programy/Download/Linux/modelowanie_3D.html">modelowanie 3D (10)</a></li><li><a href="/programy/Download/Linux/projektowanie_CAD.html">projektowanie CAD (4)</a></li><li><a href="/programy/Download/Linux/przegladarki.grafiki.html">przeglądarki grafiki (35)</a></li><li><a href="/programy/Download/Linux/sklad_publikacji_DTP.html">skład publikacji DTP (1)</a></li><li><a href="/programy/Download/Linux/tworzenie_czcionek.html">tworzenie czcionek (1)</a></li><li><a href="/programy/Download/Linux/zrzuty_ekranowe.html">zrzuty ekranowe (3)</a></li></ul></ul></div><div class="list_column"><h3>Internet</h3><ul><li><a href="/programy/Download/Linux/analizatory_sieci.html">analizatory sieci (1)</a></li><li><a href="/programy/Download/Linux/czytniki_RSS.html">czytniki RSS (26)</a></li><li><a href="/programy/Download/Linux/edytory_HTML.html">edytory HTML (2)</a></li><li><a href="/programy/Download/Linux/klienci_FTP.html">klienty FTP (28)</a></li><li><a href="/programy/Download/Linux/klienci_IRC.html">klienty IRC (7)</a></li><li><a href="/programy/Download/Linux/komunikatory_internetowe.html">komunikatory internetowe (24)</a></li><li><a href="/programy/Download/Linux/pobieranie_plikow.html">pobieranie plików (18)</a></li><li><a href="/programy/Download/Linux/poczta_elektroniczna.html">poczta elektroniczna (20)</a></li><li><a href="/programy/Download/Linux/przegladarki_offline.html">przeglądarki offline (1)</a></li><li><a href="/programy/Download/Linux/przegladarki.www.html">przeglądarki www (16)</a></li><li><a href="/programy/Download/Linux/serwery_sieciowe.html">serwery sieciowe (2)</a></li><li><a href="/programy/Download/Linux/tworzenie_stron_www.html">tworzenie stron www (23)</a></li><li><a href="/programy/Download/Linux/wtyczki.html">wtyczki (3)</a></li><li><a href="/programy/Download/Linux/wymiana_plikow_p2p.html">wymiana plików p2p (20)</a></li></ul><h3>Multimedia</h3><ul><li><a href="/programy/Download/Linux/edycja_tagow.html">edycja tagów (21)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Linux/katalogowanie_zbiorow.html" >katalogowanie zbiorów (5)</a></li><li><a href="/programy/Download/Linux/kodeki_av.html">kodeki (5)</a></li><li><a href="/programy/Download/Linux/konwersja_audio_i_video.html">konwersja audio i video (54)</a></li><li><a href="/programy/Download/Linux/multimedia_inne.html">multimedia inne (14)</a></li><li><a href="/programy/Download/Linux/nagrywanie_plyt.html">nagrywanie płyt (14)</a></li><li><a href="/programy/Download/Linux/obrobka_wideo.html">obróbka wideo (13)</a></li><li><a href="/programy/Download/Linux/odtwarzacze_audio_i_video.html">odtwarzacze audio i video (40)</a></li><li><a href="/programy/Download/Linux/radio_i_tv.html">radio i tv (16)</a></li><li><a href="/programy/Download/Linux/tworzenie_muzyki.html">tworzenie muzyki (20)</a></li></ul><h3>Narzędzia</h3><ul><li><a href="/programy/Download/Linux/archiwizacja.html">archiwizacja (18)</a></li><li><a href="/programy/Download/Linux/emulatory.html">emulatory (11)</a></li><li><a href="/programy/Download/Linux/inne_narzedzia.html">inne narzędzia (20)</a></li><li><a href="/programy/Download/Linux/menadzery_plikow.html">menadżery plików (30)</a></li><li><a href="/programy/Download/Linux/narzedzia_dyskowe.html">narzędzia dyskowe (5)</a></li><li><a href="/programy/Download/Linux/odzyskiwanie_danych.html">odzyskiwanie danych (10)</a></li><li><a href="/programy/Download/Linux/programowanie.html">programowanie (24)</a></li></ul></div><div id="last_column" class="list_column"><ul><li><a href="/programy/Download/Linux/sieciowe.html" >sieciowe (12)</a></li><li><a href="/programy/Download/Linux/sterowanie_komputerem.html">sterowanie komputerem (5)</a></li><li><a href="/programy/Download/Linux/synchronizacja_danych.html">synchronizacja danych (6)</a></li><li><a href="/programy/Download/Linux/systemowe.html">systemowe (17)</a></li><li><a href="/programy/Download/Linux/testowanie_i_diagnostyka.html">testowanie i diagnostyka (14)</a></li><li><a href="/programy/Download/Linux/wirtualizacja.html">wirtualizacja (4)</a></li><li><a href="/programy/Download/Linux/wyglad.html">wygląd (8)</a></li><li><a href="/programy/Download/Linux/zarzadzanie_telefonem.html">zarządzanie telefonem (4)</a></li></ul><h3>Nauka i edukacja</h3><ul><li><a href="/programy/Download/Linux/biologia_i_chemia.html">biologia i chemia (10)</a></li><li><a href="/programy/Download/Linux/fizyka_i_astronomia.html">fizyka i astronomia (10)</a></li><li><a href="/programy/Download/Linux/geografia.html">geografia (4)</a></li><li><a href="/programy/Download/Linux/jezyki_obce.html">języki obce (2)</a></li><li><a href="/programy/Download/Linux/matematyka.html">matematyka (18)</a></li></ul></div></div><div class="twoj_clr"></div></div><div id="twoj_fragment1-3" class="twoj_tab_content"  style="display: none;" ><div id="category_columns" class="clearfix"><div class="list_column"><h3>Bezpieczeństwo</h3><ul><li><a href="/programy/Download/Mac_OS_X/antyspam.html">antyspam (5)</a></li><li><a href="/programy/Download/Mac_OS_X/antyspyware.html">antyspyware (4)</a></li><li><a href="/programy/Download/Mac_OS_X/antywirusy.html">antywirusy (18)</a></li><li><a href="/programy/Download/Mac_OS_X/firewall.html">firewall (7)</a></li><li><a href="/programy/Download/Mac_OS_X/szyfrowanie_danych.html">szyfrowanie danych (20)</a></li><li><a href="/programy/Download/Mac_OS_X/zabezpieczajace.html">zabezpieczające (2)</a></li></ul><h3>Biuro</h3><ul><li><a href="/programy/Download/Mac_OS_X/bazy_danych.html">bazy danych (4)</a></li><li><a href="/programy/Download/Mac_OS_X/edytory_tekstow.html">edytory tekstów (24)</a></li><li><a href="/programy/Download/Mac_OS_X/pakiety_biurowe.html">pakiety biurowe (12)</a></li><li><a href="/programy/Download/Mac_OS_X/pdf.html">pdf (27)</a></li><li><a href="/programy/Download/Mac_OS_X/przegladarki_dokumentow.html">przeglądarki dokumentów (4)</a></li></ul><h3>Dodatki</h3><ul><li><a href="/programy/Download/Mac_OS_X/biblioteki.html">biblioteki (2)</a></li></ul><h3>Dom</h3><ul><li><a href="/programy/Download/Mac_OS_X/akcesoria.html">akcesoria (12)</a></li><li><a href="/programy/Download/Mac_OS_X/aranzacja_wnetrz_i_ogrodow.html">aranżacja wnętrz i ogrodów (3)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Mac_OS_X/finanse.html" >finanse (19)</a></li><li><a href="/programy/Download/Mac_OS_X/hobby.html">hobby (0)</a></li><li><a href="/programy/Download/Mac_OS_X/organizery.html">organizery (19)</a></li><li><a href="/programy/Download/Mac_OS_X/pogoda.html">pogoda (9)</a></li><li><a href="/programy/Download/Mac_OS_X/wygaszacze.html">wygaszacze (10)</a></li></ul><h3>Firma</h3><ul><li><a href="/programy/Download/Mac_OS_X/fakturowanie.html">fakturowanie (4)</a></li><li><a href="/programy/Download/Mac_OS_X/rozliczenia_podatkowe.html">rozliczenia podatkowe (3)</a></li><li><a href="/programy/Download/Mac_OS_X/systemy_CRM.html">systemy CRM (0)</a></li></ul><h3>Grafika</h3><ul><li><a href="/programy/Download/Mac_OS_X/animacje.html">animacje (4)</a></li><li><a href="/programy/Download/Mac_OS_X/edycja_grafiki.html">edycja grafiki (48)</a></li><li><a href="/programy/Download/Mac_OS_X/grafika_inne.html">grafika inne (32)</a></li><li><a href="/programy/Download/Mac_OS_X/modelowanie_3D.html">modelowanie 3D (22)</a></li><li><a href="/programy/Download/Mac_OS_X/projektowanie_CAD.html">projektowanie CAD (8)</a></li><li><a href="/programy/Download/Mac_OS_X/przegladarki_grafiki.html">przeglądarki grafiki (23)</a></li><li><a href="/programy/Download/Mac_OS_X/sklad_publikacji_DTP.html">skład publikacji DTP (2)</a></li><li><a href="/programy/Download/Mac_OS_X/tworzenie_czcionek.html">tworzenie czcionek (2)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Mac_OS_X/zrzuty_ekranowe.html" >zrzuty ekranowe (13)</a></li></ul><h3>Internet</h3><ul><li><a href="/programy/Download/Mac_OS_X/czytniki_RSS.html">czytniki RSS (13)</a></li><li><a href="/programy/Download/Mac_OS_X/klienci_FTP.html">klienty FTP (18)</a></li><li><a href="/programy/Download/Mac_OS_X/klienci_IRC.html">klienty IRC (11)</a></li><li><a href="/programy/Download/Mac_OS_X/komunikatory.html">komunikatory (38)</a></li><li><a href="/programy/Download/Mac_OS_X/pobieranie_plikow.html">pobieranie plików (29)</a></li><li><a href="/programy/Download/Mac_OS_X/poczta_elektroniczna.html">poczta elektroniczna (16)</a></li><li><a href="/programy/Download/Mac_OS_X/przegladarki_offline.html">przeglądarki offline (1)</a></li><li><a href="/programy/Download/Mac_OS_X/przegladarki_www.html">przeglądarki www (22)</a></li><li><a href="/programy/Download/Mac_OS_X/tworzenie_stron_www.html">tworzenie stron www (13)</a></li><li><a href="/programy/Download/Mac_OS_X/wtyczki.html">wtyczki (6)</a></li><li><a href="/programy/Download/Mac_OS_X/wymiana_plikow_p2p.html">wymiana plików p2p (22)</a></li></ul><h3>Multimedia</h3><ul><li><a href="/programy/Download/Mac_OS_X/audio.html">audio (12)</a></li><li><a href="/programy/Download/Mac_OS_X/edycja_tagow.html">edycja tagów (5)</a></li><li><a href="/programy/Download/Mac_OS_X/iPhone.html">iPhone (2)</a></li><li><a href="/programy/Download/Mac_OS_X/iTunes__iPod.html">iTunes & iPod (7)</a></li></ul></div><div class="list_column"><ul><li><a href="/programy/Download/Mac_OS_X/katalogowanie_zbiorow.html" >katalogowanie zbiorów (23)</a></li><li><a href="/programy/Download/Mac_OS_X/kodeki.html">kodeki (2)</a></li><li><a href="/programy/Download/Mac_OS_X/konwersja_audio_i_video.html">konwersja audio i video (48)</a></li><li><a href="/programy/Download/Mac_OS_X/multimedia_inne.html">multimedia inne (29)</a></li><li><a href="/programy/Download/Mac_OS_X/nagrywanie_plyt.html">nagrywanie płyt (12)</a></li><li><a href="/programy/Download/Mac_OS_X/odtwarzacze.html">odtwarzacze (50)</a></li><li><a href="/programy/Download/Mac_OS_X/odtwarzacze_radio_tv.html">odtwarzacze radio tv (3)</a></li><li><a href="/programy/Download/Mac_OS_X/rippowanie_cd_dvd.html">rippowanie cd dvd (5)</a></li><li><a href="/programy/Download/Mac_OS_X/tworzenie_demonstracji.html">tworzenie demonstracji (12)</a></li><li><a href="/programy/Download/Mac_OS_X/tworzenie_muzyki.html">tworzenie muzyki (31)</a></li><li><a href="/programy/Download/Mac_OS_X/video.html">video (23)</a></li></ul><h3>Narzędzia</h3><ul><li><a href="/programy/Download/Mac_OS_X/archiwizacja_danych.html">archiwizacja danych (21)</a></li><li><a href="/programy/Download/Mac_OS_X/archiwizery.html">archiwizery (17)</a></li><li><a href="/programy/Download/Mac_OS_X/emulatory.html">emulatory (7)</a></li><li><a href="/programy/Download/Mac_OS_X/inne_narzedzia.html">inne narzędzia (65)</a></li><li><a href="/programy/Download/Mac_OS_X/jailbreak.html">jailbreak (3)</a></li><li><a href="/programy/Download/Mac_OS_X/menadzery_plikow.html">menadżery plików (6)</a></li></ul></div><div id="last_column" class="list_column"><ul><li><a href="/programy/Download/Mac_OS_X/narzedzia_dyskowe.html" >narzędzia dyskowe (15)</a></li><li><a href="/programy/Download/Mac_OS_X/narzedzia_sieciowe.html">narzędzia sieciowe (23)</a></li><li><a href="/programy/Download/Mac_OS_X/narzedzia_systemowe.html">narzędzia systemowe (36)</a></li><li><a href="/programy/Download/Mac_OS_X/odzyskiwanie_danych.html">odzyskiwanie danych (35)</a></li><li><a href="/programy/Download/Mac_OS_X/programowanie.html">programowanie (26)</a></li><li><a href="/programy/Download/Mac_OS_X/rozszerzenia_pulpitu.html">rozszerzenia pulpitu (6)</a></li><li><a href="/programy/Download/Mac_OS_X/sterowanie_komputerem.html">sterowanie komputerem (11)</a></li><li><a href="/programy/Download/Mac_OS_X/synchronizacja_danych.html">synchronizacja danych (19)</a></li><li><a href="/programy/Download/Mac_OS_X/testowanie_i_diagnostyka.html">testowanie i diagnostyka (7)</a></li><li><a href="/programy/Download/Mac_OS_X/wirtualizacja.html">wirtualizacja (3)</a></li><li><a href="/programy/Download/Mac_OS_X/zarzadzanie_telefonem.html">zarządzanie telefonem (9)</a></li></ul><h3>Nauka i edukacja</h3><ul><li><a href="/programy/Download/Mac_OS_X/biologia_i_chemia.html">biologia i chemia (1)</a></li><li><a href="/programy/Download/Mac_OS_X/fizyka_i_astronomia.html">fizyka i astronomia (6)</a></li><li><a href="/programy/Download/Mac_OS_X/geografia.html">geografia (1)</a></li><li><a href="/programy/Download/Mac_OS_X/matematyka.html">matematyka (6)</a></li><li><a href="/programy/Download/Mac_OS_X/slowniki_translatory.html">słowniki translatory (5)</a></li></ul></div></div><div class="twoj_clr"></div></div><div id="twoj_fragment1-4" class="twoj_tab_content"  style="display: none;" ><div id="category_columns" class="clearfix"><div class="list_column"><ul><h3>Aplikacje</h3><li><a href="/android/Download/Biblioteki_i_wersje_demo.html">Biblioteki i wersje demo (9)</a></li><li><a href="/android/Download/Dla_firm.html">Dla firm (112)</a></li><li><a href="/android/Download/Edukacja.html">Edukacja (148)</a></li><li><a href="/android/Download/Finanse.html">Finanse (19)</a></li><li><a href="/android/Download/Fotografia.html">Fotografia (164)</a></li><li><a href="/android/Download/Komiksy.html">Komiksy (100)</a></li><li><a href="/android/Download/Komunikacja.html">Komunikacja (191)</a></li><li><a href="/android/Download/Ksiazki.html">Książki (17)</a></li><li><a href="/android/Download/Medycyna.html">Medycyna (5)</a></li></ul></div><div class="list_column"><ul><li><a href="/android/Download/Multimedia_i_filmy.html" >Multimedia i filmy (134)</a></li><li><a href="/android/Download/Muzyka_i_dzwieki.html">Muzyka i dźwięki (141)</a></li><li><a href="/android/Download/Narzedzia.html">Narzędzia (251)</a></li><li><a href="/android/Download/Personalizacja.html">Personalizacja (154)</a></li><li><a href="/android/Download/Podroze.html">Podróże (132)</a></li><li><a href="/android/Download/Pogoda.html">Pogoda (19)</a></li><li><a href="/android/Download/Produktywnosc.html">Produktywność (165)</a></li><li><a href="/android/Download/Rozrywka.html">Rozrywka (132)</a></li><li><a href="/android/Download/Sport.html">Sport (113)</a></li><li><a href="/android/Download/Spolecznosci.html">Społeczności (119)</a></li></ul></div><div class="list_column"><ul><li><a href="/android/Download/Styl_zycia.html" >Styl życia (133)</a></li><li><a href="/android/Download/Transport.html">Transport (7)</a></li><li><a href="/android/Download/Wiadomosci_i_czasopisma.html">Wiadomości i czasopisma (50)</a></li><li><a href="/android/Download/Zakupy.html">Zakupy (106)</a></li><li><a href="/android/Download/Zdrowie_i_fitness.html">Zdrowie i fitness (48)</a></li><h3>Gry</h3><li><a href="/android/Download/gry/Akcja.html">Akcja (79)</a></li><li><a href="/android/Download/gry/Edukacyjne.html">Edukacyjne (6)</a></li><li><a href="/android/Download/gry/Fabularne.html">Fabularne (49)</a></li><li><a href="/android/Download/gry/Hazardowe.html">Hazardowe (4)</a></li></ul></div><div class="list_column"><ul><li><a href="/android/Download/gry/Karciane.html" >Karciane (10)</a></li><li><a href="/android/Download/gry/Logiczne.html">Logiczne (3)</a></li><li><a href="/android/Download/gry/Muzyczne.html">Muzyczne (2)</a></li><li><a href="/android/Download/gry/Planszowe.html">Planszowe (4)</a></li><li><a href="/android/Download/gry/Przygodowe.html">Przygodowe (43)</a></li><li><a href="/android/Download/gry/Puzzle.html">Puzzle (3)</a></li><li><a href="/android/Download/gry/Quizy.html">Quizy (5)</a></li><li><a href="/android/Download/gry/Rekreacyjne.html">Rekreacyjne (24)</a></li><li><a href="/android/Download/gry/Rozrywka.html">Rozrywka (1)</a></li><li><a href="/android/Download/gry/Sportowe.html">Sportowe (55)</a></li></ul></div><div id="last_column" class="list_column"><ul><li><a href="/android/Download/gry/Strategie.html" >Strategie (33)</a></li><li><a href="/android/Download/gry/Symulacyjne.html">Symulacyjne (33)</a></li><li><a href="/android/Download/gry/Slowne.html">Słowne (5)</a></li><li><a href="/android/Download/gry/Wyscigi.html">Wyścigi (36)</a></li><li><a href="/android/Download/gry/Zrecznosciowe.html">Zręcznościowe (115)</a></li><li><a href="/android/Download/gry/Lamiglowki.html">Łamigłówki (46)</a></li></ul></div></div><div class="twoj_clr"></div></div></div>
+					
+					</div></div></div></div></div>
+</div> 
+</div><div id="footer_bottom_outer" class="clearfix" ><div id="footer_bottom" class="clearfix"><div class="footer_left"><a href="https://www.instalki.pl/" ><img src="https://www.instalki.pl/templates/819-instalki/images/footer_logo.gif" /></a></div><div class="footer_center"><div id="user3"><ul id="mainlevel-nav"><li><a href="/o-nas.html" class="mainlevel-nav" >O nas</a></li><li><a href="/regulamin.html" class="mainlevel-nav" >Regulamin</a></li><li><a href="/kontakt.html" class="mainlevel-nav" >Kontakt</a></li><li><a href="/reklama.html" class="mainlevel-nav" >Reklama</a></li><li><a href="http://www.instalki.pl/aktualnosci.html?format=feed&type=rss" class="mainlevel-nav" >RSS</a></li><li><a href="/mapa-strony.html" class="mainlevel-nav" >Mapa strony</a></li><li><a href="/praca.html" class="mainlevel-nav" >Praca</a></li><li><a href="/cookies.html" class="mainlevel-nav" >Cookies</a></li><li><a href="/polityka-prywatnosci.html" class="mainlevel-nav" >Polityka prywatności</a></li></ul></div>
+<div id="copyrights">Wszystkie prawa zastrzeżone Copyright &copy; 2004 - 2019 <strong>by New Software Sp. z o.o.</strong><br /></div></div>
+<div class="footer_right"><form action="https://www.instalki.pl/index.php" method="get" name="" id="form-serach">
+<input type="hidden" name="option" id="opt_search" value="com_djcatalog" />
+<input type="hidden" name="view"   value="search_cont" />
+<input type="text" size="20" name="searchword" value="Znajdź program" class="inputbox" onblur="if(this.value=='') this.value='Znajdź program';" onfocus="if(this.value=='Znajdź program') this.value='' ; " />
+<input size="10" type="submit" name="" class="button" value="" /></form></div></div></div>
+</div>
+
+</body></html>

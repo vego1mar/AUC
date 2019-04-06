@@ -37,8 +37,7 @@
   <rule no="4">
     <target>
       <in>CONTENT</in>
-      <useAs>DATES</useAs>
-      <date>WINDOWS</date>
+      <useAs>IGNORE</useAs>
     </target>
     <method>
       <methodType>GRAB_UNTIL</methodType>
@@ -46,6 +45,29 @@
     </method>
   </rule>
   <rule no="5">
+    <target>
+      <in>CONTENT</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>LEFT</side>
+      <numberOf>14</numberOf>
+    </method>
+  </rule>
+  <rule no="6">
+    <target>
+      <in>CONTENT</in>
+      <useAs>DATES</useAs>
+      <date>WINDOWS</date>
+    </target>
+    <method>
+      <methodType>TRIM</methodType>
+      <side>RIGHT</side>
+      <numberOf>13</numberOf>
+    </method>
+  </rule>
+  <rule no="7">
     <target>
       <in>CODE</in>
       <useAs>IGNORE</useAs>
@@ -56,7 +78,7 @@
       <text><![CDATA[/Codeusa/Borderless-Gaming/releases/download]]></text>
     </method>
   </rule>
-  <rule no="6">
+  <rule no="8">
     <target>
       <in>CONTENT</in>
       <useAs>IGNORE</useAs>
@@ -66,7 +88,7 @@
       <charStop><![CDATA["]]></charStop>
     </method>
   </rule>
-  <rule no="7">
+  <rule no="9">
     <target>
       <in>CONTENT</in>
       <useAs>LINKS</useAs>
@@ -77,7 +99,7 @@
       <text><![CDATA[https://github.com]]></text>
     </method>
   </rule>
-  <rule no="8">
+  <rule no="10">
     <target>
       <in>CONTENT</in>
       <useAs>IGNORE</useAs>
@@ -88,7 +110,7 @@
       <text><![CDATA[download/]]></text>
     </method>
   </rule>
-  <rule no="9">
+  <rule no="11">
     <target>
       <in>CONTENT</in>
       <useAs>IGNORE</useAs>
@@ -99,7 +121,7 @@
       <numberOf>9</numberOf>
     </method>
   </rule>
-  <rule no="10">
+  <rule no="12">
     <target>
       <in>CONTENT</in>
       <useAs>VERSIONS</useAs>
@@ -110,7 +132,7 @@
       <charStop><![CDATA[/]]></charStop>
     </method>
   </rule>
-  <rule no="11">
+  <rule no="13">
     <target>
       <in>CODE</in>
       <useAs>IGNORE</useAs>
@@ -121,7 +143,7 @@
       <text><![CDATA[d-block py-1 py-md-2]]></text>
     </method>
   </rule>
-  <rule no="12">
+  <rule no="14">
     <target>
       <in>CONTENT</in>
       <useAs>IGNORE</useAs>
@@ -132,34 +154,13 @@
       <tagname>a</tagname>
     </method>
   </rule>
-  <rule no="13">
+  <rule no="15">
     <target>
       <in>COLLECTION</in>
       <useAs>IGNORE</useAs>
     </target>
     <method>
       <methodType>FETCH_HREFS</methodType>
-    </method>
-  </rule>
-  <rule no="14">
-    <target>
-      <in>COLLECTION</in>
-      <useAs>IGNORE</useAs>
-    </target>
-    <method>
-      <methodType>EXTRACT_WORD</methodType>
-      <position>3</position>
-    </method>
-  </rule>
-  <rule no="15">
-    <target>
-      <in>CONTENT</in>
-      <useAs>LINKS</useAs>
-      <linkId>SOURCECODE_TAR_GZ</linkId>
-    </target>
-    <method>
-      <methodType>PREPEND</methodType>
-      <text><![CDATA[https://github.com]]></text>
     </method>
   </rule>
   <rule no="16">
@@ -173,6 +174,27 @@
     </method>
   </rule>
   <rule no="17">
+    <target>
+      <in>CONTENT</in>
+      <useAs>LINKS</useAs>
+      <linkId>SOURCECODE_TAR_GZ</linkId>
+    </target>
+    <method>
+      <methodType>PREPEND</methodType>
+      <text><![CDATA[https://github.com]]></text>
+    </method>
+  </rule>
+  <rule no="18">
+    <target>
+      <in>COLLECTION</in>
+      <useAs>IGNORE</useAs>
+    </target>
+    <method>
+      <methodType>EXTRACT_WORD</methodType>
+      <position>1</position>
+    </method>
+  </rule>
+  <rule no="19">
     <target>
       <in>CONTENT</in>
       <useAs>LINKS</useAs>

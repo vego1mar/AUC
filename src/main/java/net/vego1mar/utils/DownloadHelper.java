@@ -1,6 +1,7 @@
 package net.vego1mar.utils;
 
 import java.io.IOException;
+import javax.net.ssl.SSLHandshakeException;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 
@@ -17,11 +18,23 @@ public final class DownloadHelper {
 
         try {
             content = Jsoup.connect(url).get().html();
-        }
-        catch (IOException exp) {
+        } catch (SSLHandshakeException exp) {
+            log.debug("Trying to dismiss the SSL certificate requirement; URL=" + url);
+            content = getHtmlWithoutHandshake(url);
+        } catch (IOException exp) {
             log.error(exp.getMessage());
         }
 
         return content;
+    }
+
+    private static String getHtmlWithoutHandshake(String url) {
+        try {
+            return Jsoup.connect(url).validateTLSCertificates(false).get().html();
+        } catch (IOException exp) {
+            log.error(exp.getMessage());
+        }
+
+        return "";
     }
 }

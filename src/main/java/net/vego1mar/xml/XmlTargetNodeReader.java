@@ -1,10 +1,10 @@
 package net.vego1mar.xml;
 
-import net.vego1mar.auxiliary.target.Target;
-import net.vego1mar.enumerators.properties.LinksID;
-import net.vego1mar.enumerators.properties.Platforms;
-import net.vego1mar.enumerators.traits.In;
-import net.vego1mar.enumerators.traits.UseAs;
+import net.vego1mar.target.Target;
+import net.vego1mar.properties.enumerators.LinksID;
+import net.vego1mar.properties.enumerators.Platforms;
+import net.vego1mar.target.enumerators.In;
+import net.vego1mar.target.enumerators.UseAs;
 import org.dom4j.Element;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -21,7 +21,8 @@ public class XmlTargetNodeReader extends XmlRulesSetTags {
     }
 
     public void readXmlTarget() {
-        Element[] elements = new Element[TARGETNODE_HASHID];
+        // Index 0 will be ignored by the switchFetching() method.
+        Element[] elements = new Element[TARGETNODE_HASHID + 1];
         boolean[] isCorrect = new boolean[elements.length];
 
         for (int i = 0; i < elements.length; i++) {

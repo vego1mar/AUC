@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AUC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/requesting/ChainRequestExecution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/requesting/InvocationRequest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/structs/SetSpaces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/structs/Target.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/triggers/FindTrigger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/triggers/FindTriggerTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auc/triggers/Trigger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/src/requesting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/src/structs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/src/triggers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/test/requesting/ChainRequestExecutionTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auc/test/triggers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_to_cover.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/requesting/ChainRequestExecution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/requesting/InvocationRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/structs/SetSpaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/src/structs/SetSpaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/structs/Target.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/src/structs/Target.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/triggers/FindTrigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/src/triggers/FindTrigger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/triggers/FindTriggerTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/test/triggers/FindTriggerTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auc/triggers/Trigger.py" beforeDir="false" afterPath="$PROJECT_DIR$/auc/src/triggers/Trigger.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,17 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auc/requesting/ChainRequestExecution.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +52,11 @@
         <option value="$PROJECT_DIR$/auc/structs/Target.py" />
         <option value="$PROJECT_DIR$/LICENSE.md" />
         <option value="$PROJECT_DIR$/auc/requesting/ChainRequestExecution.py" />
+        <option value="$PROJECT_DIR$/auc/test/triggers/FindTriggerTest.py" />
+        <option value="$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py" />
+        <option value="$PROJECT_DIR$/auc/src/triggers/FindTrigger.py" />
+        <option value="$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py" />
+        <option value="$PROJECT_DIR$/auc/test/requesting/ChainRequestExecutionTest.py" />
       </list>
     </option>
   </component>
@@ -72,7 +70,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,32 +86,64 @@
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="requesting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="structs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="triggers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="requesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="auc" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="triggers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="Educational" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auc/test/triggers" />
+      <recent name="$PROJECT_DIR$/auc/src" />
       <recent name="$PROJECT_DIR$/auc/requesting" />
     </key>
   </component>
@@ -130,24 +159,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1">
+    <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/test/requesting" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;FindTriggerTest.MyTestCase.test_invoke_1&quot;" />
+      <option name="_new_target" value="&quot;ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/test/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;FindTriggerTest.FindTriggerTest.test_invoke_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for auc.test.triggers.FindTriggerTest.FindTriggerTest.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/test/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;auc.test.triggers.FindTriggerTest.FindTriggerTest.test_invoke_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for auc.test.triggers.FindTriggerTest.MyTestCase.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/src/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;auc.test.triggers.FindTriggerTest.MyTestCase.test_invoke_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for FindTriggerTest.MyTestCase.test_invoke_1" />
+        <item itemvalue="Python tests.Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" />
+        <item itemvalue="Python tests.Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" />
+        <item itemvalue="Python tests.Unittests for auc.test.triggers.FindTriggerTest.FindTriggerTest.test_invoke_1" />
+        <item itemvalue="Python tests.Unittests for auc.test.triggers.FindTriggerTest.MyTestCase.test_invoke_1" />
       </list>
     </recent_temporary>
   </component>
@@ -165,104 +239,94 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 12m 23s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 48m 03s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 15m 08s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 48m 08s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 18m 02s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 50m 04s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 19m 45s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 50m 29s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 22m 02s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 50m 35s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 22m 26s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 51m 39s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_MyTestCase_test_invoke_1 - 2019.04.06 at 23h 22m 55s.xml">
-      <configuration name="Unittests for FindTriggerTest.MyTestCase.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 11h 59m 35s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 12h 02m 34s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 12h 03m 55s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.07 at 12h 04m 02s.xml">
+      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1652" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24953903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49907807" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49969268" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50092196" side_tool="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>issubclass(type(trigger), Trigger)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>issubclass(Trigger, trigger, Trigger)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>issubclass(trigger, Trigger)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>issubclass(Trigger, trigger)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>open(&quot;../_resources/lorem_ipsum.txt&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/auc/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/auc/requesting/RequestInvoker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/requesting/InvocationRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/triggers/Trigger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/structs/SetSpaces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/structs/Target.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/triggers/FindTriggerTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/requesting/RequestInvoker.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -281,22 +345,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auc/triggers/FindTrigger.py">
+    <entry file="file://$PROJECT_DIR$/auc/src/structs/SetSpaces.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/triggers/Trigger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/structs/Target.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/test/_resources/lorem_ipsum.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/test/triggers/FindTriggerTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auc/requesting/ChainRequestExecution.py">
+    <entry file="file:///usr/lib/python3.6/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="174">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" lean-forward="true" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/triggers/FindTrigger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps_to_cover.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/test/requesting/ChainRequestExecutionTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

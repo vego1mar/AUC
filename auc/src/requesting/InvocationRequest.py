@@ -1,10 +1,10 @@
-from auc.structs.Target import Target
-from auc.triggers.Trigger import Trigger
+from auc.src.structs.Target import Target
+from auc.src.triggers.Trigger import Trigger
 
 
 class InvocationRequest:
     def __init__(self, target, trigger):
-        if not isinstance(target, Target) or not issubclass(trigger, Trigger):
+        if not isinstance(target, Target) or not issubclass(type(trigger), Trigger):
             raise ValueError
 
         self.target = target

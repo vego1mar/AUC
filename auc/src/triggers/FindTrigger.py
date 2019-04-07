@@ -1,18 +1,17 @@
-from auc.triggers.Trigger import Trigger
-from auc.structs.Target import Target
-from auc.structs.Target import TargetSetName
-from auc.structs.SetSpaces import SetSpaces
+from auc.src.triggers.Trigger import Trigger
+from auc.src.structs.Target import Target
+from auc.src.structs.Target import TargetSetName
+from auc.src.structs.SetSpaces import SetSpaces
 
 
 class FindTrigger(Trigger):
-    """Finds the first occurrence of text_to_find and create a new string from that point to the end."""
+    """Finds the first occurrence of text_to_find and create a new string from that point to the end.
+       Available for: WEB_SPACE
+    """
 
-    def __init__(self):
+    def __init__(self, text_to_find):
         super().__init__()
-        self._text = ""
-
-    def set_text(self, text_to_find):
-        self._text = text_to_find
+        self._text = str(text_to_find)
 
     def invoke(self, target, set_spaces):
         if not isinstance(set_spaces, SetSpaces) or not isinstance(target, Target):

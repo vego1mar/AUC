@@ -6,7 +6,7 @@ from auc.src.structs.SetSpaces import SetSpaces
 
 class FindTrigger(Trigger):
     """Finds the first occurrence of text_to_find and create a new string from that point to the end.
-       Available for: WEB_SPACE
+       Available for: WEB_SPACE, WORK_SPACE
     """
 
     def __init__(self, text_to_find):
@@ -21,15 +21,19 @@ class FindTrigger(Trigger):
 
     def _find_text(self, target, set_spaces):
         if target.set_name == TargetSetName.WEB_SPACE:
-            self._find_text_in_webspace(set_spaces)
+            self._find_text_in_string(set_spaces.web_space)
+        elif target.set_name == TargetSetName.WORK_SPACE:
+            self._find_text_in_string(set_spaces.work_space)
         else:
             raise ValueError
 
-    def _find_text_in_webspace(self, set_spaces):
-        text_index = str(set_spaces.web_space).find(self._text)
+        set_spaces.work_space = self._result
+
+    def _find_text_in_string(self, string_to_search_in):
+        text_index = str(string_to_search_in).find(self._text)
 
         if not text_index == -1:
-            self._result = set_spaces.web_space[text_index:]
+            self._result = string_to_search_in[text_index:]
 
     def to_string(self):
         return str(type(FindTrigger)) + '(' + self._text + ')'

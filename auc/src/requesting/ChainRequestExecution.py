@@ -10,7 +10,7 @@ class ChainRequestExecution:
         self._collectibles = {}
 
     def set_chain_request(self, chain_request):
-        if isinstance(chain_request, type([])):
+        if isinstance(chain_request, tuple) or isinstance(chain_request, type([])):
             self._chain_request = chain_request
 
     def get_collectibles(self):
@@ -25,10 +25,10 @@ class ChainRequestExecution:
             self._acquire_collectible(target)
 
     def _alter_target_space(self, target, trigger):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name in [TargetSetName.WEB_SPACE, TargetSetName.WORK_SPACE]:
             self._set_spaces.work_space = trigger.get_result()
         elif target.set_name == TargetSetName.LIST_SPACE:
-            raise NotImplementedError
+            self._set_spaces.list_space = trigger.get_result()
         else:
             raise ValueError("Not supported set space.")
 

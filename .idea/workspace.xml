@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AUC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AUC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/requesting/InfoCollector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/requesting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/structs/SetSpaces.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/structs/Target.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/structs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/triggers/FindTrigger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/triggers/Trigger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/src/triggers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/_resources/lorem_ipsum.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/resources/lorem_ipsum.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/requesting/ChainRequestExecutionTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/requesting/InfoCollectorTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/triggers/FindTriggerTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auc/test/triggers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/sonar-project-pattern.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aux/sonar-project-pattern.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-sonar-scanner.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-sonar-scanner.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +17,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Stub" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -72,8 +70,6 @@
         <option value="$PROJECT_DIR$/auc/test/requesting/InfoCollectorTest.py" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/aux/sonar-project-pattern.properties" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector/__init__.pyi" />
         <option value="$PROJECT_DIR$/collector_tests/__init__.py" />
@@ -81,6 +77,11 @@
         <option value="$PROJECT_DIR$/collector/requesting.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/ChainRequestExecutionTest.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/InfoCollectorTest.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/gog_galaxy_collecting_test.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/collect_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
       </list>
     </option>
   </component>
@@ -93,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -138,12 +140,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +167,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for info_collector_test.InfoCollectorTest.test_collect_1">
+  <component name="RunManager" selected="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_links_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for collector_tests.executing.app_gog_galaxy_test.GogGalaxyTest.test_something" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;collector_tests.executing.app_gog_galaxy_test.GogGalaxyTest.test_something&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for collector_tests.executing.chain_request_execution_test.ChainRequestExecutionTest.test_execute_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,34 +238,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for collector_tests.triggers.FindTriggerTest.FindTriggerTest.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auc/test/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;collector_tests.triggers.FindTriggerTest.FindTriggerTest.test_invoke_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for collector_tests.triggers.find_trigger_test.FindTriggerTest.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;collector_tests.triggers.find_trigger_test.FindTriggerTest.test_invoke_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for info_collector_test.InfoCollectorTest.test_collect_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,13 +254,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" />
+        <item itemvalue="Python tests.Unittests for collector_tests.executing.app_gog_galaxy_test.GogGalaxyTest.test_something" />
         <item itemvalue="Python tests.Unittests for info_collector_test.InfoCollectorTest.test_collect_1" />
         <item itemvalue="Python tests.Unittests for collector_tests.executing.info_collector_test.InfoCollectorTest.test_collect_1" />
         <item itemvalue="Python tests.Unittests for collector_tests.executing.chain_request_execution_test.ChainRequestExecutionTest.test_execute_1" />
-        <item itemvalue="Python tests.Unittests for collector_tests.triggers.find_trigger_test.FindTriggerTest.test_invoke_1" />
-        <item itemvalue="Python tests.Unittests for collector_tests.executing.info_collector_test.InfoCollectorTest.test_collect_1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -275,42 +279,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_FindTriggerTest_FindTriggerTest_test_invoke_1 - 2019.04.08 at 12h 36m 39s.xml">
-      <configuration name="Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 33m 03s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_FindTriggerTest_test_invoke_1 - 2019.04.08 at 12h 37m 31s.xml">
-      <configuration name="Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 35m 03s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_FindTriggerTest_test_invoke_1 - 2019.04.08 at 12h 40m 14s.xml">
-      <configuration name="Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 37m 40s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_FindTriggerTest_FindTriggerTest_test_invoke_1 - 2019.04.08 at 12h 46m 08s.xml">
-      <configuration name="Unittests for FindTriggerTest.FindTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 38m 11s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.08 at 12h 48m 19s.xml">
-      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 38m 46s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_ChainRequestExecutionTest_ChainRequestExecutionTest_test_execute_1 - 2019.04.08 at 12h 49m 03s.xml">
-      <configuration name="Unittests for ChainRequestExecutionTest.ChainRequestExecutionTest.test_execute_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 13h 49m 54s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_InfoCollectorTest_InfoCollectorTest_test_collect_1 - 2019.04.08 at 12h 51m 09s.xml">
-      <configuration name="Unittests for InfoCollectorTest.InfoCollectorTest.test_collect_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 14h 16m 23s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_InfoCollectorTest_InfoCollectorTest_test_collect_1 - 2019.04.08 at 12h 51m 43s.xml">
-      <configuration name="Unittests for InfoCollectorTest.InfoCollectorTest.test_collect_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 14h 23m 39s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_InfoCollectorTest_InfoCollectorTest_test_collect_1 - 2019.04.08 at 12h 52m 53s.xml">
-      <configuration name="Unittests for InfoCollectorTest.InfoCollectorTest.test_collect_1" configurationId="tests" />
+    <history-entry file="Unittests_for_collect_gog_galaxy_test_GogGalaxyTest_test_something - 2019.04.08 at 14h 36m 55s.xml">
+      <configuration name="Unittests for collect_gog_galaxy_test.GogGalaxyTest.test_something" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_info_collector_test_InfoCollectorTest_test_collect_1 - 2019.04.08 at 12h 53m 51s.xml">
-      <configuration name="Unittests for info_collector_test.InfoCollectorTest.test_collect_1" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.08 at 15h 34m 22s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1652" height="1044" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24953903" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.24953903" />
+      <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.24953903" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
@@ -332,12 +337,32 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>urlopen(str(url))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>entry.html_data</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>r.text</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>urlopen(str(url))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(url)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>self._se[text_index:]</expression-string>
         <language-id>Python</language-id>
@@ -368,32 +393,10 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>isinstance(type(self._exe))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>issubclass(type(trigger), Trigger)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>issubclass(Trigger, trigger, Trigger)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>issubclass(trigger, Trigger)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auc/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/__init__.py" />
     <entry file="file://$PROJECT_DIR$/auc/requesting/RequestInvoker.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -414,13 +417,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps_to_cover.txt" />
-    <entry file="file:///usr/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/resources/lorem_ipsum.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -428,64 +424,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/triggers/Trigger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/triggers/FindTrigger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/structs/SetSpaces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/structs/Target.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InfoCollector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="57" lean-forward="true" selection-start-line="4" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/auc/src/triggers/Trigger.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/triggers/FindTrigger.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/structs/SetSpaces.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/structs/Target.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InvocationRequest.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py" />
+    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InfoCollector.py" />
     <entry file="file://$PROJECT_DIR$/sonar-project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -497,13 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -530,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/requesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -554,18 +485,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/info_collector_test.py">
+    <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/lib/python3.6/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        <state relative-caret-position="174">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/info_collector_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

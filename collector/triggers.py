@@ -19,7 +19,7 @@ class Trigger:
         raise NotImplementedError
 
 
-class FindTrigger(Trigger):
+class Find(Trigger):
     """Finds the first occurrence of text_to_find and create a new string from that point to the end.
        Available for: WEB_SPACE, WORK_SPACE
     """
@@ -51,4 +51,4 @@ class FindTrigger(Trigger):
             self._result = string_to_search_in[text_index:]
 
     def to_string(self):
-        return str(type(FindTrigger)) + '(' + self._text + ')'
+        return str(type(Find)) + '(' + self._text + ')'

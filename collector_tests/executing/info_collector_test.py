@@ -1,17 +1,20 @@
 import unittest
-from auc.src.requesting.InfoCollector import ExecutionOrder
-from auc.src.requesting.InfoCollector import InfoCollector
-from auc.src.requesting.InfoCollector import ExecutionOrderEntry
-from auc.src.requesting.InvocationRequest import InvocationRequest
-from auc.src.structs.Target import Target
-from auc.src.structs.Target import TargetSetName
-from auc.src.triggers.FindTrigger import FindTrigger
+from collector.requesting import InvocationRequest
+from collector.requesting import Target
+from collector.requesting import TargetSetName
+from collector.executing import ExecutionOrder
+from collector.executing import ExecutionOrderEntry
+from collector.executing import InfoCollector
+from collector.triggers import FindTrigger
+from collector.helpers import fetch_file
 
 
 class InfoCollectorTestData():
+    FILE_NAME_TO_LOAD = r"../resources/lorem_ipsum.txt"
+
     def __init__(self):
         self._app_name = "Test"
-        self._execution_order = self._get_execution_order()
+        self._create_execution_order()
         self._expected_collectibles = {'general': r"auctor lectus aptent integer.\n']"}
 
     def get_app_name(self):
@@ -23,21 +26,17 @@ class InfoCollectorTestData():
     def get_expected_collectibles(self):
         return self._expected_collectibles
 
-    def _get_execution_order(self):
+    def _create_execution_order(self):
         request_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), FindTrigger(text_to_find="lectus"))
         request_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), FindTrigger(text_to_find="litora"))
         request_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True), FindTrigger(text_to_find="auctor"))
         chain_request_1 = (request_1, request_2, request_3)
-        html_data = self._load_file("../_resources/lorem_ipsum.txt")
+        html_data = fetch_file(InfoCollectorTestData.FILE_NAME_TO_LOAD)
         entry_1 = ExecutionOrderEntry(chain_request_1, html_data)
         execution_order = ExecutionOrder()
         execution_order.add_entry(entry_1, True)
         execution_order.add_entry(entry_1, True)
-        return execution_order
-
-    def _load_file(self, file_name):
-        with open(file_name) as file:
-            return str(file.readlines())
+        self._execution_order = execution_order
 
 
 class InfoCollectorTest(unittest.TestCase):

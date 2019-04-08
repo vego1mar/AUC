@@ -1,21 +1,18 @@
 import unittest
-from auc.src.requesting.ChainRequestExecution import ChainRequestExecution
-from auc.src.requesting.InvocationRequest import InvocationRequest
-from auc.src.structs.Target import Target
-from auc.src.structs.Target import TargetSetName
-from auc.src.triggers.FindTrigger import FindTrigger
+from collector.requesting import InvocationRequest
+from collector.requesting import Target
+from collector.requesting import TargetSetName
+from collector.triggers import FindTrigger
+from collector.executing import ChainRequestExecution
+from collector.helpers import fetch_file
 
 
 class ChainRequestExecutionTestData():
     def __init__(self):
         self._chain_request_1 = []
-        self._WEB_PAGE_1_FILE_NAME = "../_resources/lorem_ipsum.txt"
-        self._web_page_1 = self._load_web_page(self._WEB_PAGE_1_FILE_NAME)
+        self._WEB_PAGE_1_FILE_NAME = "../resources/lorem_ipsum.txt"
+        self._web_page_1 = fetch_file(self._WEB_PAGE_1_FILE_NAME)
         self._expected_collectibles = {}
-
-    def _load_web_page(self, file_name):
-        with open(file_name) as file:
-            return str(file.readlines())
 
     def get_web_page_1(self):
         return self._web_page_1

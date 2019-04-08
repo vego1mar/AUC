@@ -1,8 +1,8 @@
 import unittest
-from auc.src.structs.Target import Target
-from auc.src.structs.Target import TargetSetName
-from auc.src.structs.SetSpaces import SetSpaces
-from auc.src.triggers.FindTrigger import FindTrigger
+from collector.triggers import FindTrigger
+from collector.requesting import Target
+from collector.requesting import TargetSetName
+from collector.requesting import SetSpaces
 
 
 class FindTriggerTest(unittest.TestCase):

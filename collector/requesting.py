@@ -1,3 +1,10 @@
+class SetSpaces:
+    def __init__(self):
+        self.web_space = ""
+        self.work_space = ""
+        self.list_space = []
+
+
 class TargetSetName:
     WEB_SPACE = 1,
     WORK_SPACE = 2,
@@ -15,3 +22,12 @@ class Target:
             return '{' + self.set_name + ',' + str(self.is_gathering_request) + '}'
 
         return '{' + self.set_name + ',' + str(self.is_gathering_request) + ',' + self.collectible_name + '}'
+
+
+class InvocationRequest:
+    def __init__(self, target, trigger):
+        self.target = target
+        self.trigger = trigger
+
+    def to_string(self):
+        return self.target.to_string() + ';' + self.trigger.to_string()

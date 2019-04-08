@@ -1,7 +1,22 @@
-from auc.src.triggers.Trigger import Trigger
-from auc.src.structs.Target import Target
-from auc.src.structs.Target import TargetSetName
-from auc.src.structs.SetSpaces import SetSpaces
+from .requesting import SetSpaces
+from .requesting import Target
+from .requesting import TargetSetName
+
+
+class Trigger:
+    """This should be treated as an abstract class."""
+
+    def __init__(self):
+        self._result = ""
+
+    def get_result(self):
+        return self._result
+
+    def invoke(self, target, set_spaces):
+        raise NotImplementedError
+
+    def to_string(self):
+        raise NotImplementedError
 
 
 class FindTrigger(Trigger):

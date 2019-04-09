@@ -19,9 +19,10 @@ class Target:
 
     def to_string(self):
         if not self.is_gathering_request:
-            return '{' + self.set_name + ',' + str(self.is_gathering_request) + '}'
+            return Target.__name__ + '(set_name=' + self.set_name + ', False)'
 
-        return '{' + self.set_name + ',' + str(self.is_gathering_request) + ',' + self.collectible_name + '}'
+        return Target.__name__ + '(set_name=' + self.set_name + ', is_gathering_request=' \
+               + str(self.is_gathering_request) + ', collectible_name=' + self.collectible_name + ')'
 
 
 class InvocationRequest:
@@ -30,4 +31,4 @@ class InvocationRequest:
         self.trigger = trigger
 
     def to_string(self):
-        return self.target.to_string() + ';' + self.trigger.to_string()
+        return '[' + self.target.to_string() + ', ' + self.trigger.to_string() + ']'

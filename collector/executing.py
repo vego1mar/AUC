@@ -1,3 +1,4 @@
+import logging
 from .requesting import TargetSetName
 from .requesting import SetSpaces
 from .helpers import fetch_html
@@ -22,6 +23,7 @@ class ChainRequestExecution:
             target = request.target
             trigger = request.trigger
             trigger.invoke(target, self._set_spaces)
+            logging.info(trigger.to_string())
             self._alter_target_space(target, trigger)
             self._acquire_collectible(target)
 

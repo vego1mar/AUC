@@ -27,9 +27,9 @@ class InfoCollectorTestData():
         return self._expected_collectibles
 
     def _create_execution_order(self):
-        request_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(text_to_find="lectus"))
-        request_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), Find(text_to_find="litora"))
-        request_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True), Find(text_to_find="auctor"))
+        request_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(text="lectus"))
+        request_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), Find(text="litora"))
+        request_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True), Find(text="auctor"))
         chain_request_1 = (request_1, request_2, request_3)
         html_data = fetch_file(InfoCollectorTestData.FILE_NAME_TO_LOAD)
         entry_1 = ExecutionOrderEntry(chain_request_1, html_data)

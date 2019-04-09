@@ -3,13 +3,21 @@ from collector.requesting import InvocationRequest
 from collector.requesting import Target
 from collector.requesting import TargetSetName
 from collector.triggers import Find
+from collector.triggers import RetrieveTags
+from collector.triggers import TagType
+from collector.triggers import SelectElement
 from collector.helpers import fetch_file
 from collector.executing import ExecutionOrderEntry
 from collector.executing import ExecutionOrder
 from collector.executing import InfoCollector
+from collector.helpers import configure_logging
+import logging
+
+configure_logging(r"../test_log.txt")
+logging.debug("Tests for: GOG Galaxy")
 
 
-class GogGalaxyTestData:
+class TestData:
     APP_NAME = "GOG Galaxy"
     WEB_SPACE_URL_1 = "https://www.gog.com/galaxy"
     WEB_SPACE_URL_2 = "https://www.majorgeeks.com/files/details/gog_galaxy.html"
@@ -27,11 +35,10 @@ class GogGalaxyTestData:
         self.expected_date_for_all_supported = str()
 
     def _provide_chain_request_1(self):
-        req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(r"<section class=\"glx-section"))
+        req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find('class="ng-hide"'))
+        req_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), RetrieveTags("a", TagType.ATTRIBUTED, 2))
+        req_3 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(1))
         # TODO: implement listed below triggers
-        # FindNext(text_to_find="section")
-        # RetrieveTags(tag="a", tag_type=[SIMPLE, META] amount=int(?))
-        # SelectElement(position=1)
         # FetchAttribute(name="href") -> link(MAC_OS_X_PKG)
         # ApplyRegex(regex="^[a-zA-Z]^[:/-_?=]")
         # CutAside(left=2, right=1) -> version(MAC_OS_X)
@@ -40,8 +47,8 @@ class GogGalaxyTestData:
         # ApplyRegex(regex="^[a-zA-Z]^[:/-_?=]")
         # CutAside(left=2, right=1) -> version(WINDOWS)
 
-        chain_request = (req_1,)
-        html_data = fetch_file(GogGalaxyTestData.WEB_SPACE_HTML_PATH_1)
+        chain_request = (req_1, req_2, req_3)
+        html_data = fetch_file(TestData.WEB_SPACE_HTML_PATH_1)
         entry = ExecutionOrderEntry(chain_request, html_data)
         self.execution_order.add_entry(entry, True)
 
@@ -52,7 +59,7 @@ class GogGalaxyTestData:
         # GetSubset(from=0, to=?) -> date(ALL_SUPPORTED)
 
         chain_request = (req_2,)
-        html_data = fetch_file(GogGalaxyTestData.WEB_SPACE_HTML_PATH_2)
+        html_data = fetch_file(TestData.WEB_SPACE_HTML_PATH_2)
         entry = ExecutionOrderEntry(chain_request, html_data)
         self.execution_order.add_entry(entry, True)
 
@@ -60,7 +67,7 @@ class GogGalaxyTestData:
 class GogGalaxyTest(unittest.TestCase):
     def test_links_collecting(self):
         # given
-        dt = GogGalaxyTestData()
+        dt = TestData()
         collector = InfoCollector(dt.APP_NAME, dt.execution_order)
 
         # when

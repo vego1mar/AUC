@@ -31,7 +31,8 @@ class ChainRequestExecution:
         if target.set_name in [TargetSetName.WEB_SPACE, TargetSetName.WORK_SPACE]:
             self._set_spaces.work_space = trigger.get_result()
         elif target.set_name == TargetSetName.LIST_SPACE:
-            self._set_spaces.list_space = trigger.get_result()
+            self._set_spaces.work_space = trigger.get_result()
+            self._set_spaces.list_space = trigger.get_result_list()
         else:
             raise ValueError("Not supported set space.")
 

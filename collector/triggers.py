@@ -1,4 +1,5 @@
 import logging
+import re
 from .requesting import TargetSetName
 from .helpers import get_tag_type_name
 
@@ -7,13 +8,20 @@ class Trigger:
     """This should be treated as an abstract class."""
 
     def __init__(self):
-        self._result = None
+        self._result = str()
+        self._result_list = list()
 
     def get_result(self):
         return self._result
 
     def set_result(self, result):
         self._result = result
+
+    def get_result_list(self):
+        return self._result_list
+
+    def set_result_list(self, result_list):
+        self._result_list = result_list
 
     def invoke(self, target, set_spaces):
         raise NotImplementedError
@@ -132,7 +140,7 @@ class RetrieveTags(Trigger):
         else:
             return
 
-        set_spaces.list_space = self.get_result()
+        set_spaces.list_space = self.get_result_list()
 
     def _retrieve_tags_from(self, string):
         source = string
@@ -162,7 +170,7 @@ class RetrieveTags(Trigger):
             tags_list.append(source[opening_index:tag_right_slice])
             source = source[tag_right_slice:]
 
-        self.set_result(tags_list)
+        self.set_result_list(tags_list)
 
     def to_string(self):
         return RetrieveTags.__name__ + '(name=' + self._name + ', type=' + get_tag_type_name(self._type) \
@@ -186,11 +194,91 @@ class SelectElement(Trigger):
         if target.set_name == TargetSetName.LIST_SPACE:
             self._select_element(set_spaces)
             set_spaces.work_space = self.get_result()
+            set_spaces.list_space = self.get_result_list()
 
     def _select_element(self, set_spaces):
         if len(set_spaces.list_space) >= self._position + 1:
             selection = set_spaces.list_space[self._position]
             self.set_result(selection)
+            self.set_result_list(set_spaces.list_space)
 
     def to_string(self):
         return SelectElement.__name__ + '(position=' + str(self._position) + ')'
+
+
+class FetchAttribute(Trigger):
+    """Searches for the first occurrence of an HTML tag attribute.\n
+       FetchAttribute(name="id")\n
+       work_space_before="<section class="glx-section" id="glx-library"><p>Text</p></section>"\n
+       work_space_after="glx-library"
+    """
+
+    def __init__(self, name):
+        super().__init__()
+        self._name = name
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WEB_SPACE:
+            self._fetch_attribute_value(set_spaces.web_space)
+        elif target.set_name == TargetSetName.WORK_SPACE:
+            self._fetch_attribute_value(set_spaces.work_space)
+        else:
+            return
+
+        set_spaces.work_space = self.get_result()
+
+    def _fetch_attribute_value(self, string):
+        attribute_begin = str(self._name) + '="'
+        attribute_end = '"'
+        index_begin = str(string).find(attribute_begin)
+
+        if index_begin == -1:
+            logging.debug("Attribute not found; name=" + self._name)
+            return
+
+        offset = index_begin + len(attribute_begin)
+        new_string = string[offset:]
+        index_end = str(new_string).find(attribute_end)
+
+        if index_end == -1:
+            self.set_result(new_string)
+            return
+
+        self.set_result(new_string[0:index_end])
+
+    def to_string(self):
+        return FetchAttribute.__name__ + '(name=' + self._name + ')'
+
+
+class GetRegexMatch(Trigger):
+    """It does a regex search within a single string and returns its group (the matched substring).\n
+       regex="[\d]+.[\d]+.[\d]+.[\d]+"\n
+       work_space_before="/galaxy_client_1.2.54.27.pkg"\n
+       work_space_after="1.2.54.27"
+       """
+
+    def __init__(self, regex):
+        super().__init__()
+        self._regex = regex
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WEB_SPACE:
+            self._get_regex_search_group(set_spaces.web_space)
+        elif target.set_name == TargetSetName.WORK_SPACE:
+            self._get_regex_search_group(set_spaces.work_space)
+        else:
+            return
+
+        set_spaces.work_space = self.get_result()
+
+    def _get_regex_search_group(self, text):
+        self.set_result(str())
+
+        try:
+            matched_substring = re.search(self._regex, text).group(0)
+            self.set_result(matched_substring)
+        except AttributeError:
+            logging.debug("Regular expression group not found; regex=" + self._regex)
+
+    def to_string(self):
+        return GetRegexMatch.__name__ + '(regex=' + self._regex + ')'

@@ -2,7 +2,6 @@ AIMP
 Activision Blizzard Battle.net
 Borderless Gaming
 Epic Games Launcher
-GOG Galaxy
 Google Chrome
 Implbits Software HashTab
 JetClean

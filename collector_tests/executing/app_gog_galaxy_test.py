@@ -1,4 +1,5 @@
 import unittest
+import logging
 from collector.requesting import InvocationRequest
 from collector.requesting import Target
 from collector.requesting import TargetSetName
@@ -6,12 +7,15 @@ from collector.triggers import Find
 from collector.triggers import RetrieveTags
 from collector.triggers import TagType
 from collector.triggers import SelectElement
+from collector.triggers import FetchAttribute
+from collector.triggers import GetRegexMatch
 from collector.helpers import fetch_file
+from collector.helpers import fetch_html
 from collector.executing import ExecutionOrderEntry
 from collector.executing import ExecutionOrder
 from collector.executing import InfoCollector
 from collector.helpers import configure_logging
-import logging
+from collector.helpers import decode_base64
 
 configure_logging(r"../test_log.txt")
 logging.debug("Tests for: GOG Galaxy")
@@ -28,44 +32,50 @@ class TestData:
         self.execution_order = ExecutionOrder()
         self._provide_chain_request_1()
         self._provide_chain_request_2()
-        self.expected_link_for_mac_os_x = str()
-        self.expected_link_for_windows_32bit_exe = str()
-        self.expected_version_for_mac_os_x = str()
-        self.expected_version_for_windows = str()
-        self.expected_date_for_all_supported = str()
+        mac_pkg = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS9jbG' \
+                  b'llbnQvZ2FsYXh5X2NsaWVudF8xLjIuNTQuMjcucGtn'
+        mac_ver = b'MS4yLjU0LjI3'
+        windows_exe = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS' \
+                      b'9jbGllbnQvc2V0dXBfZ2FsYXh5XzEuMi41NC4yMy5leGU='
+        windows_ver = b'MS4yLjU0LjIz'
+        self.expected_mac_pkg = decode_base64(mac_pkg)
+        self.expected_windows_exe = decode_base64(windows_exe)
+        self.expected_mac_ver = decode_base64(mac_ver)
+        self.expected_windows_ver = decode_base64(windows_ver)
+        date_published = b'MDMvMTcvMjAxOSAxMjoyNiBQTQ=='
+        file_size = b'MjE2IE1C'
+        self.expected_date_published = decode_base64(date_published)
+        self.expected_file_size = decode_base64(file_size)
 
     def _provide_chain_request_1(self):
+        regex = r"[\d]+.[\d]+.[\d]+.[\d]+"
         req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find('class="ng-hide"'))
         req_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), RetrieveTags("a", TagType.ATTRIBUTED, 2))
         req_3 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(1))
-        # TODO: implement listed below triggers
-        # FetchAttribute(name="href") -> link(MAC_OS_X_PKG)
-        # ApplyRegex(regex="^[a-zA-Z]^[:/-_?=]")
-        # CutAside(left=2, right=1) -> version(MAC_OS_X)
-        # SelectElement(position=2)
-        # FetchAttribute(name="href") -> link(WINDOWS_X86_EXE)
-        # ApplyRegex(regex="^[a-zA-Z]^[:/-_?=]")
-        # CutAside(left=2, right=1) -> version(WINDOWS)
-
-        chain_request = (req_1, req_2, req_3)
+        req_4 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Mac_pkg"), FetchAttribute("href"))
+        req_5 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Mac_ver"), GetRegexMatch(regex))
+        req_6 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(0))
+        req_7 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Windows_exe"), FetchAttribute("href"))
+        req_8 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Windows_ver"), GetRegexMatch(regex))
+        chain_request = (req_1, req_2, req_3, req_4, req_5, req_6, req_7, req_8)
         html_data = fetch_file(TestData.WEB_SPACE_HTML_PATH_1)
         entry = ExecutionOrderEntry(chain_request, html_data)
         self.execution_order.add_entry(entry, True)
 
     def _provide_chain_request_2(self):
-        req_2 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find("<strong>Date:"))
-        # consider using meta tags grabbing here
-        # CutAside(left=23, right=0)
-        # GetSubset(from=0, to=?) -> date(ALL_SUPPORTED)
-
-        chain_request = (req_2,)
+        req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), RetrieveTags("meta", TagType.META, 15))
+        req_2 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(9))
+        req_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "date_published"), FetchAttribute("content"))
+        req_4 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(13))
+        req_5 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "file_size"), FetchAttribute("content"))
+        chain_request = (req_1, req_2, req_3, req_4, req_5)
         html_data = fetch_file(TestData.WEB_SPACE_HTML_PATH_2)
         entry = ExecutionOrderEntry(chain_request, html_data)
         self.execution_order.add_entry(entry, True)
 
 
 class GogGalaxyTest(unittest.TestCase):
-    def test_links_collecting(self):
+    def test_package_1_collecting(self):
         # given
         dt = TestData()
         collector = InfoCollector(dt.APP_NAME, dt.execution_order)
@@ -75,6 +85,43 @@ class GogGalaxyTest(unittest.TestCase):
 
         # then
         self.assertEqual(dt.APP_NAME, collector.get_app_name())
+        self.assertEqual(dt.expected_mac_pkg, collector.get_collectibles()['Mac_pkg'])
+        self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
+        self.assertEqual(dt.expected_windows_exe, collector.get_collectibles()['Windows_exe'])
+        self.assertEqual(dt.expected_windows_ver, collector.get_collectibles()['Windows_ver'])
+
+    def test_package_2_collecting(self):
+        # given
+        dt = TestData()
+        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
+
+        # when
+        collector.collect()
+
+        # then
+        self.assertEqual(dt.APP_NAME, collector.get_app_name())
+        self.assertEqual(dt.expected_date_published, collector.get_collectibles()['date_published'])
+        self.assertEqual(dt.expected_file_size, collector.get_collectibles()['file_size'])
+
+    @unittest.skip("Online test")
+    def test_online_collecting(self):
+        # given
+        dt = TestData()
+        dt.execution_order.list[0].html_data = fetch_html(dt.WEB_SPACE_URL_1)
+        dt.execution_order.list[1].html_data = fetch_html(dt.WEB_SPACE_URL_2)
+        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
+
+        # when
+        collector.collect()
+
+        # then
+        self.assertEqual(dt.APP_NAME, collector.get_app_name())
+        self.assertEqual(dt.expected_mac_pkg, collector.get_collectibles()['Mac_pkg'])
+        self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
+        self.assertEqual(dt.expected_windows_exe, collector.get_collectibles()['Windows_exe'])
+        self.assertEqual(dt.expected_windows_ver, collector.get_collectibles()['Windows_ver'])
+        self.assertEqual(dt.expected_date_published, collector.get_collectibles()['date_published'])
+        self.assertEqual(dt.expected_file_size, collector.get_collectibles()['file_size'])
 
 
 if __name__ == '__main__':

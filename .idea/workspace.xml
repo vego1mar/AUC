@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector_tests/helpers/base64_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aux/apps_to_cover.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aux/apps_to_cover.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collector/triggers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,10 +71,13 @@
         <option value="$PROJECT_DIR$/collector_tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector/helpers.py" />
-        <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" />
+        <option value="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector/executing.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/aux/apps_to_cover.txt" />
       </list>
     </option>
   </component>
@@ -104,8 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,6 +134,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting">
+  <component name="RunManager" selected="Python tests.Unittests in app_gog_galaxy_test.py">
     <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,7 +178,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for collector_tests.executing.info_collector_test.InfoCollectorTest.test_collect_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,35 +188,21 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;collector_tests.executing.info_collector_test.InfoCollectorTest.test_collect_1&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_online_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -248,7 +220,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in retrieve_tags_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in get_regex_match_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,17 +230,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" />
         <item itemvalue="Python tests.Unittests in app_gog_galaxy_test.py" />
-        <item itemvalue="Python tests.Unittests in retrieve_tags_trigger_test.py" />
-        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest" />
-        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" />
+        <item itemvalue="Python tests.Unittests in get_regex_match_trigger_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -289,43 +261,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 32m 44s.xml">
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 41m 06s.xml">
       <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 39m 13s.xml">
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 45m 33s.xml">
       <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 43m 15s.xml">
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 54m 19s.xml">
       <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 44m 59s.xml">
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 59m 31s.xml">
       <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 45m 02s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_1_collecting - 2019.04.10 at 00h 04m 24s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 51m 56s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 22m 31s.xml">
+      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 53m 26s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 31m 55s.xml">
+      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 01h 53m 52s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_online_collecting - 2019.04.10 at 00h 41m 49s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 02h 01m 44s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_online_collecting - 2019.04.10 at 00h 42m 10s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 02h 01m 50s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 43m 58s.xml">
+      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.2481556" />
-      <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.24953903" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.2481556" />
+      <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.2481556" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
@@ -339,14 +310,24 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50167674" side_tool="true" weight="0.3995657" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32899022" />
-      <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" weight="0.39526185" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" order="3" weight="0.39526185" />
     </layout>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>encode_base64(trigger._result)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(trigger.set_result())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>encode_base64(str(trigger.get_result()))</expression-string>
         <language-id>Python</language-id>
@@ -385,47 +366,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>get_tag_type_name(self._type)</expression-string>
+        <expression-string>re.search(self._regex, text).group(0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>get_tag_type_name(self._type[0])</expression-string>
+        <expression-string>re.search(self._regex, text)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._type[0]</expression-string>
+        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group(0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._type</expression-string>
+        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group(1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._type as TargetSetName</expression-string>
+        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>TargetSetName[self._type]</expression-string>
+        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]8+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>TargetSetName(self._type)</expression-string>
+        <expression-string>re.search(&quot;[\d+].[\d+].[\d+].[\d+]&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(self._type)</expression-string>
+        <expression-string>re.search(&quot;[0-9]+.[0-9]+.[0-9]+.[0-9]+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>enumerate.mro()</expression-string>
+        <expression-string>re.search(&quot;[0-9]+.[0-9]+.[0-9]+.[0-9]+&quot;, collector.get_collectibles()['Mac_pkg'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -530,39 +511,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="821" selection-start-line="821" selection-end-line="821" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/helpers/base64_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2022">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,23 +538,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        <state relative-caret-position="34">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/triggers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="2032">
+          <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aux/apps_to_cover.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

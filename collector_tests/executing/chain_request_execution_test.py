@@ -7,7 +7,7 @@ from collector.executing import ChainRequestExecution
 from collector.helpers import fetch_file
 
 
-class ChainRequestExecutionTestData():
+class ChainRequestExecutionTestData:
     def __init__(self):
         self._chain_request_1 = []
         self._WEB_PAGE_1_FILE_NAME = "../resources/lorem_ipsum.txt"

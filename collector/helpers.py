@@ -50,3 +50,18 @@ def get_tag_type_name(value):
         return "ATTRIBUTED"
     elif str(value) == str(TagType.META):
         return "META"
+
+
+def remove_characters(source_str, char):
+    new_str = str(source_str) + '\0'
+    deleted = 0
+
+    for i in range(0, len(source_str)):
+        if source_str[i] in char:
+            lhs = i - deleted
+            rhs = i - deleted + 1
+            new_str = new_str[:lhs] + new_str[rhs:]
+            deleted += 1
+
+    valid_len = len(new_str) - 1
+    return new_str[0:valid_len]

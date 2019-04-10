@@ -2,6 +2,7 @@ import logging
 import re
 from .requesting import TargetSetName
 from .helpers import get_tag_type_name
+from .helpers import remove_characters
 
 
 class Trigger:
@@ -252,7 +253,7 @@ class FetchAttribute(Trigger):
 
 class GetRegexMatch(Trigger):
     """It does a regex search within a single string and returns its group (the matched substring).\n
-       regex="[\d]+.[\d]+.[\d]+.[\d]+"\n
+       regex="[\\d]+.[\\d]+.[\\d]+.[\\d]+"\n
        work_space_before="/galaxy_client_1.2.54.27.pkg"\n
        work_space_after="1.2.54.27"
        """
@@ -282,3 +283,210 @@ class GetRegexMatch(Trigger):
 
     def to_string(self):
         return GetRegexMatch.__name__ + '(regex=' + self._regex + ')'
+
+
+class CutAside(Trigger):
+    """Deletes some characters from string on both sides of it.\n
+       CutAside(left=11, right=11)\n
+       work_space_before="abcdefghijklmnopqrstuvwxyz"\n
+       work_space_after="lmno"\n
+       CutAside(left=0, right=4)\n
+       work_space_before="catfish"\n
+       work_space_after="cat"
+    """
+
+    def __init__(self, left, right):
+        super().__init__()
+        self._left = int(left)
+        self._right = int(right)
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WEB_SPACE:
+            self._cut_aside(set_spaces.web_space)
+        elif target.set_name == TargetSetName.WORK_SPACE:
+            self._cut_aside(set_spaces.work_space)
+        else:
+            return
+
+        set_spaces.work_space = self.get_result()
+
+    def _cut_aside(self, text):
+        if self._left > len(str(text)):
+            self.set_result(str())
+            return
+
+        left_cut = str(text)[self._left:]
+
+        if self._right > len(str(left_cut)):
+            self.set_result(str())
+            return
+
+        offset = len(left_cut) - self._right
+        right_cut = str(left_cut)[0:offset]
+        self.set_result(str(right_cut))
+
+    def to_string(self):
+        return CutAside.__name__ + '(left=' + str(self._left) + ', right=' + str(self._right) + ')'
+
+
+class SetWorkspace(Trigger):
+    """Simply sets the work space.\n
+       SetWorkspace(text="This is the work space now.")\n
+       work_space_before="ABCDEFGHIJKLMNOPQRSTUVWXYZ"\n
+       work_space_after="This is the work space now."\n
+       """
+
+    def __init__(self, text):
+        super().__init__()
+        self._text = text
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WORK_SPACE:
+            set_spaces.work_space = self._text
+        else:
+            return
+
+    def to_string(self):
+        return SetWorkspace.__name__ + '(text=' + self._text + ')'
+
+
+class GetSubset(Trigger):
+    """Extracts a substring.\n
+       GetSubset(begin=3, end=8)\n
+       work_space_before="entanglement"\n
+       work_space_after="angle"\n
+       GetSubset(begin="float", end='d')\n
+       work_space_before="The period can also occur in floating-point and imaginary literals."\n
+       work_space_after="floating-point and"
+    """
+
+    def __init__(self, begin, end):
+        super().__init__()
+        self._begin = begin
+        self._end = end
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WEB_SPACE:
+            self._get_subset(set_spaces.web_space)
+        if target.set_name == TargetSetName.WORK_SPACE:
+            self._get_subset(set_spaces.work_space)
+        else:
+            return
+
+        set_spaces.work_space = self.get_result()
+
+    def _get_subset(self, text):
+        if isinstance(self._begin, int) and isinstance(self._end, int):
+            self._get_substring_integerify(text)
+        elif isinstance(self._begin, str) and isinstance(self._end, str):
+            self._get_substring_stringify(text)
+
+    def _get_substring_integerify(self, text):
+        start = int(self._begin)
+        meta = int(self._end)
+
+        if start > meta or meta > len(text):
+            return ValueError('start > meta OR meta > len(text)')
+
+        self.set_result(text[start:meta])
+
+    def _get_substring_stringify(self, text):
+        begin_index = str(text).find(self._begin)
+
+        if begin_index == -1:
+            self.set_result(str())
+            return
+
+        end_index = str(text[begin_index:]).find(self._end) + begin_index + len(self._end)
+
+        if end_index == -1:
+            self.set_result(str())
+            return
+
+        if begin_index > end_index:
+            self.set_result(text[end_index:begin_index])
+            return
+
+        self.set_result(text[begin_index:end_index])
+
+    def to_string(self):
+        return GetSubset.__name__ + '(begin=' + self._begin + ', end=' + self._end + ')'
+
+
+class AddText(Trigger):
+    """Prepends and appends text to string.\n
+       AddText(prepend="123_", append="_321")\n
+       work_space_before="text"\n
+       work_space_after="123_text_321"
+    """
+
+    def __init__(self, prepend, append):
+        super().__init__()
+        self._prepend_text = prepend
+        self._append_text = append
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WORK_SPACE:
+            self.set_result(self._append_text + str(target) + self._prepend_text)
+            set_spaces.work_space = self.get_result()
+
+    def to_string(self):
+        return AddText.__name__ + '(prepend=' + self._prepend_text + ', append=' + self._append_text + ')'
+
+
+class Delete(Trigger):
+    """Removes strings and characters from a string.\n
+       Delete(string=" mauris ", characters="")\n
+       work_space_before="Lectus mauris ultrices eros in."\n
+       work_space_after="Lectusultrices eros in."\n
+       Delete(string="", characters="la e.")\n
+       work_space_before="Nulla malesuada pellentesque elit eget."\n
+       work_space_after="Numsudpntsquitgt"\n
+       Delete(string="id diam m", characters="idams")\n
+       work_space_before="Pharetra sit amet aliquam id diam maecenas."\n
+       work_space_after="Phretr t et lqua ecen."
+    """
+
+    def __init__(self, string, characters):
+        super().__init__()
+        self._string = string
+        self._characters = characters
+
+    def invoke(self, target, set_spaces):
+        if target.set_name == TargetSetName.WORK_SPACE:
+            self._delete_strings(set_spaces.work_space)
+            self._delete_characters(self.get_result())
+            set_spaces.work_space = self.get_result()
+
+    def _delete_strings(self, source_str):
+        if self._string == "":
+            self.set_result(source_str)
+            return
+
+        target_str = str(source_str)
+
+        while True:
+            str_index = target_str.find(self._string)
+
+            if str_index == -1:
+                break
+
+            end_index = str_index + len(self._string)
+            target_str = target_str[:str_index] + target_str[end_index:]
+
+        self.set_result(target_str)
+
+    def _delete_characters(self, source_str):
+        if self._characters == "":
+            self.set_result(source_str)
+            return
+
+        target_str = str(source_str)
+
+        for i in range(0, len(self._characters)):
+            target_str = remove_characters(target_str, self._characters[i])
+
+        self.set_result(target_str)
+
+    def to_string(self):
+        return Delete.__name__ + '(string=' + self._string + ', characters=' + self._characters + ')'

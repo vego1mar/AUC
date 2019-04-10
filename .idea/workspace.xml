@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/apps_to_cover.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aux/apps_to_cover.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aux/apps_to_cover.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +73,18 @@
         <option value="$PROJECT_DIR$/collector_tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/aux/apps_to_cover.txt" />
+        <option value="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" />
+        <option value="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py" />
+        <option value="$PROJECT_DIR$/collector_tests/triggers/DeleteTriggerTest.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" />
       </list>
     </option>
   </component>
@@ -90,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,24 +126,11 @@
               <item name="collector_tests" type="462c0819:PsiDirectoryNode" />
               <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="collector_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="collector_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="triggers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,64 +158,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in app_gog_galaxy_test.py">
-    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_links_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_online_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in app_gog_galaxy_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in get_regex_match_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in delete_trigger_test.py">
+    <configuration name="Unittests for collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_characters_deleting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,17 +169,73 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py&quot;" />
+      <option name="_new_target" value="&quot;collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_characters_deleting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_string_and_characters_deleting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_string_and_characters_deleting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for remove_characters_test.RemoveCharactersTest.test_remove_two_characters" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/helpers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;remove_characters_test.RemoveCharactersTest.test_remove_two_characters&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in delete_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in remove_characters_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/helpers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in app_gog_galaxy_test.py" />
-        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" />
-        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" />
-        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" />
-        <item itemvalue="Python tests.Unittests in get_regex_match_trigger_test.py" />
+        <item itemvalue="Python tests.Unittests in delete_trigger_test.py" />
+        <item itemvalue="Python tests.Unittests for collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_string_and_characters_deleting" />
+        <item itemvalue="Python tests.Unittests for collector_tests.triggers.delete_trigger_test.DeleteTriggerTest.test_characters_deleting" />
+        <item itemvalue="Python tests.Unittests in remove_characters_test.py" />
+        <item itemvalue="Python tests.Unittests for remove_characters_test.RemoveCharactersTest.test_remove_two_characters" />
       </list>
     </recent_temporary>
   </component>
@@ -261,43 +256,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 41m 06s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_remove_characters_test_py - 2019.04.10 at 17h 03m 09s.xml">
+      <configuration name="Unittests in remove_characters_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 45m 33s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_characters_deleting - 2019.04.10 at 17h 04m 11s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 54m 19s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_characters_deleting - 2019.04.10 at 17h 05m 29s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_links_collecting - 2019.04.09 at 23h 59m 31s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_links_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_DeleteTriggerTest_py - 2019.04.10 at 17h 05m 34s.xml">
+      <configuration name="Unittests in DeleteTriggerTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_1_collecting - 2019.04.10 at 00h 04m 24s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_1_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_string_and_characters_deleting - 2019.04.10 at 17h 21m 32s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_string_and_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 22m 31s.xml">
-      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_string_and_characters_deleting - 2019.04.10 at 17h 24m 34s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_string_and_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 31m 55s.xml">
-      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_string_and_characters_deleting - 2019.04.10 at 17h 24m 51s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_string_and_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_online_collecting - 2019.04.10 at 00h 41m 49s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_DeleteTriggerTest_py - 2019.04.10 at 17h 24m 55s.xml">
+      <configuration name="Unittests in DeleteTriggerTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_online_collecting - 2019.04.10 at 00h 42m 10s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_DeleteTriggerTest_DeleteTriggerTest_test_string_and_characters_deleting - 2019.04.10 at 17h 26m 30s.xml">
+      <configuration name="Unittests for DeleteTriggerTest.DeleteTriggerTest.test_string_and_characters_deleting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_app_gog_galaxy_test_py - 2019.04.10 at 00h 43m 58s.xml">
-      <configuration name="Unittests in app_gog_galaxy_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_DeleteTriggerTest_py - 2019.04.10 at 17h 28m 23s.xml">
+      <configuration name="Unittests in DeleteTriggerTest.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.2481556" />
-      <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.2481556" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.2481556" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49846342" weight="0.32899022" />
@@ -319,94 +314,101 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>encode_base64(trigger._result)</expression-string>
+        <expression-string>new_str[:lhs]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>encode_base64(trigger.set_result())</expression-string>
+        <expression-string>new_str[:(lhs+1)]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>encode_base64(str(trigger.get_result()))</expression-string>
+        <expression-string>source_str[rhs:]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>encode_base64(trigger.get_result())</expression-string>
+        <expression-string>source_str[(i+deleted):]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>encode_base64(trigger.get_result()[0])</expression-string>
+        <expression-string>new_str[:(i-deleted)]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.assertEqual(encode_base64(trigger.get_result()), trigger.get_result())</expression-string>
+        <expression-string>source_str[(offset+1):]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>base64.b64encode(str(raw_text).encode('utf-8'))</expression-string>
+        <expression-string>new_str[:offset]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>urlopen(str(url))</expression-string>
+        <expression-string>new_str[:offset] + source_str[(offset+1):]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>entry.html_data</expression-string>
+        <expression-string>new_str[:(i+1)] + source_str[(offset+1):]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>44</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>re.search(self._regex, text).group(0)</expression-string>
+        <expression-string>source_str[(rhs-1):]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(self._regex, text)</expression-string>
+        <expression-string>new_str[deleted:i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group(0)</expression-string>
+        <expression-string>source_str[deleted:i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group(1)</expression-string>
+        <expression-string>source_str[:i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
+        <expression-string>source_str[:offset]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[\d]+.[\d]+.[\d]+.[\d]8+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
+        <expression-string>source_str[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[\d+].[\d+].[\d+].[\d+]&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
+        <expression-string>text[34:44]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[0-9]+.[0-9]+.[0-9]+.[0-9]+&quot;, collector.get_collectibles()['Mac_pkg']).group()</expression-string>
+        <expression-string>text[34:43]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>re.search(&quot;[0-9]+.[0-9]+.[0-9]+.[0-9]+&quot;, collector.get_collectibles()['Mac_pkg'])</expression-string>
+        <expression-string>text[43:]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -461,28 +463,8 @@
     <entry file="file://$PROJECT_DIR$/collector_tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/info_collector_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -511,30 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/helpers/base64_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/requesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -575,20 +527,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aux/apps_to_cover.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/triggers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2032">
-          <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
+        <state relative-caret-position="769">
+          <caret line="492" lean-forward="true" selection-start-line="492" selection-end-line="492" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/helpers/base64_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="1750">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/info_collector_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -597,18 +654,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/executing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="765">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aux/apps_to_cover.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

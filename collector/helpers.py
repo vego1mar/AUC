@@ -65,3 +65,10 @@ def remove_characters(source_str, char):
 
     valid_len = len(new_str) - 1
     return new_str[0:valid_len]
+
+
+def get_web_space(base64_file_path):
+    file_1 = fetch_file(base64_file_path)
+    rhs = len(str(file_1)) - 2
+    base64str = file_1[2:rhs]
+    return decode_base64(base64str.encode('ascii'))

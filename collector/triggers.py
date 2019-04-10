@@ -342,9 +342,8 @@ class SetWorkspace(Trigger):
 
     def invoke(self, target, set_spaces):
         if target.set_name == TargetSetName.WORK_SPACE:
-            set_spaces.work_space = self._text
-        else:
-            return
+            self.set_result(self._text)
+            set_spaces.work_space = self.get_result()
 
     def to_string(self):
         return SetWorkspace.__name__ + '(text=' + self._text + ')'
@@ -410,7 +409,7 @@ class GetSubset(Trigger):
         self.set_result(text[begin_index:end_index])
 
     def to_string(self):
-        return GetSubset.__name__ + '(begin=' + self._begin + ', end=' + self._end + ')'
+        return GetSubset.__name__ + '(begin=' + str(self._begin) + ', end=' + str(self._end) + ')'
 
 
 class AddText(Trigger):

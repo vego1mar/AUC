@@ -2,7 +2,7 @@ import unittest
 from collector.triggers import FindNext
 from collector.requesting import SetSpaces
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.helpers import fetch_file
 
 
@@ -13,7 +13,7 @@ class TestData1:
         self.text_to_find = "integer"
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = fetch_file(self.TEST_FILE)
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.expected_result = r"integer.\n']"
 
 
@@ -22,7 +22,7 @@ class TestData2:
         self.text_to_find = "b"
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = "aba"
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.expected_result = ""
 
 
@@ -31,7 +31,7 @@ class TestData3:
         self.text_to_find = "c"
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = "baba"
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.expected_result = ""
 
 

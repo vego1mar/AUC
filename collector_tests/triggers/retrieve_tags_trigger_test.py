@@ -2,12 +2,12 @@ import unittest
 from collector.triggers import RetrieveTags
 from collector.triggers import TagType
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.requesting import SetSpaces
 from collector.helpers import fetch_file
 from collector.helpers import decode_base64
 
-TEST_FILE_PATH = r"../resources/gog_galaxy_web_1.txt"
+TEST_FILE_PATH = r"../resources/gog_galaxy_web_1.base64"
 TEST_FILE_DATA = fetch_file(TEST_FILE_PATH)
 
 
@@ -16,7 +16,7 @@ class TestData1():
         self.tag_name = "p"
         self.tag_type = TagType.SIMPLE
         self.amount = 1
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         self._provide_expected_tag()
@@ -36,7 +36,7 @@ class TestData2():
         self.tag_name = "g"
         self.tag_type = TagType.ATTRIBUTED
         self.amount = 2
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         g_tags = b'Wyc8ZyBpZD0iY2FtZXJhLV94MzNfNXB4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZ' \
@@ -71,7 +71,7 @@ class TestData3():
         self.tag_name = "link"
         self.tag_type = TagType.META
         self.amount = 3
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         link_tags = b'Wyc8bGluayByZWw9InNob3J0Y3V0IGljb24iIGhyZWY9Ii9mYXZpY29uLmljbz8zIj4nLCAnPGxpbmsgcmVsPSJhcHBsZS' \

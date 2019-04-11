@@ -1,5 +1,5 @@
 import logging
-from .requesting import TargetSetName
+from .requesting import SpaceName
 from .requesting import SetSpaces
 from .helpers import fetch_html
 
@@ -28,9 +28,9 @@ class ChainRequestExecution:
             self._acquire_collectible(target)
 
     def _alter_target_space(self, target, trigger):
-        if target.set_name in [TargetSetName.WEB_SPACE, TargetSetName.WORK_SPACE]:
+        if target.set_name in [SpaceName.WEB, SpaceName.WORK]:
             self._set_spaces.work_space = trigger.get_result()
-        elif target.set_name == TargetSetName.LIST_SPACE:
+        elif target.set_name == SpaceName.LIST:
             self._set_spaces.work_space = trigger.get_result()
             self._set_spaces.list_space = trigger.get_result_list()
         else:

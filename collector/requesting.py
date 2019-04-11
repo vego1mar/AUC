@@ -5,10 +5,10 @@ class SetSpaces:
         self.list_space = []
 
 
-class TargetSetName:
-    WEB_SPACE = 1,
-    WORK_SPACE = 2,
-    LIST_SPACE = 3
+class SpaceName:
+    WEB = 1,
+    WORK = 2,
+    LIST = 3
 
 
 class Target:

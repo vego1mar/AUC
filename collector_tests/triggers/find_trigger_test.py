@@ -1,14 +1,14 @@
 import unittest
 from collector.triggers import Find
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.requesting import SetSpaces
 
 
 class FindTriggerTest(unittest.TestCase):
     def test_invoke_1(self):
         # given
-        target = Target(TargetSetName.WEB_SPACE)
+        target = Target(SpaceName.WEB)
         set_spaces = SetSpaces()
         text_to_find = "luna"
         trigger = Find(text_to_find)

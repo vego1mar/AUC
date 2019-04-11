@@ -1,6 +1,6 @@
 import unittest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.requesting import SetSpaces
 from collector.triggers import GetRegexMatch
 from collector.helpers import decode_base64
@@ -9,7 +9,7 @@ from collector.helpers import decode_base64
 class TestData1:
     def __init__(self):
         self.regex = r"[\d]+.[\d]+.[\d]+.[\d]+"
-        self.target = Target(TargetSetName.WORK_SPACE)
+        self.target = Target(SpaceName.WORK)
         self.set_spaces = SetSpaces()
         string = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS9jbGll' \
                  b'bnQvZ2FsYXh5X2NsaWVudF8xLjIuNTQuMjcucGtn'
@@ -21,7 +21,7 @@ class TestData1:
 class TestData2:
     def __init__(self):
         self.regex = r"[\d]+_[\d]+_[\d]+_[\d]+"
-        self.target = Target(TargetSetName.WORK_SPACE)
+        self.target = Target(SpaceName.WORK)
         self.set_spaces = SetSpaces()
         string = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS9jbGll' \
                  b'bnQvZ2FsYXh5X2NsaWVudF8xLjIuNTQuMjcucGtn'

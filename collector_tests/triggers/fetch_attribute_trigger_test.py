@@ -1,19 +1,19 @@
 import unittest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.requesting import SetSpaces
 from collector.triggers import FetchAttribute
 from collector.helpers import fetch_file
 from collector.helpers import decode_base64
 
-TEST_FILE_PATH = r"../resources/gog_galaxy_web_1.txt"
+TEST_FILE_PATH = r"../resources/gog_galaxy_web_1.base64"
 TEST_FILE_DATA = fetch_file(TEST_FILE_PATH)
 
 
 class TestData1:
     def __init__(self):
         self.name = "style"
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         content = b"d2lkdGg6MDtoZWlnaHQ6MDtvdmVyZmxvdzpoaWRkZW47cG9zaXRpb246Zml4ZWQ7dmlzaWJpbGl0eTpoaWRkZW4="
@@ -23,7 +23,7 @@ class TestData1:
 class TestData2:
     def __init__(self):
         self.name = "gog-relative-time"
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         content = b"e3sgOjpub3RpZmljYXRpb24uY3JlYXRpb25UaW1lc3RhbXAgfX0="
@@ -33,7 +33,7 @@ class TestData2:
 class TestData3:
     def __init__(self):
         self.name = " d"
-        self.target = Target(TargetSetName.WEB_SPACE)
+        self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
         self.set_spaces.web_space = TEST_FILE_DATA
         content = b'TTMwLjIsNy41aC0zLjRjLTAuNSwwLTAuOS0wLjMtMS4yLTAuN2wtMi0zLjdjLTAuMi0wLjQtMC43LTAuNy0xLjItMC43aC05' \

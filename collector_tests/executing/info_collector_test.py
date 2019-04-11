@@ -1,7 +1,7 @@
 import unittest
 from collector.requesting import InvocationRequest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.executing import ExecutionOrder
 from collector.executing import ExecutionOrderEntry
 from collector.executing import InfoCollector
@@ -27,9 +27,9 @@ class InfoCollectorTestData():
         return self._expected_collectibles
 
     def _create_execution_order(self):
-        request_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(text="lectus"))
-        request_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE), Find(text="litora"))
-        request_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True), Find(text="auctor"))
+        request_1 = InvocationRequest(Target(SpaceName.WEB), Find(text="lectus"))
+        request_2 = InvocationRequest(Target(SpaceName.WORK), Find(text="litora"))
+        request_3 = InvocationRequest(Target(SpaceName.WORK, True), Find(text="auctor"))
         chain_request_1 = (request_1, request_2, request_3)
         html_data = fetch_file(InfoCollectorTestData.FILE_NAME_TO_LOAD)
         entry_1 = ExecutionOrderEntry(chain_request_1, html_data)

@@ -2,7 +2,7 @@ import unittest
 import logging
 from collector.requesting import InvocationRequest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.triggers import Find
 from collector.triggers import SetWorkspace
 from collector.triggers import FetchAttribute
@@ -52,24 +52,24 @@ class TestDataOnline(TestData):
 
 
 def get_entry_1():
-    req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(r'id="cta"'))
-    req_2 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "variant_installer"), FetchAttribute("href"))
-    req_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Windows_msi"), SetWorkspace(get_windows_msi()))
-    req_4 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "Mac_dmg"), SetWorkspace(get_mac_dmg()))
+    req_1 = InvocationRequest(Target(SpaceName.WEB), Find(r'id="cta"'))
+    req_2 = InvocationRequest(Target(SpaceName.WORK, True, "variant_installer"), FetchAttribute("href"))
+    req_3 = InvocationRequest(Target(SpaceName.WORK, True, "Windows_msi"), SetWorkspace(get_windows_msi()))
+    req_4 = InvocationRequest(Target(SpaceName.WORK, True, "Mac_dmg"), SetWorkspace(get_mac_dmg()))
     chain_request_1 = (req_1, req_2, req_3, req_4)
     entry_1 = ExecutionOrderEntry(chain_request_1, get_web_space(TestData.WEB_SPACE_HTML_PATH_1))
     return entry_1
 
 
 def get_entry_2():
-    req_1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), RetrieveTags("meta", TagType.META, 34))
-    req_2 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(20))
-    req_3 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "version"), FetchAttribute("content"))
-    req_4 = InvocationRequest(Target(TargetSetName.LIST_SPACE), SelectElement(26))
-    req_5 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "date_published"), FetchAttribute("content"))
-    req_6 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find("phContent_divFileSize"))
-    req_7 = InvocationRequest(Target(TargetSetName.WORK_SPACE), GetSubset(0, 273))
-    req_8 = InvocationRequest(Target(TargetSetName.WORK_SPACE, True, "file_size"), GetRegexMatch(r'[\d]+,[\d]+ [A-Z]+'))
+    req_1 = InvocationRequest(Target(SpaceName.WEB), RetrieveTags("meta", TagType.META, 34))
+    req_2 = InvocationRequest(Target(SpaceName.LIST), SelectElement(20))
+    req_3 = InvocationRequest(Target(SpaceName.WORK, True, "version"), FetchAttribute("content"))
+    req_4 = InvocationRequest(Target(SpaceName.LIST), SelectElement(26))
+    req_5 = InvocationRequest(Target(SpaceName.WORK, True, "date_published"), FetchAttribute("content"))
+    req_6 = InvocationRequest(Target(SpaceName.WEB), Find("phContent_divFileSize"))
+    req_7 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 273))
+    req_8 = InvocationRequest(Target(SpaceName.WORK, True, "file_size"), GetRegexMatch(r'[\d]+,[\d]+ [A-Z]+'))
     chain_request_2 = (req_1, req_2, req_3, req_4, req_5, req_6, req_7, req_8)
     entry_2 = ExecutionOrderEntry(chain_request_2, get_web_space(TestData.WEB_SPACE_HTML_PATH_2))
     return entry_2

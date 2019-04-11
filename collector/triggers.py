@@ -1,6 +1,6 @@
 import logging
 import re
-from .requesting import TargetSetName
+from .requesting import SpaceName
 from .helpers import get_tag_type_name
 from .helpers import remove_characters
 
@@ -46,20 +46,20 @@ class Find(Trigger):
         self._find_text(target, set_spaces)
 
     def _find_text(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._find_text_in_string(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._find_text_in_string(set_spaces.work_space)
         else:
             return
 
-        set_spaces.work_space = self._result
+        set_spaces.work_space = self.get_result()
 
     def _find_text_in_string(self, string_to_search_in):
         text_index = str(string_to_search_in).find(self._text)
 
         if not text_index == -1:
-            self._result = string_to_search_in[text_index:]
+            self.set_result(string_to_search_in[text_index:])
         else:
             logging.debug("Text not found; text=" + self._text)
 
@@ -82,9 +82,9 @@ class FindNext(Trigger):
         self._find_next(target, set_spaces)
 
     def _find_next(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._find_next_text(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._find_next_text(set_spaces.work_space)
         else:
             return
@@ -134,9 +134,9 @@ class RetrieveTags(Trigger):
         self._retrieve_tags(target, set_spaces)
 
     def _retrieve_tags(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._retrieve_tags_from(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._retrieve_tags_from(set_spaces.work_space)
         else:
             return
@@ -192,7 +192,7 @@ class SelectElement(Trigger):
         self._position = int(position)
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.LIST_SPACE:
+        if target.set_name == SpaceName.LIST:
             self._select_element(set_spaces)
             set_spaces.work_space = self.get_result()
             set_spaces.list_space = self.get_result_list()
@@ -219,9 +219,9 @@ class FetchAttribute(Trigger):
         self._name = name
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._fetch_attribute_value(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._fetch_attribute_value(set_spaces.work_space)
         else:
             return
@@ -263,9 +263,9 @@ class GetRegexMatch(Trigger):
         self._regex = regex
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._get_regex_search_group(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._get_regex_search_group(set_spaces.work_space)
         else:
             return
@@ -301,9 +301,9 @@ class CutAside(Trigger):
         self._right = int(right)
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._cut_aside(set_spaces.web_space)
-        elif target.set_name == TargetSetName.WORK_SPACE:
+        elif target.set_name == SpaceName.WORK:
             self._cut_aside(set_spaces.work_space)
         else:
             return
@@ -341,7 +341,7 @@ class SetWorkspace(Trigger):
         self._text = text
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WORK_SPACE:
+        if target.set_name == SpaceName.WORK:
             self.set_result(self._text)
             set_spaces.work_space = self.get_result()
 
@@ -365,9 +365,9 @@ class GetSubset(Trigger):
         self._end = end
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WEB_SPACE:
+        if target.set_name == SpaceName.WEB:
             self._get_subset(set_spaces.web_space)
-        if target.set_name == TargetSetName.WORK_SPACE:
+        if target.set_name == SpaceName.WORK:
             self._get_subset(set_spaces.work_space)
         else:
             return
@@ -425,7 +425,7 @@ class AddText(Trigger):
         self._append_text = append
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WORK_SPACE:
+        if target.set_name == SpaceName.WORK:
             self.set_result(self._append_text + str(target) + self._prepend_text)
             set_spaces.work_space = self.get_result()
 
@@ -452,7 +452,7 @@ class Delete(Trigger):
         self._characters = characters
 
     def invoke(self, target, set_spaces):
-        if target.set_name == TargetSetName.WORK_SPACE:
+        if target.set_name == SpaceName.WORK:
             self._delete_strings(set_spaces.work_space)
             self._delete_characters(self.get_result())
             set_spaces.work_space = self.get_result()

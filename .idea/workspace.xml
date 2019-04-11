@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/executing/app_origin_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +49,8 @@
       <find>section</find>
       <find>&lt;/p&gt;</find>
       <find>MSI</find>
+      <find>phContent_divfileSize</find>
+      <find>divFileSize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,20 +87,23 @@
         <option value="$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector/requesting.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/executing.py" />
-        <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/aux/apps_to_cover.txt" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/triggers/DeleteTriggerTest.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" />
+        <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt" />
+        <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector/requesting.py" />
+        <option value="$PROJECT_DIR$/collector_tests/executing/app_origin_test.py" />
       </list>
     </option>
   </component>
@@ -93,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,22 +144,17 @@
               <item name="collector_tests" type="462c0819:PsiDirectoryNode" />
               <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="collector_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,8 +177,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting">
-    <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_1_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in app_origin_test.py">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -171,11 +188,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_1_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_online_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,11 +202,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -199,11 +216,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online&quot;" />
+      <option name="_new_target" value="&quot;app_origin_test.EpicGamesLauncherTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in app_epic_games_launcher_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,31 +230,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;app_origin_test.EpicGamesLauncherTest.test_package_collecting_online&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in delete_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in app_origin_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector_tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector_tests/executing/app_origin_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests in app_epic_games_launcher_test.py" />
-        <item itemvalue="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" />
-        <item itemvalue="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_1_collecting" />
-        <item itemvalue="Python tests.Unittests in delete_trigger_test.py" />
+        <item itemvalue="Python tests.Unittests in app_origin_test.py" />
+        <item itemvalue="Python tests.Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting_online" />
+        <item itemvalue="Python tests.Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_online_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -258,54 +275,54 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.10 at 22h 38m 01s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 38m 30s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.10 at 22h 41m 49s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 40m 55s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.10 at 22h 42m 02s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 45m 06s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.10 at 22h 46m 06s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 48m 35s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting_online - 2019.04.10 at 22h 51m 34s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 49m 44s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting_online - 2019.04.10 at 22h 51m 51s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 58m 12s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting_online - 2019.04.10 at 22h 52m 54s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 17h 58m 30s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting_online - 2019.04.10 at 22h 53m 05s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting_online" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.11 at 18h 12m 22s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_app_epic_games_launcher_test_py - 2019.04.10 at 22h 53m 20s.xml">
-      <configuration name="Unittests in app_epic_games_launcher_test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_app_origin_test_EpicGamesLauncherTest_test_package_collecting_online - 2019.04.11 at 18h 12m 45s.xml">
+      <configuration name="Unittests for app_origin_test.EpicGamesLauncherTest.test_package_collecting_online" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.04.10 at 22h 58m 22s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_in_app_origin_test_py - 2019.04.11 at 18h 12m 55s.xml">
+      <configuration name="Unittests in app_origin_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.2481556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.2481556" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49846342" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49832326" weight="0.3995657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49846342" weight="0.3286334" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49832326" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50167674" side_tool="true" weight="0.3995657" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50167674" side_tool="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,8 +330,25 @@
       <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" order="3" weight="0.39526185" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="str(string_to_search_in).find(&quot;divFileSize&quot;)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>str(string_to_search_in).find(&quot;divFileSize&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(string_to_search_in).find(self._text)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>encode_base64(fetch_html(self.WEB_SPACE_URL_1))</expression-string>
         <language-id>Python</language-id>
@@ -355,16 +389,6 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>new_str[:offset]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new_str[:offset] + source_str[(offset+1):]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="setValue">
       <expression>
@@ -375,47 +399,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>len(string_to_search_in)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>string_to_search_in.find(self._text)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(string_to_search_in).find(self._text)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;phContent_divfileSize&quot; == self._text</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(TestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(TestData.WEB_SPACE_URL_1))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(dt.execution_order.list[1].html_data)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(dt.execution_order.list[0].html_data)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>re.search(r'[\d]+,[\d]+ [A-Z]+', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+,[\d]+ MB', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+,[\d]+ ', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+,[\d]+', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+,', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]+', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ')</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ').group()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>re.search(r'[\d]', '&lt;div id=&quot;phContent_divFileSize&quot; class=&quot;prop-item&quot;&gt;                                 &lt;div class=&quot;text-h6&quot;&gt;Rozmiar pliku:&lt;/div&gt;                                 &lt;div&gt;                                     32,15 MB                                 &lt;/div&gt;                             &lt;/div&gt; ')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -483,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/resources/lorem_ipsum.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="474" lean-forward="true" selection-start-line="2" selection-start-column="445" selection-end-line="2" selection-end-column="474" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -497,13 +514,6 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -528,14 +538,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aux/apps_to_cover.txt" />
-    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35584" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -586,16 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/helpers/base64_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/executing/info_collector_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -616,16 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/resources/egl_web_1.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -636,30 +618,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+    <entry file="file://$PROJECT_DIR$/collector_tests/helpers/base64_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/egl_web_2.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.base64">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="779">
+          <caret column="305696" lean-forward="true" selection-start-column="305696" selection-end-column="305696" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="708">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/lorem_ipsum.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="474" lean-forward="true" selection-start-line="2" selection-start-column="445" selection-end-line="2" selection-end-column="474" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/resources/origin_web_2.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -668,8 +673,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="921">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/app_origin_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1524">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

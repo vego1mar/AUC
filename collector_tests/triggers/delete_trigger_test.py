@@ -1,6 +1,6 @@
 import unittest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.requesting import SetSpaces
 from collector.triggers import Delete
 from collector.helpers import decode_base64
@@ -10,7 +10,7 @@ class TestData:
     def __init__(self):
         self.string = str()
         self.characters = str()
-        self.target = Target(TargetSetName.WORK_SPACE)
+        self.target = Target(SpaceName.WORK)
         self.set_spaces = SetSpaces()
         self.expected_result = str()
 

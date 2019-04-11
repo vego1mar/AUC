@@ -1,7 +1,7 @@
 import unittest
 from collector.requesting import InvocationRequest
 from collector.requesting import Target
-from collector.requesting import TargetSetName
+from collector.requesting import SpaceName
 from collector.triggers import Find
 from collector.executing import ChainRequestExecution
 from collector.helpers import fetch_file
@@ -18,7 +18,7 @@ class ChainRequestExecutionTestData:
         return self._web_page_1
 
     def get_chain_request_1(self):
-        request1 = InvocationRequest(Target(TargetSetName.WEB_SPACE), Find(text="velit"))
+        request1 = InvocationRequest(Target(SpaceName.WEB), Find(text="velit"))
         self._chain_request_1.append(request1)
         return self._chain_request_1
 

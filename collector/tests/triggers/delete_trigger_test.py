@@ -6,7 +6,7 @@ from collector.triggers import Delete
 from collector.helpers import decode_base64
 
 
-class TestData:
+class DeleteTestData:
     def __init__(self):
         self.string = str()
         self.characters = str()
@@ -18,7 +18,7 @@ class TestData:
 class DeleteTriggerTest(unittest.TestCase):
     def test_strings_deleting(self):
         # given
-        dt = TestData()
+        dt = DeleteTestData()
         dt.string = decode_base64(b'ZmV1Z2lhdCBwcmV0aXVtIG5pYmggaXA=')
         work_space = b'Q3JhcyBmZXJtZW50dW0gb2RpbyBldSBmZXVnaWF0IHByZXRpdW0gbmliaCBpcHN1bSBjb25zZXF1YXQu'
         dt.set_spaces.work_space = decode_base64(work_space)
@@ -33,7 +33,7 @@ class DeleteTriggerTest(unittest.TestCase):
 
     def test_characters_deleting(self):
         # given
-        dt = TestData()
+        dt = DeleteTestData()
         dt.characters = decode_base64(b'YWJlcnR2IHouaQ==')
         work_space = b'TmVjIHNhZ2l0dGlzIGFsaXF1YW0gbWFsZXN1YWRhIGJpYmVuZHVtIGFyY3Ugdml0YWUgZWxlbWVudHVtIGN1cmFiaXR' \
                      b'1ciB2aXRhZS4g'
@@ -49,7 +49,7 @@ class DeleteTriggerTest(unittest.TestCase):
 
     def test_string_and_characters_deleting(self):
         # given
-        dt = TestData()
+        dt = DeleteTestData()
         dt.string = decode_base64(b'bm9uIA==')
         dt.characters = decode_base64(b'dml0YWUgdW8=')
         work_space = b'U2NlbGVyaXNxdWUgaW4gZGljdHVtIG5vbiBjb25zZWN0ZXR1ciBhIGVyYXQgbmFtIGF0IGxlY3R1cy4gVXQgYWxpcXV' \

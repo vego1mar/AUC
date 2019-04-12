@@ -18,10 +18,12 @@ class Target:
         self.collectible_name = collectible_name
 
     def to_string(self):
-        if not self.is_gathering_request:
-            return Target.__name__ + '(set_name=' + self.set_name + ', False)'
+        from .helpers import get_tag_type_name
 
-        return Target.__name__ + '(set_name=' + self.set_name + ', is_gathering_request=' \
+        if not self.is_gathering_request:
+            return Target.__name__ + '(set_name=' + get_tag_type_name(self.set_name) + ')'
+
+        return Target.__name__ + '(set_name=' + get_tag_type_name(self.set_name) + ', is_gathering_request=' \
                + str(self.is_gathering_request) + ', collectible_name=' + self.collectible_name + ')'
 
 

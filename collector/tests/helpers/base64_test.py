@@ -22,7 +22,6 @@ class Base64Test(unittest.TestCase):
 
         # when
         decoded_text = decode_base64(encoded_text)
-        print(decoded_text)
 
         # then
         self.assertEqual(expected_text, decoded_text)

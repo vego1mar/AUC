@@ -6,8 +6,9 @@ from collector.triggers import FetchAttribute
 from collector.helpers import fetch_file
 from collector.helpers import decode_base64
 
-TEST_FILE_PATH = r"../resources/gog_galaxy_web_1.base64"
-TEST_FILE_DATA = fetch_file(TEST_FILE_PATH)
+
+class FetchAttributeTestConst:
+    TEST_FILE_PATH = r"../resources/gog_galaxy_web_WinMac.base64"
 
 
 class TestData1:
@@ -15,7 +16,7 @@ class TestData1:
         self.name = "style"
         self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = TEST_FILE_DATA
+        self.set_spaces.web_space = decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii'))
         content = b"d2lkdGg6MDtoZWlnaHQ6MDtvdmVyZmxvdzpoaWRkZW47cG9zaXRpb246Zml4ZWQ7dmlzaWJpbGl0eTpoaWRkZW4="
         self.expected_result = decode_base64(content)
 
@@ -25,27 +26,18 @@ class TestData2:
         self.name = "gog-relative-time"
         self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = TEST_FILE_DATA
+        self.set_spaces.web_space = decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii'))
         content = b"e3sgOjpub3RpZmljYXRpb24uY3JlYXRpb25UaW1lc3RhbXAgfX0="
         self.expected_result = decode_base64(content)
 
 
 class TestData3:
     def __init__(self):
-        self.name = " d"
+        self.name = "ng-hide"
         self.target = Target(SpaceName.WEB)
         self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = TEST_FILE_DATA
-        content = b'TTMwLjIsNy41aC0zLjRjLTAuNSwwLTAuOS0wLjMtMS4yLTAuN2wtMi0zLjdjLTAuMi0wLjQtMC43LTAuNy0xLjItMC43aC05' \
-                  b'LjlcbicsICdcdFx0Yy0wLjUsMC0wLjksMC4zLTEuMiwwLjdsLTIsMy43QzkuMiw3LjIsOC43LDcuNSw4LjMsNy41SDQuOGMt' \
-                  b'Mi4zLDAtNC4zLDEuNS00LjMsNFYyOGMwLDIuNSwxLjksNC41LDQuMyw0LjVoMjUuNVxuJywgJ1x0XHRjMi4zLDAsNC4yLTIs' \
-                  b'NC4yLTQuNVYxMS41QzM0LjUsOS4xLDMyLjYsNy41LDMwLjIsNy41eiBNMzIuNSwyOS4xYzAsMC44LTAuNiwxLjUtMS40LDEu' \
-                  b'NUgzLjljLTAuOCwwLTEuNC0wLjctMS40LTEuNVYxMVxuJywgJ1x0XHRjMC0wLjgsMC42LTEuNSwxLjQtMS41aDUuNWMwLjUs' \
-                  b'MCwwLjktMC4zLDEuMi0wLjdsMi0zLjNjMC4yLTAuNCwwLjctMC45LDEuMi0wLjloNy42YzAuNSwwLDAuOSwwLjQsMS4yLDAu' \
-                  b'OGwxLjgsMy41XG4nLCAnXHRcdGMwLjIsMC40LDAuNywwLjcsMS4yLDAuN2g1LjdjMC44LDAsMS40LDAuNywxLjQsMS41VjI5' \
-                  b'LjF6IE0xNy41LDEzLjVjLTMuMywwLTYsMi43LTYsNmMwLDMuMywyLjcsNiw2LDZzNi0yLjcsNi02XG4nLCAnXHRcdEMyMy41' \
-                  b'LDE2LjIsMjAuOCwxMy41LDE3LjUsMTMuNXogTTE3LjUsMjMuNWMtMi4yLDAtNC0xLjgtNC00YzAtMi4yLDEuOC00LDQtNHM0' \
-                  b'LDEuOCw0LDRDMjEuNSwyMS43LDE5LjcsMjMuNSwxNy41LDIzLjV6'
+        self.set_spaces.web_space = decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii'))
+        content = b'cHJvZHVjdC5jdXN0b21BdHRyaWJ1dGVzLmN1c3RvbVByaWNlQnV0dG9uVmFyaWFudCA9PSAnam9pbic='
         self.expected_result = decode_base64(content)
 
 

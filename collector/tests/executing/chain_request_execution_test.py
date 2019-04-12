@@ -8,10 +8,11 @@ from collector.helpers import fetch_file
 
 
 class ChainRequestExecutionTestData:
+    WEB_PAGE_1_FILE_NAME = "../resources/lorem_ipsum.txt"
+
     def __init__(self):
         self._chain_request_1 = []
-        self._WEB_PAGE_1_FILE_NAME = "../resources/lorem_ipsum.txt"
-        self._web_page_1 = fetch_file(self._WEB_PAGE_1_FILE_NAME)
+        self._web_page_1 = fetch_file(self.WEB_PAGE_1_FILE_NAME)
         self._expected_collectibles = {}
 
     def get_web_page_1(self):

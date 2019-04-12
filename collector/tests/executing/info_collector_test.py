@@ -9,7 +9,7 @@ from collector.triggers import Find
 from collector.helpers import fetch_file
 
 
-class InfoCollectorTestData():
+class InfoCollectorTestData:
     FILE_NAME_TO_LOAD = r"../resources/lorem_ipsum.txt"
 
     def __init__(self):

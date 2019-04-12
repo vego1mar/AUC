@@ -6,13 +6,15 @@ from collector.requesting import SpaceName
 from collector.helpers import fetch_file
 
 
-class TestData1:
+class FindNextTriggerConst:
     TEST_FILE = r"../resources/lorem_ipsum.txt"
 
+
+class TestData1:
     def __init__(self):
         self.text_to_find = "integer"
         self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = fetch_file(self.TEST_FILE)
+        self.set_spaces.web_space = fetch_file(FindNextTriggerConst.TEST_FILE)
         self.target = Target(SpaceName.WEB)
         self.expected_result = r"integer.\n']"
 

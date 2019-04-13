@@ -122,3 +122,18 @@ def get_entry_for_ms_store(web_space="", app_url="", size="_ms_size", link="_ms_
     req_04 = InvocationRequest(Target(SpaceName.WORK, True, link), SetWorkspace(app_url))
     chain_request = (req_01, req_02, req_03, req_04)
     return ExecutionOrderEntry(chain_request, web_space)
+
+
+def get_entry_for_itunes(web_space="", app_url="", ver="_i_ver", size="_i_size"):
+    from .requesting import Target, SpaceName, InvocationRequest
+    from .triggers import CutAside, SetWorkspace, GetSubset, Find
+    from .executing import ExecutionOrderEntry
+    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("data-test-version-number"))
+    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset('>', '<'))
+    req_03 = InvocationRequest(Target(SpaceName.WORK, True, ver), CutAside(1, 1))
+    req_04 = InvocationRequest(Target(SpaceName.WEB), Find("data-test-app-info-size"))
+    req_05 = InvocationRequest(Target(SpaceName.WORK), GetSubset('>', '<'))
+    req_06 = InvocationRequest(Target(SpaceName.WORK, True, size), CutAside(1, 1))
+    req_07 = InvocationRequest(Target(SpaceName.WORK, True, "ios_itunes"), SetWorkspace(app_url))
+    chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07)
+    return ExecutionOrderEntry(chain_request, web_space)

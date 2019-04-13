@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector/tests/run_all_tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_bethesda_net_launcher_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/sonar-project-pattern.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aux/sonar-project-pattern.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/app_origin_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/executing/info_collector_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/helpers/base64_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/egl_web_WinMac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/egl_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/lorem_ipsum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/origin_web_Mac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/resources/origin_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/delete_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/fetch_attribute_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/find_next_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/find_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector_tests/triggers/retrieve_tags_trigger_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,13 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector_tests/triggers/get_regex_match_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector/executing.py" />
-        <option value="$PROJECT_DIR$/aux/apps_to_cover.txt" />
-        <option value="$PROJECT_DIR$/collector_tests/triggers/cut_aside_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector_tests/triggers/get_subset_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector_tests/helpers/remove_characters_test.py" />
-        <option value="$PROJECT_DIR$/collector_tests/triggers/DeleteTriggerTest.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt" />
         <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt" />
@@ -99,7 +74,6 @@
         <option value="$PROJECT_DIR$/collector_tests/executing/app_origin_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector_tests/resources/uplay_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector_tests/executing/uplay_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/run_all_tests.py" />
@@ -123,9 +97,17 @@
         <option value="$PROJECT_DIR$/collector/tests/triggers/fetch_attribute_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/triggers/find_next_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/triggers/retrieve_tags_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/aux/sonar-project-pattern.properties" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/bethesdaNet_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/bethesda_net_launcher_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_GooglePlay.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
       </list>
     </option>
   </component>
@@ -139,6 +121,7 @@
     </navigator>
     <panes>
       <pane id="Course" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,28 +145,35 @@
               <item name="collector" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="collector" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="executing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/collector_tests/executing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/collector/tests/executing" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/collector_tests/executing" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/collector/tests" />
       <recent name="$PROJECT_DIR$/collector/tests/executing" />
       <recent name="$PROJECT_DIR$/collector" />
       <recent name="$PROJECT_DIR$/collector_tests/executing" />
       <recent name="$PROJECT_DIR$/collector_tests/triggers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/collector/tests/executing" />
+      <recent name="$PROJECT_DIR$/collector_tests/executing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_all_tests (1)">
+  <component name="RunManager" selected="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting">
     <configuration name="run_all_tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,69 +210,69 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_1&quot;" />
+      <option name="_new_target" value="&quot;app_google_chrome_test.GoogleChromeTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2&quot;" />
+      <option name="_new_target" value="&quot;tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3&quot;" />
+      <option name="_new_target" value="&quot;tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in retrieve_tags_trigger_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in app_bethesda_net_launcher_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/triggers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector/tests/triggers/retrieve_tags_trigger_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/collector/tests/executing/app_bethesda_net_launcher_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" />
         <item itemvalue="Python.run_all_tests (1)" />
-        <item itemvalue="Python tests.Unittests in retrieve_tags_trigger_test.py" />
-        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3" />
-        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" />
-        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_1" />
+        <item itemvalue="Python tests.Unittests in app_bethesda_net_launcher_test.py" />
+        <item itemvalue="Python tests.Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online" />
+        <item itemvalue="Python tests.Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -303,35 +293,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_1 - 2019.04.12 at 21h 52m 11s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 19h 59m 20s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_1 - 2019.04.12 at 21h 52m 20s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_1" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 19h 59m 57s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_2 - 2019.04.12 at 21h 52m 30s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 00m 52s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_2 - 2019.04.12 at 21h 54m 51s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 05m 23s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_2 - 2019.04.12 at 21h 56m 17s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 05m 55s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_2 - 2019.04.12 at 21h 57m 16s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_2" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 04m 32s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_3 - 2019.04.12 at 21h 57m 33s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 05m 19s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_3 - 2019.04.12 at 21h 59m 29s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 09m 50s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_invoke_3 - 2019.04.12 at 22h 00m 33s.xml">
-      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_invoke_3" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 36m 44s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_retrieve_tags_trigger_test_py - 2019.04.12 at 22h 00m 36s.xml">
-      <configuration name="Unittests in retrieve_tags_trigger_test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 41m 13s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -382,6 +372,31 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_5))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_4))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_3))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(BethesdaNetLauncherTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii'))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -403,31 +418,6 @@
       </expression>
       <expression>
         <expression-string>Base64Test.__name__</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>[name for name in Base64Test.__dict__ if not name.startswith('__')]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Base64Test.__dict__</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dir(Base64Test)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Base64Test.__qualname__</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Base64Test.__module__</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -488,28 +478,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auc/src/requesting/ChainRequestExecution.py" />
-    <entry file="file://$PROJECT_DIR$/auc/src/requesting/InfoCollector.py" />
-    <entry file="file://$PROJECT_DIR$/collector/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run-sonar-scanner.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aux/apps_to_cover.txt" />
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/egl_web_WinMac.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/egl_web_Windows.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/gog_galaxy_web_Windows.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -567,40 +535,12 @@
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/uplay_web_Windows.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector_tests/executing/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/collector_tests/executing/run_all_tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/test_log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/collector_tests/executing/__main__.py" />
+    <entry file="file://$PROJECT_DIR$/collector/collector_tests/executing/run_all_tests.sh" />
     <entry file="file:///usr/lib/python3.6/unittest/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_epic_games_launcher_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/gog_galaxy_web_WinMac.base64">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -805,18 +738,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_epic_games_launcher_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="84">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/bethesdaNet_web_Windows.base64">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/test_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/test_log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_bethesda_net_launcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/chrome_web_GooglePlay.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

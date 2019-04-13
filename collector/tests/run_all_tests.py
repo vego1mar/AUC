@@ -1,6 +1,8 @@
+from collector.tests.executing.app_bethesda_net_launcher_test import *
 from collector.tests.executing.app_blizzard_battle_net_test import *
 from collector.tests.executing.app_epic_games_launcher_test import *
 from collector.tests.executing.app_gog_galaxy_test import *
+from collector.tests.executing.app_google_chrome_test import *
 from collector.tests.executing.app_origin_test import *
 from collector.tests.executing.app_steam_test import *
 from collector.tests.executing.chain_request_execution_test import *
@@ -18,6 +20,7 @@ from collector.tests.triggers.retrieve_tags_trigger_test import *
 
 
 def adjust_file_paths():
+    BethesdaNetLauncherTestData.WEB_SPACE_HTML_PATH_2 = BethesdaNetLauncherTestData.WEB_SPACE_HTML_PATH_2[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_1 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_1[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3[1:]
@@ -25,6 +28,10 @@ def adjust_file_paths():
     EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_2 = EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_2[1:]
     GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1 = GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1[1:]
     GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2 = GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2[1:]
+    GoogleChromeTestData.WEB_SPACE_HTML_PATH_2 = GoogleChromeTestData.WEB_SPACE_HTML_PATH_2[1:]
+    GoogleChromeTestData.WEB_SPACE_HTML_PATH_3 = GoogleChromeTestData.WEB_SPACE_HTML_PATH_3[1:]
+    GoogleChromeTestData.WEB_SPACE_HTML_PATH_4 = GoogleChromeTestData.WEB_SPACE_HTML_PATH_4[1:]
+    GoogleChromeTestData.WEB_SPACE_HTML_PATH_5 = GoogleChromeTestData.WEB_SPACE_HTML_PATH_5[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_1 = OriginTestData.WEB_SPACE_HTML_PATH_1[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_2 = OriginTestData.WEB_SPACE_HTML_PATH_2[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_1 = SteamTestData.WEB_SPACE_HTML_PATH_1[1:]
@@ -49,9 +56,11 @@ def print_info():
 
         print(']')
 
+    print_module_functions(BethesdaNetLauncherTest.__name__, BethesdaNetLauncherTest.__dict__)
     print_module_functions(ActivisionBlizzardBattleNetTest.__name__, ActivisionBlizzardBattleNetTest.__dict__)
     print_module_functions(EpicGamesLauncherTest.__name__, EpicGamesLauncherTest.__dict__)
     print_module_functions(GogGalaxyTest.__name__, GogGalaxyTest.__dict__)
+    print_module_functions(GoogleChromeTest.__name__, GoogleChromeTest.__dict__)
     print_module_functions(ElectronicArtsOriginTest.__name__, ElectronicArtsOriginTest.__dict__)
     print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
     print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)

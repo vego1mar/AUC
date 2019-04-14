@@ -12,6 +12,7 @@ from collector.tests.executing.app_origin_test import *
 from collector.tests.executing.app_potplayer_test import *
 from collector.tests.executing.app_smart_defrag_test import *
 from collector.tests.executing.app_steam_test import *
+from collector.tests.executing.app_sumatrapdf_test import *
 from collector.tests.executing.chain_request_execution_test import *
 from collector.tests.executing.info_collector_test import *
 from collector.tests.helpers.base64_test import *
@@ -59,6 +60,14 @@ def adjust_file_paths():
     SteamTestData.WEB_SPACE_HTML_PATH_3 = SteamTestData.WEB_SPACE_HTML_PATH_3[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_4 = SteamTestData.WEB_SPACE_HTML_PATH_4[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_5 = SteamTestData.WEB_SPACE_HTML_PATH_5[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_2 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_2[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_3 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_3[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_4 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_4[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_5 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_5[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_6 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_6[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_7 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_7[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_8 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_8[1:]
+    SumatraPdfTestData.WEB_SPACE_HTML_PATH_9 = SumatraPdfTestData.WEB_SPACE_HTML_PATH_9[1:]
     ChainRequestExecutionTestData.WEB_PAGE_1_FILE_NAME = ChainRequestExecutionTestData.WEB_PAGE_1_FILE_NAME[1:]
     InfoCollectorTestData.FILE_NAME_TO_LOAD = InfoCollectorTestData.FILE_NAME_TO_LOAD[1:]
     FetchAttributeTestConst.TEST_FILE_PATH = FetchAttributeTestConst.TEST_FILE_PATH[1:]
@@ -90,6 +99,7 @@ def print_info():
     print_module_functions(PotPlayerTest.__name__, PotPlayerTest.__dict__)
     print_module_functions(SmartDefragTest.__name__, SmartDefragTest.__dict__)
     print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
+    print_module_functions(SumatraPdfTest.__name__, SumatraPdfTest.__dict__)
     print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)
     print_module_functions(InfoCollectorTest.__name__, InfoCollectorTest.__dict__)
     print_module_functions(Base64Test.__name__, Base64Test.__dict__)

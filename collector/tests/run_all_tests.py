@@ -7,6 +7,7 @@ from collector.tests.executing.app_google_chrome_test import *
 from collector.tests.executing.app_hashtab_test import *
 from collector.tests.executing.app_malware_fighter_test import *
 from collector.tests.executing.app_origin_test import *
+from collector.tests.executing.app_smart_defrag_test import *
 from collector.tests.executing.app_steam_test import *
 from collector.tests.executing.chain_request_execution_test import *
 from collector.tests.executing.info_collector_test import *
@@ -41,6 +42,8 @@ def adjust_file_paths():
     MalwareFighterTestData.WEB_SPACE_HTML_PATH_2 = MalwareFighterTestData.WEB_SPACE_HTML_PATH_2[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_1 = OriginTestData.WEB_SPACE_HTML_PATH_1[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_2 = OriginTestData.WEB_SPACE_HTML_PATH_2[1:]
+    SmartDefragTestData.WEB_SPACE_HTML_PATH_2 = SmartDefragTestData.WEB_SPACE_HTML_PATH_2[1:]
+    SmartDefragTestData.WEB_SPACE_HTML_PATH_3 = SmartDefragTestData.WEB_SPACE_HTML_PATH_3[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_1 = SteamTestData.WEB_SPACE_HTML_PATH_1[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_2 = SteamTestData.WEB_SPACE_HTML_PATH_2[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_3 = SteamTestData.WEB_SPACE_HTML_PATH_3[1:]
@@ -72,6 +75,7 @@ def print_info():
     print_module_functions(HashTabTest.__name__, HashTabTest.__dict__)
     print_module_functions(MalwareFighterTest.__name__, MalwareFighterTest.__dict__)
     print_module_functions(ElectronicArtsOriginTest.__name__, ElectronicArtsOriginTest.__dict__)
+    print_module_functions(SmartDefragTest.__name__, SmartDefragTest.__dict__)
     print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
     print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)
     print_module_functions(InfoCollectorTest.__name__, InfoCollectorTest.__dict__)

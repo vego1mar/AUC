@@ -426,7 +426,7 @@ class AddText(Trigger):
 
     def invoke(self, target, set_spaces):
         if target.set_name == SpaceName.WORK:
-            self.set_result(self._append_text + str(target) + self._prepend_text)
+            self.set_result(self._prepend_text + str(set_spaces.work_space) + self._append_text)
             set_spaces.work_space = self.get_result()
 
     def to_string(self):

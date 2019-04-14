@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_bethesda_net_launcher_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/imf_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_hashtab_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/executing/app_hashtab_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows2.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/run_all_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,12 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector_tests/executing/chain_request_execution_test.py" />
-        <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_1.txt" />
-        <option value="$PROJECT_DIR$/collector_tests/resources/gog_galaxy_web_2.txt" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
-        <option value="$PROJECT_DIR$/collector_tests/resources/battleNet_web_1.base64" />
-        <option value="$PROJECT_DIR$/collector_tests/resources/battleNet_web_2.base64" />
         <option value="$PROJECT_DIR$/collector_tests/resources/battleNet_web_3.base64" />
         <option value="$PROJECT_DIR$/collector_tests/resources/steamClient_web_1.base64" />
         <option value="$PROJECT_DIR$/collector_tests/resources/steamClient_web_2.base64" />
@@ -105,9 +111,15 @@
         <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows2.base64" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_hashtab_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/imf_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py" />
       </list>
     </option>
   </component>
@@ -188,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting">
+  <component name="RunManager" selected="Python.run_all_tests (1)">
     <configuration name="run_all_tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,7 +236,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,11 +246,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_hashtab_test.HashTabTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,7 +260,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online&quot;" />
+      <option name="_new_target" value="&quot;app_malware_fighter_test.MalwareFighterTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -268,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" />
         <item itemvalue="Python.run_all_tests (1)" />
+        <item itemvalue="Python tests.Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_hashtab_test.HashTabTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" />
         <item itemvalue="Python tests.Unittests in app_bethesda_net_launcher_test.py" />
-        <item itemvalue="Python tests.Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting_online" />
-        <item itemvalue="Python tests.Unittests for tests.executing.app_bethesda_net_launcher_test.BethesdaNetLauncherTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -293,39 +305,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 19h 59m 20s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 11h 32m 50s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 19h 59m 57s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 11h 33m 35s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 00m 52s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 11h 42m 33s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 05m 23s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 11h 43m 18s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 20h 05m 55s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 12h 03m 40s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 04m 32s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 12h 04m 49s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 05m 19s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 12h 05m 29s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 09m 50s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 12h 09m 00s.xml">
+      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 36m 44s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_malware_fighter_test_MalwareFighterTest_test_package_collecting - 2019.04.14 at 12h 32m 42s.xml">
+      <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.04.13 at 22h 41m 13s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_malware_fighter_test_MalwareFighterTest_test_package_collecting - 2019.04.14 at 12h 33m 15s.xml">
+      <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -372,6 +385,36 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>encode_base64(fetch_html(MalwareFighterTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(HashTabTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>collector._collectibles['win_exe']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>trigger.to_string()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(HashTabTestData.WEB_SPACE_URL_1))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>from helpers import fetch_html</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_5))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -388,36 +431,6 @@
       </expression>
       <expression>
         <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_2))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(BethesdaNetLauncherTestData.WEB_SPACE_URL_2))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii'))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>decode_base64(fetch_file(FetchAttributeTestConst.TEST_FILE_PATH))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fetch_file(FetchAttributeTestConst.TEST_FILE_PATH).encode('ascii')</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fetch_file(FetchAttributeTestConst.TEST_FILE_PATH)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Base64Test.__name__</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -478,25 +491,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/gog_galaxy_web_Windows.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/lorem_ipsum.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="474" lean-forward="true" selection-start-line="2" selection-start-column="445" selection-end-line="2" selection-end-column="474" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/origin_web_Mac.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/battleNet_web_URL.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/battleNet_web_Windows.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/battleNet_web_Mac.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -519,16 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/triggers/retrieve_tags_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2415">
@@ -784,27 +758,76 @@
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows2.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="557">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="746">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py">
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_hashtab_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="462">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/imf_web_Windows.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

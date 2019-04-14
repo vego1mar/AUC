@@ -137,3 +137,17 @@ def get_entry_for_itunes(web_space="", app_url="", ver="_i_ver", size="_i_size")
     req_07 = InvocationRequest(Target(SpaceName.WORK, True, "ios_itunes"), SetWorkspace(app_url))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07)
     return ExecutionOrderEntry(chain_request, web_space)
+
+
+def get_entry_for_majorgeeks(web_space="", date="_mg_date", size="_mg_size"):
+    from .requesting import Target, SpaceName, InvocationRequest
+    from .triggers import Find, GetSubset, GetRegexMatch
+    from .executing import ExecutionOrderEntry
+    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("<strong>Date:"))
+    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 328))
+    req_03 = InvocationRequest(Target(SpaceName.WORK, True, date), GetRegexMatch(r"[\d]+/[\d]+/[\d]+"))
+    req_04 = InvocationRequest(Target(SpaceName.WEB), Find("<strong>Size:"))
+    req_05 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 300))
+    req_06 = InvocationRequest(Target(SpaceName.WORK, True, size), GetRegexMatch(r"[\d]+[.,][\d]+ [A-Z]+"))
+    chain_request = (req_01, req_02, req_03, req_04, req_05, req_06)
+    return ExecutionOrderEntry(chain_request, web_space)

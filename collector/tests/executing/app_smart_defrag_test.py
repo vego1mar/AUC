@@ -14,6 +14,7 @@ from collector.helpers import configure_logging
 from collector.helpers import decode_base64
 from collector.helpers import get_web_space
 from collector.helpers import get_entry_for_dobreprogramy_pl
+from collector.helpers import get_entry_for_majorgeeks_2
 
 configure_logging(r"../test_log.txt")
 logging.debug("Tests for: IObit Smart Defrag")
@@ -52,11 +53,8 @@ def get_entry_1():
 
 
 def get_entry_2():
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("Debug:"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(' ', '>'))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, "win_exe"), CutAside(1, 4))
-    chain_request = (req_01, req_02, req_03)
-    return ExecutionOrderEntry(chain_request, get_web_space(SmartDefragTestData.WEB_SPACE_HTML_PATH_2))
+    web_space = get_web_space(SmartDefragTestData.WEB_SPACE_HTML_PATH_2)
+    return get_entry_for_majorgeeks_2(web_space, "win_exe")
 
 
 def get_entry_3():

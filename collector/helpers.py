@@ -140,6 +140,9 @@ def get_entry_for_itunes(web_space="", app_url="", ver="_i_ver", size="_i_size")
 
 
 def get_entry_for_majorgeeks(web_space="", date="_mg_date", size="_mg_size"):
+    """Retrieves date and size from 'details' page of majorgeeks.com software.\n
+       Example: https://www.majorgeeks.com/files/details/jetclean.html\n
+    """
     from .requesting import Target, SpaceName, InvocationRequest
     from .triggers import Find, GetSubset, GetRegexMatch
     from .executing import ExecutionOrderEntry
@@ -150,4 +153,18 @@ def get_entry_for_majorgeeks(web_space="", date="_mg_date", size="_mg_size"):
     req_05 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 300))
     req_06 = InvocationRequest(Target(SpaceName.WORK, True, size), GetRegexMatch(r"[\d]+[.,][\d]+ [A-Z]+"))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06)
+    return ExecutionOrderEntry(chain_request, web_space)
+
+
+def get_entry_for_majorgeeks_2(web_space="", link="_mg_link"):
+    """Retrieves variant link from 'mirror' page of majorgeeks.com software.\n
+       Example: https://www.majorgeeks.com/mg/getmirror/jetclean,1.html\n
+    """
+    from .requesting import Target, SpaceName, InvocationRequest
+    from .triggers import Find, GetSubset, CutAside
+    from .executing import ExecutionOrderEntry
+    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("Debug:"))
+    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(' ', '>'))
+    req_03 = InvocationRequest(Target(SpaceName.WORK, True, link), CutAside(1, 4))
+    chain_request = (req_01, req_02, req_03)
     return ExecutionOrderEntry(chain_request, web_space)

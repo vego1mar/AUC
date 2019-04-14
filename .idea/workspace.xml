@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows2.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,9 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector_tests/resources/steamClient_web_MSStore.base64" />
-        <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector_tests/executing/app_steam_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_origin_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/app_epic_games_launcher_test.py" />
@@ -108,10 +96,13 @@
         <option value="$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/resources/idb_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_driver_booster_test.py" />
-        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows2.base64" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
       </list>
     </option>
   </component>
@@ -148,13 +139,6 @@
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="collector" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="collector" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,20 +212,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_hashtab_test.HashTabTest.test_package_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,6 +223,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;app_malware_fighter_test.MalwareFighterTest.test_package_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_potplayer_test.PotPlayerTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -273,10 +257,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_all_tests (1)" />
+        <item itemvalue="Python tests.Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" />
         <item itemvalue="Python tests.Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" />
         <item itemvalue="Python tests.Unittests for app_driver_booster_test.DriverBoosterTest.test_package_collecting" />
         <item itemvalue="Python tests.Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_hashtab_test.HashTabTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -297,18 +281,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_hashtab_test_HashTabTest_test_package_collecting - 2019.04.14 at 12h 09m 00s.xml">
-      <configuration name="Unittests for app_hashtab_test.HashTabTest.test_package_collecting" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_app_malware_fighter_test_MalwareFighterTest_test_package_collecting - 2019.04.14 at 12h 32m 42s.xml">
-      <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_app_malware_fighter_test_MalwareFighterTest_test_package_collecting - 2019.04.14 at 12h 33m 15s.xml">
-      <configuration name="Unittests for app_malware_fighter_test.MalwareFighterTest.test_package_collecting" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_app_driver_booster_test_DriverBoosterTest_test_package_collecting - 2019.04.14 at 12h 48m 41s.xml">
-      <configuration name="Unittests for app_driver_booster_test.DriverBoosterTest.test_package_collecting" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_app_driver_booster_test_DriverBoosterTest_test_package_collecting - 2019.04.14 at 12h 49m 21s.xml">
       <configuration name="Unittests for app_driver_booster_test.DriverBoosterTest.test_package_collecting" configurationId="tests" />
     </history-entry>
@@ -327,12 +299,23 @@
     <history-entry file="Unittests_for_app_smart_defrag_test_SmartDefragTest_test_package_collecting - 2019.04.14 at 13h 14m 15s.xml">
       <configuration name="Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 56m 09s.xml">
+      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 56m 24s.xml">
+      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 57m 57s.xml">
+      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 59m 12s.xml">
+      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.2481556" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -374,19 +357,18 @@
       <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" order="3" weight="0.39526185" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>encode_base64(fetch_html(PotPlayerTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(PotPlayerTestData.WEB_SPACE_URL_1))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>encode_base64(fetch_html(SmartDefragTestData.WEB_SPACE_URL_3))</expression-string>
         <language-id>Python</language-id>
@@ -424,16 +406,6 @@
       </expression>
       <expression>
         <expression-string>encode_base64(fetch_html(HashTabTestData.WEB_SPACE_URL_1))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>from helpers import fetch_html</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(GoogleChromeTestData.WEB_SPACE_URL_5))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -494,19 +466,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/steamClient_web_MSStore.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/resources/uplay_web_Windows.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector_tests/executing/__main__.py" />
     <entry file="file://$PROJECT_DIR$/collector/collector_tests/executing/run_all_tests.sh" />
     <entry file="file:///usr/lib/python3.6/unittest/main.py">
@@ -825,16 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/isd_web_Windows.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -845,6 +794,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -88,11 +88,12 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = get_web_space(BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3)
-    return get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size", -1)
+    return get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size", (-1, -1))
 
 
 def get_entry_4():
-    req_1 = InvocationRequest(Target(SpaceName.WORK, True, "app_website"), SetWorkspace(BlizzardBattleNetTestData.WEB_SPACE_URL_1))
+    app_website = BlizzardBattleNetTestData.WEB_SPACE_URL_1
+    req_1 = InvocationRequest(Target(SpaceName.WORK, True, "app_website"), SetWorkspace(app_website))
     chain_request = (req_1,)
     return ExecutionOrderEntry(chain_request, str())
 
@@ -101,29 +102,6 @@ class ActivisionBlizzardBattleNetTest(unittest.TestCase):
     def test_package_collecting(self):
         # given
         dt = BlizzardBattleNetTestData()
-        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
-
-        # when
-        collector.collect()
-
-        # then
-        self.assertEqual(dt.APP_NAME, collector.get_app_name())
-        self.assertEqual(dt.expected_win_exe_engb, collector.get_collectibles()['Win_exe_enGB'])
-        self.assertEqual(dt.expected_win_exe_plpl, collector.get_collectibles()['Win_exe_plPL'])
-        self.assertEqual(dt.expected_mac_zip_enus, collector.get_collectibles()['Mac_zip_enUS'])
-        self.assertEqual(dt.expected_mac_zip_plpl, collector.get_collectibles()['Mac_zip_plPL'])
-        self.assertEqual(dt.expected_win_ver, collector.get_collectibles()['Win_ver'])
-        self.assertEqual(dt.expected_win_date, collector.get_collectibles()['Win_date'])
-        self.assertEqual(dt.expected_win_size, collector.get_collectibles()['Win_size'])
-        self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
-        self.assertEqual(dt.expected_mac_date, collector.get_collectibles()['Mac_date'])
-        self.assertEqual(dt.expected_mac_size, collector.get_collectibles()['Mac_size'])
-        self.assertEqual(dt.WEB_SPACE_URL_1, collector.get_collectibles()['app_website'])
-
-    @unittest.skip("Online test")
-    def test_package_collecting_online(self):
-        # given
-        dt = TestDataOnline()
         collector = InfoCollector(dt.APP_NAME, dt.execution_order)
 
         # when

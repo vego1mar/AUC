@@ -6,6 +6,7 @@ from collector.tests.executing.app_gog_galaxy_test import *
 from collector.tests.executing.app_google_chrome_test import *
 from collector.tests.executing.app_hashtab_test import *
 from collector.tests.executing.app_jetclean_test import *
+from collector.tests.executing.app_keepass_test import *
 from collector.tests.executing.app_malware_fighter_test import *
 from collector.tests.executing.app_origin_test import *
 from collector.tests.executing.app_potplayer_test import *
@@ -44,6 +45,8 @@ def adjust_file_paths():
     JetCleanTestData.WEB_SPACE_HTML_PATH_2 = JetCleanTestData.WEB_SPACE_HTML_PATH_2[1:]
     JetCleanTestData.WEB_SPACE_HTML_PATH_3 = JetCleanTestData.WEB_SPACE_HTML_PATH_3[1:]
     JetCleanTestData.WEB_SPACE_HTML_PATH_4 = JetCleanTestData.WEB_SPACE_HTML_PATH_4[1:]
+    KeePassTestData.WEB_SPACE_HTML_PATH_2 = KeePassTestData.WEB_SPACE_HTML_PATH_2[1:]
+    KeePassTestData.WEB_SPACE_HTML_PATH_3 = KeePassTestData.WEB_SPACE_HTML_PATH_3[1:]
     MalwareFighterTestData.WEB_SPACE_HTML_PATH_2 = MalwareFighterTestData.WEB_SPACE_HTML_PATH_2[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_1 = OriginTestData.WEB_SPACE_HTML_PATH_1[1:]
     OriginTestData.WEB_SPACE_HTML_PATH_2 = OriginTestData.WEB_SPACE_HTML_PATH_2[1:]
@@ -81,6 +84,7 @@ def print_info():
     print_module_functions(GoogleChromeTest.__name__, GoogleChromeTest.__dict__)
     print_module_functions(HashTabTest.__name__, HashTabTest.__dict__)
     print_module_functions(JetCleanTest.__name__, JetCleanTest.__dict__)
+    print_module_functions(KeePassTest.__name__, KeePassTest.__dict__)
     print_module_functions(MalwareFighterTest.__name__, MalwareFighterTest.__dict__)
     print_module_functions(ElectronicArtsOriginTest.__name__, ElectronicArtsOriginTest.__dict__)
     print_module_functions(PotPlayerTest.__name__, PotPlayerTest.__dict__)

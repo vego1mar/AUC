@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_jetclean_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows2.base64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows3.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/executing/app_keepass_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows.base64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows2.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_jetclean_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +46,7 @@
       <find>ng-hide=&quot;</find>
       <find>&lt;p&gt;</find>
       <find>&lt;h1&gt;</find>
+      <find>.exe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,9 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector_tests/executing/uplay_test.py" />
-        <option value="$PROJECT_DIR$/collector_tests/run_all_tests.py" />
-        <option value="$PROJECT_DIR$/collector_tests/executing/app_blizzard_battle_net_test.py" />
         <option value="$PROJECT_DIR$/collector_tests/executing/run_all_tests.py" />
         <option value="$PROJECT_DIR$/collector/collector_tests/executing/run_all_tests.sh" />
         <option value="$PROJECT_DIR$/collector/collector_tests/executing/app_blizzard_battle_net_test.py" />
@@ -80,7 +65,6 @@
         <option value="$PROJECT_DIR$/collector/tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/info_collector_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/chain_request_execution_test.py" />
-        <option value="$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_origin_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_steam_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/helpers/base64_test.py" />
@@ -111,13 +95,17 @@
         <option value="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py" />
-        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows2.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows3.base64" />
         <option value="$PROJECT_DIR$/collector/tests/executing/app_jetclean_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows.base64" />
+        <option value="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows2.base64" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_keepass_test.py" />
+        <option value="$PROJECT_DIR$/collector/tests/run_all_tests.py" />
+        <option value="$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py" />
       </list>
     </option>
   </component>
@@ -220,7 +208,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_driver_booster_test.DriverBoosterTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,7 +218,21 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_driver_booster_test.DriverBoosterTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting_online" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting_online&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -248,7 +250,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,31 +260,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_potplayer_test.PotPlayerTest.test_package_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector/tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_smart_defrag_test.SmartDefragTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_keepass_test.KeePassTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_all_tests (1)" />
+        <item itemvalue="Python tests.Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting_online" />
+        <item itemvalue="Python tests.Unittests for app_keepass_test.KeePassTest.test_package_collecting" />
         <item itemvalue="Python tests.Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_driver_booster_test.DriverBoosterTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -303,42 +291,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 56m 09s.xml">
-      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 03m 52s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 56m 24s.xml">
-      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 12m 46s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 57m 57s.xml">
-      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 27m 33s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_potplayer_test_PotPlayerTest_test_package_collecting - 2019.04.14 at 13h 59m 12s.xml">
-      <configuration name="Unittests for app_potplayer_test.PotPlayerTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 29m 06s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_smart_defrag_test_SmartDefragTest_test_package_collecting - 2019.04.14 at 19h 49m 00s.xml">
-      <configuration name="Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 30m 43s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_jetclean_test_JetCleanTest_test_package_collecting - 2019.04.14 at 20h 06m 09s.xml">
-      <configuration name="Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 31m 36s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_jetclean_test_JetCleanTest_test_package_collecting - 2019.04.14 at 20h 06m 22s.xml">
-      <configuration name="Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 35m 13s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_jetclean_test_JetCleanTest_test_package_collecting - 2019.04.14 at 20h 08m 41s.xml">
-      <configuration name="Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_keepass_test_KeePassTest_test_package_collecting - 2019.04.14 at 21h 36m 32s.xml">
+      <configuration name="Unittests for app_keepass_test.KeePassTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_jetclean_test_JetCleanTest_test_package_collecting - 2019.04.14 at 20h 09m 55s.xml">
-      <configuration name="Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTest_test_package_collecting_online - 2019.04.14 at 21h 42m 39s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting_online" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_jetclean_test_JetCleanTest_test_package_collecting - 2019.04.14 at 20h 10m 46s.xml">
-      <configuration name="Unittests for app_jetclean_test.JetCleanTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTest_test_package_collecting - 2019.04.14 at 21h 43m 07s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTest.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1516" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.24798928" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.2481556" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,6 +370,21 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>encode_base64(fetch_html(KeePassTestData.WEB_SPACE_URL_3))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fetch_html(KeePassTestData.WEB_SPACE_URL_3)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>encode_base64(fetch_html(KeePassTestData.WEB_SPACE_URL_2))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>encode_base64(fetch_html(JetCleanTestData.WEB_SPACE_URL_4))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -409,26 +411,6 @@
       </expression>
       <expression>
         <expression-string>encode_base64(fetch_html(SmartDefragTestData.WEB_SPACE_URL_3))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(SmartDefragTestData.WEB_SPACE_URL_2))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(DriverBoosterTestData.WEB_SPACE_URL_2))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(MalwareFighterTestData.WEB_SPACE_URL_2))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>encode_base64(fetch_html(HashTabTestData.WEB_SPACE_URL_2))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -489,39 +471,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_steam_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/executing/info_collector_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_origin_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -793,16 +742,6 @@
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -823,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows.base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -845,6 +777,50 @@
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows.base64">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows2.base64">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_keepass_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/tests/run_all_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>

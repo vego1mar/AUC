@@ -74,14 +74,14 @@ def get_web_space(base64_file_path):
     return decode_base64(base64str.encode('ascii'))
 
 
-def get_entry_for_dobreprogramy_pl(web_space="", ver="_ver", date="_date", size="_size", selector_offset=0):
+def get_entry_for_dobreprogramy_pl(web_space="", ver="_ver", date="_date", size="_size", selector_offset=(0, 0)):
     from .requesting import SpaceName, Target, InvocationRequest
     from .triggers import RetrieveTags, TagType, SelectElement, FetchAttribute, Find, GetSubset, GetRegexMatch
     from .executing import ExecutionOrderEntry
     req_01 = InvocationRequest(Target(SpaceName.WEB), RetrieveTags("meta", TagType.META, 30))
-    req_02 = InvocationRequest(Target(SpaceName.LIST), SelectElement(20 + selector_offset))
+    req_02 = InvocationRequest(Target(SpaceName.LIST), SelectElement(20 + selector_offset[0]))
     req_03 = InvocationRequest(Target(SpaceName.WORK, True, ver), FetchAttribute("content"))
-    req_04 = InvocationRequest(Target(SpaceName.LIST), SelectElement(26 + selector_offset))
+    req_04 = InvocationRequest(Target(SpaceName.LIST), SelectElement(26 + selector_offset[1]))
     req_05 = InvocationRequest(Target(SpaceName.WORK, True, date), FetchAttribute("content"))
     req_06 = InvocationRequest(Target(SpaceName.WEB), Find("divFileSize"))
     req_07 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 273))

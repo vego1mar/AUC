@@ -1,16 +1,19 @@
 from collector.tests.executing.app_bethesda_net_launcher_test import *
 from collector.tests.executing.app_blizzard_battle_net_test import *
 from collector.tests.executing.app_driver_booster_test import *
+from collector.tests.executing.app_dvdfab_virtual_drive_test import *
 from collector.tests.executing.app_epic_games_launcher_test import *
 from collector.tests.executing.app_gog_galaxy_test import *
 from collector.tests.executing.app_google_chrome_test import *
 from collector.tests.executing.app_hashtab_test import *
+from collector.tests.executing.app_irfanview_test import *
 from collector.tests.executing.app_jetclean_test import *
 from collector.tests.executing.app_keepass_test import *
 from collector.tests.executing.app_malware_fighter_test import *
 from collector.tests.executing.app_origin_test import *
 from collector.tests.executing.app_potplayer_test import *
 from collector.tests.executing.app_smart_defrag_test import *
+from collector.tests.executing.app_speccy_test import *
 from collector.tests.executing.app_steam_test import *
 from collector.tests.executing.app_sumatrapdf_test import *
 from collector.tests.executing.chain_request_execution_test import *
@@ -33,6 +36,8 @@ def adjust_file_paths():
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3[1:]
     DriverBoosterTestData.WEB_SPACE_HTML_PATH_2 = DriverBoosterTestData.WEB_SPACE_HTML_PATH_2[1:]
+    DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_1 = DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_1[1:]
+    DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_2 = DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_2[1:]
     EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_1 = EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_1[1:]
     EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_2 = EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_2[1:]
     GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1 = GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1[1:]
@@ -43,6 +48,10 @@ def adjust_file_paths():
     GoogleChromeTestData.WEB_SPACE_HTML_PATH_5 = GoogleChromeTestData.WEB_SPACE_HTML_PATH_5[1:]
     HashTabTestData.WEB_SPACE_HTML_PATH_1 = HashTabTestData.WEB_SPACE_HTML_PATH_1[1:]
     HashTabTestData.WEB_SPACE_HTML_PATH_2 = HashTabTestData.WEB_SPACE_HTML_PATH_2[1:]
+    IrfanViewTestData.WEB_SPACE_HTML_PATH_2 = IrfanViewTestData.WEB_SPACE_HTML_PATH_2[1:]
+    IrfanViewTestData.WEB_SPACE_HTML_PATH_3 = IrfanViewTestData.WEB_SPACE_HTML_PATH_3[1:]
+    IrfanViewTestData.WEB_SPACE_HTML_PATH_4 = IrfanViewTestData.WEB_SPACE_HTML_PATH_4[1:]
+    IrfanViewTestData.WEB_SPACE_HTML_PATH_5 = IrfanViewTestData.WEB_SPACE_HTML_PATH_5[1:]
     JetCleanTestData.WEB_SPACE_HTML_PATH_2 = JetCleanTestData.WEB_SPACE_HTML_PATH_2[1:]
     JetCleanTestData.WEB_SPACE_HTML_PATH_3 = JetCleanTestData.WEB_SPACE_HTML_PATH_3[1:]
     JetCleanTestData.WEB_SPACE_HTML_PATH_4 = JetCleanTestData.WEB_SPACE_HTML_PATH_4[1:]
@@ -55,6 +64,8 @@ def adjust_file_paths():
     PotPlayerTestData.WEB_SPACE_HTML_PATH_2 = PotPlayerTestData.WEB_SPACE_HTML_PATH_2[1:]
     SmartDefragTestData.WEB_SPACE_HTML_PATH_2 = SmartDefragTestData.WEB_SPACE_HTML_PATH_2[1:]
     SmartDefragTestData.WEB_SPACE_HTML_PATH_3 = SmartDefragTestData.WEB_SPACE_HTML_PATH_3[1:]
+    SpeccyTestData.WEB_SPACE_HTML_PATH_2 = SpeccyTestData.WEB_SPACE_HTML_PATH_2[1:]
+    SpeccyTestData.WEB_SPACE_HTML_PATH_3 = SpeccyTestData.WEB_SPACE_HTML_PATH_3[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_1 = SteamTestData.WEB_SPACE_HTML_PATH_1[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_2 = SteamTestData.WEB_SPACE_HTML_PATH_2[1:]
     SteamTestData.WEB_SPACE_HTML_PATH_3 = SteamTestData.WEB_SPACE_HTML_PATH_3[1:]
@@ -88,16 +99,19 @@ def print_info():
     print_module_functions(BethesdaNetLauncherTest.__name__, BethesdaNetLauncherTest.__dict__)
     print_module_functions(ActivisionBlizzardBattleNetTest.__name__, ActivisionBlizzardBattleNetTest.__dict__)
     print_module_functions(DriverBoosterTest.__name__, DriverBoosterTest.__dict__)
+    print_module_functions(DvdFabVirtualDriveTest.__name__, DvdFabVirtualDriveTest.__dict__)
     print_module_functions(EpicGamesLauncherTest.__name__, EpicGamesLauncherTest.__dict__)
     print_module_functions(GogGalaxyTest.__name__, GogGalaxyTest.__dict__)
     print_module_functions(GoogleChromeTest.__name__, GoogleChromeTest.__dict__)
     print_module_functions(HashTabTest.__name__, HashTabTest.__dict__)
+    print_module_functions(IrfanViewTest.__name__, IrfanViewTest.__dict__)
     print_module_functions(JetCleanTest.__name__, JetCleanTest.__dict__)
     print_module_functions(KeePassTest.__name__, KeePassTest.__dict__)
     print_module_functions(MalwareFighterTest.__name__, MalwareFighterTest.__dict__)
     print_module_functions(ElectronicArtsOriginTest.__name__, ElectronicArtsOriginTest.__dict__)
     print_module_functions(PotPlayerTest.__name__, PotPlayerTest.__dict__)
     print_module_functions(SmartDefragTest.__name__, SmartDefragTest.__dict__)
+    print_module_functions(SpeccyTest.__name__, SpeccyTest.__dict__)
     print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
     print_module_functions(SumatraPdfTest.__name__, SumatraPdfTest.__dict__)
     print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)

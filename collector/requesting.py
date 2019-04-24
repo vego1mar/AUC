@@ -1,3 +1,8 @@
+import helpers as hp
+import json_assist as ja
+import triggers as tr
+
+
 class SetSpaces:
     def __init__(self):
         self.web_space = ""
@@ -18,13 +23,14 @@ class Target:
         self.collectible_name = collectible_name
 
     def to_string(self):
-        from .helpers import get_tag_type_name
-
         if not self.is_gathering_request:
-            return Target.__name__ + '(set_name=' + get_tag_type_name(self.set_name) + ')'
+            return Target.__name__ + '(set_name=' + hp.get_set_name_str(self.set_name) + ')'
 
-        return Target.__name__ + '(set_name=' + get_tag_type_name(self.set_name) + ', is_gathering_request=' \
-               + str(self.is_gathering_request) + ', collectible_name=' + self.collectible_name + ')'
+        return Target.__name__ + '(set_name=' + hp.get_set_name_str(self.set_name) + ', is_gathering_request=' + \
+               str(self.is_gathering_request) + ', collectible_name=' + self.collectible_name + ')'
+
+    def to_json(self):
+        return ja.target_to_json(self)
 
 
 class InvocationRequest:
@@ -34,3 +40,6 @@ class InvocationRequest:
 
     def to_string(self):
         return '[' + self.target.to_string() + ', ' + self.trigger.to_string() + ']'
+
+    def to_json(self):
+        return ja.invocation_request_to_json(self)

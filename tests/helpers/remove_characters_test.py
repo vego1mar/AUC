@@ -1,5 +1,5 @@
 import unittest
-from collector.helpers import remove_characters
+import helpers as hp
 
 
 class RemoveCharactersTest(unittest.TestCase):
@@ -10,7 +10,7 @@ class RemoveCharactersTest(unittest.TestCase):
         expected_result = "aoa"
 
         # when
-        result = remove_characters(source_str, chars_str)
+        result = hp.remove_characters(source_str, chars_str)
 
         # then
         self.assertEqual(expected_result, result)
@@ -22,7 +22,7 @@ class RemoveCharactersTest(unittest.TestCase):
         expected_result = "darkne"
 
         # when
-        result = remove_characters(source_str, chars_str)
+        result = hp.remove_characters(source_str, chars_str)
 
         # then
         self.assertEqual(expected_result, result)
@@ -34,7 +34,7 @@ class RemoveCharactersTest(unittest.TestCase):
         expected_result = "deris"
 
         # when
-        result = remove_characters(source_str, chars_str)
+        result = hp.remove_characters(source_str, chars_str)
 
         # then
         self.assertEqual(expected_result, result)
@@ -46,7 +46,7 @@ class RemoveCharactersTest(unittest.TestCase):
         expected_result = "mnd"
 
         # when
-        result = remove_characters(source_str, chars_str)
+        result = hp.remove_characters(source_str, chars_str)
 
         # then
         self.assertEqual(expected_result, result)
@@ -57,8 +57,8 @@ class RemoveCharactersTest(unittest.TestCase):
         expected_result = "Duis t tllus t urn condimntum mttis pllntsqu id."
 
         # when
-        result = remove_characters(source_str, 'a')
-        result = remove_characters(result, 'e')
+        result = hp.remove_characters(source_str, 'a')
+        result = hp.remove_characters(result, 'e')
 
         # then
         self.assertEqual(expected_result, result)

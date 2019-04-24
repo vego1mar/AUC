@@ -1,8 +1,8 @@
 import logging
 import re
-from .requesting import SpaceName
-from .helpers import get_tag_type_name
-from .helpers import remove_characters
+import json_assist as ja
+import requesting as rq
+import helpers as hp
 
 
 class Trigger:
@@ -30,6 +30,9 @@ class Trigger:
     def to_string(self):
         raise NotImplementedError
 
+    def to_json(self):
+        raise NotImplementedError
+
 
 class Find(Trigger):
     """Finds the first occurrence of text.\n
@@ -46,9 +49,9 @@ class Find(Trigger):
         self._find_text(target, set_spaces)
 
     def _find_text(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._find_text_in_string(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._find_text_in_string(set_spaces.work_space)
         else:
             return
@@ -66,6 +69,9 @@ class Find(Trigger):
     def to_string(self):
         return Find.__name__ + '(name=' + self._text + ')'
 
+    def to_json(self):
+        return ja.find_trigger_to_json(self)
+
 
 class FindNext(Trigger):
     """Finds the second occurrence of text.\n
@@ -82,9 +88,9 @@ class FindNext(Trigger):
         self._find_next(target, set_spaces)
 
     def _find_next(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._find_next_text(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._find_next_text(set_spaces.work_space)
         else:
             return
@@ -103,6 +109,9 @@ class FindNext(Trigger):
 
     def to_string(self):
         return FindNext.__name__ + '(text=' + self._text + ')'
+
+    def to_json(self):
+        return ja.find_next_trigger_to_json(self)
 
 
 class TagType:
@@ -134,9 +143,9 @@ class RetrieveTags(Trigger):
         self._retrieve_tags(target, set_spaces)
 
     def _retrieve_tags(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._retrieve_tags_from(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._retrieve_tags_from(set_spaces.work_space)
         else:
             return
@@ -174,8 +183,11 @@ class RetrieveTags(Trigger):
         self.set_result_list(tags_list)
 
     def to_string(self):
-        return RetrieveTags.__name__ + '(name=' + self._name + ', type=' + get_tag_type_name(self._type) \
+        return RetrieveTags.__name__ + '(name=' + self._name + ', type=' + hp.get_tag_type_name(self._type) \
                + ', amount=' + str(self._amount) + ')'
+
+    def to_json(self):
+        return ja.retrieve_tags_trigger_to_json(self)
 
 
 class SelectElement(Trigger):
@@ -192,7 +204,7 @@ class SelectElement(Trigger):
         self._position = int(position)
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.LIST:
+        if target.set_name == rq.SpaceName.LIST:
             self._select_element(set_spaces)
             set_spaces.work_space = self.get_result()
             set_spaces.list_space = self.get_result_list()
@@ -205,6 +217,9 @@ class SelectElement(Trigger):
 
     def to_string(self):
         return SelectElement.__name__ + '(position=' + str(self._position) + ')'
+
+    def to_json(self):
+        return ja.select_element_trigger_to_json(self)
 
 
 class FetchAttribute(Trigger):
@@ -219,9 +234,9 @@ class FetchAttribute(Trigger):
         self._name = name
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._fetch_attribute_value(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._fetch_attribute_value(set_spaces.work_space)
         else:
             return
@@ -250,6 +265,9 @@ class FetchAttribute(Trigger):
     def to_string(self):
         return FetchAttribute.__name__ + '(name=' + self._name + ')'
 
+    def to_json(self):
+        return ja.fetch_attribute_trigger_to_json(self)
+
 
 class GetRegexMatch(Trigger):
     """It does a regex search within a single string and returns its group (the matched substring).\n
@@ -263,9 +281,9 @@ class GetRegexMatch(Trigger):
         self._regex = regex
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._get_regex_search_group(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._get_regex_search_group(set_spaces.work_space)
         else:
             return
@@ -284,6 +302,9 @@ class GetRegexMatch(Trigger):
     def to_string(self):
         return GetRegexMatch.__name__ + '(regex=' + self._regex + ')'
 
+    def to_json(self):
+        return ja.get_regex_match_trigger_to_json(self)
+
 
 class CutAside(Trigger):
     """Deletes some characters from string on both sides of it.\n
@@ -301,9 +322,9 @@ class CutAside(Trigger):
         self._right = int(right)
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._cut_aside(set_spaces.web_space)
-        elif target.set_name == SpaceName.WORK:
+        elif target.set_name == rq.SpaceName.WORK:
             self._cut_aside(set_spaces.work_space)
         else:
             return
@@ -328,6 +349,9 @@ class CutAside(Trigger):
     def to_string(self):
         return CutAside.__name__ + '(left=' + str(self._left) + ', right=' + str(self._right) + ')'
 
+    def to_json(self):
+        return ja.cut_aside_trigger_to_json(self)
+
 
 class SetWorkspace(Trigger):
     """Simply sets the work space.\n
@@ -341,12 +365,15 @@ class SetWorkspace(Trigger):
         self._text = text
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WORK:
+        if target.set_name == rq.SpaceName.WORK:
             self.set_result(self._text)
             set_spaces.work_space = self.get_result()
 
     def to_string(self):
         return SetWorkspace.__name__ + '(text=' + self._text + ')'
+
+    def to_json(self):
+        return ja.set_workspace_trigger_to_json(self)
 
 
 class GetSubset(Trigger):
@@ -365,9 +392,9 @@ class GetSubset(Trigger):
         self._end = end
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WEB:
+        if target.set_name == rq.SpaceName.WEB:
             self._get_subset(set_spaces.web_space)
-        if target.set_name == SpaceName.WORK:
+        if target.set_name == rq.SpaceName.WORK:
             self._get_subset(set_spaces.work_space)
         else:
             return
@@ -411,6 +438,9 @@ class GetSubset(Trigger):
     def to_string(self):
         return GetSubset.__name__ + '(begin=' + str(self._begin) + ', end=' + str(self._end) + ')'
 
+    def to_json(self):
+        return ja.get_subset_trigger_to_json(self)
+
 
 class AddText(Trigger):
     """Prepends and appends text to string.\n
@@ -425,12 +455,15 @@ class AddText(Trigger):
         self._append_text = append
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WORK:
+        if target.set_name == rq.SpaceName.WORK:
             self.set_result(self._prepend_text + str(set_spaces.work_space) + self._append_text)
             set_spaces.work_space = self.get_result()
 
     def to_string(self):
         return AddText.__name__ + '(prepend=' + self._prepend_text + ', append=' + self._append_text + ')'
+
+    def to_json(self):
+        return ja.add_text_trigger_to_json(self)
 
 
 class Delete(Trigger):
@@ -452,7 +485,7 @@ class Delete(Trigger):
         self._characters = characters
 
     def invoke(self, target, set_spaces):
-        if target.set_name == SpaceName.WORK:
+        if target.set_name == rq.SpaceName.WORK:
             self._delete_strings(set_spaces.work_space)
             self._delete_characters(self.get_result())
             set_spaces.work_space = self.get_result()
@@ -483,9 +516,12 @@ class Delete(Trigger):
         target_str = str(source_str)
 
         for i in range(0, len(self._characters)):
-            target_str = remove_characters(target_str, self._characters[i])
+            target_str = hp.remove_characters(target_str, self._characters[i])
 
         self.set_result(target_str)
 
     def to_string(self):
         return Delete.__name__ + '(string=' + self._string + ', characters=' + self._characters + ')'
+
+    def to_json(self):
+        return ja.delete_trigger_to_json(self)

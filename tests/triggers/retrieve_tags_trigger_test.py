@@ -1,11 +1,7 @@
 import unittest
-from collector.triggers import RetrieveTags
-from collector.triggers import TagType
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.requesting import SetSpaces
-from collector.helpers import fetch_file
-from collector.helpers import decode_base64
+import helpers as hp
+import requesting as rq
+import triggers as tr
 
 
 class RetrieveTagsConst:
@@ -15,24 +11,24 @@ class RetrieveTagsConst:
 class TestData1:
     def __init__(self):
         self.tag_name = "h1"
-        self.tag_type = TagType.SIMPLE
+        self.tag_type = tr.TagType.SIMPLE
         self.amount = 1
-        self.target = Target(SpaceName.WEB)
-        self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = decode_base64(fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
+        self.target = rq.Target(rq.SpaceName.WEB)
+        self.set_spaces = rq.SetSpaces()
+        self.set_spaces.web_space = hp.decode_base64(hp.fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
         h1 = b'PGgxPgogICAgICAgIEdPRyBHQUxBWFkKICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzPSJnbHgtaWNvbiBnbHgtYmlnLWhlY' \
              b'WRlcl9fbGFiZWwtaWNvbiI+PHVzZSB4bGluazpocmVmPSIjaWNvbi1yZWdpc3RlcmVkLXN5bWJvbCI+PC9zdmc+PC9oMT4='
-        self.expected_result = decode_base64(h1)
+        self.expected_result = hp.decode_base64(h1)
 
 
 class TestData2:
     def __init__(self):
         self.tag_name = "g"
-        self.tag_type = TagType.ATTRIBUTED
+        self.tag_type = tr.TagType.ATTRIBUTED
         self.amount = 2
-        self.target = Target(SpaceName.WEB)
-        self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = decode_base64(fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
+        self.target = rq.Target(rq.SpaceName.WEB)
+        self.set_spaces = rq.SetSpaces()
+        self.set_spaces.web_space = hp.decode_base64(hp.fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
         g1 = b'PGcgaWQ9ImNhbWVyYS1feDMzXzVweCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zM' \
              b'C4yLDcuNWgtMy40Yy0wLjUsMC0wLjktMC4zLTEuMi0wLjdsLTItMy43Yy0wLjItMC40LTAuNy0wLjctMS4yLTAuN2gtOS45CgkJYy' \
              b'0wLjUsMC0wLjksMC4zLTEuMiwwLjdsLTIsMy43QzkuMiw3LjIsOC43LDcuNSw4LjMsNy41SDQuOGMtMi4zLDAtNC4zLDEuNS00LjM' \
@@ -54,30 +50,30 @@ class TestData2:
              b'NSwzMC42eiBNMjguNCwyMS41CgkJYy0wLjMtMC4xLTAuNS0wLjEtMC44LDAuMWMtMS40LDEtMSwwLjgtMi43LDFjMC4xLTAuNi0wL' \
              b'jQtMS4xLTAuNC0xLjdjMC01LjgtNC4xLTEwLjktMTAtMTEuM2MxLjYtMy4zLDQuMS00LjksOC4xLTQuOQoJCWM1LjUsMCw5LDQsOS' \
              b'w5YzAsMS40LTAuNywyLjctMS40LDRjLTAuMSwwLjMtMC4yLDAuNiwwLDAuOGwyLDQuMkwyOC40LDIxLjV6Ii8+PC9nPg=='
-        self.expected_result_list = (decode_base64(g1), decode_base64(g2))
+        self.expected_result_list = (hp.decode_base64(g1), hp.decode_base64(g2))
 
 
 class TestData3:
     def __init__(self):
         self.tag_name = "link"
-        self.tag_type = TagType.META
+        self.tag_type = tr.TagType.META
         self.amount = 3
-        self.target = Target(SpaceName.WEB)
-        self.set_spaces = SetSpaces()
-        self.set_spaces.web_space = decode_base64(fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
+        self.target = rq.Target(rq.SpaceName.WEB)
+        self.set_spaces = rq.SetSpaces()
+        self.set_spaces.web_space = hp.decode_base64(hp.fetch_file(RetrieveTagsConst.TEST_FILE_PATH).encode('ascii'))
         link1 = b'PGxpbmsgcmVsPSJzaG9ydGN1dCBpY29uIiBocmVmPSIvZmF2aWNvbi5pY28/MyI+'
         link2 = b'PGxpbmsgcmVsPSJhcHBsZS10b3VjaC1pY29uIiBocmVmPSIvYXBwbGUtdG91Y2gtaWNvbi01N3g1Ny5wbmciIHNpemVzPSI1N3' \
                 b'g1NyI+'
         link3 = b'PGxpbmsgcmVsPSJhcHBsZS10b3VjaC1pY29uIiBocmVmPSIvYXBwbGUtdG91Y2gtaWNvbi03Mng3Mi5wbmciIHNpemVzPSI3Mn' \
                 b'g3MiI+'
-        self.expected_result_list = (decode_base64(link1), decode_base64(link2), decode_base64(link3))
+        self.expected_result_list = (hp.decode_base64(link1), hp.decode_base64(link2), hp.decode_base64(link3))
 
 
 class RetrieveTagsTriggerTest(unittest.TestCase):
     def test_invoke_1(self):
         # given
         dt = TestData1()
-        trigger = RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
+        trigger = tr.RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
 
         # when
         trigger.invoke(dt.target, dt.set_spaces)
@@ -88,7 +84,7 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
     def test_invoke_2(self):
         # given
         dt = TestData2()
-        trigger = RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
+        trigger = tr.RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
 
         # when
         trigger.invoke(dt.target, dt.set_spaces)
@@ -100,7 +96,7 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
     def test_invoke_3(self):
         # given
         dt = TestData3()
-        trigger = RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
+        trigger = tr.RetrieveTags(dt.tag_name, dt.tag_type, dt.amount)
 
         # when
         trigger.invoke(dt.target, dt.set_spaces)
@@ -109,6 +105,17 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
         self.assertEqual(dt.expected_result_list[0], str(trigger.get_result_list()[0]))
         self.assertEqual(dt.expected_result_list[1], str(trigger.get_result_list()[1]))
         self.assertEqual(dt.expected_result_list[2], str(trigger.get_result_list()[2]))
+
+    def test_json_encode(self):
+        # given
+        trigger = tr.RetrieveTags("v", tr.TagType.META, 0)
+        expected = '{\n "tag_name": "v",\n "tag_type": "META",\n "amount": 0\n}'
+
+        # when
+        result = tr.RetrieveTags.encode(trigger, trigger)
+
+        # then
+        self.assertEqual(expected, result)
 
 
 if __name__ == '__main__':

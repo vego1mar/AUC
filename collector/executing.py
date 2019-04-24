@@ -1,12 +1,11 @@
 import logging
-from .requesting import SpaceName
-from .requesting import SetSpaces
-from .helpers import fetch_html
+import requesting as rq
+import helpers as hp
 
 
 class ChainRequestExecution:
     def __init__(self, web_page):
-        self._set_spaces = SetSpaces()
+        self._set_spaces = rq.SetSpaces()
         self._set_spaces.web_space = web_page
         self._chain_request = []
         self._collectibles = {}
@@ -28,9 +27,9 @@ class ChainRequestExecution:
             self._acquire_collectible(target)
 
     def _alter_target_space(self, target, trigger):
-        if target.set_name in [SpaceName.WEB, SpaceName.WORK]:
+        if target.set_name in [rq.SpaceName.WEB, rq.SpaceName.WORK]:
             self._set_spaces.work_space = trigger.get_result()
-        elif target.set_name == SpaceName.LIST:
+        elif target.set_name == rq.SpaceName.LIST:
             self._set_spaces.work_space = trigger.get_result()
             self._set_spaces.list_space = trigger.get_result_list()
         else:
@@ -46,6 +45,18 @@ class ExecutionOrderEntry:
         self.chain_request = chain_request
         self.html_data = str(html_data)
 
+    def to_json(self):
+        result_json = '{\n "chain_request": {\n '
+
+        for request in self.chain_request:
+            result_json += '"invocation_request": ' + request.to_json() + ',\n '
+
+        result_json = result_json[0:(len(result_json) - 3)]
+        result_json += '}\n ,\n'
+        result_json += '"html_data": "' + self.html_data + '"'
+        result_json += '\n} '
+        return result_json
+
 
 class ExecutionOrder:
     def __init__(self):
@@ -57,7 +68,7 @@ class ExecutionOrder:
             return None
 
         url = execution_order_entry.html_data
-        execution_order_entry.html_data = fetch_html(url)
+        execution_order_entry.html_data = hp.fetch_html(url)
         self.list.append(execution_order_entry)
 
     def __iter__(self):

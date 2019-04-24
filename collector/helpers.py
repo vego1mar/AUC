@@ -1,3 +1,8 @@
+import requesting as rq
+import executing as ex
+import triggers as tr
+
+
 def fetch_html(full_url):
     import requests
     import logging
@@ -11,6 +16,9 @@ def fetch_html(full_url):
         logging.debug(exp.strerror)
     except requests.TooManyRedirects as exp:
         logging.debug(exp.strerror)
+    except requests.exceptions.InvalidSchema as exp:
+        logging.debug(exp.strerror)
+        return str()
 
     return req.text
 
@@ -42,14 +50,21 @@ def configure_logging(file_name):
 
 
 def get_tag_type_name(value):
-    from .triggers import TagType
-
-    if str(value) == str(TagType.SIMPLE):
+    if str(value) == str(tr.TagType.SIMPLE):
         return "SIMPLE"
-    elif str(value) == str(TagType.ATTRIBUTED):
+    elif str(value) == str(tr.TagType.ATTRIBUTED):
         return "ATTRIBUTED"
-    elif str(value) == str(TagType.META):
+    elif str(value) == str(tr.TagType.META):
         return "META"
+
+
+def get_set_name_str(value):
+    if str(value) == str(rq.SpaceName.WEB):
+        return "WEB"
+    elif str(value) == str(rq.SpaceName.WORK):
+        return "WORK"
+    elif str(value) == str(rq.SpaceName.LIST):
+        return "LIST"
 
 
 def remove_characters(source_str, char):
@@ -75,96 +90,78 @@ def get_web_space(base64_file_path):
 
 
 def get_entry_for_dobreprogramy_pl(web_space="", ver="_ver", date="_date", size="_size", selector_offset=(0, 0)):
-    from .requesting import SpaceName, Target, InvocationRequest
-    from .triggers import RetrieveTags, TagType, SelectElement, FetchAttribute, Find, GetSubset, GetRegexMatch
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WEB), RetrieveTags("meta", TagType.META, 30))
-    req_02 = InvocationRequest(Target(SpaceName.LIST), SelectElement(20 + selector_offset[0]))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, ver), FetchAttribute("content"))
-    req_04 = InvocationRequest(Target(SpaceName.LIST), SelectElement(26 + selector_offset[1]))
-    req_05 = InvocationRequest(Target(SpaceName.WORK, True, date), FetchAttribute("content"))
-    req_06 = InvocationRequest(Target(SpaceName.WEB), Find("divFileSize"))
-    req_07 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 273))
-    req_08 = InvocationRequest(Target(SpaceName.WORK, True, size), GetRegexMatch(r"[\d]+[.,]+[\d]+ [A-Z]+"))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.RetrieveTags("meta", tr.TagType.META, 30))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(20 + selector_offset[0]))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, ver), tr.FetchAttribute("content"))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(26 + selector_offset[1]))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, date), tr.FetchAttribute("content"))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("divFileSize"))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset(0, 273))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.GetRegexMatch(r"[\d]+[.,]+[\d]+ [A-Z]+"))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07, req_08)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)
 
 
 def get_entry_for_google_play_store(web_space="", app_url="", date="_gp_date", size="_gp_size", ver="_gp_ver"):
-    from .requesting import SpaceName, Target, InvocationRequest
-    from .triggers import SetWorkspace, CutAside, Find, GetSubset, GetRegexMatch
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WORK, True, "google_play_apk"), SetWorkspace(app_url))
-    req_02 = InvocationRequest(Target(SpaceName.WEB), Find("Updated"))
-    req_03 = InvocationRequest(Target(SpaceName.WORK), GetSubset('U', ']'))
-    req_04 = InvocationRequest(Target(SpaceName.WORK), GetRegexMatch(r">[A-Za-z]+ [\d]+[.,]+ [\d]+<"))
-    req_05 = InvocationRequest(Target(SpaceName.WORK, True, date), CutAside(1, 1))
-    req_06 = InvocationRequest(Target(SpaceName.WEB), Find("Updated"))
-    req_07 = InvocationRequest(Target(SpaceName.WORK), GetSubset('U', ']'))
-    req_08 = InvocationRequest(Target(SpaceName.WORK), GetRegexMatch(r">[\d]+[.,]+[\d]+[\w ]+<"))
-    req_09 = InvocationRequest(Target(SpaceName.WORK, True, size), CutAside(1, 1))
-    req_10 = InvocationRequest(Target(SpaceName.WEB), Find("Current Version"))
-    req_11 = InvocationRequest(Target(SpaceName.WORK), GetSubset('C', ']'))
-    req_12 = InvocationRequest(Target(SpaceName.WORK), GetRegexMatch(r">[\d.,]+<"))
-    req_13 = InvocationRequest(Target(SpaceName.WORK, True, ver), CutAside(1, 1))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "google_play_apk"), tr.SetWorkspace(app_url))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Updated"))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('U', ']'))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r">[A-Za-z]+ [\d]+[.,]+ [\d]+<"))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, date), tr.CutAside(1, 1))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Updated"))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('U', ']'))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r">[\d]+[.,]+[\d]+[\w ]+<"))
+    req_09 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.CutAside(1, 1))
+    req_10 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Current Version"))
+    req_11 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('C', ']'))
+    req_12 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r">[\d.,]+<"))
+    req_13 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, ver), tr.CutAside(1, 1))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07, req_08, req_09, req_10,
                      req_11, req_12, req_13)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)
 
 
 def get_entry_for_ms_store(web_space="", app_url="", size="_ms_size", link="_ms_link"):
-    from .requesting import Target, SpaceName, InvocationRequest
-    from .triggers import GetRegexMatch, SetWorkspace, GetSubset, Find
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("<h4>"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 7950))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, size), GetRegexMatch(r"[\d]+[.]+[\d]+ [A-Z]+"))
-    req_04 = InvocationRequest(Target(SpaceName.WORK, True, link), SetWorkspace(app_url))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("<h4>"))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset(0, 7950))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.GetRegexMatch(r"[\d]+[.]+[\d]+ [A-Z]+"))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, link), tr.SetWorkspace(app_url))
     chain_request = (req_01, req_02, req_03, req_04)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)
 
 
 def get_entry_for_itunes(web_space="", app_url="", ver="_i_ver", size="_i_size"):
-    from .requesting import Target, SpaceName, InvocationRequest
-    from .triggers import CutAside, SetWorkspace, GetSubset, Find
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("data-test-version-number"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset('>', '<'))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, ver), CutAside(1, 1))
-    req_04 = InvocationRequest(Target(SpaceName.WEB), Find("data-test-app-info-size"))
-    req_05 = InvocationRequest(Target(SpaceName.WORK), GetSubset('>', '<'))
-    req_06 = InvocationRequest(Target(SpaceName.WORK, True, size), CutAside(1, 1))
-    req_07 = InvocationRequest(Target(SpaceName.WORK, True, "ios_itunes"), SetWorkspace(app_url))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("data-test-version-number"))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('>', '<'))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, ver), tr.CutAside(1, 1))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("data-test-app-info-size"))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('>', '<'))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.CutAside(1, 1))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "ios_itunes"), tr.SetWorkspace(app_url))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)
 
 
 def get_entry_for_majorgeeks(web_space="", date="_mg_date", size="_mg_size"):
     """Retrieves date and size from 'details' page of majorgeeks.com software.\n
        Example: https://www.majorgeeks.com/files/details/jetclean.html\n
     """
-    from .requesting import Target, SpaceName, InvocationRequest
-    from .triggers import Find, GetSubset, GetRegexMatch
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("<strong>Date:"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 328))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, date), GetRegexMatch(r"[\d]+/[\d]+/[\d]+"))
-    req_04 = InvocationRequest(Target(SpaceName.WEB), Find("<strong>Size:"))
-    req_05 = InvocationRequest(Target(SpaceName.WORK), GetSubset(0, 300))
-    req_06 = InvocationRequest(Target(SpaceName.WORK, True, size), GetRegexMatch(r"[\d]+[.,][\d]+ [A-Z]+"))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("<strong>Date:"))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset(0, 328))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, date), tr.GetRegexMatch(r"[\d]+/[\d]+/[\d]+"))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("<strong>Size:"))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset(0, 300))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.GetRegexMatch(r"[\d]+[.,][\d]+ [A-Z]+"))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)
 
 
 def get_entry_for_majorgeeks_2(web_space="", link="_mg_link"):
     """Retrieves variant link from 'mirror' page of majorgeeks.com software.\n
        Example: https://www.majorgeeks.com/mg/getmirror/jetclean,1.html\n
     """
-    from .requesting import Target, SpaceName, InvocationRequest
-    from .triggers import Find, GetSubset, CutAside
-    from .executing import ExecutionOrderEntry
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("Debug:"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), GetSubset(' ', '>'))
-    req_03 = InvocationRequest(Target(SpaceName.WORK, True, link), CutAside(1, 4))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Debug:"))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset(' ', '>'))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, link), tr.CutAside(1, 4))
     chain_request = (req_01, req_02, req_03)
-    return ExecutionOrderEntry(chain_request, web_space)
+    return ex.ExecutionOrderEntry(chain_request, web_space)

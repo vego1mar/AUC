@@ -1,6 +1,5 @@
 import unittest
-from collector.helpers import encode_base64
-from collector.helpers import decode_base64
+import helpers as hp
 
 
 class Base64Test(unittest.TestCase):
@@ -10,7 +9,7 @@ class Base64Test(unittest.TestCase):
         expected_text = b"VGFkZXVzeiBTem51aw=="
 
         # when
-        encoded_text = encode_base64(raw_text)
+        encoded_text = hp.encode_base64(raw_text)
 
         # then
         self.assertEqual(expected_text, encoded_text)
@@ -21,7 +20,7 @@ class Base64Test(unittest.TestCase):
         expected_text = r"Tadeusz Sznuk"
 
         # when
-        decoded_text = decode_base64(encoded_text)
+        decoded_text = hp.decode_base64(encoded_text)
 
         # then
         self.assertEqual(expected_text, decoded_text)
@@ -32,8 +31,8 @@ class Base64Test(unittest.TestCase):
         expected_encoded_text = b"TcSZxbxueSBixIVkxbosIGNocm/FhCBwdcWCayBzd8OzaiBpIHN6ZcWbxIcgZmxhZy4="
 
         # when
-        encoded_text = encode_base64(raw_text)
-        decoded_text = decode_base64(encoded_text)
+        encoded_text = hp.encode_base64(raw_text)
+        decoded_text = hp.decode_base64(encoded_text)
 
         # then
         self.assertEqual(expected_encoded_text, encoded_text)

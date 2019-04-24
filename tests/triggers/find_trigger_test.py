@@ -1,17 +1,15 @@
 import unittest
-from collector.triggers import Find
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.requesting import SetSpaces
+import triggers as tr
+import requesting as rq
 
 
 class FindTriggerTest(unittest.TestCase):
     def test_invoke_1(self):
         # given
-        target = Target(SpaceName.WEB)
-        set_spaces = SetSpaces()
+        target = rq.Target(rq.SpaceName.WEB)
+        set_spaces = rq.SetSpaces()
         text_to_find = "luna"
-        trigger = Find(text_to_find)
+        trigger = tr.Find(text_to_find)
         set_spaces.web_space = "sanguinem-luna-luminarae"
         expected_result = set_spaces.web_space[set_spaces.web_space.index(text_to_find):]
 
@@ -20,6 +18,17 @@ class FindTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(trigger.get_result(), expected_result)
+
+    def test_json_encode(self):
+        # given
+        trigger = tr.Find("ij")
+        expected = '{\n "text": "ij"\n}'
+
+        # when
+        result = tr.Find.encode(trigger, trigger)
+
+        # then
+        self.assertEqual(expected, result)
 
 
 if __name__ == '__main__':

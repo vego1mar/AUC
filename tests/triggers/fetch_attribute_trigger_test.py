@@ -75,17 +75,6 @@ class FetchAttributeTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(dt.expected_result, trigger.get_result())
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.FetchAttribute("href")
-        expected = '{\n "name": "href"\n}'
-
-        # when
-        result = tr.FetchAttribute.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

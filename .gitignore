@@ -3,3 +3,4 @@ test_log.txt
 .scannerwork/
 venv/
 *.pyc
+/runtime

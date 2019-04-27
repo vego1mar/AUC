@@ -2,102 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collector/json_assist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/executing/execution_order_entry_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/triggers/set_workspace_trigger_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/json_assist/json_write_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/AUC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AUC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/json_assist.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/json_assist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_bethesda_net_launcher_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_driver_booster_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_dvdfab_virtual_drive_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_epic_games_launcher_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_gog_galaxy_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_google_chrome_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_hashtab_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_irfanview_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_jetclean_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_keepass_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_malware_fighter_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_origin_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_potplayer_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_smart_defrag_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_speccy_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_steam_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/app_sumatrapdf_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/chain_request_execution_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/executing/info_collector_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/helpers/base64_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/helpers/remove_characters_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/battleNet_web_Mac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/battleNet_web_URL.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/battleNet_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/bethesdaNet_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/chrome_web_GooglePlay.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Mac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/chrome_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/chrome_web_iOS.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/dvdfab_vd_web_Windows1.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/dvdfab_vd_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/egl_web_WinMac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/egl_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/hashTab_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/idb_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/imf_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/irfanview_web_MSStore.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/irfanview_web_URL2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/irfanview_web_URL3.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/irfanview_web_Windows5.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/isd_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/jetclean_web_Windows3.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/keepass_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/lorem_ipsum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/origin_web_Mac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/origin_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/potplayer_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/speccy_web_Windows2.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/speccy_web_Windows3.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/steamClient_web_GooglePlay.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/steamClient_web_MSStore.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/steamClient_web_Mac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/steamClient_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/steamClient_web_official.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_MSStore.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows3.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows4.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows5.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows6.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows7.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows8.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows9.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/resources/uplay_web_Windows.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/run_all_tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/cut_aside_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/delete_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/fetch_attribute_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/find_next_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/find_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/get_regex_match_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/get_subset_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/tests/triggers/retrieve_tags_trigger_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_all_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,38 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/json_assist/json_write_app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="753">
-              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collector/json_assist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="195" column="43" lean-forward="true" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collector/requesting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -149,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Stub" />
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -181,9 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows4.base64" />
-        <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows5.base64" />
-        <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows6.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows7.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows8.base64" />
         <option value="$PROJECT_DIR$/collector/tests/resources/sumatrapdf_web_Windows9.base64" />
@@ -208,30 +102,33 @@
         <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/tests/cut_aside_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/set_workspace_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/helpers/remove_characters_test.py" />
         <option value="$PROJECT_DIR$/tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_json.py" />
-        <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/execution_order_entry_test.py" />
-        <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_test.py" />
         <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/json_assist.py" />
         <option value="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
+        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector/executing.py" />
+        <option value="$PROJECT_DIR$/collector/json_assist.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
+        <option value="$PROJECT_DIR$/tests/json_assist/json_write_app.py" />
       </list>
     </option>
   </component>
@@ -244,8 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,18 +167,20 @@
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="json_assist" type="462c0819:PsiDirectoryNode" />
+              <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="requesting" type="462c0819:PsiDirectoryNode" />
+              <item name="json_assist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,84 +213,98 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json">
-    <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_add_text_trigger_to_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.json_write_app">
+    <configuration name="json_write_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/json_assist" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/json_assist/json_write_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_all_tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/run_all_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/requesting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;json_assist_test.JSONAssistTestCase.test_add_text_trigger_to_json&quot;" />
+      <option name="_new_target" value="&quot;invocation_request_test.InvocationRequestTestCase.test_to_json_method&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_delete_trigger_to_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for target_test.TargetTestCase.test_to_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/json_assist" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/requesting" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;json_assist_test.JSONAssistTestCase.test_delete_trigger_to_json&quot;" />
+      <option name="_new_target" value="&quot;target_test.TargetTestCase.test_to_json&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_get_subset_trigger_to_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in app_bethesda_net_launcher_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/json_assist" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;json_assist_test.JSONAssistTestCase.test_get_subset_trigger_to_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/json_assist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;json_assist_test.JSONAssistTestCase.test_invocation_request_to_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in json_assist_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/json_assist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/json_assist/json_assist_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" />
-        <item itemvalue="Python tests.Unittests in json_assist_test.py" />
-        <item itemvalue="Python tests.Unittests for json_assist_test.JSONAssistTestCase.test_delete_trigger_to_json" />
-        <item itemvalue="Python tests.Unittests for json_assist_test.JSONAssistTestCase.test_add_text_trigger_to_json" />
-        <item itemvalue="Python tests.Unittests for json_assist_test.JSONAssistTestCase.test_get_subset_trigger_to_json" />
+        <item itemvalue="Python.json_write_app" />
+        <item itemvalue="Python.run_all_tests" />
+        <item itemvalue="Python tests.Unittests in app_bethesda_net_launcher_test.py" />
+        <item itemvalue="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" />
+        <item itemvalue="Python tests.Unittests for target_test.TargetTestCase.test_to_json" />
       </list>
     </recent_temporary>
   </component>
@@ -414,42 +325,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 46m 04s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_execution_order_to_json - 2019.04.27 at 22h 11m 57s.xml">
+      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_execution_order_to_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 50m 37s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_execution_order_to_json - 2019.04.27 at 22h 16m 37s.xml">
+      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_execution_order_to_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 51m 22s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_execution_order_to_json - 2019.04.27 at 22h 17m 24s.xml">
+      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_execution_order_to_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 55m 13s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_execution_order_to_json - 2019.04.27 at 22h 19m 07s.xml">
+      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_execution_order_to_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 55m 16s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_to_json_method - 2019.04.27 at 22h 34m 22s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 19h 59m 53s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_target_test_TargetTestCase_test_to_json - 2019.04.27 at 22h 34m 56s.xml">
+      <configuration name="Unittests for target_test.TargetTestCase.test_to_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 20h 00m 01s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_to_json_method - 2019.04.27 at 22h 35m 49s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 20h 02m 58s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_to_json_method - 2019.04.27 at 22h 36m 15s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 20h 06m 04s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_to_json_method - 2019.04.27 at 22h 37m 04s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_to_json_method" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_json_assist_test_JSONAssistTestCase_test_invocation_request_to_json - 2019.04.24 at 20h 06m 33s.xml">
-      <configuration name="Unittests for json_assist_test.JSONAssistTestCase.test_invocation_request_to_json" configurationId="tests" />
+    <history-entry file="Unittests_in_app_bethesda_net_launcher_test_py - 2019.04.27 at 23h 24m 27s.xml">
+      <configuration name="Unittests in app_bethesda_net_launcher_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1566" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.23979262" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20349967" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.24756967" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -506,56 +417,56 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="ExecutionOrderJSON.encode(eo1, eo1)" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>hp.encode_base64(json_str_2)</expression-string>
+        <expression-string>isinstance(entry.__class__, ex.ExecutionOrderEntry.__class__)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hp.encode_base64(json_str_1)</expression-string>
+        <expression-string>entry.__class__</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hp.encode_base64(json_str)</expression-string>
+        <expression-string>ex.ExecutionOrderEntry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hp.encode_base64(expected_json_2)</expression-string>
+        <expression-string>entry.chain_request</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hp.encode_base64(expected_json_1)</expression-string>
+        <expression-string>type(ex.ExecutionOrderEntry)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fields['target'].replace('\n', '')</expression-string>
+        <expression-string>entry is collector.executing.ExecutionOrderEntry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(fields).replace(r&quot;\'&quot;, r&quot;\n&quot;)</expression-string>
+        <expression-string>entry is ex.ExecutionOrderEntry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(fields).replace(r'\\n', r'\n')</expression-string>
+        <expression-string>type(entry) == ex.ExecutionOrderEntry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(fields).replace('\\n', '\n').replace(r'\'', r'\n')</expression-string>
+        <expression-string>type(entry)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>type(entry) == type(ex.ExecutionOrderEntry)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -616,25 +527,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2688">
-          <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_potplayer_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -702,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
@@ -759,102 +641,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/delete_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2659">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,32 +689,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/requesting/invocation_request_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/execution_order_entry_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,16 +707,6 @@
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/requesting/target_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -968,28 +730,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/requesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="753">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/delete_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/requesting/target_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/requesting/invocation_request_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="168">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py">
+    <entry file="file:///usr/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
-          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2560">
+          <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -998,11 +907,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/json_assist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="195" column="43" lean-forward="true" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/json_assist/json_write_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>

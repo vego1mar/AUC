@@ -19,17 +19,6 @@ class FindTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(trigger.get_result(), expected_result)
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.Find("ij")
-        expected = '{\n "text": "ij"\n}'
-
-        # when
-        result = tr.Find.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

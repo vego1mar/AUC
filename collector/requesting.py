@@ -1,6 +1,5 @@
 import helpers as hp
 import json_assist as ja
-import triggers as tr
 
 
 class SetSpaces:

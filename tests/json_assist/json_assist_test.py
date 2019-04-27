@@ -1,4 +1,5 @@
 import unittest
+import executing as ex
 import helpers as hp
 import json_assist as ja
 import requesting as rq
@@ -163,6 +164,116 @@ class JSONAssistTestCase(unittest.TestCase):
         # then
         self.assertEqual(expected_str_1, json_str_1)
         self.assertEqual(expected_str_2, json_str_2)
+
+    def test_chain_request_to_json(self):
+        # given
+        req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("icon"))
+        req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.RetrieveTags("meta", tr.TagType.META, 2))
+        req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(1))
+        chain_request_1 = (req_1, req_2, req_3)
+        chain_request_2 = [req_1, req_2, req_3]
+        json_1 = b'ewoJInJlcXVlc3RfMSI6IHsKCQkidGFyZ2V0IjogewoJCQkic2V0X25hbWUiOiAiV0VCIiwKCQkJImlzX2dhdGhlcmluZ19y' \
+                 b'ZXF1ZXN0IjogZmFsc2UsCgkJCSJjb2xsZWN0aWJsZV9uYW1lIjogImdlbmVyYWwiCgkJfSwKCQkiZmluZF90cmlnZ2VyIjog' \
+                 b'CXsKCQkJInRleHQiOiAiaWNvbiIKCQl9Cgl9LAoJInJlcXVlc3RfMiI6IHsKCQkidGFyZ2V0IjogewoJCQkic2V0X25hbWUi' \
+                 b'OiAiV09SSyIsCgkJCSJpc19nYXRoZXJpbmdfcmVxdWVzdCI6IGZhbHNlLAoJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5l' \
+                 b'cmFsIgoJCX0sCgkJInJldHJpZXZlX3RhZ3NfdHJpZ2dlciI6IAl7CgkJCSJuYW1lIjogIm1ldGEiLAoJCQkidHlwZSI6ICJN' \
+                 b'RVRBIiwKCQkJImFtb3VudCI6IDIKCQl9Cgl9LAoJInJlcXVlc3RfMyI6IHsKCQkidGFyZ2V0IjogewoJCQkic2V0X25hbWUi' \
+                 b'OiAiTElTVCIsCgkJCSJpc19nYXRoZXJpbmdfcmVxdWVzdCI6IGZhbHNlLAoJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5l' \
+                 b'cmFsIgoJCX0sCgkJInNlbGVjdF9lbGVtZW50X3RyaWdnZXIiOiAJewoJCQkicG9zaXRpb24iOiAxCgkJfQoJfQp9Cg=='
+        json_2 = b'CXsKCQkicmVxdWVzdF8xIjogewoJCQkidGFyZ2V0IjogewoJCQkJInNldF9uYW1lIjogIldFQiIsCgkJCQkiaXNfZ2F0aGVy' \
+                 b'aW5nX3JlcXVlc3QiOiBmYWxzZSwKCQkJCSJjb2xsZWN0aWJsZV9uYW1lIjogImdlbmVyYWwiCgkJCX0sCgkJCSJmaW5kX3Ry' \
+                 b'aWdnZXIiOiAJCXsKCQkJCSJ0ZXh0IjogImljb24iCgkJCX0KCQl9LAoJCSJyZXF1ZXN0XzIiOiB7CgkJCSJ0YXJnZXQiOiB7' \
+                 b'CgkJCQkic2V0X25hbWUiOiAiV09SSyIsCgkJCQkiaXNfZ2F0aGVyaW5nX3JlcXVlc3QiOiBmYWxzZSwKCQkJCSJjb2xsZWN0' \
+                 b'aWJsZV9uYW1lIjogImdlbmVyYWwiCgkJCX0sCgkJCSJyZXRyaWV2ZV90YWdzX3RyaWdnZXIiOiAJCXsKCQkJCSJuYW1lIjog' \
+                 b'Im1ldGEiLAoJCQkJInR5cGUiOiAiTUVUQSIsCgkJCQkiYW1vdW50IjogMgoJCQl9CgkJfSwKCQkicmVxdWVzdF8zIjogewoJ' \
+                 b'CQkidGFyZ2V0IjogewoJCQkJInNldF9uYW1lIjogIkxJU1QiLAoJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0IjogZmFsc2Us' \
+                 b'CgkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJCQl9LAoJCQkic2VsZWN0X2VsZW1lbnRfdHJpZ2dlciI6IAkJ' \
+                 b'ewoJCQkJInBvc2l0aW9uIjogMQoJCQl9CgkJfQoJfQo='
+        expected_json_1 = hp.decode_base64(json_1)
+        expected_json_2 = hp.decode_base64(json_2)
+
+        # when
+        json_str_1 = ja.chain_request_to_json(chain_request_1)
+        json_str_2 = ja.chain_request_to_json(chain_request_2, 1)
+
+        # then
+        self.assertEqual(expected_json_1, json_str_1)
+        self.assertEqual(expected_json_2, json_str_2)
+
+    def test_execution_order_entry_to_json(self):
+        # given
+        req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("find"))
+        req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "collectible"), tr.FetchAttribute("attr"))
+        chain_request = (req_1, req_2)
+        entry = ex.ExecutionOrderEntry(chain_request, "HTML or URL")
+        json_1 = b'ewoJImNoYWluX3JlcXVlc3QiOiB7CgkJInJlcXVlc3RfMSI6IHsKCQkJInRhcmdldCI6IHsKCQkJCSJzZXRfbmFtZSI6ICJX' \
+                 b'RUIiLAoJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0IjogZmFsc2UsCgkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5lcmFs' \
+                 b'IgoJCQl9LAoJCQkiZmluZF90cmlnZ2VyIjogCQl7CgkJCQkidGV4dCI6ICJmaW5kIgoJCQl9CgkJfSwKCQkicmVxdWVzdF8y' \
+                 b'IjogewoJCQkidGFyZ2V0IjogewoJCQkJInNldF9uYW1lIjogIldPUksiLAoJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0Ijog' \
+                 b'dHJ1ZSwKCQkJCSJjb2xsZWN0aWJsZV9uYW1lIjogImNvbGxlY3RpYmxlIgoJCQl9LAoJCQkiZmV0Y2hfYXR0cmlidXRlX3Ry' \
+                 b'aWdnZXIiOiAJCXsKCQkJCSJuYW1lIjogImF0dHIiCgkJCX0KCQl9Cgl9LAoJImh0bWxfZGF0YSI6ICJIVE1MIG9yIFVSTCIK' \
+                 b'fQo='
+        json_2 = b'CXsKCQkiY2hhaW5fcmVxdWVzdCI6IHsKCQkJInJlcXVlc3RfMSI6IHsKCQkJCSJ0YXJnZXQiOiB7CgkJCQkJInNldF9uYW1l' \
+                 b'IjogIldFQiIsCgkJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0IjogZmFsc2UsCgkJCQkJImNvbGxlY3RpYmxlX25hbWUiOiAi' \
+                 b'Z2VuZXJhbCIKCQkJCX0sCgkJCQkiZmluZF90cmlnZ2VyIjogCQkJewoJCQkJCSJ0ZXh0IjogImZpbmQiCgkJCQl9CgkJCX0s' \
+                 b'CgkJCSJyZXF1ZXN0XzIiOiB7CgkJCQkidGFyZ2V0IjogewoJCQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCQkiaXNfZ2F0' \
+                 b'aGVyaW5nX3JlcXVlc3QiOiB0cnVlLAoJCQkJCSJjb2xsZWN0aWJsZV9uYW1lIjogImNvbGxlY3RpYmxlIgoJCQkJfSwKCQkJ' \
+                 b'CSJmZXRjaF9hdHRyaWJ1dGVfdHJpZ2dlciI6IAkJCXsKCQkJCQkibmFtZSI6ICJhdHRyIgoJCQkJfQoJCQl9CgkJfSwKCQki' \
+                 b'aHRtbF9kYXRhIjogIkhUTUwgb3IgVVJMIgoJfQo='
+        expected_json_1 = hp.decode_base64(json_1)
+        expected_json_2 = hp.decode_base64(json_2)
+
+        # when
+        json_str_1 = ja.execution_order_entry_to_json(entry)
+        json_str_2 = ja.execution_order_entry_to_json(entry, 1)
+
+        # then
+        self.assertEqual(expected_json_1, json_str_1)
+        self.assertEqual(expected_json_2, json_str_2)
+
+    def test_execution_order_to_json(self):
+        # given
+        req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.Delete("ab", "b"))
+        req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.GetSubset(0, 1))
+        entry_1 = ex.ExecutionOrderEntry((req_1, req_2), "html1")
+        req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r"^[\w]+;?$"))
+        entry_2 = ex.ExecutionOrderEntry([req_3], "html2")
+        execution_order = ex.ExecutionOrder()
+        execution_order.add_entry(entry_1, True)
+        execution_order.add_entry(entry_2, True)
+        json_1 = b'ewoJImVudHJ5XzEiOiB7CgkJImNoYWluX3JlcXVlc3QiOiB7CgkJCSJyZXF1ZXN0XzEiOiB7CgkJCQkidGFyZ2V0IjogewoJ' \
+                 b'CQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCQkiaXNfZ2F0aGVyaW5nX3JlcXVlc3QiOiBmYWxzZSwKCQkJCQkiY29sbGVj' \
+                 b'dGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJCQkJfSwKCQkJCSJkZWxldGVfdHJpZ2dlciI6IAkJCXsKCQkJCQkic3RyaW5nIjog' \
+                 b'ImFiIiwKCQkJCQkiY2hhcmFjdGVycyI6ICJiIgoJCQkJfQoJCQl9LAoJCQkicmVxdWVzdF8yIjogewoJCQkJInRhcmdldCI6' \
+                 b'IHsKCQkJCQkic2V0X25hbWUiOiAiTElTVCIsCgkJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0IjogZmFsc2UsCgkJCQkJImNv' \
+                 b'bGxlY3RpYmxlX25hbWUiOiAiZ2VuZXJhbCIKCQkJCX0sCgkJCQkiZ2V0X3N1YnNldF90cmlnZ2VyIjogCQkJewoJCQkJCQkJ' \
+                 b'CQkJImJlZ2luIjogMCwKCQkJCQkJCQkJCSJlbmQiOiAxCgkJCQl9CgkJCX0KCQl9LAoJCSJodG1sX2RhdGEiOiAiaHRtbDEi' \
+                 b'Cgl9LAoJImVudHJ5XzIiOiB7CgkJImNoYWluX3JlcXVlc3QiOiB7CgkJCSJyZXF1ZXN0XzEiOiB7CgkJCQkidGFyZ2V0Ijog' \
+                 b'ewoJCQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCQkiaXNfZ2F0aGVyaW5nX3JlcXVlc3QiOiBmYWxzZSwKCQkJCQkiY29s' \
+                 b'bGVjdGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJCQkJfSwKCQkJCSJnZXRfcmVnZXhfbWF0Y2hfdHJpZ2dlciI6IAkJCXsKCQkJ' \
+                 b'CQkibmFtZSI6ICJeW1x3XSs7PyQiCgkJCQl9CgkJCX0KCQl9LAoJCSJodG1sX2RhdGEiOiAiaHRtbDIiCgl9Cn0K'
+        json_2 = b'CXsKCQkiZW50cnlfMSI6IHsKCQkJImNoYWluX3JlcXVlc3QiOiB7CgkJCQkicmVxdWVzdF8xIjogewoJCQkJCSJ0YXJnZXQi' \
+                 b'OiB7CgkJCQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCQkJImlzX2dhdGhlcmluZ19yZXF1ZXN0IjogZmFsc2UsCgkJCQkJ' \
+                 b'CSJjb2xsZWN0aWJsZV9uYW1lIjogImdlbmVyYWwiCgkJCQkJfSwKCQkJCQkiZGVsZXRlX3RyaWdnZXIiOiAJCQkJewoJCQkJ' \
+                 b'CQkic3RyaW5nIjogImFiIiwKCQkJCQkJImNoYXJhY3RlcnMiOiAiYiIKCQkJCQl9CgkJCQl9LAoJCQkJInJlcXVlc3RfMiI6' \
+                 b'IHsKCQkJCQkidGFyZ2V0IjogewoJCQkJCQkic2V0X25hbWUiOiAiTElTVCIsCgkJCQkJCSJpc19nYXRoZXJpbmdfcmVxdWVz' \
+                 b'dCI6IGZhbHNlLAoJCQkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJCQkJCX0sCgkJCQkJImdldF9zdWJzZXRf' \
+                 b'dHJpZ2dlciI6IAkJCQl7CgkJCQkJCQkJCQkJCSJiZWdpbiI6IDAsCgkJCQkJCQkJCQkJCSJlbmQiOiAxCgkJCQkJfQoJCQkJ' \
+                 b'fQoJCQl9LAoJCQkiaHRtbF9kYXRhIjogImh0bWwxIgoJCX0sCgkJImVudHJ5XzIiOiB7CgkJCSJjaGFpbl9yZXF1ZXN0Ijog' \
+                 b'ewoJCQkJInJlcXVlc3RfMSI6IHsKCQkJCQkidGFyZ2V0IjogewoJCQkJCQkic2V0X25hbWUiOiAiV09SSyIsCgkJCQkJCSJp' \
+                 b'c19nYXRoZXJpbmdfcmVxdWVzdCI6IGZhbHNlLAoJCQkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJCQkJCX0s' \
+                 b'CgkJCQkJImdldF9yZWdleF9tYXRjaF90cmlnZ2VyIjogCQkJCXsKCQkJCQkJIm5hbWUiOiAiXltcd10rOz8kIgoJCQkJCX0K' \
+                 b'CQkJCX0KCQkJfSwKCQkJImh0bWxfZGF0YSI6ICJodG1sMiIKCQl9Cgl9Cg=='
+        expected_json_1 = hp.decode_base64(json_1)
+        expected_json_2 = hp.decode_base64(json_2)
+
+        # when
+        json_str_1 = ja.execution_order_to_json(execution_order)
+        json_str_2 = ja.execution_order_to_json(execution_order, 1)
+
+        # then
+        self.assertEqual(expected_json_1, json_str_1)
+        self.assertEqual(expected_json_2, json_str_2)
 
 
 if __name__ == '__main__':

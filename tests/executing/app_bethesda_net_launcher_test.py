@@ -1,24 +1,11 @@
 import unittest
 import logging
-from collector.requesting import InvocationRequest
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.triggers import Find
-from collector.triggers import SetWorkspace
-from collector.triggers import RetrieveTags
-from collector.triggers import TagType
-from collector.triggers import GetSubset
-from collector.triggers import CutAside
-from collector.triggers import SelectElement
-from collector.executing import ExecutionOrderEntry
-from collector.executing import ExecutionOrder
-from collector.executing import InfoCollector
-from collector.helpers import configure_logging
-from collector.helpers import decode_base64
-from collector.helpers import get_web_space
-from collector.helpers import fetch_html
+import executing as ex
+import helpers as hp
+import requesting as rq
+import triggers as tr
 
-configure_logging(r"../test_log.txt")
+hp.configure_logging(r"../test_log.txt")
 logging.debug("Tests for: Bethesda.net Launcher")
 
 
@@ -29,53 +16,54 @@ class BethesdaNetLauncherTestData:
     WEB_SPACE_HTML_PATH_2 = r"../resources/bethesdaNet_web_Windows.base64"
 
     def __init__(self):
-        self.execution_order = ExecutionOrder()
+        self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
-        self.expected_win_ver = decode_base64(b'MS40NS4xMA==')
-        self.expected_win_size = decode_base64(b'OC43IE1C')
-        self.expected_win_date = decode_base64(b'MjEuMDIuMjAxOQ==')
+        self.expected_win_ver = hp.decode_base64(b'MS40NS4xMA==')
+        self.expected_win_size = hp.decode_base64(b'OC43IE1C')
+        self.expected_win_date = hp.decode_base64(b'MjEuMDIuMjAxOQ==')
 
 
 class TestDataOnline(BethesdaNetLauncherTestData):
     def __init__(self):
         super().__init__()
-        self.execution_order.list[1].html_data = fetch_html(self.WEB_SPACE_URL_2)
+        self.execution_order.list[1].html_data = hp.fetch_html(self.WEB_SPACE_URL_2)
 
 
 def get_const_win_exe():
     win_exe = b'aHR0cDovL2Rvd25sb2FkLmNkcC5iZXRoZXNkYS5uZXQvQmV0aGVzZGFOZXRMYXVuY2hlcl9TZXR1cC5leGU='
-    return decode_base64(win_exe)
+    return hp.decode_base64(win_exe)
 
 
 def get_entry_1():
     app_website = BethesdaNetLauncherTestData.APP_WEBSITE
-    req_01 = InvocationRequest(Target(SpaceName.WORK, True, "app_website"), SetWorkspace(app_website))
-    req_02 = InvocationRequest(Target(SpaceName.WORK, True, "const_win_exe"), SetWorkspace(get_const_win_exe()))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_website))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "const_win_exe"),
+                                  tr.SetWorkspace(get_const_win_exe()))
     chain_request = (req_01, req_02)
-    return ExecutionOrderEntry(chain_request, str())
+    return ex.ExecutionOrderEntry(chain_request, str())
 
 
 def get_entry_2():
-    req_01 = InvocationRequest(Target(SpaceName.WEB), Find("h1"))
-    req_02 = InvocationRequest(Target(SpaceName.WORK), Find("version"))
-    req_03 = InvocationRequest(Target(SpaceName.WORK), GetSubset('>', '<'))
-    req_04 = InvocationRequest(Target(SpaceName.WORK, True, "Win_ver"), CutAside(1, 1))
-    req_05 = InvocationRequest(Target(SpaceName.WEB), Find("h1"))
-    req_06 = InvocationRequest(Target(SpaceName.WORK), RetrieveTags("span", TagType.SIMPLE, 2))
-    req_07 = InvocationRequest(Target(SpaceName.LIST), SelectElement(0))
-    req_08 = InvocationRequest(Target(SpaceName.WORK, True, "Win_size"), CutAside(6, 7))
-    req_09 = InvocationRequest(Target(SpaceName.LIST), SelectElement(1))
-    req_10 = InvocationRequest(Target(SpaceName.WORK, True, "Win_date"), CutAside(6, 7))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("h1"))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.Find("version"))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('>', '<'))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Win_ver"), tr.CutAside(1, 1))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("h1"))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.RetrieveTags("span", tr.TagType.SIMPLE, 2))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(0))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Win_size"), tr.CutAside(6, 7))
+    req_09 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(1))
+    req_10 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Win_date"), tr.CutAside(6, 7))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07, req_08, req_09, req_10)
-    return ExecutionOrderEntry(chain_request, get_web_space(BethesdaNetLauncherTestData.WEB_SPACE_HTML_PATH_2))
+    return ex.ExecutionOrderEntry(chain_request, hp.get_web_space(BethesdaNetLauncherTestData.WEB_SPACE_HTML_PATH_2))
 
 
 class BethesdaNetLauncherTest(unittest.TestCase):
     def test_package_collecting(self):
         # given
         dt = BethesdaNetLauncherTestData()
-        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
+        collector = ex.InfoCollector(dt.APP_NAME, dt.execution_order)
 
         # when
         collector.collect()
@@ -92,7 +80,7 @@ class BethesdaNetLauncherTest(unittest.TestCase):
     def test_package_collecting_online(self):
         # given
         dt = TestDataOnline()
-        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
+        collector = ex.InfoCollector(dt.APP_NAME, dt.execution_order)
 
         # when
         collector.collect()

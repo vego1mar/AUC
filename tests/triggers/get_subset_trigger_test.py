@@ -95,17 +95,6 @@ class GetSubsetTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(dt.expected_result, trigger.get_result())
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.GetSubset(" ", "\\")
-        expected = '{\n "begin": " ",\n "end": "\\\\"\n}'
-
-        # when
-        result = tr.GetSubset.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -20,6 +20,9 @@ from tests.executing.chain_request_execution_test import *
 from tests.executing.info_collector_test import *
 from tests.helpers.base64_test import *
 from tests.helpers.remove_characters_test import *
+from tests.json_assist.json_assist_test import *
+from tests.requesting.invocation_request_test import *
+from tests.requesting.target_test import *
 from tests.triggers.cut_aside_trigger_test import *
 from tests.triggers.delete_trigger_test import *
 from tests.triggers.fetch_attribute_trigger_test import *
@@ -118,6 +121,9 @@ def print_info():
     print_module_functions(InfoCollectorTest.__name__, InfoCollectorTest.__dict__)
     print_module_functions(Base64Test.__name__, Base64Test.__dict__)
     print_module_functions(RemoveCharactersTest.__name__, RemoveCharactersTest.__dict__)
+    print_module_functions(JSONAssistTestCase.__name__, JSONAssistTestCase.__dict__)
+    print_module_functions(InvocationRequestTestCase.__name__, InvocationRequestTestCase.__dict__)
+    print_module_functions(TargetTestCase.__name__, TargetTestCase.__dict__)
     print_module_functions(CutAsideTriggerTest.__name__, CutAsideTriggerTest.__dict__)
     print_module_functions(DeleteTriggerTest.__name__, DeleteTriggerTest.__dict__)
     print_module_functions(FetchAttributeTriggerTest.__name__, FetchAttributeTriggerTest.__dict__)

@@ -106,17 +106,6 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
         self.assertEqual(dt.expected_result_list[1], str(trigger.get_result_list()[1]))
         self.assertEqual(dt.expected_result_list[2], str(trigger.get_result_list()[2]))
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.RetrieveTags("v", tr.TagType.META, 0)
-        expected = '{\n "tag_name": "v",\n "tag_type": "META",\n "amount": 0\n}'
-
-        # when
-        result = tr.RetrieveTags.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

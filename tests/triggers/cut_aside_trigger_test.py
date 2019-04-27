@@ -76,17 +76,6 @@ class CutAsideTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(dt.expected_result, trigger.get_result())
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.CutAside(54, "45")
-        expected = '{\n "left": 54,\n "right": 45\n}'
-
-        # when
-        result = tr.CutAside.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

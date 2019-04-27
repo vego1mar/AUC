@@ -1,3 +1,4 @@
+import executing as ex
 import requesting as rq
 import helpers as hp
 import triggers as tr
@@ -42,6 +43,22 @@ def _get_value(value, is_string=True, use_comma=False):
 
 def _get_value_line(attribute, value, is_string_value=True, use_comma=True):
     return _get_attribute(attribute) + _get_value(value, is_string_value, use_comma)
+
+
+def _get_comma_ended_json_for_recursive_objects(json_str):
+    length = len(json_str) - 1
+    return json_str[0:length] + ',\n'
+
+
+def _get_indent_offset(prepend_indent_no=0):
+    return prepend_indent_no + 1
+
+
+def _get_json_for_closed_recursive_objects(json_str, prepend):
+    length = len(json_str) - 2
+    cancel_comma_end = json_str[0:length]
+    closed_json = cancel_comma_end + '\n' + prepend + _get_object_closing()
+    return closed_json
 
 
 def target_to_json(target, prepend_indent_no=0):
@@ -192,10 +209,10 @@ def invocation_request_to_json(request, prepend_indent_no=0):
         return None
 
     prepend = _get_indent() * prepend_indent_no
-    offset = prepend_indent_no + 1
+    offset = _get_indent_offset(prepend_indent_no)
     json_str = prepend + _get_object_opening()
     json_str += prepend + _get_indent() + _get_attribute("target") + target_to_json(request.target, offset)[offset:]
-    json_str = json_str[0:(len(json_str) - 1)] + ',\n'
+    json_str = _get_comma_ended_json_for_recursive_objects(json_str)
     json_str += prepend + _get_indent() + _get_attribute(_get_trigger_name(request.trigger))
     json_str += prepend + trigger_to_json(request.trigger, offset)[offset:]
     json_str += prepend + _get_object_closing()
@@ -250,3 +267,56 @@ def _get_trigger_name(trigger):
         return "add_text_trigger"
     elif isinstance(trigger, tr.Delete):
         return "delete_trigger"
+
+
+def chain_request_to_json(chain_request, prepend_indent_no=0):
+    if not isinstance(chain_request, (tuple, type([]))):
+        return None
+
+    prepend = _get_indent() * prepend_indent_no
+    offset = _get_indent_offset(prepend_indent_no)
+    no = int(1)
+    json_str = prepend + _get_object_opening()
+
+    for request in chain_request:
+        json_str += prepend + _get_indent() + _get_attribute("request_" + str(no))
+        json_str += invocation_request_to_json(request, offset)[offset:]
+        json_str = _get_comma_ended_json_for_recursive_objects(json_str)
+        no += 1
+
+    json_str = _get_json_for_closed_recursive_objects(json_str, prepend)
+    return json_str
+
+
+def execution_order_entry_to_json(entry, prepend_indent_no=0):
+    if not isinstance(entry, ex.ExecutionOrderEntry):
+        return None
+
+    prepend = _get_indent() * prepend_indent_no
+    offset = _get_indent_offset(prepend_indent_no)
+    json_str = prepend + _get_object_opening()
+    json_str += prepend + _get_indent() + _get_attribute("chain_request")
+    json_str += chain_request_to_json(entry.chain_request, offset)[offset:]
+    json_str = _get_comma_ended_json_for_recursive_objects(json_str)
+    json_str += prepend + _get_indent() + _get_value_line("html_data", entry.html_data, use_comma=False)
+    json_str += prepend + _get_object_closing()
+    return json_str
+
+
+def execution_order_to_json(execution_order, prepend_indent_no=0):
+    if not isinstance(execution_order, ex.ExecutionOrder):
+        return None
+
+    prepend = _get_indent() * prepend_indent_no
+    offset = _get_indent_offset(prepend_indent_no)
+    no = int(1)
+    json_str = prepend + _get_object_opening()
+
+    for entry in execution_order:
+        json_str += prepend + _get_indent() + _get_attribute("entry_" + str(no))
+        json_str += execution_order_entry_to_json(entry, offset)[offset:]
+        json_str = _get_comma_ended_json_for_recursive_objects(json_str)
+        no += 1
+
+    json_str = _get_json_for_closed_recursive_objects(json_str, prepend)
+    return json_str

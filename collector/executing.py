@@ -1,6 +1,7 @@
 import logging
 import requesting as rq
 import helpers as hp
+import json_assist as ja
 
 
 class ChainRequestExecution:
@@ -46,16 +47,7 @@ class ExecutionOrderEntry:
         self.html_data = str(html_data)
 
     def to_json(self):
-        result_json = '{\n "chain_request": {\n '
-
-        for request in self.chain_request:
-            result_json += '"invocation_request": ' + request.to_json() + ',\n '
-
-        result_json = result_json[0:(len(result_json) - 3)]
-        result_json += '}\n ,\n'
-        result_json += '"html_data": "' + self.html_data + '"'
-        result_json += '\n} '
-        return result_json
+        return ja.execution_order_entry_to_json(self)
 
 
 class ExecutionOrder:
@@ -73,6 +65,9 @@ class ExecutionOrder:
 
     def __iter__(self):
         return iter(self.list)
+
+    def to_json(self):
+        return ja.execution_order_to_json(self)
 
 
 class InfoCollector:

@@ -50,17 +50,6 @@ class GetRegexMatchTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(dt.expected_result, trigger.get_result())
 
-    def test_json_encode(self):
-        # given
-        trigger = tr.GetRegexMatch(r"^[a-z]+?$")
-        expected = '{\n "regex": "^[a-z]+?$"\n}'
-
-        # when
-        result = tr.GetRegexMatch.encode(trigger, trigger)
-
-        # then
-        self.assertEqual(expected, result)
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -28,6 +28,11 @@ def fetch_file(file_name):
         return str(file.readlines())
 
 
+def save_file(file_name, str_to_save):
+    with open(str(file_name), 'w') as file:
+        file.write(str_to_save)
+
+
 def encode_base64(raw_text):
     import base64
     return base64.b64encode(str(raw_text).encode('utf-8'))

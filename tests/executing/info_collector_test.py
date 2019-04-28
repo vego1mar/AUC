@@ -1,12 +1,8 @@
 import unittest
-from collector.requesting import InvocationRequest
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.executing import ExecutionOrder
-from collector.executing import ExecutionOrderEntry
-from collector.executing import InfoCollector
-from collector.triggers import Find
-from collector.helpers import fetch_file
+import executing as ex
+import helpers as hp
+import requesting as rq
+import triggers as tr
 
 
 class InfoCollectorTestData:
@@ -27,13 +23,13 @@ class InfoCollectorTestData:
         return self._expected_collectibles
 
     def _create_execution_order(self):
-        request_1 = InvocationRequest(Target(SpaceName.WEB), Find(text="lectus"))
-        request_2 = InvocationRequest(Target(SpaceName.WORK), Find(text="litora"))
-        request_3 = InvocationRequest(Target(SpaceName.WORK, True), Find(text="auctor"))
+        request_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find(text="lectus"))
+        request_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.Find(text="litora"))
+        request_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True), tr.Find(text="auctor"))
         chain_request_1 = (request_1, request_2, request_3)
-        html_data = fetch_file(InfoCollectorTestData.FILE_NAME_TO_LOAD)
-        entry_1 = ExecutionOrderEntry(chain_request_1, html_data)
-        execution_order = ExecutionOrder()
+        html_data = hp.fetch_file(InfoCollectorTestData.FILE_NAME_TO_LOAD)
+        entry_1 = ex.ExecutionOrderEntry(chain_request_1, html_data)
+        execution_order = ex.ExecutionOrder()
         execution_order.add_entry(entry_1, True)
         execution_order.add_entry(entry_1, True)
         self._execution_order = execution_order
@@ -43,7 +39,7 @@ class InfoCollectorTest(unittest.TestCase):
     def test_collect_1(self):
         # given
         data = InfoCollectorTestData()
-        collector = InfoCollector(data.get_app_name(), data.get_execution_order())
+        collector = ex.InfoCollector(data.get_app_name(), data.get_execution_order())
 
         # when
         collector.collect()

@@ -1,0 +1,46 @@
+{
+	"chain_request": {
+		"request_1": {
+			"target": {
+				"set_name": "WEB",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "<h4>"
+			}
+		},
+		"request_2": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": 0,
+								"end": 7950
+			}
+		},
+		"request_3": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "ms_store_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d]+[.]+[\d]+ [A-Z]+"
+			}
+		},
+		"request_4": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "ms_store_page"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://www.microsoft.com/en-us/p/irfanview/9nl0r0jnnzm0"
+			}
+		}
+	},
+	"html_data": "https://www.microsoft.com/en-us/p/irfanview/9nl0r0jnnzm0"
+}

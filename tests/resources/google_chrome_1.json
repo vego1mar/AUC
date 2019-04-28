@@ -1,0 +1,105 @@
+{
+	"chain_request": {
+		"request_1": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "app_website"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://www.google.com/chrome/"
+			}
+		},
+		"request_2": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64bit"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E494-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe"
+			}
+		},
+		"request_3": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_32bit"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E494-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dstable-arch_x86-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe"
+			}
+		},
+		"request_4": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "mac_dmg_10.10+"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+			}
+		},
+		"request_5": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_xp_exe"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E494-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dstable-arch_x86%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe"
+			}
+		},
+		"request_6": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_vista_exe"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E494-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dstable-arch_x86%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe"
+			}
+		},
+		"request_7": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "mac_dmg_10.6-10.8"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/dl/chrome/mac/legacy/GGRO/googlechrome.dmg"
+			}
+		},
+		"request_8": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "mac_dmg_10.9"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/dl/chrome/mac/legacy10_9/GGRO/googlechrome.dmg"
+			}
+		},
+		"request_9": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "linux_deb"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+			}
+		},
+		"request_10": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "linux_rpm"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm"
+			}
+		}
+	},
+	"html_data": ""
+}

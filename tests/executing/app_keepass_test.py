@@ -1,19 +1,11 @@
 import unittest
 import logging
-from collector.requesting import InvocationRequest
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.triggers import SetWorkspace
-from collector.executing import ExecutionOrderEntry
-from collector.executing import ExecutionOrder
-from collector.executing import InfoCollector
-from collector.helpers import configure_logging
-from collector.helpers import decode_base64
-from collector.helpers import get_web_space
-from collector.helpers import get_entry_for_dobreprogramy_pl
-from collector.helpers import get_entry_for_majorgeeks_2
+import executing as ex
+import helpers as hp
+import requesting as rq
+import triggers as tr
 
-configure_logging(r"../test_log.txt")
+hp.configure_logging(r"../test_log.txt")
 logging.debug("Tests for: KeePass Password Safe")
 
 
@@ -26,42 +18,42 @@ class KeePassTestData:
     WEB_SPACE_HTML_PATH_3 = r"../resources/keepass_web_Windows2.base64"
 
     def __init__(self):
-        self.execution_order = ExecutionOrder()
+        self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        exe_1 = decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS80NmZiMWQ5ZjE5Yzg0MjExYWU5MWVmMTdkMjI0OGQzZ'
-                              b'TlkNjgxNzcxL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
-        exe_2 = decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS8yODIxNDU3ZDNjMzdkMDQwNWYxYWMyYzBmOTdiODY3M'
-                              b'GM1NDM5NjdlL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
-        self.expected_win_ver = decode_base64(b'Mi40MQ==')
-        self.expected_win_date = decode_base64(b'MjAxOS0wMS0wOQ==')
-        self.expected_win_size = decode_base64(b'MywxNSBNQg==')
+        exe_1 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS80NmZiMWQ5ZjE5Yzg0MjExYWU5MWVmMTdkMjI0OGQzZ'
+                                 b'TlkNjgxNzcxL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
+        exe_2 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS8yODIxNDU3ZDNjMzdkMDQwNWYxYWMyYzBmOTdiODY3M'
+                                 b'GM1NDM5NjdlL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
+        self.expected_win_ver = hp.decode_base64(b'Mi40MQ==')
+        self.expected_win_date = hp.decode_base64(b'MjAxOS0wMS0wOQ==')
+        self.expected_win_size = hp.decode_base64(b'MywxNSBNQg==')
         self.expected_win_exe_tuple = (exe_1, exe_2)
 
 
 def get_entry_1():
     app_website = KeePassTestData.WEB_SPACE_URL_1
-    req_01 = InvocationRequest(Target(SpaceName.WORK, True, "app_website"), SetWorkspace(app_website))
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_website))
     chain_request = (req_01,)
-    return ExecutionOrderEntry(chain_request, str())
+    return ex.ExecutionOrderEntry(chain_request, str())
 
 
 def get_entry_2():
-    web_space = get_web_space(KeePassTestData.WEB_SPACE_HTML_PATH_2)
-    return get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
+    web_space = hp.get_web_space(KeePassTestData.WEB_SPACE_HTML_PATH_2)
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
 
 
 def get_entry_3():
-    web_space = get_web_space(KeePassTestData.WEB_SPACE_HTML_PATH_3)
-    return get_entry_for_majorgeeks_2(web_space, "win_exe")
+    web_space = hp.get_web_space(KeePassTestData.WEB_SPACE_HTML_PATH_3)
+    return hp.get_entry_for_majorgeeks_2(web_space, "win_exe")
 
 
 class KeePassTest(unittest.TestCase):
     def test_package_collecting(self):
         # given
         dt = KeePassTestData()
-        collector = InfoCollector(dt.APP_NAME, dt.execution_order)
+        collector = ex.InfoCollector(dt.APP_NAME, dt.execution_order)
 
         # when
         collector.collect()

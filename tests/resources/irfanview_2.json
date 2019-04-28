@@ -1,0 +1,907 @@
+{
+	"chain_request": {
+		"request_1": {
+			"target": {
+				"set_name": "WEB",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "64-bit downloads"
+			}
+		},
+		"request_2": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"retrieve_tags_trigger": 		{
+				"name": "a",
+				"type": "ATTRIBUTED",
+				"amount": 6
+			}
+		},
+		"request_3": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_4": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_5": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_6": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_7": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_8": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_de"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_9": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 3
+			}
+		},
+		"request_10": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_de"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_11": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 4
+			}
+		},
+		"request_12": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_plugins"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_13": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 5
+			}
+		},
+		"request_14": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_plugins"
+			},
+			"fetch_attribute_trigger": 		{
+				"name": "href"
+			}
+		},
+		"request_15": {
+			"target": {
+				"set_name": "WEB",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "64-bit downloads"
+			}
+		},
+		"request_16": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"retrieve_tags_trigger": 		{
+				"name": "p",
+				"type": "SIMPLE",
+				"amount": 3
+			}
+		},
+		"request_17": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_18": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_19": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_20": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_21": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_22": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_23": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_24": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_25": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		},
+		"request_26": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_27": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_28": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_29": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_30": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_31": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_32": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_33": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_34": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_35": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_36": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 0
+			}
+		},
+		"request_37": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_38": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_39": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_40": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		},
+		"request_41": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_42": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_43": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_de_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_44": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_45": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_46": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_de_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_47": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_48": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_49": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_de_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		},
+		"request_50": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_51": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_52": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_53": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_54": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_de_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_55": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_56": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_57": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_58": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_59": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_de_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_60": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 1
+			}
+		},
+		"request_61": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_62": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_63": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_64": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_de_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		},
+		"request_65": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_66": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_67": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_plugins_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_68": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_69": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_70": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_plugins_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_71": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_72": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_73": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_exe_64_plugins_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		},
+		"request_74": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_75": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_76": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_77": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_78": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_plugins_ver"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[A-Za-z]+ [\d.]+"
+			}
+		},
+		"request_79": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_80": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_81": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_82": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_subset_trigger": 		{
+								"begin": "<strong>",
+								"end": "</strong>"
+			}
+		},
+		"request_83": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_plugins_size"
+			},
+			"get_regex_match_trigger": 		{
+				"name": "[\d.]+ [A-Z]+"
+			}
+		},
+		"request_84": {
+			"target": {
+				"set_name": "LIST",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"select_element_trigger": 		{
+				"position": 2
+			}
+		},
+		"request_85": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_86": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"find_next_trigger": 		{
+				"text": "alt-download"
+			}
+		},
+		"request_87": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": false,
+				"collectible_name": "general"
+			},
+			"get_regex_match_trigger": 		{
+				"name": ": [a-z0-9]+"
+			}
+		},
+		"request_88": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "win_zip_64_plugins_hash"
+			},
+			"cut_aside_trigger": 		{
+				"left": 2,
+				"right": 0
+			}
+		}
+	},
+	"html_data": "https://www.irfanview.com/64bit.htm"
+}

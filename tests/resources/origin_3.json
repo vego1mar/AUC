@@ -1,0 +1,35 @@
+{
+	"chain_request": {
+		"request_1": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "const_win_exe"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://www.dm.origin.com/download/legacy"
+			}
+		},
+		"request_2": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "const_mac_dmg"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://www.dm.origin.com/mac/download/legacy"
+			}
+		},
+		"request_3": {
+			"target": {
+				"set_name": "WORK",
+				"is_gathering_request": true,
+				"collectible_name": "app_website"
+			},
+			"set_workspace_trigger": 		{
+				"text": "https://www.origin.com/pol/en-us/store/download"
+			}
+		}
+	},
+	"html_data": ""
+}

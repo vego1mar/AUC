@@ -1,10 +1,8 @@
 import unittest
-from collector.requesting import InvocationRequest
-from collector.requesting import Target
-from collector.requesting import SpaceName
-from collector.triggers import Find
-from collector.executing import ChainRequestExecution
-from collector.helpers import fetch_file
+import executing as ex
+import helpers as hp
+import requesting as rq
+import triggers as tr
 
 
 class ChainRequestExecutionTestData:
@@ -12,14 +10,14 @@ class ChainRequestExecutionTestData:
 
     def __init__(self):
         self._chain_request_1 = []
-        self._web_page_1 = fetch_file(self.WEB_PAGE_1_FILE_NAME)
+        self._web_page_1 = hp.fetch_file(self.WEB_PAGE_1_FILE_NAME)
         self._expected_collectibles = {}
 
     def get_web_page_1(self):
         return self._web_page_1
 
     def get_chain_request_1(self):
-        request1 = InvocationRequest(Target(SpaceName.WEB), Find(text="velit"))
+        request1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find(text="velit"))
         self._chain_request_1.append(request1)
         return self._chain_request_1
 
@@ -31,7 +29,7 @@ class ChainRequestExecutionTest(unittest.TestCase):
     def test_execute_1(self):
         # given
         data = ChainRequestExecutionTestData()
-        executor = ChainRequestExecution(data.get_web_page_1())
+        executor = ex.ChainRequestExecution(data.get_web_page_1())
 
         # when
         executor.set_chain_request(data.get_chain_request_1())

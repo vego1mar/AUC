@@ -275,6 +275,34 @@ class JSONAssistTestCase(unittest.TestCase):
         self.assertEqual(expected_json_1, json_str_1)
         self.assertEqual(expected_json_2, json_str_2)
 
+    def test_json_to_target(self):
+        # given
+        expected_target = rq.Target(rq.SpaceName.WORK, True, "variant_installer")
+        str = b'CQkJInRhcmdldCI6IHsKCQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCSJpc19nYXRoZXJpbmdfcmVxdWVzdCI6IHRydWUsC' \
+              b'gkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJ2YXJpYW50X2luc3RhbGxlciIKCQkJfSw='
+        target_str = hp.decode_base64(str)
+        encoder = ja.JSONEncoder(target_str)
+
+        # when
+        target = encoder.json_to_target()
+
+        # then
+        self.assertIsInstance(target, rq.Target)
+        self.assertEqual(expected_target.to_json(), target.to_json())
+
+    def test_json_to_find_trigger(self):
+        # given
+        json_str = hp.decode_base64(b'CQkJImZpbmRfdHJpZ2dlciI6IAkJewoJCQkJInRleHQiOiAiaWQ9ImN0YSIiCgkJCX0=')
+        expected_trigger = tr.Find(hp.decode_base64(b'aWQ9ImN0YSI='))
+        encoder = ja.JSONEncoder(json_str)
+
+        # when
+        trigger = encoder.json_to_trigger()
+
+        # then
+        self.assertIsInstance(trigger, tr.Find)
+        self.assertEqual(expected_trigger.to_json(), trigger.to_json())
+
 
 if __name__ == '__main__':
     unittest.main()

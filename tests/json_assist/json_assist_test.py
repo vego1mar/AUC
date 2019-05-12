@@ -281,10 +281,10 @@ class JSONAssistTestCase(unittest.TestCase):
         str = b'CQkJInRhcmdldCI6IHsKCQkJCSJzZXRfbmFtZSI6ICJXT1JLIiwKCQkJCSJpc19nYXRoZXJpbmdfcmVxdWVzdCI6IHRydWUsC' \
               b'gkJCQkiY29sbGVjdGlibGVfbmFtZSI6ICJ2YXJpYW50X2luc3RhbGxlciIKCQkJfSw='
         target_str = hp.decode_base64(str)
-        encoder = ja.JSONEncoder(target_str)
+        decoder = ja.JSONDecoder(target_str)
 
         # when
-        target = encoder.json_to_target()
+        target = decoder.json_to_target()
 
         # then
         self.assertIsInstance(target, rq.Target)
@@ -294,13 +294,53 @@ class JSONAssistTestCase(unittest.TestCase):
         # given
         json_str = hp.decode_base64(b'CQkJImZpbmRfdHJpZ2dlciI6IAkJewoJCQkJInRleHQiOiAiaWQ9ImN0YSIiCgkJCX0=')
         expected_trigger = tr.Find(hp.decode_base64(b'aWQ9ImN0YSI='))
-        encoder = ja.JSONEncoder(json_str)
+        decoder = ja.JSONDecoder(json_str)
 
         # when
-        trigger = encoder.json_to_trigger()
+        trigger = decoder.json_to_trigger()
 
         # then
         self.assertIsInstance(trigger, tr.Find)
+        self.assertEqual(expected_trigger.to_json(), trigger.to_json())
+
+    def test_json_to_find_next_trigger(self):
+        # given
+        json_str = hp.decode_base64(b'CQkJImZpbmRfbmV4dF90cmlnZ2VyIjogCQl7CgkJCQkidGV4dCI6ICJhbHQtZG93bmxvYWQiCgkJCX0=')
+        expected_trigger = tr.FindNext(hp.decode_base64(b'YWx0LWRvd25sb2Fk'))
+        decoder = ja.JSONDecoder(json_str)
+
+        # when
+        trigger = decoder.json_to_trigger()
+
+        # then
+        self.assertIsInstance(trigger, tr.FindNext)
+        self.assertEqual(expected_trigger.to_json(), trigger.to_json())
+
+    def test_json_to_retrieve_tags_trigger(self):
+        # given
+        json_str = hp.decode_base64(b'CQkJInJldHJpZXZlX3RhZ3NfdHJpZ2dlciI6IAkJewoJCQkJInRhZ19uYW1lIjogImEiLAoJCQkJIn'
+                                    b'RhZ190eXBlIjogIkFUVFJJQlVURUQiLAoJCQkJImFtb3VudCI6IDIKCQkJfQ==')
+        expected_trigger = tr.RetrieveTags('a', tr.TagType.ATTRIBUTED, 2)
+        decoder = ja.JSONDecoder(json_str)
+
+        # when
+        trigger = decoder.json_to_trigger()
+
+        # then
+        self.assertIsInstance(trigger, tr.RetrieveTags)
+        self.assertEqual(expected_trigger.to_json(), trigger.to_json())
+
+    def test_json_to_fetch_attribute_trigger(self):
+        # given
+        json_str = hp.decode_base64(b'CQkJImZldGNoX2F0dHJpYnV0ZV90cmlnZ2VyIjogCQl7CgkJCQkibmFtZSI6ICJjb250ZW50IgoJCQl9')
+        expected_trigger = tr.FetchAttribute(hp.decode_base64(b'Y29udGVudA=='))
+        decoder = ja.JSONDecoder(json_str)
+
+        # when
+        trigger = decoder.json_to_trigger()
+
+        # then
+        self.assertIsInstance(trigger, tr.FetchAttribute)
         self.assertEqual(expected_trigger.to_json(), trigger.to_json())
 
 

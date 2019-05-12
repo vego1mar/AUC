@@ -24,7 +24,7 @@ def _get_attribute(attribute):
 def _get_string_value(value):
     if str(value) == "True":
         return "true"
-    elif str(value) == "False":
+    if str(value) == "False":
         return "false"
 
     return str(value)
@@ -68,7 +68,7 @@ def target_to_json(target, prepend_indent_no=0):
 
     prepend = _get_indent() * prepend_indent_no
     json_str = prepend + _get_object_opening()
-    json_str += prepend + _get_indent() + _get_value_line("set_name", hp.get_set_name_str(target.set_name))
+    json_str += prepend + _get_indent() + _get_value_line("set_name", SpaceNameHelper.get_set_name_str(target.set_name))
     json_str += prepend + _get_indent() + _get_value_line("is_gathering_request", target.is_gathering_request, False)
     json_str += prepend + _get_indent() + _get_value_line("collectible_name", target.collectible_name, True, False)
     json_str += prepend + _get_object_closing()
@@ -104,7 +104,7 @@ def retrieve_tags_trigger_to_json(trigger, prepend_indent_no=0):
     prepend = _get_indent() * prepend_indent_no
     json_str = prepend + _get_object_opening()
     json_str += prepend + _get_indent() + _get_value_line("tag_name", trigger._name)
-    json_str += prepend + _get_indent() + _get_value_line("tag_type", hp.get_tag_type_name(trigger._type))
+    json_str += prepend + _get_indent() + _get_value_line("tag_type", TagTypeHelper.get_tag_type_name(trigger._type))
     json_str += prepend + _get_indent() + _get_value_line("amount", trigger._amount, False, False)
     json_str += prepend + _get_object_closing()
     return json_str
@@ -223,25 +223,25 @@ def invocation_request_to_json(request, prepend_indent_no=0):
 def trigger_to_json(trigger, prepend_indent_no=0):
     if isinstance(trigger, tr.Find):
         return find_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.FindNext):
+    if isinstance(trigger, tr.FindNext):
         return find_next_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.RetrieveTags):
+    if isinstance(trigger, tr.RetrieveTags):
         return retrieve_tags_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.FetchAttribute):
+    if isinstance(trigger, tr.FetchAttribute):
         return fetch_attribute_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.SelectElement):
+    if isinstance(trigger, tr.SelectElement):
         return select_element_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.SetWorkspace):
+    if isinstance(trigger, tr.SetWorkspace):
         return set_workspace_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.GetRegexMatch):
+    if isinstance(trigger, tr.GetRegexMatch):
         return get_regex_match_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.CutAside):
+    if isinstance(trigger, tr.CutAside):
         return cut_aside_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.GetSubset):
+    if isinstance(trigger, tr.GetSubset):
         return get_subset_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.AddText):
+    if isinstance(trigger, tr.AddText):
         return add_text_trigger_to_json(trigger, prepend_indent_no)
-    elif isinstance(trigger, tr.Delete):
+    if isinstance(trigger, tr.Delete):
         return delete_trigger_to_json(trigger, prepend_indent_no)
 
 
@@ -298,44 +298,57 @@ def execution_order_to_json(execution_order, prepend_indent_no=0):
     return json_str
 
 
-def _get_json_key_value_pair(json_str, key_str, is_boolean_value=False):
-    left_delimiter = '"'
-    right_delimiter = '"'
+class SpaceNameHelper:
+    WEB = 'WEB'
+    WORK = 'WORK'
+    LIST = 'LIST'
 
-    if is_boolean_value:
-        left_delimiter = ' '
-        right_delimiter = ','
+    @staticmethod
+    def get_set_name_str(obj):
+        if str(obj) == str(rq.SpaceName.WEB):
+            return SpaceNameHelper.WEB
+        if str(obj) == str(rq.SpaceName.WORK):
+            return SpaceNameHelper.WORK
+        if str(obj) == str(rq.SpaceName.LIST):
+            return SpaceNameHelper.LIST
 
-    key_idx = int(str(json_str).find(str(key_str)))
-    key_offset = key_idx + len(key_str) + 1
-    value_idx_begin = str(json_str[key_offset:]).find(left_delimiter)
-    value_idx_end = str(json_str[(key_offset + value_idx_begin + 1):]).find(right_delimiter)
-    lhs = value_idx_begin + key_offset + 1
-    rhs = value_idx_end + key_offset + 1 + value_idx_begin
-    return key_str, json_str[lhs:rhs]
+    @staticmethod
+    def get_set_name_obj(name):
+        if str(name) == SpaceNameHelper.WEB:
+            return rq.SpaceName.WEB
+        if str(name) == SpaceNameHelper.WORK:
+            return rq.SpaceName.WORK
+        if str(name) == SpaceNameHelper.LIST:
+            return rq.SpaceName.LIST
 
 
-class JSONEncoder:
+class JSONDecoder:
     def __init__(self, json_str):
         self.json_str = str(json_str)
 
     def json_to_target(self):
-        # TODO: refactor this -> JSONTargetAlgorithms
         target_str = str(self.json_str)
-        set_name = hp.get_set_name_obj(_get_json_key_value_pair(target_str, 'set_name')[1])
-        is_gathering_request = hp.get_boolean_obj(_get_json_key_value_pair(target_str, 'is_gathering_request', True)[1])
-        collectible_name = _get_json_key_value_pair(target_str, 'collectible_name')[1]
+        set_name_attr = Algorithms.get_attribute_value(target_str, TargetNames.SET_NAME)
+        is_request_attr = Algorithms.get_attribute_value(target_str, TargetNames.IS_GATHERING_REQUEST)
+        set_name = SpaceNameHelper.get_set_name_obj(set_name_attr)
+        is_gathering_request = hp.get_boolean_obj(is_request_attr)
+        collectible_name = Algorithms.get_attribute_value(target_str, TargetNames.COLLECTIBLE_NAME)
         target = rq.Target(set_name, is_gathering_request, collectible_name)
         return target
 
     def json_to_trigger(self):
         parser = JSONTriggerParser(self.json_str)
         parser.parse()
-        trigger = parser.get_trigger()
-        return trigger
+        return parser.get_trigger()
 
 
-class JSONTriggerNames:
+class TargetNames:
+    SET_NAME = 'set_name'
+    IS_GATHERING_REQUEST = 'is_gathering_request'
+    COLLECTIBLE_NAME = 'collectible_name'
+
+
+class TriggerNames:
     FIND = "find_trigger"
     FIND_NEXT = "find_next_trigger"
     RETRIEVE_TAGS = "retrieve_tags_trigger"
@@ -349,8 +362,12 @@ class JSONTriggerNames:
     DELETE = "delete_trigger"
 
 
-class JSONAttributesNames:
+class TriggerFieldsNames:
     TEXT = 'text'
+    TAG_NAME = 'tag_name'
+    TAG_TYPE = 'tag_type'
+    AMOUNT = 'amount'
+    NAME = 'name'
 
 
 class IJSONTriggerParser:
@@ -368,7 +385,7 @@ class JSONFindTriggerParser(IJSONTriggerParser):
         self.text = None
 
     def parse(self):
-        self.text = JSONTriggerAlgorithms.get_attribute_value(self._json_str, JSONAttributesNames.TEXT)
+        self.text = Algorithms.get_attribute_value(self._json_str, TriggerFieldsNames.TEXT)
         self._result_trigger = tr.Find(self.text)
 
     def get_trigger(self):
@@ -382,10 +399,35 @@ class JSONFindNextTriggerParser(IJSONTriggerParser):
         self.text = None
 
     def parse(self):
-        raise NotImplementedError
+        self.text = Algorithms.get_attribute_value(self._json_str, TriggerFieldsNames.TEXT)
+        self._result_trigger = tr.FindNext(self.text)
 
     def get_trigger(self):
-        raise NotImplementedError
+        return self._result_trigger
+
+
+class TagTypeHelper:
+    SIMPLE = 'SIMPLE'
+    ATTRIBUTED = 'ATTRIBUTED'
+    META = 'META'
+
+    @staticmethod
+    def get_tag_type_name(obj):
+        if str(obj) == str(tr.TagType.SIMPLE):
+            return TagTypeHelper.SIMPLE
+        if str(obj) == str(tr.TagType.ATTRIBUTED):
+            return TagTypeHelper.ATTRIBUTED
+        if str(obj) == str(tr.TagType.META):
+            return TagTypeHelper.META
+
+    @staticmethod
+    def get_tag_type_obj(name):
+        if str(name) == TagTypeHelper.SIMPLE:
+            return tr.TagType.SIMPLE
+        if str(name) == TagTypeHelper.ATTRIBUTED:
+            return tr.TagType.ATTRIBUTED
+        if str(name) == TagTypeHelper.META:
+            return tr.TagType.META
 
 
 class JSONRetrieveTagsTriggerParser(IJSONTriggerParser):
@@ -397,10 +439,14 @@ class JSONRetrieveTagsTriggerParser(IJSONTriggerParser):
         self.amount = None
 
     def parse(self):
-        raise NotImplementedError
+        self.tag_name = Algorithms.get_attribute_value(self._json_str, TriggerFieldsNames.TAG_NAME)
+        self.tag_type = Algorithms.get_attribute_value(self._json_str, TriggerFieldsNames.TAG_TYPE)
+        tag_type_obj = TagTypeHelper.get_tag_type_obj(self.tag_type)
+        self.amount = Algorithms.get_number_value(self._json_str, TriggerFieldsNames.AMOUNT)
+        self._result_trigger = tr.RetrieveTags(self.tag_name, tag_type_obj, self.amount)
 
     def get_trigger(self):
-        raise NotImplementedError
+        return self._result_trigger
 
 
 class JSONFetchAttributeTriggerParser(IJSONTriggerParser):
@@ -410,10 +456,11 @@ class JSONFetchAttributeTriggerParser(IJSONTriggerParser):
         self.name = None
 
     def parse(self):
-        raise NotImplementedError
+        self.name = Algorithms.get_attribute_value(self._json_str, TriggerFieldsNames.NAME)
+        self._result_trigger = tr.FetchAttribute(self.name)
 
     def get_trigger(self):
-        raise NotImplementedError
+        return self._result_trigger
 
 
 class JSONSelectElementTriggerParser(IJSONTriggerParser):
@@ -516,7 +563,7 @@ class JSONTriggerParser(IJSONTriggerParser):
         self._json_str = str(json_str)
         self._parser_chooser = JSONTriggerParserChooser()
         self._parser_chooser.set_json_str(self._json_str)
-        self.trigger_name = JSONTriggerAlgorithms.get_trigger_name(self._json_str)
+        self.trigger_name = Algorithms.get_trigger_name(self._json_str)
         self._parser = self._parser_chooser.get_trigger_parser(self.trigger_name)
 
     def parse(self):
@@ -538,29 +585,29 @@ class JSONTriggerParserChooser:
         self._json_str = str(json_str)
 
     def _set_functions(self):
-        self._functions[JSONTriggerNames.FIND] = self._get_find_trigger_parser
-        self._functions[JSONTriggerNames.FIND_NEXT] = self._get_find_next_trigger_parser
-        self._functions[JSONTriggerNames.RETRIEVE_TAGS] = self._get_retrieve_tags_trigger_parser
-        self._functions[JSONTriggerNames.FETCH_ATTRIBUTE] = self._get_fetch_attribute_trigger_parser
-        self._functions[JSONTriggerNames.SELECT_ELEMENT] = self._get_select_element_trigger_parser
-        self._functions[JSONTriggerNames.SET_WORKSPACE] = self._get_set_workspace_trigger_parser
-        self._functions[JSONTriggerNames.GET_REGEX_MATCH] = self._get_get_regex_match_trigger_parser
-        self._functions[JSONTriggerNames.CUT_ASIDE] = self._get_cut_aside_trigger_parser
-        self._functions[JSONTriggerNames.GET_SUBSET] = self._get_get_subset_trigger_parser
-        self._functions[JSONTriggerNames.ADD_TEXT] = self._get_add_text_trigger_parser
-        self._functions[JSONTriggerNames.DELETE] = self._get_delete_trigger_parser
+        self._functions[TriggerNames.FIND] = self._get_find_trigger_parser
+        self._functions[TriggerNames.FIND_NEXT] = self._get_find_next_trigger_parser
+        self._functions[TriggerNames.RETRIEVE_TAGS] = self._get_retrieve_tags_trigger_parser
+        self._functions[TriggerNames.FETCH_ATTRIBUTE] = self._get_fetch_attribute_trigger_parser
+        self._functions[TriggerNames.SELECT_ELEMENT] = self._get_select_element_trigger_parser
+        self._functions[TriggerNames.SET_WORKSPACE] = self._get_set_workspace_trigger_parser
+        self._functions[TriggerNames.GET_REGEX_MATCH] = self._get_get_regex_match_trigger_parser
+        self._functions[TriggerNames.CUT_ASIDE] = self._get_cut_aside_trigger_parser
+        self._functions[TriggerNames.GET_SUBSET] = self._get_get_subset_trigger_parser
+        self._functions[TriggerNames.ADD_TEXT] = self._get_add_text_trigger_parser
+        self._functions[TriggerNames.DELETE] = self._get_delete_trigger_parser
 
     def _get_find_trigger_parser(self):
         return JSONFindTriggerParser(self._json_str)
 
     def _get_find_next_trigger_parser(self):
-        raise NotImplementedError
+        return JSONFindNextTriggerParser(self._json_str)
 
     def _get_retrieve_tags_trigger_parser(self):
-        raise NotImplementedError
+        return JSONRetrieveTagsTriggerParser(self._json_str)
 
     def _get_fetch_attribute_trigger_parser(self):
-        raise NotImplementedError
+        return JSONFetchAttributeTriggerParser(self._json_str)
 
     def _get_select_element_trigger_parser(self):
         raise NotImplementedError
@@ -587,7 +634,7 @@ class JSONTriggerParserChooser:
         return self._functions[trigger_name]()
 
 
-class JSONTriggerAlgorithms:
+class Algorithms:
     @staticmethod
     def get_trigger_name(json_str):
         """Find text within the first pair of quotes."""

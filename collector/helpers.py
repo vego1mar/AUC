@@ -58,69 +58,33 @@ def configure_logging(file_name):
 def get_boolean_obj(value):
     if str(value) == str('true') or str('True'):
         return True
-    elif str(value) == str('false') or str('False'):
+    if str(value) == str('false') or str('False'):
         return False
-
-
-def get_tag_type_name(tag_type_obj):
-    if str(tag_type_obj) == str(tr.TagType.SIMPLE):
-        return "SIMPLE"
-    elif str(tag_type_obj) == str(tr.TagType.ATTRIBUTED):
-        return "ATTRIBUTED"
-    elif str(tag_type_obj) == str(tr.TagType.META):
-        return "META"
-
-
-def get_tag_type_obj(tag_type_str):
-    if str(tag_type_str) == str('SIMPLE'):
-        return tr.TagType.SIMPLE
-    elif str(tag_type_str) == str('ATTRIBUTED'):
-        return tr.TagType.ATTRIBUTED
-    elif str(tag_type_str) == str('META'):
-        return tr.TagType.META
-
-
-def get_set_name_str(set_name_obj):
-    if str(set_name_obj) == str(rq.SpaceName.WEB):
-        return "WEB"
-    elif str(set_name_obj) == str(rq.SpaceName.WORK):
-        return "WORK"
-    elif str(set_name_obj) == str(rq.SpaceName.LIST):
-        return "LIST"
-
-
-def get_set_name_obj(set_name_str):
-    if str(set_name_str) == str('WEB'):
-        return rq.SpaceName.WEB
-    elif str(set_name_str) == str('WORK'):
-        return rq.SpaceName.WORK
-    elif str(set_name_str) == str('LIST'):
-        return rq.SpaceName.LIST
 
 
 def get_trigger_name(trigger):
     if isinstance(trigger, tr.Find):
-        return ja.JSONTriggerNames.FIND
-    elif isinstance(trigger, tr.FindNext):
-        return ja.JSONTriggerNames.FIND_NEXT
-    elif isinstance(trigger, tr.RetrieveTags):
-        return ja.JSONTriggerNames.RETRIEVE_TAGS
-    elif isinstance(trigger, tr.FetchAttribute):
-        return ja.JSONTriggerNames.FETCH_ATTRIBUTE
-    elif isinstance(trigger, tr.SelectElement):
-        return ja.JSONTriggerNames.SELECT_ELEMENT
-    elif isinstance(trigger, tr.SetWorkspace):
-        return ja.JSONTriggerNames.SET_WORKSPACE
-    elif isinstance(trigger, tr.GetRegexMatch):
-        return ja.JSONTriggerNames.GET_REGEX_MATCH
-    elif isinstance(trigger, tr.CutAside):
-        return ja.JSONTriggerNames.CUT_ASIDE
-    elif isinstance(trigger, tr.GetSubset):
-        return ja.JSONTriggerNames.GET_SUBSET
-    elif isinstance(trigger, tr.AddText):
-        return ja.JSONTriggerNames.ADD_TEXT
-    elif isinstance(trigger, tr.Delete):
-        return ja.JSONTriggerNames.DELETE
+        return ja.TriggerNames.FIND
+    if isinstance(trigger, tr.FindNext):
+        return ja.TriggerNames.FIND_NEXT
+    if isinstance(trigger, tr.RetrieveTags):
+        return ja.TriggerNames.RETRIEVE_TAGS
+    if isinstance(trigger, tr.FetchAttribute):
+        return ja.TriggerNames.FETCH_ATTRIBUTE
+    if isinstance(trigger, tr.SelectElement):
+        return ja.TriggerNames.SELECT_ELEMENT
+    if isinstance(trigger, tr.SetWorkspace):
+        return ja.TriggerNames.SET_WORKSPACE
+    if isinstance(trigger, tr.GetRegexMatch):
+        return ja.TriggerNames.GET_REGEX_MATCH
+    if isinstance(trigger, tr.CutAside):
+        return ja.TriggerNames.CUT_ASIDE
+    if isinstance(trigger, tr.GetSubset):
+        return ja.TriggerNames.GET_SUBSET
+    if isinstance(trigger, tr.AddText):
+        return ja.TriggerNames.ADD_TEXT
+    if isinstance(trigger, tr.Delete):
+        return ja.TriggerNames.DELETE
 
 
 def remove_characters(source_str, char):

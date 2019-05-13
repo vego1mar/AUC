@@ -5,19 +5,23 @@ import triggers as tr
 
 
 class InvocationRequestTestCase(unittest.TestCase):
-    def test_to_json_method(self):
+    def test_json(self):
         # given
-        request = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.FetchAttribute("web"))
-        exp = b'ewoJInRhcmdldCI6IHsKCQkic2V0X25hbWUiOiAiV0VCIiwKCQkiaXNfZ2F0aGVyaW5nX3JlcXVlc3QiOiBmYWxzZSwKCQkiY29s' \
-              b'bGVjdGlibGVfbmFtZSI6ICJnZW5lcmFsIgoJfSwKCSJmZXRjaF9hdHRyaWJ1dGVfdHJpZ2dlciI6IHsKCQkibmFtZSI6ICJ3ZWIi' \
-              b'Cgl9Cn0K'
-        expected = hp.decode_base64(exp)
+        target = rq.Target(rq.SpaceName.WEB)
+        trigger = tr.Find(hp.decode_base64(b'ZmluZC10ZXh0'))
+        request = rq.InvocationRequest(target, trigger)
+        jstr = b'ewoJCSJ0YXJnZXQiOiB7CgkJCQkic2V0X25hbWUiOiAiV0VCIiwKCQkJCSJpc19nYXRoZXJpbmdfcmVxdWVzdCI6IGZhbHNlLA' \
+               b'oJCQkJImNvbGxlY3RpYmxlX25hbWUiOiAiZ2VuZXJhbCIKCQl9LAoJCSJ0cmlnZ2VyIjogewoJCQkJInRyaWdnZXJfdHlwZSI6' \
+               b'ICJmaW5kX3RyaWdnZXIiLAoJCQkJInRleHQiOiAiZmluZC10ZXh0IgoJCX0KfQ=='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
-        result = request.to_json()
+        json_str = request.to_json()
+        obj = rq.InvocationRequest.from_json(json_str)
 
         # then
-        self.assertEqual(expected, result)
+        self.assertEqual(expected_json_str, json_str)
+        self.assertTrue(request.compare(obj))
 
 
 if __name__ == '__main__':

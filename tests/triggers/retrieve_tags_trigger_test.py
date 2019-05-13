@@ -106,6 +106,20 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
         self.assertEqual(dt.expected_result_list[1], str(trigger.get_result_list()[1]))
         self.assertEqual(dt.expected_result_list[2], str(trigger.get_result_list()[2]))
 
+    def test_json(self):
+        # given
+        trigger = tr.RetrieveTags('href', tr.TagType.META, 101)
+        json_str = b'ewoJCSJ0YWdfbmFtZSI6ICJocmVmIiwKCQkidGFnX3R5cGUiOiAiTUVUQSIsCgkJImFtb3VudCI6IDEwMQp9'
+        expected_json_str = hp.decode_base64(json_str)
+
+        # when
+        json_str = trigger.to_json()
+        obj = tr.RetrieveTags.from_json(json_str)
+
+        # then
+        self.assertEqual(expected_json_str, json_str)
+        self.assertEqual(trigger.__dict__, obj.__dict__)
+
 
 if __name__ == '__main__':
     unittest.main()

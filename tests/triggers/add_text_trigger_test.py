@@ -1,18 +1,21 @@
 import unittest
+import helpers as hp
 import triggers as tr
 
 
 class AddTextTriggerTestCase(unittest.TestCase):
-    def test_json_encode(self):
+    def test_json(self):
         # given
-        trigger = tr.AddText("pr", "")
-        expected = '{\n "prepend": "pr",\n "append": ""\n}'
+        trigger = tr.AddText('a', 'ab')
+        expected_json_str = hp.decode_base64(b'ewoJCSJwcmVwZW5kIjogImEiLAoJCSJhcHBlbmQiOiAiYWIiCn0=')
 
         # when
-        result = tr.AddText.encode(trigger, trigger)
+        json_str = trigger.to_json()
+        obj = tr.AddText.from_json(json_str)
 
         # then
-        self.assertEqual(expected, result)
+        self.assertEqual(expected_json_str, json_str)
+        self.assertEqual(trigger.__dict__, obj.__dict__)
 
 
 if __name__ == '__main__':

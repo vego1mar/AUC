@@ -50,6 +50,19 @@ class GetRegexMatchTriggerTest(unittest.TestCase):
         # then
         self.assertEqual(dt.expected_result, trigger.get_result())
 
+    def test_json(self):
+        # given
+        trigger = tr.GetRegexMatch(hp.decode_base64(b'XlswLTldK1tcZF0rID9bLixdKyQ='))
+        expected_json_str = hp.decode_base64(b'ewoJCSJwYXR0ZXJuIjogIl5bMC05XStbXFxkXSsgP1suLF0rJCIKfQ==')
+
+        # when
+        json_str = trigger.to_json()
+        obj = tr.GetRegexMatch.from_json(json_str)
+
+        # then
+        self.assertEqual(expected_json_str, json_str)
+        self.assertEqual(trigger.__dict__, obj.__dict__)
+
 
 if __name__ == '__main__':
     unittest.main()

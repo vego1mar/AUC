@@ -1,4 +1,3 @@
-import json_assist as ja
 import requesting as rq
 import executing as ex
 import triggers as tr
@@ -55,36 +54,8 @@ def configure_logging(file_name):
     logging.debug('\n\n' + str(datetime.datetime.now()))
 
 
-def get_boolean_obj(value):
-    if str(value) == str('true') or str('True'):
-        return True
-    if str(value) == str('false') or str('False'):
-        return False
-
-
-def get_trigger_name(trigger):
-    if isinstance(trigger, tr.Find):
-        return ja.TriggerNames.FIND
-    if isinstance(trigger, tr.FindNext):
-        return ja.TriggerNames.FIND_NEXT
-    if isinstance(trigger, tr.RetrieveTags):
-        return ja.TriggerNames.RETRIEVE_TAGS
-    if isinstance(trigger, tr.FetchAttribute):
-        return ja.TriggerNames.FETCH_ATTRIBUTE
-    if isinstance(trigger, tr.SelectElement):
-        return ja.TriggerNames.SELECT_ELEMENT
-    if isinstance(trigger, tr.SetWorkspace):
-        return ja.TriggerNames.SET_WORKSPACE
-    if isinstance(trigger, tr.GetRegexMatch):
-        return ja.TriggerNames.GET_REGEX_MATCH
-    if isinstance(trigger, tr.CutAside):
-        return ja.TriggerNames.CUT_ASIDE
-    if isinstance(trigger, tr.GetSubset):
-        return ja.TriggerNames.GET_SUBSET
-    if isinstance(trigger, tr.AddText):
-        return ja.TriggerNames.ADD_TEXT
-    if isinstance(trigger, tr.Delete):
-        return ja.TriggerNames.DELETE
+def get_json_indent():
+    return '\t\t'
 
 
 def remove_characters(source_str, char):

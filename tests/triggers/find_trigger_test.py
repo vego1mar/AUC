@@ -1,6 +1,7 @@
 import unittest
-import triggers as tr
+import helpers as hp
 import requesting as rq
+import triggers as tr
 
 
 class FindTriggerTest(unittest.TestCase):
@@ -18,6 +19,20 @@ class FindTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(trigger.get_result(), expected_result)
+
+    def test_json(self):
+        # given
+        trigger = tr.Find('sample-text')
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZmluZF90cmlnZ2VyIiwKCQkidGV4dCI6ICJzYW1wbGUtdGV4dCIKfQ=='
+        expected_json_str = hp.decode_base64(jstr)
+
+        # when
+        json_str = trigger.to_json()
+        obj = tr.Find.from_json(json_str)
+
+        # then
+        self.assertEqual(expected_json_str, json_str)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

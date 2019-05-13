@@ -1,14 +1,22 @@
 import logging
+import json
 import re
-import json_assist as ja
 import requesting as rq
 import helpers as hp
 
 
-class Trigger:
+class TriggerNames:
+    TRIGGER = 'trigger'
+    FIND = 'find_trigger'
+
+
+class Trigger(json.JSONEncoder):
     """This should be treated as an abstract class."""
+    TRIGGER = 'trigger_type'
 
     def __init__(self):
+        super().__init__(indent=hp.get_json_indent())
+        self.trigger_type = TriggerNames.TRIGGER
         self._result = str()
         self._result_list = list()
 
@@ -27,10 +35,25 @@ class Trigger:
     def invoke(self, target, set_spaces):
         raise NotImplementedError
 
-    def to_string(self):
+    def from_json(self, json_str):
         raise NotImplementedError
 
     def to_json(self):
+        raise NotImplementedError
+
+    def from_dict(self, dct):
+        raise NotImplementedError
+
+    def to_dict(self):
+        raise NotImplementedError
+
+    @staticmethod
+    def get_obj(trigger_dict):
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND:
+            text = trigger_dict[Find.TEXT]
+            return Find(text)
+
+    def compare(self, obj):
         raise NotImplementedError
 
 
@@ -40,10 +63,15 @@ class Find(Trigger):
        work_space_before="aaaYYbbb"\n
        work_space_after="YYbbb"
     """
+    TEXT = 'text'
 
     def __init__(self, text):
-        super().__init__()
-        self._text = str(text)
+        super(Find, self).__init__()
+        self.trigger_type = TriggerNames.FIND
+        self.text = str(text)
+
+    def default(self, o):
+        self.to_dict()
 
     def invoke(self, target, set_spaces):
         self._find_text(target, set_spaces)
@@ -59,18 +87,34 @@ class Find(Trigger):
         set_spaces.work_space = self.get_result()
 
     def _find_text_in_string(self, string_to_search_in):
-        text_index = str(string_to_search_in).find(self._text)
+        text_index = str(string_to_search_in).find(self.text)
 
         if not text_index == -1:
             self.set_result(string_to_search_in[text_index:])
-        else:
-            logging.debug("Text not found; text=" + self._text)
 
-    def to_string(self):
-        return Find.__name__ + '(name=' + self._text + ')'
+    @classmethod
+    def from_dict(cls, dct):
+        return Find(dct[Find.TEXT])
+
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(json_dict[Find.TEXT])
+
+    def to_dict(self):
+        this = dict()
+        this[Trigger.TRIGGER] = TriggerNames.FIND
+        this[Find.TEXT] = self.text
+        return this
 
     def to_json(self):
-        return ja.find_trigger_to_json(self)
+        return self.encode(self.to_dict())
+
+    def compare(self, obj):
+        if not isinstance(obj, Find):
+            return False
+
+        return self.text == obj.text
 
 
 class FindNext(Trigger):
@@ -82,7 +126,7 @@ class FindNext(Trigger):
 
     def __init__(self, text):
         super().__init__()
-        self._text = str(text)
+        self.text = str(text)
 
     def invoke(self, target, set_spaces):
         self._find_next(target, set_spaces)
@@ -98,26 +142,54 @@ class FindNext(Trigger):
         set_spaces.work_space = self.get_result()
 
     def _find_next_text(self, string):
-        index_1 = str(string).find(self._text)
-        offset = index_1 + len(self._text)
-        index_2 = str(string[offset:]).find(self._text)
+        index_1 = str(string).find(self.text)
+        offset = index_1 + len(self.text)
+        index_2 = str(string[offset:]).find(self.text)
 
         if index_1 == -1 or index_2 == -1:
-            logging.debug("Text not found; text=" + self._text)
+            logging.debug("Text not found; text=" + self.text)
         else:
             self.set_result(string[index_2 + offset:])
 
-    def to_string(self):
-        return FindNext.__name__ + '(text=' + self._text + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.find_next_trigger_to_json(self)
+        this = dict()
+        this['text'] = self.text
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class TagType:
     SIMPLE = 1,
     ATTRIBUTED = 2,
     META = 3
+
+
+class TagTypeHelper:
+    SIMPLE = 'SIMPLE'
+    ATTRIBUTED = 'ATTRIBUTED'
+    META = 'META'
+
+    @staticmethod
+    def get_tag_type_name(obj):
+        if str(obj) == str(TagType.SIMPLE):
+            return TagTypeHelper.SIMPLE
+        if str(obj) == str(TagType.ATTRIBUTED):
+            return TagTypeHelper.ATTRIBUTED
+        if str(obj) == str(TagType.META):
+            return TagTypeHelper.META
+
+    @staticmethod
+    def get_tag_type_obj(name):
+        if str(name) == TagTypeHelper.SIMPLE:
+            return TagType.SIMPLE
+        if str(name) == TagTypeHelper.ATTRIBUTED:
+            return TagType.ATTRIBUTED
+        if str(name) == TagTypeHelper.META:
+            return TagType.META
 
 
 class RetrieveTags(Trigger):
@@ -134,10 +206,10 @@ class RetrieveTags(Trigger):
     """
 
     def __init__(self, tag_name, tag_type, amount):
-        super().__init__()
-        self._name = str(tag_name)
-        self._type = tag_type
-        self._amount = int(amount)
+        super(RetrieveTags, self).__init__()
+        self.tag_name = str(tag_name)
+        self.tag_type = tag_type
+        self.amount = int(amount)
 
     def invoke(self, target, set_spaces):
         self._retrieve_tags(target, set_spaces)
@@ -154,16 +226,16 @@ class RetrieveTags(Trigger):
 
     def _retrieve_tags_from(self, string):
         source = string
-        opening_tag = '<' + self._name
-        closing_tag = '</' + self._name + '>'
+        opening_tag = '<' + self.tag_name
+        closing_tag = '</' + self.tag_name + '>'
         tags_list = list()
 
-        if self._type == TagType.SIMPLE:
+        if self.tag_type == TagType.SIMPLE:
             opening_tag += '>'
-        elif self._type == TagType.META:
+        elif self.tag_type == TagType.META:
             closing_tag = '>'
 
-        for _ in range(0, self._amount):
+        for _ in range(0, self.amount):
             opening_index = str(source).find(opening_tag)
 
             if opening_index == -1:
@@ -182,12 +254,19 @@ class RetrieveTags(Trigger):
 
         self.set_result_list(tags_list)
 
-    def to_string(self):
-        return RetrieveTags.__name__ + '(name=' + self._name + ', type=' + hp.get_tag_type_name(self._type) \
-               + ', amount=' + str(self._amount) + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        trigger = cls(**json_dict)
+        trigger.tag_type = TagTypeHelper.get_tag_type_obj(trigger.tag_type)
+        return trigger
 
     def to_json(self):
-        return ja.retrieve_tags_trigger_to_json(self)
+        this = dict()
+        this['tag_name'] = self.tag_name
+        this['tag_type'] = TagTypeHelper.get_tag_type_name(self.tag_type)
+        this['amount'] = self.amount
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class SelectElement(Trigger):
@@ -201,7 +280,7 @@ class SelectElement(Trigger):
 
     def __init__(self, position):
         super().__init__()
-        self._position = int(position)
+        self.position = int(position)
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.LIST:
@@ -210,16 +289,20 @@ class SelectElement(Trigger):
             set_spaces.list_space = self.get_result_list()
 
     def _select_element(self, set_spaces):
-        if len(set_spaces.list_space) >= self._position + 1:
-            selection = set_spaces.list_space[self._position]
+        if len(set_spaces.list_space) >= self.position + 1:
+            selection = set_spaces.list_space[self.position]
             self.set_result(selection)
             self.set_result_list(set_spaces.list_space)
 
-    def to_string(self):
-        return SelectElement.__name__ + '(position=' + str(self._position) + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.select_element_trigger_to_json(self)
+        this = dict()
+        this['position'] = self.position
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class FetchAttribute(Trigger):
@@ -229,9 +312,9 @@ class FetchAttribute(Trigger):
        work_space_after="glx-library"
     """
 
-    def __init__(self, name):
+    def __init__(self, attr_name):
         super().__init__()
-        self._name = name
+        self.attr_name = attr_name
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WEB:
@@ -244,12 +327,11 @@ class FetchAttribute(Trigger):
         set_spaces.work_space = self.get_result()
 
     def _fetch_attribute_value(self, string):
-        attribute_begin = str(self._name) + '="'
+        attribute_begin = str(self.attr_name) + '="'
         attribute_end = '"'
         index_begin = str(string).find(attribute_begin)
 
         if index_begin == -1:
-            logging.debug("Attribute not found; name=" + self._name)
             return
 
         offset = index_begin + len(attribute_begin)
@@ -262,11 +344,16 @@ class FetchAttribute(Trigger):
 
         self.set_result(new_string[0:index_end])
 
-    def to_string(self):
-        return FetchAttribute.__name__ + '(name=' + self._name + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        trigger = cls(**json_dict)
+        return trigger
 
     def to_json(self):
-        return ja.fetch_attribute_trigger_to_json(self)
+        this = dict()
+        this['attr_name'] = self.attr_name
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class GetRegexMatch(Trigger):
@@ -276,9 +363,9 @@ class GetRegexMatch(Trigger):
        work_space_after="1.2.54.27"
        """
 
-    def __init__(self, regex):
+    def __init__(self, pattern):
         super().__init__()
-        self._regex = regex
+        self.pattern = pattern
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WEB:
@@ -294,16 +381,21 @@ class GetRegexMatch(Trigger):
         self.set_result(str())
 
         try:
-            matched_substring = re.search(self._regex, text).group(0)
+            matched_substring = re.search(self.pattern, text).group(0)
             self.set_result(matched_substring)
         except AttributeError:
-            logging.debug("Regular expression group not found; regex=" + self._regex)
+            logging.debug("Regular expression group not found; regex=" + self.pattern)
 
-    def to_string(self):
-        return GetRegexMatch.__name__ + '(regex=' + self._regex + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        trigger = cls(**json_dict)
+        return trigger
 
     def to_json(self):
-        return ja.get_regex_match_trigger_to_json(self)
+        this = dict()
+        this['pattern'] = self.pattern
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class CutAside(Trigger):
@@ -318,8 +410,8 @@ class CutAside(Trigger):
 
     def __init__(self, left, right):
         super().__init__()
-        self._left = int(left)
-        self._right = int(right)
+        self.left = int(left)
+        self.right = int(right)
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WEB:
@@ -332,25 +424,31 @@ class CutAside(Trigger):
         set_spaces.work_space = self.get_result()
 
     def _cut_aside(self, text):
-        if self._left > len(str(text)):
+        if self.left > len(str(text)):
             self.set_result(str())
             return
 
-        left_cut = str(text)[self._left:]
+        left_cut = str(text)[self.left:]
 
-        if self._right > len(str(left_cut)):
+        if self.right > len(str(left_cut)):
             self.set_result(str())
             return
 
-        offset = len(left_cut) - self._right
+        offset = len(left_cut) - self.right
         right_cut = str(left_cut)[0:offset]
         self.set_result(str(right_cut))
 
-    def to_string(self):
-        return CutAside.__name__ + '(left=' + str(self._left) + ', right=' + str(self._right) + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        trigger = cls(**json_dict)
+        return trigger
 
     def to_json(self):
-        return ja.cut_aside_trigger_to_json(self)
+        this = dict()
+        this['left'] = self.left
+        this['right'] = self.right
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class SetWorkspace(Trigger):
@@ -362,18 +460,22 @@ class SetWorkspace(Trigger):
 
     def __init__(self, text):
         super().__init__()
-        self._text = text
+        self.text = text
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WORK:
-            self.set_result(self._text)
+            self.set_result(self.text)
             set_spaces.work_space = self.get_result()
 
-    def to_string(self):
-        return SetWorkspace.__name__ + '(text=' + self._text + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.set_workspace_trigger_to_json(self)
+        this = dict()
+        this['text'] = self.text
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class GetSubset(Trigger):
@@ -388,8 +490,8 @@ class GetSubset(Trigger):
 
     def __init__(self, begin, end):
         super().__init__()
-        self._begin = begin
-        self._end = end
+        self.begin = begin
+        self.end = end
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WEB:
@@ -402,14 +504,14 @@ class GetSubset(Trigger):
         set_spaces.work_space = self.get_result()
 
     def _get_subset(self, text):
-        if isinstance(self._begin, int) and isinstance(self._end, int):
+        if isinstance(self.begin, int) and isinstance(self.end, int):
             self._get_substring_integerify(text)
-        elif isinstance(self._begin, str) and isinstance(self._end, str):
+        elif isinstance(self.begin, str) and isinstance(self.end, str):
             self._get_substring_stringify(text)
 
     def _get_substring_integerify(self, text):
-        start = int(self._begin)
-        meta = int(self._end)
+        start = int(self.begin)
+        meta = int(self.end)
 
         if start > meta or meta > len(text):
             return ValueError('start > meta OR meta > len(text)')
@@ -417,13 +519,13 @@ class GetSubset(Trigger):
         self.set_result(text[start:meta])
 
     def _get_substring_stringify(self, text):
-        begin_index = str(text).find(self._begin)
+        begin_index = str(text).find(self.begin)
 
         if begin_index == -1:
             self.set_result(str())
             return
 
-        end_index = str(text[begin_index:]).find(self._end) + begin_index + len(self._end)
+        end_index = str(text[begin_index:]).find(self.end) + begin_index + len(self.end)
 
         if end_index == -1:
             self.set_result(str())
@@ -435,11 +537,16 @@ class GetSubset(Trigger):
 
         self.set_result(text[begin_index:end_index])
 
-    def to_string(self):
-        return GetSubset.__name__ + '(begin=' + str(self._begin) + ', end=' + str(self._end) + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.get_subset_trigger_to_json(self)
+        this = dict()
+        this['begin'] = self.begin
+        this['end'] = self.end
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class AddText(Trigger):
@@ -451,19 +558,24 @@ class AddText(Trigger):
 
     def __init__(self, prepend, append):
         super().__init__()
-        self._prepend_text = prepend
-        self._append_text = append
+        self.prepend = prepend
+        self.append = append
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WORK:
-            self.set_result(self._prepend_text + str(set_spaces.work_space) + self._append_text)
+            self.set_result(self.prepend + str(set_spaces.work_space) + self.append)
             set_spaces.work_space = self.get_result()
 
-    def to_string(self):
-        return AddText.__name__ + '(prepend=' + self._prepend_text + ', append=' + self._append_text + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.add_text_trigger_to_json(self)
+        this = dict()
+        this['prepend'] = self.prepend
+        this['append'] = self.append
+        return json.dumps(this, indent=hp.get_json_indent())
 
 
 class Delete(Trigger):
@@ -481,8 +593,8 @@ class Delete(Trigger):
 
     def __init__(self, string, characters):
         super().__init__()
-        self._string = string
-        self._characters = characters
+        self.string = string
+        self.characters = characters
 
     def invoke(self, target, set_spaces):
         if target.set_name == rq.SpaceName.WORK:
@@ -491,37 +603,42 @@ class Delete(Trigger):
             set_spaces.work_space = self.get_result()
 
     def _delete_strings(self, source_str):
-        if self._string == "":
+        if self.string == "":
             self.set_result(source_str)
             return
 
         target_str = str(source_str)
 
         while True:
-            str_index = target_str.find(self._string)
+            str_index = target_str.find(self.string)
 
             if str_index == -1:
                 break
 
-            end_index = str_index + len(self._string)
+            end_index = str_index + len(self.string)
             target_str = target_str[:str_index] + target_str[end_index:]
 
         self.set_result(target_str)
 
     def _delete_characters(self, source_str):
-        if self._characters == "":
+        if self.characters == "":
             self.set_result(source_str)
             return
 
         target_str = str(source_str)
 
-        for i in range(0, len(self._characters)):
-            target_str = hp.remove_characters(target_str, self._characters[i])
+        for i in range(0, len(self.characters)):
+            target_str = hp.remove_characters(target_str, self.characters[i])
 
         self.set_result(target_str)
 
-    def to_string(self):
-        return Delete.__name__ + '(string=' + self._string + ', characters=' + self._characters + ')'
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return cls(**json_dict)
 
     def to_json(self):
-        return ja.delete_trigger_to_json(self)
+        this = dict()
+        this['string'] = self.string
+        this['characters'] = self.characters
+        return json.dumps(this, indent=hp.get_json_indent())

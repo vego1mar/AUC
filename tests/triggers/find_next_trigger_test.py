@@ -73,8 +73,9 @@ class FindNextTriggerTest(unittest.TestCase):
 
     def test_json(self):
         # given
-        trigger = tr.FindNext(hp.decode_base64(b'c2FtcGxlIi0idGV4dA=='))
-        expected_json_str = hp.decode_base64(b'ewoJCSJ0ZXh0IjogInNhbXBsZVwiLVwidGV4dCIKfQ==')
+        trigger = tr.FindNext(hp.decode_base64(b'c29tZS10ZXh0'))
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZmluZF90cmlnZ2VyIiwKCQkidGV4dCI6ICJzb21lLXRleHQiCn0='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -82,7 +83,7 @@ class FindNextTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

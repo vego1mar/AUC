@@ -108,9 +108,10 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
 
     def test_json(self):
         # given
-        trigger = tr.RetrieveTags('href', tr.TagType.META, 101)
-        json_str = b'ewoJCSJ0YWdfbmFtZSI6ICJocmVmIiwKCQkidGFnX3R5cGUiOiAiTUVUQSIsCgkJImFtb3VudCI6IDEwMQp9'
-        expected_json_str = hp.decode_base64(json_str)
+        trigger = tr.RetrieveTags('tagname', tr.TagType.ATTRIBUTED, 231)
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAicmV0cmlldmVfdGFnc190cmlnZ2VyIiwKCQkidGFnX25hbWUiOiAidGFnbmFtZSIsCgkJIn' \
+               b'RhZ190eXBlIjogIkFUVFJJQlVURUQiLAoJCSJhbW91bnQiOiAyMzEKfQ=='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -118,7 +119,7 @@ class RetrieveTagsTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/json_assist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/requesting/target_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/requesting/target_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/triggers/set_workspace_trigger_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/triggers/set_workspace_trigger_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collector/requesting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="160">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -58,22 +43,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/collector/triggers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1543">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/requesting/invocation_request_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="527">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -177,9 +150,6 @@
         <option value="$PROJECT_DIR$/tests/executing/info_collector_test.py" />
         <option value="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" />
         <option value="$PROJECT_DIR$/collector/json_assist.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
-        <option value="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/fetch_attribute_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" />
@@ -188,11 +158,14 @@
         <option value="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/helpers.py" />
-        <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_test.py" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
         <option value="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py" />
+        <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
       </list>
     </option>
   </component>
@@ -205,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +224,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,36 +256,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json">
-    <configuration name="Unittests for add_text_trigger_test.AddTextTriggerTestCase.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;add_text_trigger_test.AddTextTriggerTestCase.test_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for delete_trigger_test.DeleteTriggerTest.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;delete_trigger_test.DeleteTriggerTest.test_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger">
+    <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_2_find_next_trigger" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,11 +267,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;invocation_request_test.InvocationRequestTestCase.test_json&quot;" />
+      <option name="_new_target" value="&quot;invocation_request_test.InvocationRequestTestCase.test_json_2_find_next_trigger&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for target_test.TargetTestCase.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -336,11 +281,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;target_test.TargetTestCase.test_json&quot;" />
+      <option name="_new_target" value="&quot;invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for triggers.find_trigger_test.FindTriggerTest.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/requesting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,17 +309,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;triggers.find_trigger_test.FindTriggerTest.test_json&quot;" />
+      <option name="_new_target" value="&quot;retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_json&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for select_element_trigger_test.SelectElementTriggerTestCase.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/triggers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;select_element_trigger_test.SelectElementTriggerTestCase.test_json&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json" />
-        <item itemvalue="Python tests.Unittests for triggers.find_trigger_test.FindTriggerTest.test_json" />
-        <item itemvalue="Python tests.Unittests for target_test.TargetTestCase.test_json" />
-        <item itemvalue="Python tests.Unittests for delete_trigger_test.DeleteTriggerTest.test_json" />
-        <item itemvalue="Python tests.Unittests for add_text_trigger_test.AddTextTriggerTestCase.test_json" />
+        <item itemvalue="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger" />
+        <item itemvalue="Python tests.Unittests for select_element_trigger_test.SelectElementTriggerTestCase.test_json" />
+        <item itemvalue="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" />
+        <item itemvalue="Python tests.Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_json" />
+        <item itemvalue="Python tests.Unittests for invocation_request_test.InvocationRequestTestCase.test_json_2_find_next_trigger" />
       </list>
     </recent_temporary>
   </component>
@@ -381,44 +354,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 21h 48m 53s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_3_retrieve_tags_trigger - 2019.05.14 at 16h 01m 27s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 21h 51m 02s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_retrieve_tags_trigger_test_RetrieveTagsTriggerTest_test_json - 2019.05.14 at 16h 01m 49s.xml">
+      <configuration name="Unittests for retrieve_tags_trigger_test.RetrieveTagsTriggerTest.test_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 21h 52m 08s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_3_retrieve_tags_trigger - 2019.05.14 at 16h 03m 34s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 22h 02m 22s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_3_retrieve_tags_trigger - 2019.05.14 at 16h 03m 59s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 22h 05m 08s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_3_retrieve_tags_trigger - 2019.05.14 at 16h 05m 11s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 22h 07m 29s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_3_retrieve_tags_trigger - 2019.05.14 at 16h 05m 38s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_3_retrieve_tags_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_trigger_test_FindTriggerTest_test_json - 2019.05.13 at 22h 08m 28s.xml">
-      <configuration name="Unittests for find_trigger_test.FindTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_select_element_trigger_test_SelectElementTriggerTestCase_test_json - 2019.05.14 at 16h 33m 37s.xml">
+      <configuration name="Unittests for select_element_trigger_test.SelectElementTriggerTestCase.test_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json - 2019.05.13 at 22h 08m 47s.xml">
-      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_select_element_trigger_test_SelectElementTriggerTestCase_test_json - 2019.05.14 at 16h 33m 56s.xml">
+      <configuration name="Unittests for select_element_trigger_test.SelectElementTriggerTestCase.test_json" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json - 2019.05.13 at 22h 12m 30s.xml">
-      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_4_select_element_trigger - 2019.05.14 at 16h 37m 23s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json - 2019.05.13 at 22h 12m 33s.xml">
-      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_invocation_request_test_InvocationRequestTestCase_test_json_4_select_element_trigger - 2019.05.14 at 16h 37m 53s.xml">
+      <configuration name="Unittests for invocation_request_test.InvocationRequestTestCase.test_json_4_select_element_trigger" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1566" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20881972" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" weight="0.20881972" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.20363165" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.50162864" visible="true" weight="0.20363165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.3275488" />
@@ -460,15 +432,23 @@
       <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" order="3" weight="0.39526185" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="tests">
-        <watch expression="" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>hp.encode_base64(json_str)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hp.encode_base64('something')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hp.encode_base64('some-text')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>cls(json_dict[Find.TEXT])</expression-string>
         <language-id>Python</language-id>
@@ -496,26 +476,6 @@
       </expression>
       <expression>
         <expression-string>request.compare(obj)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.InvocationRequest</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.IComparable</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>trigger_dict[Trigger.TRIGGER]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>trigger_dict[field_name]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -825,36 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/triggers/get_regex_match_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -956,57 +886,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/requesting/invocation_request_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/json_assist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7372">
-          <caret line="388" selection-start-line="388" selection-end-line="388" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/json_assist.py" />
+    <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py" />
     <entry file="file://$PROJECT_DIR$/tests/json_assist/json_write_app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
           <caret line="233" selection-start-line="233" selection-end-line="233" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,20 +905,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/requesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="160">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/triggers/select_element_trigger_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/requesting/invocation_request_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/triggers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1543">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

@@ -8,6 +8,9 @@ import helpers as hp
 class TriggerNames:
     TRIGGER = 'trigger'
     FIND = 'find_trigger'
+    FIND_NEXT = 'find_next_trigger'
+    RETRIEVE_TAGS = 'retrieve_tags_trigger'
+    SELECT_ELEMENT = 'select_element_trigger'
 
 
 class Trigger(json.JSONEncoder):
@@ -52,6 +55,20 @@ class Trigger(json.JSONEncoder):
         if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND:
             text = trigger_dict[Find.TEXT]
             return Find(text)
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND_NEXT:
+            text = trigger_dict[FindNext.TEXT]
+            return FindNext(text)
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.RETRIEVE_TAGS:
+            tag_name = trigger_dict[RetrieveTags.TAG_NAME]
+            tag_type = TagTypeHelper.get_tag_type_obj(trigger_dict[RetrieveTags.TAG_TYPE])
+            amount = trigger_dict[RetrieveTags.AMOUNT]
+            return RetrieveTags(tag_name, tag_type, amount)
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.SELECT_ELEMENT:
+            position = trigger_dict[SelectElement.POSITION]
+            return SelectElement(position)
 
     def compare(self, obj):
         raise NotImplementedError
@@ -123,9 +140,11 @@ class FindNext(Trigger):
        work_space_before="aaaYYbbbYYcccd"\n
        work_space_after="YYcccd"
     """
+    TEXT = 'text'
 
     def __init__(self, text):
-        super().__init__()
+        super(FindNext, self).__init__()
+        self.trigger_type = TriggerNames.FIND_NEXT
         self.text = str(text)
 
     def invoke(self, target, set_spaces):
@@ -146,20 +165,32 @@ class FindNext(Trigger):
         offset = index_1 + len(self.text)
         index_2 = str(string[offset:]).find(self.text)
 
-        if index_1 == -1 or index_2 == -1:
-            logging.debug("Text not found; text=" + self.text)
-        else:
+        if not (index_1 == -1 or index_2 == -1):
             self.set_result(string[index_2 + offset:])
 
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        return cls(json_dict[FindNext.TEXT])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return FindNext(dct[FindNext.TEXT])
+
+    def to_dict(self):
         this = dict()
-        this['text'] = self.text
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = TriggerNames.FIND_NEXT
+        this[FindNext.TEXT] = self.text
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, FindNext):
+            return False
+
+        return self.text == obj.text
 
 
 class TagType:
@@ -204,6 +235,9 @@ class RetrieveTags(Trigger):
        work_space_before="<div><meta charset="utf-8"/></div>"\n
        work_space_after="<meta charset="utf-8"/>"
     """
+    TAG_NAME = 'tag_name'
+    TAG_TYPE = 'tag_type'
+    AMOUNT = 'amount'
 
     def __init__(self, tag_name, tag_type, amount):
         super(RetrieveTags, self).__init__()
@@ -257,16 +291,37 @@ class RetrieveTags(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        trigger = cls(**json_dict)
-        trigger.tag_type = TagTypeHelper.get_tag_type_obj(trigger.tag_type)
-        return trigger
+        tag_name = json_dict[RetrieveTags.TAG_NAME]
+        tag_type = TagTypeHelper.get_tag_type_obj(json_dict[RetrieveTags.TAG_TYPE])
+        amount = json_dict[RetrieveTags.AMOUNT]
+        return cls(tag_name, tag_type, amount)
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        tag_name = dct[RetrieveTags.TAG_NAME]
+        tag_type = dct[RetrieveTags.TAG_TYPE]
+        amount = dct[RetrieveTags.AMOUNT]
+        return cls(tag_name, tag_type, amount)
+
+    def to_dict(self):
         this = dict()
-        this['tag_name'] = self.tag_name
-        this['tag_type'] = TagTypeHelper.get_tag_type_name(self.tag_type)
-        this['amount'] = self.amount
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = TriggerNames.RETRIEVE_TAGS
+        this[RetrieveTags.TAG_NAME] = self.tag_name
+        this[RetrieveTags.TAG_TYPE] = TagTypeHelper.get_tag_type_name(self.tag_type)
+        this[RetrieveTags.AMOUNT] = self.amount
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, RetrieveTags):
+            return False
+
+        result_1 = self.tag_type == obj.tag_type
+        result_2 = self.tag_type == obj.tag_type
+        result_3 = self.amount == obj.amount
+        return result_1 and result_2 and result_3
 
 
 class SelectElement(Trigger):
@@ -277,9 +332,11 @@ class SelectElement(Trigger):
        SelectElement(position=2)\n
        work_space_after='c'
     """
+    POSITION = 'position'
 
     def __init__(self, position):
-        super().__init__()
+        super(SelectElement, self).__init__()
+        self.trigger_type = TriggerNames.SELECT_ELEMENT
         self.position = int(position)
 
     def invoke(self, target, set_spaces):
@@ -297,12 +354,28 @@ class SelectElement(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        position = json_dict[SelectElement.POSITION]
+        return cls(position)
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        position = dct[SelectElement.POSITION]
+        return cls(position)
+
+    def to_dict(self):
         this = dict()
-        this['position'] = self.position
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[SelectElement.POSITION] = self.position
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, SelectElement):
+            return False
+
+        return self.position == obj.position
 
 
 class FetchAttribute(Trigger):

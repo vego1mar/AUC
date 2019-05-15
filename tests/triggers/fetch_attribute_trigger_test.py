@@ -77,8 +77,9 @@ class FetchAttributeTriggerTest(unittest.TestCase):
 
     def test_json(self):
         # given
-        trigger = tr.FetchAttribute('name')
-        expected_json_str = hp.decode_base64(b'ewoJCSJhdHRyX25hbWUiOiAibmFtZSIKfQ==')
+        trigger = tr.FetchAttribute(hp.decode_base64(b'YXR0ciI='))
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZmV0Y2hfYXR0cmlidXRlX3RyaWdnZXIiLAoJCSJhdHRyX25hbWUiOiAiYXR0clwiIgp9'
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -86,7 +87,7 @@ class FetchAttributeTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

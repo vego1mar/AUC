@@ -17,10 +17,10 @@ from tests.executing.app_speccy_test import *
 from tests.executing.app_steam_test import *
 from tests.executing.app_sumatrapdf_test import *
 from tests.executing.chain_request_execution_test import *
+from tests.executing.execution_order_entry_test import *
 from tests.executing.info_collector_test import *
 from tests.helpers.base64_test import *
 from tests.helpers.remove_characters_test import *
-from tests.json_assist.json_assist_test import *
 from tests.requesting.invocation_request_test import *
 from tests.requesting.target_test import *
 from tests.triggers.cut_aside_trigger_test import *
@@ -118,10 +118,10 @@ def print_info():
     print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
     print_module_functions(SumatraPdfTest.__name__, SumatraPdfTest.__dict__)
     print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)
+    print_module_functions(ExecutionOrderEntryTestCase.__name__, ExecutionOrderEntryTestCase.__dict__)
     print_module_functions(InfoCollectorTest.__name__, InfoCollectorTest.__dict__)
     print_module_functions(Base64Test.__name__, Base64Test.__dict__)
     print_module_functions(RemoveCharactersTest.__name__, RemoveCharactersTest.__dict__)
-    print_module_functions(JSONAssistTestCase.__name__, JSONAssistTestCase.__dict__)
     print_module_functions(InvocationRequestTestCase.__name__, InvocationRequestTestCase.__dict__)
     print_module_functions(TargetTestCase.__name__, TargetTestCase.__dict__)
     print_module_functions(CutAsideTriggerTest.__name__, CutAsideTriggerTest.__dict__)

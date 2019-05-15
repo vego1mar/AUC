@@ -6,10 +6,10 @@ import triggers as tr
 class SetWorkspaceTriggerTestCase(unittest.TestCase):
     def test_json(self):
         # given
-        trigger = tr.SetWorkspace(hp.decode_base64(b'0qTQlNCYRNCp0K/Qh9CT0IfQmEcg0IdTIFPQpNSg1JDQk9OJ0IfQmEc='))
-        str = b'ewoJCSJ0ZXh0IjogIlx1MDRhNFx1MDQxNFx1MDQxOERcdTA0MjlcdTA0MmZcdTA0MDdcdTA0MTNcdTA0MDdcdTA0MThHIFx1MD' \
-              b'QwN1MgU1x1MDQyNFx1MDUyMFx1MDUxMFx1MDQxM1x1MDRjOVx1MDQwN1x1MDQxOEciCn0='
-        expected_json_str = hp.decode_base64(str)
+        trigger = tr.SetWorkspace(hp.decode_base64(b'0KTQh9CU0JjQqdCv'))
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAic2V0X3dvcmtzcGFjZV90cmlnZ2VyIiwKCQkidGV4dCI6ICJcdTA0MjRcdTA0MDdcdTA0MT' \
+               b'RcdTA0MThcdTA0MjlcdTA0MmYiCn0='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -17,7 +17,7 @@ class SetWorkspaceTriggerTestCase(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

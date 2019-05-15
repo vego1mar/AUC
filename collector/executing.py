@@ -1,7 +1,6 @@
-import logging
+import json
 import requesting as rq
 import helpers as hp
-import json_assist as ja
 
 
 class ChainRequestExecution:
@@ -23,7 +22,6 @@ class ChainRequestExecution:
             target = request.target
             trigger = request.trigger
             trigger.invoke(target, self._set_spaces)
-            logging.info(trigger.from_json())
             self._alter_target_space(target, trigger)
             self._acquire_collectible(target)
 
@@ -41,13 +39,63 @@ class ChainRequestExecution:
             self._collectibles[target.collectible_name] = self._set_spaces.work_space
 
 
-class ExecutionOrderEntry:
+class ExecutionOrderEntry(json.JSONEncoder):
+    CHAIN_REQUEST = 'chain_request'
+    HTML_DATA = 'html_data'
+
     def __init__(self, chain_request, html_data):
+        super().__init__(indent=hp.get_json_indent())
         self.chain_request = chain_request
         self.html_data = str(html_data)
 
+    def default(self, o):
+        return self.to_dict()
+
     def to_json(self):
-        return ja.execution_order_entry_to_json(self)
+        return self.encode(self.to_dict())
+
+    def to_dict(self):
+        this = dict()
+        chain_request = []
+
+        for req in self.chain_request:
+            chain_request.append(req.to_dict())
+
+        this[ExecutionOrderEntry.CHAIN_REQUEST] = chain_request
+        this[ExecutionOrderEntry.HTML_DATA] = self.html_data
+        return this
+
+    @classmethod
+    def from_json(cls, json_str):
+        json_dict = json.loads(json_str)
+        return ExecutionOrderEntry.from_dict(json_dict)
+
+    @classmethod
+    def from_dict(cls, dct):
+        chain_request = dct[ExecutionOrderEntry.CHAIN_REQUEST]
+        chain_arr = []
+
+        for request in chain_request:
+            current_req = rq.InvocationRequest.from_dict(request)
+            chain_arr.append(current_req)
+
+        html_data = dct[ExecutionOrderEntry.HTML_DATA]
+        return cls(chain_arr, html_data)
+
+    def compare(self, obj):
+        if not isinstance(obj, ExecutionOrderEntry):
+            return False
+
+        if len(self.chain_request) != len(obj.chain_request):
+            return False
+
+        result_1 = True
+
+        for i in range(0, len(self.chain_request)):
+            result_1 = result_1 and self.chain_request[i].compare(obj.chain_request[i])
+
+        result_2 = self.html_data == obj.html_data
+        return result_1 and result_2
 
 
 class ExecutionOrder:
@@ -65,9 +113,6 @@ class ExecutionOrder:
 
     def __iter__(self):
         return iter(self.list)
-
-    def to_json(self):
-        return ja.execution_order_to_json(self)
 
 
 class InfoCollector:

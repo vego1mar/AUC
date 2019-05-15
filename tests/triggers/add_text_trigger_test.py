@@ -6,8 +6,10 @@ import triggers as tr
 class AddTextTriggerTestCase(unittest.TestCase):
     def test_json(self):
         # given
-        trigger = tr.AddText('a', 'ab')
-        expected_json_str = hp.decode_base64(b'ewoJCSJwcmVwZW5kIjogImEiLAoJCSJhcHBlbmQiOiAiYWIiCn0=')
+        trigger = tr.AddText(hp.decode_base64(b'YQ=='), hp.decode_base64(b'YWI='))
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiYWRkX3RleHRfdHJpZ2dlciIsCgkJInByZXBlbmQiOiAiYSIsCgkJImFwcGVuZCI6ICJhY' \
+               b'iIKfQ=='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -15,7 +17,7 @@ class AddTextTriggerTestCase(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

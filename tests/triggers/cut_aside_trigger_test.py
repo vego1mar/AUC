@@ -79,7 +79,8 @@ class CutAsideTriggerTest(unittest.TestCase):
     def test_json(self):
         # given
         trigger = tr.CutAside(0, 1)
-        expected_json_str = hp.decode_base64(b'ewoJCSJsZWZ0IjogMCwKCQkicmlnaHQiOiAxCn0=')
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiY3V0X2FzaWRlX3RyaWdnZXIiLAoJCSJsZWZ0IjogMCwKCQkicmlnaHQiOiAxCn0='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -87,7 +88,7 @@ class CutAsideTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

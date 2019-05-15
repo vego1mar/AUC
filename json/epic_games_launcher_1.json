@@ -1,0 +1,49 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "id=\"cta\""
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "variant_installer"
+						},
+						"trigger": {
+								"trigger_type": "fetch_attribute_trigger",
+								"attr_name": "href"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "Windows_msi"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "Mac_dmg"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg"
+						}
+				}
+		],
+		"html_data": "https://www.epicgames.com/store/pl/"
+}

@@ -11,6 +11,13 @@ class TriggerNames:
     FIND_NEXT = 'find_next_trigger'
     RETRIEVE_TAGS = 'retrieve_tags_trigger'
     SELECT_ELEMENT = 'select_element_trigger'
+    FETCH_ATTRIBUTE = 'fetch_attribute_trigger'
+    GET_REGEX_MATCH = 'get_regex_match_trigger'
+    CUT_ASIDE = 'cut_aside_trigger'
+    SET_WORKSPACE = 'set_workspace_trigger'
+    GET_SUBSET = 'get_subset_trigger'
+    ADD_TEXT = 'add_text_trigger'
+    DELETE = 'delete_trigger'
 
 
 class Trigger(json.JSONEncoder):
@@ -53,12 +60,10 @@ class Trigger(json.JSONEncoder):
     @staticmethod
     def get_obj(trigger_dict):
         if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND:
-            text = trigger_dict[Find.TEXT]
-            return Find(text)
+            return Find(trigger_dict[Find.TEXT])
 
         if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND_NEXT:
-            text = trigger_dict[FindNext.TEXT]
-            return FindNext(text)
+            return FindNext(trigger_dict[FindNext.TEXT])
 
         if trigger_dict[Trigger.TRIGGER] == TriggerNames.RETRIEVE_TAGS:
             tag_name = trigger_dict[RetrieveTags.TAG_NAME]
@@ -67,8 +72,28 @@ class Trigger(json.JSONEncoder):
             return RetrieveTags(tag_name, tag_type, amount)
 
         if trigger_dict[Trigger.TRIGGER] == TriggerNames.SELECT_ELEMENT:
-            position = trigger_dict[SelectElement.POSITION]
-            return SelectElement(position)
+            return SelectElement(trigger_dict[SelectElement.POSITION])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FETCH_ATTRIBUTE:
+            return FetchAttribute(trigger_dict[FetchAttribute.ATTR_NAME])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.GET_REGEX_MATCH:
+            return GetRegexMatch(trigger_dict[GetRegexMatch.PATTERN])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.CUT_ASIDE:
+            return CutAside(trigger_dict[CutAside.LEFT], trigger_dict[CutAside.RIGHT])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.SET_WORKSPACE:
+            return SetWorkspace(trigger_dict[SetWorkspace.TEXT])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.GET_SUBSET:
+            return GetSubset(trigger_dict[GetSubset.BEGIN], trigger_dict[GetSubset.END])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.ADD_TEXT:
+            return AddText(trigger_dict[AddText.PREPEND], trigger_dict[AddText.APPEND])
+
+        if trigger_dict[Trigger.TRIGGER] == TriggerNames.DELETE:
+            return Delete(trigger_dict[Delete.STRING], trigger_dict[Delete.CHARACTERS])
 
     def compare(self, obj):
         raise NotImplementedError
@@ -354,16 +379,14 @@ class SelectElement(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        position = json_dict[SelectElement.POSITION]
-        return cls(position)
+        return cls(json_dict[SelectElement.POSITION])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        position = dct[SelectElement.POSITION]
-        return cls(position)
+        return cls(dct[SelectElement.POSITION])
 
     def to_dict(self):
         this = dict()
@@ -384,9 +407,11 @@ class FetchAttribute(Trigger):
        work_space_before="<section class="glx-section" id="glx-library"><p>Text</p></section>"\n
        work_space_after="glx-library"
     """
+    ATTR_NAME = 'attr_name'
 
     def __init__(self, attr_name):
-        super().__init__()
+        super(FetchAttribute, self).__init__()
+        self.trigger_type = TriggerNames.FETCH_ATTRIBUTE
         self.attr_name = attr_name
 
     def invoke(self, target, set_spaces):
@@ -420,13 +445,26 @@ class FetchAttribute(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        trigger = cls(**json_dict)
-        return trigger
+        return cls(json_dict[FetchAttribute.ATTR_NAME])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[FetchAttribute.ATTR_NAME])
+
+    def to_dict(self):
         this = dict()
-        this['attr_name'] = self.attr_name
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[FetchAttribute.ATTR_NAME] = self.attr_name
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, FetchAttribute):
+            return False
+
+        return self.attr_name == obj.attr_name
 
 
 class GetRegexMatch(Trigger):
@@ -435,9 +473,11 @@ class GetRegexMatch(Trigger):
        work_space_before="/galaxy_client_1.2.54.27.pkg"\n
        work_space_after="1.2.54.27"
        """
+    PATTERN = 'pattern'
 
     def __init__(self, pattern):
-        super().__init__()
+        super(GetRegexMatch, self).__init__()
+        self.trigger_type = TriggerNames.GET_REGEX_MATCH
         self.pattern = pattern
 
     def invoke(self, target, set_spaces):
@@ -462,13 +502,26 @@ class GetRegexMatch(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        trigger = cls(**json_dict)
-        return trigger
+        return cls(json_dict[GetRegexMatch.PATTERN])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[GetRegexMatch.PATTERN])
+
+    def to_dict(self):
         this = dict()
-        this['pattern'] = self.pattern
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[GetRegexMatch.PATTERN] = self.pattern
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, GetRegexMatch):
+            return False
+
+        return self.pattern == obj.pattern
 
 
 class CutAside(Trigger):
@@ -480,9 +533,12 @@ class CutAside(Trigger):
        work_space_before="catfish"\n
        work_space_after="cat"
     """
+    LEFT = 'left'
+    RIGHT = 'right'
 
     def __init__(self, left, right):
-        super().__init__()
+        super(CutAside, self).__init__()
+        self.trigger_type = TriggerNames.CUT_ASIDE
         self.left = int(left)
         self.right = int(right)
 
@@ -514,14 +570,29 @@ class CutAside(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        trigger = cls(**json_dict)
-        return trigger
+        return cls(json_dict[CutAside.LEFT], json_dict[CutAside.RIGHT])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        cls(dct[CutAside.LEFT], dct[CutAside.RIGHT])
+
+    def to_dict(self):
         this = dict()
-        this['left'] = self.left
-        this['right'] = self.right
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[CutAside.LEFT] = self.left
+        this[CutAside.RIGHT] = self.right
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, CutAside):
+            return False
+
+        result_1 = self.left == obj.left
+        result_2 = self.right == obj.right
+        return result_1 and result_2
 
 
 class SetWorkspace(Trigger):
@@ -530,9 +601,11 @@ class SetWorkspace(Trigger):
        work_space_before="ABCDEFGHIJKLMNOPQRSTUVWXYZ"\n
        work_space_after="This is the work space now."\n
        """
+    TEXT = 'text'
 
     def __init__(self, text):
-        super().__init__()
+        super(SetWorkspace, self).__init__()
+        self.trigger_type = TriggerNames.SET_WORKSPACE
         self.text = text
 
     def invoke(self, target, set_spaces):
@@ -543,12 +616,26 @@ class SetWorkspace(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        return cls(json_dict[SetWorkspace.TEXT])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[SetWorkspace.TEXT])
+
+    def to_dict(self):
         this = dict()
-        this['text'] = self.text
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[SetWorkspace.TEXT] = self.text
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, SetWorkspace):
+            return False
+
+        return self.text == obj.text
 
 
 class GetSubset(Trigger):
@@ -560,9 +647,12 @@ class GetSubset(Trigger):
        work_space_before="The period can also occur in floating-point and imaginary literals."\n
        work_space_after="floating-point and"
     """
+    BEGIN = 'begin'
+    END = 'end'
 
     def __init__(self, begin, end):
-        super().__init__()
+        super(GetSubset, self).__init__()
+        self.trigger_type = TriggerNames.GET_SUBSET
         self.begin = begin
         self.end = end
 
@@ -613,13 +703,29 @@ class GetSubset(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        return cls(json_dict[GetSubset.BEGIN], json_dict[GetSubset.END])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[GetSubset.BEGIN], dct[GetSubset.END])
+
+    def to_dict(self):
         this = dict()
-        this['begin'] = self.begin
-        this['end'] = self.end
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[GetSubset.BEGIN] = self.begin
+        this[GetSubset.END] = self.end
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, GetSubset):
+            return False
+
+        result_1 = self.begin == obj.begin
+        result_2 = self.end == obj.end
+        return result_1 and result_2
 
 
 class AddText(Trigger):
@@ -628,9 +734,12 @@ class AddText(Trigger):
        work_space_before="text"\n
        work_space_after="123_text_321"
     """
+    PREPEND = 'prepend'
+    APPEND = 'append'
 
     def __init__(self, prepend, append):
-        super().__init__()
+        super(AddText, self).__init__()
+        self.trigger_type = TriggerNames.ADD_TEXT
         self.prepend = prepend
         self.append = append
 
@@ -642,13 +751,29 @@ class AddText(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        return cls(json_dict[AddText.PREPEND], json_dict[AddText.APPEND])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[AddText.PREPEND], dct[AddText.APPEND])
+
+    def to_dict(self):
         this = dict()
-        this['prepend'] = self.prepend
-        this['append'] = self.append
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[AddText.PREPEND] = self.prepend
+        this[AddText.APPEND] = self.append
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, AddText):
+            return False
+
+        result_1 = self.prepend == obj.prepend
+        result_2 = self.append == obj.append
+        return result_1 and result_2
 
 
 class Delete(Trigger):
@@ -663,9 +788,12 @@ class Delete(Trigger):
        work_space_before="Pharetra sit amet aliquam id diam maecenas."\n
        work_space_after="Phretr t et lqua ecen."
     """
+    STRING = 'string'
+    CHARACTERS = 'characters'
 
     def __init__(self, string, characters):
-        super().__init__()
+        super(Delete, self).__init__()
+        self.trigger_type = TriggerNames.DELETE
         self.string = string
         self.characters = characters
 
@@ -708,10 +836,26 @@ class Delete(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(**json_dict)
+        return cls(json_dict[Delete.STRING], json_dict[Delete.CHARACTERS])
 
     def to_json(self):
+        return self.encode(self.to_dict())
+
+    @classmethod
+    def from_dict(cls, dct):
+        return cls(dct[Delete.STRING], dct[Delete.CHARACTERS])
+
+    def to_dict(self):
         this = dict()
-        this['string'] = self.string
-        this['characters'] = self.characters
-        return json.dumps(this, indent=hp.get_json_indent())
+        this[Trigger.TRIGGER] = self.trigger_type
+        this[Delete.STRING] = self.string
+        this[Delete.CHARACTERS] = self.characters
+        return this
+
+    def compare(self, obj):
+        if not isinstance(obj, Delete):
+            return False
+
+        result_1 = self.string == obj.string
+        result_2 = self.characters == obj.characters
+        return result_1 and result_2

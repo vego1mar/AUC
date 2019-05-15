@@ -74,7 +74,7 @@ class FindNextTriggerTest(unittest.TestCase):
     def test_json(self):
         # given
         trigger = tr.FindNext(hp.decode_base64(b'c29tZS10ZXh0'))
-        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZmluZF90cmlnZ2VyIiwKCQkidGV4dCI6ICJzb21lLXRleHQiCn0='
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZmluZF9uZXh0X3RyaWdnZXIiLAoJCSJ0ZXh0IjogInNvbWUtdGV4dCIKfQ=='
         expected_json_str = hp.decode_base64(jstr)
 
         # when

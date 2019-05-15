@@ -68,8 +68,10 @@ class DeleteTriggerTest(unittest.TestCase):
 
     def test_json(self):
         # given
-        trigger = tr.Delete('abc', 'c')
-        expected_json_str = hp.decode_base64(b'ewoJCSJzdHJpbmciOiAiYWJjIiwKCQkiY2hhcmFjdGVycyI6ICJjIgp9')
+        trigger = tr.Delete(hp.decode_base64(b'YWJj'), hp.decode_base64(b'Yw=='))
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZGVsZXRlX3RyaWdnZXIiLAoJCSJzdHJpbmciOiAiYWJjIiwKCQkiY2hhcmFjdGVycyI6IC' \
+               b'JjIgp9'
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -77,7 +79,7 @@ class DeleteTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

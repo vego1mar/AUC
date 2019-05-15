@@ -1,5 +1,4 @@
 from .executing import ExecutionOrderEntry
-from .helpers import get_tag_type_name
 from .helpers import fetch_html
 from .helpers import remove_characters
 from .requesting import SetSpaces

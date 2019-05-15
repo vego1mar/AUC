@@ -98,7 +98,8 @@ class GetSubsetTriggerTest(unittest.TestCase):
     def test_json(self):
         # given
         trigger = tr.GetSubset(0, '0')
-        expected_json_str = hp.decode_base64(b'ewoJCSJiZWdpbiI6IDAsCgkJImVuZCI6ICIwIgp9')
+        jstr = b'ewoJCSJ0cmlnZ2VyX3R5cGUiOiAiZ2V0X3N1YnNldF90cmlnZ2VyIiwKCQkiYmVnaW4iOiAwLAoJCSJlbmQiOiAiMCIKfQ=='
+        expected_json_str = hp.decode_base64(jstr)
 
         # when
         json_str = trigger.to_json()
@@ -106,7 +107,7 @@ class GetSubsetTriggerTest(unittest.TestCase):
 
         # then
         self.assertEqual(expected_json_str, json_str)
-        self.assertEqual(trigger.__dict__, obj.__dict__)
+        self.assertTrue(trigger.compare(obj), obj.compare(obj))
 
 
 if __name__ == '__main__':

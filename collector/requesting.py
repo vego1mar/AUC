@@ -119,7 +119,9 @@ class InvocationRequest(json.JSONEncoder):
 
     @classmethod
     def from_dict(cls, dct):
-        return tr.Trigger.get_obj(dct[InvocationRequest.TRIGGER])
+        target = Target.from_dict(dct[InvocationRequest.TARGET])
+        trigger = tr.Trigger.get_obj(dct[InvocationRequest.TRIGGER])
+        return cls(target, trigger)
 
     def compare(self, obj):
         if not isinstance(obj, InvocationRequest):

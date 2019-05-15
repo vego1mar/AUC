@@ -198,15 +198,15 @@ def _app_sumatrapdf_to_json():
     entries[6].html_data = sp.SumatraPdfTestData.WEB_SPACE_URL_7
     entries[7].html_data = sp.SumatraPdfTestData.WEB_SPACE_URL_8
     entries[8].html_data = sp.SumatraPdfTestData.WEB_SPACE_URL_9
-    hp.save_file(_get_files_path("steam_1"), entries[0].to_json())
-    hp.save_file(_get_files_path("steam_2"), entries[1].to_json())
-    hp.save_file(_get_files_path("steam_3"), entries[2].to_json())
-    hp.save_file(_get_files_path("steam_4"), entries[3].to_json())
-    hp.save_file(_get_files_path("steam_5"), entries[4].to_json())
-    hp.save_file(_get_files_path("steam_6"), entries[5].to_json())
-    hp.save_file(_get_files_path("steam_7"), entries[6].to_json())
-    hp.save_file(_get_files_path("steam_8"), entries[7].to_json())
-    hp.save_file(_get_files_path("steam_9"), entries[8].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_1"), entries[0].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_2"), entries[1].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_3"), entries[2].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_4"), entries[3].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_5"), entries[4].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_6"), entries[5].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_7"), entries[6].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_8"), entries[7].to_json())
+    hp.save_file(_get_files_path("sumatrapdf_9"), entries[8].to_json())
 
 
 def _save_apps_collector_prerequisites():

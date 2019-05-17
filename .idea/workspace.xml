@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/console/json_write_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/collector/console.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="752">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
               <folding>
-                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +98,6 @@
         <option value="$PROJECT_DIR$/tests/executing/info_collector_test.py" />
         <option value="$PROJECT_DIR$/tests/json_assist/json_assist_test.py" />
         <option value="$PROJECT_DIR$/collector/json_assist.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/find_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/retrieve_tags_trigger_test.py" />
@@ -107,18 +107,19 @@
         <option value="$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/set_workspace_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/get_subset_trigger_test.py" />
-        <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/tests/triggers/add_text_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/execution_order_entry_test.py" />
-        <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/collector/__init__.py" />
         <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/console/json_write_app.py" />
         <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/collector/triggers.py" />
+        <option value="$PROJECT_DIR$/collector/requesting.py" />
+        <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector/console.py" />
       </list>
     </option>
@@ -132,7 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +165,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -352,19 +353,19 @@
     <frame x="0" y="0" width="1566" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20868438" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20841424" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.20349967" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.32683983" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49675745" weight="0.39718616" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32711306" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.32601535" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49675745" weight="0.39626783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32711306" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50324255" side_tool="true" weight="0.39804772" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32899022" />
       <window_info anchor="bottom" id="Pylint" order="12" sideWeight="0.4980263" weight="0.329718" />
@@ -399,54 +400,59 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="json.loads(hierarchy_file)" language="Python" />
+        <watch expression="self.hierarchy_dict.items()" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>json.loads(hierarchy_file)</expression-string>
+        <expression-string>self.hierarchy_dict.items()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.loads(hierarchy_file[3:])</expression-string>
+        <expression-string>self.hierarchy_dict.values()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.loads(hierarchy_file[2:])</expression-string>
+        <expression-string>self.hierarchy_dict.keys()[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.loads(hierarchy_file[1:])</expression-string>
+        <expression-string>self.hierarchy_dict.keys()[0][i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.loads(hierarchy_file[1:(len(hierarchy_file) - 1)])</expression-string>
+        <expression-string>self.hierarchy_dict.keys()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.loads(**hierarchy_file)</expression-string>
+        <expression-string>self.hierarchy_dict[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>_get_path_prefix() + jfa.HIERARCHY_FILE_NAME</expression-string>
+        <expression-string>self._collectibles_list[i]['APP_NAME'] = self.hierarchy_dict[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hp.encode_base64(json_str)</expression-string>
+        <expression-string>self._collectibles_list[i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>collector.get_collectibles_as_json()</expression-string>
+        <expression-string>HierarchyFile.FILE_PREFIX + json_files[j]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json_files[j]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -855,42 +861,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/info_collector_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1948">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -947,8 +923,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="296" selection-start-line="296" selection-end-line="296" />
+        <state relative-caret-position="693">
+          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -957,8 +963,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-1461">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -967,10 +973,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector/console.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="752">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
           <folding>
-            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

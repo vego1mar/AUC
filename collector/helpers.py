@@ -4,6 +4,9 @@ import triggers as tr
 
 
 def fetch_html(full_url):
+    if str(full_url) == str(''):
+        return str()
+
     import requests
     import logging
     req = str()
@@ -19,6 +22,9 @@ def fetch_html(full_url):
     except requests.exceptions.InvalidSchema as exp:
         logging.debug(exp.strerror)
         return str()
+    except requests.exceptions.MissingSchema as exp:
+        logging.debug(exp.strerror)
+        return str()
 
     return req.text
 
@@ -26,6 +32,18 @@ def fetch_html(full_url):
 def fetch_file(file_name):
     with open(str(file_name)) as file:
         return str(file.readlines())
+
+
+def read_file(file_name):
+    content = str()
+
+    with open(file_name) as file:
+        lines = file.readlines()
+
+    for line in lines:
+        content += line
+
+    return content
 
 
 def save_file(file_name, str_to_save):

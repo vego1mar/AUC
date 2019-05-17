@@ -22,7 +22,7 @@ class TriggerNames:
 
 class Trigger(json.JSONEncoder):
     """This should be treated as an abstract class."""
-    TRIGGER = 'trigger_type'
+    STR_TRIGGER = 'trigger_type'
 
     def __init__(self):
         super().__init__(indent=hp.get_json_indent())
@@ -59,41 +59,41 @@ class Trigger(json.JSONEncoder):
 
     @staticmethod
     def get_obj(trigger_dict):
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND:
-            return Find(trigger_dict[Find.TEXT])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.FIND:
+            return Find(trigger_dict[Find.STR_TEXT])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FIND_NEXT:
-            return FindNext(trigger_dict[FindNext.TEXT])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.FIND_NEXT:
+            return FindNext(trigger_dict[FindNext.STR_TEXT])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.RETRIEVE_TAGS:
-            tag_name = trigger_dict[RetrieveTags.TAG_NAME]
-            tag_type = TagTypeHelper.get_tag_type_obj(trigger_dict[RetrieveTags.TAG_TYPE])
-            amount = trigger_dict[RetrieveTags.AMOUNT]
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.RETRIEVE_TAGS:
+            tag_name = trigger_dict[RetrieveTags.STR_TAG_NAME]
+            tag_type = TagTypeHelper.get_tag_type_obj(trigger_dict[RetrieveTags.STR_TAG_TYPE])
+            amount = trigger_dict[RetrieveTags.STR_AMOUNT]
             return RetrieveTags(tag_name, tag_type, amount)
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.SELECT_ELEMENT:
-            return SelectElement(trigger_dict[SelectElement.POSITION])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.SELECT_ELEMENT:
+            return SelectElement(trigger_dict[SelectElement.STR_POSITION])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.FETCH_ATTRIBUTE:
-            return FetchAttribute(trigger_dict[FetchAttribute.ATTR_NAME])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.FETCH_ATTRIBUTE:
+            return FetchAttribute(trigger_dict[FetchAttribute.STR_ATTR_NAME])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.GET_REGEX_MATCH:
-            return GetRegexMatch(trigger_dict[GetRegexMatch.PATTERN])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.GET_REGEX_MATCH:
+            return GetRegexMatch(trigger_dict[GetRegexMatch.STR_PATTERN])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.CUT_ASIDE:
-            return CutAside(trigger_dict[CutAside.LEFT], trigger_dict[CutAside.RIGHT])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.CUT_ASIDE:
+            return CutAside(trigger_dict[CutAside.STR_LEFT], trigger_dict[CutAside.STR_RIGHT])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.SET_WORKSPACE:
-            return SetWorkspace(trigger_dict[SetWorkspace.TEXT])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.SET_WORKSPACE:
+            return SetWorkspace(trigger_dict[SetWorkspace.STR_TEXT])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.GET_SUBSET:
-            return GetSubset(trigger_dict[GetSubset.BEGIN], trigger_dict[GetSubset.END])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.GET_SUBSET:
+            return GetSubset(trigger_dict[GetSubset.STR_BEGIN], trigger_dict[GetSubset.STR_END])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.ADD_TEXT:
-            return AddText(trigger_dict[AddText.PREPEND], trigger_dict[AddText.APPEND])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.ADD_TEXT:
+            return AddText(trigger_dict[AddText.STR_PREPEND], trigger_dict[AddText.STR_APPEND])
 
-        if trigger_dict[Trigger.TRIGGER] == TriggerNames.DELETE:
-            return Delete(trigger_dict[Delete.STRING], trigger_dict[Delete.CHARACTERS])
+        if trigger_dict[Trigger.STR_TRIGGER] == TriggerNames.DELETE:
+            return Delete(trigger_dict[Delete.STR_STRING], trigger_dict[Delete.STR_CHARACTERS])
 
     def compare(self, obj):
         raise NotImplementedError
@@ -105,7 +105,7 @@ class Find(Trigger):
        work_space_before="aaaYYbbb"\n
        work_space_after="YYbbb"
     """
-    TEXT = 'text'
+    STR_TEXT = 'text'
 
     def __init__(self, text):
         super(Find, self).__init__()
@@ -136,17 +136,17 @@ class Find(Trigger):
 
     @classmethod
     def from_dict(cls, dct):
-        return Find(dct[Find.TEXT])
+        return Find(dct[Find.STR_TEXT])
 
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[Find.TEXT])
+        return cls(json_dict[Find.STR_TEXT])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = TriggerNames.FIND
-        this[Find.TEXT] = self.text
+        this[Trigger.STR_TRIGGER] = TriggerNames.FIND
+        this[Find.STR_TEXT] = self.text
         return this
 
     def to_json(self):
@@ -165,7 +165,7 @@ class FindNext(Trigger):
        work_space_before="aaaYYbbbYYcccd"\n
        work_space_after="YYcccd"
     """
-    TEXT = 'text'
+    STR_TEXT = 'text'
 
     def __init__(self, text):
         super(FindNext, self).__init__()
@@ -196,19 +196,19 @@ class FindNext(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[FindNext.TEXT])
+        return cls(json_dict[FindNext.STR_TEXT])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return FindNext(dct[FindNext.TEXT])
+        return FindNext(dct[FindNext.STR_TEXT])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = TriggerNames.FIND_NEXT
-        this[FindNext.TEXT] = self.text
+        this[Trigger.STR_TRIGGER] = TriggerNames.FIND_NEXT
+        this[FindNext.STR_TEXT] = self.text
         return this
 
     def compare(self, obj):
@@ -225,26 +225,26 @@ class TagType:
 
 
 class TagTypeHelper:
-    SIMPLE = 'SIMPLE'
-    ATTRIBUTED = 'ATTRIBUTED'
-    META = 'META'
+    STR_SIMPLE = 'SIMPLE'
+    STR_ATTRIBUTED = 'ATTRIBUTED'
+    STR_META = 'META'
 
     @staticmethod
     def get_tag_type_name(obj):
         if str(obj) == str(TagType.SIMPLE):
-            return TagTypeHelper.SIMPLE
+            return TagTypeHelper.STR_SIMPLE
         if str(obj) == str(TagType.ATTRIBUTED):
-            return TagTypeHelper.ATTRIBUTED
+            return TagTypeHelper.STR_ATTRIBUTED
         if str(obj) == str(TagType.META):
-            return TagTypeHelper.META
+            return TagTypeHelper.STR_META
 
     @staticmethod
     def get_tag_type_obj(name):
-        if str(name) == TagTypeHelper.SIMPLE:
+        if str(name) == TagTypeHelper.STR_SIMPLE:
             return TagType.SIMPLE
-        if str(name) == TagTypeHelper.ATTRIBUTED:
+        if str(name) == TagTypeHelper.STR_ATTRIBUTED:
             return TagType.ATTRIBUTED
-        if str(name) == TagTypeHelper.META:
+        if str(name) == TagTypeHelper.STR_META:
             return TagType.META
 
 
@@ -260,9 +260,9 @@ class RetrieveTags(Trigger):
        work_space_before="<div><meta charset="utf-8"/></div>"\n
        work_space_after="<meta charset="utf-8"/>"
     """
-    TAG_NAME = 'tag_name'
-    TAG_TYPE = 'tag_type'
-    AMOUNT = 'amount'
+    STR_TAG_NAME = 'tag_name'
+    STR_TAG_TYPE = 'tag_type'
+    STR_AMOUNT = 'amount'
 
     def __init__(self, tag_name, tag_type, amount):
         super(RetrieveTags, self).__init__()
@@ -316,9 +316,9 @@ class RetrieveTags(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        tag_name = json_dict[RetrieveTags.TAG_NAME]
-        tag_type = TagTypeHelper.get_tag_type_obj(json_dict[RetrieveTags.TAG_TYPE])
-        amount = json_dict[RetrieveTags.AMOUNT]
+        tag_name = json_dict[RetrieveTags.STR_TAG_NAME]
+        tag_type = TagTypeHelper.get_tag_type_obj(json_dict[RetrieveTags.STR_TAG_TYPE])
+        amount = json_dict[RetrieveTags.STR_AMOUNT]
         return cls(tag_name, tag_type, amount)
 
     def to_json(self):
@@ -326,17 +326,17 @@ class RetrieveTags(Trigger):
 
     @classmethod
     def from_dict(cls, dct):
-        tag_name = dct[RetrieveTags.TAG_NAME]
-        tag_type = dct[RetrieveTags.TAG_TYPE]
-        amount = dct[RetrieveTags.AMOUNT]
+        tag_name = dct[RetrieveTags.STR_TAG_NAME]
+        tag_type = dct[RetrieveTags.STR_TAG_TYPE]
+        amount = dct[RetrieveTags.STR_AMOUNT]
         return cls(tag_name, tag_type, amount)
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = TriggerNames.RETRIEVE_TAGS
-        this[RetrieveTags.TAG_NAME] = self.tag_name
-        this[RetrieveTags.TAG_TYPE] = TagTypeHelper.get_tag_type_name(self.tag_type)
-        this[RetrieveTags.AMOUNT] = self.amount
+        this[Trigger.STR_TRIGGER] = TriggerNames.RETRIEVE_TAGS
+        this[RetrieveTags.STR_TAG_NAME] = self.tag_name
+        this[RetrieveTags.STR_TAG_TYPE] = TagTypeHelper.get_tag_type_name(self.tag_type)
+        this[RetrieveTags.STR_AMOUNT] = self.amount
         return this
 
     def compare(self, obj):
@@ -357,7 +357,7 @@ class SelectElement(Trigger):
        SelectElement(position=2)\n
        work_space_after='c'
     """
-    POSITION = 'position'
+    STR_POSITION = 'position'
 
     def __init__(self, position):
         super(SelectElement, self).__init__()
@@ -379,19 +379,19 @@ class SelectElement(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[SelectElement.POSITION])
+        return cls(json_dict[SelectElement.STR_POSITION])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[SelectElement.POSITION])
+        return cls(dct[SelectElement.STR_POSITION])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[SelectElement.POSITION] = self.position
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[SelectElement.STR_POSITION] = self.position
         return this
 
     def compare(self, obj):
@@ -407,7 +407,7 @@ class FetchAttribute(Trigger):
        work_space_before="<section class="glx-section" id="glx-library"><p>Text</p></section>"\n
        work_space_after="glx-library"
     """
-    ATTR_NAME = 'attr_name'
+    STR_ATTR_NAME = 'attr_name'
 
     def __init__(self, attr_name):
         super(FetchAttribute, self).__init__()
@@ -445,19 +445,19 @@ class FetchAttribute(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[FetchAttribute.ATTR_NAME])
+        return cls(json_dict[FetchAttribute.STR_ATTR_NAME])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[FetchAttribute.ATTR_NAME])
+        return cls(dct[FetchAttribute.STR_ATTR_NAME])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[FetchAttribute.ATTR_NAME] = self.attr_name
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[FetchAttribute.STR_ATTR_NAME] = self.attr_name
         return this
 
     def compare(self, obj):
@@ -473,7 +473,7 @@ class GetRegexMatch(Trigger):
        work_space_before="/galaxy_client_1.2.54.27.pkg"\n
        work_space_after="1.2.54.27"
        """
-    PATTERN = 'pattern'
+    STR_PATTERN = 'pattern'
 
     def __init__(self, pattern):
         super(GetRegexMatch, self).__init__()
@@ -494,6 +494,7 @@ class GetRegexMatch(Trigger):
         self.set_result(str())
 
         try:
+            # ReDOS or performances problems are not important
             matched_substring = re.search(self.pattern, text).group(0)
             self.set_result(matched_substring)
         except AttributeError:
@@ -502,19 +503,19 @@ class GetRegexMatch(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[GetRegexMatch.PATTERN])
+        return cls(json_dict[GetRegexMatch.STR_PATTERN])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[GetRegexMatch.PATTERN])
+        return cls(dct[GetRegexMatch.STR_PATTERN])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[GetRegexMatch.PATTERN] = self.pattern
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[GetRegexMatch.STR_PATTERN] = self.pattern
         return this
 
     def compare(self, obj):
@@ -533,8 +534,8 @@ class CutAside(Trigger):
        work_space_before="catfish"\n
        work_space_after="cat"
     """
-    LEFT = 'left'
-    RIGHT = 'right'
+    STR_LEFT = 'left'
+    STR_RIGHT = 'right'
 
     def __init__(self, left, right):
         super(CutAside, self).__init__()
@@ -570,20 +571,20 @@ class CutAside(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[CutAside.LEFT], json_dict[CutAside.RIGHT])
+        return cls(json_dict[CutAside.STR_LEFT], json_dict[CutAside.STR_RIGHT])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        cls(dct[CutAside.LEFT], dct[CutAside.RIGHT])
+        cls(dct[CutAside.STR_LEFT], dct[CutAside.STR_RIGHT])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[CutAside.LEFT] = self.left
-        this[CutAside.RIGHT] = self.right
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[CutAside.STR_LEFT] = self.left
+        this[CutAside.STR_RIGHT] = self.right
         return this
 
     def compare(self, obj):
@@ -601,7 +602,7 @@ class SetWorkspace(Trigger):
        work_space_before="ABCDEFGHIJKLMNOPQRSTUVWXYZ"\n
        work_space_after="This is the work space now."\n
        """
-    TEXT = 'text'
+    STR_TEXT = 'text'
 
     def __init__(self, text):
         super(SetWorkspace, self).__init__()
@@ -616,19 +617,19 @@ class SetWorkspace(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[SetWorkspace.TEXT])
+        return cls(json_dict[SetWorkspace.STR_TEXT])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[SetWorkspace.TEXT])
+        return cls(dct[SetWorkspace.STR_TEXT])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[SetWorkspace.TEXT] = self.text
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[SetWorkspace.STR_TEXT] = self.text
         return this
 
     def compare(self, obj):
@@ -647,8 +648,8 @@ class GetSubset(Trigger):
        work_space_before="The period can also occur in floating-point and imaginary literals."\n
        work_space_after="floating-point and"
     """
-    BEGIN = 'begin'
-    END = 'end'
+    STR_BEGIN = 'begin'
+    STR_END = 'end'
 
     def __init__(self, begin, end):
         super(GetSubset, self).__init__()
@@ -703,20 +704,20 @@ class GetSubset(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[GetSubset.BEGIN], json_dict[GetSubset.END])
+        return cls(json_dict[GetSubset.STR_BEGIN], json_dict[GetSubset.STR_END])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[GetSubset.BEGIN], dct[GetSubset.END])
+        return cls(dct[GetSubset.STR_BEGIN], dct[GetSubset.STR_END])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[GetSubset.BEGIN] = self.begin
-        this[GetSubset.END] = self.end
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[GetSubset.STR_BEGIN] = self.begin
+        this[GetSubset.STR_END] = self.end
         return this
 
     def compare(self, obj):
@@ -734,8 +735,8 @@ class AddText(Trigger):
        work_space_before="text"\n
        work_space_after="123_text_321"
     """
-    PREPEND = 'prepend'
-    APPEND = 'append'
+    STR_PREPEND = 'prepend'
+    STR_APPEND = 'append'
 
     def __init__(self, prepend, append):
         super(AddText, self).__init__()
@@ -751,20 +752,20 @@ class AddText(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[AddText.PREPEND], json_dict[AddText.APPEND])
+        return cls(json_dict[AddText.STR_PREPEND], json_dict[AddText.STR_APPEND])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[AddText.PREPEND], dct[AddText.APPEND])
+        return cls(dct[AddText.STR_PREPEND], dct[AddText.STR_APPEND])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[AddText.PREPEND] = self.prepend
-        this[AddText.APPEND] = self.append
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[AddText.STR_PREPEND] = self.prepend
+        this[AddText.STR_APPEND] = self.append
         return this
 
     def compare(self, obj):
@@ -788,8 +789,8 @@ class Delete(Trigger):
        work_space_before="Pharetra sit amet aliquam id diam maecenas."\n
        work_space_after="Phretr t et lqua ecen."
     """
-    STRING = 'string'
-    CHARACTERS = 'characters'
+    STR_STRING = 'string'
+    STR_CHARACTERS = 'characters'
 
     def __init__(self, string, characters):
         super(Delete, self).__init__()
@@ -836,20 +837,20 @@ class Delete(Trigger):
     @classmethod
     def from_json(cls, json_str):
         json_dict = json.loads(json_str)
-        return cls(json_dict[Delete.STRING], json_dict[Delete.CHARACTERS])
+        return cls(json_dict[Delete.STR_STRING], json_dict[Delete.STR_CHARACTERS])
 
     def to_json(self):
         return self.encode(self.to_dict())
 
     @classmethod
     def from_dict(cls, dct):
-        return cls(dct[Delete.STRING], dct[Delete.CHARACTERS])
+        return cls(dct[Delete.STR_STRING], dct[Delete.STR_CHARACTERS])
 
     def to_dict(self):
         this = dict()
-        this[Trigger.TRIGGER] = self.trigger_type
-        this[Delete.STRING] = self.string
-        this[Delete.CHARACTERS] = self.characters
+        this[Trigger.STR_TRIGGER] = self.trigger_type
+        this[Delete.STR_STRING] = self.string
+        this[Delete.STR_CHARACTERS] = self.characters
         return this
 
     def compare(self, obj):

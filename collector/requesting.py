@@ -17,33 +17,33 @@ class SpaceName:
 
 
 class SpaceNameHelper:
-    WEB = 'WEB'
-    WORK = 'WORK'
-    LIST = 'LIST'
+    STR_WEB = 'WEB'
+    STR_WORK = 'WORK'
+    STR_LIST = 'LIST'
 
     @staticmethod
     def get_set_name_str(obj):
         if str(obj) == str(SpaceName.WEB):
-            return SpaceNameHelper.WEB
+            return SpaceNameHelper.STR_WEB
         if str(obj) == str(SpaceName.WORK):
-            return SpaceNameHelper.WORK
+            return SpaceNameHelper.STR_WORK
         if str(obj) == str(SpaceName.LIST):
-            return SpaceNameHelper.LIST
+            return SpaceNameHelper.STR_LIST
 
     @staticmethod
     def get_set_name_obj(name):
-        if str(name) == SpaceNameHelper.WEB:
+        if str(name) == SpaceNameHelper.STR_WEB:
             return SpaceName.WEB
-        if str(name) == SpaceNameHelper.WORK:
+        if str(name) == SpaceNameHelper.STR_WORK:
             return SpaceName.WORK
-        if str(name) == SpaceNameHelper.LIST:
+        if str(name) == SpaceNameHelper.STR_LIST:
             return SpaceName.LIST
 
 
 class Target(json.JSONEncoder):
-    SET_NAME = 'set_name'
-    IS_GATHERING_REQUEST = 'is_gathering_request'
-    COLLECTIBLE_NAME = 'collectible_name'
+    STR_SET_NAME = 'set_name'
+    STR_IS_GATHERING_REQUEST = 'is_gathering_request'
+    STR_COLLECTIBLE_NAME = 'collectible_name'
 
     def __init__(self, set_name, is_gathering_request=False, collectible_name="general"):
         super().__init__(indent=hp.get_json_indent())
@@ -56,9 +56,9 @@ class Target(json.JSONEncoder):
 
     def to_dict(self):
         this = dict()
-        this[Target.SET_NAME] = SpaceNameHelper.get_set_name_str(self.set_name)
-        this[Target.IS_GATHERING_REQUEST] = self.is_gathering_request
-        this[Target.COLLECTIBLE_NAME] = self.collectible_name
+        this[Target.STR_SET_NAME] = SpaceNameHelper.get_set_name_str(self.set_name)
+        this[Target.STR_IS_GATHERING_REQUEST] = self.is_gathering_request
+        this[Target.STR_COLLECTIBLE_NAME] = self.collectible_name
         return this
 
     def to_json(self):
@@ -73,9 +73,9 @@ class Target(json.JSONEncoder):
 
     @classmethod
     def from_dict(cls, dct):
-        set_name = SpaceNameHelper.get_set_name_obj(dct[Target.SET_NAME])
-        is_gathering_request = dct[Target.IS_GATHERING_REQUEST]
-        collectible_name = dct[Target.COLLECTIBLE_NAME]
+        set_name = SpaceNameHelper.get_set_name_obj(dct[Target.STR_SET_NAME])
+        is_gathering_request = dct[Target.STR_IS_GATHERING_REQUEST]
+        collectible_name = dct[Target.STR_COLLECTIBLE_NAME]
         return Target(set_name, is_gathering_request, collectible_name)
 
     def compare(self, obj):
@@ -89,8 +89,8 @@ class Target(json.JSONEncoder):
 
 
 class InvocationRequest(json.JSONEncoder):
-    TARGET = 'target'
-    TRIGGER = 'trigger'
+    STR_TARGET = 'target'
+    STR_TRIGGER = 'trigger'
 
     def __init__(self, target, trigger):
         super().__init__(indent=hp.get_json_indent())
@@ -102,8 +102,8 @@ class InvocationRequest(json.JSONEncoder):
 
     def to_dict(self):
         this = dict()
-        this[InvocationRequest.TARGET] = self.target.to_dict()
-        this[InvocationRequest.TRIGGER] = self.trigger.to_dict()
+        this[InvocationRequest.STR_TARGET] = self.target.to_dict()
+        this[InvocationRequest.STR_TRIGGER] = self.trigger.to_dict()
         return this
 
     def to_json(self):
@@ -113,14 +113,14 @@ class InvocationRequest(json.JSONEncoder):
     def from_json(cls, json_str):
         json_dict = json.JSONDecoder().decode(json_str)
         request = cls(**json_dict)
-        request.target = Target.from_dict(json_dict[InvocationRequest.TARGET])
-        request.trigger = tr.Trigger.get_obj(json_dict[InvocationRequest.TRIGGER])
+        request.target = Target.from_dict(json_dict[InvocationRequest.STR_TARGET])
+        request.trigger = tr.Trigger.get_obj(json_dict[InvocationRequest.STR_TRIGGER])
         return request
 
     @classmethod
     def from_dict(cls, dct):
-        target = Target.from_dict(dct[InvocationRequest.TARGET])
-        trigger = tr.Trigger.get_obj(dct[InvocationRequest.TRIGGER])
+        target = Target.from_dict(dct[InvocationRequest.STR_TARGET])
+        trigger = tr.Trigger.get_obj(dct[InvocationRequest.STR_TRIGGER])
         return cls(target, trigger)
 
     def compare(self, obj):

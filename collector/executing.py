@@ -40,8 +40,8 @@ class ChainRequestExecution:
 
 
 class ExecutionOrderEntry(json.JSONEncoder):
-    CHAIN_REQUEST = 'chain_request'
-    HTML_DATA = 'html_data'
+    STR_CHAIN_REQUEST = 'chain_request'
+    STR_HTML_DATA = 'html_data'
 
     def __init__(self, chain_request, html_data):
         super().__init__(indent=hp.get_json_indent())
@@ -61,8 +61,8 @@ class ExecutionOrderEntry(json.JSONEncoder):
         for req in self.chain_request:
             chain_request.append(req.to_dict())
 
-        this[ExecutionOrderEntry.CHAIN_REQUEST] = chain_request
-        this[ExecutionOrderEntry.HTML_DATA] = self.html_data
+        this[ExecutionOrderEntry.STR_CHAIN_REQUEST] = chain_request
+        this[ExecutionOrderEntry.STR_HTML_DATA] = self.html_data
         return this
 
     @classmethod
@@ -72,14 +72,14 @@ class ExecutionOrderEntry(json.JSONEncoder):
 
     @classmethod
     def from_dict(cls, dct):
-        chain_request = dct[ExecutionOrderEntry.CHAIN_REQUEST]
+        chain_request = dct[ExecutionOrderEntry.STR_CHAIN_REQUEST]
         chain_arr = []
 
         for request in chain_request:
             current_req = rq.InvocationRequest.from_dict(request)
             chain_arr.append(current_req)
 
-        html_data = dct[ExecutionOrderEntry.HTML_DATA]
+        html_data = dct[ExecutionOrderEntry.STR_HTML_DATA]
         return cls(chain_arr, html_data)
 
     def compare(self, obj):
@@ -110,6 +110,10 @@ class ExecutionOrder:
         url = execution_order_entry.html_data
         execution_order_entry.html_data = hp.fetch_html(url)
         self.list.append(execution_order_entry)
+
+    def fetch_html_data(self):
+        for entry in self.list:
+            entry.html_data = hp.fetch_html(entry.html_data)
 
     def __iter__(self):
         return iter(self.list)

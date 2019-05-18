@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: Google Chrome")
 
 
 class GoogleChromeTestData:
@@ -28,93 +24,80 @@ class GoogleChromeTestData:
         self.execution_order.add_entry(get_entry_3(), True)
         self.execution_order.add_entry(get_entry_4(), True)
         self.execution_order.add_entry(get_entry_5(), True)
-        self.expected_apk_date = hp.decode_base64(b'TWFyY2ggMjYsIDIwMTk=')
-        self.expected_win_ver = hp.decode_base64(b'NzMuMC4zNjgzLjEwMw==')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wNC0wNQ==')
-        self.expected_mac_ver = hp.decode_base64(b'NzMuMC4zNjgzLjEwMw==')
-        self.expected_mac_date = hp.decode_base64(b'MjAxOS0wNC0wNQ==')
-        self.expected_mac_size = hp.decode_base64(b'NzQsMzYgTUI=')
-        self.expected_ios_ver = hp.decode_base64(b'VmVyc2lvbiA3My4wLjM2ODMuNjg=')
-        self.expected_ios_size = hp.decode_base64(b'NzUuMyBNQg==')
+        self.expected_apk_date = 'May 16, 2019'
+        self.expected_win_ver = '74.0.3729.157'
+        self.expected_win_date = '2019-05-15'
+        self.expected_mac_ver = '74.0.3729.157'
+        self.expected_mac_date = '2019-05-15'
+        self.expected_mac_size = '75,12 MB'
+        self.expected_ios_ver = 'Version 74.0.3729.121'
+        self.expected_ios_size = '72.4 MB'
 
 
 def get_win_exe_64bit():
-    win_exe = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL3RhZy9zL2FwcGd1aWQlM0QlN0I4QTY5RDM0NS1ENTY0LTQ2M0MtQUZGMS1BNjlEOUU1MzBG' \
-              b'OTYlN0QlMjZpaWQlM0QlN0JEQTZGRTA2NS1FNDk0LUY1RDQtMDg0Mi1DOUU0MEIyQjJDNzElN0QlMjZsYW5nJTNEZW4lMjZicm93' \
-              b'c2VyJTNENCUyNnVzYWdlc3RhdHMlM0QwJTI2YXBwbmFtZSUzREdvb2dsZSUyNTIwQ2hyb21lJTI2bmVlZHNhZG1pbiUzRHByZWZl' \
-              b'cnMlMjZhcCUzRHg2NC1zdGFibGUtc3RhdHNkZWZfMSUyNmluc3RhbGxkYXRhaW5kZXglM0RlbXB0eS91cGRhdGUyL2luc3RhbGxl' \
-              b'cnMvQ2hyb21lU2V0dXAuZXhl'
-    return hp.decode_base64(win_exe)
+    return r'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E4' \
+           r'94-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%2' \
+           r'6needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/Chrome' \
+           r'Setup.exe'
 
 
 def get_win_exe_32bit():
-    win_exe = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL3RhZy9zL2FwcGd1aWQlM0QlN0I4QTY5RDM0NS1ENTY0LTQ2M0MtQUZGMS1BNjlEOUU1MzBG' \
-              b'OTYlN0QlMjZpaWQlM0QlN0JEQTZGRTA2NS1FNDk0LUY1RDQtMDg0Mi1DOUU0MEIyQjJDNzElN0QlMjZsYW5nJTNEZW4lMjZicm93' \
-              b'c2VyJTNENCUyNnVzYWdlc3RhdHMlM0QwJTI2YXBwbmFtZSUzREdvb2dsZSUyNTIwQ2hyb21lJTI2bmVlZHNhZG1pbiUzRHByZWZl' \
-              b'cnMlMjZhcCUzRHN0YWJsZS1hcmNoX3g4Ni1zdGF0c2RlZl8xJTI2aW5zdGFsbGRhdGFpbmRleCUzRGVtcHR5L3VwZGF0ZTIvaW5z' \
-              b'dGFsbGVycy9DaHJvbWVTZXR1cC5leGU='
-    return hp.decode_base64(win_exe)
+    return r'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E4' \
+           r'94-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%2' \
+           r'6needsadmin%3Dprefers%26ap%3Dstable-arch_x86-statsdef_1%26installdataindex%3Dempty/update2/installers/C' \
+           r'hromeSetup.exe'
 
 
 def get_mac_dmg_1010plus():
-    mac_dmg = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL2Nocm9tZS9tYWMvc3RhYmxlL0dHUk8vZ29vZ2xlY2hyb21lLmRtZw=='
-    return hp.decode_base64(mac_dmg)
+    return r'https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg'
 
 
 def get_win_xp_exe():
-    win_exe = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL3RhZy9zL2FwcGd1aWQlM0QlN0I4QTY5RDM0NS1ENTY0LTQ2M0MtQUZGMS1BNjlEOUU1MzBG' \
-              b'OTYlN0QlMjZpaWQlM0QlN0JEQTZGRTA2NS1FNDk0LUY1RDQtMDg0Mi1DOUU0MEIyQjJDNzElN0QlMjZsYW5nJTNEZW4lMjZicm93' \
-              b'c2VyJTNENCUyNnVzYWdlc3RhdHMlM0QwJTI2YXBwbmFtZSUzREdvb2dsZSUyNTIwQ2hyb21lJTI2bmVlZHNhZG1pbiUzRHByZWZl' \
-              b'cnMlMjZhcCUzRHN0YWJsZS1hcmNoX3g4NiUyNmluc3RhbGxkYXRhaW5kZXglM0RlbXB0eS91cGRhdGUyL2luc3RhbGxlcnMvQ2hy' \
-              b'b21lU2V0dXAuZXhl'
-    return hp.decode_base64(win_exe)
+    return r'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E4' \
+           r'94-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%2' \
+           r'6needsadmin%3Dprefers%26ap%3Dstable-arch_x86%26installdataindex%3Dempty/update2/installers/ChromeSetup.' \
+           r'exe'
 
 
 def get_win_vista_exe():
-    win_exe = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL3RhZy9zL2FwcGd1aWQlM0QlN0I4QTY5RDM0NS1ENTY0LTQ2M0MtQUZGMS1BNjlEOUU1MzBG' \
-              b'OTYlN0QlMjZpaWQlM0QlN0JEQTZGRTA2NS1FNDk0LUY1RDQtMDg0Mi1DOUU0MEIyQjJDNzElN0QlMjZsYW5nJTNEZW4lMjZicm93' \
-              b'c2VyJTNENCUyNnVzYWdlc3RhdHMlM0QwJTI2YXBwbmFtZSUzREdvb2dsZSUyNTIwQ2hyb21lJTI2bmVlZHNhZG1pbiUzRHByZWZl' \
-              b'cnMlMjZhcCUzRHN0YWJsZS1hcmNoX3g4NiUyNmluc3RhbGxkYXRhaW5kZXglM0RlbXB0eS91cGRhdGUyL2luc3RhbGxlcnMvQ2hy' \
-              b'b21lU2V0dXAuZXhl'
-    return hp.decode_base64(win_exe)
+    return r'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BDA6FE065-E4' \
+           r'94-F5D4-0842-C9E40B2B2C71%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%2' \
+           r'6needsadmin%3Dprefers%26ap%3Dstable-arch_x86%26installdataindex%3Dempty/update2/installers/ChromeSetup.' \
+           r'exe'
 
 
 def get_mac_dmg_106_108():
-    mac_dmg = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL2RsL2Nocm9tZS9tYWMvbGVnYWN5L0dHUk8vZ29vZ2xlY2hyb21lLmRtZw=='
-    return hp.decode_base64(mac_dmg)
+    return r'https://dl.google.com/dl/chrome/mac/legacy/GGRO/googlechrome.dmg'
 
 
 def get_mac_dmg_109():
-    mac_dmg = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL2RsL2Nocm9tZS9tYWMvbGVnYWN5MTBfOS9HR1JPL2dvb2dsZWNocm9tZS5kbWc='
-    return hp.decode_base64(mac_dmg)
+    return r'https://dl.google.com/dl/chrome/mac/legacy10_9/GGRO/googlechrome.dmg'
 
 
 def get_linux_deb():
-    deb = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL2xpbnV4L2RpcmVjdC9nb29nbGUtY2hyb21lLXN0YWJsZV9jdXJyZW50X2FtZDY0LmRlYg=='
-    return hp.decode_base64(deb)
+    return r'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
 
 
 def get_linux_rpm():
-    rpm = b'aHR0cHM6Ly9kbC5nb29nbGUuY29tL2xpbnV4L2RpcmVjdC9nb29nbGUtY2hyb21lLXN0YWJsZV9jdXJyZW50X3g4Nl82NC5ycG0='
-    return hp.decode_base64(rpm)
+    return r'https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
 
 
 def get_entry_1():
     app_website = GoogleChromeTestData.APP_WEBSITE
+    url_1 = get_win_exe_64bit()
+    url_2 = get_win_exe_32bit()
+    url_3 = get_mac_dmg_1010plus()
+    url_4 = get_win_vista_exe()
+    url_5 = get_mac_dmg_106_108()
+    url_6 = get_mac_dmg_109()
     req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_website))
-    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe_64bit"),
-                                  tr.SetWorkspace(get_win_exe_64bit()))
-    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe_32bit"),
-                                  tr.SetWorkspace(get_win_exe_32bit()))
-    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.10+"),
-                                  tr.SetWorkspace(get_mac_dmg_1010plus()))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe_64bit"), tr.SetWorkspace(url_1))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe_32bit"), tr.SetWorkspace(url_2))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.10+"), tr.SetWorkspace(url_3))
     req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_xp_exe"), tr.SetWorkspace(get_win_xp_exe()))
-    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_vista_exe"),
-                                  tr.SetWorkspace(get_win_vista_exe()))
-    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.6-10.8"),
-                                  tr.SetWorkspace(get_mac_dmg_106_108()))
-    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.9"),
-                                  tr.SetWorkspace(get_mac_dmg_109()))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_vista_exe"), tr.SetWorkspace(url_4))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.6-10.8"), tr.SetWorkspace(url_5))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "mac_dmg_10.9"), tr.SetWorkspace(url_6))
     req_09 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "linux_deb"), tr.SetWorkspace(get_linux_deb()))
     req_10 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "linux_rpm"), tr.SetWorkspace(get_linux_rpm()))
     chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07, req_08, req_09, req_10)
@@ -129,12 +112,12 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = hp.get_web_space(GoogleChromeTestData.WEB_SPACE_HTML_PATH_3)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date", '_win_size', (1, 1))
 
 
 def get_entry_4():
     web_space = hp.get_web_space(GoogleChromeTestData.WEB_SPACE_HTML_PATH_4)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size", (1, 1))
 
 
 def get_entry_5():
@@ -170,7 +153,7 @@ class GoogleChromeTest(unittest.TestCase):
         self.assertEqual(str(), collector.get_collectibles()['_gp_ver'])
         self.assertEqual(dt.expected_win_ver, collector.get_collectibles()['Win_ver'])
         self.assertEqual(dt.expected_win_date, collector.get_collectibles()['Win_date'])
-        self.assertEqual(str(), collector.get_collectibles()['_size'])
+        self.assertEqual(str(), collector.get_collectibles()['_win_size'])
         self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
         self.assertEqual(dt.expected_mac_date, collector.get_collectibles()['Mac_date'])
         self.assertEqual(dt.expected_mac_size, collector.get_collectibles()['Mac_size'])

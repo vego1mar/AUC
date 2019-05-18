@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: IObit Driver Booster")
 
 
 class DriverBoosterTestData:
@@ -19,14 +15,13 @@ class DriverBoosterTestData:
         self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
-        self.expected_win_ver = hp.decode_base64(b'Ni40LjAuMzkyIA==')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wNC0xMQ==')
-        self.expected_win_size = hp.decode_base64(b'MjAsNTQgTUI=')
+        self.expected_win_ver = '6.4.0.394'
+        self.expected_win_date = '2019-04-24'
+        self.expected_win_size = '20,53 MB'
 
 
 def get_win_exe():
-    win_exe = b'aHR0cHM6Ly93d3cuaW9iaXQuY29tL2Rvd25sb2FkY2VudGVyLnBocD9wcm9kdWN0PWRyaXZlci1ib29zdGVyLWZyZWUtbmV3'
-    return hp.decode_base64(win_exe)
+    return 'https://www.iobit.com/downloadcenter.php?product=driver-booster-free-new'
 
 
 def get_entry_1():
@@ -39,7 +34,7 @@ def get_entry_1():
 
 def get_entry_2():
     web_space = hp.get_web_space(DriverBoosterTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 1))
 
 
 class DriverBoosterTest(unittest.TestCase):

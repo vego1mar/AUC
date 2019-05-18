@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: GOG Galaxy")
 
 
 class GOGGalaxyTestData:
@@ -21,18 +17,14 @@ class GOGGalaxyTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        mac_pkg = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS9jbG' \
-                  b'llbnQvZ2FsYXh5X2NsaWVudF8xLjIuNTQuMjcucGtn'
-        mac_ver = b'MS4yLjU0LjI3'
-        windows_exe = b'aHR0cHM6Ly9jb250ZW50LXN5c3RlbS5nb2cuY29tL29wZW5fbGluay9kb3dubG9hZD9wYXRoPS9vcGVuL2dhbGF4eS' \
-                      b'9jbGllbnQvc2V0dXBfZ2FsYXh5XzEuMi41NC4yMy5leGU='
-        windows_ver = b'MS4yLjU0LjIz'
-        self.expected_mac_pkg = hp.decode_base64(mac_pkg)
-        self.expected_windows_exe = hp.decode_base64(windows_exe)
-        self.expected_mac_ver = hp.decode_base64(mac_ver)
-        self.expected_windows_ver = hp.decode_base64(windows_ver)
-        self.expected_date_published = hp.decode_base64(b'MDMvMTcvMjAxOSAxMjoyNiBQTQ==')
-        self.expected_file_size = hp.decode_base64(b'MjE2IE1C')
+        self.expected_mac_pkg = 'https://content-system.gog.com/open_link/download?path=/open/galaxy/client/galaxy_' \
+                                'client_1.2.56.20.pkg'
+        self.expected_windows_exe = 'https://content-system.gog.com/open_link/download?path=/open/galaxy/client/set' \
+                                    'up_galaxy_1.2.56.15.exe'
+        self.expected_mac_ver = '1.2.56.20'
+        self.expected_windows_ver = '1.2.56.15'
+        self.expected_date_published = '05/06/2019 04:02 PM'
+        self.expected_file_size = '216 MB'
 
 
 def get_entry_1():
@@ -60,8 +52,8 @@ def get_entry_2():
 
 
 def get_entry_3():
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"),
-                                 tr.SetWorkspace(GOGGalaxyTestData.WEB_SPACE_URL_1))
+    app_url = GOGGalaxyTestData.WEB_SPACE_URL_1
+    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_url))
     chain_request_3 = (req_1,)
     return ex.ExecutionOrderEntry(chain_request_3, str())
 

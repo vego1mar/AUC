@@ -2,11 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/collector/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/requesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/requesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/triggers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/triggers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/bethesda_net_launcher_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/bethesda_net_launcher_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/driver_booster_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/driver_booster_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/dvdfab_virtual_drive_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/dvdfab_virtual_drive_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/google_chrome_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/google_chrome_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/google_chrome_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/google_chrome_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/google_chrome_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/hashtab_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/hashtab_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/irfanview_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/irfanview_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/irfanview_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/irfanview_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/irfanview_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/jetclean_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/jetclean_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/jetclean_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/jetclean_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/keepass_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/keepass_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/keepass_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/malware_fighter_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/malware_fighter_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/origin_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/origin_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/origin_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/potplayer_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/potplayer_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/smart_defrag_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/smart_defrag_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/smart_defrag_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/speccy_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/speccy_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/speccy_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/steam_6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +100,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/collector/console.py">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="752">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,6 +156,8 @@
       <find>&lt;h1&gt;</find>
       <find>.exe</find>
       <find>type</find>
+      <find>meta i</find>
+      <find>meta item</find>
     </findStrings>
     <replaceStrings>
       <replace>trigger_type</replace>
@@ -70,18 +169,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/cut_aside_trigger_test.py" />
         <option value="$PROJECT_DIR$/collector/tests/__init__.py" />
         <option value="$PROJECT_DIR$/tests/helpers/remove_characters_test.py" />
         <option value="$PROJECT_DIR$/tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_json.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
@@ -111,16 +202,24 @@
         <option value="$PROJECT_DIR$/tests/triggers/delete_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/invocation_request_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/execution_order_entry_test.py" />
-        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/collector/__init__.py" />
         <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/console/json_write_app.py" />
         <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
         <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector/console.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" />
+        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" />
       </list>
     </option>
   </component>
@@ -133,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,14 +259,13 @@
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Course" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,8 +298,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.console">
-    <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting">
+    <configuration name="run_html_files_update" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,11 +307,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/collector/console.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,63 +320,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="json_write_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/console" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="run_all_tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/run_all_tests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for find_next_trigger_test.FindNextTriggerTest.test_json" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/triggers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;find_next_trigger_test.FindNextTriggerTest.test_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for info_collector_test.InfoCollectorTest.test_collect_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,17 +330,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;info_collector_test.InfoCollectorTest.test_collect_1&quot;" />
+      <option name="_new_target" value="&quot;app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_collecting&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;app_google_chrome_test.GoogleChromeTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.console" />
-        <item itemvalue="Python.json_write_app" />
-        <item itemvalue="Python.run_all_tests" />
-        <item itemvalue="Python tests.Unittests for find_next_trigger_test.FindNextTriggerTest.test_json" />
-        <item itemvalue="Python tests.Unittests for info_collector_test.InfoCollectorTest.test_collect_1" />
+        <item itemvalue="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" />
+        <item itemvalue="Python.run_html_files_update" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -318,35 +403,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 34m 15s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 27m 50s.xml">
+      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 48m 39s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 31m 00s.xml">
+      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 50m 07s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 31m 06s.xml">
+      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 51m 39s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_collecting - 2019.05.18 at 13h 37m 20s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 54m 57s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_collecting - 2019.05.18 at 13h 38m 05s.xml">
+      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 55m 26s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 41m 35s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_execution_order_entry_test_ExecutionOrderEntryTestCase_test_to_json - 2019.05.15 at 14h 55m 37s.xml">
-      <configuration name="Unittests for execution_order_entry_test.ExecutionOrderEntryTestCase.test_to_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 49m 27s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_info_collector_test_InfoCollectorTest_test_collect_1 - 2019.05.15 at 15h 20m 25s.xml">
-      <configuration name="Unittests for info_collector_test.InfoCollectorTest.test_collect_1" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 50m 59s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_next_trigger_test_FindNextTriggerTest_test_json - 2019.05.15 at 15h 25m 29s.xml">
-      <configuration name="Unittests for find_next_trigger_test.FindNextTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 52m 08s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_find_next_trigger_test_FindNextTriggerTest_test_json - 2019.05.15 at 15h 25m 37s.xml">
-      <configuration name="Unittests for find_next_trigger_test.FindNextTriggerTest.test_json" configurationId="tests" />
+    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 53m 02s.xml">
+      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -397,15 +482,38 @@
       <window_info anchor="right" x="0" y="0" width="726" height="844" id="Documentation" order="3" weight="0.39526185" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="self.hierarchy_dict.items()" language="Python" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>collector.get_collectibles()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hp.encode_base64('4,49 MB')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hp.encode_base64('2019-02-08')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hp.encode_base64('12')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(base64_1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>base64_1[2:]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>self.hierarchy_dict.items()</expression-string>
         <language-id>Python</language-id>
@@ -423,36 +531,6 @@
       </expression>
       <expression>
         <expression-string>self.hierarchy_dict.keys()[0][i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict.keys()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self._collectibles_list[i]['APP_NAME'] = self.hierarchy_dict[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self._collectibles_list[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>HierarchyFile.FILE_PREFIX + json_files[j]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>json_files[j]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -526,80 +604,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="67" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_hashtab_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_irfanview_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_jetclean_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_keepass_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="776">
@@ -861,16 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/info_collector_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/execution_order_entry_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -901,32 +895,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/triggers/cut_aside_trigger_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="788">
           <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -961,9 +935,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collector/console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_driver_booster_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1461">
+        <state relative-caret-position="-82">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -971,12 +995,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/console.py">
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/info_collector_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="100" lean-forward="true" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

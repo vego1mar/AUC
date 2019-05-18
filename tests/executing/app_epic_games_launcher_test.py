@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: Epic Games Launcher")
 
 
 class EpicGamesLauncherTestData:
@@ -21,14 +17,13 @@ class EpicGamesLauncherTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        variant_installer = b'aHR0cHM6Ly9sYXVuY2hlci1wdWJsaWMtc2VydmljZS1wcm9kMDYub2wuZXBpY2dhbWVzLmNvbS9sYXVuY2hlc' \
-                            b'i9hcGkvaW5zdGFsbGVyL2Rvd25sb2FkL0VwaWNHYW1lc0xhdW5jaGVySW5zdGFsbGVyLm1zaQ=='
-        self.expected_variant_installer = hp.decode_base64(variant_installer)
+        self.expected_variant_installer = 'https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/' \
+                                          'installer/download/EpicGamesLauncherInstaller.msi'
         self.expected_windows_msi = get_windows_msi()
         self.expected_mac_dmg = get_mac_dmg()
-        self.expected_version = hp.decode_base64(b'OS4xMS4y')
-        self.expected_date_published = hp.decode_base64(b'MjAxOS0wNC0wNQ==')
-        self.expected_file_size = hp.decode_base64(b'MzIsMTUgTUI=')
+        self.expected_version = '9.11.2'
+        self.expected_date_published = '2019-04-05'
+        self.expected_file_size = '32,15 MB'
 
 
 def get_entry_1():
@@ -43,26 +38,24 @@ def get_entry_1():
 
 def get_entry_2():
     web_space = hp.get_web_space(EpicGamesLauncherTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "version", "date_published", "file_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "version", "date_published", "file_size", (1, 1))
 
 
 def get_entry_3():
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"),
-                                 tr.SetWorkspace(EpicGamesLauncherTestData.WEB_SPACE_URL_1))
+    app_url = EpicGamesLauncherTestData.WEB_SPACE_URL_1
+    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_url))
     chain_request = (req_1,)
     return ex.ExecutionOrderEntry(chain_request, str())
 
 
 def get_windows_msi():
-    win_msi = b'aHR0cHM6Ly9sYXVuY2hlci1wdWJsaWMtc2VydmljZS1wcm9kMDYub2wuZXBpY2dhbWVzLmNvbS9sYXVuY2hlci9hcGkvaW5zdGF' \
-              b'sbGVyL2Rvd25sb2FkL0VwaWNHYW1lc0xhdW5jaGVySW5zdGFsbGVyLm1zaQ=='
-    return hp.decode_base64(win_msi)
+    return 'https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/' \
+           'EpicGamesLauncherInstaller.msi'
 
 
 def get_mac_dmg():
-    mac_dmg = b'aHR0cHM6Ly9sYXVuY2hlci1wdWJsaWMtc2VydmljZS1wcm9kMDYub2wuZXBpY2dhbWVzLmNvbS9sYXVuY2hlci9hcGkvaW5zdGF' \
-              b'sbGVyL2Rvd25sb2FkL0VwaWNHYW1lc0xhdW5jaGVyLmRtZw=='
-    return hp.decode_base64(mac_dmg)
+    return 'https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/' \
+           'EpicGamesLauncher.dmg'
 
 
 class EpicGamesLauncherTest(unittest.TestCase):

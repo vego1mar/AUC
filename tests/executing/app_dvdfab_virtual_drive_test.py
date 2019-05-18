@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: DVDFab Virtual Drive")
 
 
 class DvdFabVirtualDriveTestData:
@@ -20,27 +16,26 @@ class DvdFabVirtualDriveTestData:
         self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
-        exe = b'aHR0cHM6Ly93d3cuZHZkZmFiLmNuL21saW5rL2Rvd25sb2FkLnBocD9nPVZJUlRVQUxEUklWRQ=='
-        self.expected_win_exe = hp.decode_base64(exe)
-        self.expected_win_ver = hp.decode_base64(b'MS41LjEuMQ==')
-        self.expected_win_date = hp.decode_base64(b'MjAxNC0wOS0wMg==')
-        self.expected_win_size = hp.decode_base64(b'MCw3OSBNQg==')
+        self.expected_win_exe = 'https://www.dvdfab.cn/mlink/download.php?g=VIRTUALDRIVE'
+        self.expected_win_ver = '1.5.1.1'
+        self.expected_win_date = '2014-09-02'
+        self.expected_win_size = '0,79 MB'
 
 
 def get_entry_1():
     app_website = DvdFabVirtualDriveTestData.WEB_SPACE_URL_1
+    base_url = 'https://www.dvdfab.cn'
     req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_website))
     req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("try-icon"))
     req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.FetchAttribute("href"))
-    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe"),
-                                  tr.AddText("https://www.dvdfab.cn", str()))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "win_exe"), tr.AddText(base_url, str()))
     chain_request = (req_01, req_02, req_03, req_04)
     return ex.ExecutionOrderEntry(chain_request, hp.get_web_space(DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_1))
 
 
 def get_entry_2():
     web_space = hp.get_web_space(DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 0))
 
 
 class DvdFabVirtualDriveTest(unittest.TestCase):

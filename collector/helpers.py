@@ -65,10 +65,8 @@ def decode_base64(binary_encoded_text):
 def configure_logging(file_name):
     import logging
     import datetime
-    logging.basicConfig(filename=file_name,
-                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
-                        datefmt='%H:%M:%S',
-                        level=logging.DEBUG)
+    format_str = '%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s'
+    logging.basicConfig(filename=file_name, format=format_str, datefmt='%H:%M:%S', level=logging.DEBUG)
     logging.debug('\n\n' + str(datetime.datetime.now()))
 
 
@@ -119,7 +117,7 @@ def get_entry_for_google_play_store(web_space="", app_url="", date="_gp_date", s
     req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, date), tr.CutAside(1, 1))
     req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Updated"))
     req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('U', ']'))
-    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r">[\d]+[.,]+[\d]+[\w ]+<"))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r">[\d., M]+<"))
     req_09 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.CutAside(1, 1))
     req_10 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("Current Version"))
     req_11 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('C', ']'))

@@ -27,7 +27,7 @@ def _app_bethesda_net_launcher_to_json():
     import tests.executing.app_bethesda_net_launcher_test as bnl
     files = ("bethesda_net_launcher_1", "bethesda_net_launcher_2")
     entries = [bnl.get_entry_1(), bnl.get_entry_2()]
-    entries[0].html_data = bnl.BethesdaNetLauncherTestData.APP_WEBSITE
+    entries[0].html_data = bnl.BethesdaNetLauncherTestData.WEB_SPACE_URL_1
     entries[1].html_data = bnl.BethesdaNetLauncherTestData.WEB_SPACE_URL_2
     hp.save_file(_get_files_path(files[0]), entries[0].to_json())
     hp.save_file(_get_files_path(files[1]), entries[1].to_json())

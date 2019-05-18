@@ -100,7 +100,7 @@ def print_info():
         print(']')
 
     print_module_functions(BethesdaNetLauncherTest.__name__, BethesdaNetLauncherTest.__dict__)
-    print_module_functions(ActivisionBlizzardBattleNetTest.__name__, ActivisionBlizzardBattleNetTest.__dict__)
+    print_module_functions(ActivisionBlizzardBattleNetTestCase.__name__, ActivisionBlizzardBattleNetTestCase.__dict__)
     print_module_functions(DriverBoosterTest.__name__, DriverBoosterTest.__dict__)
     print_module_functions(DvdFabVirtualDriveTest.__name__, DvdFabVirtualDriveTest.__dict__)
     print_module_functions(EpicGamesLauncherTest.__name__, EpicGamesLauncherTest.__dict__)
@@ -134,6 +134,7 @@ def print_info():
     print_module_functions(RetrieveTagsTriggerTest.__name__, RetrieveTagsTriggerTest.__dict__)
 
 
-adjust_file_paths()
-print_info()
-unittest.main()
+if __name__ == '__main__':
+    adjust_file_paths()
+    print_info()
+    unittest.main()

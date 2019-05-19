@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: HashTab")
 
 
 class HashTabTestData:
@@ -20,14 +16,12 @@ class HashTabTestData:
         self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
-        win_exe = b'aHR0cDovL2ltcGxiaXRzLmNvbS9wcm9kdWN0cy9oYXNodGFiL0hhc2hUYWJfdjYuMC4wLjM0X1NldHVwLmV4ZQ=='
-        win_xp_exe = b'aHR0cDovL2ltcGxiaXRzLmNvbS9wcm9kdWN0cy9oYXNodGFiL0hhc2hUYWJfdjUuMi4wLjE0X1NldHVwLmV4ZQ=='
-        self.expected_win_exe = hp.decode_base64(win_exe)
-        self.expected_win_ver = hp.decode_base64(b'Ni4wLjAuMzQ=')
-        self.expected_win_xp_exe = hp.decode_base64(win_xp_exe)
-        self.expected_win_xp_ver = hp.decode_base64(b'NS4yLjAuMTQ=')
-        self.expected_win_date = hp.decode_base64(b'MDcvMjEvMjAxNw==')
-        self.expected_win_size = hp.decode_base64(b'MS4xMiBNQg==')
+        self.expected_win_exe = 'http://implbits.com/products/hashtab/HashTab_v6.0.0.34_Setup.exe'
+        self.expected_win_ver = '6.0.0.34'
+        self.expected_win_xp_exe = 'http://implbits.com/products/hashtab/HashTab_v5.2.0.14_Setup.exe'
+        self.expected_win_xp_ver = '5.2.0.14'
+        self.expected_win_date = '07/21/2017'
+        self.expected_win_size = '1.12 MB'
 
 
 def get_entry_1():

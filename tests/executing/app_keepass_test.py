@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: KeePass Password Safe")
 
 
 class KeePassTestData:
@@ -22,14 +18,14 @@ class KeePassTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        exe_1 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS80NmZiMWQ5ZjE5Yzg0MjExYWU5MWVmMTdkMjI0OGQzZ'
-                                 b'TlkNjgxNzcxL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
-        exe_2 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS8yODIxNDU3ZDNjMzdkMDQwNWYxYWMyYzBmOTdiODY3M'
-                                 b'GM1NDM5NjdlL2ludGVybmV0L0tlZVBhc3MtMi40MS1TZXR1cC5leGU=')
-        self.expected_win_ver = hp.decode_base64(b'Mi40MQ==')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wMS0wOQ==')
-        self.expected_win_size = hp.decode_base64(b'MywxNSBNQg==')
-        self.expected_win_exe_tuple = (exe_1, exe_2)
+        self.expected_win_ver = '2.42.1'
+        self.expected_win_date = '2019-05-04'
+        self.expected_win_size = '3,16 MB'
+        self.expected_win_exe_tuple = (
+            'http://files1.majorgeeks.com/46fb1d9f19c84211ae91ef17d2248d3e9d681771/internet/KeePass-2.41-Setup.exe',
+            'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/internet/KeePass-2.42.1-Setup.exe',
+            'http://files2.majorgeeks.com/2821457d3c37d0405f1ac2c0f97b8670c543967e/internet/KeePass-2.41-Setup.exe'
+        )
 
 
 def get_entry_1():
@@ -41,7 +37,7 @@ def get_entry_1():
 
 def get_entry_2():
     web_space = hp.get_web_space(KeePassTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 0))
 
 
 def get_entry_3():

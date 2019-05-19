@@ -2,96 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/bethesda_net_launcher_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/bethesda_net_launcher_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/blizzard_battle_net_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/driver_booster_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/driver_booster_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/dvdfab_virtual_drive_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/dvdfab_virtual_drive_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/epic_games_launcher_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/gog_galaxy_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/google_chrome_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/google_chrome_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/google_chrome_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/google_chrome_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/google_chrome_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hashtab_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hashtab_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/irfanview_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/irfanview_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/irfanview_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/irfanview_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/irfanview_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/jetclean_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/jetclean_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/jetclean_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/jetclean_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/keepass_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/keepass_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/keepass_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/malware_fighter_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/malware_fighter_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/origin_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/origin_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/origin_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/potplayer_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/potplayer_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/smart_defrag_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/smart_defrag_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/smart_defrag_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/speccy_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/speccy_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/speccy_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/steam_6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sumatrapdf_9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_origin_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_origin_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_speccy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_speccy_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_steam_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_steam_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_all_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_URL2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_URL2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_URL3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_URL3.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows3.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/keepass_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/keepass_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/keepass_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/keepass_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/origin_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/origin_web_Mac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/origin_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/origin_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/speccy_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/speccy_web_Windows3.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_GooglePlay.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_MSStore.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_Mac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_official.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_official.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_MSStore.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows3.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows4.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows4.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows5.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows5.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows6.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows6.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,26 +58,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="743">
+              <caret line="202" selection-start-line="202" selection-end-line="202" />
               <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,17 +119,6 @@
         <option value="$PROJECT_DIR$/tests/helpers/remove_characters_test.py" />
         <option value="$PROJECT_DIR$/tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_json.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_keepass_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_origin_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_speccy_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_steam_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" />
         <option value="$PROJECT_DIR$/tests/json_assist/json_write_app.py" />
         <option value="$PROJECT_DIR$/tests/executing/chain_request_execution_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/info_collector_test.py" />
@@ -218,21 +153,31 @@
         <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_keepass_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_origin_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_speccy_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_steam_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1566" />
-    <option name="height" value="1044" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -298,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting">
+  <component name="RunManager" selected="Python tests.Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting">
     <configuration name="run_html_files_update" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,7 +266,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,11 +276,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_smart_defrag_test.SmartDefragTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_speccy_test.SpeccyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -344,11 +290,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_speccy_test.SpeccyTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,11 +304,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_steam_test.SteamClientBootstrapperTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -372,17 +318,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_google_chrome_test.GoogleChromeTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_sumatrapdf_test.SumatraPdfTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" />
         <item itemvalue="Python.run_html_files_update" />
-        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_dvdfab_virtual_drive_test.DvdFabVirtualDriveTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_speccy_test.SpeccyTest.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -403,39 +349,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 27m 50s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_speccy_test_SpeccyTest_test_package_collecting - 2019.05.19 at 14h 15m 03s.xml">
+      <configuration name="Unittests for app_speccy_test.SpeccyTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 31m 00s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 17m 02s.xml">
+      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_epic_games_launcher_test_EpicGamesLauncherTest_test_package_collecting - 2019.05.18 at 13h 31m 06s.xml">
-      <configuration name="Unittests for app_epic_games_launcher_test.EpicGamesLauncherTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 17m 24s.xml">
+      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_collecting - 2019.05.18 at 13h 37m 20s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 18m 00s.xml">
+      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_gog_galaxy_test_GogGalaxyTest_test_package_collecting - 2019.05.18 at 13h 38m 05s.xml">
-      <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 21m 55s.xml">
+      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 41m 35s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 22m 11s.xml">
+      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 49m 27s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 25m 04s.xml">
+      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 50m 59s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 25m 23s.xml">
+      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 52m 08s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 29m 36s.xml">
+      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_google_chrome_test_GoogleChromeTest_test_package_collecting - 2019.05.18 at 13h 53m 02s.xml">
-      <configuration name="Unittests for app_google_chrome_test.GoogleChromeTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 29m 54s.xml">
+      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1566" height="1044" extended-state="0" />
+    <frame x="0" y="0" width="1566" height="1035" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20841424" />
@@ -443,8 +389,8 @@
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.20349967" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32711306" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.32601535" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49675745" weight="0.39626783" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.32594234" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49675745" weight="0.39578715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -604,120 +550,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_potplayer_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_origin_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-907">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-699">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_speccy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_steam_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/chain_request_execution_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/helpers/base64_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/helpers/remove_characters_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_log.txt" />
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/base64.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1487028807/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="4671" column="8" lean-forward="true" selection-start-line="4671" selection-start-column="8" selection-end-line="4671" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1045,22 +877,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
+    <entry file="file://$PROJECT_DIR$/runtime/__collectibles__.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/__hierarchy__.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="324">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_google_chrome_test.py">
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_hashtab_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="743">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_irfanview_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_jetclean_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_keepass_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_origin_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_potplayer_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_speccy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_steam_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>

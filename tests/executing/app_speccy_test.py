@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: Speccy")
 
 
 class SpeccyTestData:
@@ -22,10 +18,10 @@ class SpeccyTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        self.expected_win_exe = hp.decode_base64(b'aHR0cHM6Ly9kb3dubG9hZC5jY2xlYW5lci5jb20vc3BzZXR1cDEzMi5leGU=')
-        self.expected_win_ver = hp.decode_base64(b'MS4zMi43NDAg')
-        self.expected_win_date = hp.decode_base64(b'MjAxOC0wNS0yMQ==')
-        self.expected_win_size = hp.decode_base64(b'Niw1NyBNQg==')
+        self.expected_win_exe = 'https://download.ccleaner.com/spsetup132.exe'
+        self.expected_win_ver = '1.32.740 '
+        self.expected_win_date = '2018-05-21'
+        self.expected_win_size = '6,57 MB'
 
 
 def get_entry_1():
@@ -43,7 +39,7 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = hp.get_web_space(SpeccyTestData.WEB_SPACE_HTML_PATH_3)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 0))
 
 
 class SpeccyTest(unittest.TestCase):

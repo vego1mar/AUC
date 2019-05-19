@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: Origin")
 
 
 class OriginTestData:
@@ -22,36 +18,37 @@ class OriginTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        self.expected_win_ver = hp.decode_base64(b'MTAuNS4zNg==')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wMy0xOQ==')
-        self.expected_win_size = hp.decode_base64(b'NjAsNDYgTUI=')
-        self.expected_mac_ver = hp.decode_base64(b'MTAuNS4zNg==')
-        self.expected_mac_date = hp.decode_base64(b'MjAxOS0wMy0yNQ==')
-        self.expected_mac_size = hp.decode_base64(b'MTIxLDkyIE1C')
+        self.expected_win_ver = '10.5.38.25027 '
+        self.expected_win_date = '2019-04-24'
+        self.expected_win_size = '60,46 MB'
+        self.expected_mac_ver = '10.5.38'
+        self.expected_mac_date = '2019-04-25'
+        self.expected_mac_size = '121,97 MB'
 
 
-class ConstTestData:
-    CONST_WIN_EXE = hp.decode_base64(b'aHR0cHM6Ly93d3cuZG0ub3JpZ2luLmNvbS9kb3dubG9hZC9sZWdhY3k=')
-    CONST_MAC_DMG = hp.decode_base64(b'aHR0cHM6Ly93d3cuZG0ub3JpZ2luLmNvbS9tYWMvZG93bmxvYWQvbGVnYWN5')
+def get_win_exe():
+    return 'https://www.dm.origin.com/download/legacy'
+
+
+def get_mac_dmg():
+    return 'https://www.dm.origin.com/mac/download/legacy'
 
 
 def get_entry_1():
     web_space = hp.get_web_space(OriginTestData.WEB_SPACE_HTML_PATH_1)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date", "Win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date", "Win_size", (1, 1))
 
 
 def get_entry_2():
     web_space = hp.get_web_space(OriginTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size", (1, 1))
 
 
 def get_entry_3():
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "const_win_exe"),
-                                 tr.SetWorkspace(ConstTestData.CONST_WIN_EXE))
-    req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "const_mac_dmg"),
-                                 tr.SetWorkspace(ConstTestData.CONST_MAC_DMG))
-    req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"),
-                                 tr.SetWorkspace(OriginTestData.APP_WEBSITE))
+    app_url = OriginTestData.APP_WEBSITE
+    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Win_exe"), tr.SetWorkspace(get_win_exe()))
+    req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Mac_dmg"), tr.SetWorkspace(get_mac_dmg()))
+    req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_url))
     chain_request_3 = (req_1, req_2, req_3)
     entry_3 = ex.ExecutionOrderEntry(chain_request_3, str())
     return entry_3
@@ -74,8 +71,8 @@ class ElectronicArtsOriginTest(unittest.TestCase):
         self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
         self.assertEqual(dt.expected_mac_date, collector.get_collectibles()['Mac_date'])
         self.assertEqual(dt.expected_mac_size, collector.get_collectibles()['Mac_size'])
-        self.assertEqual(ConstTestData.CONST_WIN_EXE, collector.get_collectibles()['const_win_exe'])
-        self.assertEqual(ConstTestData.CONST_MAC_DMG, collector.get_collectibles()['const_mac_dmg'])
+        self.assertEqual(get_win_exe(), collector.get_collectibles()['Win_exe'])
+        self.assertEqual(get_mac_dmg(), collector.get_collectibles()['Mac_dmg'])
         self.assertEqual(OriginTestData.APP_WEBSITE, collector.get_collectibles()['app_website'])
 
 

@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: Steam")
 
 
 class SteamTestData:
@@ -30,31 +26,29 @@ class SteamTestData:
         self.execution_order.add_entry(get_entry_4(), True)
         self.execution_order.add_entry(get_entry_5(), True)
         self.execution_order.add_entry(get_entry_6(), True)
-        deb = hp.decode_base64(b'aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9jbGllbnQvaW5zdGFsbGVyL3N0ZWFtLmRlYg==')
-        exe = hp.decode_base64(b'aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9jbGllbnQvaW5zdGFsbGVyL1N0ZWFtU2V0dXAuZXhl')
-        dmg = hp.decode_base64(b'aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9jbGllbnQvaW5zdGFsbGVyL3N0ZWFtLmRtZw==')
-        self.expected_links = (deb, exe, dmg)
-        self.expected_apk_date = hp.decode_base64(b'TWFyY2ggOCwgMjAxOQ==')
-        self.expected_apk_size = hp.decode_base64(b'Mi43TQ==')
-        self.expected_apk_ver = hp.decode_base64(b'Mi4zLjk=')
-        self.expected_win_ver = hp.decode_base64(b'MTguMDIuMjAxOSA=')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wMi0xOQ==')
-        self.expected_win_size = hp.decode_base64(b'MSw1MCBNQg==')
-        self.expected_mac_ver = hp.decode_base64(b'MDMuMjIuMjAxNw==')
-        self.expected_mac_date = hp.decode_base64(b'MjAxNy0wMy0yNw==')
-        self.expected_mac_size = hp.decode_base64(b'NCw2NyBNQg==')
-        self.expected_ms_store_size = hp.decode_base64(b'NC41MiBNQg==')
+        self.expected_links = (
+            'https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe',
+            'https://steamcdn-a.akamaihd.net/client/installer/steam.dmg',
+            'https://steamcdn-a.akamaihd.net/client/installer/steam.deb'
+        )
+        self.expected_apk_date = 'March 8, 2019'
+        self.expected_apk_size = '2.7M'
+        self.expected_apk_ver = '2.3.9'
+        self.expected_win_ver = '29.04.2019 '
+        self.expected_win_date = '2019-05-02'
+        self.expected_win_size = '1,50 MB'
+        self.expected_mac_ver = '03.22.2017'
+        self.expected_mac_date = '2017-03-27'
+        self.expected_mac_size = '4,67 MB'
+        self.expected_ms_store_size = '4.52 MB'
 
 
 def get_google_play_apk():
-    apk = b'aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS52YWx2ZXNvZnR3YXJlLmFuZHJvaWQuc3Rl' \
-          b'YW0uY29tbXVuaXR5'
-    return hp.decode_base64(apk)
+    return 'https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community'
 
 
 def get_ms_store_link():
-    store_site = b'aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9wL3N0ZWFtLzluYmxnZ2g0eDdnbQ=='
-    return hp.decode_base64(store_site)
+    return 'https://www.microsoft.com/en-us/p/steam/9nblggh4x7gm'
 
 
 def get_entry_1():
@@ -79,12 +73,12 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = hp.get_web_space(SteamTestData.WEB_SPACE_HTML_PATH_3)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date", "Win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Win_ver", "Win_date", "Win_size", (1, 1))
 
 
 def get_entry_4():
     web_space = hp.get_web_space(SteamTestData.WEB_SPACE_HTML_PATH_4)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "Mac_ver", "Mac_date", "Mac_size", (1, 1))
 
 
 def get_entry_5():

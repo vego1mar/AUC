@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: SumatraPDF")
 
 
 class SumatraPdfTestData:
@@ -40,27 +36,21 @@ class SumatraPdfTestData:
         self.execution_order.add_entry(get_entry_7(), True)
         self.execution_order.add_entry(get_entry_8(), True)
         self.execution_order.add_entry(get_entry_9(), True)
-        exe_32 = b'aHR0cDovL2tqa3B1Yi5zMy5hbWF6b25hd3MuY29tL3N1bWF0cmFwZGYvcmVsL1N1bWF0cmFQREYtMy4xLjItaW5zdGFsbC5' \
-                 b'leGU='
-        exe_64 = b'aHR0cHM6Ly9ramtwdWIuczMuYW1hem9uYXdzLmNvbS9zdW1hdHJhcGRmL3JlbC9TdW1hdHJhUERGLTMuMS4yLTY0LWluc3R' \
-                 b'hbGwuZXhl'
-        zip_32 = b'aHR0cHM6Ly9ramtwdWIuczMuYW1hem9uYXdzLmNvbS9zdW1hdHJhcGRmL3JlbC9TdW1hdHJhUERGLTMuMS4yLnppcA=='
-        zip_64 = b'aHR0cHM6Ly9ramtwdWIuczMuYW1hem9uYXdzLmNvbS9zdW1hdHJhcGRmL3JlbC9TdW1hdHJhUERGLTMuMS4yLTY0LnppcA=='
-        exe_1 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS9lNTQxODNlMmEwNDBlNmMwOWU2MWViMjJkNTQyZTNkNTc'
-                                 b'wNzRiMzUxL29mZmljZS9TdW1hdHJhUERGLTMuMS4yLWluc3RhbGwuZXhl')
-        exe_2 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS9lNTQxODNlMmEwNDBlNmMwOWU2MWViMjJkNTQyZTNkNTc'
-                                 b'wNzRiMzUxL29mZmljZS9TdW1hdHJhUERGLTMuMS4yLWluc3RhbGwuZXhl')
-        exe_3 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS8wN2RhMGNjOWQ0M2I0OTg3MWMwMWI2ZmRlYWI5NzNhY2E'
-                                 b'yM2VjMjQ1L29mZmljZS9TdW1hdHJhUERGLTMuMS4yLWluc3RhbGwuZXhl')
-        self.expected_ms_store_size = hp.decode_base64(b'MTUuOSBNQg==')
-        self.expected_win_ver = hp.decode_base64(b'My4xLjI=')
-        self.expected_win_date = hp.decode_base64(b'MjAxNi0wOC0xNQ==')
-        self.expected_win_size = hp.decode_base64(b'NCw2MyBNQg==')
-        self.expected_win_exe_32bit = hp.decode_base64(exe_32)
-        self.expected_win_exe_64bit = hp.decode_base64(exe_64)
-        self.expected_win_zip_32bit = hp.decode_base64(zip_32)
-        self.expected_win_zip_64bit = hp.decode_base64(zip_64)
-        self.expected_win_exe_tuple = (exe_1, exe_2, exe_3)
+        self.expected_ms_store_size = '15.9 MB'
+        self.expected_win_ver = '3.1.2'
+        self.expected_win_date = '2016-08-15'
+        self.expected_win_size = '4,63 MB'
+        self.expected_win_exe_32bit = 'http://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-3.1.2-install.exe'
+        self.expected_win_exe_64bit = 'https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-3.1.2-64-install.exe'
+        self.expected_win_zip_32bit = 'https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-3.1.2.zip'
+        self.expected_win_zip_64bit = 'https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-3.1.2-64.zip'
+        self.expected_win_exe_tuple = (
+            'http://files1.majorgeeks.com/e54183e2a040e6c09e61eb22d542e3d57074b351/office/SumatraPDF-3.1.2-install.exe',
+            'http://files1.majorgeeks.com/e54183e2a040e6c09e61eb22d542e3d57074b351/office/SumatraPDF-3.1.2-install.exe',
+            'http://files1.majorgeeks.com/d147ef64c0bbfbe36dc916faf4a2c12023fe36ed/office/SumatraPDF-3.1.2-install.exe',
+            'http://files2.majorgeeks.com/07da0cc9d43b49871c01b6fdeab973aca23ec245/office/SumatraPDF-3.1.2-install.exe',
+            'http://files2.majorgeeks.com/8eef6a9d9cd458429acc0ad45332564a0279a2c1/office/SumatraPDF-3.1.2-install.exe',
+        )
 
 
 def get_entry_1():
@@ -78,7 +68,7 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = hp.get_web_space(SumatraPdfTestData.WEB_SPACE_HTML_PATH_3)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (0, -1))
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 0))
 
 
 def get_entry_4():

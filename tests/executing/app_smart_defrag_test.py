@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: IObit Smart Defrag")
 
 
 class SmartDefragTestData:
@@ -22,16 +18,12 @@ class SmartDefragTestData:
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        exe_1 = b'aHR0cHM6Ly9zdG9yZS5pb2JpdC5jb20vYWZmaWxpYXRlLnBocD9BQ0NPVU5UPUxPQklUJmFtcDtBRkZJTElBVEU9ODcwJmF' \
-                b'tcDtQQVRIPWh0dHA6Ly9maWxlczEubWFqb3JnZWVrcy5jb20vOTcyMmIxZGI0MmFhZWFkZmY5NzNkM2M1MWMxMjJmMWQ5YT' \
-                b'RjNTE2Ni9kcml2ZXMvc21hcnQtZGVmcmFnLXNldHVwLmV4ZQ=='
-        exe_2 = b'aHR0cHM6Ly9zdG9yZS5pb2JpdC5jb20vYWZmaWxpYXRlLnBocD9BQ0NPVU5UPUxPQklUJmFtcDtBRkZJTElBVEU9ODcwJmF' \
-                b'tcDtQQVRIPWh0dHA6Ly9maWxlczIubWFqb3JnZWVrcy5jb20vOGVlZDYzNTZkNzlkN2FjNTkwMDgwOWRkODczMjdlMWIzNz' \
-                b'c1MDA1MS9kcml2ZXMvc21hcnQtZGVmcmFnLXNldHVwLmV4ZQ=='
-        self.expected_win_exe_tuple = (hp.decode_base64(exe_1), hp.decode_base64(exe_2))
-        self.expected_win_ver = hp.decode_base64(b'Ni4yLjAuMTM4')
-        self.expected_win_date = hp.decode_base64(b'MjAxOS0wMy0wNw==')
-        self.expected_win_size = hp.decode_base64(b'MTUsMTIgTUI=')
+        self.expected_win_exe_tuple = (
+            'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/drives/smart-defrag-setup.exe',
+        )
+        self.expected_win_ver = '6.2.5.128 '
+        self.expected_win_date = '2019-04-25'
+        self.expected_win_size = '15,11 MB'
 
 
 def get_entry_1():
@@ -48,7 +40,7 @@ def get_entry_2():
 
 def get_entry_3():
     web_space = hp.get_web_space(SmartDefragTestData.WEB_SPACE_HTML_PATH_3)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 1))
 
 
 class SmartDefragTest(unittest.TestCase):

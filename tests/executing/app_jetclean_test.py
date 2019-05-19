@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: JetClean")
 
 
 class JetCleanTestData:
@@ -25,18 +21,17 @@ class JetCleanTestData:
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
         self.execution_order.add_entry(get_entry_4(), True)
-        win_exe_1 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS9mMWQ3ZDczNjYxZmEwYTUwMjJlOGFjNTFmYjNkOTF'
-                                     b'kZjU3MTEyYzQzL2FsbGlub25lL2pldGNsZWFuLXNldHVwLmV4ZQ==')
-        win_exe_2 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS8xOTgwMTdiOWEwNThhNWU3ODJkNjY0ZDJlOGI0MWI'
-                                     b'xOGY5ZDlmNjlhL2FsbGlub25lL2pldGNsZWFuLXNldHVwLmV4ZQ==')
-        win_exe_3 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMi5tYWpvcmdlZWtzLmNvbS8wMWRlMzczM2YxNzNhYWIyMDZjNWUwNTM5NzUwYzU'
-                                     b'3MzY3MmYxNGZhL2FsbGlub25lL2pldGNsZWFuLXNldHVwLmV4ZQ==')
-        win_exe_4 = hp.decode_base64(b'aHR0cDovL2ZpbGVzMS5tYWpvcmdlZWtzLmNvbS9kYzBlNGIyZWZkYjVkYTE1ZjNjZjUxZTM5ODk4MzY'
-                                     b'yMGRiNTFkZWQyL2FsbGlub25lL2pldGNsZWFuLXNldHVwLmV4ZQ==')
-        self.expected_win_ver = hp.decode_base64(b'MS41LjAuMTI5')
-        self.expected_win_date = hp.decode_base64(b'MjAxNi0wMi0yNg==')
-        self.expected_win_size = hp.decode_base64(b'Myw2MCBNQg==')
-        self.expected_win_exe_tuple = (win_exe_1, win_exe_2, win_exe_3, win_exe_4)
+        self.expected_win_ver = '1.5.0.129'
+        self.expected_win_date = '2016-02-26'
+        self.expected_win_size = '3,60 MB'
+        self.expected_win_exe_tuple = (
+            'http://files1.majorgeeks.com/198017b9a058a5e782d664d2e8b41b18f9d9f69a/allinone/jetclean-setup.exe',
+            'http://files1.majorgeeks.com/dc0e4b2efdb5da15f3cf51e398983620db51ded2/allinone/jetclean-setup.exe',
+            'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/allinone/jetclean-setup.exe',
+            'http://files2.majorgeeks.com/f1d7d73661fa0a5022e8ac51fb3d91df57112c43/allinone/jetclean-setup.exe',
+            'http://files2.majorgeeks.com/01de3733f173aab206c5e0539750c573672f14fa/allinone/jetclean-setup.exe',
+            'http://files2.majorgeeks.com/c56596c4ccdc2ef32a2ab769175c6f55d7792ce1/allinone/jetclean-setup.exe'
+        )
 
 
 def get_entry_1():
@@ -48,7 +43,7 @@ def get_entry_1():
 
 def get_entry_2():
     web_space = hp.get_web_space(JetCleanTestData.WEB_SPACE_HTML_PATH_2)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 1))
 
 
 def get_entry_3():

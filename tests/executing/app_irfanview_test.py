@@ -1,12 +1,8 @@
 import unittest
-import logging
 import executing as ex
 import helpers as hp
 import requesting as rq
 import triggers as tr
-
-hp.configure_logging(r"../test_log.txt")
-logging.debug("Tests for: IrfanView")
 
 
 class IrfanViewTestData:
@@ -28,61 +24,40 @@ class IrfanViewTestData:
         self.execution_order.add_entry(get_entry_3(), True)
         self.execution_order.add_entry(get_entry_4(), True)
         self.execution_order.add_entry(get_entry_5(), True)
-        exe_64 = b'aHR0cDovL2Rvd25sb2FkLmNuZXQuY29tL0lyZmFuVmlldy02NC1iaXQvMzAwMC0yMTkyXzQtNzY0NDQ3MTAuaHRtbD9wYXJ0P' \
-                 b'WRsLSZhbXA7c3Viaj1kbCZhbXA7dGFnPWJ1dHRvbg=='
-        zip_64 = b'aHR0cDovL3d3dy5pcmZhbnZpZXcuaW5mby9maWxlcy9pdmlldzQ1Ml94NjQuemlw'
-        exe_64_de = b'aHR0cDovL3d3dy5pcmZhbnZpZXcuaW5mby9maWxlcy9pdmlldzQ1MmdfeDY0X3NldHVwLmV4ZQ=='
-        zip_64_de = b'aHR0cDovL3d3dy5pcmZhbnZpZXcuaW5mby9maWxlcy9pdmlldzQ1MmdfeDY0LnppcA=='
-        exe_64_plugins = b'aHR0cDovL3d3dy5mb3NzaHViLmNvbS9JcmZhblZpZXcuaHRtbC9pdmlldzQ1Ml9wbHVnaW5zX3g2NF9zZXR1cC5le' \
-                         b'GU='
-        zip_64_plugins = b'aHR0cDovL3d3dy5mb3NzaHViLmNvbS9JcmZhblZpZXcuaHRtbC9pdmlldzQ1Ml9wbHVnaW5zX3g2NC56aXA='
-        exe_64_hash = b'MWUyZTAyMGNiZjA4Y2NiNTQwYzkyZjQyM2Y2YjhiNDQyOTZkMGYzMGFmOGY5MDRiMzMzY2RmMGNkOTA1Mjc3Ng=='
-        zip_64_hash = b'Njc4MWJkYTFkYWFlNGFmYTcwMDNmOGYwMjBkNjdhZjg5ZTYwN2JlOGQyMjQzMGIzMGFiZDgwM2Y1Nzc4NWYyYg=='
-        exe_64_de_hash = b'NzA5NTA1NDllNjQ0OGQ0OTU0NmFkMGYyZGMwNGJjZTk5MGFlOGY3ZjAwOGRhMGU5ZmJjN2QyNWJhNGU1MDA3Mg=='
-        zip_64_de_hash = b'ZWQxOWI2YmJiMTgwZjdmOWJkY2YyNmNlYjc5OTkzOGU0NWRkNzIzNWEzOWYyNjliYzM3MjA1ODY0ZDFmNGQwYw=='
-        exe_64_plugins_hash = b'MWViNWIwMmQ4MzJlZGI2MTBmMGU5OWI4N2MyNGE3ZDYwOTE4MGM3ODdhZjIzYWM3ZWNhNWVjYjA4NTU5NGQ3' \
-                              b'NQ=='
-        zip_64_plugins_hash = b'NTNkNDY2OGEyMmU5MTgzMTg2MDY1NGNlNWIwZDU3ZDllYmJhMGFjODVjZDJmMDg4NTJkNWU2MzE3NDY0YTk2' \
-                              b'OA=='
-        exe_32_hash = b'ZTdjY2FiNjY5NWYxNTg1OTk0MzYyMzcwNDJkN2FhYjg3NWRkNTQ0ODhjZjFlMDBiOTE3YmFhNDhjNjNjYmIyNg=='
-        zip_32_hash = b'NDdlYjM1MDBkYWZjOTQ0ZmEzYmU3NDUxNmE1N2ViNmYyYjkyODdhNjhhYzFmMDNkNWY1MDY3YWMyYWZhNDNlMA=='
-        exe_32_de_hash = b'NDA5YWM3MjlhMTI2M2JhNzBiMTk4ZWFmNTVkNGYzYmMxNmJkOTY5ODgwMWRjZjI4NzNlMmU2YjE2NGZlNTk0Ng=='
-        zip_32_de_hash = b'ZDA2N2MwNzA1MDE2MzlmYjRhNDdmZDgxNjk5Nzc4MGRhMDQzMzI4OGE5NGU2MjhhYzhiMDZmNDAwNTI1ODU5ZQ=='
-        exe_32 = b'aHR0cDovL2Rvd25sb2FkLmNuZXQuY29tL0lyZmFuVmlldy8zMDAwLTIxOTJfNC0xMDAyMTk2Mi5odG1sP3BhcnQ9ZGwtJmFt' \
-                 b'cDtzdWJqPWRsJmFtcDt0YWc9YnV0dG9u'
-        self.expected_win_exe_64 = hp.decode_base64(exe_64)
-        self.expected_win_zip_64 = hp.decode_base64(zip_64)
-        self.expected_win_exe_64_de = hp.decode_base64(exe_64_de)
-        self.expected_win_zip_64_de = hp.decode_base64(zip_64_de)
-        self.expected_win_exe_64_plugins = hp.decode_base64(exe_64_plugins)
-        self.expected_win_zip_64_plugins = hp.decode_base64(zip_64_plugins)
-        self.expected_win_exe_64_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_exe_64_size = hp.decode_base64(b'My4zNyBNQg==')
-        self.expected_win_exe_64_hash = hp.decode_base64(exe_64_hash)
-        self.expected_win_zip_64_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_zip_64_size = hp.decode_base64(b'Mi45MSBNQg==')
-        self.expected_win_zip_64_hash = hp.decode_base64(zip_64_hash)
-        self.expected_win_exe_64_de_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_exe_64_de_size = hp.decode_base64(b'My42MyBNQg==')
-        self.expected_win_exe_64_de_hash = hp.decode_base64(exe_64_de_hash)
-        self.expected_win_zip_64_de_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_zip_64_de_size = hp.decode_base64(b'My4xNyBNQg==')
-        self.expected_win_zip_64_de_hash = hp.decode_base64(zip_64_de_hash)
-        self.expected_win_exe_64_plugins_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_exe_64_plugins_size = hp.decode_base64(b'MjUuMjAgTUI=')
-        self.expected_win_exe_64_plugins_hash = hp.decode_base64(exe_64_plugins_hash)
-        self.expected_win_zip_64_plugins_ver = hp.decode_base64(b'VmVyc2lvbiA0LjUy')
-        self.expected_win_zip_64_plugins_size = hp.decode_base64(b'MjIuNzAgTUI=')
-        self.expected_win_zip_64_plugins_hash = hp.decode_base64(zip_64_plugins_hash)
-        self.expected_win_exe_32_hash = hp.decode_base64(exe_32_hash)
-        self.expected_win_zip_32_hash = hp.decode_base64(zip_32_hash)
-        self.expected_win_exe_32_de_hash = hp.decode_base64(exe_32_de_hash)
-        self.expected_win_zip_32_de_hash = hp.decode_base64(zip_32_de_hash)
-        self.expected_win_exe_32 = hp.decode_base64(exe_32)
-        self.expected_ms_store_size = hp.decode_base64(b'MjEuODQgTUI=')
-        self.expected_win_ver = hp.decode_base64(b'NC41Mg==')
-        self.expected_win_date = hp.decode_base64(b'MjAxOC0xMi0xMw==')
-        self.expected_win_size = hp.decode_base64(b'MiwzNiBNQg==')
+        self.expected_win_exe_64 = 'http://download.cnet.com/IrfanView-64-bit/3000-2192_4-76444710.html?part=dl-&' \
+                                   'amp;subj=dl&amp;tag=button'
+        self.expected_win_zip_64 = 'http://www.irfanview.info/files/iview453_x64.zip'
+        self.expected_win_exe_64_de = 'http://www.irfanview.info/files/iview453g_x64_setup.exe'
+        self.expected_win_zip_64_de = 'http://www.irfanview.info/files/iview453g_x64.zip'
+        self.expected_win_exe_64_plugins = 'http://www.fosshub.com/IrfanView.html/iview453_plugins_x64_setup.exe'
+        self.expected_win_zip_64_plugins = 'http://www.fosshub.com/IrfanView.html/iview453_plugins_x64.zip'
+        self.expected_win_exe_64_ver = 'Version 4.53'
+        self.expected_win_exe_64_size = '3.42 MB'
+        self.expected_win_exe_64_hash = '57b12aed758d5beb84263cdca2d4fa38d0bcffa882d9994921453b170edf149a'
+        self.expected_win_zip_64_ver = 'Version 4.53'
+        self.expected_win_zip_64_size = '2.96 MB'
+        self.expected_win_zip_64_hash = '941056da4f50df44eeef46ca875255bd3d09c3aaf1bdfffad5f65de0a515ff02'
+        self.expected_win_exe_64_de_ver = 'Version 4.53'
+        self.expected_win_exe_64_de_size = '3.68 MB'
+        self.expected_win_exe_64_de_hash = 'a7729a5372c8b9bf95ae98ef481bf4d5402ac0ca227001887cb55c5c85d27e1c'
+        self.expected_win_zip_64_de_ver = 'Version 4.53'
+        self.expected_win_zip_64_de_size = '3.22 MB'
+        self.expected_win_zip_64_de_hash = '0c942b01ff4d56af4dfa58203f06d4aba7d7a80855cd649d187b6e0eaca0ef4f'
+        self.expected_win_exe_64_plugins_ver = 'Version 4.53'
+        self.expected_win_exe_64_plugins_size = '25.20 MB'
+        self.expected_win_exe_64_plugins_hash = 'ac8d27b1241ef91e80a73bfc672342be7317f7d8bf47a615a00d01f5090f3d43'
+        self.expected_win_zip_64_plugins_ver = 'Version 4.53'
+        self.expected_win_zip_64_plugins_size = '22.70 MB'
+        self.expected_win_zip_64_plugins_hash = 'd5e8ae1734264287e7b442fc062899c206c54bbd423304e125c4b1d1c58d28b1'
+        self.expected_win_exe_32_hash = '7ebcf9fe4f4e41293d8808d2ad4b369577209dc64db04d79b1bce370e2c79b69'
+        self.expected_win_zip_32_hash = '89c0d29424299f9b0d36248884059baf815f0b5d4adc9c3b426f61fe68f1444a'
+        self.expected_win_exe_32_de_hash = 'c597df4fef1825c1df119a0b4115729e89d0ea97941e698ccbcb8eb4f2b0b7f2'
+        self.expected_win_zip_32_de_hash = 'd0ab1f0eabd391baaed8061fbaf72729c3ab4a680968475e4dde639db7fcfbec'
+        self.expected_win_exe_32 = 'http://www.fosshub.com/IrfanView.html'
+        self.expected_ms_store_size = '21.84 MB'
+        self.expected_win_ver = '4.53'
+        self.expected_win_date = '2019-05-15'
+        self.expected_win_size = '2,38 MB'
 
 
 def get_entry_1():
@@ -215,7 +190,7 @@ def get_entry_4():
 
 def get_entry_5():
     web_space = hp.get_web_space(IrfanViewTestData.WEB_SPACE_HTML_PATH_5)
-    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size")
+    return hp.get_entry_for_dobreprogramy_pl(web_space, "win_ver", "win_date", "win_size", (1, 1))
 
 
 class IrfanViewTest(unittest.TestCase):

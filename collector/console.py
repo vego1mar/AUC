@@ -1,11 +1,12 @@
+import argparse
 import json
 import executing as ex
 import helpers as hp
-import tests.console.json_files_aquisition as jfa
 
 
 class HierarchyFile:
     FILE_PREFIX = r'../json/'
+    HIERARCHY_FILE_NAME = '__hierarchy__.json'
     OUTPUT_FILE_NAME = '__collectibles__.json'
 
     def __init__(self):
@@ -15,8 +16,7 @@ class HierarchyFile:
         self._collectibles_list = []
 
     def load_hierarchy_file(self):
-        print('Loading ' + jfa.HIERARCHY + ' information...')
-        file_content = hp.read_file(HierarchyFile.FILE_PREFIX + jfa.HIERARCHY_FILE_NAME)
+        file_content = hp.read_file(HierarchyFile.FILE_PREFIX + HierarchyFile.HIERARCHY_FILE_NAME)
         self.hierarchy_dict = json.loads(file_content)
 
     def traverse_to_collect(self):
@@ -25,8 +25,6 @@ class HierarchyFile:
         self._collect_app_data()
 
     def _read_json_files(self):
-        print('Reading JSON files...')
-
         for app_name in self.hierarchy_dict:
             self._read_execution_order(app_name)
 
@@ -41,13 +39,10 @@ class HierarchyFile:
             self._execution_order_list[self._current_element].add_entry(entry, True)
 
     def _fetch_html_data(self):
-        print('Fetching HTML data...')
-
         for execution_order in self._execution_order_list:
             execution_order.fetch_html_data()
 
     def _collect_app_data(self):
-        print('Collecting apps data...')
         i = 0
 
         for app_name in self.hierarchy_dict:
@@ -57,7 +52,6 @@ class HierarchyFile:
             i += 1
 
     def save_collectibles(self):
-        print('Saving collectibles to file...')
         app_names = []
         j = 0
 
@@ -73,15 +67,47 @@ class HierarchyFile:
         hp.save_file(HierarchyFile.OUTPUT_FILE_NAME, json_collect)
 
 
-def _main():
+def _get_command_line_ars():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input-file-prefix', default='', type=str, metavar=HierarchyFile.HIERARCHY_FILE_NAME)
+    parser.add_argument('--output-file-prefix', default='', type=str, metavar=HierarchyFile.OUTPUT_FILE_NAME)
+    parser.add_argument('--verbose', action='store_true')
+    parser.add_argument('--version', action='version', version='2.0')
+    return parser.parse_args()
+
+
+def _print_progress():
+    print('.', end='')
+
+
+def _provide_test_prefix_at_empty_args(args):
+    if str(args.output_file_prefix) == str() and str() == str(args.input_file_prefix):
+        args.output_file_prefix = '../runtime/'
+
+
+def _print_file_paths(args):
+    if args.verbose:
+        print()
+        print('INPUT_FILE_PATH=' + args.input_file_prefix + HierarchyFile.HIERARCHY_FILE_NAME)
+        print('OUTPUT_FILE_PATH=' + args.output_file_prefix + HierarchyFile.OUTPUT_FILE_NAME)
+
+
+def _main(args):
+    _print_progress()
     hierarchy = HierarchyFile()
-    HierarchyFile.OUTPUT_FILE_NAME = '../runtime/' + HierarchyFile.OUTPUT_FILE_NAME
-    print('OUTPUT_FILE_NAME=' + HierarchyFile.OUTPUT_FILE_NAME)
+    _provide_test_prefix_at_empty_args(args)
+    _print_progress()
+    HierarchyFile.FILE_PREFIX = args.input_file_prefix
+    HierarchyFile.OUTPUT_FILE_NAME = args.output_file_prefix + HierarchyFile.OUTPUT_FILE_NAME
+    _print_file_paths(args)
+    _print_progress()
     hierarchy.load_hierarchy_file()
+    _print_progress()
     hierarchy.traverse_to_collect()
+    _print_progress()
     hierarchy.save_collectibles()
-    print('Done.')
 
 
 if __name__ == '__main__':
-    _main()
+    _main(_get_command_line_ars())
+    _print_progress()

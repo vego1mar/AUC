@@ -3,62 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/console.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_GooglePlay.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_iOS.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/jetclean_web_Windows3.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/keepass_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/keepass_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/keepass_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/keepass_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/origin_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/origin_web_Mac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/origin_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/origin_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/potplayer_web_Windows2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/speccy_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/speccy_web_Windows3.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_GooglePlay.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_MSStore.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_Mac.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_Windows.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/steamClient_web_official.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/steamClient_web_official.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_MSStore.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows3.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows4.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows4.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows5.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows5.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows6.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows6.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/collector/tests/__init__.py" />
         <option value="$PROJECT_DIR$/tests/helpers/remove_characters_test.py" />
         <option value="$PROJECT_DIR$/tests/helpers/base64_test.py" />
         <option value="$PROJECT_DIR$/tests/requesting/target_json.py" />
@@ -141,7 +86,6 @@
         <option value="$PROJECT_DIR$/tests/console/json_write_app.py" />
         <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/console.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" />
@@ -159,12 +103,14 @@
         <option value="$PROJECT_DIR$/tests/executing/app_keepass_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
         <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
-        <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
         <option value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
         <option value="$PROJECT_DIR$/collector/executing.py" />
+        <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
+        <option value="$PROJECT_DIR$/aux/collector_console.sh" />
+        <option value="$PROJECT_DIR$/collector/console.py" />
       </list>
     </option>
   </component>
@@ -201,18 +147,6 @@
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AUC" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="executing" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -222,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/collector/tests/executing" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -341,6 +275,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.console" />
+      <item itemvalue="Python.json_files_aquisition" />
+      <item itemvalue="Python.run_html_files_update" />
+      <item itemvalue="Python tests.Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" />
+      <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.console" />
@@ -414,10 +355,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32711306" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32705098" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50324255" side_tool="true" weight="0.39804772" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32899022" />
-      <window_info anchor="bottom" id="Pylint" order="12" sideWeight="0.4980263" weight="0.329718" />
+      <window_info anchor="bottom" id="Pylint" order="12" sideWeight="0.4980263" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -449,6 +390,26 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>args.input_file_prefix</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>args.__getitem__()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>args[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>args['--output-file-prefix']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>collector.get_collectibles()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -475,26 +436,6 @@
       </expression>
       <expression>
         <expression-string>base64_1[2:]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict.items()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict.values()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict.keys()[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.hierarchy_dict.keys()[0][i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -568,16 +509,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/requesting/target_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collector/json_assist.py" />
     <entry file="file://$PROJECT_DIR$/tests/json_assist/json_assist_test.py" />
     <entry file="file://$PROJECT_DIR$/tests/triggers/find_trigger_test.py">
@@ -744,26 +675,6 @@
           <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -935,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_irfanview_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -975,16 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -995,22 +886,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
+    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+        <state relative-caret-position="1728">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/triggers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/requesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/console.py">
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="507">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1021,6 +932,33 @@
           <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aux/collector_console.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

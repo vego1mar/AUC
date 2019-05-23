@@ -2,7 +2,6 @@ import json
 import helpers as hp
 
 HIERARCHY = '__hierarchy__'
-HIERARCHY_FILE_NAME = '__hierarchy__.json'
 FILE_NAMES = dict()
 
 

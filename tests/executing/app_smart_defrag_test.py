@@ -20,6 +20,7 @@ class SmartDefragTestData:
         self.execution_order.add_entry(get_entry_3(), True)
         self.expected_win_exe_tuple = (
             'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/drives/smart-defrag-setup.exe',
+            'http://files2.majorgeeks.com/8eef6a9d9cd458429acc0ad45332564a0279a2c1/drives/smart-defrag-setup.exe'
         )
         self.expected_win_ver = '6.2.5.128 '
         self.expected_win_date = '2019-04-25'

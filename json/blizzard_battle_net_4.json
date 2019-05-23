@@ -1,0 +1,154 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "google_play_apk"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://play.google.com/store/apps/details?id=com.blizzard.messenger"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "Updated"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_subset_trigger",
+								"begin": "U",
+								"end": "]"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_regex_match_trigger",
+								"pattern": ">[A-Za-z]+ [\\d]+[.,]+ [\\d]+<"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "gp_date"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "Updated"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_subset_trigger",
+								"begin": "U",
+								"end": "]"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_regex_match_trigger",
+								"pattern": ">[\\d., M]+<"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "gp_size"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "Current Version"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_subset_trigger",
+								"begin": "C",
+								"end": "]"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_regex_match_trigger",
+								"pattern": ">[\\d.,]+<"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "gp_ver"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				}
+		],
+		"html_data": "https://play.google.com/store/apps/details?id=com.blizzard.messenger"
+}

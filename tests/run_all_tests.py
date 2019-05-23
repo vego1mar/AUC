@@ -38,6 +38,8 @@ def adjust_file_paths():
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_1 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_1[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_2[1:]
     BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_3[1:]
+    BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_4 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_4[1:]
+    BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_5 = BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_5[1:]
     DriverBoosterTestData.WEB_SPACE_HTML_PATH_2 = DriverBoosterTestData.WEB_SPACE_HTML_PATH_2[1:]
     DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_1 = DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_1[1:]
     DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_2 = DvdFabVirtualDriveTestData.WEB_SPACE_HTML_PATH_2[1:]
@@ -89,52 +91,6 @@ def adjust_file_paths():
     RetrieveTagsConst.TEST_FILE_PATH = RetrieveTagsConst.TEST_FILE_PATH[1:]
 
 
-def print_info():
-    def print_module_functions(mod_name, mod_dict):
-        functions_names = [name for name in mod_dict if not name.startswith('__')]
-        print(mod_name + '[', end='')
-
-        for name in functions_names:
-            print(name + '()', end=', ')
-
-        print(']')
-
-    print_module_functions(BethesdaNetLauncherTest.__name__, BethesdaNetLauncherTest.__dict__)
-    print_module_functions(ActivisionBlizzardBattleNetTestCase.__name__, ActivisionBlizzardBattleNetTestCase.__dict__)
-    print_module_functions(DriverBoosterTest.__name__, DriverBoosterTest.__dict__)
-    print_module_functions(DvdFabVirtualDriveTest.__name__, DvdFabVirtualDriveTest.__dict__)
-    print_module_functions(EpicGamesLauncherTest.__name__, EpicGamesLauncherTest.__dict__)
-    print_module_functions(GogGalaxyTest.__name__, GogGalaxyTest.__dict__)
-    print_module_functions(GoogleChromeTest.__name__, GoogleChromeTest.__dict__)
-    print_module_functions(HashTabTest.__name__, HashTabTest.__dict__)
-    print_module_functions(IrfanViewTest.__name__, IrfanViewTest.__dict__)
-    print_module_functions(JetCleanTest.__name__, JetCleanTest.__dict__)
-    print_module_functions(KeePassTest.__name__, KeePassTest.__dict__)
-    print_module_functions(MalwareFighterTest.__name__, MalwareFighterTest.__dict__)
-    print_module_functions(ElectronicArtsOriginTest.__name__, ElectronicArtsOriginTest.__dict__)
-    print_module_functions(PotPlayerTest.__name__, PotPlayerTest.__dict__)
-    print_module_functions(SmartDefragTest.__name__, SmartDefragTest.__dict__)
-    print_module_functions(SpeccyTest.__name__, SpeccyTest.__dict__)
-    print_module_functions(SteamClientBootstrapperTest.__name__, SteamClientBootstrapperTest.__dict__)
-    print_module_functions(SumatraPdfTest.__name__, SumatraPdfTest.__dict__)
-    print_module_functions(ChainRequestExecutionTest.__name__, ChainRequestExecutionTest.__dict__)
-    print_module_functions(ExecutionOrderEntryTestCase.__name__, ExecutionOrderEntryTestCase.__dict__)
-    print_module_functions(InfoCollectorTest.__name__, InfoCollectorTest.__dict__)
-    print_module_functions(Base64Test.__name__, Base64Test.__dict__)
-    print_module_functions(RemoveCharactersTest.__name__, RemoveCharactersTest.__dict__)
-    print_module_functions(InvocationRequestTestCase.__name__, InvocationRequestTestCase.__dict__)
-    print_module_functions(TargetTestCase.__name__, TargetTestCase.__dict__)
-    print_module_functions(CutAsideTriggerTest.__name__, CutAsideTriggerTest.__dict__)
-    print_module_functions(DeleteTriggerTest.__name__, DeleteTriggerTest.__dict__)
-    print_module_functions(FetchAttributeTriggerTest.__name__, FetchAttributeTriggerTest.__dict__)
-    print_module_functions(FindNextTriggerTest.__name__, FindNextTriggerTest.__dict__)
-    print_module_functions(FindTriggerTest.__name__, FindTriggerTest.__dict__)
-    print_module_functions(GetRegexMatchTriggerTest.__name__, GetRegexMatchTriggerTest.__dict__)
-    print_module_functions(GetSubsetTriggerTest.__name__, GetSubsetTriggerTest.__dict__)
-    print_module_functions(RetrieveTagsTriggerTest.__name__, RetrieveTagsTriggerTest.__dict__)
-
-
 if __name__ == '__main__':
     adjust_file_paths()
-    print_info()
     unittest.main()

@@ -138,14 +138,16 @@ def get_entry_for_ms_store(web_space="", app_url="", size="_ms_size", link="_ms_
 
 
 def get_entry_for_itunes(web_space="", app_url="", ver="_i_ver", size="_i_size"):
-    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("data-test-version-number"))
-    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('>', '<'))
-    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, ver), tr.CutAside(1, 1))
-    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find("data-test-app-info-size"))
-    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetSubset('>', '<'))
-    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.CutAside(1, 1))
-    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "ios_itunes"), tr.SetWorkspace(app_url))
-    chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07)
+    req_01 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.RetrieveTags('p', tr.TagType.ATTRIBUTED, 3))
+    req_02 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(2))
+    req_03 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r'>[\w]+ [\d.-]+<'))
+    req_04 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, ver), tr.CutAside(1, 1))
+    req_05 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.RetrieveTags('dd', tr.TagType.ATTRIBUTED, 8))
+    req_06 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(1))
+    req_07 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.GetRegexMatch(r'>[\d.]+ [\w]+<'))
+    req_08 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, size), tr.CutAside(1, 1))
+    req_09 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "ios_itunes"), tr.SetWorkspace(app_url))
+    chain_request = (req_01, req_02, req_03, req_04, req_05, req_06, req_07, req_08, req_09)
     return ex.ExecutionOrderEntry(chain_request, web_space)
 
 

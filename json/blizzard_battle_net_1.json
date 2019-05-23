@@ -1,0 +1,38 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "Win_exe_plPL"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://www.blizzard.com/en-gb/download/confirmation?platform=windows&locale=plPL&version=LIVE&id=bnetdesk"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "Mac_zip_plPL"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://www.blizzard.com/en-gb/download/confirmation?platform=macos&locale=plPL&version=LIVE&id=bnetdesk"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "app_website"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://eu.battle.net/account/download/"
+						}
+				}
+		],
+		"html_data": "https://eu.battle.net/account/download/"
+}

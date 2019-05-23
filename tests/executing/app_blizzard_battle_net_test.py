@@ -36,8 +36,8 @@ class BlizzardBattleNetTestData:
         self.expected_gp_date = 'February 15, 2019'
         self.expected_gp_size = '15M'
         self.expected_gp_ver = '1.4.3.75'
-        self.expected_i_tunes_ver = 'Version 1.4.5'
-        self.expected_i_tunes_size = '69.7 MB'
+        self.expected_ios_ver = 'Version 1.4.5'
+        self.expected_ios_size = '69.7 MB'
 
 
 def get_expected_win_exe_plpl():
@@ -79,7 +79,7 @@ def get_entry_4():
 def get_entry_5():
     web_space = hp.get_web_space(BlizzardBattleNetTestData.WEB_SPACE_HTML_PATH_5)
     app_url = BlizzardBattleNetTestData.WEB_SPACE_URL_5
-    return hp.get_entry_for_itunes(web_space, app_url, 'iTunes_ver', 'iTunes_size')
+    return hp.get_entry_for_itunes(web_space, app_url, 'ios_ver', 'ios_size')
 
 
 class ActivisionBlizzardBattleNetTestCase(unittest.TestCase):
@@ -106,8 +106,8 @@ class ActivisionBlizzardBattleNetTestCase(unittest.TestCase):
         self.assertEqual(dt.expected_gp_size, collector.get_collectibles()['gp_size'])
         self.assertEqual(dt.expected_gp_ver, collector.get_collectibles()['gp_ver'])
         self.assertEqual(dt.WEB_SPACE_URL_4, collector.get_collectibles()['google_play_apk'])
-        self.assertEqual(dt.expected_i_tunes_ver, collector.get_collectibles()['iTunes_ver'])
-        self.assertEqual(dt.expected_i_tunes_size, collector.get_collectibles()['iTunes_size'])
+        self.assertEqual(dt.expected_ios_ver, collector.get_collectibles()['ios_ver'])
+        self.assertEqual(dt.expected_ios_size, collector.get_collectibles()['ios_size'])
         self.assertEqual(dt.WEB_SPACE_URL_5, collector.get_collectibles()['ios_itunes'])
 
 

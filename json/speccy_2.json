@@ -1,0 +1,16 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": true,
+								"collectible_name": "win_exe"
+						},
+						"trigger": {
+								"trigger_type": "fetch_attribute_trigger",
+								"attr_name": "data-download-url"
+						}
+				}
+		],
+		"html_data": "https://www.ccleaner.com/speccy/download/standard"
+}

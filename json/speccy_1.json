@@ -1,0 +1,16 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "app_website"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://www.ccleaner.com/speccy/download"
+						}
+				}
+		],
+		"html_data": ""
+}

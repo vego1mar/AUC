@@ -1,0 +1,27 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "app_website"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://bethesda.net/pl/game/bethesda-launcher"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_exe"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "http://download.cdp.bethesda.net/BethesdaNetLauncher_Setup.exe"
+						}
+				}
+		],
+		"html_data": "https://bethesda.net/pl/game/bethesda-launcher"
+}

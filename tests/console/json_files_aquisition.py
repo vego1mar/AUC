@@ -36,15 +36,19 @@ def _app_bethesda_net_launcher_to_json():
 
 def _app_blizzard_battle_net_to_json():
     import tests.executing.app_blizzard_battle_net_test as bbn
-    files = ("blizzard_battle_net_1", "blizzard_battle_net_2", "blizzard_battle_net_3", "blizzard_battle_net_4")
-    entries = [bbn.get_entry_1(), bbn.get_entry_2(), bbn.get_entry_3(), bbn.get_entry_4()]
+    files = ("blizzard_battle_net_1", "blizzard_battle_net_2", "blizzard_battle_net_3", "blizzard_battle_net_4",
+             "blizzard_battle_net_5")
+    entries = [bbn.get_entry_1(), bbn.get_entry_2(), bbn.get_entry_3(), bbn.get_entry_4(), bbn.get_entry_5()]
     entries[0].html_data = bbn.BlizzardBattleNetTestData.WEB_SPACE_URL_1
     entries[1].html_data = bbn.BlizzardBattleNetTestData.WEB_SPACE_URL_2
     entries[2].html_data = bbn.BlizzardBattleNetTestData.WEB_SPACE_URL_3
+    entries[3].html_data = bbn.BlizzardBattleNetTestData.WEB_SPACE_URL_4
+    entries[4].html_data = bbn.BlizzardBattleNetTestData.WEB_SPACE_URL_5
     hp.save_file(_get_files_path(files[0]), entries[0].to_json())
     hp.save_file(_get_files_path(files[1]), entries[1].to_json())
     hp.save_file(_get_files_path(files[2]), entries[2].to_json())
     hp.save_file(_get_files_path(files[3]), entries[3].to_json())
+    hp.save_file(_get_files_path(files[4]), entries[4].to_json())
     FILE_NAMES[bbn.BlizzardBattleNetTestData.APP_NAME] = _get_file_names(files)
 
 
@@ -85,7 +89,7 @@ def _app_epic_games_launcher_to_json():
 def _app_gog_galaxy_to_json():
     import tests.executing.app_gog_galaxy_test as gog
     files = ("gog_galaxy_1", "gog_galaxy_2", "gog_galaxy_3")
-    entries = [gog.get_entry_1(), gog.get_entry_2(), gog.get_entry_3()]
+    entries = [gog.get_entry_1(), gog.get_entry_2(), gog.get_entry_1()]
     entries[0].html_data = gog.GOGGalaxyTestData.WEB_SPACE_URL_1
     entries[1].html_data = gog.GOGGalaxyTestData.WEB_SPACE_URL_2
     hp.save_file(_get_files_path(files[0]), entries[0].to_json())
@@ -292,5 +296,7 @@ def _create_hierarchy_file_as_json():
 
 
 if __name__ == '__main__':
+    print('Saving apps JSON files...')
     _save_apps_collector_prerequisites()
     _create_hierarchy_file_as_json()
+    print('Done.')

@@ -1,0 +1,27 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "app_website"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://www.gogalaxy.com/pl/"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "link"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://www.majorgeeks.com/mg/getmirror/gog_galaxy,1.html"
+						}
+				}
+		],
+		"html_data": "https://www.gogalaxy.com/pl/"
+}

@@ -1,0 +1,40 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "Debug:"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_subset_trigger",
+								"begin": " ",
+								"end": ">"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_zip_32bit"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 4
+						}
+				}
+		],
+		"html_data": "https://www.majorgeeks.com/mg/get/sumatra_pdf,2.html"
+}

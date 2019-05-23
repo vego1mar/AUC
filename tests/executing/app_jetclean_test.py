@@ -28,9 +28,10 @@ class JetCleanTestData:
             'http://files1.majorgeeks.com/198017b9a058a5e782d664d2e8b41b18f9d9f69a/allinone/jetclean-setup.exe',
             'http://files1.majorgeeks.com/dc0e4b2efdb5da15f3cf51e398983620db51ded2/allinone/jetclean-setup.exe',
             'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/allinone/jetclean-setup.exe',
+            'http://files1.majorgeeks.com/d147ef64c0bbfbe36dc916faf4a2c12023fe36ed/allinone/jetclean-setup.exe',
             'http://files2.majorgeeks.com/f1d7d73661fa0a5022e8ac51fb3d91df57112c43/allinone/jetclean-setup.exe',
             'http://files2.majorgeeks.com/01de3733f173aab206c5e0539750c573672f14fa/allinone/jetclean-setup.exe',
-            'http://files2.majorgeeks.com/c56596c4ccdc2ef32a2ab769175c6f55d7792ce1/allinone/jetclean-setup.exe'
+            'http://files2.majorgeeks.com/c56596c4ccdc2ef32a2ab769175c6f55d7792ce1/allinone/jetclean-setup.exe',
         )
 
 

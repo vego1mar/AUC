@@ -1,0 +1,204 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "app_website"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "http://implbits.com/products/hashtab/"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "h2"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "retrieve_tags_trigger",
+								"tag_name": "a",
+								"tag_type": "ATTRIBUTED",
+								"amount": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "LIST",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "select_element_trigger",
+								"position": 0
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "fetch_attribute_trigger",
+								"attr_name": "href"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 2,
+								"right": 0
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_exe"
+						},
+						"trigger": {
+								"trigger_type": "add_text_trigger",
+								"prepend": "http://implbits.com/products/hashtab/",
+								"append": ""
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "delete_trigger",
+								"string": "",
+								"characters": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/_"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_ver"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "find_trigger",
+								"text": "Windows XP"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "retrieve_tags_trigger",
+								"tag_name": "a",
+								"tag_type": "ATTRIBUTED",
+								"amount": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "LIST",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "select_element_trigger",
+								"position": 0
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "fetch_attribute_trigger",
+								"attr_name": "href"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 2,
+								"right": 0
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_xp_exe"
+						},
+						"trigger": {
+								"trigger_type": "add_text_trigger",
+								"prepend": "http://implbits.com/products/hashtab/",
+								"append": ""
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "delete_trigger",
+								"string": "",
+								"characters": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:/_"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "win_xp_ver"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				}
+		],
+		"html_data": "http://implbits.com/products/hashtab/"
+}

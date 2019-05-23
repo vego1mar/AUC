@@ -3,27 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="0665747c-2e5f-4459-b18c-cd4699119261" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/executing.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/executing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collector/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/collector/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/console/json_files_aquisition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_keepass_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_origin_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_origin_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_speccy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_speccy_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_steam_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_steam_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/executing/run_html_files_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_GooglePlay.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Mac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_URL.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/battleNet_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/battleNet_web_iOS.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/bethesdaNet_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_GooglePlay.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Mac.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/chrome_web_iOS.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows1.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/dvdfab_vd_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_WinMac.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/egl_web_Windows.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_WinMac.base64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/gog_galaxy_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/hashTab_web_Windows2.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/idb_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/imf_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_MSStore.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_URL2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_URL2.base64" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_URL3.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_URL3.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/irfanview_web_Windows5.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/isd_web_Windows2.base64" afterDir="false" />
@@ -50,6 +58,7 @@
       <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows7.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows8.base64" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" beforeDir="false" afterPath="$PROJECT_DIR$/tests/resources/sumatrapdf_web_Windows9.base64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/run_all_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run_all_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,20 +67,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="202" selection-start-line="202" selection-end-line="202" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,6 +100,9 @@
       <find>type</find>
       <find>meta i</find>
       <find>meta item</find>
+      <find>class=&quot;ng-hide</find>
+      <find>Version</find>
+      <find>Version 1</find>
     </findStrings>
     <replaceStrings>
       <replace>trigger_type</replace>
@@ -140,32 +139,32 @@
         <option value="$PROJECT_DIR$/collector/__init__.py" />
         <option value="$PROJECT_DIR$/tests/triggers/find_next_trigger_test.py" />
         <option value="$PROJECT_DIR$/tests/console/json_write_app.py" />
-        <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
         <option value="$PROJECT_DIR$/collector/triggers.py" />
         <option value="$PROJECT_DIR$/collector/requesting.py" />
-        <option value="$PROJECT_DIR$/collector/executing.py" />
         <option value="$PROJECT_DIR$/collector/console.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_driver_booster_test.py" />
-        <option value="$PROJECT_DIR$/collector/helpers.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_dvdfab_virtual_drive_test.py" />
-        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_google_chrome_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_hashtab_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_irfanview_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_keepass_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_malware_fighter_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_origin_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_potplayer_test.py" />
-        <option value="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_speccy_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_steam_test.py" />
         <option value="$PROJECT_DIR$/tests/executing/app_sumatrapdf_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_keepass_test.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_jetclean_test.py" />
+        <option value="$PROJECT_DIR$/tests/run_all_tests.py" />
+        <option value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
         <option value="$PROJECT_DIR$/tests/executing/run_html_files_update.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py" />
+        <option value="$PROJECT_DIR$/collector/helpers.py" />
+        <option value="$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py" />
+        <option value="$PROJECT_DIR$/collector/executing.py" />
       </list>
     </option>
   </component>
@@ -178,6 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,14 +205,18 @@
               <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
               <item name="AUC" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AUC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AUC" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="executing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,7 +249,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting">
+  <component name="RunManager" selected="Python.console">
+    <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/collector" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/collector/console.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="json_files_aquisition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/console" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/console/json_files_aquisition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_html_files_update" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,7 +313,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,11 +323,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_smart_defrag_test.SmartDefragTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for app_speccy_test.SpeccyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,45 +337,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_speccy_test.SpeccyTest.test_package_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_steam_test.SteamClientBootstrapperTest.test_package_collecting&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/executing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;app_sumatrapdf_test.SumatraPdfTest.test_package_collecting&quot;" />
+      <option name="_new_target" value="&quot;app_gog_galaxy_test.GogGalaxyTest.test_package_collecting&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" />
+        <item itemvalue="Python.console" />
+        <item itemvalue="Python.json_files_aquisition" />
+        <item itemvalue="Python tests.Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" />
+        <item itemvalue="Python tests.Unittests for app_gog_galaxy_test.GogGalaxyTest.test_package_collecting" />
         <item itemvalue="Python.run_html_files_update" />
-        <item itemvalue="Python tests.Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_speccy_test.SpeccyTest.test_package_collecting" />
-        <item itemvalue="Python tests.Unittests for app_smart_defrag_test.SmartDefragTest.test_package_collecting" />
       </list>
     </recent_temporary>
   </component>
@@ -349,46 +368,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_app_speccy_test_SpeccyTest_test_package_collecting - 2019.05.19 at 14h 15m 03s.xml">
-      <configuration name="Unittests for app_speccy_test.SpeccyTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 40m 13s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 17m 02s.xml">
-      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 42m 38s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 17m 24s.xml">
-      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 42m 51s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 18m 00s.xml">
-      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 44m 17s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 21m 55s.xml">
-      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 45m 10s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_steam_test_SteamClientBootstrapperTest_test_package_collecting - 2019.05.19 at 14h 22m 11s.xml">
-      <configuration name="Unittests for app_steam_test.SteamClientBootstrapperTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 48m 38s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 25m 04s.xml">
-      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 52m 08s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 25m 23s.xml">
-      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 54m 15s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 29m 36s.xml">
-      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 54m 18s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_app_sumatrapdf_test_SumatraPdfTest_test_package_collecting - 2019.05.19 at 14h 29m 54s.xml">
-      <configuration name="Unittests for app_sumatrapdf_test.SumatraPdfTest.test_package_collecting" configurationId="tests" />
+    <history-entry file="Unittests_for_app_blizzard_battle_net_test_ActivisionBlizzardBattleNetTestCase_test_package_collecting - 2019.05.23 at 13h 58m 10s.xml">
+      <configuration name="Unittests for app_blizzard_battle_net_test.ActivisionBlizzardBattleNetTestCase.test_package_collecting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1566" height="1035" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20841424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.20841424" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50162864" weight="0.20349967" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32711306" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32705098" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698594" weight="0.32594234" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49675745" weight="0.39578715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -550,13 +568,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.6/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="340" selection-start-line="340" selection-end-line="340" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/requesting/target_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -757,50 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collector/executing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/console.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_bethesda_net_launcher_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1794">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -813,16 +784,6 @@
           <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -847,30 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_epic_games_launcher_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="100" lean-forward="true" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -897,36 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="743">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_irfanview_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_jetclean_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_keepass_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -963,16 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/app_speccy_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1003,12 +904,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_log.txt" />
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_smart_defrag_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_keepass_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="27" column="117" selection-start-line="27" selection-start-column="117" selection-end-line="27" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_jetclean_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="31" column="112" selection-start-line="31" selection-start-column="112" selection-end-line="31" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/run_all_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_irfanview_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="204" column="14" lean-forward="true" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_gog_galaxy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/executing/run_html_files_update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        <state relative-caret-position="2834">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/executing/app_blizzard_battle_net_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/console/json_files_aquisition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collector/executing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

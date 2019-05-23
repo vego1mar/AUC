@@ -24,7 +24,8 @@ class KeePassTestData:
         self.expected_win_exe_tuple = (
             'http://files1.majorgeeks.com/46fb1d9f19c84211ae91ef17d2248d3e9d681771/internet/KeePass-2.41-Setup.exe',
             'http://files1.majorgeeks.com/5b09cfeadfc6032f5a0e47fa42620261921a1ddc/internet/KeePass-2.42.1-Setup.exe',
-            'http://files2.majorgeeks.com/2821457d3c37d0405f1ac2c0f97b8670c543967e/internet/KeePass-2.41-Setup.exe'
+            'http://files2.majorgeeks.com/2821457d3c37d0405f1ac2c0f97b8670c543967e/internet/KeePass-2.41-Setup.exe',
+            'http://files2.majorgeeks.com/8eef6a9d9cd458429acc0ad45332564a0279a2c1/internet/KeePass-2.42.1-Setup.exe'
         )
 
 

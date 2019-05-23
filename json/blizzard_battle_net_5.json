@@ -1,0 +1,110 @@
+{
+		"chain_request": [
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "retrieve_tags_trigger",
+								"tag_name": "p",
+								"tag_type": "ATTRIBUTED",
+								"amount": 3
+						}
+				},
+				{
+						"target": {
+								"set_name": "LIST",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "select_element_trigger",
+								"position": 2
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_regex_match_trigger",
+								"pattern": ">[\\w]+ [\\d.-]+<"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "ios_ver"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WEB",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "retrieve_tags_trigger",
+								"tag_name": "dd",
+								"tag_type": "ATTRIBUTED",
+								"amount": 8
+						}
+				},
+				{
+						"target": {
+								"set_name": "LIST",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "select_element_trigger",
+								"position": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": false,
+								"collectible_name": "general"
+						},
+						"trigger": {
+								"trigger_type": "get_regex_match_trigger",
+								"pattern": ">[\\d.]+ [\\w]+<"
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "ios_size"
+						},
+						"trigger": {
+								"trigger_type": "cut_aside_trigger",
+								"left": 1,
+								"right": 1
+						}
+				},
+				{
+						"target": {
+								"set_name": "WORK",
+								"is_gathering_request": true,
+								"collectible_name": "ios_itunes"
+						},
+						"trigger": {
+								"trigger_type": "set_workspace_trigger",
+								"text": "https://itunes.apple.com/app/apple-store/id1241040030"
+						}
+				}
+		],
+		"html_data": "https://itunes.apple.com/app/apple-store/id1241040030"
+}

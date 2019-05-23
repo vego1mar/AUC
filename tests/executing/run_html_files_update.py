@@ -94,8 +94,8 @@ def _update_html_for_epic_games_launcher_app():
 
 def _update_html_for_gog_galaxy_app():
     _traverse_dict_to_update({
-        app_6.GOGGalaxyTestData.WEB_SPACE_URL_1: app_6.GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1,
-        app_6.GOGGalaxyTestData.WEB_SPACE_URL_2: app_6.GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2
+        app_6.GOGGalaxyTestData.WEB_SPACE_URL_2: app_6.GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2,
+        app_6.GOGGalaxyTestData.WEB_SPACE_URL_3: app_6.GOGGalaxyTestData.WEB_SPACE_HTML_PATH_3,
     })
 
 

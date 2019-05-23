@@ -100,23 +100,23 @@ class ExecutionOrderEntry(json.JSONEncoder):
 
 class ExecutionOrder:
     def __init__(self):
-        self.list = list()
+        self.entries = list()
 
     def add_entry(self, execution_order_entry, is_html_fetched=False):
         if is_html_fetched:
-            self.list.append(execution_order_entry)
+            self.entries.append(execution_order_entry)
             return None
 
         url = execution_order_entry.html_data
         execution_order_entry.html_data = hp.fetch_html(url)
-        self.list.append(execution_order_entry)
+        self.entries.append(execution_order_entry)
 
     def fetch_html_data(self):
-        for entry in self.list:
+        for entry in self.entries:
             entry.html_data = hp.fetch_html(entry.html_data)
 
     def __iter__(self):
-        return iter(self.list)
+        return iter(self.entries)
 
 
 class InfoCollector:
@@ -129,8 +129,8 @@ class InfoCollector:
         if not isinstance(self._execution_order, ExecutionOrder):
             return
 
-        for i in range(0, len(self._execution_order.list)):
-            entry = self._execution_order.list[i]
+        for i in range(0, len(self._execution_order.entries)):
+            entry = self._execution_order.entries[i]
             executor = ChainRequestExecution(entry.html_data)
             executor.set_chain_request(entry.chain_request)
             executor.execute()

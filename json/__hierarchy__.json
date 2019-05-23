@@ -1,0 +1,98 @@
+{
+		"Bethesda.net Launcher": [
+				"bethesda_net_launcher_1.json",
+				"bethesda_net_launcher_2.json"
+		],
+		"Blizzard Battle.net": [
+				"blizzard_battle_net_1.json",
+				"blizzard_battle_net_2.json",
+				"blizzard_battle_net_3.json",
+				"blizzard_battle_net_4.json",
+				"blizzard_battle_net_5.json"
+		],
+		"Malware Fighter": [
+				"malware_fighter_1.json",
+				"malware_fighter_2.json"
+		],
+		"DVDFab Virtual Drive": [
+				"dvdfab_virtual_drive_1.json",
+				"dvdfab_virtual_drive_2.json"
+		],
+		"Epic Games Launcher": [
+				"epic_games_launcher_1.json",
+				"epic_games_launcher_2.json",
+				"epic_games_launcher_3.json"
+		],
+		"GOG Galaxy": [
+				"gog_galaxy_1.json",
+				"gog_galaxy_2.json",
+				"gog_galaxy_3.json"
+		],
+		"Google Chrome": [
+				"google_chrome_1.json",
+				"google_chrome_2.json",
+				"google_chrome_3.json",
+				"google_chrome_4.json",
+				"google_chrome_5.json"
+		],
+		"HashTab": [
+				"hashtab_1.json",
+				"hashtab_2.json"
+		],
+		"IrfanView": [
+				"irfanview_1.json",
+				"irfanview_2.json",
+				"irfanview_3.json",
+				"irfanview_4.json",
+				"irfanview_5.json"
+		],
+		"JetClean": [
+				"jetclean_1.json",
+				"jetclean_2.json",
+				"jetclean_3.json",
+				"jetclean_4.json"
+		],
+		"KeePass": [
+				"keepass_1.json",
+				"keepass_2.json",
+				"keepass_3.json"
+		],
+		"Origin": [
+				"origin_1.json",
+				"origin_2.json",
+				"origin_3.json"
+		],
+		"PotPlayer": [
+				"potplayer_1.json",
+				"potplayer_2.json"
+		],
+		"Smart Defrag": [
+				"smart_defrag_1.json",
+				"smart_defrag_2.json",
+				"smart_defrag_3.json"
+		],
+		"Speccy": [
+				"speccy_1.json",
+				"speccy_2.json",
+				"speccy_3.json"
+		],
+		"Steam": [
+				"steam_1.json",
+				"steam_2.json",
+				"steam_3.json",
+				"steam_4.json",
+				"steam_5.json",
+				"steam_6.json"
+		],
+		"SumatraPDF": [
+				"sumatrapdf_1.json",
+				"sumatrapdf_2.json",
+				"sumatrapdf_3.json",
+				"sumatrapdf_4.json",
+				"sumatrapdf_5.json",
+				"sumatrapdf_6.json",
+				"sumatrapdf_7.json",
+				"sumatrapdf_8.json",
+				"sumatrapdf_9.json"
+		]
+}

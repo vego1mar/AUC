@@ -7,55 +7,45 @@ import triggers as tr
 
 class GOGGalaxyTestData:
     APP_NAME = "GOG Galaxy"
-    WEB_SPACE_URL_1 = "https://www.gog.com/galaxy"
-    WEB_SPACE_URL_2 = "https://www.majorgeeks.com/files/details/gog_galaxy.html"
-    WEB_SPACE_HTML_PATH_1 = r"../resources/gog_galaxy_web_WinMac.base64"
-    WEB_SPACE_HTML_PATH_2 = r"../resources/gog_galaxy_web_Windows.base64"
+    WEB_SPACE_URL_1 = "https://www.gogalaxy.com/pl/"
+    WEB_SPACE_URL_2 = "https://www.dobreprogramy.pl/GOG-Galaxy,Program,Mac,65675.html"
+    WEB_SPACE_URL_3 = "https://www.dobreprogramy.pl/GOG-Galaxy,Program,Windows,66878.html"
+    WEB_SPACE_HTML_PATH_2 = r"../resources/gog_galaxy_web_Mac.base64"
+    WEB_SPACE_HTML_PATH_3 = r"../resources/gog_galaxy_web_Windows.base64"
 
     def __init__(self):
         self.execution_order = ex.ExecutionOrder()
         self.execution_order.add_entry(get_entry_1(), True)
         self.execution_order.add_entry(get_entry_2(), True)
         self.execution_order.add_entry(get_entry_3(), True)
-        self.expected_mac_pkg = 'https://content-system.gog.com/open_link/download?path=/open/galaxy/client/galaxy_' \
-                                'client_1.2.56.20.pkg'
-        self.expected_windows_exe = 'https://content-system.gog.com/open_link/download?path=/open/galaxy/client/set' \
-                                    'up_galaxy_1.2.56.15.exe'
-        self.expected_mac_ver = '1.2.56.20'
-        self.expected_windows_ver = '1.2.56.15'
-        self.expected_date_published = '05/06/2019 04:02 PM'
-        self.expected_file_size = '216 MB'
+        self.expected_mac_ver = '1.2.37.14'
+        self.expected_mac_date = '2018-02-26'
+        self.expected_mac_size = '217,72 MB'
+        self.expected_win_ver = '1.2.56.15'
+        self.expected_win_date = '2019-05-06'
+        self.expected_win_size = '215,82 MB'
+
+
+def get_link():
+    return 'https://www.majorgeeks.com/mg/getmirror/gog_galaxy,1.html'
 
 
 def get_entry_1():
-    regex = r"[\d]+.[\d]+.[\d]+.[\d]+"
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.Find('class="ng-hide"'))
-    req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK), tr.RetrieveTags("a", tr.TagType.ATTRIBUTED, 2))
-    req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(1))
-    req_4 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Mac_pkg"), tr.FetchAttribute("href"))
-    req_5 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Mac_ver"), tr.GetRegexMatch(regex))
-    req_6 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(0))
-    req_7 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Windows_exe"), tr.FetchAttribute("href"))
-    req_8 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "Windows_ver"), tr.GetRegexMatch(regex))
-    chain_request_1 = (req_1, req_2, req_3, req_4, req_5, req_6, req_7, req_8)
-    return ex.ExecutionOrderEntry(chain_request_1, hp.get_web_space(GOGGalaxyTestData.WEB_SPACE_HTML_PATH_1))
+    app_url = GOGGalaxyTestData.WEB_SPACE_URL_1
+    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_url))
+    req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "link"), tr.SetWorkspace(get_link()))
+    chain_request_3 = (req_1, req_2)
+    return ex.ExecutionOrderEntry(chain_request_3, str())
 
 
 def get_entry_2():
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WEB), tr.RetrieveTags("meta", tr.TagType.META, 15))
-    req_2 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(9))
-    req_3 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "date_published"), tr.FetchAttribute("content"))
-    req_4 = rq.InvocationRequest(rq.Target(rq.SpaceName.LIST), tr.SelectElement(13))
-    req_5 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "file_size"), tr.FetchAttribute("content"))
-    chain_request_2 = (req_1, req_2, req_3, req_4, req_5)
-    return ex.ExecutionOrderEntry(chain_request_2, hp.get_web_space(GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2))
+    web_space = hp.get_web_space(GOGGalaxyTestData.WEB_SPACE_HTML_PATH_2)
+    return hp.get_entry_for_dobreprogramy_pl(web_space, 'Mac_ver', 'Mac_date', 'Mac_size', (1, 1))
 
 
 def get_entry_3():
-    app_url = GOGGalaxyTestData.WEB_SPACE_URL_1
-    req_1 = rq.InvocationRequest(rq.Target(rq.SpaceName.WORK, True, "app_website"), tr.SetWorkspace(app_url))
-    chain_request_3 = (req_1,)
-    return ex.ExecutionOrderEntry(chain_request_3, str())
+    web_space = hp.get_web_space(GOGGalaxyTestData.WEB_SPACE_HTML_PATH_3)
+    return hp.get_entry_for_dobreprogramy_pl(web_space, 'Win_ver', 'Win_date', 'Win_size', (1, 1))
 
 
 class GogGalaxyTest(unittest.TestCase):
@@ -69,13 +59,13 @@ class GogGalaxyTest(unittest.TestCase):
 
         # then
         self.assertEqual(dt.APP_NAME, collector.get_app_name())
-        self.assertEqual(dt.expected_mac_pkg, collector.get_collectibles()['Mac_pkg'])
-        self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
-        self.assertEqual(dt.expected_windows_exe, collector.get_collectibles()['Windows_exe'])
-        self.assertEqual(dt.expected_windows_ver, collector.get_collectibles()['Windows_ver'])
-        self.assertEqual(dt.expected_date_published, collector.get_collectibles()['date_published'])
-        self.assertEqual(dt.expected_file_size, collector.get_collectibles()['file_size'])
         self.assertEqual(dt.WEB_SPACE_URL_1, collector.get_collectibles()['app_website'])
+        self.assertEqual(dt.expected_mac_ver, collector.get_collectibles()['Mac_ver'])
+        self.assertEqual(dt.expected_mac_date, collector.get_collectibles()['Mac_date'])
+        self.assertEqual(dt.expected_mac_size, collector.get_collectibles()['Mac_size'])
+        self.assertEqual(dt.expected_win_ver, collector.get_collectibles()['Win_ver'])
+        self.assertEqual(dt.expected_win_date, collector.get_collectibles()['Win_date'])
+        self.assertEqual(dt.expected_win_size, collector.get_collectibles()['Win_size'])
 
 
 if __name__ == '__main__':
